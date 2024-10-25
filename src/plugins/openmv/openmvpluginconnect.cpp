@@ -2136,15 +2136,13 @@ void OpenMVPlugin::connectClicked(bool forceBootloader, QString forceFirmwarePat
 
                     loop.exec();
 
-                    // DISABLE
-                    //
-                    // QElapsedTimer elaspedTimer;
-                    // elaspedTimer.start();
+                    QElapsedTimer elaspedTimer;
+                    elaspedTimer.start();
 
-                    // while(!elaspedTimer.hasExpired(1000))
-                    // {
-                    //     QApplication::processEvents();
-                    // }
+                    while(!elaspedTimer.hasExpired(100))
+                    {
+                        QApplication::processEvents();
+                    }
                 }
 
                 // DFU //////////////////////////////////////////////////////////
