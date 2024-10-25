@@ -383,6 +383,7 @@ signals:
 private:
 
     bool getTheLatestDevelopmentFirmware(const QString &arch, QString *path);
+    QList<QPair<QString, QString> > querySerialPorts(const QStringList &portList);
 
     QJsonDocument m_firmwareSettings;
 

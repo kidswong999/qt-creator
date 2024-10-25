@@ -596,6 +596,139 @@ bool OpenMVPlugin::getTheLatestDevelopmentFirmware(const QString &arch, QString 
     return false;
 }
 
+QList<QPair<QString, QString> > OpenMVPlugin::querySerialPorts(const QStringList &portList)
+{
+    QList<QPair<QString, QString> > results;
+
+    for (const QString &port : portList)
+    {
+        QString errorMessage2 = QStringLiteral("Timeout");
+        QString *errorMessage2Ptr = &errorMessage2;
+
+        QMetaObject::Connection conn = connect(m_ioport, &OpenMVPluginSerialPort::openResult,
+            this, [errorMessage2Ptr] (const QString &errorMessage) {
+            *errorMessage2Ptr = errorMessage;
+        });
+
+        QEventLoop loop;
+
+        connect(m_ioport, &OpenMVPluginSerialPort::openResult,
+                &loop, &QEventLoop::quit);
+
+        m_ioport->open(port);
+
+        QTimer::singleShot(20, &loop, &QEventLoop::quit);
+
+        loop.exec();
+
+        disconnect(conn);
+
+        if(errorMessage2.isEmpty())
+        {
+            int major2 = int();
+            int minor2 = int();
+            int patch2 = int();
+
+            int *major2Ptr = &major2;
+            int *minor2Ptr = &minor2;
+            int *patch2Ptr = &patch2;
+
+            QMetaObject::Connection conn = connect(m_iodevice, &OpenMVPluginIO::firmwareVersion,
+                this, [major2Ptr, minor2Ptr, patch2Ptr] (int major, int minor, int patch) {
+                *major2Ptr = major;
+                *minor2Ptr = minor;
+                *patch2Ptr = patch;
+            });
+
+            QEventLoop loop;
+
+            connect(m_iodevice, &OpenMVPluginIO::firmwareVersion,
+                    &loop, &QEventLoop::quit);
+
+            m_iodevice->getFirmwareVersion();
+
+            QTimer::singleShot(20, &loop, &QEventLoop::quit);
+
+            loop.exec();
+
+            disconnect(conn);
+
+            if((!major2) && (!minor2) && (!patch2))
+            {
+                results.append(QPair<QString, QString>(port, Tr::tr("Unknown Board")));
+                continue;
+            }
+            else if((major2 < 0) || (100 < major2) || (minor2 < 0) || (100 < minor2) || (patch2 < 0) || (100 < patch2))
+            {
+                results.append(QPair<QString, QString>(port, Tr::tr("Unknown Board")));
+                continue;
+            }
+
+            if(((major2 > OLD_API_MAJOR)
+            || ((major2 == OLD_API_MAJOR) && (minor2 > OLD_API_MINOR))
+            || ((major2 == OLD_API_MAJOR) && (minor2 == OLD_API_MINOR) && (patch2 >= OLD_API_PATCH))))
+            {
+                QString arch2 = QString();
+                QString *arch2Ptr = &arch2;
+
+                QMetaObject::Connection conn = connect(m_iodevice, &OpenMVPluginIO::archString,
+                    this, [arch2Ptr] (const QString &arch) {
+                    *arch2Ptr = arch;
+                });
+
+                QEventLoop loop;
+
+                connect(m_iodevice, &OpenMVPluginIO::archString,
+                        &loop, &QEventLoop::quit);
+
+                m_iodevice->getArchString();
+
+                QTimer::singleShot(20, &loop, &QEventLoop::quit);
+
+                loop.exec();
+
+                disconnect(conn);
+
+                if(!arch2.isEmpty())
+                {
+                    QString temp = QString(arch2).remove(QRegularExpression(QStringLiteral("\\[(.+?):(.+?)\\]"))).simplified();
+
+                    bool found = false;
+
+                    for (const QJsonValue &value : m_firmwareSettings.object().value(QStringLiteral("boards")).toArray())
+                    {
+                        if(temp == value.toObject().value(QStringLiteral("boardArchString")).toString())
+                        {
+                            results.append(QPair<QString, QString>(port, value.toObject().value(QStringLiteral("boardDisplayName")).toString()));
+                            found = true;
+                            break;
+                        }
+                    }
+
+                    if (!found)
+                    {
+                        results.append(QPair<QString, QString>(port, Tr::tr("Unknown Board")));
+                    }
+                }
+                else
+                {
+                    results.append(QPair<QString, QString>(port, Tr::tr("Unknown Board")));
+                }
+            }
+            else
+            {
+                results.append(QPair<QString, QString>(port, Tr::tr("Unknown Board")));
+            }
+        }
+        else
+        {
+            results.append(QPair<QString, QString>(port, Tr::tr("Unknown Board")));
+        }
+    }
+
+    return results;
+}
+
 bool validPort(const QJsonDocument &settings, const QString &serialNumberFilter, const MyQSerialPortInfo &port)
 {
     for (const QJsonValue &value : settings.object().value(QStringLiteral("boards")).toArray())
@@ -1030,16 +1163,24 @@ void OpenMVPlugin::connectClicked(bool forceBootloader, QString forceFirmwarePat
         {
             int index = stringList.indexOf(settings->value(LAST_SERIAL_PORT_STATE).toString());
 
+            QList<QPair<QString, QString> > prettyNames = querySerialPorts(stringList);
+            QStringList stringList2;
+
+            for (const QPair<QString, QString> &pair : prettyNames)
+            {
+                stringList2.append(QStringLiteral("%1: %2").arg(pair.first).arg(pair.second));
+            }
+
             bool ok;
             QString temp = QInputDialog::getItem(Core::ICore::dialogParent(),
                 Tr::tr("Connect"), Tr::tr("Please select a serial port"),
-                stringList, (index != -1) ? index : 0, false, &ok,
+                stringList2, (index != -1) ? index : 0, false, &ok,
                 Qt::MSWindowsFixedSizeDialogHint | Qt::WindowTitleHint | Qt::WindowSystemMenuHint |
                 (Utils::HostOsInfo::isMacHost() ? Qt::WindowType(0) : Qt::WindowCloseButtonHint));
 
             if(ok)
             {
-                selectedPort = temp;
+                selectedPort = temp.split(QStringLiteral(":")).first();
                 settings->setValue(LAST_SERIAL_PORT_STATE, selectedPort);
             }
         }
