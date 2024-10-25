@@ -149,10 +149,10 @@
             "boardArchString" : "OPENMV AE3",
             "boardDisplayName" : "OpenMV Cam AE3",
             "boardFirmwareFolder" : "OPENMV_AE3",
-            "boardVidPid" : "37C5:AFE3",
+            "boardVidPid" : "37C5:16E3",
             "boardPidMask" : "0xFFFF",
             "boardSerialNumberInverseFilters" : ["000000000010", "000000000011"],
-            "bootloaderVidPid" : "37C5:AFE3",
+            "bootloaderVidPid" : "37C5:96E3",
             "bootloaderType" : "openmv_dfu",
             "bootloaderSettings" : {
                 "eraseCommands" : ["-a 4"],
