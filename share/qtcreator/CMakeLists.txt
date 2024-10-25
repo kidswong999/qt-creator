@@ -77,6 +77,7 @@ set(resource_files
   themes/flat-light.creatortheme
   themes/dark.figmatokens
   themes/light.figmatokens
+  themes/light-palette.inc
   # OPENMV-DIFF #
 )
 
