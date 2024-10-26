@@ -2,6 +2,7 @@
     "firmware_version": "4.5.9",
     "boards" : [
         {
+            "hidden" : false,
             "boardType" : "M4",
             "boardArchString" : "OMV2 F4 256 JPEG",
             "boardDisplayName" : "OpenMV Cam M4 (STM32F427)",
@@ -19,6 +20,7 @@
             }
         },
         {
+            "hidden" : false,
             "boardType" : "M7",
             "boardArchString" : "OMV3 F7 512",
             "boardDisplayName" : "OpenMV Cam M7 (STM32F765/67)",
@@ -36,6 +38,7 @@
             }
         },
         {
+            "hidden" : false,
             "boardType" : "H7",
             "boardArchString" : "OMV4 H7 1024",
             "boardDisplayName" : "OpenMV Cam H7 (STM32H743)",
@@ -53,6 +56,7 @@
             }
         },
         {
+            "hidden" : false,
             "boardType" : "H7",
             "boardArchString" : "OMV4P H7 32768 SDRAM",
             "boardDisplayName" : "OpenMV Cam H7 Plus (STM32H743 w/ SDRAM)",
@@ -70,6 +74,7 @@
             }
         },
         {
+            "hidden" : false,
             "boardType" : "H7",
             "boardArchString" : "OPENMVPT 65536 SDRAM",
             "boardDisplayName" : "OpenMV Pure Thermal (STM32H743 w/ SDRAM)",
@@ -87,6 +92,7 @@
             }
         },
         {
+            "hidden" : false,
             "boardType" : "IMXRT1060",
             "boardArchString" : "OMVRT1060 32768 SDRAM",
             "boardDisplayName" : "OpenMV Cam RT1062",
@@ -116,6 +122,7 @@
             }
         },
         {
+            "hidden" : true,
             "boardType" : "IMXRT1060",
             "boardArchString" : "OMVRT1060 32768 SDRAM",
             "boardDisplayName" : "OpenMV Cam RT1062 SBL",
@@ -145,6 +152,7 @@
             }
         },
         {
+            "hidden" : false,
             "boardType" : "AE3",
             "boardArchString" : "OPENMV AE3",
             "boardDisplayName" : "OpenMV Cam AE3",
@@ -192,13 +200,14 @@
             }
         },
         {
+            "hidden" : false,
             "boardType" : "H7",
             "boardArchString" : "PORTENTA H7 8192 SDRAM",
             "boardDisplayName" : "Arduino Portenta (STM32H747)",
             "boardFirmwareFolder" : "ARDUINO_PORTENTA_H7",
             "boardVidPid" : "2341:005b",
             "boardPidMask" : "0x00FF",
-            "boardSerialNumberFilter" : [],
+            "boardSerialNumberInverseFilters" : [],
             "bootloaderVidPid" : "2341:035b",
             "bootloaderType" : "arduino_dfu",
             "bootloaderSettings" : {
@@ -219,13 +228,14 @@
             }
         },
         {
+            "hidden" : false,
             "boardType" : "H7",
             "boardArchString" : "GIGA H7 8192 SDRAM",
             "boardDisplayName" : "Arduino Giga (STM32H747)",
             "boardFirmwareFolder" : "ARDUINO_GIGA",
             "boardVidPid" : "2341:0066",
             "boardPidMask" : "0x00FF",
-            "boardSerialNumberFilter" : [],
+            "boardSerialNumberInverseFilters" : [],
             "bootloaderVidPid" : "2341:0366",
             "bootloaderType" : "arduino_dfu",
             "bootloaderSettings" : {
@@ -246,13 +256,14 @@
             }
         },
         {
+            "hidden" : false,
             "boardType" : "NICLAV",
             "boardArchString" : "NICLAV H7 1024",
             "boardDisplayName" : "Arduino Nicla Vision",
             "boardFirmwareFolder" : "ARDUINO_NICLA_VISION",
             "boardVidPid" : "2341:005f",
             "boardPidMask" : "0x00FF",
-            "boardSerialNumberFilter" : [],
+            "boardSerialNumberInverseFilters" : [],
             "bootloaderVidPid" : "2341:035f",
             "bootloaderType" : "arduino_dfu",
             "bootloaderSettings" : {
@@ -273,13 +284,14 @@
             }
         },
         {
+            "hidden" : false,
             "boardType" : "NANO33",
             "boardArchString" : "NANO33 M4",
             "boardDisplayName" : "Nano33 BLE (nRF52840)",
             "boardFirmwareFolder" : "ARDUINO_NANO_33_BLE_SENSE",
             "boardVidPid" : "2341:005a",
             "boardPidMask" : "0x00FF",
-            "boardSerialNumberFilter" : [],
+            "boardSerialNumberInverseFilters" : [],
             "bootloaderVidPid" : "2341:005a",
             "bootloaderType" : "bossac",
             "bootloaderSettings" : {
@@ -288,13 +300,14 @@
             }
         },
         {
+            "hidden" : false,
             "boardType" : "PICO",
             "boardArchString" : "PICO M0",
             "boardDisplayName" : "Arduino Nano RP2040 Connect (RP2040)",
             "boardFirmwareFolder" : "ARDUINO_NANO_RP2040_CONNECT",
             "boardVidPid" : "2341:005e",
             "boardPidMask" : "0x00FF",
-            "boardSerialNumberFilter" : [],
+            "boardSerialNumberInverseFilters" : [],
             "bootloaderVidPid" : "28ea:0003",
             "bootloaderType" : "picotool",
             "bootloaderSettings" : {
@@ -304,15 +317,21 @@
             }
         },
         {
+            "hidden" : true,
             "boardType" : "PICO",
             "boardArchString" : "PICO M0",
-            "boardDisplayName" : "Arduino Nano RP2040 Connect (RP2040)",
+            "boardDisplayName" : "Arduino Nano RP2040 Connect (RP2040) UF2",
             "boardFirmwareFolder" : "ARDUINO_NANO_RP2040_CONNECT",
             "boardVidPid" : "28ea:0003",
             "boardPidMask" : "0xFFFF",
-            "boardSerialNumberFilter" : [],
-            "bootloaderVidPid" : "0000:0000",
-            "bootloaderType" : ""
+            "boardSerialNumberInverseFilters" : [],
+            "bootloaderVidPid" : "28ea:0003",
+            "bootloaderType" : "picotool",
+            "bootloaderSettings" : {
+                "altvidpid" : "2341:805e",
+                "eraseCommands" : ["-o 0x10800000 -t bin"],
+                "binProgramCommand" : "-x"
+            }
         }
     ],
     "sensors" : [

@@ -1035,24 +1035,27 @@ void OpenMVPlugin::connectClicked(bool forceBootloader, QString forceFirmwarePat
 
                 for (const QJsonValue &value : m_firmwareSettings.object().value(QStringLiteral("boards")).toArray())
                 {
-                    QString a = value.toObject().value(QStringLiteral("boardDisplayName")).toString();
-                    mappings.insert(a, value.toObject().value(QStringLiteral("boardFirmwareFolder")).toString());
-                    vidpidMappings.insert(a, value.toObject().value(QStringLiteral("bootloaderVidPid")).toString());
+                    if (!value.toObject().value(QStringLiteral("hidden")).toBool())
+                    {
+                        QString a = value.toObject().value(QStringLiteral("boardDisplayName")).toString();
+                        mappings.insert(a, value.toObject().value(QStringLiteral("boardFirmwareFolder")).toString());
+                        vidpidMappings.insert(a, value.toObject().value(QStringLiteral("bootloaderVidPid")).toString());
 
-                    if (value.toObject().value(QStringLiteral("bootloaderType")).toString() == QStringLiteral("internal"))
-                    {
-                        QJsonObject bootloaderSettings = value.toObject().value(QStringLiteral("bootloaderSettings")).toObject();
-                        int eraseSectorStart = bootloaderSettings.value(QStringLiteral("eraseSectorStart")).toString().toInt();
-                        int eraseSectorEnd = bootloaderSettings.value(QStringLiteral("eraseSectorEnd")).toString().toInt();
-                        int eraseAllSectorStart = bootloaderSettings.value(QStringLiteral("eraseAllSectorStart")).toString().toInt();
-                        int eraseAllSectorEnd = bootloaderSettings.value(QStringLiteral("eraseAllSectorEnd")).toString().toInt();
-                        eraseMappings.insert(a, QPair<int, int>(eraseSectorStart, eraseSectorEnd));
-                        eraseAllMappings.insert(a, QPair<int, int>(eraseAllSectorStart, eraseAllSectorEnd));
-                    }
-                    else
-                    {
-                        eraseMappings.insert(a, QPair<int, int>(0, 0));
-                        eraseAllMappings.insert(a, QPair<int, int>(0, 0));
+                        if (value.toObject().value(QStringLiteral("bootloaderType")).toString() == QStringLiteral("internal"))
+                        {
+                            QJsonObject bootloaderSettings = value.toObject().value(QStringLiteral("bootloaderSettings")).toObject();
+                            int eraseSectorStart = bootloaderSettings.value(QStringLiteral("eraseSectorStart")).toString().toInt();
+                            int eraseSectorEnd = bootloaderSettings.value(QStringLiteral("eraseSectorEnd")).toString().toInt();
+                            int eraseAllSectorStart = bootloaderSettings.value(QStringLiteral("eraseAllSectorStart")).toString().toInt();
+                            int eraseAllSectorEnd = bootloaderSettings.value(QStringLiteral("eraseAllSectorEnd")).toString().toInt();
+                            eraseMappings.insert(a, QPair<int, int>(eraseSectorStart, eraseSectorEnd));
+                            eraseAllMappings.insert(a, QPair<int, int>(eraseAllSectorStart, eraseAllSectorEnd));
+                        }
+                        else
+                        {
+                            eraseMappings.insert(a, QPair<int, int>(0, 0));
+                            eraseAllMappings.insert(a, QPair<int, int>(0, 0));
+                        }
                     }
                 }
 
@@ -1164,6 +1167,7 @@ void OpenMVPlugin::connectClicked(bool forceBootloader, QString forceFirmwarePat
             int index = stringList.indexOf(settings->value(LAST_SERIAL_PORT_STATE).toString());
 
             QList<QPair<QString, QString> > prettyNames = querySerialPorts(stringList);
+
             QStringList stringList2;
 
             for (const QPair<QString, QString> &pair : prettyNames)
@@ -1625,25 +1629,28 @@ void OpenMVPlugin::connectClicked(bool forceBootloader, QString forceFirmwarePat
 
                         for (const QJsonValue &value : m_firmwareSettings.object().value(QStringLiteral("boards")).toArray())
                         {
-                            QString a = value.toObject().value(QStringLiteral("boardArchString")).toString();
-                            mappings.insert(a, value.toObject().value(QStringLiteral("boardFirmwareFolder")).toString());
-                            mappingsHumanReadable.insert(value.toObject().value(QStringLiteral("boardDisplayName")).toString(), a);
-                            vidpidMappings.insert(a, value.toObject().value(QStringLiteral("bootloaderVidPid")).toString());
+                            if (!value.toObject().value(QStringLiteral("hidden")).toBool())
+                            {
+                                QString a = value.toObject().value(QStringLiteral("boardArchString")).toString();
+                                mappings.insert(a, value.toObject().value(QStringLiteral("boardFirmwareFolder")).toString());
+                                mappingsHumanReadable.insert(value.toObject().value(QStringLiteral("boardDisplayName")).toString(), a);
+                                vidpidMappings.insert(a, value.toObject().value(QStringLiteral("bootloaderVidPid")).toString());
 
-                            if (value.toObject().value(QStringLiteral("bootloaderType")).toString() == QStringLiteral("internal"))
-                            {
-                                QJsonObject bootloaderSettings = value.toObject().value(QStringLiteral("bootloaderSettings")).toObject();
-                                int eraseSectorStart = bootloaderSettings.value(QStringLiteral("eraseSectorStart")).toString().toInt();
-                                int eraseSectorEnd = bootloaderSettings.value(QStringLiteral("eraseSectorEnd")).toString().toInt();
-                                int eraseAllSectorStart = bootloaderSettings.value(QStringLiteral("eraseAllSectorStart")).toString().toInt();
-                                int eraseAllSectorEnd = bootloaderSettings.value(QStringLiteral("eraseAllSectorEnd")).toString().toInt();
-                                eraseMappings.insert(a, QPair<int, int>(eraseSectorStart, eraseSectorEnd));
-                                eraseAllMappings.insert(a, QPair<int, int>(eraseAllSectorStart, eraseAllSectorEnd));
-                            }
-                            else
-                            {
-                                eraseMappings.insert(a, QPair<int, int>(0, 0));
-                                eraseAllMappings.insert(a, QPair<int, int>(0, 0));
+                                if (value.toObject().value(QStringLiteral("bootloaderType")).toString() == QStringLiteral("internal"))
+                                {
+                                    QJsonObject bootloaderSettings = value.toObject().value(QStringLiteral("bootloaderSettings")).toObject();
+                                    int eraseSectorStart = bootloaderSettings.value(QStringLiteral("eraseSectorStart")).toString().toInt();
+                                    int eraseSectorEnd = bootloaderSettings.value(QStringLiteral("eraseSectorEnd")).toString().toInt();
+                                    int eraseAllSectorStart = bootloaderSettings.value(QStringLiteral("eraseAllSectorStart")).toString().toInt();
+                                    int eraseAllSectorEnd = bootloaderSettings.value(QStringLiteral("eraseAllSectorEnd")).toString().toInt();
+                                    eraseMappings.insert(a, QPair<int, int>(eraseSectorStart, eraseSectorEnd));
+                                    eraseAllMappings.insert(a, QPair<int, int>(eraseAllSectorStart, eraseAllSectorEnd));
+                                }
+                                else
+                                {
+                                    eraseMappings.insert(a, QPair<int, int>(0, 0));
+                                    eraseAllMappings.insert(a, QPair<int, int>(0, 0));
+                                }
                             }
                         }
 
@@ -2588,7 +2595,8 @@ void OpenMVPlugin::connectClicked(bool forceBootloader, QString forceFirmwarePat
                     {
                         QJsonObject obj = val.toObject();
 
-                        if(obj.value(QStringLiteral("bootloaderType")).toString() == QStringLiteral("imx"))
+                        if((!obj.value(QStringLiteral("hidden")).toBool())
+                        && (obj.value(QStringLiteral("bootloaderType")).toString() == QStringLiteral("imx")))
                         {
                             QString a = val.toObject().value(QStringLiteral("boardDisplayName")).toString();
                             QStringList vidpid = val.toObject().value(QStringLiteral("bootloaderVidPid")).toString().split(QStringLiteral(":"));
