@@ -81,12 +81,12 @@ void ThresholdEditor::changed()
             }
         }
 
-        m_LABOut->setText(QStringLiteral("(%L1, %L2, %L3, %L4, %L5, %L6)").arg(m_LMin->value())
-                                                                          .arg(m_LMax->value())
-                                                                          .arg(m_AMin->value())
-                                                                          .arg(m_AMax->value())
-                                                                          .arg(m_BMin->value())
-                                                                          .arg(m_BMax->value()));
+        m_LABOut->setText(QStringLiteral("(%1, %2, %3, %4, %5, %6)").arg(m_LMin->value())
+                                                                    .arg(m_LMax->value())
+                                                                    .arg(m_AMin->value())
+                                                                    .arg(m_AMax->value())
+                                                                    .arg(m_BMin->value())
+                                                                    .arg(m_BMax->value()));
     }
     else // Grayscale
     {
@@ -105,8 +105,8 @@ void ThresholdEditor::changed()
             }
         }
 
-        m_GOut->setText(QStringLiteral("(%L1, %L2)").arg(m_GMin->value())
-                                                    .arg(m_GMax->value()));
+        m_GOut->setText(QStringLiteral("(%1, %2)").arg(m_GMin->value())
+                                                  .arg(m_GMax->value()));
     }
 
     if(m_bin->scene())

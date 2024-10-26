@@ -114,13 +114,13 @@ protected:
 
     void hoverEnterEvent(QGraphicsSceneHoverEvent *event)
     {
-        setToolTip(QStringLiteral("x: %L1, y: %L2, score: %L3, octave: %L4, angle: %L5").arg(m_k->m_x).arg(m_k->m_y).arg(m_k->m_score).arg(m_k->m_octave).arg(m_k->m_angle));
+        setToolTip(QStringLiteral("x: %1, y: %2, score: %3, octave: %4, angle: %5").arg(m_k->m_x).arg(m_k->m_y).arg(m_k->m_score).arg(m_k->m_octave).arg(m_k->m_angle));
         QGraphicsItem::hoverEnterEvent(event);
     }
 
     void hoverMoveEvent(QGraphicsSceneHoverEvent *event)
     {
-        setToolTip(QStringLiteral("x: %L1, y: %L2, score: %L3, octave: %L4, angle: %L5").arg(m_k->m_x).arg(m_k->m_y).arg(m_k->m_score).arg(m_k->m_octave).arg(m_k->m_angle));
+        setToolTip(QStringLiteral("x: %1, y: %2, score: %3, octave: %4, angle: %5").arg(m_k->m_x).arg(m_k->m_y).arg(m_k->m_score).arg(m_k->m_octave).arg(m_k->m_angle));
         QGraphicsItem::hoverMoveEvent(event);
     }
 

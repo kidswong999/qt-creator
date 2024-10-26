@@ -648,7 +648,7 @@ void OpenMVPlugin::extensionsInitialized()
             QString titlePattern = Tr::tr("untitled_$.py");
 
             QByteArray data =
-            QStringLiteral("# Untitled - By: %L1 - %L2\n"
+            QStringLiteral("# Untitled - By: %1 - %2\n"
                            "\n"
                            "import sensor, time\n"
                            "\n"
@@ -1118,7 +1118,7 @@ void OpenMVPlugin::extensionsInitialized()
 
             if(ok)
             {
-                QByteArray contents = QStringLiteral("# Dataset Capture Script - By: %L1 - %L2\n"
+                QByteArray contents = QStringLiteral("# Dataset Capture Script - By: %1 - %2\n"
                                                      "\n"
                                                      "# Use this script to control how your OpenMV Cam captures images for your dataset.\n"
                                                      "# You should apply the same image pre-processing steps you expect to run on images\n"
@@ -3050,7 +3050,7 @@ void OpenMVPlugin::registerOpenMVCam(const QString board, const QString id)
 
         connect(&manager, &QNetworkAccessManager::finished, &loop, &QEventLoop::quit);
 
-        QNetworkRequest request = QNetworkRequest(QUrl(QString(QStringLiteral("https://upload.openmv.io/openmv-swd-ids-insert.php?board=%L1&id=%L2&form_key=%L3")).arg(board).arg(id).arg(m_formKey)));
+        QNetworkRequest request = QNetworkRequest(QUrl(QString(QStringLiteral("https://upload.openmv.io/openmv-swd-ids-insert.php?board=%1&id=%2&form_key=%3")).arg(board).arg(id).arg(m_formKey)));
         QNetworkReply *reply = manager.get(request);
 
         if(reply)
