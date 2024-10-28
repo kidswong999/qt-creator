@@ -79,6 +79,10 @@ SaveItemsDialog::SaveItemsDialog(QWidget *parent, const QList<IDocument *> &item
         } else {
             directory = filePath.absolutePath();
             visibleName = filePath.fileName();
+            // OPENMV-DIFF //
+            if (document->isTemporary())
+                directory = FilePath();
+            // OPENMV-DIFF //
         }
         QTreeWidgetItem *item = new QTreeWidgetItem(m_treeWidget,
                 QStringList{visibleName, directory.toUserOutput()});

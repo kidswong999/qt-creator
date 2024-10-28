@@ -311,6 +311,7 @@ QList<ReloadInput> DiffModifiedFilesController::reloadInputList() const
             // OPENMV-DIFF //
             QString fileName = textDocument->filePath().toString();
             if (fileName.isEmpty()) fileName = textDocument->property("diffFilePath").toString();
+            if (textDocument->isTemporary()) fileName = textDocument->property("diffFilePath").toString();
             // OPENMV-DIFF //
             const TextFileFormat::ReadResult leftResult = TextFileFormat::readFile(
                 FilePath::fromString(fileName), format.codec, &leftText, &format, &errorString);
