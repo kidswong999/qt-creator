@@ -49,7 +49,9 @@ static void prepare(QMessageBox::Icon icon,
     msgBox.setWindowTitle(title);
     msgBox.setIcon(icon);
     msgBox.setText(text);
-    msgBox.setTextFormat(Qt::RichText);
+    // OPENMV-DIFF //
+    // msgBox.setTextFormat(Qt::RichText);
+    // OPENMV-DIFF //
     msgBox.setTextInteractionFlags(Qt::LinksAccessibleByKeyboard | Qt::LinksAccessibleByMouse);
 
 #if QT_VERSION >= QT_VERSION_CHECK(6, 6, 0)
