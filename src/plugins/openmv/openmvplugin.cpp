@@ -12,11 +12,13 @@ OpenMVPlugin::OpenMVPlugin() : IPlugin()
     qRegisterMetaType<OpenMVPluginSerialPortCommand>("OpenMVPluginSerialPortCommand");
     qRegisterMetaType<OpenMVPluginSerialPortCommandResult>("OpenMVPluginSerialPortCommandResult");
 
-    m_resourceFolders = QStringList()
+    m_resourceFoldersToCopy = QStringList()
         << QStringLiteral("examples")
         << QStringLiteral("firmware")
         << QStringLiteral("html")
         << QStringLiteral("models");
+    m_resourceFoldersToDelete = QStringList(m_resourceFoldersToCopy)
+        << QStringLiteral("micropython-headers");
 
     m_tempDir = QTemporaryDir();
 
@@ -416,7 +418,7 @@ bool OpenMVPlugin::initialize(const QStringList &arguments, QString *errorMessag
 
         QString error;
 
-        if(!removeRecursively(Core::ICore::userResourcePath(), m_resourceFolders, &error))
+        if(!removeRecursively(Core::ICore::userResourcePath(), m_resourceFoldersToDelete, &error))
         {
             QMessageBox::critical(Q_NULLPTR, QString(), Tr::tr("\n\nPlease close any programs that are viewing/editing OpenMV IDE's application data and then restart OpenMV IDE!"));
             ok = false;
@@ -436,7 +438,7 @@ bool OpenMVPlugin::initialize(const QStringList &arguments, QString *errorMessag
 
             if(ok)
             {
-                for(const QString &dir : m_resourceFolders)
+                for(const QString &dir : m_resourceFoldersToCopy)
                 {
                     QString error;
 
@@ -490,14 +492,18 @@ bool OpenMVPlugin::initialize(const QStringList &arguments, QString *errorMessag
         else
         {
             QMessageBox::critical(Q_NULLPTR, QString(),
-                Tr::tr("Error reading firmware settings - %L1!").arg(error.errorString()));
+                Tr::tr("Error in parsing <user_resources>/openmvide/firmware/settings.json - %L1!"
+                       "\n\nCheck the json file for errors and fix them.").
+                       arg(error.errorString()));
             exit(-1);
         }
     }
     else
     {
         QMessageBox::critical(Q_NULLPTR, QString(),
-            Tr::tr("Error reading firmware settings: %L1").arg(firmwareSettings.errorString()));
+            Tr::tr("Error reading <user_resources>/openmvide/firmware/settings.json: %L1."
+                   "\\n\\nOpenMV IDE versions before v4.3.0 do not have this file and would have deleted it on installing resources.").
+                   arg(firmwareSettings.errorString()));
         exit(-1);
     }
 

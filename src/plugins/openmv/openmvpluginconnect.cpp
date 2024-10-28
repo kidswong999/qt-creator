@@ -127,7 +127,7 @@ void OpenMVPlugin::packageUpdate()
 
                                 QString error;
 
-                                if(!removeRecursivelyWrapper(Core::ICore::userResourcePath(), m_resourceFolders, &error))
+                                if(!removeRecursivelyWrapper(Core::ICore::userResourcePath(), m_resourceFoldersToDelete, &error))
                                 {
                                     QMessageBox::critical(Core::ICore::dialogParent(),
                                         QString(),

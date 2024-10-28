@@ -385,7 +385,9 @@ private:
     bool getTheLatestDevelopmentFirmware(const QString &arch, QString *path);
     QList<QPair<QString, QString> > querySerialPorts(const QStringList &portList);
 
-    QStringList m_resourceFolders;
+    QStringList m_resourceFoldersToCopy;
+    QStringList m_resourceFoldersToDelete;
+
     QJsonDocument m_firmwareSettings;
 
     bool m_viewerMode;
