@@ -22,6 +22,23 @@ static bool removeRecursivelyWrapper(const Utils::FilePath &path, QString *error
     return watcher.result();
 }
 
+static bool removeRecursivelyWrapper(const Utils::FilePath &path, const QList<QString> &subFolders, QString *error)
+{
+    bool ok;
+
+    for (const QString &subFolder : subFolders)
+    {
+        ok = removeRecursivelyWrapper(path.pathAppended(subFolder), error);
+
+        if(!ok)
+        {
+            break;
+        }
+    }
+
+    return ok;
+}
+
 static bool extractAll(QByteArray *data, const QString &path)
 {
     QBuffer buffer(data);
@@ -110,7 +127,7 @@ void OpenMVPlugin::packageUpdate()
 
                                 QString error;
 
-                                if(!removeRecursivelyWrapper(Core::ICore::userResourcePath(), &error))
+                                if(!removeRecursivelyWrapper(Core::ICore::userResourcePath(), m_resourceFolders, &error))
                                 {
                                     QMessageBox::critical(Core::ICore::dialogParent(),
                                         QString(),
@@ -201,7 +218,7 @@ void OpenMVPlugin::packageUpdate()
         connect(reply, &QNetworkReply::destroyed, manager, &QNetworkAccessManager::deleteLater); reply->deleteLater();
     });
 
-    QNetworkRequest request = QNetworkRequest(QUrl(QStringLiteral("https://raw.githubusercontent.com/openmv/openmv-ide-version/main/openmv-ide-resources-version.txt")));
+    QNetworkRequest request = QNetworkRequest(QUrl(QStringLiteral("https://raw.githubusercontent.com/openmv/openmv-ide-version/main/openmv-ide-resources-version2.txt")));
     QNetworkReply *reply = manager->get(request);
 
     if(reply)

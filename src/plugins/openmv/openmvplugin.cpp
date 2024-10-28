@@ -12,6 +12,12 @@ OpenMVPlugin::OpenMVPlugin() : IPlugin()
     qRegisterMetaType<OpenMVPluginSerialPortCommand>("OpenMVPluginSerialPortCommand");
     qRegisterMetaType<OpenMVPluginSerialPortCommandResult>("OpenMVPluginSerialPortCommandResult");
 
+    m_resourceFolders = QStringList()
+        << QStringLiteral("examples")
+        << QStringLiteral("firmware")
+        << QStringLiteral("html")
+        << QStringLiteral("models");
+
     m_tempDir = QTemporaryDir();
 
     m_viewerMode = false;
@@ -87,6 +93,23 @@ static void displayError(const QString &string)
     {
         qCritical("%s", qPrintable(string));
     }
+}
+
+static bool removeRecursively(const Utils::FilePath &path, const QList<QString> &subFolders, QString *error)
+{
+    bool ok;
+
+    for (const QString &subFolder : subFolders)
+    {
+        ok = path.pathAppended(subFolder).removeRecursively(error);
+
+        if(!ok)
+        {
+            break;
+        }
+    }
+
+    return ok;
 }
 
 static bool copyOperator(const Utils::FilePath &src, const Utils::FilePath &dest, QString *error)
@@ -393,7 +416,7 @@ bool OpenMVPlugin::initialize(const QStringList &arguments, QString *errorMessag
 
         QString error;
 
-        if(!Core::ICore::userResourcePath().removeRecursively(&error))
+        if(!removeRecursively(Core::ICore::userResourcePath(), m_resourceFolders, &error))
         {
             QMessageBox::critical(Q_NULLPTR, QString(), Tr::tr("\n\nPlease close any programs that are viewing/editing OpenMV IDE's application data and then restart OpenMV IDE!"));
             ok = false;
@@ -413,9 +436,7 @@ bool OpenMVPlugin::initialize(const QStringList &arguments, QString *errorMessag
 
             if(ok)
             {
-                QStringList list = QStringList() << QStringLiteral("examples") << QStringLiteral("firmware") << QStringLiteral("html") << QStringLiteral("models");
-
-                for(const QString &dir : list)
+                for(const QString &dir : m_resourceFolders)
                 {
                     QString error;
 
