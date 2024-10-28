@@ -873,7 +873,9 @@ FilePath DocumentManager::getSaveAsFileName(const IDocument *document)
     // OPENMV-DIFF //
     // const FilePath filePath = document->filePath();
     // OPENMV-DIFF //
-    const FilePath filePath = !document->isTemporary() ? document->filePath() : Utils::FilePath::fromString(document->filePath().fileName());
+    const FilePath filePath = !document->isTemporary()
+        ? document->filePath()
+        : fileDialogInitialDirectory().pathAppended(document->filePath().fileName());
     // OPENMV-DIFF //
     QString selectedFilter;
     FilePath fileDialogPath = filePath;
