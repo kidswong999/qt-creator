@@ -301,6 +301,8 @@ public slots:
     void bootloaderStop();
     void bootloaderReset();
 
+    void updateSettings(bool unstuckWithGetState) { m_unstuckWithGetState = unstuckWithGetState; }
+
 signals:
 
     void openResult(const QString &errorMessage);
@@ -309,6 +311,8 @@ signals:
     void bootloaderStartResponse(bool ok, int version, int highspeed);
     void bootloaderStopResponse();
     void bootloaderResetResponse();
+
+    void settingsUpdated();
 
 private:
 
@@ -319,6 +323,7 @@ private:
     int m_override_read_timeout;
     int m_override_read_stall_timeout;
     int m_override_per_command_wait;
+    bool m_unstuckWithGetState;
 };
 
 class OpenMVPluginSerialPort : public QObject
@@ -346,6 +351,9 @@ signals:
     void bootloaderStartResponse(bool ok, int version, int highspeed);
     void bootloaderStopResponse();
     void bootloaderResetResponse();
+
+    void updateSettings(bool unstuckWithGetState);
+    void settingsUpdated();
 
 private:
 

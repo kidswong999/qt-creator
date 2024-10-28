@@ -2072,6 +2072,8 @@ void OpenMVPlugin::extensionsInitialized()
     m_getStateSpacing = settings->value(LAST_GET_STATE_SPACING, GET_STATE_SPACING).toInt();
     settings->endGroup();
 
+    m_ioport->updateSettings(m_useGetState);
+
     connect(Core::MessageManager::outputWindow(), &Core::OutputWindow::writeBytes, m_iodevice, &OpenMVPluginIO::mainTerminalInput);
     connect(Core::MessageManager::outputWindow()->getParser(), &Core::OpenMVPluginEscapeCodeParser::dataSetEditorSaveImage, datasetEditorSnapshotAction, &QAction::trigger);
 
@@ -4078,6 +4080,8 @@ void OpenMVPlugin::setSpacing()
         m_getStateTimer.restart();
         m_timer.restart();
         m_queue.clear();
+
+        m_ioport->updateSettings(m_useGetState);
     }
 
     settings->endGroup();

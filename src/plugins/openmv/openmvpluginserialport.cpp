@@ -344,6 +344,7 @@ OpenMVPluginSerialPort_private::OpenMVPluginSerialPort_private(int override_read
     m_override_read_timeout = override_read_timeout;
     m_override_read_stall_timeout = override_read_stall_timeout;
     m_override_per_command_wait = override_per_command_wait;
+    m_unstuckWithGetState = false;
 }
 
 void OpenMVPluginSerialPort_private::open(const QString &portName)
@@ -609,20 +610,41 @@ void OpenMVPluginSerialPort_private::command(const OpenMVPluginSerialPortCommand
 
                     if(command.m_perCommandWait) // normal mode
                     {
-                        QByteArray data;
-                        serializeByte(data, __USBDBG_CMD);
-                        serializeByte(data, __USBDBG_SCRIPT_RUNNING);
-                        serializeLong(data, SCRIPT_RUNNING_RESPONSE_LEN);
-                        write(data, SCRIPT_RUNNING_START_DELAY, SCRIPT_RUNNING_END_DELAY, WRITE_TIMEOUT);
-
-                        if(m_port)
+                        if (m_unstuckWithGetState)
                         {
-                            responseLen += SCRIPT_RUNNING_RESPONSE_LEN;
-                            elaspedTimer2.restart();
+                            QByteArray data;
+                            serializeByte(data, __USBDBG_CMD);
+                            serializeByte(data, __USBDBG_GET_STATE);
+                            serializeLong(data, GET_STATE_PAYLOAD_LEN);
+                            write(data, GET_STATE_START_DELAY, GET_STATE_END_DELAY, WRITE_TIMEOUT);
+
+                            if(m_port)
+                            {
+                                responseLen += GET_STATE_PAYLOAD_LEN;
+                                elaspedTimer2.restart();
+                            }
+                            else
+                            {
+                                break;
+                            }
                         }
                         else
                         {
-                            break;
+                            QByteArray data;
+                            serializeByte(data, __USBDBG_CMD);
+                            serializeByte(data, __USBDBG_SCRIPT_RUNNING);
+                            serializeLong(data, SCRIPT_RUNNING_RESPONSE_LEN);
+                            write(data, SCRIPT_RUNNING_START_DELAY, SCRIPT_RUNNING_END_DELAY, WRITE_TIMEOUT);
+
+                            if(m_port)
+                            {
+                                responseLen += SCRIPT_RUNNING_RESPONSE_LEN;
+                                elaspedTimer2.restart();
+                            }
+                            else
+                            {
+                                break;
+                            }
                         }
                     }
                     else // bootloader mode
@@ -883,6 +905,12 @@ OpenMVPluginSerialPort::OpenMVPluginSerialPort(int override_read_timeout, int ov
 
     connect(m_port, &OpenMVPluginSerialPort_private::bootloaderResetResponse,
             this, &OpenMVPluginSerialPort::bootloaderResetResponse);
+
+    connect(this, &OpenMVPluginSerialPort::updateSettings,
+            m_port, &OpenMVPluginSerialPort_private::updateSettings);
+
+    connect(m_port, &OpenMVPluginSerialPort_private::settingsUpdated,
+            this, &OpenMVPluginSerialPort::settingsUpdated);
 
     connect(this, &OpenMVPluginSerialPort::destroyed,
             m_port, &OpenMVPluginSerialPort_private::deleteLater);
