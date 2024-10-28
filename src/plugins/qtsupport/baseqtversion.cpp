@@ -1321,6 +1321,9 @@ QVersionNumber QtVersion::qtVersion() const
 
 void QtVersionPrivate::updateVersionInfo()
 {
+    // OPENMV-DIFF //
+    return;
+    // OPENMV-DIFF //
     if (m_data.versionInfoUpToDate || !m_qmakeIsExecutable || m_isUpdating)
         return;
 
