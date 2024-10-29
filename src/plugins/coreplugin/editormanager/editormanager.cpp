@@ -2601,7 +2601,7 @@ bool EditorManagerPrivate::saveDocumentAs(IDocument *document)
     // OPENMV-DIFF //
     // handleFileRenamed(originalFilePath, document->filePath(), document->id());
     // OPENMV-DIFF //
-    handleFileRenamed(originalFilePath, !document->isTemporary() ? document->filePath() : FilePath(), document->id());
+    if (document->isTemporary()) handleFileRenamed(originalFilePath, document->filePath(), document->id());
     // OPENMV-DIFF //
     return success;
 }
