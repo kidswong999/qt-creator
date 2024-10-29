@@ -5,8 +5,53 @@
             "hidden" : false,
             "boardType" : "M4",
             "boardArchString" : "OMV2 F4 256 JPEG",
+            "boardDisplayName" : "OpenMV Cam M4 (STM32F427) Legacy",
+            "boardFirmwareFolder" : "OPENMV2",
+            "boardVidPid" : "1209:ABD1",
+            "boardPidMask" : "0xFFFF",
+            "boardSerialNumberInverseFilters" : ["000000000010", "000000000011"],
+            "bootloaderVidPid" : "0483:df11",
+            "bootloaderType" : "internal",
+            "bootloaderSettings" : {
+                "eraseAllSectorStart" : 1,
+                "eraseAllSectorEnd" : 11,
+                "eraseSectorStart" : 4,
+                "eraseSectorEnd" : 11
+            }
+        },
+        {
+            "hidden" : false,
+            "boardType" : "M4",
+            "boardArchString" : "OMV2 F4 256 JPEG",
             "boardDisplayName" : "OpenMV Cam M4 (STM32F427)",
             "boardFirmwareFolder" : "OPENMV2",
+            "boardVidPid" : "37C5:1202",
+            "boardPidMask" : "0xFFFF",
+            "boardSerialNumberInverseFilters" : [],
+            "bootloaderVidPid" : "37C5:9202",
+            "bootloaderType" : "openmv_dfu",
+            "bootloaderSettings" : {
+                "eraseCommands" : ["-a 0"],
+                "programCommands" : [
+                    {
+                        "cmd" : "-a 1",
+                        "path" : "OPENMV2/firmware.bin"
+                    }
+                ],
+                "binProgamCommands" : [
+                    {
+                        "cmd": "-a 1",
+                        "name": "firmware.bin"
+                    }
+                ]
+            }
+        },
+        {
+            "hidden" : false,
+            "boardType" : "M7",
+            "boardArchString" : "OMV3 F7 512",
+            "boardDisplayName" : "OpenMV Cam M7 (STM32F765/67) Legacy",
+            "boardFirmwareFolder" : "OPENMV3",
             "boardVidPid" : "1209:ABD1",
             "boardPidMask" : "0xFFFF",
             "boardSerialNumberInverseFilters" : ["000000000010", "000000000011"],
@@ -25,6 +70,33 @@
             "boardArchString" : "OMV3 F7 512",
             "boardDisplayName" : "OpenMV Cam M7 (STM32F765/67)",
             "boardFirmwareFolder" : "OPENMV3",
+            "boardVidPid" : "37C5:1203",
+            "boardPidMask" : "0xFFFF",
+            "boardSerialNumberInverseFilters" : [],
+            "bootloaderVidPid" : "37C5:9203",
+            "bootloaderType" : "openmv_dfu",
+            "bootloaderSettings" : {
+                "eraseCommands" : ["-a 0"],
+                "programCommands" : [
+                    {
+                        "cmd" : "-a 1",
+                        "path" : "OPENMV3/firmware.bin"
+                    }
+                ],
+                "binProgamCommands" : [
+                    {
+                        "cmd": "-a 1",
+                        "name": "firmware.bin"
+                    }
+                ]
+            }
+        },
+        {
+            "hidden" : false,
+            "boardType" : "H7",
+            "boardArchString" : "OMV4 H7 1024",
+            "boardDisplayName" : "OpenMV Cam H7 (STM32H743) Legacy",
+            "boardFirmwareFolder" : "OPENMV4",
             "boardVidPid" : "1209:ABD1",
             "boardPidMask" : "0xFFFF",
             "boardSerialNumberInverseFilters" : ["000000000010", "000000000011"],
@@ -32,9 +104,9 @@
             "bootloaderType" : "internal",
             "bootloaderSettings" : {
                 "eraseAllSectorStart" : 1,
-                "eraseAllSectorEnd" : 11,
-                "eraseSectorStart" : 4,
-                "eraseSectorEnd" : 11
+                "eraseAllSectorEnd" : 15,
+                "eraseSectorStart" : 2,
+                "eraseSectorEnd" : 15
             }
         },
         {
@@ -43,6 +115,33 @@
             "boardArchString" : "OMV4 H7 1024",
             "boardDisplayName" : "OpenMV Cam H7 (STM32H743)",
             "boardFirmwareFolder" : "OPENMV4",
+            "boardVidPid" : "37C5:1204",
+            "boardPidMask" : "0xFFFF",
+            "boardSerialNumberInverseFilters" : [],
+            "bootloaderVidPid" : "37C5:9204",
+            "bootloaderType" : "openmv_dfu",
+            "bootloaderSettings" : {
+                "eraseCommands" : ["-a 0"],
+                "programCommands" : [
+                    {
+                        "cmd" : "-a 1",
+                        "path" : "OPENMV4/firmware.bin"
+                    }
+                ],
+                "binProgamCommands" : [
+                    {
+                        "cmd": "-a 1",
+                        "name": "firmware.bin"
+                    }
+                ]
+            }
+        },
+        {
+            "hidden" : false,
+            "boardType" : "H7",
+            "boardArchString" : "OMV4P H7 32768 SDRAM",
+            "boardDisplayName" : "OpenMV Cam H7 Plus (STM32H743 w/ SDRAM) Legacy",
+            "boardFirmwareFolder" : "OPENMV4P",
             "boardVidPid" : "1209:ABD1",
             "boardPidMask" : "0xFFFF",
             "boardSerialNumberInverseFilters" : ["000000000010", "000000000011"],
@@ -61,6 +160,33 @@
             "boardArchString" : "OMV4P H7 32768 SDRAM",
             "boardDisplayName" : "OpenMV Cam H7 Plus (STM32H743 w/ SDRAM)",
             "boardFirmwareFolder" : "OPENMV4P",
+            "boardVidPid" : "37C5:124A",
+            "boardPidMask" : "0xFFFF",
+            "boardSerialNumberInverseFilters" : [],
+            "bootloaderVidPid" : "37C5:924A",
+            "bootloaderType" : "openmv_dfu",
+            "bootloaderSettings" : {
+                "eraseCommands" : ["-a 2"],
+                "programCommands" : [
+                    {
+                        "cmd" : "-a 1",
+                        "path" : "OPENMV4P/firmware.bin"
+                    }
+                ],
+                "binProgamCommands" : [
+                    {
+                        "cmd": "-a 1",
+                        "name": "firmware.bin"
+                    }
+                ]
+            }
+        },
+        {
+            "hidden" : false,
+            "boardType" : "H7",
+            "boardArchString" : "OPENMVPT 65536 SDRAM",
+            "boardDisplayName" : "OpenMV Pure Thermal (STM32H743 w/ SDRAM) Legacy",
+            "boardFirmwareFolder" : "OPENMVPT",
             "boardVidPid" : "1209:ABD1",
             "boardPidMask" : "0xFFFF",
             "boardSerialNumberInverseFilters" : ["000000000010", "000000000011"],
@@ -79,16 +205,25 @@
             "boardArchString" : "OPENMVPT 65536 SDRAM",
             "boardDisplayName" : "OpenMV Pure Thermal (STM32H743 w/ SDRAM)",
             "boardFirmwareFolder" : "OPENMVPT",
-            "boardVidPid" : "1209:ABD1",
+            "boardVidPid" : "37C5:1205",
             "boardPidMask" : "0xFFFF",
-            "boardSerialNumberInverseFilters" : ["000000000010", "000000000011"],
-            "bootloaderVidPid" : "0483:df11",
-            "bootloaderType" : "internal",
+            "boardSerialNumberInverseFilters" : [],
+            "bootloaderVidPid" : "37C5:9205",
+            "bootloaderType" : "openmv_dfu",
             "bootloaderSettings" : {
-                "eraseAllSectorStart" : 1,
-                "eraseAllSectorEnd" : 15,
-                "eraseSectorStart" : 2,
-                "eraseSectorEnd" : 15
+                "eraseCommands" : ["-a 2"],
+                "programCommands" : [
+                    {
+                        "cmd" : "-a 1",
+                        "path" : "OPENMVPT/firmware.bin"
+                    }
+                ],
+                "binProgamCommands" : [
+                    {
+                        "cmd": "-a 1",
+                        "name": "firmware.bin"
+                    }
+                ]
             }
         },
         {
@@ -159,7 +294,7 @@
             "boardFirmwareFolder" : "OPENMV_AE3",
             "boardVidPid" : "37C5:16E3",
             "boardPidMask" : "0xFFFF",
-            "boardSerialNumberInverseFilters" : ["000000000010", "000000000011"],
+            "boardSerialNumberInverseFilters" : [],
             "bootloaderVidPid" : "37C5:96E3",
             "bootloaderType" : "openmv_dfu",
             "bootloaderSettings" : {
@@ -190,11 +325,6 @@
                     {
                         "cmd": "-a 3",
                         "name": "AppTocPackage.bin"
-                    }
-                ],
-                "romfsCommands" : [
-                    {
-                        "cmd" : "-a 5"
                     }
                 ]
             }
