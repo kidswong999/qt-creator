@@ -3,6 +3,7 @@
     "boards" : [
         {
             "hidden" : false,
+            "legacy" : true,
             "boardType" : "M4",
             "boardArchString" : "OMV2 F4 256 JPEG",
             "boardDisplayName" : "OpenMV Cam M4 (STM32F427) Legacy",
@@ -16,11 +17,16 @@
                 "eraseAllSectorStart" : 1,
                 "eraseAllSectorEnd" : 11,
                 "eraseSectorStart" : 4,
-                "eraseSectorEnd" : 11
+                "eraseSectorEnd" : 11,
+                "fallbackBootloader" : {
+                    "vidpid" : "37C5:9202",
+                    "type" : "openmv_dfu"
+                }
             }
         },
         {
             "hidden" : false,
+            "legacy" : false,
             "boardType" : "M4",
             "boardArchString" : "OMV2 F4 256 JPEG",
             "boardDisplayName" : "OpenMV Cam M4 (STM32F427)",
@@ -43,11 +49,22 @@
                         "cmd": "-a 1",
                         "name": "firmware.bin"
                     }
-                ]
+                ],
+                "fallbackBootloader" : {
+                    "vidpid" : "0483:df11",
+                    "type" : "internal",
+                    "settings" : {
+                        "eraseAllSectorStart" : 1,
+                        "eraseAllSectorEnd" : 11,
+                        "eraseSectorStart" : 4,
+                        "eraseSectorEnd" : 11
+                    }
+                }
             }
         },
         {
             "hidden" : false,
+            "legacy" : true,
             "boardType" : "M7",
             "boardArchString" : "OMV3 F7 512",
             "boardDisplayName" : "OpenMV Cam M7 (STM32F765/67) Legacy",
@@ -61,11 +78,16 @@
                 "eraseAllSectorStart" : 1,
                 "eraseAllSectorEnd" : 11,
                 "eraseSectorStart" : 4,
-                "eraseSectorEnd" : 11
+                "eraseSectorEnd" : 11,
+                "fallbackBootloader" : {
+                    "vidpid" : "37C5:9203",
+                    "type" : "openmv_dfu"
+                }
             }
         },
         {
             "hidden" : false,
+            "legacy" : false,
             "boardType" : "M7",
             "boardArchString" : "OMV3 F7 512",
             "boardDisplayName" : "OpenMV Cam M7 (STM32F765/67)",
@@ -88,11 +110,22 @@
                         "cmd": "-a 1",
                         "name": "firmware.bin"
                     }
-                ]
+                ],
+                "fallbackBootloader" : {
+                    "vidpid" : "0483:df11",
+                    "type" : "internal",
+                    "settings" : {
+                        "eraseAllSectorStart" : 1,
+                        "eraseAllSectorEnd" : 11,
+                        "eraseSectorStart" : 4,
+                        "eraseSectorEnd" : 11
+                    }
+                }
             }
         },
         {
             "hidden" : false,
+            "legacy" : true,
             "boardType" : "H7",
             "boardArchString" : "OMV4 H7 1024",
             "boardDisplayName" : "OpenMV Cam H7 (STM32H743) Legacy",
@@ -106,11 +139,16 @@
                 "eraseAllSectorStart" : 1,
                 "eraseAllSectorEnd" : 15,
                 "eraseSectorStart" : 2,
-                "eraseSectorEnd" : 15
+                "eraseSectorEnd" : 15,
+                "fallbackBootloader" : {
+                    "vidpid" : "37C5:9204",
+                    "type" : "openmv_dfu"
+                }
             }
         },
         {
             "hidden" : false,
+            "legacy" : false,
             "boardType" : "H7",
             "boardArchString" : "OMV4 H7 1024",
             "boardDisplayName" : "OpenMV Cam H7 (STM32H743)",
@@ -133,11 +171,22 @@
                         "cmd": "-a 1",
                         "name": "firmware.bin"
                     }
-                ]
+                ],
+                "fallbackBootloader" : {
+                    "vidpid" : "0483:df11",
+                    "type" : "internal",
+                    "settings" : {
+                        "eraseAllSectorStart" : 1,
+                        "eraseAllSectorEnd" : 15,
+                        "eraseSectorStart" : 2,
+                        "eraseSectorEnd" : 15
+                    }
+                }
             }
         },
         {
             "hidden" : false,
+            "legacy" : true,
             "boardType" : "H7",
             "boardArchString" : "OMV4P H7 32768 SDRAM",
             "boardDisplayName" : "OpenMV Cam H7 Plus (STM32H743 w/ SDRAM) Legacy",
@@ -151,11 +200,16 @@
                 "eraseAllSectorStart" : 1,
                 "eraseAllSectorEnd" : 15,
                 "eraseSectorStart" : 2,
-                "eraseSectorEnd" : 15
+                "eraseSectorEnd" : 15,
+                "fallbackBootloader" : {
+                    "vidpid" : "37C5:924A",
+                    "type" : "openmv_dfu"
+                }
             }
         },
         {
             "hidden" : false,
+            "legacy" : false,
             "boardType" : "H7",
             "boardArchString" : "OMV4P H7 32768 SDRAM",
             "boardDisplayName" : "OpenMV Cam H7 Plus (STM32H743 w/ SDRAM)",
@@ -178,11 +232,22 @@
                         "cmd": "-a 1",
                         "name": "firmware.bin"
                     }
-                ]
+                ],
+                "fallbackBootloader" : {
+                    "vidpid" : "0483:df11",
+                    "type" : "internal",
+                    "settings" : {
+                        "eraseAllSectorStart" : 1,
+                        "eraseAllSectorEnd" : 15,
+                        "eraseSectorStart" : 2,
+                        "eraseSectorEnd" : 15
+                    }
+                }
             }
         },
         {
             "hidden" : false,
+            "legacy" : true,
             "boardType" : "H7",
             "boardArchString" : "OPENMVPT 65536 SDRAM",
             "boardDisplayName" : "OpenMV Pure Thermal (STM32H743 w/ SDRAM) Legacy",
@@ -196,11 +261,16 @@
                 "eraseAllSectorStart" : 1,
                 "eraseAllSectorEnd" : 15,
                 "eraseSectorStart" : 2,
-                "eraseSectorEnd" : 15
+                "eraseSectorEnd" : 15,
+                "fallbackBootloader" : {
+                    "vidpid" : "37C5:9205",
+                    "type" : "openmv_dfu"
+                }
             }
         },
         {
             "hidden" : false,
+            "legacy" : false,
             "boardType" : "H7",
             "boardArchString" : "OPENMVPT 65536 SDRAM",
             "boardDisplayName" : "OpenMV Pure Thermal (STM32H743 w/ SDRAM)",
@@ -223,11 +293,22 @@
                         "cmd": "-a 1",
                         "name": "firmware.bin"
                     }
-                ]
+                ],
+                "fallbackBootloader" : {
+                    "vidpid" : "0483:df11",
+                    "type" : "internal",
+                    "settings" : {
+                        "eraseAllSectorStart" : 1,
+                        "eraseAllSectorEnd" : 15,
+                        "eraseSectorStart" : 2,
+                        "eraseSectorEnd" : 15
+                    }
+                }
             }
         },
         {
             "hidden" : false,
+            "legacy" : false,
             "boardType" : "IMXRT1060",
             "boardArchString" : "OMVRT1060 32768 SDRAM",
             "boardDisplayName" : "OpenMV Cam RT1062",
@@ -258,6 +339,7 @@
         },
         {
             "hidden" : true,
+            "legacy" : false,
             "boardType" : "IMXRT1060",
             "boardArchString" : "OMVRT1060 32768 SDRAM",
             "boardDisplayName" : "OpenMV Cam RT1062 SBL",
@@ -288,6 +370,7 @@
         },
         {
             "hidden" : false,
+            "legacy" : false,
             "boardType" : "AE3",
             "boardArchString" : "OPENMV AE3",
             "boardDisplayName" : "OpenMV Cam AE3",
@@ -331,6 +414,7 @@
         },
         {
             "hidden" : false,
+            "legacy" : false,
             "boardType" : "H7",
             "boardArchString" : "PORTENTA H7 8192 SDRAM",
             "boardDisplayName" : "Arduino Portenta (STM32H747)",
@@ -359,6 +443,7 @@
         },
         {
             "hidden" : false,
+            "legacy" : false,
             "boardType" : "H7",
             "boardArchString" : "GIGA H7 8192 SDRAM",
             "boardDisplayName" : "Arduino Giga (STM32H747)",
@@ -387,6 +472,7 @@
         },
         {
             "hidden" : false,
+            "legacy" : false,
             "boardType" : "NICLAV",
             "boardArchString" : "NICLAV H7 1024",
             "boardDisplayName" : "Arduino Nicla Vision",
@@ -415,6 +501,7 @@
         },
         {
             "hidden" : false,
+            "legacy" : false,
             "boardType" : "NANO33",
             "boardArchString" : "NANO33 M4",
             "boardDisplayName" : "Nano33 BLE (nRF52840)",
@@ -431,6 +518,7 @@
         },
         {
             "hidden" : false,
+            "legacy" : false,
             "boardType" : "PICO",
             "boardArchString" : "PICO M0",
             "boardDisplayName" : "Arduino Nano RP2040 Connect (RP2040)",
@@ -448,6 +536,7 @@
         },
         {
             "hidden" : true,
+            "legacy" : false,
             "boardType" : "PICO",
             "boardArchString" : "PICO M0",
             "boardDisplayName" : "Arduino Nano RP2040 Connect (RP2040) UF2",

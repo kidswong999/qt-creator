@@ -1,8 +1,6 @@
 #include "openmvplugin.h"
-
-#include "tools/myqserialportinfo.h"
-
 #include "openmvtr.h"
+#include "openmvpluginconnect.h"
 
 namespace OpenMV {
 namespace Internal {
@@ -54,6 +52,79 @@ static bool extractAllWrapper(QByteArray *data, const QString &path)
     watcher.setFuture(QtConcurrent::run(extractAll, data, path));
     loop.exec();
     return watcher.result();
+}
+
+QString cleanPortVIDAndPID(const QString &vidAndPid)
+{
+    QStringList list = vidAndPid.split(QStringLiteral(":"));
+    QTC_ASSERT(list.size() == 2, return QString());
+    return QStringLiteral("{%1:%2}").arg(list.at(0).toInt(nullptr, 16), 4, 16, QChar('0')).arg(list.at(1).toInt(nullptr, 16), 4, 16, QChar('0'));
+}
+
+QString portVIDAndPID(const QString &selectedPort)
+{
+    QSerialPortInfo info(selectedPort);
+
+    if (info.isNull())
+    {
+        // TODO: For WiFi ports we need to return the VID:PID of the board somehow to make the rest of the logic work.
+        return QString();
+    }
+    else
+    {
+        MyQSerialPortInfo port(info);
+        return QStringLiteral("{%1:%2}").arg(port.vendorIdentifier(), 4, 16, QChar('0')).arg(port.productIdentifier(), 4, 16, QChar('0'));
+    }
+}
+
+QString portVIDAndPID(const MyQSerialPortInfo &info)
+{
+    if (info.isNull())
+    {
+        // TODO: For WiFi ports we need to return the VID:PID of the board somehow to make the rest of the logic work.
+        return QString();
+    }
+    else
+    {
+        return QStringLiteral("{%1:%2}").arg(info.vendorIdentifier(), 4, 16, QChar('0')).arg(info.productIdentifier(), 4, 16, QChar('0'));
+    }
+}
+
+bool matchVidPid(const QJsonObject &object, const QString &serialNumberFilter, const MyQSerialPortInfo &port)
+{
+    QStringList vidpid = object.value(QStringLiteral("boardVidPid")).toString().split(QStringLiteral(":"));
+    int mask = object.value(QStringLiteral("boardPidMask")).toString().toInt(nullptr, 16);
+    QStringList serialNumbersInverseFilters;
+
+    for (const QJsonValue &value : object.value(QStringLiteral("boardSerialNumberInverseFilters")).toArray())
+    {
+        serialNumbersInverseFilters.append(value.toString());
+    }
+
+    if((vidpid.size() == 2)
+    && (serialNumberFilter.isEmpty() || (serialNumberFilter == port.serialNumber().toUpper()))
+    && port.hasVendorIdentifier()
+    && port.vendorIdentifier() == vidpid.at(0).toInt(nullptr, 16)
+    && port.hasProductIdentifier()
+    && (port.productIdentifier() & mask) == vidpid.at(1).toInt(nullptr, 16))
+    {
+        return serialNumbersInverseFilters.isEmpty() || (!serialNumbersInverseFilters.contains(port.serialNumber()));
+    }
+
+    return false;
+}
+
+bool validPort(const QJsonDocument &settings, const QString &serialNumberFilter, const MyQSerialPortInfo &port)
+{
+    for (const QJsonValue &value : settings.object().value(QStringLiteral("boards")).toArray())
+    {
+        if (matchVidPid(value.toObject(), serialNumberFilter, port))
+        {
+            return true;
+        }
+    }
+
+    return false;
 }
 
 void OpenMVPlugin::packageUpdate()
@@ -446,85 +517,6 @@ void OpenMVPlugin::installTheLatestDevelopmentRelease()
     }
 }
 
-#define CONNECT_END() \
-do { \
-    m_working = false; \
-    QTimer::singleShot(0, this, &OpenMVPlugin::workingDone); \
-    return; \
-} while(0)
-
-#define RECONNECT_END() \
-do { \
-    m_working = false; \
-    QTimer::singleShot(0, this, [this] {connectClicked();}); \
-    return; \
-} while(0)
-
-#define RECONNECT_WAIT_END() \
-do { \
-    m_working = false; \
-    QTimer::singleShot(0, this, [this] {connectClicked(false, QString(), false, false, false, true);}); \
-    return; \
-} while(0)
-
-#define RECONNECT_AND_FORCEBOOTLOADER_END() \
-do { \
-    m_working = false; \
-    if((m_autoUpdate.isEmpty()) && (!m_autoErase)) QTimer::singleShot(0, this, [this, previousMapping] {connectClicked(true, QString(), false, false, false, false, previousMapping);}); \
-    else if(m_autoUpdate == QStringLiteral("release")) QTimer::singleShot(0, this, [this, previousMapping] {connectClicked(true, QString(), m_autoErase, false, false, false, previousMapping);}); \
-    else if(m_autoUpdate == QStringLiteral("developement")) QTimer::singleShot(0, this, [this, previousMapping] {connectClicked(true, QString(), m_autoErase, false, true, false, previousMapping);}); \
-    else if(QFileInfo(m_autoUpdate).isFile()) QTimer::singleShot(0, this, [this, previousMapping] {connectClicked(true, m_autoUpdate, (m_autoErase || m_autoUpdate.endsWith(QStringLiteral(".dfu"), Qt::CaseInsensitive)), false, false, false, previousMapping);}); \
-    else if(m_autoErase) QTimer::singleShot(0, this, [this, previousMapping] {connectClicked(true, QString(), true, true, false, false, previousMapping);}); \
-    return; \
-} while(0)
-
-#define CLOSE_CONNECT_END() \
-do { \
-    QEventLoop m_loop; \
-    connect(m_iodevice, &OpenMVPluginIO::closeResponse, &m_loop, &QEventLoop::quit); \
-    m_iodevice->close(); \
-    m_loop.exec(); \
-    m_working = false; \
-    QTimer::singleShot(0, this, &OpenMVPlugin::workingDone); \
-    return; \
-} while(0)
-
-#define CLOSE_RECONNECT_END() \
-do { \
-    QEventLoop m_loop; \
-    connect(m_iodevice, &OpenMVPluginIO::closeResponse, &m_loop, &QEventLoop::quit); \
-    m_iodevice->close(); \
-    m_loop.exec(); \
-    m_working = false; \
-    QTimer::singleShot(0, this, [this] {connectClicked();}); \
-    return; \
-} while(0)
-
-#define CLOSE_RECONNECT_WAIT_END() \
-do { \
-    QEventLoop m_loop; \
-    connect(m_iodevice, &OpenMVPluginIO::closeResponse, &m_loop, &QEventLoop::quit); \
-    m_iodevice->close(); \
-    m_loop.exec(); \
-    m_working = false; \
-    QTimer::singleShot(0, this, [this] {connectClicked(false, QString(), false, false, false, true);}); \
-    return; \
-} while(0)
-
-#define CLOSE_RECONNECT_AND_FORCEBOOTLOADER_END() \
-do { \
-    QEventLoop m_loop; \
-    connect(m_iodevice, &OpenMVPluginIO::closeResponse, &m_loop, &QEventLoop::quit); \
-    m_iodevice->close(); \
-    m_loop.exec(); \
-    m_working = false; \
-    if((m_autoUpdate.isEmpty()) && (!m_autoErase)) QTimer::singleShot(0, this, [this, previousMapping] {connectClicked(true, QString(), false, false, false, false, previousMapping);}); \
-    else if(m_autoUpdate == QStringLiteral("release")) QTimer::singleShot(0, this, [this, previousMapping] {connectClicked(true, QString(), m_autoErase, false, false, false, previousMapping);}); \
-    else if(m_autoUpdate == QStringLiteral("developement")) QTimer::singleShot(0, this, [this, previousMapping] {connectClicked(true, QString(), m_autoErase, false, true, false, previousMapping);}); \
-    else if(QFileInfo(m_autoUpdate).isFile()) QTimer::singleShot(0, this, [this, previousMapping] {connectClicked(true, m_autoUpdate, (m_autoErase || m_autoUpdate.endsWith(QStringLiteral(".dfu"), Qt::CaseInsensitive)), false, false, false, previousMapping);}); \
-    else if(m_autoErase) QTimer::singleShot(0, this, [this, previousMapping] {connectClicked(true, QString(), true, true, false, false, previousMapping);}); \
-    return; \
-} while(0)
 
 bool OpenMVPlugin::getTheLatestDevelopmentFirmware(const QString &arch, QString *path)
 {
@@ -608,79 +600,6 @@ bool OpenMVPlugin::getTheLatestDevelopmentFirmware(const QString &arch, QString 
         QMessageBox::critical(Core::ICore::dialogParent(),
             Tr::tr("Connect"),
             Tr::tr("Network request failed \"%L1\"!").arg(request2.url().toString()));
-    }
-
-    return false;
-}
-
-QString cleanPortVIDAndPID(const QString &vidAndPid)
-{
-    QStringList list = vidAndPid.split(QStringLiteral(":"));
-    QTC_ASSERT(list.size() == 2, return QString());
-    return QStringLiteral("{%1:%2}").arg(list.at(0).toInt(nullptr, 16), 4, 16, QChar('0')).arg(list.at(1).toInt(nullptr, 16), 4, 16, QChar('0'));
-}
-
-QString portVIDAndPID(const QString &selectedPort)
-{
-    QSerialPortInfo info(selectedPort);
-
-    if (info.isNull())
-    {
-        // TODO: For WiFi ports we need to return the VID:PID of the board somehow to make the rest of the logic work.
-        return QString();
-    }
-    else
-    {
-        MyQSerialPortInfo port(info);
-        return QStringLiteral("{%1:%2}").arg(port.vendorIdentifier(), 4, 16, QChar('0')).arg(port.productIdentifier(), 4, 16, QChar('0'));
-    }
-}
-
-QString portVIDAndPID(const MyQSerialPortInfo &info)
-{
-    if (info.isNull())
-    {
-        // TODO: For WiFi ports we need to return the VID:PID of the board somehow to make the rest of the logic work.
-        return QString();
-    }
-    else
-    {
-        return QStringLiteral("{%1:%2}").arg(info.vendorIdentifier(), 4, 16, QChar('0')).arg(info.productIdentifier(), 4, 16, QChar('0'));
-    }
-}
-
-bool matchVidPid(const QJsonObject &object, const QString &serialNumberFilter, const MyQSerialPortInfo &port)
-{
-    QStringList vidpid = object.value(QStringLiteral("boardVidPid")).toString().split(QStringLiteral(":"));
-    int mask = object.value(QStringLiteral("boardPidMask")).toString().toInt(nullptr, 16);
-    QStringList serialNumbersInverseFilters;
-
-    for (const QJsonValue &value : object.value(QStringLiteral("boardSerialNumberInverseFilters")).toArray())
-    {
-        serialNumbersInverseFilters.append(value.toString());
-    }
-
-    if((vidpid.size() == 2)
-    && (serialNumberFilter.isEmpty() || (serialNumberFilter == port.serialNumber().toUpper()))
-    && port.hasVendorIdentifier()
-    && port.vendorIdentifier() == vidpid.at(0).toInt(nullptr, 16)
-    && port.hasProductIdentifier()
-    && (port.productIdentifier() & mask) == vidpid.at(1).toInt(nullptr, 16))
-    {
-        return serialNumbersInverseFilters.isEmpty() || (!serialNumbersInverseFilters.contains(port.serialNumber()));
-    }
-
-    return false;
-}
-
-bool validPort(const QJsonDocument &settings, const QString &serialNumberFilter, const MyQSerialPortInfo &port)
-{
-    for (const QJsonValue &value : settings.object().value(QStringLiteral("boards")).toArray())
-    {
-        if (matchVidPid(value.toObject(), serialNumberFilter, port))
-        {
-            return true;
-        }
     }
 
     return false;
@@ -986,6 +905,7 @@ void OpenMVPlugin::connectClicked(bool forceBootloader, QString forceFirmwarePat
         int originalEraseFlashSectorEnd = FLASH_SECTOR_END;
         int originalEraseFlashSectorAllStart = FLASH_SECTOR_ALL_START;
         int originalEraseFlashSectorAllEnd = FLASH_SECTOR_ALL_END;
+        QJsonObject originalFallbackBootloaderSettings = QJsonObject();
         QString originalDfuVidPid = QString();
         bool dfuNoDialogs = false;
         bool repairingBootloader = false;
@@ -1097,11 +1017,12 @@ void OpenMVPlugin::connectClicked(bool forceBootloader, QString forceFirmwarePat
                 QMap<QString, QString> mappings;
                 QMap<QString, QPair<int, int> > eraseMappings;
                 QMap<QString, QPair<int, int> > eraseAllMappings;
+                QMap<QString, QJsonObject> fallbackBootloaderMappings;
                 QMap<QString, QString> vidpidMappings;
 
                 for (const QJsonValue &value : m_firmwareSettings.object().value(QStringLiteral("boards")).toArray())
                 {
-                    if (!value.toObject().value(QStringLiteral("hidden")).toBool())
+                    if ((!value.toObject().value(QStringLiteral("hidden")).toBool()) && (!value.toObject().value(QStringLiteral("legacy")).toBool()))
                     {
                         QString a = value.toObject().value(QStringLiteral("boardDisplayName")).toString();
                         mappings.insert(a, value.toObject().value(QStringLiteral("boardFirmwareFolder")).toString());
@@ -1116,11 +1037,20 @@ void OpenMVPlugin::connectClicked(bool forceBootloader, QString forceFirmwarePat
                             int eraseAllSectorEnd = bootloaderSettings.value(QStringLiteral("eraseAllSectorEnd")).toString().toInt();
                             eraseMappings.insert(a, QPair<int, int>(eraseSectorStart, eraseSectorEnd));
                             eraseAllMappings.insert(a, QPair<int, int>(eraseAllSectorStart, eraseAllSectorEnd));
+                            fallbackBootloaderMappings.insert(a, bootloaderSettings.value(QStringLiteral("fallbackBootloader")).toObject());
+                        }
+                        else if (value.toObject().value(QStringLiteral("bootloaderType")).toString() == QStringLiteral("openmv_dfu"))
+                        {
+                            QJsonObject bootloaderSettings = value.toObject().value(QStringLiteral("bootloaderSettings")).toObject();
+                            eraseMappings.insert(a, QPair<int, int>(0, 0));
+                            eraseAllMappings.insert(a, QPair<int, int>(0, 0));
+                            fallbackBootloaderMappings.insert(a, bootloaderSettings.value(QStringLiteral("fallbackBootloader")).toObject());
                         }
                         else
                         {
                             eraseMappings.insert(a, QPair<int, int>(0, 0));
                             eraseAllMappings.insert(a, QPair<int, int>(0, 0));
+                            fallbackBootloaderMappings.insert(a, QJsonObject());
                         }
                     }
                 }
@@ -1138,11 +1068,13 @@ void OpenMVPlugin::connectClicked(bool forceBootloader, QString forceFirmwarePat
                             mappings.insert(QStringLiteral("NANO33_M4_OLD"), QStringLiteral("NANO33"));
                             eraseMappings.insert(QStringLiteral("NANO33_M4_OLD"), QPair<int, int>(0, 0));
                             eraseAllMappings.insert(QStringLiteral("NANO33_M4_OLD"), QPair<int, int>(0, 0));
+                            fallbackBootloaderMappings.insert(QStringLiteral("NANO33_M4_OLD"), QJsonObject());
                             vidpidMappings.insert(QStringLiteral("NANO33_M4_OLD"), QStringLiteral("2341:805a"));
 
                             mappings.insert(QStringLiteral("PICO_M0_OLD"), QStringLiteral("PICO"));
                             eraseMappings.insert(QStringLiteral("PICO_M0_OLD"), QPair<int, int>(0, 0));
                             eraseAllMappings.insert(QStringLiteral("PICO_M0_OLD"), QPair<int, int>(0, 0));
+                            fallbackBootloaderMappings.insert(QStringLiteral("PICO_M0_OLD"), QJsonObject());
                             vidpidMappings.insert(QStringLiteral("PICO_M0_OLD"), QStringLiteral("2341:805e"));
 
                             for(QMap<QString, QString>::iterator it = mappings.begin(); it != mappings.end(); )
@@ -1162,6 +1094,7 @@ void OpenMVPlugin::connectClicked(bool forceBootloader, QString forceFirmwarePat
                                 {
                                     eraseMappings.remove(it.key());
                                     eraseAllMappings.remove(it.key());
+                                    fallbackBootloaderMappings.remove(it.key());
                                     vidpidMappings.remove(it.key());
                                     it = mappings.erase(it);
                                 }
@@ -1209,6 +1142,7 @@ void OpenMVPlugin::connectClicked(bool forceBootloader, QString forceFirmwarePat
                                     originalEraseFlashSectorEnd = eraseMappings.value(temp).second;
                                     originalEraseFlashSectorAllStart = eraseAllMappings.value(temp).first;
                                     originalEraseFlashSectorAllEnd = eraseAllMappings.value(temp).second;
+                                    originalFallbackBootloaderSettings = fallbackBootloaderMappings.value(temp);
                                     originalDfuVidPid = vidpidMappings.value(temp);
                                 }
                             }
@@ -1626,6 +1560,7 @@ void OpenMVPlugin::connectClicked(bool forceBootloader, QString forceFirmwarePat
                             if (value.toObject().value(QStringLiteral("bootloaderType")).toString() == QStringLiteral("openmv_dfu"))
                             {
                                 isOpenMVDfu = true;
+                                originalDfuVidPid = value.toObject().value(QStringLiteral("bootloaderVidPid")).toString();
                                 break;
                             }
 
@@ -1695,6 +1630,7 @@ void OpenMVPlugin::connectClicked(bool forceBootloader, QString forceFirmwarePat
                         QMap<QString, QString> mappingsHumanReadable;
                         QMap<QString, QPair<int, int> > eraseMappings;
                         QMap<QString, QPair<int, int> > eraseAllMappings;
+                        QMap<QString, QJsonObject> fallbackBootloaderMappings;
                         QMap<QString, QString> vidpidMappings;
 
                         for (const QJsonValue &value : m_firmwareSettings.object().value(QStringLiteral("boards")).toArray())
@@ -1716,11 +1652,20 @@ void OpenMVPlugin::connectClicked(bool forceBootloader, QString forceFirmwarePat
                                     int eraseAllSectorEnd = bootloaderSettings.value(QStringLiteral("eraseAllSectorEnd")).toString().toInt();
                                     eraseMappings.insert(a, QPair<int, int>(eraseSectorStart, eraseSectorEnd));
                                     eraseAllMappings.insert(a, QPair<int, int>(eraseAllSectorStart, eraseAllSectorEnd));
+                                    fallbackBootloaderMappings.insert(a, bootloaderSettings.value(QStringLiteral("fallbackBootloader")).toObject());
+                                }
+                                else if (value.toObject().value(QStringLiteral("bootloaderType")).toString() == QStringLiteral("openmv_dfu"))
+                                {
+                                    QJsonObject bootloaderSettings = value.toObject().value(QStringLiteral("bootloaderSettings")).toObject();
+                                    eraseMappings.insert(a, QPair<int, int>(0, 0));
+                                    eraseAllMappings.insert(a, QPair<int, int>(0, 0));
+                                    fallbackBootloaderMappings.insert(a, bootloaderSettings.value(QStringLiteral("fallbackBootloader")).toObject());
                                 }
                                 else
                                 {
                                     eraseMappings.insert(a, QPair<int, int>(0, 0));
                                     eraseAllMappings.insert(a, QPair<int, int>(0, 0));
+                                    fallbackBootloaderMappings.insert(a, QJsonObject());
                                 }
                             }
                         }
@@ -1760,6 +1705,7 @@ void OpenMVPlugin::connectClicked(bool forceBootloader, QString forceFirmwarePat
                             originalEraseFlashSectorEnd = eraseMappings.value(temp).second;
                             originalEraseFlashSectorAllStart = eraseAllMappings.value(temp).first;
                             originalEraseFlashSectorAllEnd = eraseAllMappings.value(temp).second;
+                            originalFallbackBootloaderSettings = fallbackBootloaderMappings.value(temp);
 
                             if(installTheLatestDevelopmentFirmware)
                             {
@@ -1768,6 +1714,14 @@ void OpenMVPlugin::connectClicked(bool forceBootloader, QString forceFirmwarePat
                                     CLOSE_CONNECT_END();
                                 }
                             }
+                        }
+                        else
+                        {
+                            originalEraseFlashSectorStart = eraseMappings.value(temp).first;
+                            originalEraseFlashSectorEnd = eraseMappings.value(temp).second;
+                            originalEraseFlashSectorAllStart = eraseAllMappings.value(temp).first;
+                            originalEraseFlashSectorAllEnd = eraseAllMappings.value(temp).second;
+                            originalFallbackBootloaderSettings = fallbackBootloaderMappings.value(temp);
                         }
 
                         QStringList vidpid = vidpidMappings.value(temp).split(QStringLiteral(":"));
@@ -1821,837 +1775,60 @@ void OpenMVPlugin::connectClicked(bool forceBootloader, QString forceFirmwarePat
                 }
             }
 
-            // BIN Bootloader /////////////////////////////////////////////////
-
-            bool tryFastMode = true;
-
-            while((!isOpenMVDfu) && (!isIMX) && (!isArduino) && (justEraseFlashFs || firmwarePath.endsWith(QStringLiteral(".bin"), Qt::CaseInsensitive)))
+            if ((!isOpenMVDfu) && (!isIMX) && (!isArduino) && (justEraseFlashFs || firmwarePath.endsWith(QStringLiteral(".bin"), Qt::CaseInsensitive)))
             {
-                QFile file(firmwarePath);
-
-                if(justEraseFlashFs || file.open(QIODevice::ReadOnly))
-                {
-                    QByteArray data = justEraseFlashFs ? QByteArray() : file.readAll();
-
-                    if(justEraseFlashFs || ((file.error() == QFile::NoError) && (!data.isEmpty())))
-                    {
-                        if(!justEraseFlashFs) file.close();
-
-                        int qspif_start_block = int();
-                        int qspif_max_block = int();
-                        int qspif_block_size_in_bytes = int();
-                        int packet_chunksize = int();
-                        int packet_batchsize = int();
-
-                        // Start Bootloader ///////////////////////////////////
-                        {
-                            bool done2 = bool(), loopExit = false, done22 = false;
-                            bool *done2Ptr = &done2, *loopExitPtr = &loopExit, *done2Ptr2 = &done22;
-                            int version2 = int(), *version2Ptr = &version2;
-                            bool highspeed2 = bool(), *highspeed2Ptr = &highspeed2;
-
-                            QMetaObject::Connection conn = connect(m_ioport, &OpenMVPluginSerialPort::bootloaderStartResponse,
-                                this, [done2Ptr, loopExitPtr, version2Ptr, highspeed2Ptr] (bool done, int version, bool highspeed) {
-                                *done2Ptr = done;
-                                *loopExitPtr = true;
-                                *version2Ptr = version;
-                                *highspeed2Ptr = highspeed;
-                            });
-
-                            QMetaObject::Connection conn2 = connect(m_ioport, &OpenMVPluginSerialPort::bootloaderStopResponse,
-                                this, [done2Ptr2] {
-                                *done2Ptr2 = true;
-                            });
-
-                            QProgressDialog dialog(((!tryFastMode) || forceBootloaderBricked)
-                                    ? QString(QStringLiteral("%1%2")).arg(previousMappingSet ? Tr::tr("Reconnect your OpenMV Cam...") : Tr::tr("Disconnect your OpenMV Cam and then reconnect it...")).arg((previousMappingSet || justEraseFlashFs) ? QString() : Tr::tr("\n\nHit cancel to skip to DFU reprogramming."))
-                                    : Tr::tr("Connecting... (Hit cancel if this takes more than 5 seconds)."), Tr::tr("Cancel"), 0, 0, Core::ICore::dialogParent(),
-                                Qt::MSWindowsFixedSizeDialogHint | Qt::WindowTitleHint | Qt::CustomizeWindowHint |
-                                (Utils::HostOsInfo::isLinuxHost() ? Qt::WindowDoesNotAcceptFocus : Qt::WindowType(0)));
-                            dialog.setWindowModality(Qt::ApplicationModal);
-                            dialog.setAttribute(Qt::WA_ShowWithoutActivating);
-                            dialog.show();
-
-                            connect(&dialog, &QProgressDialog::canceled,
-                                    m_ioport, &OpenMVPluginSerialPort::bootloaderStop);
-
-                            QEventLoop loop, loop0, loop1;
-
-                            connect(m_ioport, &OpenMVPluginSerialPort::bootloaderStartResponse,
-                                    &loop, &QEventLoop::quit);
-
-                            connect(m_ioport, &OpenMVPluginSerialPort::bootloaderStopResponse,
-                                    &loop0, &QEventLoop::quit);
-
-                            connect(m_ioport, &OpenMVPluginSerialPort::bootloaderResetResponse,
-                                    &loop1, &QEventLoop::quit);
-
-                            m_ioport->bootloaderStart(selectedPort);
-
-                            while(!loopExit)
-                            {
-                                QSerialPortInfo::availablePorts();
-                                QApplication::processEvents();
-                                // Keep updating the list of available serial
-                                // ports for the non-gui serial thread.
-                            }
-
-                            dialog.close();
-
-                            if(!done22)
-                            {
-                                loop0.exec();
-                            }
-
-                            m_ioport->bootloaderReset();
-
-                            loop1.exec();
-
-                            disconnect(conn);
-
-                            disconnect(conn2);
-
-                            if(!done2)
-                            {
-                                QMessageBox::critical(Core::ICore::dialogParent(),
-                                    Tr::tr("Connect"),
-                                    Tr::tr("Unable to connect to your OpenMV Cam's normal bootloader!"));
-
-                                if((!previousMappingSet) && (!justEraseFlashFs) && forceFirmwarePath.isEmpty() && QMessageBox::question(Core::ICore::dialogParent(),
-                                    Tr::tr("Connect"),
-                                    Tr::tr("OpenMV IDE can still try to repair your OpenMV Cam using your OpenMV Cam's DFU Bootloader.\n\n"
-                                       "Continue?"),
-                                    QMessageBox::Ok | QMessageBox::Cancel, QMessageBox::Ok)
-                                == QMessageBox::Ok)
-                                {
-                                    firmwarePath = QFileInfo(firmwarePath).path() + QStringLiteral("/bootloader.dfu");
-                                    repairingBootloader = true;
-                                    break;
-                                }
-
-                                CONNECT_END();
-                            }
-
-                            m_iodevice->bootloaderHS(highspeed2);
-                            m_iodevice->bootloaderFastMode(tryFastMode);
-
-                            packet_chunksize = highspeed2 ? (tryFastMode ? HS_CHUNK_SIZE : SAFE_HS_CHUNK_SIZE)
-                                                          : (tryFastMode ? FS_CHUNK_SIZE : SAFE_FS_CHUNK_SIZE);
-                            packet_batchsize = tryFastMode ? FAST_FLASH_PACKET_BATCH_COUNT : SAFE_FLASH_PACKET_BATCH_COUNT;
-
-                            if((version2 == V2_BOOTLDR) || (version2 == V3_BOOTLDR))
-                            {
-                                int all_start2 = int(), *all_start2Ptr = &all_start2;
-                                int start2 = int(), *start2Ptr = &start2;
-                                int last2 = int(), *last2Ptr = &last2;
-
-                                QMetaObject::Connection conn = connect(m_iodevice, &OpenMVPluginIO::bootloaderQueryDone,
-                                    this, [all_start2Ptr, start2Ptr, last2Ptr] (int all_start, int start, int last) {
-                                    *all_start2Ptr = all_start;
-                                    *start2Ptr = start;
-                                    *last2Ptr = last;
-                                });
-
-                                QEventLoop loop;
-
-                                connect(m_iodevice, &OpenMVPluginIO::bootloaderQueryDone,
-                                        &loop, &QEventLoop::quit);
-
-                                m_iodevice->bootloaderQuery();
-
-                                loop.exec();
-
-                                disconnect(conn);
-
-                                if((all_start2 || start2 || last2)
-                                && ((0 <= all_start2) && (all_start2 <= 1023) && (0 <= start2) && (start2 <= 1023) && (0 <= last2) && (last2 <= 1023)))
-                                {
-                                    originalEraseFlashSectorStart = start2;
-                                    originalEraseFlashSectorEnd = last2;
-                                    originalEraseFlashSectorAllStart = all_start2;
-                                    originalEraseFlashSectorAllEnd = last2;
-                                }
-                            }
-
-                            if(version2 == V3_BOOTLDR)
-                            {
-                                int *start_block2Ptr = &qspif_start_block;
-                                int *max_block2Ptr = &qspif_max_block;
-                                int *block_size_in_bytes2Ptr = &qspif_block_size_in_bytes;
-
-                                QMetaObject::Connection conn = connect(m_iodevice, &OpenMVPluginIO::bootloaderQSPIFLayoutDone,
-                                    this, [start_block2Ptr, max_block2Ptr, block_size_in_bytes2Ptr] (int start_block, int max_block, int block_size_in_bytes) {
-                                    *start_block2Ptr = start_block;
-                                    *max_block2Ptr = max_block;
-                                    *block_size_in_bytes2Ptr = block_size_in_bytes;
-                                });
-
-                                QEventLoop loop;
-
-                                connect(m_iodevice, &OpenMVPluginIO::bootloaderQSPIFLayoutDone,
-                                        &loop, &QEventLoop::quit);
-
-                                m_iodevice->bootloaderQSPIFLayout();
-
-                                loop.exec();
-
-                                disconnect(conn);
-                            }
-                        }
-
-                        QList<QByteArray> dataChunks;
-
-                        for(int i = 0; i < data.size(); i += packet_chunksize)
-                        {
-                            dataChunks.append(data.mid(i, qMin(packet_chunksize, data.size() - i)));
-                        }
-
-                        if(dataChunks.size() && (dataChunks.last().size() % 4))
-                        {
-                            dataChunks.last().append(QByteArray(4 - (dataChunks.last().size() % 4), (char) 255));
-                        }
-
-                        // Erase Flash ////////////////////////////////////////
-                        {
-                            int flash_start = forceFlashFSErase ? originalEraseFlashSectorAllStart : originalEraseFlashSectorStart;
-                            int flash_end = forceFlashFSErase ? originalEraseFlashSectorAllEnd : originalEraseFlashSectorEnd;
-
-                            if(justEraseFlashFs)
-                            {
-                                flash_end = originalEraseFlashSectorStart - 1;
-                            }
-
-                            QProgressDialog dialog(Tr::tr("Erasing..."), Tr::tr("Cancel"), flash_start, flash_end, Core::ICore::dialogParent(),
-                                Qt::MSWindowsFixedSizeDialogHint | Qt::WindowTitleHint | Qt::CustomizeWindowHint |
-                                (Utils::HostOsInfo::isLinuxHost() ? Qt::WindowDoesNotAcceptFocus : Qt::WindowType(0)));
-                            dialog.setWindowModality(Qt::ApplicationModal);
-                            dialog.setAttribute(Qt::WA_ShowWithoutActivating);
-                            dialog.setCancelButton(Q_NULLPTR);
-                            dialog.show();
-
-                            if(forceFlashFSErase && (qspif_start_block || qspif_max_block || qspif_block_size_in_bytes))
-                            {
-                                bool ok2 = bool();
-                                bool *ok2Ptr = &ok2;
-
-                                QMetaObject::Connection conn2 = connect(m_iodevice, &OpenMVPluginIO::bootloaderQSPIFEraseDone,
-                                    this, [ok2Ptr] (bool ok) {
-                                    *ok2Ptr = ok;
-                                });
-
-                                QEventLoop loop0, loop1;
-
-                                if(tryFastMode)
-                                {
-                                    connect(m_iodevice, &OpenMVPluginIO::queueEmpty,
-                                            &loop0, &QEventLoop::quit);
-                                }
-                                else
-                                {
-                                    connect(m_iodevice, &OpenMVPluginIO::bootloaderQSPIFEraseDone,
-                                            &loop0, &QEventLoop::quit);
-                                }
-
-                                m_iodevice->bootloaderQSPIFErase(qspif_start_block);
-
-                                loop0.exec();
-
-                                if((!tryFastMode) && ok2)
-                                {
-                                    QTimer::singleShot(SAFE_FLASH_ERASE_DELAY, &loop1, &QEventLoop::quit);
-                                    loop1.exec();
-                                }
-
-                                disconnect(conn2);
-
-                                if(!ok2)
-                                {
-                                    dialog.close();
-
-                                    if(tryFastMode)
-                                    {
-                                        tryFastMode = false;
-                                        continue;
-                                    }
-                                    else
-                                    {
-                                        QMessageBox::critical(Core::ICore::dialogParent(),
-                                            Tr::tr("Connect"),
-                                            Tr::tr("Timeout Error!"));
-
-                                        CLOSE_CONNECT_END();
-                                    }
-                                }
-                            }
-
-                            bool ok2 = true;
-                            bool *ok2Ptr = &ok2;
-
-                            QMetaObject::Connection conn2 = connect(m_iodevice, &OpenMVPluginIO::flashEraseDone,
-                                this, [ok2Ptr] (bool ok) {
-                                *ok2Ptr = *ok2Ptr && ok;
-                            });
-
-                            for(int i = flash_start; i <= flash_end; i++)
-                            {
-                                QEventLoop loop0, loop1;
-
-                                if(tryFastMode)
-                                {
-                                    connect(m_iodevice, &OpenMVPluginIO::queueEmpty,
-                                            &loop0, &QEventLoop::quit);
-                                }
-                                else
-                                {
-                                    connect(m_iodevice, &OpenMVPluginIO::flashEraseDone,
-                                            &loop0, &QEventLoop::quit);
-                                }
-
-                                m_iodevice->flashErase(i);
-
-                                loop0.exec();
-
-                                if(!ok2)
-                                {
-                                    break;
-                                }
-
-                                if(!tryFastMode)
-                                {
-                                    QTimer::singleShot(SAFE_FLASH_ERASE_DELAY, &loop1, &QEventLoop::quit);
-                                    loop1.exec();
-                                }
-
-                                dialog.setValue(i);
-                            }
-
-                            dialog.close();
-
-                            disconnect(conn2);
-
-                            if(!ok2)
-                            {
-                                if(tryFastMode)
-                                {
-                                    tryFastMode = false;
-                                    continue;
-                                }
-                                else
-                                {
-                                    QMessageBox::critical(Core::ICore::dialogParent(),
-                                        Tr::tr("Connect"),
-                                        Tr::tr("Timeout Error!"));
-
-                                    CLOSE_CONNECT_END();
-                                }
-                            }
-                        }
-
-                        // Program Flash //////////////////////////////////////
-
-                        if(!justEraseFlashFs)
-                        {
-                            bool ok2 = true;
-                            bool *ok2Ptr = &ok2;
-
-                            QMetaObject::Connection conn2 = connect(m_iodevice, &OpenMVPluginIO::flashWriteDone,
-                                this, [ok2Ptr] (bool ok) {
-                                *ok2Ptr = *ok2Ptr && ok;
-                            });
-
-                            QProgressDialog dialog(Tr::tr("Programming..."), Tr::tr("Cancel"), 0, dataChunks.size() - 1, Core::ICore::dialogParent(),
-                                Qt::MSWindowsFixedSizeDialogHint | Qt::WindowTitleHint | Qt::CustomizeWindowHint |
-                                (Utils::HostOsInfo::isLinuxHost() ? Qt::WindowDoesNotAcceptFocus : Qt::WindowType(0)));
-                            dialog.setWindowModality(Qt::ApplicationModal);
-                            dialog.setAttribute(Qt::WA_ShowWithoutActivating);
-                            dialog.setCancelButton(Q_NULLPTR);
-                            dialog.show();
-
-                            for(int i = 0; i < dataChunks.size(); i += packet_batchsize)
-                            {
-                                QEventLoop loop0, loop1;
-
-                                if(tryFastMode)
-                                {
-                                    connect(m_iodevice, &OpenMVPluginIO::queueEmpty,
-                                            &loop0, &QEventLoop::quit);
-                                }
-                                else
-                                {
-                                    connect(m_iodevice, &OpenMVPluginIO::flashWriteDone,
-                                            &loop0, &QEventLoop::quit);
-                                }
-
-                                for (int j = 0, jj = qMin(packet_batchsize, dataChunks.size() - i); j < jj; j++) {
-                                    m_iodevice->flashWrite(dataChunks.at(i + j));
-                                }
-
-                                loop0.exec();
-
-                                if(!ok2)
-                                {
-                                    break;
-                                }
-
-                                if(!tryFastMode)
-                                {
-                                    QTimer::singleShot(SAFE_FLASH_WRITE_DELAY, &loop1, &QEventLoop::quit);
-                                    loop1.exec();
-                                }
-
-                                dialog.setValue(i);
-                            }
-
-                            dialog.close();
-
-                            disconnect(conn2);
-
-                            if(!ok2)
-                            {
-                                if(tryFastMode)
-                                {
-                                    tryFastMode = false;
-                                    continue;
-                                }
-                                else
-                                {
-                                    QMessageBox::critical(Core::ICore::dialogParent(),
-                                        Tr::tr("Connect"),
-                                        Tr::tr("Timeout Error!"));
-
-                                    CLOSE_CONNECT_END();
-                                }
-                            }
-                        }
-
-                        // Reset Bootloader ///////////////////////////////////
-                        {
-                            QProgressDialog dialog(Tr::tr("Programming..."), Tr::tr("Cancel"), 0, 0, Core::ICore::dialogParent(),
-                                Qt::MSWindowsFixedSizeDialogHint | Qt::WindowTitleHint | Qt::CustomizeWindowHint |
-                                (Utils::HostOsInfo::isLinuxHost() ? Qt::WindowDoesNotAcceptFocus : Qt::WindowType(0)));
-                            dialog.setWindowModality(Qt::ApplicationModal);
-                            dialog.setAttribute(Qt::WA_ShowWithoutActivating);
-                            dialog.setCancelButton(Q_NULLPTR);
-                            dialog.show();
-
-                            QEventLoop loop;
-
-                            connect(m_iodevice, &OpenMVPluginIO::closeResponse,
-                                    &loop, &QEventLoop::quit);
-
-                            m_iodevice->bootloaderReset();
-                            m_iodevice->close();
-
-                            loop.exec();
-                            dialog.close();
-                            QApplication::processEvents();
-
-                            if((m_autoUpdate.isEmpty()) && (!m_autoErase)) QMessageBox::information(Core::ICore::dialogParent(),
-                                Tr::tr("Connect"),
-                                QString(QStringLiteral("%1%2%3%4")).arg((justEraseFlashFs ? Tr::tr("Onboard Data Flash Erased!\n\n") : Tr::tr("Firmware Upgrade complete!\n\n")))
-                                .arg(Tr::tr("Your OpenMV Cam will start running its built-in self-test if no sd card is attached... this may take a while.\n\n"))
-                                .arg(Tr::tr("Click OK when your OpenMV Cam's RGB LED starts blinking blue - which indicates the self-test is complete."))
-                                .arg(Tr::tr("\n\nIf you overwrote main.py on your OpenMV Cam and did not erase the disk then your OpenMV Cam will just run that main.py."
-                                        "\n\nIn this case click OK when you see your OpenMV Cam's internal flash drive mount (a window may or may not pop open).")));
-
-                            RECONNECT_WAIT_END();
-                        }
-                    }
-                    else if(file.error() != QFile::NoError)
-                    {
-                        QMessageBox::critical(Core::ICore::dialogParent(),
-                            Tr::tr("Connect"),
-                            Tr::tr("Error: %L1!").arg(file.errorString()));
-
-                        if(forceBootloaderBricked)
-                        {
-                            CONNECT_END();
-                        }
-                        else
-                        {
-                            CLOSE_CONNECT_END();
-                        }
-                    }
-                    else
-                    {
-                        QMessageBox::critical(Core::ICore::dialogParent(),
-                            Tr::tr("Connect"),
-                            Tr::tr("The firmware file is empty!"));
-
-                        if(forceBootloaderBricked)
-                        {
-                            CONNECT_END();
-                        }
-                        else
-                        {
-                            CLOSE_CONNECT_END();
-                        }
-                    }
-                }
-                else
-                {
-                    QMessageBox::critical(Core::ICore::dialogParent(),
-                        Tr::tr("Connect"),
-                        Tr::tr("Error: %L1!").arg(file.errorString()));
-
-                    if(forceBootloaderBricked)
-                    {
-                        CONNECT_END();
-                    }
-                    else
-                    {
-                        CLOSE_CONNECT_END();
-                    }
-                }
+                openmvInternalBootloader(forceFirmwarePath,
+                                         forceFlashFSErase,
+                                         justEraseFlashFs,
+                                         previousMapping,
+                                         selectedPort,
+                                         forceBootloaderBricked,
+                                         previousMappingSet,
+                                         firmwarePath,
+                                         originalEraseFlashSectorStart,
+                                         originalEraseFlashSectorEnd,
+                                         originalEraseFlashSectorAllStart,
+                                         originalEraseFlashSectorAllEnd,
+                                         originalFallbackBootloaderSettings,
+                                         originalDfuVidPid,
+                                         dfuNoDialogs);
+                return;
             }
 
             if(isOpenMVDfu)
             {
-                // Stopping ///////////////////////////////////////////////////////
-
-                if(selectedDfuDevice.isEmpty())
+                if (originalFallbackBootloaderSettings.value(QStringLiteral("type")) == QStringLiteral("internal"))
                 {
-                    QEventLoop loop;
+                    QJsonObject fallbackSettings = originalFallbackBootloaderSettings.value(QStringLiteral("settings")).toObject();
+                    QJsonObject dfuFallbackSettings;
+                    dfuFallbackSettings.insert(QStringLiteral("vidpid"), originalDfuVidPid);
+                    dfuFallbackSettings.insert(QStringLiteral("type"), QJsonValue::fromVariant(QStringLiteral("openmv_dfu")));
 
-                    connect(m_iodevice, &OpenMVPluginIO::closeResponse,
-                            &loop, &QEventLoop::quit);
-
-                    if(!m_portPath.isEmpty())
-                    {
-#if defined(Q_OS_WIN)
-                        wchar_t driveLetter[m_portPath.size()];
-                        m_portPath.toWCharArray(driveLetter);
-
-                        if(!ejectVolume(driveLetter[0]))
-                        {
-                            QMessageBox::critical(Core::ICore::dialogParent(),
-                                Tr::tr("Disconnect"),
-                                Tr::tr("Failed to eject \"%L1\"!").arg(m_portPath));
-                        }
-#elif defined(Q_OS_LINUX)
-                        Utils::Process process;
-                        std::chrono::seconds timeout(10);
-                        process.setCommand(Utils::CommandLine(Utils::FilePath::fromString(QStringLiteral("umount")),
-                                                              QStringList() << QDir::toNativeSeparators(QDir::cleanPath(m_portPath))));
-                        process.runBlocking(timeout, Utils::EventLoopMode::On);
-
-                        if(process.result() != Utils::ProcessResult::FinishedWithSuccess)
-                        {
-                            QMessageBox::critical(Core::ICore::dialogParent(),
-                                Tr::tr("Disconnect"),
-                                Tr::tr("Failed to eject \"%L1\"!").arg(m_portPath));
-                        }
-#elif defined(Q_OS_MAC)
-                        if(sync_volume_np(m_portPath.toUtf8().constData(), SYNC_VOLUME_FULLSYNC | SYNC_VOLUME_WAIT) < 0)
-                        {
-                            QMessageBox::critical(Core::ICore::dialogParent(),
-                                Tr::tr("Disconnect"),
-                                Tr::tr("Failed to eject \"%L1\"!").arg(m_portPath));
-                        }
-#endif
-                    }
-
-                    m_iodevice->sysReset(false);
-                    m_iodevice->close();
-
-                    loop.exec();
-
-                    QElapsedTimer elaspedTimer;
-                    elaspedTimer.start();
-
-                    while(!elaspedTimer.hasExpired(100))
-                    {
-                        QApplication::processEvents();
-                    }
-                }
-
-                // DFU //////////////////////////////////////////////////////////
-
-                QString selectedDfuDeviceVidPid = selectedDfuDevice.isEmpty() ? QString() : selectedDfuDevice.split(QStringLiteral(",")).first();
-                QString selectedDfuDeviceSerialNumber = selectedDfuDevice.isEmpty() ? QString() : selectedDfuDevice.split(QStringLiteral(",")).last();
-
-                QString boardTypeToDfuDeviceVidPid;
-                QStringList eraseCommands, programCommandsCmd, programCommandsPath;
-                QString binProgramCommand;
-
-                QString firmwarePathFileName = QFileInfo(firmwarePath).fileName();
-
-                if(selectedDfuDevice.isEmpty())
-                {
-                    bool foundMatch = false;
-
-                    for(const QJsonValue &val : m_firmwareSettings.object().value(QStringLiteral("boards")).toArray())
-                    {
-                        QJsonObject obj = val.toObject();
-
-                        if(obj.value(QStringLiteral("bootloaderType")).toString() == QStringLiteral("openmv_dfu"))
-                        {
-                            QJsonObject bootloaderSettings = obj.value(QStringLiteral("bootloaderSettings")).toObject();
-
-                            if(m_boardType == obj.value(QStringLiteral("boardType")).toString())
-                            {
-                                boardTypeToDfuDeviceVidPid = obj.value(QStringLiteral("bootloaderVidPid")).toString();
-
-                                QJsonArray eraseCommandsArray = bootloaderSettings.value(QStringLiteral("eraseCommands")).toArray();
-                                for(const QJsonValue &command : eraseCommandsArray)
-                                {
-                                    eraseCommands.append(command.toString());
-                                }
-
-                                QJsonArray extraProgramCommandsArray = bootloaderSettings.value(QStringLiteral("programCommands")).toArray();
-                                for(const QJsonValue &command : extraProgramCommandsArray)
-                                {
-                                    QJsonObject obj2 = command.toObject();
-                                    programCommandsCmd.append(obj2.value(QStringLiteral("cmd")).toString());
-                                    programCommandsPath.append(obj2.value(QStringLiteral("path")).toString());
-                                }
-
-                                for (const QJsonValue &cmd : bootloaderSettings.value(QStringLiteral("binProgamCommands")).toArray())
-                                {
-                                    if (firmwarePathFileName.toLower() == cmd.toObject().value(QStringLiteral("name")).toString().toLower())
-                                    {
-                                        binProgramCommand = cmd.toObject().value(QStringLiteral("cmd")).toString();
-                                    }
-                                }
-
-                                foundMatch = true;
-                                break;
-                            }
-                        }
-                    }
-
-                    if(!foundMatch)
-                    {
-                        QMessageBox::critical(Core::ICore::dialogParent(),
-                            Tr::tr("Connect"),
-                            Tr::tr("No DFU settings for the selected board type!") + QString(QStringLiteral("\n\nVID: %1, PID: %2")).arg(m_boardVID).arg(m_boardPID));
-
-                        CONNECT_END();
-                    }
-
-                    if (binProgramCommand.isEmpty() && QFileInfo(firmwarePath).exists())
-                    {
-                        QMessageBox::critical(Core::ICore::dialogParent(),
-                            Tr::tr("Connect"),
-                            Tr::tr("No matching interface for the selected file name!") + QString(QStringLiteral("\n\nVID: %1, PID: %2")).arg(m_boardVID).arg(m_boardPID));
-
-                        CONNECT_END();
-                    }
+                    openmvInternalBootloader(forceFirmwarePath,
+                                             forceFlashFSErase,
+                                             justEraseFlashFs,
+                                             previousMapping,
+                                             selectedPort,
+                                             forceBootloaderBricked,
+                                             previousMappingSet,
+                                             firmwarePath,
+                                             fallbackSettings.value(QStringLiteral("eraseAllSectorStart")).toInt(),
+                                             fallbackSettings.value(QStringLiteral("eraseAllSectorEnd")).toInt(),
+                                             fallbackSettings.value(QStringLiteral("eraseSectorStart")).toInt(),
+                                             fallbackSettings.value(QStringLiteral("eraseSectorEnd")).toInt(),
+                                             dfuFallbackSettings,
+                                             fallbackSettings.value(QStringLiteral("vidpid")).toString(),
+                                             dfuNoDialogs);
                 }
                 else
                 {
-                    bool foundMatch = false;
-
-                    for(const QJsonValue &val : m_firmwareSettings.object().value(QStringLiteral("boards")).toArray())
-                    {
-                        QJsonObject obj = val.toObject();
-
-                        if((selectedDfuDeviceVidPid == obj.value(QStringLiteral("bootloaderVidPid")).toString())
-                        && (obj.value(QStringLiteral("bootloaderType")).toString() == QStringLiteral("openmv_dfu")))
-                        {
-                            QJsonObject bootloaderSettings = obj.value(QStringLiteral("bootloaderSettings")).toObject();
-
-                            QJsonArray eraseCommandsArray = bootloaderSettings.value(QStringLiteral("eraseCommands")).toArray();
-                            for(const QJsonValue &command : eraseCommandsArray)
-                            {
-                                eraseCommands.append(command.toString());
-                            }
-
-                            QJsonArray extraProgramCommandsArray = bootloaderSettings.value(QStringLiteral("programCommands")).toArray();
-                            for(const QJsonValue &command : extraProgramCommandsArray)
-                            {
-                                QJsonObject obj2 = command.toObject();
-                                programCommandsCmd.append(obj2.value(QStringLiteral("cmd")).toString());
-                                programCommandsPath.append(obj2.value(QStringLiteral("path")).toString());
-                            }
-
-                            for (const QJsonValue &cmd : bootloaderSettings.value(QStringLiteral("binProgamCommands")).toArray())
-                            {
-                                if (firmwarePathFileName.toLower() == cmd.toObject().value(QStringLiteral("name")).toString().toLower())
-                                {
-                                    binProgramCommand = cmd.toObject().value(QStringLiteral("cmd")).toString();
-                                }
-                            }
-
-                            foundMatch = true;
-                            break;
-                        }
-                    }
-
-                    if(!foundMatch)
-                    {
-                        QStringList dfuDeviceVidPidList = selectedDfuDeviceVidPid.split(QLatin1Char(':'));
-
-                        QMessageBox::critical(Core::ICore::dialogParent(),
-                            Tr::tr("Connect"),
-                            Tr::tr("No DFU settings for the selected device!") + QString(QStringLiteral("\n\nVID: %1, PID: %2"))
-                                              .arg(dfuDeviceVidPidList.first().toInt(nullptr, 16))
-                                              .arg(dfuDeviceVidPidList.last().toInt(nullptr, 16)));
-
-                        CONNECT_END();
-                    }
-
-                    if (binProgramCommand.isEmpty() && QFileInfo(firmwarePath).exists())
-                    {
-                        QStringList dfuDeviceVidPidList = selectedDfuDeviceVidPid.split(QLatin1Char(':'));
-
-                        QMessageBox::critical(Core::ICore::dialogParent(),
-                            Tr::tr("Connect"),
-                            Tr::tr("No matching interface for the selected file name!") + QString(QStringLiteral("\n\nVID: %1, PID: %2"))
-                                              .arg(dfuDeviceVidPidList.first().toInt(nullptr, 16))
-                                              .arg(dfuDeviceVidPidList.last().toInt(nullptr, 16)));
-
-                        CONNECT_END();
-                    }
+                    openmvDFUBootloader(forceFlashFSErase,
+                                        justEraseFlashFs,
+                                        firmwarePath,
+                                        selectedDfuDevice);
                 }
 
-                QString dfuDeviceVidPid = selectedDfuDevice.isEmpty() ? boardTypeToDfuDeviceVidPid : selectedDfuDeviceVidPid;
-                QString dfuDeviceSerial = QString(QStringLiteral(" -S %1")).arg(selectedDfuDevice.isEmpty()
-                    ? QStringLiteral("0123456789ABCDEF")
-                    : selectedDfuDeviceSerialNumber);
-
-                if(dfuDeviceSerial == QStringLiteral(" -S NULL"))
-                {
-                    dfuDeviceSerial = QString();
-                }
-
-                // Erase Flash //////////////////////////////////////
-
-                if(forceFlashFSErase)
-                {
-                    QTemporaryFile file;
-
-                    if(file.open())
-                    {
-                        if(file.write(QByteArray(FLASH_SECTOR_ERASE, 0)) == FLASH_SECTOR_ERASE)
-                        {
-                            file.setAutoRemove(false);
-                            file.close();
-
-                            QString command;
-                            Utils::Process process;
-
-                            for(int i = 0, j = eraseCommands.size(); i < j; i++)
-                            {
-                                downloadFirmware(Tr::tr("Erasing Disk"), command, process,
-                                                 QFileInfo(file).canonicalFilePath(),
-                                                 dfuDeviceVidPid, eraseCommands.at(i) +
-                                                 ((justEraseFlashFs && ((i + 1) == j)) ? QStringLiteral(" --reset") : QStringLiteral("")) + dfuDeviceSerial);
-
-                                if(((i + 1) != j) && (process.result() != Utils::ProcessResult::FinishedWithSuccess) && (process.result() != Utils::ProcessResult::TerminatedAbnormally))
-                                {
-                                    QMessageBox box(QMessageBox::Critical, Tr::tr("Connect"), Tr::tr("Timeout Error!"), QMessageBox::Ok, Core::ICore::dialogParent(),
-                                        Qt::MSWindowsFixedSizeDialogHint | Qt::WindowTitleHint | Qt::WindowSystemMenuHint |
-                                        (Utils::HostOsInfo::isMacHost() ? Qt::WindowType(0) : Qt::WindowCloseButtonHint));
-                                    box.setDetailedText(command + QStringLiteral("\n\n") + process.stdOut() + QStringLiteral("\n") + process.stdErr());
-                                    box.setDefaultButton(QMessageBox::Ok);
-                                    box.setEscapeButton(QMessageBox::Cancel);
-                                    box.exec();
-
-                                    CONNECT_END();
-                                }
-                                else if(process.result() == Utils::ProcessResult::TerminatedAbnormally)
-                                {
-                                    CONNECT_END();
-                                }
-                            }
-
-                            if(justEraseFlashFs)
-                            {
-                                if((m_autoUpdate.isEmpty()) && (!m_autoErase)) QMessageBox::information(Core::ICore::dialogParent(),
-                                    Tr::tr("Connect"),
-                                    QString(QStringLiteral("%1%2%3%4")).arg(Tr::tr("Onboard Data Flash Erased!\n\n"))
-                                    .arg(Tr::tr("Your OpenMV Cam will start running its built-in self-test if no sd card is attached... this may take a while.\n\n"))
-                                    .arg(Tr::tr("Click OK when your OpenMV Cam's RGB LED starts blinking blue - which indicates the self-test is complete."))
-                                    .arg(Tr::tr("\n\nIf you overwrote main.py on your OpenMV Cam and did not erase the disk then your OpenMV Cam will just run that main.py."
-                                            "\n\nIn this case click OK when you see your OpenMV Cam's internal flash drive mount (a window may or may not pop open).")));
-
-                                RECONNECT_WAIT_END();
-                            }
-                        }
-                        else
-                        {
-                            QMessageBox::critical(Core::ICore::dialogParent(),
-                                Tr::tr("Connect"),
-                                Tr::tr("Error: %L1!").arg(file.errorString()));
-
-                            CONNECT_END();
-                        }
-                    }
-                    else
-                    {
-                        QMessageBox::critical(Core::ICore::dialogParent(),
-                            Tr::tr("Connect"),
-                            Tr::tr("Error: %L1!").arg(file.errorString()));
-
-                        CONNECT_END();
-                    }
-                }
-
-                // Program Flash //////////////////////////////////////
-
-                QString command;
-                Utils::Process process;
-
-                if (!binProgramCommand.isEmpty())
-                {
-                    downloadFirmware(Tr::tr("Flashing Firmware"), command, process,
-                                     QDir::toNativeSeparators(QDir::cleanPath(firmwarePath)),
-                                     dfuDeviceVidPid, binProgramCommand + QStringLiteral(" --reset") + dfuDeviceSerial);
-
-                    if(process.result() == Utils::ProcessResult::TerminatedAbnormally)
-                    {
-                        CONNECT_END();
-                    }
-
-                    if((m_autoUpdate.isEmpty()) && (!m_autoErase)) QMessageBox::information(Core::ICore::dialogParent(),
-                        Tr::tr("Connect"),
-                        Tr::tr("DFU firmware update complete!\n\n") +
-                        Tr::tr("Click the Ok button after your OpenMV Cam has enumerated and finished running its built-in self test (blue led blinking - this takes a while).") +
-                        Tr::tr("\n\nIf you overwrote main.py on your OpenMV Cam and did not erase the disk then your OpenMV Cam will just run that main.py."
-                           "\n\nIn this case click OK when you see your OpenMV Cam's internal flash drive mount (a window may or may not pop open)."));
-
-                    RECONNECT_WAIT_END();
-                }
-                else
-                {
-                    for(int i = 0, j = programCommandsCmd.size(); i < j; i++)
-                    {
-                        downloadFirmware(Tr::tr("Flashing Firmware"), command, process,
-                                         Core::ICore::userResourcePath(QStringLiteral("firmware")).pathAppended(programCommandsPath.at(i)).toString(),
-                                         dfuDeviceVidPid, programCommandsCmd.at(i) +
-                                         (((i + 1) == j) ? QStringLiteral(" --reset") : QStringLiteral("")) + dfuDeviceSerial);
-
-                        if(((i + 1) != j) && (process.result() != Utils::ProcessResult::FinishedWithSuccess) && (process.result() != Utils::ProcessResult::TerminatedAbnormally))
-                        {
-                            QMessageBox box(QMessageBox::Critical, Tr::tr("Connect"), Tr::tr("DFU firmware update failed!"), QMessageBox::Ok, Core::ICore::dialogParent(),
-                                Qt::MSWindowsFixedSizeDialogHint | Qt::WindowTitleHint | Qt::WindowSystemMenuHint |
-                                (Utils::HostOsInfo::isMacHost() ? Qt::WindowType(0) : Qt::WindowCloseButtonHint));
-                            box.setDetailedText(command + QStringLiteral("\n\n") + process.stdOut() + QStringLiteral("\n") + process.stdErr());
-                            box.setDefaultButton(QMessageBox::Ok);
-                            box.setEscapeButton(QMessageBox::Cancel);
-                            box.exec();
-
-                            CONNECT_END();
-                        }
-                        else if(process.result() == Utils::ProcessResult::TerminatedAbnormally)
-                        {
-                            CONNECT_END();
-                        }
-
-                        if((i + 1) == j)
-                        {
-                            if((m_autoUpdate.isEmpty()) && (!m_autoErase)) QMessageBox::information(Core::ICore::dialogParent(),
-                                Tr::tr("Connect"),
-                                Tr::tr("DFU firmware update complete!\n\n") +
-                                Tr::tr("Click the Ok button after your OpenMV Cam has enumerated and finished running its built-in self test (blue led blinking - this takes a while).") +
-                                Tr::tr("\n\nIf you overwrote main.py on your OpenMV Cam and did not erase the disk then your OpenMV Cam will just run that main.py."
-                                   "\n\nIn this case click OK when you see your OpenMV Cam's internal flash drive mount (a window may or may not pop open)."));
-
-                            RECONNECT_WAIT_END();
-                        }
-                    }
-                }
+                return;
             }
 
             if(isIMX)
@@ -3089,7 +2266,7 @@ void OpenMVPlugin::connectClicked(bool forceBootloader, QString forceFirmwarePat
                         {
                             QJsonObject obj = val.toObject();
 
-                            if((selectedDfuDeviceVidPid == obj.value(QStringLiteral("bootloaderVidPid")).toString())
+                            if((selectedDfuDeviceVidPid.toLower() == obj.value(QStringLiteral("bootloaderVidPid")).toString().toLower())
                             && (obj.value(QStringLiteral("bootloaderType")).toString() == QStringLiteral("arduino_dfu")))
                             {
                                 QJsonObject bootloaderSettings = obj.value(QStringLiteral("bootloaderSettings")).toObject();
@@ -3371,7 +2548,7 @@ void OpenMVPlugin::connectClicked(bool forceBootloader, QString forceFirmwarePat
                         {
                             QJsonObject obj = val.toObject();
 
-                            if((selectedDfuDeviceVidPid == obj.value(QStringLiteral("bootloaderVidPid")).toString())
+                            if((selectedDfuDeviceVidPid.toLower() == obj.value(QStringLiteral("bootloaderVidPid")).toString().toLower())
                             && (obj.value(QStringLiteral("bootloaderType")).toString() == QStringLiteral("bossac")))
                             {
                                 QJsonObject bootloaderSettings = obj.value(QStringLiteral("bootloaderSettings")).toObject();
@@ -3515,7 +2692,7 @@ void OpenMVPlugin::connectClicked(bool forceBootloader, QString forceFirmwarePat
                         {
                             QJsonObject obj = val.toObject();
 
-                            if((selectedDfuDeviceVidPid == obj.value(QStringLiteral("bootloaderVidPid")).toString())
+                            if((selectedDfuDeviceVidPid.toLower() == obj.value(QStringLiteral("bootloaderVidPid")).toString().toLower())
                             && (obj.value(QStringLiteral("bootloaderType")).toString() == QStringLiteral("picotool")))
                             {
                                 QJsonObject bootloaderSettings = obj.value(QStringLiteral("bootloaderSettings")).toObject();
@@ -3667,69 +2844,10 @@ void OpenMVPlugin::connectClicked(bool forceBootloader, QString forceFirmwarePat
                 CONNECT_END();
             }
 
-            // DFU Bootloader /////////////////////////////////////////////////
-
             if(firmwarePath.endsWith(QStringLiteral(".dfu"), Qt::CaseInsensitive))
             {
-                if(dfuNoDialogs || forceFlashFSErase || repairingBootloader || (QMessageBox::warning(Core::ICore::dialogParent(),
-                    Tr::tr("Connect"),
-                    Tr::tr("DFU update erases your OpenMV Cam's internal flash file system.\n\n"
-                       "Backup your data before continuing!"),
-                    QMessageBox::Ok | QMessageBox::Cancel, QMessageBox::Ok)
-                == QMessageBox::Ok))
-                {
-                    if(dfuNoDialogs || QMessageBox::information(Core::ICore::dialogParent(),
-                        Tr::tr("Connect"),
-                        Tr::tr("Disconnect your OpenMV Cam from your computer, add a jumper wire between the BOOT and RST pins, and then reconnect your OpenMV Cam to your computer.\n\n"
-                           "Click the Ok button after your OpenMV Cam's DFU Bootloader has enumerated."),
-                        QMessageBox::Ok | QMessageBox::Cancel, QMessageBox::Ok)
-                    == QMessageBox::Ok)
-                    {
-                        QString command;
-                        Utils::Process process;
-                        downloadFirmware(Tr::tr("Flashing Bootloader"), command, process, QDir::toNativeSeparators(QDir::cleanPath(firmwarePath)), originalDfuVidPid, QStringLiteral("-a 0 -s :leave"));
-
-                        if((process.result() == Utils::ProcessResult::FinishedWithSuccess) || (command.contains(QStringLiteral("dfu-util")) && (process.result() == Utils::ProcessResult::FinishedWithError)))
-                        {
-                            if(repairingBootloader)
-                            {
-                                QMessageBox::information(Core::ICore::dialogParent(),
-                                    Tr::tr("Connect"),
-                                    Tr::tr("DFU bootloader reset complete!\n\n") +
-                                    Tr::tr("Disconnect your OpenMV Cam from your computer and remove the jumper wire between the BOOT and RST pins.\n\n") +
-                                    Tr::tr("Leave your OpenMV Cam unconnected until instructed to reconnect it."));
-
-                                RECONNECT_AND_FORCEBOOTLOADER_END();
-                            }
-                            else
-                            {
-                                QMessageBox::information(Core::ICore::dialogParent(),
-                                                         Tr::tr("Connect"),
-                                                         Tr::tr("DFU firmware update complete!\n\n") +
-                                                         (Utils::HostOsInfo::isWindowsHost() ? Tr::tr("Disconnect your OpenMV Cam from your computer, remove the jumper wire between the BOOT and RST pins, and then reconnect your OpenMV Cam to your computer.\n\n") : QString()) +
-                                                         Tr::tr("Click the Ok button after your OpenMV Cam has enumerated and finished running its built-in self test (blue led blinking - this takes a while)."));
-
-                                RECONNECT_END();
-                            }
-                        }
-                        else if(process.result() == Utils::ProcessResult::TerminatedAbnormally)
-                        {
-                            CONNECT_END();
-                        }
-                        else
-                        {
-                            QMessageBox box(QMessageBox::Critical, Tr::tr("Connect"), repairingBootloader ? Tr::tr("DFU bootloader reset failed!") : Tr::tr("DFU firmware update failed!"), QMessageBox::Ok, Core::ICore::dialogParent(),
-                                Qt::MSWindowsFixedSizeDialogHint | Qt::WindowTitleHint | Qt::WindowSystemMenuHint |
-                                (Utils::HostOsInfo::isMacHost() ? Qt::WindowType(0) : Qt::WindowCloseButtonHint));
-                            box.setDetailedText(command + QStringLiteral("\n\n") + process.stdOut() + QStringLiteral("\n") + process.stdErr());
-                            box.setDefaultButton(QMessageBox::Ok);
-                            box.setEscapeButton(QMessageBox::Cancel);
-                            box.exec();
-                        }
-                    }
-                }
-
-                CONNECT_END();
+                openmvRepairingBootloader(forceFlashFSErase, previousMapping, originalDfuVidPid, dfuNoDialogs, firmwarePath, repairingBootloader);
+                return;
             }
         }
 

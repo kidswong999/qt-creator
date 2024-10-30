@@ -385,6 +385,32 @@ private:
     bool getTheLatestDevelopmentFirmware(const QString &arch, QString *path);
     QList<QPair<QString, QString> > querySerialPorts(const QStringList &portList);
 
+    void openmvInternalBootloader(const QString &forceFirmwarePath,
+                                  bool forceFlashFSErase,
+                                  bool justEraseFlashFs,
+                                  const QString &previousMapping,
+                                  const QString &selectedPort,
+                                  bool forceBootloaderBricked,
+                                  bool previousMappingSet,
+                                  const QString &firmwarePath,
+                                  int originalEraseFlashSectorStart,
+                                  int originalEraseFlashSectorEnd,
+                                  int originalEraseFlashSectorAllStart,
+                                  int originalEraseFlashSectorAllEnd,
+                                  const QJsonObject &originalFallbackBootloaderSettings,
+                                  const QString &originalDfuVidPid,
+                                  bool dfuNoDialogs);
+    void openmvRepairingBootloader(bool forceFlashFSErase,
+                                   const QString &previousMapping,
+                                   const QString &originalDfuVidPid,
+                                   bool dfuNoDialogs,
+                                   const QString &firmwarePath,
+                                   bool repairingBootloader);
+    void openmvDFUBootloader(bool forceFlashFSErase,
+                             bool justEraseFlashFs,
+                             const QString &firmwarePath,
+                             const QString &selectedDfuDevice);
+
     QStringList m_resourceFoldersToCopy;
     QStringList m_resourceFoldersToDelete;
 
