@@ -99,6 +99,7 @@
 #define FW_VERSION_RESPONSE_LEN             12
 #define ARCH_STR_RESPONSE_LEN               64
 #define FRAME_SIZE_RESPONSE_LEN             12
+#define FRAME_DUMP_UNLOCK_RESPONSE_LEN      4
 #define SCRIPT_RUNNING_RESPONSE_LEN         4
 #define ATTR_READ_RESPONSE_LEN              1
 #define ATTR_READ_2_PAYLOAD_LEN             4
@@ -126,6 +127,8 @@
 #define FRAME_SIZE_END_DELAY                0
 #define FRAME_DUMP_START_DELAY              0
 #define FRAME_DUMP_END_DELAY                0
+#define FRAME_DUMP_UNLOCK_START_DELAY       0
+#define FRAME_DUMP_UNLOCK_END_DELAY         0
 #define ARCH_STR_START_DELAY                0
 #define ARCH_STR_END_DELAY                  0
 #define LEARN_MTU_START_DELAY               0

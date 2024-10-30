@@ -10,6 +10,7 @@ enum
     USBDBG_FW_VERSION_CPL,
     USBDBG_FRAME_SIZE_CPL,
     USBDBG_FRAME_DUMP_CPL,
+    USBDBG_FRAME_DUMP_UNLOCK_CPL,
     USBDBG_ARCH_STR_CPL,
     USBDBG_LEARN_MTU_CPL,
     USBDBG_SCRIPT_EXEC_CPL_0,
@@ -360,7 +361,6 @@ void OpenMVPluginIO::commandResult(const OpenMVPluginSerialPortCommandResult &co
                     if(m_pixelBuffer.size() == getImageSize(m_frameSizeW, m_frameSizeH, m_frameSizeBPP, m_newPixformat, PIXFORMAT_JPEG)) // Works for PNG too.
                     {
                         QPixmap pixmap = getImageFromData(m_pixelBuffer, m_frameSizeW, m_frameSizeH, m_frameSizeBPP, m_rgb565ByteReversed, m_newPixformat, PIXFORMAT_JPEG); // Works for PNG too.
-
                         bool null = pixmap.isNull();
 
                         if(!null)
@@ -372,14 +372,27 @@ void OpenMVPluginIO::commandResult(const OpenMVPluginSerialPortCommandResult &co
                         m_frameSizeH = int();
                         m_frameSizeBPP = int();
                         m_pixelBuffer.clear();
-
                         emit frameBufferEmpty(null);
                     }
                     else
                     {
-                        emit frameBufferEmpty(true);
+                        QByteArray buffer;
+                        serializeByte(buffer, __USBDBG_CMD);
+                        serializeByte(buffer, __USBDBG_FRAME_DUMP);
+                        serializeLong(buffer, FRAME_DUMP_UNLOCK_RESPONSE_LEN);
+                        m_postedQueue.push_front(OpenMVPluginSerialPortCommand(buffer, FRAME_DUMP_UNLOCK_RESPONSE_LEN, FRAME_DUMP_UNLOCK_START_DELAY, FRAME_DUMP_UNLOCK_END_DELAY));
+                        m_completionQueue.insert(1, USBDBG_FRAME_DUMP_UNLOCK_CPL);
                     }
 
+                    break;
+                }
+                case USBDBG_FRAME_DUMP_UNLOCK_CPL:
+                {
+                    m_frameSizeW = int();
+                    m_frameSizeH = int();
+                    m_frameSizeBPP = int();
+                    m_pixelBuffer.clear();
+                    emit frameBufferEmpty(true);
                     break;
                 }
                 case USBDBG_ARCH_STR_CPL:
@@ -688,6 +701,15 @@ void OpenMVPluginIO::commandResult(const OpenMVPluginSerialPortCommandResult &co
                         emit frameBufferEmpty(true);
                         break;
                     }
+                    case USBDBG_FRAME_DUMP_UNLOCK_CPL:
+                    {
+                        m_frameSizeW = int();
+                        m_frameSizeH = int();
+                        m_frameSizeBPP = int();
+                        m_pixelBuffer.clear();
+                        emit frameBufferEmpty(true);
+                        break;
+                    }
                     case USBDBG_ARCH_STR_CPL:
                     {
                         emit archString(QString());
@@ -957,7 +979,8 @@ bool OpenMVPluginIO::queueisEmpty() const
 bool OpenMVPluginIO::frameSizeDumpQueued() const
 {
     return m_completionQueue.contains(USBDBG_FRAME_SIZE_CPL) ||
-           m_completionQueue.contains(USBDBG_FRAME_DUMP_CPL);
+           m_completionQueue.contains(USBDBG_FRAME_DUMP_CPL) ||
+           m_completionQueue.contains(USBDBG_FRAME_DUMP_UNLOCK_CPL);
 }
 
 bool OpenMVPluginIO::getScriptRunningQueued() const
@@ -979,7 +1002,8 @@ bool OpenMVPluginIO::getTxBufferQueued() const
 bool OpenMVPluginIO::getStateQueued() const
 {
     return m_completionQueue.contains(USBDBG_GET_STATE_CPL) ||
-           m_completionQueue.contains(USBDBG_FRAME_DUMP_CPL);
+           m_completionQueue.contains(USBDBG_FRAME_DUMP_CPL) ||
+           m_completionQueue.contains(USBDBG_FRAME_DUMP_UNLOCK_CPL);
 }
 
 void OpenMVPluginIO::getFirmwareVersion()

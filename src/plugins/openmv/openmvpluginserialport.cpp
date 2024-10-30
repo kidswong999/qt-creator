@@ -16,7 +16,7 @@
 #define WRITE_TIMEOUT 3000
 #define SERIAL_READ_TIMEOUT 5000
 #define WIFI_READ_TIMEOUT 5000
-#define SERIAL_READ_STALL_TIMEOUT 1000
+#define SERIAL_READ_STALL_TIMEOUT 100
 #define WIFI_READ_STALL_TIMEOUT 3000
 #define BOOTLOADER_WRITE_TIMEOUT 6
 #define BOOTLOADER_READ_TIMEOUT 10
@@ -588,6 +588,9 @@ void OpenMVPluginSerialPort_private::command(const OpenMVPluginSerialPortCommand
             QElapsedTimer elaspedTimer2;
             elaspedTimer.start();
             elaspedTimer2.start();
+            bool readStallHappened = false;
+            int readStallAbaddonSize = 0;
+            int readStallDiscardSize = 0;
 
             do
             {
@@ -596,10 +599,18 @@ void OpenMVPluginSerialPort_private::command(const OpenMVPluginSerialPortCommand
                 QByteArray data = m_port->readAll();
                 response.append(data);
 
-                if((responseLen == command.m_responseLen) && (!data.isEmpty()))
+                if((!readStallHappened) && (!data.isEmpty()))
                 {
                     elaspedTimer.restart();
                     elaspedTimer2.start();
+                }
+
+                if(readStallHappened && (response.size() >= readStallAbaddonSize))
+                {
+                    // The device responsed to the read stall. So, all the data that is going to come has come.
+                    // We may or maynot however actually have a complete response from the command...
+                    response.chop(readStallDiscardSize);
+                    break;
                 }
 
                 if(m_port->isSerialPort() && (response.size() < responseLen) && elaspedTimer2.hasExpired(read_stall_timeout))
@@ -620,11 +631,15 @@ void OpenMVPluginSerialPort_private::command(const OpenMVPluginSerialPortCommand
 
                             if(m_port)
                             {
-                                responseLen += GET_STATE_PAYLOAD_LEN;
                                 elaspedTimer2.restart();
+                                if (!readStallHappened) readStallAbaddonSize = response.size();
+                                readStallHappened = true;
+                                readStallAbaddonSize += GET_STATE_PAYLOAD_LEN;
+                                readStallDiscardSize += GET_STATE_PAYLOAD_LEN;
                             }
                             else
                             {
+                                qDebug() << "crash";
                                 break;
                             }
                         }
@@ -638,8 +653,11 @@ void OpenMVPluginSerialPort_private::command(const OpenMVPluginSerialPortCommand
 
                             if(m_port)
                             {
-                                responseLen += SCRIPT_RUNNING_RESPONSE_LEN;
                                 elaspedTimer2.restart();
+                                if (!readStallHappened) readStallAbaddonSize = response.size();
+                                readStallHappened = true;
+                                readStallAbaddonSize += SCRIPT_RUNNING_RESPONSE_LEN;
+                                readStallDiscardSize += SCRIPT_RUNNING_RESPONSE_LEN;
                             }
                             else
                             {
@@ -655,8 +673,11 @@ void OpenMVPluginSerialPort_private::command(const OpenMVPluginSerialPortCommand
 
                         if(m_port)
                         {
-                            responseLen += BOOTLDR_QUERY_RESPONSE_LEN;
                             elaspedTimer2.restart();
+                            if (!readStallHappened) readStallAbaddonSize = response.size();
+                            readStallHappened = true;
+                            readStallAbaddonSize += BOOTLDR_QUERY_RESPONSE_LEN;
+                            readStallDiscardSize += BOOTLDR_QUERY_RESPONSE_LEN;
                         }
                         else
                         {
@@ -677,7 +698,7 @@ void OpenMVPluginSerialPort_private::command(const OpenMVPluginSerialPortCommand
             }
             while((response.size() < responseLen) && (!elaspedTimer.hasExpired(read_timeout)));
 
-            if(response.size() >= responseLen)
+            if((response.size() >= responseLen) || (m_port && command.m_commandAbortOkay))
             {
                 emit commandResult(OpenMVPluginSerialPortCommandResult(true, response.left(command.m_responseLen)));
             }
