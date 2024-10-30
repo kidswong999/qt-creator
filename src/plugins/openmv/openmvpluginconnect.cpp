@@ -613,6 +613,79 @@ bool OpenMVPlugin::getTheLatestDevelopmentFirmware(const QString &arch, QString 
     return false;
 }
 
+QString cleanPortVIDAndPID(const QString &vidAndPid)
+{
+    QStringList list = vidAndPid.split(QStringLiteral(":"));
+    QTC_ASSERT(list.size() == 2, return QString());
+    return QStringLiteral("{%1:%2}").arg(list.at(0).toInt(nullptr, 16), 4, 16, QChar('0')).arg(list.at(1).toInt(nullptr, 16), 4, 16, QChar('0'));
+}
+
+QString portVIDAndPID(const QString &selectedPort)
+{
+    QSerialPortInfo info(selectedPort);
+
+    if (info.isNull())
+    {
+        // TODO: For WiFi ports we need to return the VID:PID of the board somehow to make the rest of the logic work.
+        return QString();
+    }
+    else
+    {
+        MyQSerialPortInfo port(info);
+        return QStringLiteral("{%1:%2}").arg(port.vendorIdentifier(), 4, 16, QChar('0')).arg(port.productIdentifier(), 4, 16, QChar('0'));
+    }
+}
+
+QString portVIDAndPID(const MyQSerialPortInfo &info)
+{
+    if (info.isNull())
+    {
+        // TODO: For WiFi ports we need to return the VID:PID of the board somehow to make the rest of the logic work.
+        return QString();
+    }
+    else
+    {
+        return QStringLiteral("{%1:%2}").arg(info.vendorIdentifier(), 4, 16, QChar('0')).arg(info.productIdentifier(), 4, 16, QChar('0'));
+    }
+}
+
+bool matchVidPid(const QJsonObject &object, const QString &serialNumberFilter, const MyQSerialPortInfo &port)
+{
+    QStringList vidpid = object.value(QStringLiteral("boardVidPid")).toString().split(QStringLiteral(":"));
+    int mask = object.value(QStringLiteral("boardPidMask")).toString().toInt(nullptr, 16);
+    QStringList serialNumbersInverseFilters;
+
+    for (const QJsonValue &value : object.value(QStringLiteral("boardSerialNumberInverseFilters")).toArray())
+    {
+        serialNumbersInverseFilters.append(value.toString());
+    }
+
+    if((vidpid.size() == 2)
+    && (serialNumberFilter.isEmpty() || (serialNumberFilter == port.serialNumber().toUpper()))
+    && port.hasVendorIdentifier()
+    && port.vendorIdentifier() == vidpid.at(0).toInt(nullptr, 16)
+    && port.hasProductIdentifier()
+    && (port.productIdentifier() & mask) == vidpid.at(1).toInt(nullptr, 16))
+    {
+        return serialNumbersInverseFilters.isEmpty() || (!serialNumbersInverseFilters.contains(port.serialNumber()));
+    }
+
+    return false;
+}
+
+bool validPort(const QJsonDocument &settings, const QString &serialNumberFilter, const MyQSerialPortInfo &port)
+{
+    for (const QJsonValue &value : settings.object().value(QStringLiteral("boards")).toArray())
+    {
+        if (matchVidPid(value.toObject(), serialNumberFilter, port))
+        {
+            return true;
+        }
+    }
+
+    return false;
+}
+
 QList<QPair<QString, QString> > OpenMVPlugin::querySerialPorts(const QStringList &portList)
 {
     QList<QPair<QString, QString> > results;
@@ -708,13 +781,17 @@ QList<QPair<QString, QString> > OpenMVPlugin::querySerialPorts(const QStringList
 
                 if(!arch2.isEmpty())
                 {
-                    QString temp = QString(arch2).remove(QRegularExpression(QStringLiteral("\\[(.+?):(.+?)\\]"))).simplified();
+                    QString temp = QString(arch2).remove(QRegularExpression(QStringLiteral("\\[(.+?):(.+?)\\]"))).simplified() +
+                            portVIDAndPID(port);
 
                     bool found = false;
 
                     for (const QJsonValue &value : m_firmwareSettings.object().value(QStringLiteral("boards")).toArray())
                     {
-                        if(temp == value.toObject().value(QStringLiteral("boardArchString")).toString())
+                        QString a = value.toObject().value(QStringLiteral("boardArchString")).toString() +
+                            cleanPortVIDAndPID(value.toObject().value(QStringLiteral("boardVidPid")).toString());
+
+                        if(temp == a)
                         {
                             results.append(QPair<QString, QString>(port, value.toObject().value(QStringLiteral("boardDisplayName")).toString()));
                             found = true;
@@ -744,34 +821,6 @@ QList<QPair<QString, QString> > OpenMVPlugin::querySerialPorts(const QStringList
     }
 
     return results;
-}
-
-bool validPort(const QJsonDocument &settings, const QString &serialNumberFilter, const MyQSerialPortInfo &port)
-{
-    for (const QJsonValue &value : settings.object().value(QStringLiteral("boards")).toArray())
-    {
-        QJsonObject object = value.toObject();
-        QStringList vidpid = object.value(QStringLiteral("boardVidPid")).toString().split(QStringLiteral(":"));
-        int mask = object.value(QStringLiteral("boardPidMask")).toString().toInt(nullptr, 16);
-        QStringList serialNumbersInverseFilters;
-
-        for (const QJsonValue &value : object.value(QStringLiteral("boardSerialNumberInverseFilters")).toArray())
-        {
-            serialNumbersInverseFilters.append(value.toString());
-        }
-
-        if((vidpid.size() == 2)
-        && (serialNumberFilter.isEmpty() || (serialNumberFilter == port.serialNumber().toUpper()))
-        && port.hasVendorIdentifier()
-        && port.vendorIdentifier() == vidpid.at(0).toInt(nullptr, 16)
-        && port.hasProductIdentifier()
-        && (port.productIdentifier() & mask) == vidpid.at(1).toInt(nullptr, 16))
-        {
-            return serialNumbersInverseFilters.isEmpty() || (!serialNumbersInverseFilters.contains(port.serialNumber()));
-        }
-    }
-
-    return false;
 }
 
 QPair<QStringList, QStringList> filterPorts(const QJsonDocument &settings,
@@ -1564,11 +1613,15 @@ void OpenMVPlugin::connectClicked(bool forceBootloader, QString forceFirmwarePat
 
                 if(!arch2.isEmpty())
                 {
-                    QString temp = QString(arch2).remove(QRegularExpression(QStringLiteral("\\[(.+?):(.+?)\\]"))).simplified();
+                    QString temp = QString(arch2).remove(QRegularExpression(QStringLiteral("\\[(.+?):(.+?)\\]"))).simplified() +
+                            portVIDAndPID(selectedPort);
 
                     for (const QJsonValue &value : m_firmwareSettings.object().value(QStringLiteral("boards")).toArray())
                     {
-                        if(temp == value.toObject().value(QStringLiteral("boardArchString")).toString())
+                        QString a = value.toObject().value(QStringLiteral("boardArchString")).toString() +
+                            cleanPortVIDAndPID(value.toObject().value(QStringLiteral("boardVidPid")).toString());
+
+                        if(temp == a)
                         {
                             if (value.toObject().value(QStringLiteral("bootloaderType")).toString() == QStringLiteral("openmv_dfu"))
                             {
@@ -1648,7 +1701,8 @@ void OpenMVPlugin::connectClicked(bool forceBootloader, QString forceFirmwarePat
                         {
                             if (!value.toObject().value(QStringLiteral("hidden")).toBool())
                             {
-                                QString a = value.toObject().value(QStringLiteral("boardArchString")).toString();
+                                QString a = value.toObject().value(QStringLiteral("boardArchString")).toString() +
+                                    cleanPortVIDAndPID(value.toObject().value(QStringLiteral("boardVidPid")).toString());
                                 mappings.insert(a, value.toObject().value(QStringLiteral("boardFirmwareFolder")).toString());
                                 mappingsHumanReadable.insert(value.toObject().value(QStringLiteral("boardDisplayName")).toString(), a);
                                 vidpidMappings.insert(a, value.toObject().value(QStringLiteral("bootloaderVidPid")).toString());
@@ -1671,7 +1725,8 @@ void OpenMVPlugin::connectClicked(bool forceBootloader, QString forceFirmwarePat
                             }
                         }
 
-                        QString temp = QString(arch2).remove(QRegularExpression(QStringLiteral("\\[(.+?):(.+?)\\]"))).simplified();
+                        QString temp = QString(arch2).remove(QRegularExpression(QStringLiteral("\\[(.+?):(.+?)\\]"))).simplified() +
+                                portVIDAndPID(selectedPort);
 
                         if(!mappings.contains(temp))
                         {
@@ -3842,11 +3897,15 @@ void OpenMVPlugin::connectClicked(bool forceBootloader, QString forceFirmwarePat
 
                     boardTypeLabel = board;
 
-                    QString temp = QString(arch2).remove(QRegularExpression(QStringLiteral("\\[(.+?):(.+?)\\]"))).simplified();
+                    QString temp = QString(arch2).remove(QRegularExpression(QStringLiteral("\\[(.+?):(.+?)\\]"))).simplified() +
+                            portVIDAndPID(tempPort);
 
                     for (const QJsonValue &value : m_firmwareSettings.object().value(QStringLiteral("boards")).toArray())
                     {
-                        if (value.toObject().value(QStringLiteral("boardArchString")).toString() == temp)
+                        QString a = value.toObject().value(QStringLiteral("boardArchString")).toString() +
+                            cleanPortVIDAndPID(value.toObject().value(QStringLiteral("boardVidPid")).toString());
+
+                        if (temp == a)
                         {
                             boardTypeLabel = value.toObject().value(QStringLiteral("boardDisplayName")).toString();
                             m_boardTypeFolder = value.toObject().value(QStringLiteral("boardFirmwareFolder")).toString();

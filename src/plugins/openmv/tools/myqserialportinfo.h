@@ -11,6 +11,7 @@ class MyQSerialPortInfo
 public:
     explicit MyQSerialPortInfo();
     explicit MyQSerialPortInfo(const QSerialPortInfo &info);
+    bool isNull() const { return m_isNull; }
     QString description() const { return m_description; }
     bool hasProductIdentifier() const { return m_hasProductIdentifier; }
     bool hasVendorIdentifier() const { return m_hasVendorIdentifier; }
@@ -23,6 +24,7 @@ public:
     MyQSerialPortInfo &operator=(const MyQSerialPortInfo &other);
 private:
     QSerialPortInfo m_info;
+    bool m_isNull;
     QString m_description;
     bool m_hasProductIdentifier;
     bool m_hasVendorIdentifier;

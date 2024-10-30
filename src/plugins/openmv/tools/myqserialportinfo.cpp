@@ -12,6 +12,7 @@ extern QMutex dfu_util_working;
 MyQSerialPortInfo::MyQSerialPortInfo()
 {
     m_info = QSerialPortInfo();
+    m_isNull = m_info.isNull();
     m_description = m_info.description();
     m_hasProductIdentifier = m_info.hasProductIdentifier();
     m_hasVendorIdentifier = m_info.hasVendorIdentifier();
@@ -25,6 +26,7 @@ MyQSerialPortInfo::MyQSerialPortInfo()
 MyQSerialPortInfo::MyQSerialPortInfo(const QSerialPortInfo &info)
 {
     m_info = info;
+    m_isNull = info.isNull();
     m_description = info.description();
     m_hasProductIdentifier = info.hasProductIdentifier();
     m_hasVendorIdentifier = info.hasVendorIdentifier();
@@ -33,6 +35,8 @@ MyQSerialPortInfo::MyQSerialPortInfo(const QSerialPortInfo &info)
     m_serialNumber = info.serialNumber();
     m_systemLocation = info.systemLocation();
     m_vendorIdentifier = info.vendorIdentifier();
+
+    if (m_isNull) return;
 
     // The purpose of this class is to work around an issue in QSerialPortInfo
     // where it returns the PID/VID of the USB HUB the serial port is attached
@@ -108,6 +112,7 @@ MyQSerialPortInfo::MyQSerialPortInfo(const QSerialPortInfo &info)
 MyQSerialPortInfo &MyQSerialPortInfo::operator=(const MyQSerialPortInfo &other)
 {
     m_info = other.m_info;
+    m_isNull = other.m_isNull;
     m_description = other.m_description;
     m_hasProductIdentifier = other.m_hasProductIdentifier;
     m_hasVendorIdentifier = other.m_hasVendorIdentifier;
