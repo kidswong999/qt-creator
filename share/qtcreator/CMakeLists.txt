@@ -105,6 +105,7 @@ if (APPLE)
     node/mac
     picotool/osx
     python/mac
+    pylsp/mac
     blhost/mac
     sdphost/mac)
   set(resource_files ${resource_files} pydfu/pydfu.py)
