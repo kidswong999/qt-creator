@@ -37,16 +37,16 @@
             "bootloaderVidPid" : "37C5:9202",
             "bootloaderType" : "openmv_dfu",
             "bootloaderSettings" : {
-                "eraseCommands" : ["-a 0"],
+                "eraseCommands" : ["-a 1"],
                 "programCommands" : [
                     {
-                        "cmd" : "-a 1",
+                        "cmd" : "-a 2",
                         "path" : "OPENMV2/firmware.bin"
                     }
                 ],
                 "binProgamCommands" : [
                     {
-                        "cmd": "-a 1",
+                        "cmd": "-a 2",
                         "name": "firmware.bin"
                     }
                 ],
@@ -98,16 +98,16 @@
             "bootloaderVidPid" : "37C5:9203",
             "bootloaderType" : "openmv_dfu",
             "bootloaderSettings" : {
-                "eraseCommands" : ["-a 0"],
+                "eraseCommands" : ["-a 1"],
                 "programCommands" : [
                     {
-                        "cmd" : "-a 1",
+                        "cmd" : "-a 2",
                         "path" : "OPENMV3/firmware.bin"
                     }
                 ],
                 "binProgamCommands" : [
                     {
-                        "cmd": "-a 1",
+                        "cmd": "-a 2",
                         "name": "firmware.bin"
                     }
                 ],
@@ -159,16 +159,16 @@
             "bootloaderVidPid" : "37C5:9204",
             "bootloaderType" : "openmv_dfu",
             "bootloaderSettings" : {
-                "eraseCommands" : ["-a 0"],
+                "eraseCommands" : ["-a 1"],
                 "programCommands" : [
                     {
-                        "cmd" : "-a 1",
+                        "cmd" : "-a 2",
                         "path" : "OPENMV4/firmware.bin"
                     }
                 ],
                 "binProgamCommands" : [
                     {
-                        "cmd": "-a 1",
+                        "cmd": "-a 2",
                         "name": "firmware.bin"
                     }
                 ],
@@ -220,16 +220,16 @@
             "bootloaderVidPid" : "37C5:924A",
             "bootloaderType" : "openmv_dfu",
             "bootloaderSettings" : {
-                "eraseCommands" : ["-a 2"],
+                "eraseCommands" : ["-a 3"],
                 "programCommands" : [
                     {
-                        "cmd" : "-a 1",
+                        "cmd" : "-a 2",
                         "path" : "OPENMV4P/firmware.bin"
                     }
                 ],
                 "binProgamCommands" : [
                     {
-                        "cmd": "-a 1",
+                        "cmd": "-a 2",
                         "name": "firmware.bin"
                     }
                 ],
@@ -281,16 +281,16 @@
             "bootloaderVidPid" : "37C5:9205",
             "bootloaderType" : "openmv_dfu",
             "bootloaderSettings" : {
-                "eraseCommands" : ["-a 2"],
+                "eraseCommands" : ["-a 3"],
                 "programCommands" : [
                     {
-                        "cmd" : "-a 1",
+                        "cmd" : "-a 2",
                         "path" : "OPENMVPT/firmware.bin"
                     }
                 ],
                 "binProgamCommands" : [
                     {
-                        "cmd": "-a 1",
+                        "cmd": "-a 2",
                         "name": "firmware.bin"
                     }
                 ],
