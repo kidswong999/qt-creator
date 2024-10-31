@@ -128,6 +128,7 @@ if(UNIX AND NOT APPLE)
         node/linux-x64
         picotool/linux64
         python/linux-x86_64
+        pylsp/linux-x86_64
         blhost/linux/amd64
         sdphost/linux/amd64
         pydfu)

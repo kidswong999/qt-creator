@@ -80,6 +80,42 @@ static FilePath pyLspPath(const FilePath &python)
 static PythonLanguageServerState checkPythonLanguageServer(const FilePath &python)
 {
     using namespace LanguageClient;
+    // OPENMV-DIFF //
+    FilePath path;
+
+    if (Utils::HostOsInfo::isWindowsHost())
+    {
+        path = Core::ICore::resourcePath() / "pylsp" / "windows";
+    }
+    else if(Utils::HostOsInfo::isMacHost())
+    {
+        path = Core::ICore::resourcePath() / "pylsp" / "mac";
+    }
+    else if (Utils::HostOsInfo::isLinuxHost())
+    {
+        if(QSysInfo::buildCpuArchitecture() == QStringLiteral("i386"))
+        {
+            path = Core::ICore::resourcePath() / "pylsp" / "linux-x86";
+        }
+        else if(QSysInfo::buildCpuArchitecture() == QStringLiteral("x86_64"))
+        {
+            path = Core::ICore::resourcePath() / "pylsp" / "linux-x86_64";
+        }
+        else if(QSysInfo::buildCpuArchitecture() == QStringLiteral("arm"))
+        {
+            path = Core::ICore::resourcePath() / "pylsp" / "linux-arm";
+        }
+        else if(QSysInfo::buildCpuArchitecture() == QStringLiteral("arm64"))
+        {
+            path = Core::ICore::resourcePath() / "pylsp" / "linux-arm64";
+        }
+    }
+
+    if (path.pathAppended("bin").pathAppended("pylsp").withExecutableSuffix().exists())
+    {
+        return {PythonLanguageServerState::Installed, path};
+    }
+    // OPENMV-DIFF //
     auto lspPath = pyLspPath(python);
     if (lspPath.isEmpty())
         return {PythonLanguageServerState::NotInstallable, FilePath()};
@@ -132,6 +168,42 @@ protected:
     {
         const FilePath python = m_cmd.executable();
         Environment env = python.deviceEnvironment();
+        // OPENMV-DIFF //
+        FilePath path;
+
+        if (Utils::HostOsInfo::isWindowsHost())
+        {
+            path = Core::ICore::resourcePath() / "pylsp" / "windows";
+        }
+        else if(Utils::HostOsInfo::isMacHost())
+        {
+            path = Core::ICore::resourcePath() / "pylsp" / "mac";
+        }
+        else if (Utils::HostOsInfo::isLinuxHost())
+        {
+            if(QSysInfo::buildCpuArchitecture() == QStringLiteral("i386"))
+            {
+                path = Core::ICore::resourcePath() / "pylsp" / "linux-x86";
+            }
+            else if(QSysInfo::buildCpuArchitecture() == QStringLiteral("x86_64"))
+            {
+                path = Core::ICore::resourcePath() / "pylsp" / "linux-x86_64";
+            }
+            else if(QSysInfo::buildCpuArchitecture() == QStringLiteral("arm"))
+            {
+                path = Core::ICore::resourcePath() / "pylsp" / "linux-arm";
+            }
+            else if(QSysInfo::buildCpuArchitecture() == QStringLiteral("arm64"))
+            {
+                path = Core::ICore::resourcePath() / "pylsp" / "linux-arm64";
+            }
+        }
+
+        if (path.pathAppended("bin").pathAppended("pylsp").withExecutableSuffix().exists())
+        {
+            env.appendOrSet("PYTHONPATH", path.path());
+        }
+        // OPENMV-DIFF //
         const FilePath lspPath = pyLspPath(python);
         if (!lspPath.isEmpty() && lspPath.exists() && QTC_GUARD(lspPath.isSameDevice(python))) {
             env.appendOrSet("PYTHONPATH", lspPath.path());
