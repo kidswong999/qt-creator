@@ -2092,6 +2092,10 @@ bool QtVersion::isQtQuickCompilerSupported(QString *reason) const
 
 FilePaths QtVersionPrivate::qtCorePaths()
 {
+    // OPENMV-DIFF //
+    FilePaths empty;
+    return empty;
+    // OPENMV-DIFF //
     updateVersionInfo();
     const QString versionString = m_data.qtVersionString;
 
