@@ -832,7 +832,7 @@ PythonSettings::PythonSettings()
     // OPENMV-DIFF //
     if (Utils::HostOsInfo::isWindowsHost())
     {
-        const Interpreter interpreter = createInterpreter(Core::ICore::resourcePath(QStringLiteral("python/windows/python.exe")), {});
+        const Interpreter interpreter = createInterpreter(Core::ICore::resourcePath(QStringLiteral("python/win/python.exe")), {});
         if (!alreadyRegistered(interpreter))
             settingsInstance->addInterpreter(interpreter, true);
     }

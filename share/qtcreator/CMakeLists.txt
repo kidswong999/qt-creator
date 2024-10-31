@@ -91,7 +91,8 @@ if (WIN32)
     bossac/windows
     node/windows
     picotool/windows
-    python/windows
+    python/win
+    pylsp/windows
     blhost/win
     sdphost/win)
 endif()
