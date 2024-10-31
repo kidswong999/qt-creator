@@ -563,36 +563,39 @@ void OpenMVPluginIO::commandResult(const OpenMVPluginSerialPortCommandResult &co
                 }
                 case USBDBG_GET_STATE_CPL:
                 {
-                    int flags = deserializeLong(data);
-                    int w = deserializeLong(data);
-                    int h = deserializeLong(data);
-                    int bpp = deserializeLong(data);
+                    if (data.size() == GET_STATE_PAYLOAD_LEN)
+                    {
+                        int flags = deserializeLong(data);
+                        int w = deserializeLong(data);
+                        int h = deserializeLong(data);
+                        int bpp = deserializeLong(data);
 
-                    emit scriptRunning(flags & __USBDBG_GET_STATE_FLAGS_SCRIPT);
+                        emit scriptRunning(flags & __USBDBG_GET_STATE_FLAGS_SCRIPT);
 
-                    if(flags & __USBDBG_GET_STATE_FLAGS_TEXT)
-                    {
-                        m_lineBuffer.append(data.split(0).takeFirst());
-                        doTxBufCpl();
-                    }
-                    else if(m_lineBuffer.size())
-                    {
-                        emit printData(pasrsePrintData(m_lineBuffer));
-                        m_lineBuffer.clear();
-                        emit printEmpty(true);
-                    }
-                    else
-                    {
-                        emit printEmpty(true);
-                    }
+                        if(flags & __USBDBG_GET_STATE_FLAGS_TEXT)
+                        {
+                            m_lineBuffer.append(data.split(0).takeFirst());
+                            doTxBufCpl();
+                        }
+                        else if(m_lineBuffer.size())
+                        {
+                            emit printData(pasrsePrintData(m_lineBuffer));
+                            m_lineBuffer.clear();
+                            emit printEmpty(true);
+                        }
+                        else
+                        {
+                            emit printEmpty(true);
+                        }
 
-                    if(flags & __USBDBG_GET_STATE_FLAGS_FRAME)
-                    {
-                        doFrameSizeCpl(w, h, bpp);
-                    }
-                    else
-                    {
-                        emit frameBufferEmpty(true);
+                        if(flags & __USBDBG_GET_STATE_FLAGS_FRAME)
+                        {
+                            doFrameSizeCpl(w, h, bpp);
+                        }
+                        else
+                        {
+                            emit frameBufferEmpty(true);
+                        }
                     }
 
                     emit getStateDone();
@@ -1324,7 +1327,7 @@ void OpenMVPluginIO::getState()
     serializeByte(buffer, __USBDBG_CMD);
     serializeByte(buffer, __USBDBG_GET_STATE);
     serializeLong(buffer, GET_STATE_PAYLOAD_LEN);
-    m_postedQueue.enqueue(OpenMVPluginSerialPortCommand(buffer, GET_STATE_PAYLOAD_LEN, GET_STATE_START_DELAY, GET_STATE_END_DELAY));
+    m_postedQueue.enqueue(OpenMVPluginSerialPortCommand(buffer, GET_STATE_PAYLOAD_LEN, GET_STATE_START_DELAY, GET_STATE_END_DELAY, true, true));
     m_completionQueue.enqueue(USBDBG_GET_STATE_CPL);
     command();
 }

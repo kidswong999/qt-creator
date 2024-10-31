@@ -639,7 +639,6 @@ void OpenMVPluginSerialPort_private::command(const OpenMVPluginSerialPortCommand
                             }
                             else
                             {
-                                qDebug() << "crash";
                                 break;
                             }
                         }
