@@ -290,7 +290,7 @@ void updateEditorToolBar(Core::IEditor *editor)
             menu->popup(QCursor::pos());
         });
         // OPENMV-DIFF //
-        extras->m_popupAction->setVisible(false);
+        // extras->m_popupAction->setVisible(false);
         // OPENMV-DIFF //
     }
 

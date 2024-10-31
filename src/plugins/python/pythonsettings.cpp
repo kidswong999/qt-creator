@@ -836,6 +836,39 @@ PythonSettings::PythonSettings()
         if (!alreadyRegistered(interpreter))
             settingsInstance->addInterpreter(interpreter, true);
     }
+    else if(Utils::HostOsInfo::isMacHost())
+    {
+        const Interpreter interpreter = createInterpreter(Core::ICore::resourcePath(QStringLiteral("python/mac/bin/python")), {});
+        if (!alreadyRegistered(interpreter))
+            settingsInstance->addInterpreter(interpreter, true);
+    }
+    else if (Utils::HostOsInfo::isLinuxHost())
+    {
+        if(QSysInfo::buildCpuArchitecture() == QStringLiteral("i386"))
+        {
+            const Interpreter interpreter = createInterpreter(Core::ICore::resourcePath(QStringLiteral("python/linux-x86/bin/python")), {});
+            if (!alreadyRegistered(interpreter))
+                settingsInstance->addInterpreter(interpreter, true);
+        }
+        else if(QSysInfo::buildCpuArchitecture() == QStringLiteral("x86_64"))
+        {
+            const Interpreter interpreter = createInterpreter(Core::ICore::resourcePath(QStringLiteral("python/linux-x86_64/bin/python")), {});
+            if (!alreadyRegistered(interpreter))
+                settingsInstance->addInterpreter(interpreter, true);
+        }
+        else if(QSysInfo::buildCpuArchitecture() == QStringLiteral("arm"))
+        {
+            const Interpreter interpreter = createInterpreter(Core::ICore::resourcePath(QStringLiteral("python/linux-arm/bin/python")), {});
+            if (!alreadyRegistered(interpreter))
+                settingsInstance->addInterpreter(interpreter, true);
+        }
+        else if(QSysInfo::buildCpuArchitecture() == QStringLiteral("arm64"))
+        {
+            const Interpreter interpreter = createInterpreter(Core::ICore::resourcePath(QStringLiteral("python/linux-arm64/bin/python")), {});
+            if (!alreadyRegistered(interpreter))
+                settingsInstance->addInterpreter(interpreter, true);
+        }
+    }
     else
     {
         m_taskTreeRunner.start(recipe);

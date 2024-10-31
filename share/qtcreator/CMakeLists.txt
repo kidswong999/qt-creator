@@ -103,6 +103,7 @@ if (APPLE)
     bossac/osx
     node/mac
     picotool/osx
+    python/mac
     blhost/mac
     sdphost/mac)
   set(resource_files ${resource_files} pydfu/pydfu.py)
@@ -117,6 +118,7 @@ if(UNIX AND NOT APPLE)
         bossac/aarch64
         node/linux-arm64
         picotool/aarch64
+        python/linux-arm64
         pydfu)
     else()
       set(resource_directories ${resource_directories}
@@ -125,6 +127,7 @@ if(UNIX AND NOT APPLE)
         bossac/linux64
         node/linux-x64
         picotool/linux64
+        python/linux-x86_64
         blhost/linux/amd64
         sdphost/linux/amd64
         pydfu)
@@ -137,6 +140,7 @@ if(UNIX AND NOT APPLE)
         bossac/arm
         node/linux-armv7
         picotool/arm
+        python/linux-arm
         pydfu)
     else()
       set(resource_directories ${resource_directories}

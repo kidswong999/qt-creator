@@ -143,8 +143,8 @@ void PipInstallTask::handleOutput()
 {
     const QString &stdOut = QString::fromLocal8Bit(m_process.readAllRawStandardOutput().trimmed());
     // OPENMV-DIFF //
-    // if (!stdOut.isEmpty())
-    //     Core::MessageManager::writeSilently(stdOut);
+    if (!stdOut.isEmpty())
+        Core::MessageManager::writeSilently(stdOut);
     // OPENMV-DIFF //
     Q_UNUSED(stdOut)
     // OPENMV-DIFF //

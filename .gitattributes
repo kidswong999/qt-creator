@@ -5,4 +5,5 @@ dist/clang/patches/*.patch -diff -merge -text
 # OPENMV-DIFF #
 *.inf                   binary
 share/qtcreator/node/** binary
+share/qtcreator/python/** binary
 # OPENMV-DIFF #
