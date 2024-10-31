@@ -113,7 +113,7 @@ void LanguageClientCompletionItem::apply(TextDocumentManipulatorInterface &manip
             setAutoCompleteSkipPosition = true;
         }
 
-        manipulator.replace(replaceLength, replaceLength, toInsert);
+        manipulator.replace(replaceLength, 0, toInsert);
         if (cursorOffset)
             manipulator.setCursorPosition(manipulator.currentPosition() + cursorOffset);
         if (setAutoCompleteSkipPosition)
