@@ -268,20 +268,38 @@ void OpenMVPlugin::processDocumentationMatch(const QRegularExpressionMatch &matc
         {
             QStringList list, listWithTypesAndDefaults;
 
-            for(const QString &arg : processArgumentSplitting(QString(args.captured(1)).
-                                        remove(QLatin1String("<span class=\"optional\">[</span>")).
-                                        remove(QLatin1String("<span class=\"optional\">]</span>")).
-                                        remove(m_emRegEx).
-                                        remove(m_spanRegEx).
-                                        remove(m_anchorRegEx).
-                                        remove(QLatin1String("</em>")).
-                                        remove(QLatin1String("</span>")).
-                                        remove(QLatin1String("</a>")).
-                                        remove(QLatin1Char(' '))))
+            for(QString arg : processArgumentSplitting(QString(args.captured(1)).
+                              remove(QLatin1String("<span class=\"optional\">[</span>")).
+                              remove(QLatin1String("<span class=\"optional\">]</span>")).
+                              remove(m_emRegEx).
+                              remove(m_spanRegEx).
+                              remove(m_anchorRegEx).
+                              remove(QLatin1String("</em>")).
+                              remove(QLatin1String("</span>")).
+                              remove(QLatin1String("</a>")).
+                              remove(QLatin1Char(' '))))
             {
                 int equals = arg.indexOf(QLatin1Char('='));
                 QString temp = (equals != -1) ? arg.left(equals) : arg;
                 temp = QString(temp).remove(m_typeHintRegEx);
+
+                if (temp == QStringLiteral("..."))
+                {
+                    continue;
+                }
+
+                if (temp == QStringLiteral("'param'"))
+                {
+                    temp = QStringLiteral("param");
+                    arg.replace(QStringLiteral("'param'"), QStringLiteral("param"));
+                }
+
+                // TODO: Remove me after documentation is cleaned up..
+                // This is a fix for a spelling error in the docs.
+                if (arg.endsWith(QStringLiteral("Nonee")))
+                {
+                    arg.chop(1);
+                }
 
                 m_arguments.insert(temp);
                 list.append(temp);
@@ -788,6 +806,11 @@ bool OpenMVPlugin::loadDocs(bool update_resoruces, bool update_editors)
 
         for (const documentation_t &modules : m_modules)
         {
+            if (modules.name == QStringLiteral("collections"))
+            {
+                continue;
+            }
+
             Utils::FilePath path = headers;
             path = path.pathAppended(modules.name + QStringLiteral(".py"));
             QFile file(path.toString());
@@ -796,11 +819,42 @@ bool OpenMVPlugin::loadDocs(bool update_resoruces, bool update_editors)
             {
                 QTextStream stream(&file);
 
-                stream << "from typing import List, Tuple, Union, Any\n";
+                stream << "from __future__ import annotations\n";
+                stream << "from typing import List, Tuple, Union, Any, Optional\n";
 
                 if (modules.name != QStringLiteral("image"))
                 {
                     stream << "import image\n";
+                }
+
+                for (const documentation_t &datas : m_datas)
+                {
+                    if ((datas.moduleName == modules.name) && datas.className.isEmpty())
+                    {
+                        QStringList hierarchy = QStringList() << datas.moduleName << datas.name;
+                        stream << "\"\"\"\n";
+                        stream << "" << datas.text.simplified().trimmed().replace(QStringLiteral("> <"), QStringLiteral("><")) << "\n";
+                        stream << "\"\"\"\n";
+                        stream << datas.name;
+                        if (m_returnTypesByHierarchy.contains(hierarchy)) stream << ": " << m_returnTypesByHierarchy.value(hierarchy);
+                        stream << " = None\n";
+                    }
+                }
+
+                for (const documentation_t &function : m_functions)
+                {
+                    if (function.moduleName == modules.name)
+                    {
+                        QStringList hierarchy = QStringList() << function.moduleName << function.name;
+                        stream << "def " << function.name << "(";
+                        stream << m_argumentsByHierarchy.value(hierarchy).join(", ");
+                        if (m_returnTypesByHierarchy.contains(hierarchy)) stream << ") -> " << m_returnTypesByHierarchy.value(hierarchy) << ":\n";
+                        else stream << "):\n";
+                        stream << "\t\"\"\"\n";
+                        stream << "\t" << function.text.simplified().trimmed().replace(QStringLiteral("> <"), QStringLiteral("><")) << "\n";
+                        stream << "\t\"\"\"\n";
+                        stream << "\tpass\n";
+                    }
                 }
 
                 for (const documentation_t &classes : m_classes)
@@ -827,6 +881,20 @@ bool OpenMVPlugin::loadDocs(bool update_resoruces, bool update_editors)
                         stream << "\t\t\"\"\"\n";
                         stream << "\t\tpass\n";
 
+                        for (const documentation_t &datas : m_datas)
+                        {
+                            if (datas.moduleName == modules.name && datas.className == classes.name)
+                            {
+                                QStringList hierarchy = QStringList() << datas.moduleName << datas.className << datas.name;
+                                stream << "\t" << datas.name;
+                                if (m_returnTypesByHierarchy.contains(hierarchy)) stream << ": " << m_returnTypesByHierarchy.value(hierarchy);
+                                stream << " = None\n";
+                                stream << "\t\"\"\"\n";
+                                stream << "\t" << datas.text.simplified().trimmed().replace(QStringLiteral("> <"), QStringLiteral("><")) << "\n";
+                                stream << "\t\"\"\"\n";
+                            }
+                        }
+
                         for (const documentation_t &methods : m_methods)
                         {
                             if (methods.moduleName == modules.name && methods.className == classes.name)
@@ -842,50 +910,6 @@ bool OpenMVPlugin::loadDocs(bool update_resoruces, bool update_editors)
                                 stream << "\t\tpass\n";
                             }
                         }
-
-                        for (const documentation_t &datas : m_datas)
-                        {
-                            if (datas.moduleName == modules.name && datas.className == classes.name)
-                            {
-                                QStringList hierarchy = QStringList() << datas.moduleName << datas.className << datas.name;
-                                stream << "\t" << datas.name;
-                                if (m_returnTypesByHierarchy.contains(hierarchy)) stream << ": " << m_returnTypesByHierarchy.value(hierarchy);
-                                stream << " = None\n";
-                                stream << "\t\"\"\"\n";
-                                stream << "\t" << datas.text.simplified().trimmed().replace(QStringLiteral("> <"), QStringLiteral("><")) << "\n";
-                                stream << "\t\"\"\"\n";
-                            }
-                        }
-                    }
-                }
-
-                for (const documentation_t &function : m_functions)
-                {
-                    if (function.moduleName == modules.name)
-                    {
-                        QStringList hierarchy = QStringList() << function.moduleName << function.name;
-                        stream << "def " << function.name << "(";
-                        stream << m_argumentsByHierarchy.value(hierarchy).join(", ");
-                        if (m_returnTypesByHierarchy.contains(hierarchy)) stream << ") -> " << m_returnTypesByHierarchy.value(hierarchy) << ":\n";
-                        else stream << "):\n";
-                        stream << "\t\"\"\"\n";
-                        stream << "\t" << function.text.simplified().trimmed().replace(QStringLiteral("> <"), QStringLiteral("><")) << "\n";
-                        stream << "\t\"\"\"\n";
-                        stream << "\tpass\n";
-                    }
-                }
-
-                for (const documentation_t &datas : m_datas)
-                {
-                    if ((datas.moduleName == modules.name) && datas.className.isEmpty())
-                    {
-                        QStringList hierarchy = QStringList() << datas.moduleName << datas.name;
-                        stream << "\"\"\"\n";
-                        stream << "" << datas.text.simplified().trimmed().replace(QStringLiteral("> <"), QStringLiteral("><")) << "\n";
-                        stream << "\"\"\"\n";
-                        stream << datas.name;
-                        if (m_returnTypesByHierarchy.contains(hierarchy)) stream << ": " << m_returnTypesByHierarchy.value(hierarchy);
-                        stream << " = None\n";
                     }
                 }
 
