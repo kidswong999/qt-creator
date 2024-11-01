@@ -84,6 +84,7 @@ set(resource_files
 # OPENMV-DIFF #
 if (WIN32)
   set(resource_directories ${resource_directories}
+    alif/windows
     drivers
     dfuse
     ffmpeg/windows
@@ -99,6 +100,7 @@ endif()
 
 if (APPLE)
   set(resource_directories ${resource_directories}
+    alif/mac
     ffmpeg/mac
     dfu-util/osx
     bossac/osx
@@ -124,6 +126,7 @@ if(UNIX AND NOT APPLE)
         pydfu)
     else()
       set(resource_directories ${resource_directories}
+        alif/linux-x86_64
         ffmpeg/linux-x86_64
         dfu-util/linux64
         bossac/linux64
