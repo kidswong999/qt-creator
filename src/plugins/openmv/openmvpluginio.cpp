@@ -597,6 +597,11 @@ void OpenMVPluginIO::commandResult(const OpenMVPluginSerialPortCommandResult &co
                             emit frameBufferEmpty(true);
                         }
                     }
+                    else if(m_lineBuffer.size())
+                    {
+                        emit printData(pasrsePrintData(m_lineBuffer));
+                        m_lineBuffer.clear();
+                    }
 
                     emit getStateDone();
 
