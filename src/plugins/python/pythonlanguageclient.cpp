@@ -268,6 +268,58 @@ void PyLSClient::updateConfiguration()
 // OPENMV-DIFF //
 static Utils::FilePath m_portPath;
 void PyLSClient::setPortPath(const FilePath &portPath) {
+    QHash<FilePath, PyLSClient *> &clients = pythonClients();
+
+    for (auto it = clients.begin(); it != clients.end(); ++it) {
+        PyLSClient *client = it.value();
+
+        if (m_portPath.isEmpty())
+        {
+            if (!portPath.isEmpty())
+            {
+// BREAKS AUTO COMPLETION WHEN ENABLED
+//                WorkspaceFoldersChangeEvent event;
+//                event.setAdded({WorkSpaceFolder(client->hostPathToServerUri(portPath),
+//                                                portPath.fileName())});
+//                DidChangeWorkspaceFoldersParams params;
+//                params.setEvent(event);
+//                DidChangeWorkspaceFoldersNotification change(params);
+//                client->sendMessage(change);
+                client->m_extraWorkspaceDirs.append(portPath);
+            }
+        }
+        else if (m_portPath != portPath)
+        {
+            if (!portPath.isEmpty())
+            {
+// BREAKS AUTO COMPLETION WHEN ENABLED
+//                WorkspaceFoldersChangeEvent event;
+//                event.setAdded({WorkSpaceFolder(client->hostPathToServerUri(portPath),
+//                                                 portPath.fileName())});
+//                event.setRemoved({WorkSpaceFolder(client->hostPathToServerUri(m_portPath),
+//                                                  m_portPath.fileName())});
+//                DidChangeWorkspaceFoldersParams params;
+//                params.setEvent(event);
+//                DidChangeWorkspaceFoldersNotification change(params);
+//                client->sendMessage(change);
+                client->m_extraWorkspaceDirs.append(portPath);
+                client->m_extraWorkspaceDirs.removeOne(m_portPath);
+            }
+            else
+            {
+// BREAKS AUTO COMPLETION WHEN ENABLED
+//                WorkspaceFoldersChangeEvent event;
+//                event.setRemoved({WorkSpaceFolder(client->hostPathToServerUri(m_portPath),
+//                                                  m_portPath.fileName())});
+//                DidChangeWorkspaceFoldersParams params;
+//                params.setEvent(event);
+//                DidChangeWorkspaceFoldersNotification change(params);
+//                client->sendMessage(change);
+                client->m_extraWorkspaceDirs.removeOne(m_portPath);
+            }
+        }
+    }
+
     m_portPath = portPath;
 }
 // OPENMV-DIFF //
@@ -275,7 +327,11 @@ void PyLSClient::setPortPath(const FilePath &portPath) {
 void PyLSClient::openDocument(TextEditor::TextDocument *document)
 {
     using namespace LanguageServerProtocol;
-    if (reachable()) {
+    // OPENMV-DIFF //
+    // if (reachable()) {
+    // OPENMV-DIFF //
+    if (0) {
+    // OPENMV-DIFF //
         const FilePath documentPath = document->filePath();
         if (PythonProject *project = pythonProjectForFile(documentPath)) {
             if (Target *target = project->activeTarget()) {
@@ -288,48 +344,17 @@ void PyLSClient::openDocument(TextEditor::TextDocument *document)
                 }
             }
         } else if (isSupportedDocument(document)) {
-            // OPENMV-DIFF //
-            // const FilePath workspacePath = documentPath.parentDir();
-            // if (!m_extraWorkspaceDirs.contains(workspacePath)) {
-            //     WorkspaceFoldersChangeEvent event;
-            //     event.setAdded({WorkSpaceFolder(hostPathToServerUri(workspacePath),
-            //                                     workspacePath.fileName())});
-            //     DidChangeWorkspaceFoldersParams params;
-            //     params.setEvent(event);
-            //     DidChangeWorkspaceFoldersNotification change(params);
-            //     sendMessage(change);
-            //     m_extraWorkspaceDirs.append(workspacePath);
-            // }
-            // OPENMV-DIFF //
             const FilePath workspacePath = documentPath.parentDir();
-            const FilePath workspacePath2 = Core::ICore::userResourcePath(QStringLiteral("micropython-headers"));
-            if ((!m_portPath.isEmpty()) && workspacePath.isChildOf(m_portPath)) {
-                if (!m_extraWorkspaceDirs.contains(workspacePath) && !m_extraWorkspaceDirs.contains(workspacePath2)) {
-                    WorkspaceFoldersChangeEvent event;
-                    event.setAdded({WorkSpaceFolder(hostPathToServerUri(workspacePath),
-                                                    workspacePath.fileName()),
-                                    WorkSpaceFolder(hostPathToServerUri(workspacePath2),
-                                                    workspacePath2.fileName())});
-                    DidChangeWorkspaceFoldersParams params;
-                    params.setEvent(event);
-                    DidChangeWorkspaceFoldersNotification change(params);
-                    sendMessage(change);
-                    m_extraWorkspaceDirs.append(workspacePath);
-                    m_extraWorkspaceDirs.append(workspacePath2);
-                }
-            } else {
-                if (!m_extraWorkspaceDirs.contains(workspacePath2)) {
-                    WorkspaceFoldersChangeEvent event;
-                    event.setAdded({WorkSpaceFolder(hostPathToServerUri(workspacePath2),
-                                                    workspacePath2.fileName())});
-                    DidChangeWorkspaceFoldersParams params;
-                    params.setEvent(event);
-                    DidChangeWorkspaceFoldersNotification change(params);
-                    sendMessage(change);
-                    m_extraWorkspaceDirs.append(workspacePath2);
-                }
+            if (!m_extraWorkspaceDirs.contains(workspacePath)) {
+                WorkspaceFoldersChangeEvent event;
+                event.setAdded({WorkSpaceFolder(hostPathToServerUri(workspacePath),
+                                                workspacePath.fileName())});
+                DidChangeWorkspaceFoldersParams params;
+                params.setEvent(event);
+                DidChangeWorkspaceFoldersNotification change(params);
+                sendMessage(change);
+                m_extraWorkspaceDirs.append(workspacePath);
             }
-            // OPENMV-DIFF //
         }
     }
     Client::openDocument(document);

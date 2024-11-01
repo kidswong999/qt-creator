@@ -3552,6 +3552,8 @@ void OpenMVPlugin::disconnectClicked(bool reset)
             m_frameBuffer->enableSaveTemplate(false);
             m_frameBuffer->enableSaveDescriptor(false);
 
+            Python::Internal::PyLSClient::setPortPath(Utils::FilePath::fromUserInput(m_portPath));
+
             ///////////////////////////////////////////////////////////////////
 
             m_working = false;

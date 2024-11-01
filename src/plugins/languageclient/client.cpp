@@ -67,6 +67,9 @@
 #include <QTextDocument>
 #include <QThread>
 #include <QTimer>
+// OPENMV-DIFF //
+#include <QStandardPaths>
+// OPENMV-DIFF //
 
 using namespace LanguageServerProtocol;
 using namespace Utils;
@@ -552,8 +555,12 @@ void Client::initialize()
     params.setClientInfo(d->m_clientInfo);
     params.setCapabilities(d->m_clientCapabilities);
     params.setInitializationOptions(d->m_initializationOptions);
-    if (d->m_project)
-        params.setRootUri(hostPathToServerUri(d->m_project->projectDirectory()));
+    // OPENMV-DIFF //
+    // if (d->m_project)
+    //     params.setRootUri(hostPathToServerUri(d->m_project->projectDirectory()));
+    // OPENMV-DIFF //
+    params.setRootUri(hostPathToServerUri(Core::ICore::userResourcePath(QStringLiteral("micropython-headers"))));
+    // OPENMV-DIFF //
 
     auto projectFilter = [this](Project *project) { return canOpenProject(project); };
     auto toWorkSpaceFolder = [this](Project *pro) {
@@ -566,6 +573,13 @@ void Client::initialize()
         params.setWorkSpaceFolders(nullptr);
     else
         params.setWorkSpaceFolders(workspaces);
+    // OPENMV-DIFF //
+// BREAKS AUTO COMPLETION WHEN ENABLED
+//    QString documentsFolder = QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation) + QStringLiteral("/OpenMV");
+//    Utils::FilePath documentsFolderFilePath = Utils::FilePath::fromString(documentsFolder);
+//    WorkSpaceFolder worspace(hostPathToServerUri(documentsFolderFilePath), documentsFolderFilePath.fileName());
+//    params.setWorkSpaceFolders(QList<WorkSpaceFolder>() << worspace);
+    // OPENMV-DIFF //
     InitializeRequest initRequest(params);
     initRequest.setResponseCallback([this](const InitializeRequest::Response &initResponse) {
         d->initializeCallback(initResponse);
