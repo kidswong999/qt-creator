@@ -415,6 +415,34 @@
         {
             "hidden" : false,
             "legacy" : false,
+            "boardType" : "N6",
+            "boardArchString" : "OPENMV N6",
+            "boardDisplayName" : "OpenMV Cam N6",
+            "boardFirmwareFolder" : "OPENMV_N6",
+            "boardVidPid" : "37C5:1206",
+            "boardPidMask" : "0xFFFF",
+            "boardSerialNumberInverseFilters" : [],
+            "bootloaderVidPid" : "37C5:9206",
+            "bootloaderType" : "openmv_dfu",
+            "bootloaderSettings" : {
+                "eraseCommands" : ["-a 2"],
+                "programCommands" : [
+                    {
+                        "cmd" : "-a 1",
+                        "path" : "OPENMV_N6/firmware.bin"
+                    }
+                ],
+                "binProgamCommands" : [
+                    {
+                        "cmd": "-a 1",
+                        "name": "firmware.bin"
+                    }
+                ]
+            }
+        },
+        {
+            "hidden" : false,
+            "legacy" : false,
             "boardType" : "H7",
             "boardArchString" : "PORTENTA H7 8192 SDRAM",
             "boardDisplayName" : "Arduino Portenta (STM32H747)",
