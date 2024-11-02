@@ -1830,6 +1830,20 @@ void OpenMVPlugin::connectClicked(bool forceBootloader, QString forceFirmwarePat
             && (!isPicotool)
             && (justEraseFlashFs || firmwarePath.endsWith(QStringLiteral(".bin"), Qt::CaseInsensitive)))
             {
+                QStringList vidpid = QString(selectedDfuDevice).split(QStringLiteral(",")).first().split(QStringLiteral(":"));
+
+                if((vidpid.size() == 2) && (vidpid.at(0).toInt(nullptr, 16) == STM32_DFU_VID) && (vidpid.at(1).toInt(nullptr, 16) == STM32_DFU_PID))
+                {
+                    QMessageBox::critical(Core::ICore::dialogParent(),
+                        Tr::tr("Connect"),
+                        Tr::tr("Only loading *.dfu files is supported for the STM32 recovery bootloader!\n\n"
+                               "Please select a bootloader.dfu file and try again. "
+                               "Note that loading the firmware.dfu or openmv.dfu (bootloader + firmware) "
+                               "may not work on STM32H7 boards due to a bug in the chip's ROM bootloader!"));
+
+                    CONNECT_END();
+                }
+
                 openmvInternalBootloader(forceFirmwarePath,
                                          forceFlashFSErase,
                                          justEraseFlashFs,
@@ -1926,6 +1940,24 @@ void OpenMVPlugin::connectClicked(bool forceBootloader, QString forceFirmwarePat
 
             if(firmwarePath.endsWith(QStringLiteral(".dfu"), Qt::CaseInsensitive))
             {
+                QStringList vidpid = QString(selectedDfuDevice).split(QStringLiteral(",")).first().split(QStringLiteral(":"));
+
+                if((vidpid.size() == 2) && (vidpid.at(0).toInt(nullptr, 16) == STM32_DFU_VID) && (vidpid.at(1).toInt(nullptr, 16) == STM32_DFU_PID))
+                {
+                    if (QFileInfo(firmwarePath).baseName() != QStringLiteral("bootloader"))
+                    {
+                        if (QMessageBox::warning(Core::ICore::dialogParent(),
+                                                 Tr::tr("Connect"),
+                                                 Tr::tr("Note that loading the firmware.dfu or openmv.dfu (bootloader + firmware) "
+                                                         "may not work on STM32H7 boards due to a bug in the chip's ROM bootloader!\n\n"
+                                                         "OpenMV reconmends only loading the bootloader.dfu to repair the bootloader."),
+                                                 QMessageBox::Ok | QMessageBox::Cancel, QMessageBox::Ok) != QMessageBox::Ok)
+                        {
+                            CONNECT_END();
+                        }
+                    }
+                }
+
                 openmvRepairingBootloader(forceFlashFSErase,
                                           previousMapping,
                                           originalDfuVidPid,

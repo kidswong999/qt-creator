@@ -11,6 +11,8 @@
 
 #include "tools/myqserialportinfo.h"
 
+#define STM32_DFU_VID 0x0483
+#define STM32_DFU_PID 0xDF11
 #define OPENMVCAM_VID 0x1209
 #define OPENMVCAM_PID 0xABD1
 
