@@ -9,7 +9,7 @@
 
 #include <utils/hostosinfo.h>
 
-#include "tools/MyQSerialPortInfo.h"
+#include "tools/myqserialportinfo.h"
 
 #define OPENMVCAM_VID 0x1209
 #define OPENMVCAM_PID 0xABD1
