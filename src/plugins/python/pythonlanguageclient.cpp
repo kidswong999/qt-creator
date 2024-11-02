@@ -273,49 +273,52 @@ void PyLSClient::setPortPath(const FilePath &portPath) {
     for (auto it = clients.begin(); it != clients.end(); ++it) {
         PyLSClient *client = it.value();
 
-        if (m_portPath.isEmpty())
+        if (client)
         {
-            if (!portPath.isEmpty())
+            if (m_portPath.isEmpty())
             {
-// BREAKS AUTO COMPLETION WHEN ENABLED
-//                WorkspaceFoldersChangeEvent event;
-//                event.setAdded({WorkSpaceFolder(client->hostPathToServerUri(portPath),
-//                                                portPath.fileName())});
-//                DidChangeWorkspaceFoldersParams params;
-//                params.setEvent(event);
-//                DidChangeWorkspaceFoldersNotification change(params);
-//                client->sendMessage(change);
-                client->m_extraWorkspaceDirs.append(portPath);
+                if (!portPath.isEmpty())
+                {
+    // BREAKS AUTO COMPLETION WHEN ENABLED
+    //                WorkspaceFoldersChangeEvent event;
+    //                event.setAdded({WorkSpaceFolder(client->hostPathToServerUri(portPath),
+    //                                                portPath.fileName())});
+    //                DidChangeWorkspaceFoldersParams params;
+    //                params.setEvent(event);
+    //                DidChangeWorkspaceFoldersNotification change(params);
+    //                client->sendMessage(change);
+                    client->m_extraWorkspaceDirs.append(portPath);
+                }
             }
-        }
-        else if (m_portPath != portPath)
-        {
-            if (!portPath.isEmpty())
+            else if (m_portPath != portPath)
             {
-// BREAKS AUTO COMPLETION WHEN ENABLED
-//                WorkspaceFoldersChangeEvent event;
-//                event.setAdded({WorkSpaceFolder(client->hostPathToServerUri(portPath),
-//                                                 portPath.fileName())});
-//                event.setRemoved({WorkSpaceFolder(client->hostPathToServerUri(m_portPath),
-//                                                  m_portPath.fileName())});
-//                DidChangeWorkspaceFoldersParams params;
-//                params.setEvent(event);
-//                DidChangeWorkspaceFoldersNotification change(params);
-//                client->sendMessage(change);
-                client->m_extraWorkspaceDirs.append(portPath);
-                client->m_extraWorkspaceDirs.removeOne(m_portPath);
-            }
-            else
-            {
-// BREAKS AUTO COMPLETION WHEN ENABLED
-//                WorkspaceFoldersChangeEvent event;
-//                event.setRemoved({WorkSpaceFolder(client->hostPathToServerUri(m_portPath),
-//                                                  m_portPath.fileName())});
-//                DidChangeWorkspaceFoldersParams params;
-//                params.setEvent(event);
-//                DidChangeWorkspaceFoldersNotification change(params);
-//                client->sendMessage(change);
-                client->m_extraWorkspaceDirs.removeOne(m_portPath);
+                if (!portPath.isEmpty())
+                {
+    // BREAKS AUTO COMPLETION WHEN ENABLED
+    //                WorkspaceFoldersChangeEvent event;
+    //                event.setAdded({WorkSpaceFolder(client->hostPathToServerUri(portPath),
+    //                                                 portPath.fileName())});
+    //                event.setRemoved({WorkSpaceFolder(client->hostPathToServerUri(m_portPath),
+    //                                                  m_portPath.fileName())});
+    //                DidChangeWorkspaceFoldersParams params;
+    //                params.setEvent(event);
+    //                DidChangeWorkspaceFoldersNotification change(params);
+    //                client->sendMessage(change);
+                    client->m_extraWorkspaceDirs.append(portPath);
+                    client->m_extraWorkspaceDirs.removeOne(m_portPath);
+                }
+                else
+                {
+    // BREAKS AUTO COMPLETION WHEN ENABLED
+    //                WorkspaceFoldersChangeEvent event;
+    //                event.setRemoved({WorkSpaceFolder(client->hostPathToServerUri(m_portPath),
+    //                                                  m_portPath.fileName())});
+    //                DidChangeWorkspaceFoldersParams params;
+    //                params.setEvent(event);
+    //                DidChangeWorkspaceFoldersNotification change(params);
+    //                client->sendMessage(change);
+                    client->m_extraWorkspaceDirs.removeOne(m_portPath);
+                }
             }
         }
     }

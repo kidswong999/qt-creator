@@ -5,11 +5,13 @@
 namespace OpenMV {
 namespace Internal {
 
-void OpenMVPlugin::openmvDFUBootloader(bool forceFlashFSErase,
-                                       bool justEraseFlashFs,
-                                       const QString &firmwarePath,
-                                       const QString &selectedDfuDevice)
+void OpenMVPlugin::openmvArduinoDFUBootloader(bool forceFlashFSErase,
+                                              bool justEraseFlashFs,
+                                              const QString &firmwarePath,
+                                              const QString &selectedDfuDevice)
 {
+    // Stopping ///////////////////////////////////////////////////////
+
     if(selectedDfuDevice.isEmpty())
     {
         QEventLoop loop;
@@ -52,7 +54,7 @@ void OpenMVPlugin::openmvDFUBootloader(bool forceFlashFSErase,
 #endif
         }
 
-        m_iodevice->sysReset(false);
+        m_iodevice->sysReset(true);
         m_iodevice->close();
 
         loop.exec();
@@ -60,20 +62,33 @@ void OpenMVPlugin::openmvDFUBootloader(bool forceFlashFSErase,
         QElapsedTimer elaspedTimer;
         elaspedTimer.start();
 
-        while(!elaspedTimer.hasExpired(100))
+        while(!elaspedTimer.hasExpired(RESET_TO_DFU_SEARCH_TIME))
         {
             QApplication::processEvents();
         }
     }
 
+    if(Utils::HostOsInfo::isLinuxHost()
+    && ((QSysInfo::buildCpuArchitecture() == QStringLiteral("arm"))
+    || (QSysInfo::buildCpuArchitecture() == QStringLiteral("arm64"))))
+    {
+        if(QMessageBox::warning(Core::ICore::dialogParent(),
+            Tr::tr("Connect"),
+            Tr::tr("DFU Util may not be stable on this platform. If loading fails please use a regular computer."),
+            QMessageBox::Ok | QMessageBox::Cancel, QMessageBox::Cancel) == QMessageBox::Cancel)
+        {
+            CONNECT_END();
+        }
+    }
+
+    // Erase Flash ////////////////////////////////////////
+
     QString selectedDfuDeviceVidPid = selectedDfuDevice.isEmpty() ? QString() : selectedDfuDevice.split(QStringLiteral(",")).first();
     QString selectedDfuDeviceSerialNumber = selectedDfuDevice.isEmpty() ? QString() : selectedDfuDevice.split(QStringLiteral(",")).last();
 
     QString boardTypeToDfuDeviceVidPid;
-    QStringList eraseCommands, programCommandsCmd, programCommandsPath;
-    QString binProgramCommand;
-
-    QString firmwarePathFileName = QFileInfo(firmwarePath).fileName();
+    QStringList eraseCommands, extraProgramAddrCommands, extraProgramPathCommands;
+    QString binProgramCommand, dfuProgramCommand;
 
     if(selectedDfuDevice.isEmpty())
     {
@@ -83,11 +98,28 @@ void OpenMVPlugin::openmvDFUBootloader(bool forceFlashFSErase,
         {
             QJsonObject obj = val.toObject();
 
-            if(obj.value(QStringLiteral("bootloaderType")).toString() == QStringLiteral("openmv_dfu"))
+            if(obj.value(QStringLiteral("bootloaderType")).toString() == QStringLiteral("arduino_dfu"))
             {
                 QJsonObject bootloaderSettings = obj.value(QStringLiteral("bootloaderSettings")).toObject();
 
-                if(m_boardType == obj.value(QStringLiteral("boardType")).toString())
+                QJsonArray appvidpidArray = bootloaderSettings.value(QStringLiteral("appvidpid")).toArray();
+                bool isApp = appvidpidArray.isEmpty();
+
+                if(!isApp)
+                {
+                    for(const QJsonValue &appvidpid : appvidpidArray)
+                    {
+                        QStringList vidpid = appvidpid.toString().split(QStringLiteral(":"));
+
+                        if((vidpid.at(0).toInt(nullptr, 16) == m_boardVID) && (vidpid.at(1).toInt(nullptr, 16) == m_boardPID))
+                        {
+                            isApp = true;
+                            break;
+                        }
+                    }
+                }
+
+                if(isApp && (m_boardType == obj.value(QStringLiteral("boardType")).toString()))
                 {
                     boardTypeToDfuDeviceVidPid = obj.value(QStringLiteral("bootloaderVidPid")).toString();
 
@@ -97,22 +129,16 @@ void OpenMVPlugin::openmvDFUBootloader(bool forceFlashFSErase,
                         eraseCommands.append(command.toString());
                     }
 
-                    QJsonArray extraProgramCommandsArray = bootloaderSettings.value(QStringLiteral("programCommands")).toArray();
+                    QJsonArray extraProgramCommandsArray = bootloaderSettings.value(QStringLiteral("extraProgramCommands")).toArray();
                     for(const QJsonValue &command : extraProgramCommandsArray)
                     {
                         QJsonObject obj2 = command.toObject();
-                        programCommandsCmd.append(obj2.value(QStringLiteral("cmd")).toString());
-                        programCommandsPath.append(obj2.value(QStringLiteral("path")).toString());
+                        extraProgramAddrCommands.append(obj2.value(QStringLiteral("addr")).toString());
+                        extraProgramPathCommands.append(obj2.value(QStringLiteral("path")).toString());
                     }
 
-                    for (const QJsonValue &cmd : bootloaderSettings.value(QStringLiteral("binProgamCommands")).toArray())
-                    {
-                        if (firmwarePathFileName.toLower() == cmd.toObject().value(QStringLiteral("name")).toString().toLower())
-                        {
-                            binProgramCommand = cmd.toObject().value(QStringLiteral("cmd")).toString();
-                        }
-                    }
-
+                    binProgramCommand = bootloaderSettings.value(QStringLiteral("binProgramCommand")).toString();
+                    dfuProgramCommand = bootloaderSettings.value(QStringLiteral("dfuProgramCommand")).toString();
                     foundMatch = true;
                     break;
                 }
@@ -127,15 +153,6 @@ void OpenMVPlugin::openmvDFUBootloader(bool forceFlashFSErase,
 
             CONNECT_END();
         }
-
-        if (binProgramCommand.isEmpty() && QFileInfo(firmwarePath).exists())
-        {
-            QMessageBox::critical(Core::ICore::dialogParent(),
-                Tr::tr("Connect"),
-                Tr::tr("No matching interface for the selected file name!") + QString(QStringLiteral("\n\nVID: %1, PID: %2")).arg(m_boardVID).arg(m_boardPID));
-
-            CONNECT_END();
-        }
     }
     else
     {
@@ -146,7 +163,7 @@ void OpenMVPlugin::openmvDFUBootloader(bool forceFlashFSErase,
             QJsonObject obj = val.toObject();
 
             if((selectedDfuDeviceVidPid.toLower() == obj.value(QStringLiteral("bootloaderVidPid")).toString().toLower())
-            && (obj.value(QStringLiteral("bootloaderType")).toString() == QStringLiteral("openmv_dfu")))
+            && (obj.value(QStringLiteral("bootloaderType")).toString() == QStringLiteral("arduino_dfu")))
             {
                 QJsonObject bootloaderSettings = obj.value(QStringLiteral("bootloaderSettings")).toObject();
 
@@ -156,22 +173,16 @@ void OpenMVPlugin::openmvDFUBootloader(bool forceFlashFSErase,
                     eraseCommands.append(command.toString());
                 }
 
-                QJsonArray extraProgramCommandsArray = bootloaderSettings.value(QStringLiteral("programCommands")).toArray();
+                QJsonArray extraProgramCommandsArray = bootloaderSettings.value(QStringLiteral("extraProgramCommands")).toArray();
                 for(const QJsonValue &command : extraProgramCommandsArray)
                 {
                     QJsonObject obj2 = command.toObject();
-                    programCommandsCmd.append(obj2.value(QStringLiteral("cmd")).toString());
-                    programCommandsPath.append(obj2.value(QStringLiteral("path")).toString());
+                    extraProgramAddrCommands.append(obj2.value(QStringLiteral("addr")).toString());
+                    extraProgramPathCommands.append(obj2.value(QStringLiteral("path")).toString());
                 }
 
-                for (const QJsonValue &cmd : bootloaderSettings.value(QStringLiteral("binProgamCommands")).toArray())
-                {
-                    if (firmwarePathFileName.toLower() == cmd.toObject().value(QStringLiteral("name")).toString().toLower())
-                    {
-                        binProgramCommand = cmd.toObject().value(QStringLiteral("cmd")).toString();
-                    }
-                }
-
+                binProgramCommand = bootloaderSettings.value(QStringLiteral("binProgramCommand")).toString();
+                dfuProgramCommand = bootloaderSettings.value(QStringLiteral("dfuProgramCommand")).toString();
                 foundMatch = true;
                 break;
             }
@@ -183,22 +194,7 @@ void OpenMVPlugin::openmvDFUBootloader(bool forceFlashFSErase,
 
             QMessageBox::critical(Core::ICore::dialogParent(),
                 Tr::tr("Connect"),
-                Tr::tr("No DFU settings for the selected device!") + QString(QStringLiteral("\n\nVID: %1, PID: %2"))
-                                  .arg(dfuDeviceVidPidList.first().toInt(nullptr, 16))
-                                  .arg(dfuDeviceVidPidList.last().toInt(nullptr, 16)));
-
-            CONNECT_END();
-        }
-
-        if (binProgramCommand.isEmpty() && QFileInfo(firmwarePath).exists())
-        {
-            QStringList dfuDeviceVidPidList = selectedDfuDeviceVidPid.split(QLatin1Char(':'));
-
-            QMessageBox::critical(Core::ICore::dialogParent(),
-                Tr::tr("Connect"),
-                Tr::tr("No matching interface for the selected file name!") + QString(QStringLiteral("\n\nVID: %1, PID: %2"))
-                                  .arg(dfuDeviceVidPidList.first().toInt(nullptr, 16))
-                                  .arg(dfuDeviceVidPidList.last().toInt(nullptr, 16)));
+                Tr::tr("No DFU settings for the selected device!") + QString(QStringLiteral("\n\nVID: %1, PID: %2")).arg(dfuDeviceVidPidList.first().toInt(nullptr, 16)).arg(dfuDeviceVidPidList.last().toInt(nullptr, 16)));
 
             CONNECT_END();
         }
@@ -206,7 +202,7 @@ void OpenMVPlugin::openmvDFUBootloader(bool forceFlashFSErase,
 
     QString dfuDeviceVidPid = selectedDfuDevice.isEmpty() ? boardTypeToDfuDeviceVidPid : selectedDfuDeviceVidPid;
     QString dfuDeviceSerial = QString(QStringLiteral(" -S %1")).arg(selectedDfuDevice.isEmpty()
-        ? QStringLiteral("0123456789ABCDEF")
+        ? (m_boardId.mid(16, 8) + m_boardId.mid(8, 8) + m_boardId.mid(0, 8)) // The Arduino DFU Bootloader reports its serial number word reversed.
         : selectedDfuDeviceSerialNumber);
 
     if(dfuDeviceSerial == QStringLiteral(" -S NULL"))
@@ -230,12 +226,9 @@ void OpenMVPlugin::openmvDFUBootloader(bool forceFlashFSErase,
 
                 for(int i = 0, j = eraseCommands.size(); i < j; i++)
                 {
-                    downloadFirmware(Tr::tr("Erasing Disk"), command, process,
-                                     QFileInfo(file).canonicalFilePath(),
-                                     dfuDeviceVidPid, eraseCommands.at(i) +
-                                     ((justEraseFlashFs && ((i + 1) == j)) ? QStringLiteral(" --reset") : QStringLiteral("")) + dfuDeviceSerial);
+                    downloadFirmware(Tr::tr("Erasing Disk"), command, process, QFileInfo(file).canonicalFilePath(), dfuDeviceVidPid, eraseCommands.at(i) + ((justEraseFlashFs && ((i + 1) == j)) ? QStringLiteral(":leave") : QStringLiteral("")) + dfuDeviceSerial);
 
-                    if(((i + 1) != j) && (process.result() != Utils::ProcessResult::FinishedWithSuccess) && (process.result() != Utils::ProcessResult::TerminatedAbnormally))
+                    if((process.result() != Utils::ProcessResult::FinishedWithSuccess) && (process.result() != Utils::ProcessResult::TerminatedAbnormally))
                     {
                         QMessageBox box(QMessageBox::Critical, Tr::tr("Connect"), Tr::tr("Timeout Error!"), QMessageBox::Ok, Core::ICore::dialogParent(),
                             Qt::MSWindowsFixedSizeDialogHint | Qt::WindowTitleHint | Qt::WindowSystemMenuHint |
@@ -285,66 +278,65 @@ void OpenMVPlugin::openmvDFUBootloader(bool forceFlashFSErase,
         }
     }
 
-    QString command;
-    Utils::Process process;
-
-    if (!binProgramCommand.isEmpty())
+    // Program Flash //////////////////////////////////////
     {
-        downloadFirmware(Tr::tr("Flashing Firmware"), command, process,
-                         QDir::toNativeSeparators(QDir::cleanPath(firmwarePath)),
-                         dfuDeviceVidPid, binProgramCommand + QStringLiteral(" --reset") + dfuDeviceSerial);
+        // Extra Program Flash ////////////////////////////////
+        {
+            QString command;
+            Utils::Process process;
 
-        if(process.result() == Utils::ProcessResult::TerminatedAbnormally)
+            for(int i = 0, j = extraProgramAddrCommands.size(); i < j; i++)
+            {
+                downloadFirmware(Tr::tr("Flashing Firmware"), command, process, Core::ICore::userResourcePath(QStringLiteral("firmware")).pathAppended(extraProgramPathCommands.at(i)).toString(), dfuDeviceVidPid, extraProgramAddrCommands.at(i) + dfuDeviceSerial);
+
+                if((process.result() != Utils::ProcessResult::FinishedWithSuccess) && (process.result() != Utils::ProcessResult::TerminatedAbnormally))
+                {
+                    QMessageBox box(QMessageBox::Critical, Tr::tr("Connect"), Tr::tr("DFU firmware update failed!"), QMessageBox::Ok, Core::ICore::dialogParent(),
+                        Qt::MSWindowsFixedSizeDialogHint | Qt::WindowTitleHint | Qt::WindowSystemMenuHint |
+                        (Utils::HostOsInfo::isMacHost() ? Qt::WindowType(0) : Qt::WindowCloseButtonHint));
+                    box.setDetailedText(command + QStringLiteral("\n\n") + process.stdOut() + QStringLiteral("\n") + process.stdErr());
+                    box.setDefaultButton(QMessageBox::Ok);
+                    box.setEscapeButton(QMessageBox::Cancel);
+                    box.exec();
+
+                    CONNECT_END();
+                }
+                else if(process.result() == Utils::ProcessResult::TerminatedAbnormally)
+                {
+                    CONNECT_END();
+                }
+            }
+        }
+
+        QString command;
+        Utils::Process process;
+        downloadFirmware(Tr::tr("Flashing Firmware"), command, process, QDir::toNativeSeparators(QDir::cleanPath(firmwarePath)), dfuDeviceVidPid, (firmwarePath.endsWith(QStringLiteral(".bin"), Qt::CaseInsensitive) ? binProgramCommand : dfuProgramCommand) + dfuDeviceSerial);
+
+        if(process.result() == Utils::ProcessResult::FinishedWithSuccess)
+        {
+            if((m_autoUpdate.isEmpty()) && (!m_autoErase)) QMessageBox::information(Core::ICore::dialogParent(),
+                Tr::tr("Connect"),
+                Tr::tr("DFU firmware update complete!\n\n") +
+                Tr::tr("Click the Ok button after your OpenMV Cam has enumerated and finished running its built-in self test (blue led blinking - this takes a while).") +
+                Tr::tr("\n\nIf you overwrote main.py on your OpenMV Cam and did not erase the disk then your OpenMV Cam will just run that main.py."
+                   "\n\nIn this case click OK when you see your OpenMV Cam's internal flash drive mount (a window may or may not pop open)."));
+
+            RECONNECT_WAIT_END();
+        }
+        else if(process.result() == Utils::ProcessResult::TerminatedAbnormally)
         {
             CONNECT_END();
         }
-
-        if((m_autoUpdate.isEmpty()) && (!m_autoErase)) QMessageBox::information(Core::ICore::dialogParent(),
-            Tr::tr("Connect"),
-            Tr::tr("DFU firmware update complete!\n\n") +
-            Tr::tr("Click the Ok button after your OpenMV Cam has enumerated and finished running its built-in self test (blue led blinking - this takes a while).") +
-            Tr::tr("\n\nIf you overwrote main.py on your OpenMV Cam and did not erase the disk then your OpenMV Cam will just run that main.py."
-               "\n\nIn this case click OK when you see your OpenMV Cam's internal flash drive mount (a window may or may not pop open)."));
-
-        RECONNECT_WAIT_END();
-    }
-    else
-    {
-        for(int i = 0, j = programCommandsCmd.size(); i < j; i++)
+        else
         {
-            downloadFirmware(Tr::tr("Flashing Firmware"), command, process,
-                             Core::ICore::userResourcePath(QStringLiteral("firmware")).pathAppended(programCommandsPath.at(i)).toString(),
-                             dfuDeviceVidPid, programCommandsCmd.at(i) +
-                             (((i + 1) == j) ? QStringLiteral(" --reset") : QStringLiteral("")) + dfuDeviceSerial);
-
-            if(((i + 1) != j) && (process.result() != Utils::ProcessResult::FinishedWithSuccess) && (process.result() != Utils::ProcessResult::TerminatedAbnormally))
-            {
-                QMessageBox box(QMessageBox::Critical, Tr::tr("Connect"), Tr::tr("DFU firmware update failed!"), QMessageBox::Ok, Core::ICore::dialogParent(),
-                    Qt::MSWindowsFixedSizeDialogHint | Qt::WindowTitleHint | Qt::WindowSystemMenuHint |
-                    (Utils::HostOsInfo::isMacHost() ? Qt::WindowType(0) : Qt::WindowCloseButtonHint));
-                box.setDetailedText(command + QStringLiteral("\n\n") + process.stdOut() + QStringLiteral("\n") + process.stdErr());
-                box.setDefaultButton(QMessageBox::Ok);
-                box.setEscapeButton(QMessageBox::Cancel);
-                box.exec();
-
-                CONNECT_END();
-            }
-            else if(process.result() == Utils::ProcessResult::TerminatedAbnormally)
-            {
-                CONNECT_END();
-            }
-
-            if((i + 1) == j)
-            {
-                if((m_autoUpdate.isEmpty()) && (!m_autoErase)) QMessageBox::information(Core::ICore::dialogParent(),
-                    Tr::tr("Connect"),
-                    Tr::tr("DFU firmware update complete!\n\n") +
-                    Tr::tr("Click the Ok button after your OpenMV Cam has enumerated and finished running its built-in self test (blue led blinking - this takes a while).") +
-                    Tr::tr("\n\nIf you overwrote main.py on your OpenMV Cam and did not erase the disk then your OpenMV Cam will just run that main.py."
-                       "\n\nIn this case click OK when you see your OpenMV Cam's internal flash drive mount (a window may or may not pop open)."));
-
-                RECONNECT_WAIT_END();
-            }
+            QMessageBox box(QMessageBox::Critical, Tr::tr("Connect"), Tr::tr("DFU firmware update failed!"), QMessageBox::Ok, Core::ICore::dialogParent(),
+                Qt::MSWindowsFixedSizeDialogHint | Qt::WindowTitleHint | Qt::WindowSystemMenuHint |
+                (Utils::HostOsInfo::isMacHost() ? Qt::WindowType(0) : Qt::WindowCloseButtonHint));
+            box.setDetailedText(command + QStringLiteral("\n\n") + process.stdOut() + QStringLiteral("\n") + process.stdErr());
+            box.setDefaultButton(QMessageBox::Ok);
+            box.setEscapeButton(QMessageBox::Cancel);
+            box.exec();
+            CONNECT_END();
         }
     }
 }

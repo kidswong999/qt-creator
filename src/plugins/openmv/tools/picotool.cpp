@@ -19,7 +19,14 @@ QMutex picotool_working;
 
 QList<QString> picotoolGetDevices()
 {
-    if(!picotool_working.tryLock()) return QList<QString>();
+    if (QThread::currentThread() == QCoreApplication::instance()->thread())
+    {
+        picotool_working.lock();
+    }
+    else
+    {
+        if(!picotool_working.tryLock()) return QList<QString>();
+    }
 
     Utils::FilePath command;
     Utils::Process process;
@@ -80,7 +87,7 @@ QList<QString> picotoolGetDevices()
         }
         else
         {
-            return QList<QString>() << QStringLiteral("28ea:0003");
+            return QList<QString>() << QStringLiteral("28ea:0003,NULL");
         }
     }
     else if(QThread::currentThread() == QCoreApplication::instance()->thread())

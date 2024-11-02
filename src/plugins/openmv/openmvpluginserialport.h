@@ -9,6 +9,8 @@
 
 #include <utils/hostosinfo.h>
 
+#include "tools/MyQSerialPortInfo.h"
+
 #define OPENMVCAM_VID 0x1209
 #define OPENMVCAM_PID 0xABD1
 
@@ -38,6 +40,8 @@
 #define NICLA_LDR_PID           0x035F
 #define GIGA_LDR_PID            0x0366
 #define GIGA_APP_PID            0x0466
+#define GIGA_TTR_1_PID          0x0266
+#define GIGA_TTR_2_PID          0x8066
 
 #define OPENMVCAM_BROADCAST_PORT 0xABD1
 
@@ -228,6 +232,8 @@ int deserializeByte(QByteArray &buffer); // LittleEndian
 int deserializeWord(QByteArray &buffer); // LittleEndian
 int deserializeLong(QByteArray &buffer); // LittleEndian
 
+bool isTouchToReset(const QJsonDocument &settings, const MyQSerialPortInfo &port);
+
 class OpenMVPluginSerialPortCommand
 {
 public:
@@ -293,7 +299,11 @@ class OpenMVPluginSerialPort_private : public QObject
 
 public:
 
-    explicit OpenMVPluginSerialPort_private(int override_read_timeout = -1, int override_read_stall_timeout = -1, int override_per_command_wait = -1, QObject *parent = Q_NULLPTR);
+    explicit OpenMVPluginSerialPort_private(int override_read_timeout = -1,
+                                            int override_read_stall_timeout = -1,
+                                            int override_per_command_wait = -1,
+                                            const QJsonDocument &settings = QJsonDocument(),
+                                            QObject *parent = Q_NULLPTR);
 
 public slots:
 
@@ -326,6 +336,7 @@ private:
     int m_override_read_timeout;
     int m_override_read_stall_timeout;
     int m_override_per_command_wait;
+    QJsonDocument m_firmwareSettings;
     bool m_unstuckWithGetState;
 };
 
@@ -335,7 +346,11 @@ class OpenMVPluginSerialPort : public QObject
 
 public:
 
-    explicit OpenMVPluginSerialPort(int override_read_timeout = -1, int override_read_stall_timeout = -1, int override_per_command_wait = -1, QObject *parent = Q_NULLPTR);
+    explicit OpenMVPluginSerialPort(int override_read_timeout = -1,
+                                    int override_read_stall_timeout = -1,
+                                    int override_per_command_wait = -1,
+                                    const QJsonDocument &settings = QJsonDocument(),
+                                    QObject *parent = Q_NULLPTR);
 
     void terminate();
 

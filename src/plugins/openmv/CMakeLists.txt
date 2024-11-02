@@ -4,8 +4,12 @@ add_qtc_plugin(OpenMV
   SOURCES
     openmvplugin.cpp openmvplugin.h openmvtr.h
     openmvpluginconnect.cpp openmvpluginconnect.h
-    openmvpluginbootloader.cpp
-    openmvplugindfubootloader.cpp
+    bootloaders/openmvpluginbootloader.cpp
+    bootloaders/openmvplugindfubootloader.cpp
+    bootloaders/openmvpluginimxbootloader.cpp
+    bootloaders/openmvpluginarduinodfubootloader.cpp
+    bootloaders/openmvpluginbossacbootloader.cpp
+    bootloaders/openmvpluginpicotoolbootloader.cpp
     openmvpluginparse.cpp
     openmvplugindoc.cpp
     openmveject.cpp openmveject.h

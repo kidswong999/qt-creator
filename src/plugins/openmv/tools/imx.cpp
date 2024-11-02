@@ -271,7 +271,7 @@ bool imxGetDevice(QJsonObject &obj)
                        QStringLiteral("1");
 
     process.setCommand(Utils::CommandLine(blhost_binary, args));
-    process.runBlocking(timeout, Utils::EventLoopMode::On);
+    process.runBlocking(timeout, Utils::EventLoopMode::On, QEventLoop::AllEvents);
 
     if((process.result() == Utils::ProcessResult::FinishedWithSuccess) || (process.result() == Utils::ProcessResult::FinishedWithError))
     {

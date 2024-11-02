@@ -2,8 +2,7 @@
     "firmware_version": "4.5.9",
     "boards" : [
         {
-            "hidden" : false,
-            "legacy" : true,
+            "hidden" : true,
             "boardType" : "M4",
             "boardArchString" : "OMV2 F4 256 JPEG",
             "boardDisplayName" : "OpenMV Cam M4 (STM32F427) Legacy",
@@ -26,7 +25,6 @@
         },
         {
             "hidden" : false,
-            "legacy" : false,
             "boardType" : "M4",
             "boardArchString" : "OMV2 F4 256 JPEG",
             "boardDisplayName" : "OpenMV Cam M4 (STM32F427)",
@@ -63,8 +61,7 @@
             }
         },
         {
-            "hidden" : false,
-            "legacy" : true,
+            "hidden" : true,
             "boardType" : "M7",
             "boardArchString" : "OMV3 F7 512",
             "boardDisplayName" : "OpenMV Cam M7 (STM32F765/67) Legacy",
@@ -87,7 +84,6 @@
         },
         {
             "hidden" : false,
-            "legacy" : false,
             "boardType" : "M7",
             "boardArchString" : "OMV3 F7 512",
             "boardDisplayName" : "OpenMV Cam M7 (STM32F765/67)",
@@ -124,8 +120,7 @@
             }
         },
         {
-            "hidden" : false,
-            "legacy" : true,
+            "hidden" : true,
             "boardType" : "H7",
             "boardArchString" : "OMV4 H7 1024",
             "boardDisplayName" : "OpenMV Cam H7 (STM32H743) Legacy",
@@ -148,7 +143,6 @@
         },
         {
             "hidden" : false,
-            "legacy" : false,
             "boardType" : "H7",
             "boardArchString" : "OMV4 H7 1024",
             "boardDisplayName" : "OpenMV Cam H7 (STM32H743)",
@@ -185,8 +179,7 @@
             }
         },
         {
-            "hidden" : false,
-            "legacy" : true,
+            "hidden" : true,
             "boardType" : "H7",
             "boardArchString" : "OMV4P H7 32768 SDRAM",
             "boardDisplayName" : "OpenMV Cam H7 Plus (STM32H743 w/ SDRAM) Legacy",
@@ -209,7 +202,6 @@
         },
         {
             "hidden" : false,
-            "legacy" : false,
             "boardType" : "H7",
             "boardArchString" : "OMV4P H7 32768 SDRAM",
             "boardDisplayName" : "OpenMV Cam H7 Plus (STM32H743 w/ SDRAM)",
@@ -246,8 +238,7 @@
             }
         },
         {
-            "hidden" : false,
-            "legacy" : true,
+            "hidden" : true,
             "boardType" : "H7",
             "boardArchString" : "OPENMVPT 65536 SDRAM",
             "boardDisplayName" : "OpenMV Pure Thermal (STM32H743 w/ SDRAM) Legacy",
@@ -270,7 +261,6 @@
         },
         {
             "hidden" : false,
-            "legacy" : false,
             "boardType" : "H7",
             "boardArchString" : "OPENMVPT 65536 SDRAM",
             "boardDisplayName" : "OpenMV Pure Thermal (STM32H743 w/ SDRAM)",
@@ -308,7 +298,6 @@
         },
         {
             "hidden" : false,
-            "legacy" : false,
             "boardType" : "IMXRT1060",
             "boardArchString" : "OMVRT1060 32768 SDRAM",
             "boardDisplayName" : "OpenMV Cam RT1062",
@@ -339,7 +328,6 @@
         },
         {
             "hidden" : true,
-            "legacy" : false,
             "boardType" : "IMXRT1060",
             "boardArchString" : "OMVRT1060 32768 SDRAM",
             "boardDisplayName" : "OpenMV Cam RT1062 SBL",
@@ -370,7 +358,6 @@
         },
         {
             "hidden" : false,
-            "legacy" : false,
             "boardType" : "AE3",
             "boardArchString" : "OPENMV AE3",
             "boardDisplayName" : "OpenMV Cam AE3",
@@ -414,7 +401,6 @@
         },
         {
             "hidden" : false,
-            "legacy" : false,
             "boardType" : "N6",
             "boardArchString" : "OPENMV N6",
             "boardDisplayName" : "OpenMV Cam N6",
@@ -442,7 +428,6 @@
         },
         {
             "hidden" : false,
-            "legacy" : false,
             "boardType" : "H7",
             "boardArchString" : "PORTENTA H7 8192 SDRAM",
             "boardDisplayName" : "Arduino Portenta (STM32H747)",
@@ -453,6 +438,7 @@
             "bootloaderVidPid" : "2341:035b",
             "bootloaderType" : "arduino_dfu",
             "bootloaderSettings" : {
+                "touchToResetPids" : ["025b", "805b"],
                 "appvidpid" : ["2341:005b", "2341:045b", "2341:035b"],
                 "eraseCommands" : ["-a 0 -s 0x08020000", "-a 1 -s 0x90000000"],
                 "extraProgramCommands" : [
@@ -471,7 +457,6 @@
         },
         {
             "hidden" : false,
-            "legacy" : false,
             "boardType" : "H7",
             "boardArchString" : "GIGA H7 8192 SDRAM",
             "boardDisplayName" : "Arduino Giga (STM32H747)",
@@ -482,6 +467,7 @@
             "bootloaderVidPid" : "2341:0366",
             "bootloaderType" : "arduino_dfu",
             "bootloaderSettings" : {
+                "touchToResetPids" : ["0266", "8066"],
                 "appvidpid" : ["2341:0466", "2341:0366"],
                 "eraseCommands" : ["-a 0 -s 0x08020000", "-a 1 -s 0x90000000"],
                 "extraProgramCommands" : [
@@ -500,7 +486,6 @@
         },
         {
             "hidden" : false,
-            "legacy" : false,
             "boardType" : "NICLAV",
             "boardArchString" : "NICLAV H7 1024",
             "boardDisplayName" : "Arduino Nicla Vision",
@@ -511,6 +496,7 @@
             "bootloaderVidPid" : "2341:035f",
             "bootloaderType" : "arduino_dfu",
             "bootloaderSettings" : {
+                "touchToResetPids" : ["025f", "805f"],
                 "appvidpid" : ["2341:045f", "2341:035f"],
                 "eraseCommands" : ["-a 1 -s 0x90000000"],
                 "extraProgramCommands" : [
@@ -529,7 +515,6 @@
         },
         {
             "hidden" : false,
-            "legacy" : false,
             "boardType" : "NANO33",
             "boardArchString" : "NANO33 M4",
             "boardDisplayName" : "Nano33 BLE (nRF52840)",
@@ -540,13 +525,13 @@
             "bootloaderVidPid" : "2341:005a",
             "bootloaderType" : "bossac",
             "bootloaderSettings" : {
+                "altvidpidDisplayName" : "Nano33 BLE (nRF52840) Legacy",
                 "altvidpid" : "2341:805a",
                 "binProgramCommand" : "--offset=0x16000"
             }
         },
         {
             "hidden" : false,
-            "legacy" : false,
             "boardType" : "PICO",
             "boardArchString" : "PICO M0",
             "boardDisplayName" : "Arduino Nano RP2040 Connect (RP2040)",
@@ -557,6 +542,7 @@
             "bootloaderVidPid" : "28ea:0003",
             "bootloaderType" : "picotool",
             "bootloaderSettings" : {
+                "altvidpidDisplayName" : "Arduino Nano RP2040 Connect (RP2040) Legacy",
                 "altvidpid" : "2341:805e",
                 "eraseCommands" : ["-o 0x10800000 -t bin"],
                 "binProgramCommand" : "-x"
@@ -564,7 +550,6 @@
         },
         {
             "hidden" : true,
-            "legacy" : false,
             "boardType" : "PICO",
             "boardArchString" : "PICO M0",
             "boardDisplayName" : "Arduino Nano RP2040 Connect (RP2040) UF2",
@@ -572,9 +557,10 @@
             "boardVidPid" : "28ea:0003",
             "boardPidMask" : "0xFFFF",
             "boardSerialNumberInverseFilters" : [],
-            "bootloaderVidPid" : "28ea:0003",
+            "bootloaderVidPid" : "0000:0000",
             "bootloaderType" : "picotool",
             "bootloaderSettings" : {
+                "altvidpidDisplayName" : "Arduino Nano RP2040 Connect (RP2040) Legacy",
                 "altvidpid" : "2341:805e",
                 "eraseCommands" : ["-o 0x10800000 -t bin"],
                 "binProgramCommand" : "-x"

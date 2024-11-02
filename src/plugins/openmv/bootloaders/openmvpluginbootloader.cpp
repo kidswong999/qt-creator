@@ -97,7 +97,7 @@ void OpenMVPlugin::openmvInternalBootloader(const QString &forceFirmwarePath,
 
                     m_ioport->bootloaderStart(selectedPort);
 
-                    QGuiApplication::setOverrideCursor(Qt::WaitCursor);
+                    QApplication::setOverrideCursor(Qt::WaitCursor);
 
                     while(!loopExit)
                     {
@@ -126,7 +126,7 @@ void OpenMVPlugin::openmvInternalBootloader(const QString &forceFirmwarePath,
                                     loop1.exec();
                                     disconnect(conn);
                                     disconnect(conn2);
-                                    QGuiApplication::restoreOverrideCursor();
+                                    QApplication::restoreOverrideCursor();
 
                                     openmvDFUBootloader(forceFlashFSErase, justEraseFlashFs, firmwarePath, device);
                                     return;
@@ -146,7 +146,7 @@ void OpenMVPlugin::openmvInternalBootloader(const QString &forceFirmwarePath,
                     loop1.exec();
                     disconnect(conn);
                     disconnect(conn2);
-                    QGuiApplication::restoreOverrideCursor();
+                    QApplication::restoreOverrideCursor();
 
                     if(!done2)
                     {

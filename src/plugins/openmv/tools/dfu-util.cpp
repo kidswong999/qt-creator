@@ -52,7 +52,14 @@ QList<QPair<int, int> > dfuVidPidList(const QJsonDocument &settings)
 
 QList<QString> getDevices()
 {
-    if(!dfu_util_working.tryLock()) return QList<QString>();
+    if (QThread::currentThread() == QCoreApplication::instance()->thread())
+    {
+        dfu_util_working.lock();
+    }
+    else
+    {
+        if(!dfu_util_working.tryLock()) return QList<QString>();
+    }
 
     Utils::FilePath command;
     Utils::Process process;
@@ -65,13 +72,13 @@ QList<QString> getDevices()
     {
         command = Core::ICore::resourcePath(QStringLiteral("dfu-util/windows/dfu-util.exe"));
         process.setCommand(Utils::CommandLine(command, QStringList() << QStringLiteral("-l")));
-        process.runBlocking(timeout, Utils::EventLoopMode::On);
+        process.runBlocking(timeout, Utils::EventLoopMode::On, QEventLoop::AllEvents);
     }
     else if(Utils::HostOsInfo::isMacHost())
     {
         command = Core::ICore::resourcePath(QStringLiteral("dfu-util/osx/dfu-util"));
         process.setCommand(Utils::CommandLine(command, QStringList() << QStringLiteral("-l")));
-        process.runBlocking(timeout, Utils::EventLoopMode::On);
+        process.runBlocking(timeout, Utils::EventLoopMode::On, QEventLoop::AllEvents);
     }
     else if(Utils::HostOsInfo::isLinuxHost())
     {
@@ -79,25 +86,25 @@ QList<QString> getDevices()
         {
             command = Core::ICore::resourcePath(QStringLiteral("dfu-util/linux32/dfu-util"));
             process.setCommand(Utils::CommandLine(command, QStringList() << QStringLiteral("-l")));
-            process.runBlocking(timeout, Utils::EventLoopMode::On);
+            process.runBlocking(timeout, Utils::EventLoopMode::On, QEventLoop::AllEvents);
         }
         else if(QSysInfo::buildCpuArchitecture() == QStringLiteral("x86_64"))
         {
             command = Core::ICore::resourcePath(QStringLiteral("dfu-util/linux64/dfu-util"));
             process.setCommand(Utils::CommandLine(command, QStringList() << QStringLiteral("-l")));
-            process.runBlocking(timeout, Utils::EventLoopMode::On);
+            process.runBlocking(timeout, Utils::EventLoopMode::On, QEventLoop::AllEvents);
         }
         else if(QSysInfo::buildCpuArchitecture() == QStringLiteral("arm"))
         {
             command = Core::ICore::resourcePath(QStringLiteral("dfu-util/arm/dfu-util"));
             process.setCommand(Utils::CommandLine(command, QStringList() << QStringLiteral("-l")));
-            process.runBlocking(timeout, Utils::EventLoopMode::On);
+            process.runBlocking(timeout, Utils::EventLoopMode::On, QEventLoop::AllEvents);
         }
         else if(QSysInfo::buildCpuArchitecture() == QStringLiteral("arm64"))
         {
             command = Core::ICore::resourcePath(QStringLiteral("dfu-util/aarch64/dfu-util"));
             process.setCommand(Utils::CommandLine(command, QStringList() << QStringLiteral("-l")));
-            process.runBlocking(timeout, Utils::EventLoopMode::On);
+            process.runBlocking(timeout, Utils::EventLoopMode::On, QEventLoop::AllEvents);
         }
     }
 

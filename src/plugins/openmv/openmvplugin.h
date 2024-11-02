@@ -410,6 +410,26 @@ private:
                              bool justEraseFlashFs,
                              const QString &firmwarePath,
                              const QString &selectedDfuDevice);
+    void openmvIMXBootloader(const QString &forceFirmwarePath,
+                             bool forceFlashFSErase,
+                             bool justEraseFlashFs,
+                             const QString &firmwarePath,
+                             Utils::QtcSettings *settings,
+                             bool forceBootloaderBricked,
+                             QString originalFirmwareFolder,
+                             const QString &selectedDfuDevice);
+    void openmvArduinoDFUBootloader(bool forceFlashFSErase,
+                                    bool justEraseFlashFs,
+                                    const QString &firmwarePath,
+                                    const QString &selectedDfuDevice);
+    void openmvBossacBootloader(bool forceFlashFSErase,
+                                bool justEraseFlashFs,
+                                const QString &firmwarePath,
+                                const QString &selectedDfuDevice);
+    void openmvPictotoolBootloader(bool forceFlashFSErase,
+                                   bool justEraseFlashFs,
+                                   const QString &firmwarePath,
+                                   const QString &selectedDfuDevice);
 
     QStringList m_resourceFoldersToCopy;
     QStringList m_resourceFoldersToDelete;

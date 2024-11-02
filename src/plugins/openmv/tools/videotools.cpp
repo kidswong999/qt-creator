@@ -204,7 +204,6 @@ static bool getMaxSizeAndAvgMsDelta(QFile *imageWriterFile, int *avgM, int *maxW
 
             if(stream.skipRawData(12) != 12)
             {
-                qDebug() << "here1";
                 QMessageBox::critical(Core::ICore::dialogParent(),
                     Tr::tr("Reading File"),
                     Tr::tr("File is corrupt!"));

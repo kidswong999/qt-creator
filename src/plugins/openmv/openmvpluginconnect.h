@@ -89,10 +89,6 @@ do { \
 namespace OpenMV {
 namespace Internal {
 
-QString cleanPortVIDAndPID(const QString &vidAndPid);
-QString portVIDAndPID(const QString &selectedPort);
-QString portVIDAndPID(const MyQSerialPortInfo &info);
-bool matchVidPid(const QJsonObject &object, const QString &serialNumberFilter, const MyQSerialPortInfo &port);
 bool validPort(const QJsonDocument &settings, const QString &serialNumberFilter, const MyQSerialPortInfo &port);
 
 } // namespace Internal

@@ -1,7 +1,5 @@
 #include "openmvpluginserialport.h"
 
-#include "tools/myqserialportinfo.h"
-
 #ifdef Q_OS_WIN
 #include <windows.h>
 #endif
@@ -70,6 +68,42 @@ int deserializeLong(QByteArray &buffer) // LittleEndian
     memcpy(&r, buffer.data(), 4);
     buffer = buffer.mid(4);
     return r;
+}
+
+bool isTouchToReset(const QJsonDocument &settings, const MyQSerialPortInfo &port)
+{
+    bool match = false;
+
+    if (port.hasVendorIdentifier() && port.hasProductIdentifier())
+    {
+        for (const QJsonValue &value : settings.object().value(QStringLiteral("boards")).toArray())
+        {
+            QStringList list = value.toObject().value(QStringLiteral("boardVidPid")).toString().split(QStringLiteral(":"));
+
+            if ((list.size() == 2)
+            && (port.vendorIdentifier() == list.at(0).toInt(nullptr, 16))
+            && (value.toObject().value(QStringLiteral("bootloaderType")).toString() == QStringLiteral("arduino_dfu")))
+            {
+                QJsonObject bootloaderSettings = value.toObject().value(QStringLiteral("bootloaderSettings")).toObject();
+
+                for (const QJsonValue &value : bootloaderSettings.value(QStringLiteral("touchToResetPids")).toArray())
+                {
+                    if (port.productIdentifier() == value.toString().toInt(nullptr, 16))
+                    {
+                        match = true;
+                        break;
+                    }
+                }
+            }
+
+            if (match)
+            {
+                break;
+            }
+        }
+    }
+
+    return match;
 }
 
 OpenMVPluginSerialPort_thing::OpenMVPluginSerialPort_thing(const QString &name, QObject *parent) : QObject(parent)
@@ -337,13 +371,18 @@ bool OpenMVPluginSerialPort_thing::setRequestToSend(bool set)
     return bool();
 }
 
-OpenMVPluginSerialPort_private::OpenMVPluginSerialPort_private(int override_read_timeout, int override_read_stall_timeout, int override_per_command_wait, QObject *parent) : QObject(parent)
+OpenMVPluginSerialPort_private::OpenMVPluginSerialPort_private(int override_read_timeout,
+                                                               int override_read_stall_timeout,
+                                                               int override_per_command_wait,
+                                                               const QJsonDocument &settings,
+                                                               QObject *parent) : QObject(parent)
 {
     m_port = Q_NULLPTR;
     m_bootloaderStop = false;
     m_override_read_timeout = override_read_timeout;
     m_override_read_stall_timeout = override_read_stall_timeout;
     m_override_per_command_wait = override_per_command_wait;
+    m_firmwareSettings = settings;
     m_unstuckWithGetState = false;
 }
 
@@ -360,17 +399,10 @@ void OpenMVPluginSerialPort_private::open(const QString &portName)
 
     MyQSerialPortInfo arduinoPort(QSerialPortInfo(m_port->portName()));
 
-    bool isTouchToReset = arduinoPort.hasVendorIdentifier() &&
-                          arduinoPort.hasProductIdentifier() &&
-                         (arduinoPort.vendorIdentifier() == ARDUINOCAM_VID) && ((arduinoPort.productIdentifier() == PORTENTA_TTR_1_PID) ||
-                                                                                (arduinoPort.productIdentifier() == PORTENTA_TTR_2_PID) ||
-                                                                                (arduinoPort.productIdentifier() == NICLA_TTR_1_PID) ||
-                                                                                (arduinoPort.productIdentifier() == NICLA_TTR_2_PID));
-
     int baudRate = OPENMVCAM_BAUD_RATE;
     int baudRate2 = OPENMVCAM_BAUD_RATE_2;
 
-    if(isTouchToReset)
+    if(isTouchToReset(m_firmwareSettings, arduinoPort))
     {
         baudRate = ARDUINO_TTR_BAUD_RATE;
         baudRate2 = ARDUINO_TTR_BAUD_RATE;
@@ -588,6 +620,7 @@ void OpenMVPluginSerialPort_private::command(const OpenMVPluginSerialPortCommand
             QElapsedTimer elaspedTimer2;
             elaspedTimer.start();
             elaspedTimer2.start();
+
             bool readStallHappened = false;
             int readStallAbaddonSize = 0;
             int readStallDiscardSize = 0;
@@ -890,10 +923,13 @@ void OpenMVPluginSerialPort_private::bootloaderReset()
     emit bootloaderResetResponse();
 }
 
-OpenMVPluginSerialPort::OpenMVPluginSerialPort(int override_read_timeout, int override_read_stall_timeout, int override_per_command_wait, QObject *parent) : QObject(parent)
+OpenMVPluginSerialPort::OpenMVPluginSerialPort(int override_read_timeout, int override_read_stall_timeout, int override_per_command_wait, const QJsonDocument &settings, QObject *parent) : QObject(parent)
 {
     m_thread = new QThread;
-    m_port = new OpenMVPluginSerialPort_private(override_read_timeout, override_read_stall_timeout, override_per_command_wait);
+    m_port = new OpenMVPluginSerialPort_private(override_read_timeout,
+                                                override_read_stall_timeout,
+                                                override_per_command_wait,
+                                                settings);
     m_port->moveToThread(m_thread);
 
     connect(this, &OpenMVPluginSerialPort::open,

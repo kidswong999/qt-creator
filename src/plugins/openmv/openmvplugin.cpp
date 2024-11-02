@@ -241,49 +241,6 @@ bool OpenMVPlugin::initialize(const QStringList &arguments, QString *errorMessag
         }
     }
 
-    #ifdef FORCE_LIST_PORTS
-    if(true)
-    #else
-    if(arguments.contains(QStringLiteral("-list_ports")))
-    #endif
-    {
-        QStringList stringList;
-
-        for(QSerialPortInfo raw_port : QSerialPortInfo::availablePorts())
-        {
-            MyQSerialPortInfo port(raw_port);
-
-            if(validPort(m_firmwareSettings, QString(), port))
-            {
-                stringList.append(port.portName());
-            }
-        }
-
-        if(Utils::HostOsInfo::isMacHost())
-        {
-            stringList = stringList.filter(QStringLiteral("cu"), Qt::CaseInsensitive);
-        }
-
-        QTextStream out(stdout);
-
-        for(const QString &port : stringList)
-        {
-            QSerialPortInfo raw_info = QSerialPortInfo(port);
-            MyQSerialPortInfo info(raw_info);
-
-            out << QString(QStringLiteral("\"name\":\"%1\", \"description\":\"%2\", \"manufacturer\":\"%3\", \"vid\":0x%4, \"pid\":0x%5, \"serial\":\"%6\", \"location\":\"%7\""))
-                   .arg(info.portName())
-                   .arg(info.description())
-                   .arg(info.manufacturer())
-                   .arg(QString(QStringLiteral("%1").arg(info.vendorIdentifier(), 4, 16, QLatin1Char('0'))).toUpper())
-                   .arg(QString(QStringLiteral("%1").arg(info.productIdentifier(), 4, 16, QLatin1Char('0'))).toUpper())
-                   .arg(info.serialNumber().toUpper())
-                   .arg(info.systemLocation()) << endl;
-        }
-
-        exit(0);
-    }
-
     int index_serial_number_filter = arguments.indexOf(QRegularExpression(QStringLiteral("-serial_number_filter")));
     #ifdef FORCE_SERIAL_NUMBER_FILTER
     index_serial_number_filter = -1;
@@ -367,9 +324,6 @@ bool OpenMVPlugin::initialize(const QStringList &arguments, QString *errorMessag
             }
         });
     }
-
-    m_ioport = new OpenMVPluginSerialPort(override_read_timeout, override_read_stall_timeout, override_per_command_wait, this);
-    m_iodevice = new OpenMVPluginIO(m_ioport, this);
 
     ///////////////////////////////////////////////////////////////////////////
 
@@ -477,6 +431,13 @@ bool OpenMVPlugin::initialize(const QStringList &arguments, QString *errorMessag
 
     ///////////////////////////////////////////////////////////////////////////
 
+    if(!loadDocs(resources_updated, true))
+    {
+        exit(-1);
+    }
+
+    ///////////////////////////////////////////////////////////////////////////
+
     QFile firmwareSettings(Core::ICore::userResourcePath(QStringLiteral("firmware/settings.json")).toString());
 
     if(firmwareSettings.open(QIODevice::ReadOnly))
@@ -507,12 +468,55 @@ bool OpenMVPlugin::initialize(const QStringList &arguments, QString *errorMessag
         exit(-1);
     }
 
-    ///////////////////////////////////////////////////////////////////////////
-
-    if(!loadDocs(resources_updated, true))
+    #ifdef FORCE_LIST_PORTS
+    if(true)
+    #else
+    if(arguments.contains(QStringLiteral("-list_ports")))
+    #endif
     {
-        exit(-1);
+        QStringList stringList;
+
+        for(QSerialPortInfo raw_port : QSerialPortInfo::availablePorts())
+        {
+            MyQSerialPortInfo port(raw_port);
+
+            if(validPort(m_firmwareSettings, QString(), port))
+            {
+                stringList.append(port.portName());
+            }
+        }
+
+        if(Utils::HostOsInfo::isMacHost())
+        {
+            stringList = stringList.filter(QStringLiteral("cu"), Qt::CaseInsensitive);
+        }
+
+        QTextStream out(stdout);
+
+        for(const QString &port : stringList)
+        {
+            QSerialPortInfo raw_info = QSerialPortInfo(port);
+            MyQSerialPortInfo info(raw_info);
+
+            out << QString(QStringLiteral("\"name\":\"%1\", \"description\":\"%2\", \"manufacturer\":\"%3\", \"vid\":0x%4, \"pid\":0x%5, \"serial\":\"%6\", \"location\":\"%7\""))
+                   .arg(info.portName())
+                   .arg(info.description())
+                   .arg(info.manufacturer())
+                   .arg(QString(QStringLiteral("%1").arg(info.vendorIdentifier(), 4, 16, QLatin1Char('0'))).toUpper())
+                   .arg(QString(QStringLiteral("%1").arg(info.productIdentifier(), 4, 16, QLatin1Char('0'))).toUpper())
+                   .arg(info.serialNumber().toUpper())
+                   .arg(info.systemLocation()) << endl;
+        }
+
+        exit(0);
     }
+
+    m_ioport = new OpenMVPluginSerialPort(override_read_timeout,
+                                          override_read_stall_timeout,
+                                          override_per_command_wait,
+                                          QJsonDocument(m_firmwareSettings),
+                                          this);
+    m_iodevice = new OpenMVPluginIO(m_ioport, this);
 
     ///////////////////////////////////////////////////////////////////////////
 
