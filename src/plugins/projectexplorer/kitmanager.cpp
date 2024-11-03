@@ -454,7 +454,9 @@ void KitManager::saveKits()
                 d->m_defaultKit ? QString::fromLatin1(d->m_defaultKit->id().name()) : QString());
     data.insert(KIT_IRRELEVANT_ASPECTS_KEY,
                 transform<QVariantList>(d->m_irrelevantAspects, &Id::toSetting));
-    d->m_writer->save(data, ICore::dialogParent());
+    // OPENMV-DIFF //
+    // d->m_writer->save(data, ICore::dialogParent());
+    // OPENMV-DIFF //
 }
 
 bool KitManager::isLoaded()

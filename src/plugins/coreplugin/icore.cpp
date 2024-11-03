@@ -2336,6 +2336,10 @@ IDocument *ICore::openFiles(const FilePaths &filePaths,
             workingDirectory.isEmpty() ? FilePath::currentWorkingPath() : workingDirectory;
     for (const FilePath &filePath : filePaths) {
         const FilePath absoluteFilePath = workingDirBase.resolvePath(filePath);
+        // OPENMV-DIFF //
+        Core::EditorManager::openEditor(absoluteFilePath);
+        continue;
+        // OPENMV-DIFF //
         if (IDocumentFactory *documentFactory = findDocumentFactory(documentFactories, filePath)) {
             IDocument *document = documentFactory->open(absoluteFilePath);
             if (!document) {

@@ -248,7 +248,11 @@ void ToolchainSettingsAccessor::saveToolchains(const Toolchains &toolchains, QWi
 
     // Do not save default debuggers! Those are set by the SDK!
 
-    saveSettings(data, parent);
+    // OPENMV-DIFF //
+    // saveSettings(data, parent);
+    // OPENMV-DIFF //
+    Q_UNUSED(parent)
+    // OPENMV-DIFF //
 }
 
 Toolchains ToolchainSettingsAccessor::toolChains(const Store &data) const

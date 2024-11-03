@@ -409,7 +409,9 @@ void QtVersionManagerImpl::saveQtVersions()
         data.insert(numberedKey(QTVERSION_DATA_KEY, count), variantFromStore(tmp));
         ++count;
     }
-    m_writer->save(data, Core::ICore::dialogParent());
+    // OPENMV-DIFF //
+    // m_writer->save(data, Core::ICore::dialogParent());
+    // OPENMV-DIFF //
 }
 
 // Executes qtchooser with arguments in a process and returns its output

@@ -137,7 +137,9 @@ void DeviceManager::save()
         return;
     Store data;
     data.insert(DeviceManagerKey, variantFromStore(toMap()));
-    d->writer->save(data, Core::ICore::dialogParent());
+    // OPENMV-DIFF //
+    // d->writer->save(data, Core::ICore::dialogParent());
+    // OPENMV-DIFF //
 }
 
 static FilePath settingsFilePath(const QString &extension)
