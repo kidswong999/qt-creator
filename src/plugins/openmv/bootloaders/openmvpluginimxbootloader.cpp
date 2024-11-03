@@ -40,7 +40,7 @@ void OpenMVPlugin::openmvIMXBootloader(const QString &forceFirmwarePath,
 
         if(!mappings.isEmpty())
         {
-            int index = mappings.keys().indexOf(settings->value(LAST_BOARD_TYPE_STATE).toString());
+            int index = mappings.keys().indexOf(settings->value(LAST_BOARD_TYPE_STATE_IMX).toString());
             bool ok = mappings.size() == 1;
             QString temp = (mappings.size() == 1) ? mappings.firstKey() : QInputDialog::getItem(Core::ICore::dialogParent(),
                 Tr::tr("Connect"), Tr::tr("Please select the board type"),
@@ -50,7 +50,7 @@ void OpenMVPlugin::openmvIMXBootloader(const QString &forceFirmwarePath,
 
             if(ok)
             {
-                settings->setValue(LAST_BOARD_TYPE_STATE, temp);
+                settings->setValue(LAST_BOARD_TYPE_STATE_IMX, temp);
                 originalFirmwareFolder = mappings.value(temp);
             }
             else

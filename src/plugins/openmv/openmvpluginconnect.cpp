@@ -1718,25 +1718,25 @@ void OpenMVPlugin::connectClicked(bool forceBootloader, QString forceFirmwarePat
 
                         if(!mappings.contains(temp))
                         {
-                            int index = mappings.keys().indexOf(settings->value(LAST_BOARD_TYPE_STATE).toString());
+                            int index = mappingsHumanReadable.keys().indexOf(settings->value(LAST_BOARD_TYPE_STATE_2).toString());
 
-                            bool ok = mappings.size() == 1;
-                            temp = (mappings.size() == 1) ? mappingsHumanReadable.first() : QInputDialog::getItem(Core::ICore::dialogParent(),
+                            bool ok = mappingsHumanReadable.size() == 1;
+                            temp = (mappingsHumanReadable.size() == 1) ? mappingsHumanReadable.first() : QInputDialog::getItem(Core::ICore::dialogParent(),
                                 Tr::tr("Connect"), Tr::tr("Please select the board type"),
                                 mappingsHumanReadable.keys(), (index != -1) ? index : 0, false, &ok,
                                 Qt::MSWindowsFixedSizeDialogHint | Qt::WindowTitleHint | Qt::WindowSystemMenuHint |
                                 (Utils::HostOsInfo::isMacHost() ? Qt::WindowType(0) : Qt::WindowCloseButtonHint));
 
-                            temp = mappingsHumanReadable.value(temp); // Get mappings key.
-
                             if(ok)
                             {
-                                settings->setValue(LAST_BOARD_TYPE_STATE, temp);
+                                settings->setValue(LAST_BOARD_TYPE_STATE_2, temp);
                             }
                             else
                             {
                                 CLOSE_CONNECT_END();
                             }
+
+                            temp = mappingsHumanReadable.value(temp); // Get mappings key.
                         }
 
                         if(firmwarePath.isEmpty())
