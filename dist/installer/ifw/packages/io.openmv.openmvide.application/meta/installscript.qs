@@ -94,8 +94,8 @@ Component.prototype.createOperations = function()
                                 "@StartMenuDir@/Uninstall.lnk",
                                 "workingDirectory=@homeDir@" );
         component.addElevatedOperation("Execute", "{2,512,257}", "cmd", "/c", "@TargetDir@\\share\\qtcreator\\drivers\\ftdi\\ftdi.cmd");
-        component.addElevatedOperation("Execute", "{8,263,518,773,1028,1283,1538,1793,2048}", "cmd", "/c", "@TargetDir@\\share\\qtcreator\\drivers\\openmv\\openmv.cmd");
-        component.addElevatedOperation("Execute", "{5,1280}", "cmd", "/c", "@TargetDir@\\share\\qtcreator\\drivers\\arduino\\arduino.cmd");
+        component.addElevatedOperation("Execute", "{9,264,519,774,1029,1284,1539,1794,2049,2304}", "cmd", "/c", "@TargetDir@\\share\\qtcreator\\drivers\\openmv\\openmv.cmd");
+        component.addElevatedOperation("Execute", "{5,260,515,770,1025,1280}", "cmd", "/c", "@TargetDir@\\share\\qtcreator\\drivers\\arduino\\arduino.cmd");
         // component.addElevatedOperation("Execute", "{1,256}", "cmd", "/c", "@TargetDir@\\share\\qtcreator\\drivers\\pybcdc\\pybcdc.cmd");
         component.addElevatedOperation("Execute", "{1,256}", "cmd", "/c", "@TargetDir@\\share\\qtcreator\\drivers\\dfuse.cmd");
         component.addElevatedOperation("Execute", "{0,3010}", "cmd", "/c", "@TargetDir@\\share\\qtcreator\\drivers\\vcr.cmd");
