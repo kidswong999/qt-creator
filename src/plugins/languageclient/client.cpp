@@ -1239,6 +1239,11 @@ void Client::documentContentsChanged(TextEditor::TextDocument *document,
                                      int charsRemoved,
                                      int charsAdded)
 {
+    // OPENMV-DIFF //
+    QTC_ASSERT(document, return);
+    QTC_ASSERT(document->document(), return);
+    QTC_ASSERT(d, return);
+    // OPENMV-DIFF //
     const auto it = d->m_openedDocument.find(document);
     if (it == d->m_openedDocument.end() || !reachable())
         return;
@@ -1258,6 +1263,10 @@ void Client::documentContentsChanged(TextEditor::TextDocument *document,
     }
 
     const QString &text = document->textAt(position, charsAdded);
+    // OPENMV-DIFF //
+    QTC_ASSERT(it->second, return);
+    QTC_ASSERT(it->second.get(), return);
+    // OPENMV-DIFF //
     QTextCursor cursor(it->second.get());
     // Workaround https://bugreports.qt.io/browse/QTBUG-80662
     // The contentsChanged gives a character count that can be wrong for QTextCursor
@@ -1280,6 +1289,9 @@ void Client::documentContentsChanged(TextEditor::TextDocument *document,
             bool append = true;
             if (!queue.isEmpty() && charsRemoved == 0) {
                 auto &prev = queue.last();
+                // OPENMV-DIFF //
+                QTC_ASSERT(prev.range(), return);
+                // OPENMV-DIFF //
                 const int prevStart = prev.range()->start()
                         .toPositionInDocument(document->document());
                 if (prevStart + prev.text().length() == position) {
@@ -1304,6 +1316,9 @@ void Client::documentContentsChanged(TextEditor::TextDocument *document,
     ++d->m_documentVersions[document->filePath()];
     using namespace TextEditor;
     for (BaseTextEditor *editor : BaseTextEditor::textEditorsForDocument(document)) {
+        // OPENMV-DIFF //
+        QTC_ASSERT(editor, continue);
+        // OPENMV-DIFF //
         TextEditorWidget *widget = editor->editorWidget();
         QTC_ASSERT(widget, continue);
         delete d->m_documentHighlightsTimer.take(widget);
