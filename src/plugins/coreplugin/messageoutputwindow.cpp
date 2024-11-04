@@ -95,7 +95,11 @@ QWidget *MessageOutputWindow::outputWidget(QWidget *parent)
 
 void MessageOutputWindow::append(const QString &text)
 {
-    m_widget->appendMessage(text, Utils::GeneralMessageFormat);
+    // OPENMV-DIFF //
+    // m_widget->appendMessage(text, Utils::GeneralMessageFormat);
+    // OPENMV-DIFF //
+    m_widget->appendText(text);
+    // OPENMV-DIFF //
 }
 
 bool MessageOutputWindow::canNext() const

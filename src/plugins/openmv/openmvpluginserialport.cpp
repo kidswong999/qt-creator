@@ -14,7 +14,7 @@
 #define WRITE_TIMEOUT 3000
 #define SERIAL_READ_TIMEOUT 5000
 #define WIFI_READ_TIMEOUT 5000
-#define SERIAL_READ_STALL_TIMEOUT 100
+#define SERIAL_READ_STALL_TIMEOUT 1000
 #define WIFI_READ_STALL_TIMEOUT 3000
 #define BOOTLOADER_WRITE_TIMEOUT 6
 #define BOOTLOADER_READ_TIMEOUT 10
@@ -654,7 +654,7 @@ void OpenMVPluginSerialPort_private::command(const OpenMVPluginSerialPortCommand
 
                     if(command.m_perCommandWait) // normal mode
                     {
-                        if (m_unstuckWithGetState)
+                        if (false) // DO NOT USE GET STATE TO UNSTUCK - GARBLES TEXT CURRENTLY // (m_unstuckWithGetState)
                         {
                             QByteArray data;
                             serializeByte(data, __USBDBG_CMD);
