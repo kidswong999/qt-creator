@@ -32,6 +32,8 @@
 
 #define serializeData(fp, data, size) fp.append(data, size)
 
+#define TIME_SCALE          (1000)
+
 namespace OpenMV {
 namespace Internal {
 
@@ -72,12 +74,19 @@ static QByteArray jpgToBytes(const QImage &image)
     return out;
 }
 
-static QByteArray getMJPEGHeader(int width, int height, uint32_t frames, uint32_t bytes, float fps)
+static QByteArray getMJPEGHeader(int width, int height, uint32_t frames, uint32_t bytes, uint32_t avgMicros)
 {
+    // size of all mjpeg headers and jpegs.
+    uint32_t datasize = (frames * 8) + bytes;
+    // frames_per_second == rate / scale
+    uint32_t rate = avgMicros ? ((1000000 * TIME_SCALE) / avgMicros) : 0;
+    // video length == frames / frames_per_second
+    uint32_t length = rate ? ((((uint64_t) frames) * TIME_SCALE) / rate) : 0;
+
     QByteArray fp;
 
     serializeData(fp, "RIFF", 4); // FOURCC fcc; - 0
-    serializeLong(fp, 216 + (frames * 8) + bytes); // DWORD cb; size - updated on close - 1
+    serializeLong(fp, 216 + datasize); // DWORD cb; size - updated on close - 1
     serializeData(fp, "AVI ", 4); // FOURCC fcc; - 2
 
     serializeData(fp, "LIST", 4); // FOURCC fcc; - 3
@@ -86,8 +95,8 @@ static QByteArray getMJPEGHeader(int width, int height, uint32_t frames, uint32_
 
     serializeData(fp, "avih", 4); // FOURCC fcc; - 6
     serializeLong(fp, 56); // DWORD cb; - 7
-    serializeLong(fp, (!roundf(fps)) ? 0 : roundf(1000000 / fps)); // DWORD dwMicroSecPerFrame; micros - updated on close - 8
-    serializeLong(fp, (!frames) ? 0 : roundf((((frames * 8) + bytes) * fps) / frames)); // DWORD dwMaxBytesPerSec; updated on close - 9
+    serializeLong(fp, avgMicros); // DWORD dwMicroSecPerFrame; micros - updated on close - 8
+    serializeLong(fp, frames ? ((((uint64_t) datasize) * avgMicros) / frames) : 0); // DWORD dwMaxBytesPerSec; updated on close - 9
     serializeLong(fp, 4); // DWORD dwPaddingGranularity; - 10
     serializeLong(fp, 0); // DWORD dwFlags; - 11
     serializeLong(fp, frames); // DWORD dwTotalFrames; frames - updated on close - 12
@@ -96,10 +105,10 @@ static QByteArray getMJPEGHeader(int width, int height, uint32_t frames, uint32_
     serializeLong(fp, 0); // DWORD dwSuggestedBufferSize; - 15
     serializeLong(fp, width); // DWORD dwWidth; width - updated on close - 16
     serializeLong(fp, height); // DWORD dwHeight; height - updated on close - 17
-    serializeLong(fp, 1000); // DWORD dwScale; - 18
-    serializeLong(fp, roundf(fps * 1000)); // DWORD dwRate; rate - updated on close - 19
+    serializeLong(fp, TIME_SCALE); // DWORD dwScale; - 18
+    serializeLong(fp, rate); // DWORD dwRate; rate - updated on close - 19
     serializeLong(fp, 0); // DWORD dwStart; - 20
-    serializeLong(fp, (!roundf(fps)) ? 0 : roundf((frames * 1000) / fps)); // DWORD dwLength; length - updated on close - 21
+    serializeLong(fp, length); // DWORD dwLength; length - updated on close - 21
 
     serializeData(fp, "LIST", 4); // FOURCC fcc; - 22
     serializeLong(fp, 116); // DWORD cb; - 23
@@ -113,10 +122,10 @@ static QByteArray getMJPEGHeader(int width, int height, uint32_t frames, uint32_
     serializeWord(fp, 0); // WORD wPriority; - 30
     serializeWord(fp, 0); // WORD wLanguage; - 30.5
     serializeLong(fp, 0); // DWORD dwInitialFrames; - 31
-    serializeLong(fp, 1000); // DWORD dwScale; - 32
-    serializeLong(fp, roundf(fps * 1000)); // DWORD dwRate; rate - updated on close - 33
+    serializeLong(fp, TIME_SCALE); // DWORD dwScale; - 32
+    serializeLong(fp, rate); // DWORD dwRate; rate - updated on close - 33
     serializeLong(fp, 0); // DWORD dwStart; - 34
-    serializeLong(fp, (!roundf(fps)) ? 0 : roundf((frames * 1000) / fps)); // DWORD dwLength; length - updated on close - 35
+    serializeLong(fp, length); // DWORD dwLength; length - updated on close - 35
     serializeLong(fp, 0); // DWORD dwSuggestedBufferSize; - 36
     serializeLong(fp, 10000); // DWORD dwQuality; - 37
     serializeLong(fp, 0); // DWORD dwSampleSize; - 38
@@ -140,7 +149,7 @@ static QByteArray getMJPEGHeader(int width, int height, uint32_t frames, uint32_
     serializeLong(fp, 0); // DWORD biClrImportant; - 52
 
     serializeData(fp, "LIST", 4); // FOURCC fcc; - 53
-    serializeLong(fp, 4 + (frames * 8) + bytes); // DWORD cb; movi - updated on close - 54
+    serializeLong(fp, 4 + datasize); // DWORD cb; movi - updated on close - 54
     serializeData(fp, "movi", 4); // FOURCC fcc; - 55
 
     return fp;
@@ -168,7 +177,7 @@ static QByteArray addMJPEG(uint32_t *frames, uint32_t *bytes, const QPixmap &pix
     return fp;
 }
 
-static bool getMaxSizeAndAvgMsDelta(QFile *imageWriterFile, int *avgM, int *maxW, int *maxH, bool newPixformat)
+static bool getMaxSizeAndAvgMicrosDelta(QFile *imageWriterFile, uint32_t *avgMicros, uint32_t *maxW, uint32_t *maxH, bool newPixformat, bool newTimeFormat)
 {
     QProgressDialog progress(Tr::tr("Reading File..."), Tr::tr("Cancel"), imageWriterFile->pos() / 1024, imageWriterFile->size() / 1024, Core::ICore::dialogParent(),
         Qt::MSWindowsFixedSizeDialogHint | Qt::WindowTitleHint | Qt::CustomizeWindowHint | // Dividing by 1024 above makes sure that a 4GB max file size fits in an int.
@@ -187,6 +196,8 @@ static bool getMaxSizeAndAvgMsDelta(QFile *imageWriterFile, int *avgM, int *maxW
         return false;
     }
 
+    uint64_t microsSum = 0, framesSum = 0;
+
     while(!stream.atEnd())
     {
         progress.setValue(imageWriterFile->pos() / 1024); // Dividing by 1024 makes sure that a 4GB max file size fits in an int.
@@ -197,6 +208,8 @@ static bool getMaxSizeAndAvgMsDelta(QFile *imageWriterFile, int *avgM, int *maxW
         stream >> W;
         stream >> H;
         stream >> BPP;
+
+        M = newTimeFormat ? M : (M * 1000);
 
         if(newPixformat)
         {
@@ -212,7 +225,7 @@ static bool getMaxSizeAndAvgMsDelta(QFile *imageWriterFile, int *avgM, int *maxW
             }
         }
 
-        if((M < 0) || (M > (1000 * 60 * 60 * 24)) || (W <= 0) || (W > 32767) || (H <= 0) || (H > 32767) || (BPP < 0) || (BPP > (1024 * 1204 * 1024))) // Sane limits.
+        if((M < 0) || (M > (1000 * 1000 * 1000)) || (W <= 0) || (W > 32767) || (H <= 0) || (H > 32767) || (BPP < 0) || (BPP > (1024 * 1204 * 1024))) // Sane limits.
         {
             QMessageBox::critical(Core::ICore::dialogParent(),
                 Tr::tr("Reading File"),
@@ -232,20 +245,24 @@ static bool getMaxSizeAndAvgMsDelta(QFile *imageWriterFile, int *avgM, int *maxW
             return false;
         }
 
-        if(M > 0) *avgM = (*avgM != -1) ? ((*avgM + M) / 2) : M;
-        *maxW = qMax(*maxW, W);
-        *maxH = qMax(*maxH, H);
+        microsSum += M;
+        *maxW = qMax(*maxW, ((uint32_t) W));
+        *maxH = qMax(*maxH, ((uint32_t) H));
 
         if(progress.wasCanceled())
         {
             return false;
         }
+
+        framesSum += 1;
     }
+
+    *avgMicros = (framesSum == 0) ? 0 : (microsSum / framesSum);
 
     return true;
 }
 
-static bool convertImageWriterFileToMjpegVideoFile(QFile *mjpegVideoFile, uint32_t *frames, uint32_t *bytes, QFile *imageWriterFile, int maxW, int maxH, bool rgb565ByteReversed, bool newPixformat)
+static bool convertImageWriterFileToMjpegVideoFile(QFile *mjpegVideoFile, uint32_t *frames, uint32_t *bytes, QFile *imageWriterFile, uint32_t maxW, uint32_t maxH, bool rgb565ByteReversed, bool newPixformat, bool newTimeFormat)
 {
     QProgressDialog progress(Tr::tr("Transcoding File..."), Tr::tr("Cancel"), imageWriterFile->pos() / 1024, imageWriterFile->size() / 1024, Core::ICore::dialogParent(),
         Qt::MSWindowsFixedSizeDialogHint | Qt::WindowTitleHint | Qt::CustomizeWindowHint | // Dividing by 1024 above makes sure that a 4GB max file size fits in an int.
@@ -275,6 +292,8 @@ static bool convertImageWriterFileToMjpegVideoFile(QFile *mjpegVideoFile, uint32
         stream >> H;
         stream >> BPP;
 
+        M = newTimeFormat ? M : (M * 1000);
+
         if(newPixformat)
         {
             stream >> S;
@@ -289,7 +308,7 @@ static bool convertImageWriterFileToMjpegVideoFile(QFile *mjpegVideoFile, uint32
             }
         }
 
-        if((M < 0) || (M > (1000 * 60 * 60 * 24)) || (W <= 0) || (W > 32767) || (H <= 0) || (H > 32767) || (BPP < 0) || (BPP > (1024 * 1204 * 1024))) // Sane limits.
+        if((M < 0) || (M > (1000 * 1000 * 1000)) || (W <= 0) || (W > 32767) || (H <= 0) || (H > 32767) || (BPP < 0) || (BPP > (1024 * 1204 * 1024))) // Sane limits.
         {
             QMessageBox::critical(Core::ICore::dialogParent(),
                 Tr::tr("Transcoding File"),
@@ -384,18 +403,16 @@ static QString handleImageWriterFiles(const QString &path)
             {
                 int version = ((major - '0') * 10) + (minor - '0');
 
-                if((version == 10) || (version == 11) || (version == 20))
+                if((version == 10) || (version == 11) || (version == 20) || (version == 21))
                 {
                     QFile tempFile(QDir::tempPath() + QDir::separator() + QFileInfo(file).completeBaseName() + QStringLiteral(".mjpeg"));
 
                     if(tempFile.open(QIODevice::WriteOnly))
                     {
-                        int avgM = -1, maxW = 0, maxH = 0;
+                        uint32_t avgMicros = 0, maxW = 0, maxH = 0;
 
-                        if(getMaxSizeAndAvgMsDelta(&file, &avgM, &maxW, &maxH, version == 20))
+                        if(getMaxSizeAndAvgMicrosDelta(&file, &avgMicros, &maxW, &maxH, version >= 20, version >= 21))
                         {
-                            if(avgM == -1) avgM = 0;
-
                             if(file.seek(16))
                             {
                                 QByteArray header = getMJPEGHeader(maxW, maxH, 0, 0, 0);
@@ -404,11 +421,11 @@ static QString handleImageWriterFiles(const QString &path)
                                 {
                                     uint32_t frames = 0, bytes = 0;
 
-                                    if(convertImageWriterFileToMjpegVideoFile(&tempFile, &frames, &bytes, &file, maxW, maxH, version == 10, version == 20))
+                                    if(convertImageWriterFileToMjpegVideoFile(&tempFile, &frames, &bytes, &file, maxW, maxH, version == 10, version >= 20, version >= 21))
                                     {
                                         if(tempFile.seek(0))
                                         {
-                                            header = getMJPEGHeader(maxW, maxH, frames, bytes, avgM ? (1000.0 / avgM) : 0.0);
+                                            header = getMJPEGHeader(maxW, maxH, frames, bytes, avgMicros);
 
                                             if(tempFile.write(header) == header.size())
                                             {
