@@ -167,7 +167,7 @@ def main():
                      "dfu-util", "dfu-prefix", "dfu-suffix",
                      "elf2uf2", "picotool", "rp2040load", "blhost", "sdphost",
                      "tools-config", "updateSystemPackage", "app-assets-gen",
-                     "app-get-rot", "app-get_toc", "app-write-mram", "app-sign-image",
+                     "app-gen-rot", "app-gen-toc", "app-write-mram", "app-sign-image",
                      "maintenance", "app-provision", "app-secure-debug", "python3",
                      "python", "python3.13"]
             for dirpath, dirnames, filenames in os.walk(target):
