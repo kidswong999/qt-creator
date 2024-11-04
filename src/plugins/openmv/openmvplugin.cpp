@@ -2458,7 +2458,7 @@ bool OpenMVPlugin::delayedInitialize()
 
 void OpenMVPlugin::showCopilotDialog()
 {
-    if (!QApplication::activeModalWidget()) {
+    if ((!QApplication::activeModalWidget()) && (!m_working)) {
         if (Utils::CheckableMessageBox::question(Core::ICore::dialogParent(),
             Tr::tr("GitHub Copilot"),
             Tr::tr("Would you like to enable GitHub Copilot?"),
@@ -2475,7 +2475,7 @@ void OpenMVPlugin::showCopilotDialog()
 
 void OpenMVPlugin::showLEDStatesDialog()
 {
-    if (!QApplication::activeModalWidget()) {
+    if ((!QApplication::activeModalWidget()) && (!m_working)) {
         Utils::CheckableMessageBox::information(Core::ICore::dialogParent(),
                 Tr::tr("OpenMV Cam LED Colors"),
                 Tr::tr("Thanks for using the OpenMV Cam and OpenMV IDE!\n\n"

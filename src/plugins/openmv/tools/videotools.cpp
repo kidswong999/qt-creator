@@ -328,7 +328,12 @@ static bool convertImageWriterFileToMjpegVideoFile(QFile *mjpegVideoFile, uint32
             return false;
         }
 
-        QPixmap pixmap = getImageFromData(data, W, H, newPixformat ? S : BPP, rgb565ByteReversed, newPixformat, BPP).scaled(maxW, maxH, Qt::KeepAspectRatio);
+        QPixmap pixmap = getImageFromData(data, W, H, newPixformat ? S : BPP, rgb565ByteReversed, newPixformat, BPP);
+
+        if (!pixmap.isNull())
+        {
+            pixmap = pixmap.scaled(maxW, maxH, Qt::KeepAspectRatio);
+        }
 
         int size = 16 - (data.size() % 16);
 
@@ -355,7 +360,10 @@ static bool convertImageWriterFileToMjpegVideoFile(QFile *mjpegVideoFile, uint32
             return false;
         }
 
-        painter.drawPixmap((maxW - pixmap.width()) / 2, (maxH - pixmap.height()) / 2, pixmap);
+        if (!pixmap.isNull())
+        {
+            painter.drawPixmap((maxW - pixmap.width()) / 2, (maxH - pixmap.height()) / 2, pixmap);
+        }
 
         if(!painter.end())
         {
