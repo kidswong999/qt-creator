@@ -18,8 +18,10 @@
 *.rc
 *.rej
 *.res
-*.so
-*.so.*
+# OPENMV-DIFF #
+# *.so
+# *.so.*
+# OPENMV-DIFF #
 *_pch.h.cpp
 *_resource.rc
 *_wrapper.bat
