@@ -1280,13 +1280,11 @@ void TextEditorWidgetPrivate::showTextMarksToolTip(const QPoint &pos,
             mark->addToToolTipLayout(layout);
     }
 
-    layout->addWidget(DisplaySettings::createAnnotationSettingsLink(),
-                      layout->rowCount(), 0, 1, -1, Qt::AlignRight);
     // OPENMV-DIFF //
-    // ToolTip::show(pos, layout, q);
+    // layout->addWidget(DisplaySettings::createAnnotationSettingsLink(),
+    //                   layout->rowCount(), 0, 1, -1, Qt::AlignRight);
     // OPENMV-DIFF //
-    Q_UNUSED(pos)
-    // OPENMV-DIFF //
+    ToolTip::show(pos, layout, q);
 }
 
 } // namespace Internal
