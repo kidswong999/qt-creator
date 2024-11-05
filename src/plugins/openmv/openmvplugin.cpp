@@ -681,7 +681,7 @@ void OpenMVPlugin::extensionsInitialized()
             QByteArray data =
             QStringLiteral("# Untitled - By: %1 - %2\n"
                            "\n"
-                           "import sensor"
+                           "import sensor\n"
                            "import time\n"
                            "\n"
                            "sensor.reset()\n"
@@ -691,7 +691,7 @@ void OpenMVPlugin::extensionsInitialized()
                            "\n"
                            "clock = time.clock()\n"
                            "\n"
-                           "while (True):\n"
+                           "while True:\n"
                            "    clock.tick()\n"
                            "    img = sensor.snapshot()\n"
                            "    print(clock.fps())\n").arg(Utils::Environment::systemEnvironment().toDictionary().userName()).arg(QDate::currentDate().toString()).toUtf8();
