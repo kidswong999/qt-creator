@@ -717,6 +717,40 @@ int main(int argc, char **argv)
     // Re-setup install settings for real
     setupInstallSettings(options.installSettingsPath);
     Utils::QtcSettings *settings = createUserSettings();
+    // OPENMV-DIFF //
+
+    // This is the minimum version that OpenMV IDE must be.
+    // If not, it will delete the user settings for the application to ensure there's no incompatible settings.
+    int eraseSettingsMajor = 4;
+    int eraseSettingsMinor = 4;
+    int eraseSettingsPatch = 0;
+
+    settings->beginGroup("OpenMV");
+    int major = settings->value("ResourcesMajor", eraseSettingsMajor).toInt();
+    int minor = settings->value("ResourcesMinor", eraseSettingsMinor).toInt();
+    int patch = settings->value("ResourcesPatch", eraseSettingsPatch).toInt();
+    settings->endGroup();
+
+    // Wipe out earlier settings if they are too old.
+    if ((major < eraseSettingsMajor)
+    || ((major == eraseSettingsMajor) && (minor < eraseSettingsMinor))
+    || ((major == eraseSettingsMajor) && (minor == eraseSettingsMinor) && (patch < eraseSettingsPatch)))
+    {
+        Utils::FilePath path = Utils::FilePath::fromString(QFileInfo(settings->fileName()).path());
+        delete settings;
+        QString error;
+
+        if (!path.removeRecursively(&error))
+        {
+            QMessageBox::critical(Q_NULLPTR, QString(),
+                QLatin1String("\n\nPlease close any programs that are viewing/editing OpenMV IDE's application data and then restart OpenMV IDE!"));
+            exit(-1);
+        }
+
+        settings = createUserSettings();
+    }
+
+    // OPENMV-DIFF //
     Utils::QtcSettings *installSettings
         = new Utils::QtcSettings(QSettings::IniFormat,
                                  QSettings::SystemScope,
