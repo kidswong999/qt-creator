@@ -635,7 +635,7 @@ void OpenMVPluginSerialPort_private::command(const OpenMVPluginSerialPortCommand
                 if((!readStallHappened) && (!data.isEmpty()))
                 {
                     elaspedTimer.restart();
-                    elaspedTimer2.start();
+                    elaspedTimer2.restart();
                 }
 
                 if(readStallHappened && (response.size() >= readStallAbaddonSize))
@@ -654,7 +654,7 @@ void OpenMVPluginSerialPort_private::command(const OpenMVPluginSerialPortCommand
 
                     if(command.m_perCommandWait) // normal mode
                     {
-                        if (false) // DO NOT USE GET STATE TO UNSTUCK - GARBLES TEXT CURRENTLY // (m_unstuckWithGetState)
+                        if (m_unstuckWithGetState)
                         {
                             QByteArray data;
                             serializeByte(data, __USBDBG_CMD);
