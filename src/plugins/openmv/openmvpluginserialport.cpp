@@ -632,105 +632,105 @@ void OpenMVPluginSerialPort_private::command(const OpenMVPluginSerialPortCommand
                 QByteArray data = m_port->readAll();
                 response.append(data);
 
-                if((!readStallHappened) && (!data.isEmpty()))
-                {
-                    elaspedTimer.restart();
-                    elaspedTimer2.restart();
-                }
+                // if((!readStallHappened) && (!data.isEmpty()))
+                // {
+                //     elaspedTimer.restart();
+                //     elaspedTimer2.restart();
+                // }
 
-                if(readStallHappened && (response.size() >= readStallAbaddonSize))
-                {
-                    // The device responsed to the read stall. So, all the data that is going to come has come.
-                    // We may or maynot however actually have a complete response from the command...
-                    response.chop(readStallDiscardSize);
-                    break;
-                }
+                // if(readStallHappened && (response.size() >= readStallAbaddonSize))
+                // {
+                //     // The device responsed to the read stall. So, all the data that is going to come has come.
+                //     // We may or maynot however actually have a complete response from the command...
+                //     response.chop(readStallDiscardSize);
+                //     break;
+                // }
 
-                if(m_port->isSerialPort() && (response.size() < responseLen) && elaspedTimer2.hasExpired(read_stall_timeout))
-                {
-                    // This code helps clear out read stalls where the OS received the data but then doesn't return it to the application.
-                    //
-                    // YES - THIS HAPPENS...
+                // if(m_port->isSerialPort() && (response.size() < responseLen) && elaspedTimer2.hasExpired(read_stall_timeout))
+                // {
+                //     // This code helps clear out read stalls where the OS received the data but then doesn't return it to the application.
+                //     //
+                //     // YES - THIS HAPPENS...
 
-                    if(command.m_perCommandWait) // normal mode
-                    {
-                        if (m_unstuckWithGetState)
-                        {
-                            QByteArray data;
-                            serializeByte(data, __USBDBG_CMD);
-                            serializeByte(data, __USBDBG_GET_STATE);
-                            serializeLong(data, GET_STATE_PAYLOAD_LEN);
-                            write(data, GET_STATE_START_DELAY, GET_STATE_END_DELAY, WRITE_TIMEOUT);
+                //     if(command.m_perCommandWait) // normal mode
+                //     {
+                //         if (m_unstuckWithGetState)
+                //         {
+                //             QByteArray data;
+                //             serializeByte(data, __USBDBG_CMD);
+                //             serializeByte(data, __USBDBG_GET_STATE);
+                //             serializeLong(data, GET_STATE_PAYLOAD_LEN);
+                //             write(data, GET_STATE_START_DELAY, GET_STATE_END_DELAY, WRITE_TIMEOUT);
 
-                            if(m_port)
-                            {
-                                elaspedTimer2.restart();
-                                if (!readStallHappened) readStallAbaddonSize = response.size();
-                                readStallHappened = true;
-                                readStallAbaddonSize += GET_STATE_PAYLOAD_LEN;
-                                readStallDiscardSize += GET_STATE_PAYLOAD_LEN;
-                            }
-                            else
-                            {
-                                break;
-                            }
-                        }
-                        else
-                        {
-                            QByteArray data;
-                            serializeByte(data, __USBDBG_CMD);
-                            serializeByte(data, __USBDBG_SCRIPT_RUNNING);
-                            serializeLong(data, SCRIPT_RUNNING_RESPONSE_LEN);
-                            write(data, SCRIPT_RUNNING_START_DELAY, SCRIPT_RUNNING_END_DELAY, WRITE_TIMEOUT);
+                //             if(m_port)
+                //             {
+                //                 elaspedTimer2.restart();
+                //                 if (!readStallHappened) readStallAbaddonSize = response.size();
+                //                 readStallHappened = true;
+                //                 readStallAbaddonSize += GET_STATE_PAYLOAD_LEN;
+                //                 readStallDiscardSize += GET_STATE_PAYLOAD_LEN;
+                //             }
+                //             else
+                //             {
+                //                 break;
+                //             }
+                //         }
+                //         else
+                //         {
+                //             QByteArray data;
+                //             serializeByte(data, __USBDBG_CMD);
+                //             serializeByte(data, __USBDBG_SCRIPT_RUNNING);
+                //             serializeLong(data, SCRIPT_RUNNING_RESPONSE_LEN);
+                //             write(data, SCRIPT_RUNNING_START_DELAY, SCRIPT_RUNNING_END_DELAY, WRITE_TIMEOUT);
 
-                            if(m_port)
-                            {
-                                elaspedTimer2.restart();
-                                if (!readStallHappened) readStallAbaddonSize = response.size();
-                                readStallHappened = true;
-                                readStallAbaddonSize += SCRIPT_RUNNING_RESPONSE_LEN;
-                                readStallDiscardSize += SCRIPT_RUNNING_RESPONSE_LEN;
-                            }
-                            else
-                            {
-                                break;
-                            }
-                        }
-                    }
-                    else // bootloader mode
-                    {
-                        QByteArray data;
-                        serializeLong(data, __BOOTLDR_QUERY);
-                        write(data, BOOTLDR_QUERY_START_DELAY, BOOTLDR_QUERY_END_DELAY, WRITE_TIMEOUT);
+                //             if(m_port)
+                //             {
+                //                 elaspedTimer2.restart();
+                //                 if (!readStallHappened) readStallAbaddonSize = response.size();
+                //                 readStallHappened = true;
+                //                 readStallAbaddonSize += SCRIPT_RUNNING_RESPONSE_LEN;
+                //                 readStallDiscardSize += SCRIPT_RUNNING_RESPONSE_LEN;
+                //             }
+                //             else
+                //             {
+                //                 break;
+                //             }
+                //         }
+                //     }
+                //     else // bootloader mode
+                //     {
+                //         QByteArray data;
+                //         serializeLong(data, __BOOTLDR_QUERY);
+                //         write(data, BOOTLDR_QUERY_START_DELAY, BOOTLDR_QUERY_END_DELAY, WRITE_TIMEOUT);
 
-                        if(m_port)
-                        {
-                            elaspedTimer2.restart();
-                            if (!readStallHappened) readStallAbaddonSize = response.size();
-                            readStallHappened = true;
-                            readStallAbaddonSize += BOOTLDR_QUERY_RESPONSE_LEN;
-                            readStallDiscardSize += BOOTLDR_QUERY_RESPONSE_LEN;
-                        }
-                        else
-                        {
-                            break;
-                        }
-                    }
-                }
+                //         if(m_port)
+                //         {
+                //             elaspedTimer2.restart();
+                //             if (!readStallHappened) readStallAbaddonSize = response.size();
+                //             readStallHappened = true;
+                //             readStallAbaddonSize += BOOTLDR_QUERY_RESPONSE_LEN;
+                //             readStallDiscardSize += BOOTLDR_QUERY_RESPONSE_LEN;
+                //         }
+                //         else
+                //         {
+                //             break;
+                //         }
+                //     }
+                // }
 
-                if(m_port->isTCPPort() && (response.size() < responseLen) && elaspedTimer2.hasExpired(read_stall_timeout))
-                {
-                    write(command.m_data, 0, 0, WRITE_TIMEOUT);
+                // if(m_port->isTCPPort() && (response.size() < responseLen) && elaspedTimer2.hasExpired(read_stall_timeout))
+                // {
+                //     write(command.m_data, 0, 0, WRITE_TIMEOUT);
 
-                    if(!m_port)
-                    {
-                        break;
-                    }
-                }
+                //     if(!m_port)
+                //     {
+                //         break;
+                //     }
+                // }
             }
             while((response.size() < responseLen) && (!elaspedTimer.hasExpired(read_timeout)));
 
-            if((response.size() >= responseLen) || (m_port && command.m_commandAbortOkay))
+            if((response.size() >= responseLen))// || (m_port && command.m_commandAbortOkay))
             {
                 emit commandResult(OpenMVPluginSerialPortCommandResult(true, response.left(command.m_responseLen)));
             }

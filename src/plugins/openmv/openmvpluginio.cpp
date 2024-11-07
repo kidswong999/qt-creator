@@ -374,15 +374,15 @@ void OpenMVPluginIO::commandResult(const OpenMVPluginSerialPortCommandResult &co
                         m_pixelBuffer.clear();
                         emit frameBufferEmpty(null);
                     }
-                    else
-                    {
-                        QByteArray buffer;
-                        serializeByte(buffer, __USBDBG_CMD);
-                        serializeByte(buffer, __USBDBG_FRAME_DUMP);
-                        serializeLong(buffer, FRAME_DUMP_UNLOCK_RESPONSE_LEN);
-                        m_postedQueue.push_front(OpenMVPluginSerialPortCommand(buffer, FRAME_DUMP_UNLOCK_RESPONSE_LEN, FRAME_DUMP_UNLOCK_START_DELAY, FRAME_DUMP_UNLOCK_END_DELAY));
-                        m_completionQueue.insert(1, USBDBG_FRAME_DUMP_UNLOCK_CPL);
-                    }
+                    // else
+                    // {
+                    //     QByteArray buffer;
+                    //     serializeByte(buffer, __USBDBG_CMD);
+                    //     serializeByte(buffer, __USBDBG_FRAME_DUMP);
+                    //     serializeLong(buffer, FRAME_DUMP_UNLOCK_RESPONSE_LEN);
+                    //     m_postedQueue.push_front(OpenMVPluginSerialPortCommand(buffer, FRAME_DUMP_UNLOCK_RESPONSE_LEN, FRAME_DUMP_UNLOCK_START_DELAY, FRAME_DUMP_UNLOCK_END_DELAY));
+                    //     m_completionQueue.insert(1, USBDBG_FRAME_DUMP_UNLOCK_CPL);
+                    // }
 
                     break;
                 }
