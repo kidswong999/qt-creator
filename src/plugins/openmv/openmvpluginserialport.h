@@ -117,7 +117,7 @@
 #define SENSOR_ID_RESPONSE_LEN              4
 #define TX_INPUT_PAYLOAD_LEN                4
 #define TIME_INPUT_PAYLOAD_LEN              4
-#define GET_STATE_PAYLOAD_LEN               64
+#define GET_STATE_PAYLOAD_LEN               63
 
 #define BOOTLDR_START_RESPONSE_LEN          4
 #define BOOTLDR_QUERY_RESPONSE_LEN          12
@@ -126,6 +126,8 @@
 #define V1_BOOTLDR                          static_cast<int>(0xABCD0001)
 #define V2_BOOTLDR                          static_cast<int>(0xABCD0002)
 #define V3_BOOTLDR                          static_cast<int>(0xABCD0003)
+
+//#define ZLP_DELAY                           5
 
 #define FW_VERSION_START_DELAY              0
 #define FW_VERSION_END_DELAY                0
@@ -340,6 +342,7 @@ private:
     int m_override_per_command_wait;
     QJsonDocument m_firmwareSettings;
     bool m_unstuckWithGetState;
+    QTimer *m_zlpDelay;
 };
 
 class OpenMVPluginSerialPort : public QObject

@@ -278,6 +278,14 @@ void OpenMVPluginIO::doFrameSizeCpl(int w, int h, int bpp)
     {
         int size = getImageSize(w, h, bpp, m_newPixformat, PIXFORMAT_JPEG); // Works for PNG too.
 
+        // If we dump a multiple of the bulk packet size (64/512 bytes) this results in a ZLP
+        // packet being sent from TinyUSB... Which messes up our synchronization with the camera
+        // as we will issue the next command before the ZLP has been received.
+        if (!(size % TABOO_PACKET_SIZE))
+        {
+            size += 1; // Add 1 extra byte to ensure we don't have ZLP packet issues.
+        }
+
         if(size)
         {
             for(int i = 0, j = (size + m_mtu - 1) / m_mtu; i < j; i++)
@@ -358,8 +366,12 @@ void OpenMVPluginIO::commandResult(const OpenMVPluginSerialPortCommandResult &co
                 {
                     m_pixelBuffer.append(data);
 
-                    if(m_pixelBuffer.size() == getImageSize(m_frameSizeW, m_frameSizeH, m_frameSizeBPP, m_newPixformat, PIXFORMAT_JPEG)) // Works for PNG too.
+                    int size = getImageSize(m_frameSizeW, m_frameSizeH, m_frameSizeBPP, m_newPixformat, PIXFORMAT_JPEG);
+
+                    if(m_pixelBuffer.size() >= size) // Works for PNG too.
                     {
+                        m_pixelBuffer.chop(m_pixelBuffer.size() - size);
+
                         QPixmap pixmap = getImageFromData(m_pixelBuffer, m_frameSizeW, m_frameSizeH, m_frameSizeBPP, m_rgb565ByteReversed, m_newPixformat, PIXFORMAT_JPEG); // Works for PNG too.
                         bool null = pixmap.isNull();
 
@@ -574,7 +586,7 @@ void OpenMVPluginIO::commandResult(const OpenMVPluginSerialPortCommandResult &co
 
                         if(flags & __USBDBG_GET_STATE_FLAGS_TEXT)
                         {
-                            m_lineBuffer.append(data.split(0).takeFirst());
+                            m_lineBuffer.append(data.append('\0').split(0).takeFirst());
                             doTxBufCpl();
                         }
                         else if(m_lineBuffer.size())
