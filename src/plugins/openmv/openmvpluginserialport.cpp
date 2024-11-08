@@ -384,10 +384,6 @@ OpenMVPluginSerialPort_private::OpenMVPluginSerialPort_private(int override_read
     m_override_per_command_wait = override_per_command_wait;
     m_firmwareSettings = settings;
     m_unstuckWithGetState = false;
-//    m_zlpDelay = new QTimer(this);
-//    m_zlpDelay->setInterval(ZLP_DELAY);
-//    m_zlpDelay->setSingleShot(true);
-//    m_zlpDelay->setTimerType(Qt::PreciseTimer);
 }
 
 void OpenMVPluginSerialPort_private::open(const QString &portName)
@@ -528,13 +524,6 @@ void OpenMVPluginSerialPort_private::write(const QByteArray &data, int startWait
 
 void OpenMVPluginSerialPort_private::command(const OpenMVPluginSerialPortCommand &command)
 {
-//    int remaining = m_zlpDelay->remainingTime();
-
-//    if (remaining > 0)
-//    {
-//        QThread::msleep(remaining);
-//    }
-
     if(command.m_data.isEmpty())
     {
         if(!command.m_responseLen) // close
@@ -606,8 +595,6 @@ void OpenMVPluginSerialPort_private::command(const OpenMVPluginSerialPortCommand
     }
     else if(m_port)
     {
-//        m_port->setReadBufferSize(0);
-
         write(command.m_data, command.m_startWait, command.m_endWait, WRITE_TIMEOUT);
 
         if((!m_port) || (!command.m_responseLen))
@@ -623,12 +610,16 @@ void OpenMVPluginSerialPort_private::command(const OpenMVPluginSerialPortCommand
                 read_timeout = m_override_read_timeout;
             }
 
-//            int read_stall_timeout = m_port->isSerialPort() ? SERIAL_READ_STALL_TIMEOUT : WIFI_READ_STALL_TIMEOUT;
-
-//            if(m_override_read_stall_timeout > 0)
-//            {
-//                read_stall_timeout = m_override_read_stall_timeout;
-//            }
+            // DISABLED - NOT REQUIRED - FIXING ZLP OVERLAP WAS WHY THINGS STALL - REMOVE AFTER TRIAL PERIOD
+            //
+            // int read_stall_timeout = m_port->isSerialPort() ? SERIAL_READ_STALL_TIMEOUT : WIFI_READ_STALL_TIMEOUT;
+            //
+            // if(m_override_read_stall_timeout > 0)
+            // {
+            //     read_stall_timeout = m_override_read_stall_timeout;
+            // }
+            //
+            // DISABLED - NOT REQUIRED - FIXING ZLP OVERLAP WAS WHY THINGS STALL - REMOVE AFTER TRIAL PERIOD
 
             QByteArray response;
             int responseLen = command.m_responseLen;
@@ -637,9 +628,9 @@ void OpenMVPluginSerialPort_private::command(const OpenMVPluginSerialPortCommand
             elaspedTimer.start();
             elaspedTimer2.start();
 
-//            bool readStallHappened = false;
-//            int readStallAbaddonSize = 0;
-//            int readStallDiscardSize = 0;
+            bool readStallHappened = false;
+            // int readStallAbaddonSize = 0;
+            // int readStallDiscardSize = 0;
 
             do
             {
@@ -648,12 +639,14 @@ void OpenMVPluginSerialPort_private::command(const OpenMVPluginSerialPortCommand
                 QByteArray data = m_port->readAll();
                 response.append(data);
 
-                // if((!readStallHappened) && (!data.isEmpty()))
-                // {
-                //     elaspedTimer.restart();
-                //     elaspedTimer2.restart();
-                // }
+                if((!readStallHappened) && (!data.isEmpty()))
+                {
+                    elaspedTimer.restart();
+                    elaspedTimer2.restart();
+                }
 
+                // DISABLED - NOT REQUIRED - FIXING ZLP OVERLAP WAS WHY THINGS STALL - REMOVE AFTER TRIAL PERIOD
+                //
                 // if(readStallHappened && (response.size() >= readStallAbaddonSize))
                 // {
                 //     // The device responsed to the read stall. So, all the data that is going to come has come.
@@ -661,13 +654,13 @@ void OpenMVPluginSerialPort_private::command(const OpenMVPluginSerialPortCommand
                 //     response.chop(readStallDiscardSize);
                 //     break;
                 // }
-
+                //
                 // if(m_port->isSerialPort() && (response.size() < responseLen) && elaspedTimer2.hasExpired(read_stall_timeout))
                 // {
                 //     // This code helps clear out read stalls where the OS received the data but then doesn't return it to the application.
                 //     //
                 //     // YES - THIS HAPPENS...
-
+                //
                 //     if(command.m_perCommandWait) // normal mode
                 //     {
                 //         if (m_unstuckWithGetState)
@@ -677,7 +670,7 @@ void OpenMVPluginSerialPort_private::command(const OpenMVPluginSerialPortCommand
                 //             serializeByte(data, __USBDBG_GET_STATE);
                 //             serializeLong(data, GET_STATE_PAYLOAD_LEN);
                 //             write(data, GET_STATE_START_DELAY, GET_STATE_END_DELAY, WRITE_TIMEOUT);
-
+                //
                 //             if(m_port)
                 //             {
                 //                 elaspedTimer2.restart();
@@ -698,7 +691,7 @@ void OpenMVPluginSerialPort_private::command(const OpenMVPluginSerialPortCommand
                 //             serializeByte(data, __USBDBG_SCRIPT_RUNNING);
                 //             serializeLong(data, SCRIPT_RUNNING_RESPONSE_LEN);
                 //             write(data, SCRIPT_RUNNING_START_DELAY, SCRIPT_RUNNING_END_DELAY, WRITE_TIMEOUT);
-
+                //
                 //             if(m_port)
                 //             {
                 //                 elaspedTimer2.restart();
@@ -718,7 +711,7 @@ void OpenMVPluginSerialPort_private::command(const OpenMVPluginSerialPortCommand
                 //         QByteArray data;
                 //         serializeLong(data, __BOOTLDR_QUERY);
                 //         write(data, BOOTLDR_QUERY_START_DELAY, BOOTLDR_QUERY_END_DELAY, WRITE_TIMEOUT);
-
+                //
                 //         if(m_port)
                 //         {
                 //             elaspedTimer2.restart();
@@ -733,28 +726,23 @@ void OpenMVPluginSerialPort_private::command(const OpenMVPluginSerialPortCommand
                 //         }
                 //     }
                 // }
-
+                //
                 // if(m_port->isTCPPort() && (response.size() < responseLen) && elaspedTimer2.hasExpired(read_stall_timeout))
                 // {
                 //     write(command.m_data, 0, 0, WRITE_TIMEOUT);
-
+                //
                 //     if(!m_port)
                 //     {
                 //         break;
                 //     }
                 // }
+                //
+                // DISABLED - NOT REQUIRED - FIXING ZLP OVERLAP WAS WHY THINGS STALL - REMOVE AFTER TRIAL PERIOD
             }
             while((response.size() < responseLen) && (!elaspedTimer.hasExpired(read_timeout)));
 
-//            m_port->waitForReadyRead(1);
-
-            if((response.size() >= responseLen))// || (m_port && command.m_commandAbortOkay))
+            if((response.size() >= responseLen)) // || (m_port && command.m_commandAbortOkay))
             {
-//                if (!(response.size() % 512))
-//                {
-//                    m_zlpDelay->start();
-//                }
-
                 emit commandResult(OpenMVPluginSerialPortCommandResult(true, response.left(command.m_responseLen)));
             }
             else
@@ -774,20 +762,20 @@ void OpenMVPluginSerialPort_private::command(const OpenMVPluginSerialPortCommand
         emit commandResult(OpenMVPluginSerialPortCommandResult(false, QByteArray()));
     }
 
-//    if (command.m_perCommandWait) {
-//        // Execute commands slowly so as to not overload the OpenMV Cam board.
-//        int per_command_wait = Utils::HostOsInfo::isMacHost() ? 2 : 1;
+    if (command.m_perCommandWait) {
+        // Execute commands slowly so as to not overload the OpenMV Cam board.
+        int per_command_wait = Utils::HostOsInfo::isMacHost() ? 2 : 1;
 
-//        if(m_override_per_command_wait >= 0)
-//        {
-//            per_command_wait = m_override_per_command_wait;
-//        }
+        if(m_override_per_command_wait >= 0)
+        {
+            per_command_wait = m_override_per_command_wait;
+        }
 
-//        if(per_command_wait > 0)
-//        {
-//            QThread::msleep(per_command_wait);
-//        }
-//    }
+        if(per_command_wait > 0)
+        {
+            QThread::msleep(per_command_wait);
+        }
+    }
 }
 
 void OpenMVPluginSerialPort_private::bootloaderStart(const QString &selectedPort)

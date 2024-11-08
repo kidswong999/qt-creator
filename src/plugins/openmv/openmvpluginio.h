@@ -192,6 +192,7 @@ public slots: // private
     void mainTerminalInputEnable(bool on) { m_mainTerminalInput = on; }
     void bootloaderHS(bool on) { m_bootloaderHS = on; }
     void bootloaderFastMode(bool on) { m_bootloaderFastMode = on; }
+    void setHighSpeed(bool on) { m_hsOn = on; }
 
 signals:
 
@@ -233,7 +234,6 @@ private:
     QByteArray pasrsePrintData(const QByteArray &data);
 
     OpenMVPluginSerialPort *m_port;
-
     QQueue<OpenMVPluginSerialPortCommand> m_postedQueue;
     QQueue<int> m_completionQueue;
     int m_frameSizeW, m_frameSizeH, m_frameSizeBPP, m_mtu;
@@ -248,6 +248,7 @@ private:
     bool m_mainTerminalInput;
     bool m_bootloaderHS;
     bool m_bootloaderFastMode;
+    bool m_hsOn;
 };
 
 } // namespace Internal

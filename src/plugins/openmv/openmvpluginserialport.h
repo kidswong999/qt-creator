@@ -11,11 +11,10 @@
 
 #include "tools/myqserialportinfo.h"
 
-#define STM32_DFU_VID 0x0483
-#define STM32_DFU_PID 0xDF11
-#define OPENMVCAM_VID 0x1209
-#define OPENMVCAM_PID 0xABD1
-
+#define STM32_DFU_VID           0x0483
+#define STM32_DFU_PID           0xDF11
+#define OPENMVCAM_VID           0x1209
+#define OPENMVCAM_PID           0xABD1
 #define ARDUINOCAM_VID          0x2341
 #define ARDUINOCAM_PH7_PID      0x005B
 #define ARDUINOCAM_NRF_PID      0x005A
@@ -103,7 +102,7 @@
 #define __BOOTLDR_QSPIF_MEMTEST             static_cast<int>(0xABCD1020)
 
 #define FW_VERSION_RESPONSE_LEN             12
-#define ARCH_STR_RESPONSE_LEN               64
+#define ARCH_STR_RESPONSE_LEN               (64-1)
 #define FRAME_SIZE_RESPONSE_LEN             12
 #define FRAME_DUMP_UNLOCK_RESPONSE_LEN      4
 #define SCRIPT_RUNNING_RESPONSE_LEN         4
@@ -117,7 +116,7 @@
 #define SENSOR_ID_RESPONSE_LEN              4
 #define TX_INPUT_PAYLOAD_LEN                4
 #define TIME_INPUT_PAYLOAD_LEN              4
-#define GET_STATE_PAYLOAD_LEN               63
+#define GET_STATE_PAYLOAD_LEN               (64-1)
 
 #define BOOTLDR_START_RESPONSE_LEN          4
 #define BOOTLDR_QUERY_RESPONSE_LEN          12
@@ -126,8 +125,6 @@
 #define V1_BOOTLDR                          static_cast<int>(0xABCD0001)
 #define V2_BOOTLDR                          static_cast<int>(0xABCD0002)
 #define V3_BOOTLDR                          static_cast<int>(0xABCD0003)
-
-//#define ZLP_DELAY                           5
 
 #define FW_VERSION_START_DELAY              0
 #define FW_VERSION_END_DELAY                0
@@ -342,7 +339,6 @@ private:
     int m_override_per_command_wait;
     QJsonDocument m_firmwareSettings;
     bool m_unstuckWithGetState;
-    QTimer *m_zlpDelay;
 };
 
 class OpenMVPluginSerialPort : public QObject

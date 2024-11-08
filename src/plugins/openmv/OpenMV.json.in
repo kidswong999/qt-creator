@@ -51,11 +51,6 @@
             "Description" : "Ms to wait for a response (default 5000)"
         },
         {
-            "Name" : "-override_read_stall_timeout",
-            "Parameter" : "time_in_ms",
-            "Description" : "Ms to wait before pinging (default 1000)"
-        },
-        {
             "Name" : "-override_per_command_wait",
             "Parameter" : "time_in_ms",
             "Description" : "Ms to wait between each command (default 1 - on mac 2)"

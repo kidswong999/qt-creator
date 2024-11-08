@@ -260,6 +260,7 @@ OpenMVPluginIO::OpenMVPluginIO(OpenMVPluginSerialPort *port, QObject *parent) : 
     m_mainTerminalInput = bool();
     m_bootloaderHS = bool();
     m_bootloaderFastMode = bool();
+    m_hsOn = bool();
 }
 
 void OpenMVPluginIO::command()
@@ -281,7 +282,7 @@ void OpenMVPluginIO::doFrameSizeCpl(int w, int h, int bpp)
         // If we dump a multiple of the bulk packet size (64/512 bytes) this results in a ZLP
         // packet being sent from TinyUSB... Which messes up our synchronization with the camera
         // as we will issue the next command before the ZLP has been received.
-        if (!(size % TABOO_PACKET_SIZE))
+        if (!(size % (m_hsOn ? HS_EP_SIZE : FS_EP_SIZE)))
         {
             size += 1; // Add 1 extra byte to ensure we don't have ZLP packet issues.
         }
@@ -386,6 +387,8 @@ void OpenMVPluginIO::commandResult(const OpenMVPluginSerialPortCommandResult &co
                         m_pixelBuffer.clear();
                         emit frameBufferEmpty(null);
                     }
+                    // DISABLED - NOT REQUIRED - FIXING ZLP OVERLAP WAS WHY THINGS STALL - REMOVE AFTER TRIAL PERIOD
+                    //
                     // else
                     // {
                     //     QByteArray buffer;
@@ -395,6 +398,16 @@ void OpenMVPluginIO::commandResult(const OpenMVPluginSerialPortCommandResult &co
                     //     m_postedQueue.push_front(OpenMVPluginSerialPortCommand(buffer, FRAME_DUMP_UNLOCK_RESPONSE_LEN, FRAME_DUMP_UNLOCK_START_DELAY, FRAME_DUMP_UNLOCK_END_DELAY));
                     //     m_completionQueue.insert(1, USBDBG_FRAME_DUMP_UNLOCK_CPL);
                     // }
+                    //
+                    // DISABLED - NOT REQUIRED - FIXING ZLP OVERLAP WAS WHY THINGS STALL - REMOVE AFTER TRIAL PERIOD
+                    else
+                    {
+                        m_frameSizeW = int();
+                        m_frameSizeH = int();
+                        m_frameSizeBPP = int();
+                        m_pixelBuffer.clear();
+                        emit frameBufferEmpty(true);
+                    }
 
                     break;
                 }
@@ -409,7 +422,7 @@ void OpenMVPluginIO::commandResult(const OpenMVPluginSerialPortCommandResult &co
                 }
                 case USBDBG_ARCH_STR_CPL:
                 {
-                    emit archString(QString::fromUtf8(data.split(0).takeFirst()));
+                    emit archString(QString::fromUtf8(data.append('\0').split(0).takeFirst()));
                     break;
                 }
                 case USBDBG_LEARN_MTU_CPL:
@@ -522,6 +535,14 @@ void OpenMVPluginIO::commandResult(const OpenMVPluginSerialPortCommandResult &co
 
                     if(len)
                     {
+                        // If we dump a multiple of the bulk packet size (64/512 bytes) this results in a ZLP
+                        // packet being sent from TinyUSB... Which messes up our synchronization with the camera
+                        // as we will issue the next command before the ZLP has been received.
+                        if (!(len % (m_hsOn ? HS_EP_SIZE : FS_EP_SIZE)))
+                        {
+                            len -= 1; // Remove 1 byte to ensure we don't have ZLP packet issues.
+                        }
+
                         for(int i = 0, j = (len + m_mtu - 1) / m_mtu; i < j; i++)
                         {
                             int new_len = qMin(len - ((j - 1 - i) * m_mtu), m_mtu);

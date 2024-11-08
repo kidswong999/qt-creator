@@ -1414,6 +1414,8 @@ void OpenMVPlugin::connectClicked(bool forceBootloader, QString forceFirmwarePat
 
         // Open Port //////////////////////////////////////////////////////////
 
+        m_iodevice->setHighSpeed(false);
+
         if(!forceBootloaderBricked)
         {
             QString errorMessage2 = QString();
@@ -1600,6 +1602,8 @@ void OpenMVPlugin::connectClicked(bool forceBootloader, QString forceFirmwarePat
                         if((value.toObject().value(QStringLiteral("boardArchString")).toString() == temp)
                         && matchVidPid(value.toObject(), QString(), tempInfo))
                         {
+                            m_iodevice->setHighSpeed(value.toObject().value(QStringLiteral("highSpeed")).toBool());
+
                             if (value.toObject().value(QStringLiteral("bootloaderType")).toString() == QStringLiteral("openmv_dfu"))
                             {
                                 isOpenMVDfu = true;
@@ -1612,6 +1616,8 @@ void OpenMVPlugin::connectClicked(bool forceBootloader, QString forceFirmwarePat
                                 isIMX = true;
                                 break;
                             }
+
+                            break;
                         }
                     }
                 }
