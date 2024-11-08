@@ -386,21 +386,25 @@ void TextEditorPlugin::createEditorCommands()
     TextActionBuilder(this, FOLLOW_SYMBOL_UNDER_CURSOR)
         .setText(Tr::tr("Follow Symbol Under Cursor"))
         .setDefaultKeySequence(QKeySequence(Qt::Key_F2));
-    TextActionBuilder(this, FOLLOW_SYMBOL_UNDER_CURSOR_IN_NEXT_SPLIT)
-        .setText(Tr::tr("Follow Symbol Under Cursor in Next Split"))
-        .setDefaultKeySequence(Tr::tr("Meta+E, F2"), Tr::tr("Ctrl+E, F2"));
+    // OPENMV-DIFF //
+    // TextActionBuilder(this, FOLLOW_SYMBOL_UNDER_CURSOR_IN_NEXT_SPLIT)
+    //     .setText(Tr::tr("Follow Symbol Under Cursor in Next Split"))
+    //     .setDefaultKeySequence(Tr::tr("Meta+E, F2"), Tr::tr("Ctrl+E, F2"));
+    // OPENMV-DIFF //
     TextActionBuilder(this, FOLLOW_SYMBOL_TO_TYPE)
         .setText(Tr::tr("Follow Type Under Cursor"))
         .setDefaultKeySequence(QKeySequence(Tr::tr("Ctrl+Shift+F2")));
-    TextActionBuilder(this, FOLLOW_SYMBOL_TO_TYPE_IN_NEXT_SPLIT)
-        .setText(Tr::tr("Follow Type Under Cursor in Next Split"))
-        .setDefaultKeySequence(Tr::tr("Meta+E, Shift+F2"), Tr::tr("Ctrl+E, Ctrl+Shift+F2"));
-    TextActionBuilder(this, FIND_USAGES)
-        .setText(Tr::tr("Find References to Symbol Under Cursor"))
-        .setDefaultKeySequence(QKeySequence(Tr::tr("Ctrl+Shift+U")));
-    TextActionBuilder(this, RENAME_SYMBOL)
-        .setText(Tr::tr("Rename Symbol Under Cursor"))
-        .setDefaultKeySequence(QKeySequence(Tr::tr("Ctrl+Shift+R")));
+    // OPENMV-DIFF //
+    // TextActionBuilder(this, FOLLOW_SYMBOL_TO_TYPE_IN_NEXT_SPLIT)
+    //     .setText(Tr::tr("Follow Type Under Cursor in Next Split"))
+    //     .setDefaultKeySequence(Tr::tr("Meta+E, Shift+F2"), Tr::tr("Ctrl+E, Ctrl+Shift+F2"));
+    // TextActionBuilder(this, FIND_USAGES)
+    //     .setText(Tr::tr("Find References to Symbol Under Cursor"))
+    //     .setDefaultKeySequence(QKeySequence(Tr::tr("Ctrl+Shift+U")));
+    // TextActionBuilder(this, RENAME_SYMBOL)
+    //     .setText(Tr::tr("Rename Symbol Under Cursor"))
+    //     .setDefaultKeySequence(QKeySequence(Tr::tr("Ctrl+Shift+R")));
+    // OPENMV-DIFF //
     TextActionBuilder(this, JUMP_TO_FILE_UNDER_CURSOR)
         .setText(Tr::tr("Jump to File Under Cursor"))
         .setDefaultKeySequence(QKeySequence(Qt::Key_F2));

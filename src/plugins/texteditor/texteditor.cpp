@@ -9444,16 +9444,18 @@ void TextEditorWidget::appendStandardContextMenuActions(QMenu *menu)
         if (!menu->actions().contains(action))
             menu->addAction(action);
     }
-    if (optionalActions() & OptionalActions::FindUsage) {
-        const auto action = ActionManager::command(Constants::FIND_USAGES)->action();
-        if (!menu->actions().contains(action))
-            menu->addAction(action);
-    }
-    if (optionalActions() & OptionalActions::RenameSymbol) {
-        const auto action = ActionManager::command(Constants::RENAME_SYMBOL)->action();
-        if (!menu->actions().contains(action))
-            menu->addAction(action);
-    }
+    // OPENMV-DIFF //
+    // if (optionalActions() & OptionalActions::FindUsage) {
+    //     const auto action = ActionManager::command(Constants::FIND_USAGES)->action();
+    //     if (!menu->actions().contains(action))
+    //         menu->addAction(action);
+    // }
+    // if (optionalActions() & OptionalActions::RenameSymbol) {
+    //     const auto action = ActionManager::command(Constants::RENAME_SYMBOL)->action();
+    //     if (!menu->actions().contains(action))
+    //         menu->addAction(action);
+    // }
+    // OPENMV-DIFF //
     if (optionalActions() & OptionalActions::CallHierarchy) {
         const auto action = ActionManager::command(Constants::OPEN_CALL_HIERARCHY)->action();
         if (!menu->actions().contains(action))
