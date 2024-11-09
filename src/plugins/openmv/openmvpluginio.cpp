@@ -1365,7 +1365,7 @@ void OpenMVPluginIO::getState()
     serializeByte(buffer, __USBDBG_CMD);
     serializeByte(buffer, __USBDBG_GET_STATE);
     serializeLong(buffer, GET_STATE_PAYLOAD_LEN);
-    m_postedQueue.enqueue(OpenMVPluginSerialPortCommand(buffer, GET_STATE_PAYLOAD_LEN, GET_STATE_START_DELAY, GET_STATE_END_DELAY, true, true));
+    m_postedQueue.enqueue(OpenMVPluginSerialPortCommand(buffer, GET_STATE_PAYLOAD_LEN, GET_STATE_START_DELAY, GET_STATE_END_DELAY));
     m_completionQueue.enqueue(USBDBG_GET_STATE_CPL);
     command();
 }

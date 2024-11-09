@@ -610,27 +610,19 @@ void OpenMVPluginSerialPort_private::command(const OpenMVPluginSerialPortCommand
                 read_timeout = m_override_read_timeout;
             }
 
-            // DISABLED - NOT REQUIRED - FIXING ZLP OVERLAP WAS WHY THINGS STALL - REMOVE AFTER TRIAL PERIOD
-            //
-            // int read_stall_timeout = m_port->isSerialPort() ? SERIAL_READ_STALL_TIMEOUT : WIFI_READ_STALL_TIMEOUT;
-            //
-            // if(m_override_read_stall_timeout > 0)
-            // {
-            //     read_stall_timeout = m_override_read_stall_timeout;
-            // }
-            //
-            // DISABLED - NOT REQUIRED - FIXING ZLP OVERLAP WAS WHY THINGS STALL - REMOVE AFTER TRIAL PERIOD
+            int read_stall_timeout = m_port->isSerialPort() ? SERIAL_READ_STALL_TIMEOUT : WIFI_READ_STALL_TIMEOUT;
+
+            if(m_override_read_stall_timeout > 0)
+            {
+                read_stall_timeout = m_override_read_stall_timeout;
+            }
 
             QByteArray response;
             int responseLen = command.m_responseLen;
             QElapsedTimer elaspedTimer;
-            QElapsedTimer elaspedTimer2;
             elaspedTimer.start();
-            elaspedTimer2.start();
 
             bool readStallHappened = false;
-            // int readStallAbaddonSize = 0;
-            // int readStallDiscardSize = 0;
 
             do
             {
@@ -639,10 +631,19 @@ void OpenMVPluginSerialPort_private::command(const OpenMVPluginSerialPortCommand
                 QByteArray data = m_port->readAll();
                 response.append(data);
 
-                if((!readStallHappened) && (!data.isEmpty()))
+                if(!data.isEmpty())
                 {
                     elaspedTimer.restart();
-                    elaspedTimer2.restart();
+                }
+
+                // This code helps clear out read stalls where the OS received the data but then doesn't return it to the application.
+                //
+                // This happens on windows machines generally.
+
+                if((response.size() < responseLen) && elaspedTimer.hasExpired(read_stall_timeout) && command.m_commandAbortOkay)
+                {
+                    readStallHappened = true;
+                    break;
                 }
 
                 // DISABLED - NOT REQUIRED - FIXING ZLP OVERLAP WAS WHY THINGS STALL - REMOVE AFTER TRIAL PERIOD
@@ -657,10 +658,6 @@ void OpenMVPluginSerialPort_private::command(const OpenMVPluginSerialPortCommand
                 //
                 // if(m_port->isSerialPort() && (response.size() < responseLen) && elaspedTimer2.hasExpired(read_stall_timeout))
                 // {
-                //     // This code helps clear out read stalls where the OS received the data but then doesn't return it to the application.
-                //     //
-                //     // YES - THIS HAPPENS...
-                //
                 //     if(command.m_perCommandWait) // normal mode
                 //     {
                 //         if (m_unstuckWithGetState)
@@ -741,7 +738,7 @@ void OpenMVPluginSerialPort_private::command(const OpenMVPluginSerialPortCommand
             }
             while((response.size() < responseLen) && (!elaspedTimer.hasExpired(read_timeout)));
 
-            if((response.size() >= responseLen)) // || (m_port && command.m_commandAbortOkay))
+            if((response.size() >= responseLen) || readStallHappened)
             {
                 emit commandResult(OpenMVPluginSerialPortCommandResult(true, response.left(command.m_responseLen)));
             }

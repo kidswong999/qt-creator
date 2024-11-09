@@ -15,6 +15,7 @@
 #define STM32_DFU_PID           0xDF11
 #define OPENMVCAM_VID           0x1209
 #define OPENMVCAM_PID           0xABD1
+
 #define ARDUINOCAM_VID          0x2341
 #define ARDUINOCAM_PH7_PID      0x005B
 #define ARDUINOCAM_NRF_PID      0x005A
@@ -116,7 +117,7 @@
 #define SENSOR_ID_RESPONSE_LEN              4
 #define TX_INPUT_PAYLOAD_LEN                4
 #define TIME_INPUT_PAYLOAD_LEN              4
-#define GET_STATE_PAYLOAD_LEN               (64-1)
+#define GET_STATE_PAYLOAD_LEN               (64-0)
 
 #define BOOTLDR_START_RESPONSE_LEN          4
 #define BOOTLDR_QUERY_RESPONSE_LEN          12
