@@ -2369,8 +2369,11 @@ bool OpenMVPlugin::delayedInitialize()
         scanSerialPortsThread->moveToThread(thread);
         QTimer *timer = new QTimer(this);
 
-        connect(timer, &QTimer::timeout,
-                scanSerialPortsThread, &ScanSerialPortsThread::scanSerialPortsSlot);
+        connect(timer, &QTimer::timeout, scanSerialPortsThread, [this, scanSerialPortsThread] () {
+            if (!m_connected) {
+                scanSerialPortsThread->scanSerialPortsSlot();
+            }
+        });
 
         connect(scanSerialPortsThread, &ScanSerialPortsThread::serialPorts, this, [this] (const QPair<QStringList, QStringList> &output) {
             QTime currentTime = QTime::currentTime();
