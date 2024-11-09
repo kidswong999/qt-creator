@@ -103,7 +103,7 @@
 #define __BOOTLDR_QSPIF_MEMTEST             static_cast<int>(0xABCD1020)
 
 #define FW_VERSION_RESPONSE_LEN             12
-#define ARCH_STR_RESPONSE_LEN               (64-1)
+#define ARCH_STR_RESPONSE_LEN               (64-0)
 #define FRAME_SIZE_RESPONSE_LEN             12
 #define FRAME_DUMP_UNLOCK_RESPONSE_LEN      4
 #define SCRIPT_RUNNING_RESPONSE_LEN         4
