@@ -193,6 +193,7 @@ public slots: // private
     void bootloaderHS(bool on) { m_bootloaderHS = on; }
     void bootloaderFastMode(bool on) { m_bootloaderFastMode = on; }
     void setHighSpeed(bool on) { m_hsOn = on; }
+    void setGetStateVariableSize(bool on) { m_getStateVariableSize = on; }
 
 signals:
 
@@ -249,6 +250,7 @@ private:
     bool m_bootloaderHS;
     bool m_bootloaderFastMode;
     bool m_hsOn;
+    bool m_getStateVariableSize;
 };
 
 } // namespace Internal

@@ -261,6 +261,7 @@ OpenMVPluginIO::OpenMVPluginIO(OpenMVPluginSerialPort *port, QObject *parent) : 
     m_bootloaderHS = bool();
     m_bootloaderFastMode = bool();
     m_hsOn = bool();
+    m_getStateVariableSize = bool();
 }
 
 void OpenMVPluginIO::command()
@@ -596,7 +597,9 @@ void OpenMVPluginIO::commandResult(const OpenMVPluginSerialPortCommandResult &co
                 }
                 case USBDBG_GET_STATE_CPL:
                 {
-                    if (data.size() == GET_STATE_PAYLOAD_LEN)
+                    int payload_len = m_getStateVariableSize ? (m_hsOn ? GET_STATE_PAYLOAD_LEN_HS : GET_STATE_PAYLOAD_LEN_FS) : GET_STATE_PAYLOAD_LEN;
+
+                    if (data.size() == payload_len)
                     {
                         int flags = deserializeLong(data);
                         int w = deserializeLong(data);
@@ -1361,11 +1364,12 @@ void OpenMVPluginIO::timeInput()
 
 void OpenMVPluginIO::getState()
 {
+    int payload_len = m_getStateVariableSize ? (m_hsOn ? GET_STATE_PAYLOAD_LEN_HS : GET_STATE_PAYLOAD_LEN_FS) : GET_STATE_PAYLOAD_LEN;
     QByteArray buffer;
     serializeByte(buffer, __USBDBG_CMD);
     serializeByte(buffer, __USBDBG_GET_STATE);
-    serializeLong(buffer, GET_STATE_PAYLOAD_LEN);
-    m_postedQueue.enqueue(OpenMVPluginSerialPortCommand(buffer, GET_STATE_PAYLOAD_LEN, GET_STATE_START_DELAY, GET_STATE_END_DELAY));
+    serializeLong(buffer, payload_len);
+    m_postedQueue.enqueue(OpenMVPluginSerialPortCommand(buffer, payload_len, GET_STATE_START_DELAY, GET_STATE_END_DELAY));
     m_completionQueue.enqueue(USBDBG_GET_STATE_CPL);
     command();
 }

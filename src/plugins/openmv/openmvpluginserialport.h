@@ -103,7 +103,7 @@
 #define __BOOTLDR_QSPIF_MEMTEST             static_cast<int>(0xABCD1020)
 
 #define FW_VERSION_RESPONSE_LEN             12
-#define ARCH_STR_RESPONSE_LEN               (64-0)
+#define ARCH_STR_RESPONSE_LEN               64
 #define FRAME_SIZE_RESPONSE_LEN             12
 #define FRAME_DUMP_UNLOCK_RESPONSE_LEN      4
 #define SCRIPT_RUNNING_RESPONSE_LEN         4
@@ -117,7 +117,9 @@
 #define SENSOR_ID_RESPONSE_LEN              4
 #define TX_INPUT_PAYLOAD_LEN                4
 #define TIME_INPUT_PAYLOAD_LEN              4
-#define GET_STATE_PAYLOAD_LEN               (64-0)
+#define GET_STATE_PAYLOAD_LEN               64
+#define GET_STATE_PAYLOAD_LEN_FS            63
+#define GET_STATE_PAYLOAD_LEN_HS            511
 
 #define BOOTLDR_START_RESPONSE_LEN          4
 #define BOOTLDR_QUERY_RESPONSE_LEN          12

@@ -2086,6 +2086,15 @@ void OpenMVPlugin::connectClicked(bool forceBootloader, QString forceFirmwarePat
             m_iodevice->mainTerminalInputEnable(true);
         }
 
+        if (0)
+        {
+            m_iodevice->setGetStateVariableSize(true);
+        }
+        else
+        {
+            m_iodevice->setGetStateVariableSize(false);
+        }
+
         m_boardTypeFolder = QString();
         m_fullBoardType = QString();
         m_boardType = QString();
