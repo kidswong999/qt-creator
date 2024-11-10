@@ -211,7 +211,7 @@
 #define FRAME_SIZE_DUMP_SPACING     5 // in ms
 #define GET_SCRIPT_RUNNING_SPACING  100 // in ms
 #define GET_TX_BUFFER_SPACING       5 // in ms
-#define GET_STATE_SPACING           50 // in ms
+#define GET_STATE_SPACING           25 // in ms
 
 #define FPS_AVERAGE_BUFFER_DEPTH    100 // in samples
 #define WIFI_PORT_RETIRE            20 // in seconds
