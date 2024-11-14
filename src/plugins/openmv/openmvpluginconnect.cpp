@@ -786,7 +786,7 @@ QPair<QStringList, QStringList> filterPorts(const QJsonDocument &settings,
         }
     }
 
-    dfuDevices = picotoolGetDevices() + imxGetAllDevices(settings);
+    dfuDevices = picotoolGetDevices() + imxGetAllDevices(settings) + alifGetDevices(settings);
 
     for(const QString &device : getDevices())
     {
@@ -1289,8 +1289,9 @@ void OpenMVPlugin::connectClicked(bool forceBootloader, QString forceFirmwarePat
             settings->endGroup();
         }
 
-        bool isIMX = false;
         bool isOpenMVDfu = false;
+        bool isIMX = false;
+        bool isAlif = false;
         bool isArduinoDFU = false;
         bool isBossac = false;
         bool isPicotool = false;
@@ -1332,6 +1333,7 @@ void OpenMVPlugin::connectClicked(bool forceBootloader, QString forceFirmwarePat
 
             isOpenMVDfu = dfuVidPidList(m_firmwareSettings).contains(QPair<int , int>(vidpid.at(0).toInt(nullptr, 16), vidpid.at(1).toInt(nullptr, 16)));
             isIMX = imxVidPidList(m_firmwareSettings).contains(QPair<int , int>(vidpid.at(0).toInt(nullptr, 16), vidpid.at(1).toInt(nullptr, 16)));
+            isAlif = alifVidPidList(m_firmwareSettings).contains(QPair<int , int>(vidpid.at(0).toInt(nullptr, 16), vidpid.at(1).toInt(nullptr, 16)));
             isArduinoDFU = isBootloaderType(m_firmwareSettings, vidpid.at(0).toInt(nullptr, 16), vidpid.at(1).toInt(nullptr, 16), QStringLiteral("arduino_dfu"));
             isBossac = isBootloaderType(m_firmwareSettings, vidpid.at(0).toInt(nullptr, 16), vidpid.at(1).toInt(nullptr, 16), QStringLiteral("bossac"));
             isPicotool = isBootloaderType(m_firmwareSettings, vidpid.at(0).toInt(nullptr, 16), vidpid.at(1).toInt(nullptr, 16), QStringLiteral("picotool"));
@@ -1370,6 +1372,7 @@ void OpenMVPlugin::connectClicked(bool forceBootloader, QString forceFirmwarePat
 
             isOpenMVDfu = dfuVidPidList(m_firmwareSettings).contains(QPair<int , int>(vidpid.at(0).toInt(nullptr, 16), vidpid.at(1).toInt(nullptr, 16)));
             isIMX = imxVidPidList(m_firmwareSettings).contains(QPair<int , int>(vidpid.at(0).toInt(nullptr, 16), vidpid.at(1).toInt(nullptr, 16)));
+            isAlif = alifVidPidList(m_firmwareSettings).contains(QPair<int , int>(vidpid.at(0).toInt(nullptr, 16), vidpid.at(1).toInt(nullptr, 16)));
             isArduinoDFU = isBootloaderType(m_firmwareSettings, vidpid.at(0).toInt(nullptr, 16), vidpid.at(1).toInt(nullptr, 16), QStringLiteral("arduino_dfu"));
             isBossac = isBootloaderType(m_firmwareSettings, vidpid.at(0).toInt(nullptr, 16), vidpid.at(1).toInt(nullptr, 16), QStringLiteral("bossac"));
             isPicotool = isBootloaderType(m_firmwareSettings, vidpid.at(0).toInt(nullptr, 16), vidpid.at(1).toInt(nullptr, 16), QStringLiteral("picotool"));
@@ -1383,7 +1386,7 @@ void OpenMVPlugin::connectClicked(bool forceBootloader, QString forceFirmwarePat
             isRPIPico = ((vidpid.at(0).toInt(nullptr, 16) == ARDUINOCAM_VID) && ((vidpid.at(1).toInt(nullptr, 16) == RPI_OLD_PID) || (vidpid.at(1).toInt(nullptr, 16) == RPI_LDR_PID))) ||
                         ((vidpid.at(0).toInt(nullptr, 16) == RPI2040_VID) && (vidpid.at(1).toInt(nullptr, 16) == RPI2040_PID));
 
-            if(isOpenMVDfu || isIMX || isArduinoDFU || isBossac || isPicotool)
+            if(isOpenMVDfu || isIMX || isAlif || isArduinoDFU || isBossac || isPicotool)
             {
                 selectedDfuDevice = originalDfuVidPid + QStringLiteral(",NULL");
             }
@@ -1407,7 +1410,7 @@ void OpenMVPlugin::connectClicked(bool forceBootloader, QString forceFirmwarePat
             }
         }
 
-        if (dfuNoDialogs && (!isOpenMVDfu) && (!isIMX) && (!isArduinoDFU) && (!isBossac) && (!isPicotool)) {
+        if (dfuNoDialogs && (!isOpenMVDfu) && (!isIMX) && (!isAlif) && (!isArduinoDFU) && (!isBossac) && (!isPicotool)) {
             firmwarePath = QFileInfo(firmwarePath).path() + QStringLiteral("/bootloader.dfu");
             repairingBootloader = true;
         }
@@ -1776,6 +1779,7 @@ void OpenMVPlugin::connectClicked(bool forceBootloader, QString forceFirmwarePat
                         QStringList vidpid = vidpidMappings.value(temp).split(QStringLiteral(":"));
                         isOpenMVDfu = dfuVidPidList(m_firmwareSettings).contains(QPair<int , int>(vidpid.at(0).toInt(nullptr, 16), vidpid.at(1).toInt(nullptr, 16)));
                         isIMX = imxVidPidList(m_firmwareSettings).contains(QPair<int , int>(vidpid.at(0).toInt(nullptr, 16), vidpid.at(1).toInt(nullptr, 16)));
+                        isAlif = alifVidPidList(m_firmwareSettings).contains(QPair<int , int>(vidpid.at(0).toInt(nullptr, 16), vidpid.at(1).toInt(nullptr, 16)));
                         isArduinoDFU = isBootloaderType(m_firmwareSettings, vidpid.at(0).toInt(nullptr, 16), vidpid.at(1).toInt(nullptr, 16), QStringLiteral("arduino_dfu"));
                         isBossac = isBootloaderType(m_firmwareSettings, vidpid.at(0).toInt(nullptr, 16), vidpid.at(1).toInt(nullptr, 16), QStringLiteral("bossac"));
                         isPicotool = isBootloaderType(m_firmwareSettings, vidpid.at(0).toInt(nullptr, 16), vidpid.at(1).toInt(nullptr, 16), QStringLiteral("picotool"));
@@ -1813,6 +1817,7 @@ void OpenMVPlugin::connectClicked(bool forceBootloader, QString forceFirmwarePat
 
                 if((!isOpenMVDfu)
                 && (!isIMX)
+                && (!isAlif)
                 && (!isArduinoDFU)
                 && (!isBossac)
                 && (!isPicotool)
@@ -1831,6 +1836,7 @@ void OpenMVPlugin::connectClicked(bool forceBootloader, QString forceFirmwarePat
 
             if ((!isOpenMVDfu)
             && (!isIMX)
+            && (!isAlif)
             && (!isArduinoDFU)
             && (!isBossac)
             && (!isPicotool)
@@ -1914,6 +1920,17 @@ void OpenMVPlugin::connectClicked(bool forceBootloader, QString forceFirmwarePat
                                     forceBootloaderBricked,
                                     originalFirmwareFolder,
                                     selectedDfuDevice);
+                return;
+            }
+
+            if (isAlif)
+            {
+                openmvAlifBootloader(forceFirmwarePath,
+                                     forceFlashFSErase,
+                                     justEraseFlashFs,
+                                     settings,
+                                     originalFirmwareFolder,
+                                     selectedDfuDevice);
                 return;
             }
 

@@ -436,6 +436,11 @@ bool OpenMVPlugin::initialize(const QStringList &arguments, QString *errorMessag
         exit(-1);
     }
 
+    if(!alifSyncTools())
+    {
+        exit(-1);
+    }
+
     ///////////////////////////////////////////////////////////////////////////
 
     QFile firmwareSettings(Core::ICore::userResourcePath(QStringLiteral("firmware/settings.json")).toString());

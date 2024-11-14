@@ -64,6 +64,7 @@
 #include "openmvcamerasettings.h"
 #include "openmvdataseteditor.h"
 #include "histogram/openmvpluginhistogram.h"
+#include "tools/alif.h"
 #include "tools/bossac.h"
 #include "tools/dfu-util.h"
 #include "tools/edgeimpulse.h"
@@ -124,6 +125,7 @@
 #define LAST_BOARD_TYPE_STATE "LastBoardTypeState"
 #define LAST_BOARD_TYPE_STATE_2 "LastBoardTypeState2"
 #define LAST_BOARD_TYPE_STATE_IMX "LastBoardTypeStateIMX"
+#define LAST_BOARD_TYPE_STATE_ALIF "LastBoardTypeStateAlif"
 #define LAST_SERIAL_PORT_STATE "LastSerialPortState"
 #define LAST_DFU_PORT_STATE "LastDFUPortState"
 #define LAST_SAVE_IMAGE_PATH "LastSaveImagePath"
@@ -219,9 +221,9 @@
 #define FPS_TIMER_EXPIRATION_TIME   2000 // in milliseconds
 #define RESET_TO_DFU_SEARCH_TIME    2000 // in milliseconds
 
-#define FILE_FLUSH_BYTES 1024 // Extra disk activity to flush changes...
-#define FLASH_SECTOR_ERASE 4096 // Flash sector size in bytes.
-#define FOLDER_SCAN_TIME 10000 // in ms
+#define FILE_FLUSH_BYTES            1024 // Extra disk activity to flush changes...
+#define FLASH_SECTOR_ERASE          4096 // Flash sector size in bytes.
+#define FOLDER_SCAN_TIME            10000 // in ms
 
 #define FORCE_SHUTDOWN_TIMEOUT      10000 // in ms
 
@@ -420,6 +422,12 @@ private:
                              bool forceBootloaderBricked,
                              QString originalFirmwareFolder,
                              const QString &selectedDfuDevice);
+    void openmvAlifBootloader(const QString &forceFirmwarePath,
+                              bool forceFlashFSErase,
+                              bool justEraseFlashFs,
+                              Utils::QtcSettings *settings,
+                              QString originalFirmwareFolder,
+                              const QString &selectedDfuDevice);
     void openmvArduinoDFUBootloader(bool forceFlashFSErase,
                                     bool justEraseFlashFs,
                                     const QString &firmwarePath,

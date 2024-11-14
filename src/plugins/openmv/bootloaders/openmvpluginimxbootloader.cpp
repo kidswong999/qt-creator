@@ -247,7 +247,7 @@ void OpenMVPlugin::openmvIMXBootloader(const QString &forceFirmwarePath,
     else
     {
         QStringList vidpid = selectedDfuDevice.split(QStringLiteral(",")).first().split(QStringLiteral(":"));
-        QPair<int , int> entry(vidpid.at(0).toInt(nullptr, 16), vidpid.at(1).toInt(nullptr, 16));
+        QPair<int, int> entry(vidpid.at(0).toInt(nullptr, 16), vidpid.at(1).toInt(nullptr, 16));
 
         // SPD Mode (SBL)
         if(imxVidPidList(m_firmwareSettings, true, false).contains(entry))

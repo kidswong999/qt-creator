@@ -7,6 +7,7 @@ add_qtc_plugin(OpenMV
     bootloaders/openmvpluginbootloader.cpp
     bootloaders/openmvplugindfubootloader.cpp
     bootloaders/openmvpluginimxbootloader.cpp
+    bootloaders/openmvpluginalifbootloader.cpp
     bootloaders/openmvpluginarduinodfubootloader.cpp
     bootloaders/openmvpluginbossacbootloader.cpp
     bootloaders/openmvpluginpicotoolbootloader.cpp
@@ -25,6 +26,7 @@ add_qtc_plugin(OpenMV
     histogram/yuv_tab.c
     tools/myqserialportinfo.cpp tools/myqserialportinfo.h
     tools/loaderdialog.cpp tools/loaderdialog.h
+    tools/alif.cpp tools/alif.h
     tools/bossac.cpp tools/bossac.h
     tools/dfu-util.cpp tools/dfu-util.h
     tools/edgeimpulse.cpp tools/edgeimpulse.h
