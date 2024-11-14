@@ -444,6 +444,31 @@
             }
         },
         {
+            "hidden" : true,
+            "boardType" : "AE3",
+            "boardArchString" : "OPENMV AE3",
+            "boardDisplayName" : "OpenMV Cam AE3 SBL",
+            "boardFirmwareFolder" : "OPENMV_AE3",
+            "highSpeed" : true,
+            "boardVidPid" : "37C5:16E3",
+            "boardPidMask" : "0xFFFF",
+            "boardSerialNumberInverseFilters" : [],
+            "bootloaderVidPid" : "0403:6015",
+            "bootloaderType" : "alif_tools",
+            "bootloaderSettings" : {
+                "global-cfg.db" : {
+                    "DEVICE": {
+                        "Revision": "B4",
+                        "Part#": "E3 (AE302F80F55D5AE) - 5.5 MRAM / 13.5 SRAM"
+                    },
+                    "MRAM-BURNER": {
+                        "Interface": "isp",
+                        "Jtag-adapter": "J-Link"
+                    }
+                }
+            }
+        },
+        {
             "hidden" : false,
             "boardType" : "N6",
             "boardArchString" : "OPENMV N6",
