@@ -198,10 +198,17 @@ QList<QString> alifGetDevices(const QJsonDocument &settings)
 
             if (vidPidlist.contains(entry))
             {
+                QString portName = info.portName();
+
+                if(!Utils::HostOsInfo::isWindowsHost())
+                {
+                    portName.prepend(QStringLiteral("/dev/"));
+                }
+
                 devices.append(QString(QStringLiteral("%1:%2,%3")).
                                arg(info.vendorIdentifier(), 4, 16, QChar('0')).
                                arg(info.productIdentifier(), 4, 16, QChar('0')).
-                               arg(info.portName()));
+                               arg(portName));
             }
         }
     }
@@ -412,16 +419,19 @@ bool alifDownloadFirmware(const QString &port, const QString &originalFirmwareFo
     });
 
     Utils::FilePath updateSystemPackageBinary;
+    Utils::FilePath appGenToc;
     Utils::FilePath appWriteMramBinary;
 
     if(Utils::HostOsInfo::isWindowsHost())
     {
         updateSystemPackageBinary = Core::ICore::userResourcePath(QStringLiteral("alif/updateSystemPackage.exe"));
+        appGenToc = Core::ICore::userResourcePath(QStringLiteral("alif/app-gen-toc.exe"));
         appWriteMramBinary = Core::ICore::userResourcePath(QStringLiteral("alif/app-write-mram.exe"));
     }
     else if(Utils::HostOsInfo::isMacHost())
     {
         updateSystemPackageBinary = Core::ICore::userResourcePath(QStringLiteral("alif/updateSystemPackage"));
+        appGenToc = Core::ICore::userResourcePath(QStringLiteral("alif/app-gen-toc"));
         appWriteMramBinary = Core::ICore::userResourcePath(QStringLiteral("alif/app-write-mram"));
     }
     else if(Utils::HostOsInfo::isLinuxHost())
@@ -429,6 +439,7 @@ bool alifDownloadFirmware(const QString &port, const QString &originalFirmwareFo
         if(QSysInfo::buildCpuArchitecture() == QStringLiteral("x86_64"))
         {
             updateSystemPackageBinary = Core::ICore::userResourcePath(QStringLiteral("alif/updateSystemPackage"));
+            appGenToc = Core::ICore::userResourcePath(QStringLiteral("alif/app-gen-toc"));
             appWriteMramBinary = Core::ICore::userResourcePath(QStringLiteral("alif/app-write-mram"));
         }
     }
@@ -496,6 +507,41 @@ bool alifDownloadFirmware(const QString &port, const QString &originalFirmwareFo
     {
         result = false;
         goto cleanup;
+    }
+
+    // App Gen Toc
+    {
+        QStringList args = QStringList() << QStringLiteral("-f") << QStringLiteral("build/config/alif_cfg.json");
+
+        QString command = QString(QStringLiteral("%1 %2")).arg(appGenToc.toString()).arg(args.join(QLatin1Char(' ')));
+        dialog->appendColoredText(command);
+
+        std::chrono::seconds timeout(300); // 5 minutes...
+        process.setTextChannelMode(Utils::Channel::Output, Utils::TextChannelMode::MultiLine);
+        process.setTextChannelMode(Utils::Channel::Error, Utils::TextChannelMode::MultiLine);
+        process.setProcessMode(Utils::ProcessMode::Writer);
+        process.setWorkingDirectory(appGenToc.parentDir());
+        process.setCommand(Utils::CommandLine(appGenToc, args));
+        process.runBlocking(timeout, Utils::EventLoopMode::On, QEventLoop::AllEvents);
+
+        if((process.result() != Utils::ProcessResult::FinishedWithSuccess) && (process.result() != Utils::ProcessResult::TerminatedAbnormally))
+        {
+            QMessageBox box(QMessageBox::Critical, Tr::tr("Alif Tools"), Tr::tr("Timeout Error!"), QMessageBox::Ok, Core::ICore::dialogParent(),
+                Qt::MSWindowsFixedSizeDialogHint | Qt::WindowTitleHint | Qt::WindowSystemMenuHint |
+                (Utils::HostOsInfo::isMacHost() ? Qt::WindowType(0) : Qt::WindowCloseButtonHint));
+            box.setDetailedText(command + QStringLiteral("\n\n") + process.stdOut() + QStringLiteral("\n") + process.stdErr());
+            box.setDefaultButton(QMessageBox::Ok);
+            box.setEscapeButton(QMessageBox::Cancel);
+            box.exec();
+
+            result = false;
+            goto cleanup;
+        }
+        else if(process.result() == Utils::ProcessResult::TerminatedAbnormally)
+        {
+            result = false;
+            goto cleanup;
+        }
     }
 
     // App Write Mram
