@@ -187,6 +187,11 @@ QList<QString> alifGetDevices(const QJsonDocument &settings)
 
     for (const QSerialPortInfo &info : QSerialPortInfo::availablePorts())
     {
+        if(Utils::HostOsInfo::isMacHost() && (!info.portName().contains(QStringLiteral("cu"), Qt::CaseInsensitive)))
+        {
+            continue;
+        }
+
         if (info.hasVendorIdentifier() && info.hasProductIdentifier())
         {
             QPair<int, int> entry(info.vendorIdentifier(), info.productIdentifier());
