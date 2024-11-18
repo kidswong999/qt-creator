@@ -283,6 +283,8 @@ bool alifDownloadFirmware(const QString &port, const QString &originalFirmwareFo
 {
     QMutexLocker locker(&alif_tools_working);
 
+    QJsonObject dfuBootloaderProgramCommand = obj.value(QStringLiteral("dfuBootloaderProgramCommand")).toObject();
+
     bool result = true;
     Utils::Process process;
 
@@ -544,38 +546,79 @@ bool alifDownloadFirmware(const QString &port, const QString &originalFirmwareFo
         }
     }
 
-    // App Write Mram
+    if (!dfuBootloaderProgramCommand.isEmpty())
     {
-        QStringList args = QStringList();
-
-        QString command = QString(QStringLiteral("%1 %2")).arg(appWriteMramBinary.toString()).arg(args.join(QLatin1Char(' ')));
-        dialog->appendColoredText(command);
-
-        std::chrono::seconds timeout(300); // 5 minutes...
-        process.setTextChannelMode(Utils::Channel::Output, Utils::TextChannelMode::MultiLine);
-        process.setTextChannelMode(Utils::Channel::Error, Utils::TextChannelMode::MultiLine);
-        process.setProcessMode(Utils::ProcessMode::Writer);
-        process.setWorkingDirectory(appWriteMramBinary.parentDir());
-        process.setCommand(Utils::CommandLine(appWriteMramBinary, args));
-        process.runBlocking(timeout, Utils::EventLoopMode::On, QEventLoop::AllEvents);
-
-        if((process.result() != Utils::ProcessResult::FinishedWithSuccess) && (process.result() != Utils::ProcessResult::TerminatedAbnormally))
+        // Write Bootloader
         {
-            QMessageBox box(QMessageBox::Critical, Tr::tr("Alif Tools"), Tr::tr("Timeout Error!"), QMessageBox::Ok, Core::ICore::dialogParent(),
-                Qt::MSWindowsFixedSizeDialogHint | Qt::WindowTitleHint | Qt::WindowSystemMenuHint |
-                (Utils::HostOsInfo::isMacHost() ? Qt::WindowType(0) : Qt::WindowCloseButtonHint));
-            box.setDetailedText(command + QStringLiteral("\n\n") + process.stdOut() + QStringLiteral("\n") + process.stdErr());
-            box.setDefaultButton(QMessageBox::Ok);
-            box.setEscapeButton(QMessageBox::Cancel);
-            box.exec();
+            QStringList args = QStringList() << QStringLiteral("-i") <<
+                dfuBootloaderProgramCommand.value(QStringLiteral("images")).toString();
 
-            result = false;
-            goto cleanup;
+            QString command = QString(QStringLiteral("%1 %2")).arg(appWriteMramBinary.toString()).arg(args.join(QLatin1Char(' ')));
+            dialog->appendColoredText(command);
+
+            std::chrono::seconds timeout(300); // 5 minutes...
+            process.setTextChannelMode(Utils::Channel::Output, Utils::TextChannelMode::MultiLine);
+            process.setTextChannelMode(Utils::Channel::Error, Utils::TextChannelMode::MultiLine);
+            process.setProcessMode(Utils::ProcessMode::Writer);
+            process.setWorkingDirectory(appWriteMramBinary.parentDir());
+            process.setCommand(Utils::CommandLine(appWriteMramBinary, args));
+            process.runBlocking(timeout, Utils::EventLoopMode::On, QEventLoop::AllEvents);
+
+            if((process.result() != Utils::ProcessResult::FinishedWithSuccess) && (process.result() != Utils::ProcessResult::TerminatedAbnormally))
+            {
+                QMessageBox box(QMessageBox::Critical, Tr::tr("Alif Tools"), Tr::tr("Timeout Error!"), QMessageBox::Ok, Core::ICore::dialogParent(),
+                    Qt::MSWindowsFixedSizeDialogHint | Qt::WindowTitleHint | Qt::WindowSystemMenuHint |
+                    (Utils::HostOsInfo::isMacHost() ? Qt::WindowType(0) : Qt::WindowCloseButtonHint));
+                box.setDetailedText(command + QStringLiteral("\n\n") + process.stdOut() + QStringLiteral("\n") + process.stdErr());
+                box.setDefaultButton(QMessageBox::Ok);
+                box.setEscapeButton(QMessageBox::Cancel);
+                box.exec();
+
+                result = false;
+                goto cleanup;
+            }
+            else if(process.result() == Utils::ProcessResult::TerminatedAbnormally)
+            {
+                result = false;
+                goto cleanup;
+            }
         }
-        else if(process.result() == Utils::ProcessResult::TerminatedAbnormally)
+    }
+    else
+    {
+        // App Write Mram
         {
-            result = false;
-            goto cleanup;
+            QStringList args = QStringList();
+
+            QString command = QString(QStringLiteral("%1 %2")).arg(appWriteMramBinary.toString()).arg(args.join(QLatin1Char(' ')));
+            dialog->appendColoredText(command);
+
+            std::chrono::seconds timeout(300); // 5 minutes...
+            process.setTextChannelMode(Utils::Channel::Output, Utils::TextChannelMode::MultiLine);
+            process.setTextChannelMode(Utils::Channel::Error, Utils::TextChannelMode::MultiLine);
+            process.setProcessMode(Utils::ProcessMode::Writer);
+            process.setWorkingDirectory(appWriteMramBinary.parentDir());
+            process.setCommand(Utils::CommandLine(appWriteMramBinary, args));
+            process.runBlocking(timeout, Utils::EventLoopMode::On, QEventLoop::AllEvents);
+
+            if((process.result() != Utils::ProcessResult::FinishedWithSuccess) && (process.result() != Utils::ProcessResult::TerminatedAbnormally))
+            {
+                QMessageBox box(QMessageBox::Critical, Tr::tr("Alif Tools"), Tr::tr("Timeout Error!"), QMessageBox::Ok, Core::ICore::dialogParent(),
+                    Qt::MSWindowsFixedSizeDialogHint | Qt::WindowTitleHint | Qt::WindowSystemMenuHint |
+                    (Utils::HostOsInfo::isMacHost() ? Qt::WindowType(0) : Qt::WindowCloseButtonHint));
+                box.setDetailedText(command + QStringLiteral("\n\n") + process.stdOut() + QStringLiteral("\n") + process.stdErr());
+                box.setDefaultButton(QMessageBox::Ok);
+                box.setEscapeButton(QMessageBox::Cancel);
+                box.exec();
+
+                result = false;
+                goto cleanup;
+            }
+            else if(process.result() == Utils::ProcessResult::TerminatedAbnormally)
+            {
+                result = false;
+                goto cleanup;
+            }
         }
     }
 

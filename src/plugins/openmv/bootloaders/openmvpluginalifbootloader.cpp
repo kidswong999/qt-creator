@@ -109,16 +109,25 @@ void OpenMVPlugin::openmvAlifBootloader(const QString &forceFirmwarePath,
     {
         if(alifDownloadFirmware(selectedDfuDevice.split(QStringLiteral(",")).last(), originalFirmwareFolder, outObj))
         {
-            if((m_autoUpdate.isEmpty()) && (!m_autoErase)) QMessageBox::information(Core::ICore::dialogParent(),
-                Tr::tr("Connect"),
-                Tr::tr("Firmware update complete!\n\n") +
-                Tr::tr("If you are forcing SBL mode, disconnect your OpenMV Cam from your computer and reset the SBL switch. "
-                       "Then reconnect your OpenMV Cam to your computer.\n\n") +
-                Tr::tr("Click the Ok button after your OpenMV Cam has enumerated and finished running its built-in self test (blue led blinking - this takes a while).") +
-                Tr::tr("\n\nIf you overwrote main.py on your OpenMV Cam and did not erase the disk then your OpenMV Cam will just run that main.py."
-                   "\n\nIn this case click OK when you see your OpenMV Cam's internal flash drive mount (a window may or may not pop open)."));
+            QJsonObject dfuBootloaderProgramCommand = outObj.value(QStringLiteral("dfuBootloaderProgramCommand")).toObject();
 
-            RECONNECT_WAIT_END();
+            if (!dfuBootloaderProgramCommand.isEmpty())
+            {
+                openmvDFUBootloader(forceFlashFSErase, justEraseFlashFs, QString(), dfuBootloaderProgramCommand.value(QStringLiteral("bootloaderVidPid")).toString() + QStringLiteral(",NULL"));
+            }
+            else
+            {
+                if((m_autoUpdate.isEmpty()) && (!m_autoErase)) QMessageBox::information(Core::ICore::dialogParent(),
+                    Tr::tr("Connect"),
+                    Tr::tr("Firmware update complete!\n\n") +
+                    Tr::tr("If you are forcing SBL mode, disconnect your OpenMV Cam from your computer and reset the SBL switch. "
+                           "Then reconnect your OpenMV Cam to your computer.\n\n") +
+                    Tr::tr("Click the Ok button after your OpenMV Cam has enumerated and finished running its built-in self test (blue led blinking - this takes a while).") +
+                    Tr::tr("\n\nIf you overwrote main.py on your OpenMV Cam and did not erase the disk then your OpenMV Cam will just run that main.py."
+                       "\n\nIn this case click OK when you see your OpenMV Cam's internal flash drive mount (a window may or may not pop open)."));
+
+                RECONNECT_WAIT_END();
+            }
         }
         else
         {

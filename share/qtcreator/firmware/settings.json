@@ -465,6 +465,10 @@
                         "Interface": "isp",
                         "Jtag-adapter": "J-Link"
                     }
+                },
+                "dfuBootloaderProgramCommand" : {
+                    "images": "../build/images/bootloader.bin 0x80000000 ../build/AppTocPackage.bin 0x8057f060",
+                    "bootloaderVidPid": "37C5:96E3"
                 }
             }
         },
