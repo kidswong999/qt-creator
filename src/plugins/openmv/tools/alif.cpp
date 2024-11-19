@@ -283,7 +283,25 @@ bool alifDownloadFirmware(const QString &port, const QString &originalFirmwareFo
 {
     QMutexLocker locker(&alif_tools_working);
 
+    QFile file(Core::ICore::userResourcePath(QStringLiteral("alif/version.json")).toString());
+    int current_version_major = 0;
+    int current_version_minor = 0;
+    int current_version_patch = 0;
+
+    if (file.open(QFile::ReadOnly))
+    {
+        QJsonDocument doc = QJsonDocument::fromJson(file.readAll());
+        file.close();
+
+        current_version_major = doc.object().value(QStringLiteral("version_major")).toInt();
+        current_version_minor = doc.object().value(QStringLiteral("version_minor")).toInt();
+        current_version_patch = doc.object().value(QStringLiteral("version_patch")).toInt();
+    }
+
     QJsonObject dfuBootloaderProgramCommand = obj.value(QStringLiteral("dfuBootloaderProgramCommand")).toObject();
+    int sesVersionMajor = 0;
+    int sesVersionMinor = 0;
+    int sesVersionPatch = 0;
 
     bool result = true;
     Utils::Process process;
@@ -293,25 +311,27 @@ bool alifDownloadFirmware(const QString &port, const QString &originalFirmwareFo
     LoaderDialog *dialog = new LoaderDialog(Tr::tr("Alif Tools"), Tr::tr("Flashing Firmware"), process, settings, QStringLiteral(LAST_LOADERDIALOG_TERMINAL_WINDOW_GEOMETRY),
                                             Core::ICore::dialogParent());
 
-    int ok = true;
-    int *okPtr = &ok;
-
-    QEventLoop loop;
-
-    QMetaObject::Connection conn = QObject::connect(dialog, &QDialog::finished,
-        &loop, [okPtr] () {
-        *okPtr = false;
-    });
-
-    QObject::connect(dialog, &QDialog::finished, &loop, &QEventLoop::quit);
-
     Utils::Process *processPtr = &process;
     QString stdOutBuffer = QString();
     QString *stdOutBufferPtr = &stdOutBuffer;
     bool stdOutFirstTime = true;
     bool *stdOutFirstTimePtr = &stdOutFirstTime;
+    int *sesVersionMajorPtr = &sesVersionMajor;
+    int *sesVersionMinorPtr = &sesVersionMinor;
+    int *sesVersionPatchPtr = &sesVersionPatch;
 
-    QObject::connect(&process, &Utils::Process::textOnStandardOutput, dialog, [processPtr, dialog, stdOutBufferPtr, stdOutFirstTimePtr] (const QString &text) {
+    bool enterHardMaintenanceMode = false;
+    bool exitHardMaintenanceMode = false;
+    bool *enterHardMaintenanceModePtr = &enterHardMaintenanceMode;
+    bool *exitHardMaintenanceModePtr = &exitHardMaintenanceMode;
+    QMessageBox *userButtonMessageBox = new QMessageBox(QMessageBox::Information, Tr::tr("Alif Tools"),Tr::tr("Press the user button on the board."), QMessageBox::NoButton, dialog,
+        Qt::MSWindowsFixedSizeDialogHint | Qt::WindowTitleHint | Qt::WindowSystemMenuHint |
+        (Utils::HostOsInfo::isMacHost() ? Qt::WindowType(0) : Qt::WindowCloseButtonHint));
+
+    QObject::connect(&process, &Utils::Process::textOnStandardOutput, dialog,
+                     [processPtr, dialog, stdOutBufferPtr, stdOutFirstTimePtr,
+                      sesVersionMajorPtr, sesVersionMinorPtr, sesVersionPatchPtr,
+                      enterHardMaintenanceModePtr, exitHardMaintenanceModePtr, userButtonMessageBox] (const QString &text) {
         stdOutBufferPtr->append(text);
         QStringList list = stdOutBufferPtr->split(QRegularExpression(QStringLiteral("[\r\n]")), Qt::KeepEmptyParts);
 
@@ -353,6 +373,20 @@ bool alifDownloadFirmware(const QString &port, const QString &originalFirmwareFo
                 *stdOutFirstTimePtr = false;
             }
 
+            if(out.startsWith(QStringLiteral("Waiting for Target")))
+            {
+                if(!*stdOutFirstTimePtr)
+                {
+                    QTextCursor cursor = dialog->textCursor();
+                    cursor.movePosition(QTextCursor::End);
+                    cursor.select(QTextCursor::BlockUnderCursor);
+                    cursor.removeSelectedText();
+                    dialog->setTextCursor(cursor);
+                }
+
+                *stdOutFirstTimePtr = false;
+            }
+
             if(out.contains(QStringLiteral("Connected target is not the default Revision")))
             {
                 processPtr->write(QStringLiteral("n\n"));
@@ -364,6 +398,47 @@ bool alifDownloadFirmware(const QString &port, const QString &originalFirmwareFo
             {
                 continue;
             }
+
+            QRegularExpressionMatch m = QRegularExpression(QStringLiteral("SES\\s+\\w+\\s+v(\\d+)\\.(\\d+)\\.(\\d+)")).match(out);
+
+            if (m.hasMatch())
+            {
+                *sesVersionMajorPtr = m.captured(1).toInt();
+                *sesVersionMinorPtr = m.captured(2).toInt();
+                *sesVersionPatchPtr = m.captured(3).toInt();
+
+                continue;
+            }
+
+            if (*exitHardMaintenanceModePtr && out.contains(QStringLiteral("1 - Device Control")))
+            {
+                processPtr->write(QStringLiteral("\n"));
+            }
+
+            if (*enterHardMaintenanceModePtr && out.contains(QStringLiteral("1 - Device Control")))
+            {
+                processPtr->write(QStringLiteral("1\n"));
+            }
+
+            if (*exitHardMaintenanceModePtr && out.contains(QStringLiteral("1 - Hard maintenance mode")))
+            {
+                processPtr->write(QStringLiteral("\n"));
+            }
+
+            if (*enterHardMaintenanceModePtr && out.contains(QStringLiteral("1 - Hard maintenance mode")))
+            {
+                processPtr->write(QStringLiteral("1\n"));
+                userButtonMessageBox->show();
+                *enterHardMaintenanceModePtr = false;
+                *exitHardMaintenanceModePtr = true;
+            }
+
+            if (out.startsWith("\e"))
+            {
+                continue;
+            }
+
+            out.remove(QStringLiteral("\e[?25l"));
 
             dialog->appendPlainText(out);
         }
@@ -420,18 +495,21 @@ bool alifDownloadFirmware(const QString &port, const QString &originalFirmwareFo
         }
     });
 
+    Utils::FilePath maintenanceBinary;
     Utils::FilePath updateSystemPackageBinary;
     Utils::FilePath appGenToc;
     Utils::FilePath appWriteMramBinary;
 
     if(Utils::HostOsInfo::isWindowsHost())
     {
+        maintenanceBinary = Core::ICore::userResourcePath(QStringLiteral("alif/maintenance.exe"));
         updateSystemPackageBinary = Core::ICore::userResourcePath(QStringLiteral("alif/updateSystemPackage.exe"));
         appGenToc = Core::ICore::userResourcePath(QStringLiteral("alif/app-gen-toc.exe"));
         appWriteMramBinary = Core::ICore::userResourcePath(QStringLiteral("alif/app-write-mram.exe"));
     }
     else if(Utils::HostOsInfo::isMacHost())
     {
+        maintenanceBinary = Core::ICore::userResourcePath(QStringLiteral("alif/maintenance"));
         updateSystemPackageBinary = Core::ICore::userResourcePath(QStringLiteral("alif/updateSystemPackage"));
         appGenToc = Core::ICore::userResourcePath(QStringLiteral("alif/app-gen-toc"));
         appWriteMramBinary = Core::ICore::userResourcePath(QStringLiteral("alif/app-write-mram"));
@@ -440,13 +518,14 @@ bool alifDownloadFirmware(const QString &port, const QString &originalFirmwareFo
     {
         if(QSysInfo::buildCpuArchitecture() == QStringLiteral("x86_64"))
         {
+            maintenanceBinary = Core::ICore::userResourcePath(QStringLiteral("alif/maintenance"));
             updateSystemPackageBinary = Core::ICore::userResourcePath(QStringLiteral("alif/updateSystemPackage"));
             appGenToc = Core::ICore::userResourcePath(QStringLiteral("alif/app-gen-toc"));
             appWriteMramBinary = Core::ICore::userResourcePath(QStringLiteral("alif/app-write-mram"));
         }
     }
 
-    if(updateSystemPackageBinary.isEmpty() || appWriteMramBinary.isEmpty())
+    if(maintenanceBinary.isEmpty() || updateSystemPackageBinary.isEmpty() || appWriteMramBinary.isEmpty() || appGenToc.isEmpty())
     {
         QMessageBox::critical(Core::ICore::dialogParent(),
             Tr::tr("Alif Tools"),
@@ -468,33 +547,116 @@ bool alifDownloadFirmware(const QString &port, const QString &originalFirmwareFo
 
     dialog->show();
 
-    // Update System Package
+    // Get SES Version
     {
-        QStringList args = QStringList();
+        QStringList args = QStringList() << QStringLiteral("-opt") << QStringLiteral("sesbanner");
 
-        QString command = QString(QStringLiteral("%1 %2")).arg(updateSystemPackageBinary.toString()).arg(args.join(QLatin1Char(' ')));
+        QString command = QString(QStringLiteral("%1 %2")).arg(maintenanceBinary.toString()).arg(args.join(QLatin1Char(' ')));
         dialog->appendColoredText(command);
 
         std::chrono::seconds timeout(300); // 5 minutes...
         process.setTextChannelMode(Utils::Channel::Output, Utils::TextChannelMode::MultiLine);
         process.setTextChannelMode(Utils::Channel::Error, Utils::TextChannelMode::MultiLine);
         process.setProcessMode(Utils::ProcessMode::Writer);
-        process.setWorkingDirectory(updateSystemPackageBinary.parentDir());
-        process.setCommand(Utils::CommandLine(updateSystemPackageBinary, args));
+        process.setWorkingDirectory(maintenanceBinary.parentDir());
+        process.setCommand(Utils::CommandLine(maintenanceBinary, args));
         process.runBlocking(timeout, Utils::EventLoopMode::On, QEventLoop::AllEvents);
 
         if((process.result() != Utils::ProcessResult::FinishedWithSuccess) && (process.result() != Utils::ProcessResult::TerminatedAbnormally))
         {
-            QMessageBox box(QMessageBox::Critical, Tr::tr("Alif Tools"), Tr::tr("Timeout Error!"), QMessageBox::Ok, Core::ICore::dialogParent(),
-                Qt::MSWindowsFixedSizeDialogHint | Qt::WindowTitleHint | Qt::WindowSystemMenuHint |
-                (Utils::HostOsInfo::isMacHost() ? Qt::WindowType(0) : Qt::WindowCloseButtonHint));
-            box.setDetailedText(command + QStringLiteral("\n\n") + process.stdOut() + QStringLiteral("\n") + process.stdErr());
-            box.setDefaultButton(QMessageBox::Ok);
-            box.setEscapeButton(QMessageBox::Cancel);
-            box.exec();
+            // Need to recover the board.
+            {
+                enterHardMaintenanceMode = true;
 
-            result = false;
-            goto cleanup;
+                QStringList args = QStringList();
+
+                QString command = QString(QStringLiteral("%1 %2")).arg(maintenanceBinary.toString()).arg(args.join(QLatin1Char(' ')));
+                dialog->appendColoredText(command);
+
+                std::chrono::seconds timeout(300); // 5 minutes...
+                process.setTextChannelMode(Utils::Channel::Output, Utils::TextChannelMode::MultiLine);
+                process.setTextChannelMode(Utils::Channel::Error, Utils::TextChannelMode::MultiLine);
+                process.setProcessMode(Utils::ProcessMode::Writer);
+                process.setWorkingDirectory(maintenanceBinary.parentDir());
+                process.setCommand(Utils::CommandLine(maintenanceBinary, args));
+                process.runBlocking(timeout, Utils::EventLoopMode::On, QEventLoop::AllEvents);
+
+                userButtonMessageBox->hide();
+
+                if((process.result() != Utils::ProcessResult::FinishedWithSuccess) && (process.result() != Utils::ProcessResult::TerminatedAbnormally))
+                {
+                    QMessageBox box(QMessageBox::Critical, Tr::tr("Alif Tools"), Tr::tr("Timeout Error!"), QMessageBox::Ok, Core::ICore::dialogParent(),
+                        Qt::MSWindowsFixedSizeDialogHint | Qt::WindowTitleHint | Qt::WindowSystemMenuHint |
+                        (Utils::HostOsInfo::isMacHost() ? Qt::WindowType(0) : Qt::WindowCloseButtonHint));
+                    box.setDetailedText(command + QStringLiteral("\n\n") + process.stdOut() + QStringLiteral("\n") + process.stdErr());
+                    box.setDefaultButton(QMessageBox::Ok);
+                    box.setEscapeButton(QMessageBox::Cancel);
+                    box.exec();
+
+                    result = false;
+                    goto cleanup;
+                }
+                else if(process.result() == Utils::ProcessResult::TerminatedAbnormally)
+                {
+                    result = false;
+                    goto cleanup;
+                }
+            }
+
+            // Wait for chip to boot.
+
+            QElapsedTimer elaspedTimer;
+            elaspedTimer.start();
+
+            while(!elaspedTimer.hasExpired(2000))
+            {
+                QApplication::processEvents();
+            }
+
+            // Erase Mram
+            {
+                QStringList args = QStringList() << QStringLiteral("-e") << QStringLiteral("APP");
+
+                QString command = QString(QStringLiteral("%1 %2")).arg(appWriteMramBinary.toString()).arg(args.join(QLatin1Char(' ')));
+                dialog->appendColoredText(command);
+
+                std::chrono::seconds timeout(300); // 5 minutes...
+                process.setTextChannelMode(Utils::Channel::Output, Utils::TextChannelMode::MultiLine);
+                process.setTextChannelMode(Utils::Channel::Error, Utils::TextChannelMode::MultiLine);
+                process.setProcessMode(Utils::ProcessMode::Writer);
+                process.setWorkingDirectory(appWriteMramBinary.parentDir());
+                process.setCommand(Utils::CommandLine(appWriteMramBinary, args));
+                process.runBlocking(timeout, Utils::EventLoopMode::On, QEventLoop::AllEvents);
+
+                if((process.result() != Utils::ProcessResult::FinishedWithSuccess) && (process.result() != Utils::ProcessResult::TerminatedAbnormally))
+                {
+                    QMessageBox box(QMessageBox::Critical, Tr::tr("Alif Tools"), Tr::tr("Timeout Error!"), QMessageBox::Ok, Core::ICore::dialogParent(),
+                        Qt::MSWindowsFixedSizeDialogHint | Qt::WindowTitleHint | Qt::WindowSystemMenuHint |
+                        (Utils::HostOsInfo::isMacHost() ? Qt::WindowType(0) : Qt::WindowCloseButtonHint));
+                    box.setDetailedText(command + QStringLiteral("\n\n") + process.stdOut() + QStringLiteral("\n") + process.stdErr());
+                    box.setDefaultButton(QMessageBox::Ok);
+                    box.setEscapeButton(QMessageBox::Cancel);
+                    box.exec();
+
+                    result = false;
+                    goto cleanup;
+                }
+                else if(process.result() == Utils::ProcessResult::TerminatedAbnormally)
+                {
+                    result = false;
+                    goto cleanup;
+                }
+            }
+
+            if (QMessageBox::information(Core::ICore::dialogParent(),
+                Tr::tr("Alif Tools"),
+                Tr::tr("Please turn off the hard maintenance mode switch, if enabled, and press Ok."),
+                QMessageBox::Ok | QMessageBox::Cancel, QMessageBox::Ok)
+            != QMessageBox::Ok)
+            {
+                result = false;
+                goto cleanup;
+            }
         }
         else if(process.result() == Utils::ProcessResult::TerminatedAbnormally)
         {
@@ -503,12 +665,44 @@ bool alifDownloadFirmware(const QString &port, const QString &originalFirmwareFo
         }
     }
 
-    QObject::disconnect(conn);
-
-    if(!ok)
+    if((current_version_major < sesVersionMajor)
+    || ((current_version_major == sesVersionMajor) && (current_version_minor < sesVersionMinor))
+    || ((current_version_major == sesVersionMajor) && (current_version_minor == sesVersionMinor) && (current_version_patch < sesVersionPatch)))
     {
-        result = false;
-        goto cleanup;
+        // Update System Package
+        {
+            QStringList args = QStringList();
+
+            QString command = QString(QStringLiteral("%1 %2")).arg(updateSystemPackageBinary.toString()).arg(args.join(QLatin1Char(' ')));
+            dialog->appendColoredText(command);
+
+            std::chrono::seconds timeout(300); // 5 minutes...
+            process.setTextChannelMode(Utils::Channel::Output, Utils::TextChannelMode::MultiLine);
+            process.setTextChannelMode(Utils::Channel::Error, Utils::TextChannelMode::MultiLine);
+            process.setProcessMode(Utils::ProcessMode::Writer);
+            process.setWorkingDirectory(updateSystemPackageBinary.parentDir());
+            process.setCommand(Utils::CommandLine(updateSystemPackageBinary, args));
+            process.runBlocking(timeout, Utils::EventLoopMode::On, QEventLoop::AllEvents);
+
+            if((process.result() != Utils::ProcessResult::FinishedWithSuccess) && (process.result() != Utils::ProcessResult::TerminatedAbnormally))
+            {
+                QMessageBox box(QMessageBox::Critical, Tr::tr("Alif Tools"), Tr::tr("Timeout Error!"), QMessageBox::Ok, Core::ICore::dialogParent(),
+                    Qt::MSWindowsFixedSizeDialogHint | Qt::WindowTitleHint | Qt::WindowSystemMenuHint |
+                    (Utils::HostOsInfo::isMacHost() ? Qt::WindowType(0) : Qt::WindowCloseButtonHint));
+                box.setDetailedText(command + QStringLiteral("\n\n") + process.stdOut() + QStringLiteral("\n") + process.stdErr());
+                box.setDefaultButton(QMessageBox::Ok);
+                box.setEscapeButton(QMessageBox::Cancel);
+                box.exec();
+
+                result = false;
+                goto cleanup;
+            }
+            else if(process.result() == Utils::ProcessResult::TerminatedAbnormally)
+            {
+                result = false;
+                goto cleanup;
+            }
+        }
     }
 
     // App Gen Toc
