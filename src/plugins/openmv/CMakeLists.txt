@@ -24,6 +24,7 @@ add_qtc_plugin(OpenMV
     histogram/rgb2rgb_tab.c
     histogram/lab_tab.c
     histogram/yuv_tab.c
+    tools/driveserialnumber.cpp tools/driveserialnumber.h
     tools/myqserialportinfo.cpp tools/myqserialportinfo.h
     tools/loaderdialog.cpp tools/loaderdialog.h
     tools/alif.cpp tools/alif.h

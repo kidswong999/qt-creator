@@ -67,6 +67,7 @@
 #include "tools/alif.h"
 #include "tools/bossac.h"
 #include "tools/dfu-util.h"
+#include "tools/driveserialnumber.h"
 #include "tools/edgeimpulse.h"
 #include "tools/imx.h"
 #include "tools/keypointseditor.h"
@@ -327,6 +328,22 @@ class ScanSerialPortsThread: public QObject
     private: QJsonDocument m_firmwareSettings; QString m_serialNumberFilter;
 };
 
+class ScanDriveThread: public QObject
+{
+    Q_OBJECT
+
+    public: explicit ScanDriveThread() {
+    }
+    public slots: void scanDrivesSlot() {
+        QList<QPair<QStorageInfo, QString> > drives;
+        for(const QStorageInfo &drive : QStorageInfo::mountedVolumes()) {
+            drives.append(QPair<QStorageInfo, QString>(drive, driveSerialNumber(drive.rootPath())));
+        }
+        emit driveScanned(drives);
+    }
+    signals: void driveScanned(const QList<QPair<QStorageInfo, QString> > &output);
+};
+
 class OpenMVPlugin : public ExtensionSystem::IPlugin
 {
     Q_OBJECT
@@ -484,6 +501,7 @@ private:
     int m_reconnects;
     QString m_portName;
     QString m_portPath;
+    QString m_portDriveSerialNumber;
     QString m_formKey;
 
     QString m_serialNumberFilter;
@@ -546,6 +564,7 @@ private:
     QMap<QStringList, QStringList> m_argumentsByHierarchy;
     QMap<QStringList, QString> m_returnTypesByHierarchy;
     QList<wifiPort_t> m_availableWifiPorts;
+    QList<QPair<QStorageInfo, QString> > m_availableDrives;
 
     typedef struct openTerminalMenuData
     {

@@ -2387,6 +2387,7 @@ void OpenMVPlugin::connectClicked(bool forceBootloader, QString forceFirmwarePat
         m_running = false;
         m_portName = selectedPort;
         m_portPath = QString();
+        m_portDriveSerialNumber = serialPortDriveSerialNumber(selectedPort);
         m_major = major2;
         m_minor = minor2;
         m_patch = patch2;
@@ -2666,6 +2667,7 @@ void OpenMVPlugin::disconnectClicked(bool reset)
             m_sensorType = QString();
             m_portName = QString();
             m_portPath = QString();
+            m_portDriveSerialNumber = QString();
             m_errorFilterString = QString();
 
             m_openDriveFolderAction->setEnabled(false);

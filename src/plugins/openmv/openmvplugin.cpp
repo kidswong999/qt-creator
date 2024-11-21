@@ -57,6 +57,7 @@ OpenMVPlugin::OpenMVPlugin() : IPlugin()
     m_reconnects = int();
     m_portName = QString();
     m_portPath = QString();
+    m_portDriveSerialNumber = QString();
     m_formKey = QString();
 
     m_serialNumberFilter = QString();
@@ -2431,6 +2432,37 @@ bool OpenMVPlugin::delayedInitialize()
         QTimer::singleShot(0, scanSerialPortsThread, &ScanSerialPortsThread::scanSerialPortsSlot);
     }
 
+    // Scan Drives
+    {
+        QThread *thread = new QThread;
+        ScanDriveThread *scanDrivesThread = new ScanDriveThread();
+        scanDrivesThread->moveToThread(thread);
+        QTimer *timer = new QTimer(this);
+
+        connect(timer, &QTimer::timeout, scanDrivesThread, [this, scanDrivesThread] () {
+            if (!m_connected) {
+                scanDrivesThread->scanDrivesSlot();
+            }
+        });
+
+        connect(scanDrivesThread, &ScanDriveThread::driveScanned, this, [this] (const QList<QPair<QStorageInfo, QString> > &output) {
+            m_availableDrives = output;
+        });
+
+        connect(this, &OpenMVPlugin::destroyed,
+                scanDrivesThread, &ScanDriveThread::deleteLater);
+
+        connect(scanDrivesThread, &ScanDriveThread::destroyed,
+                thread, &QThread::quit);
+
+        connect(thread, &QThread::finished,
+                thread, &QThread::deleteLater);
+
+        thread->start();
+        timer->start(1000);
+        QTimer::singleShot(0, scanDrivesThread, &ScanDriveThread::scanDrivesSlot);
+    }
+
     if(!socket->bind(OPENMVCAM_BROADCAST_PORT))
     {
         delete socket;
@@ -3925,8 +3957,11 @@ void OpenMVPlugin::setPortPath(bool silent)
     {
         QStringList drives;
 
-        for(const QStorageInfo &info : QStorageInfo::mountedVolumes())
+        for(const QPair<QStorageInfo, QString> &pair : m_availableDrives)
         {
+            const QStorageInfo info = pair.first;
+            const QString serialNumber = pair.second;
+
             if(info.isValid()
             && info.isReady()
             && (!info.isRoot())
@@ -3935,10 +3970,11 @@ void OpenMVPlugin::setPortPath(bool silent)
             && ((!Utils::HostOsInfo::isMacHost()) || info.rootPath().startsWith(QStringLiteral("/volumes/"), Qt::CaseInsensitive))
             && ((!Utils::HostOsInfo::isLinuxHost()) || info.rootPath().startsWith(QStringLiteral("/media/"), Qt::CaseInsensitive) || info.rootPath().startsWith(QStringLiteral("/mnt/"), Qt::CaseInsensitive) || info.rootPath().startsWith(QStringLiteral("/run/"), Qt::CaseInsensitive)))
             {
-                if(((m_major < OPENMV_DISK_ADDED_MAJOR)
+                if((((m_major < OPENMV_DISK_ADDED_MAJOR)
                 || ((m_major == OPENMV_DISK_ADDED_MAJOR) && (m_minor < OPENMV_DISK_ADDED_MINOR))
                 || ((m_major == OPENMV_DISK_ADDED_MAJOR) && (m_minor == OPENMV_DISK_ADDED_MINOR) && (m_patch < OPENMV_DISK_ADDED_PATCH)))
                 || QFile::exists(info.rootPath() + QStringLiteral(OPENMV_DISK_ADDED_NAME)))
+                && (serialNumber == m_portDriveSerialNumber))
                 {
                     drives.append(info.rootPath());
                 }
