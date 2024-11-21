@@ -642,7 +642,7 @@ QList<QPair<QString, QString> > OpenMVPlugin::querySerialPorts(const QStringList
 
         m_ioport->open(port);
 
-        QTimer::singleShot(20, &loop, &QEventLoop::quit);
+        QTimer::singleShot(50, &loop, &QEventLoop::quit);
 
         loop.exec();
 

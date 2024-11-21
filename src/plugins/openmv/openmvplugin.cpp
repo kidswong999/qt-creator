@@ -3962,22 +3962,13 @@ void OpenMVPlugin::setPortPath(bool silent)
             const QStorageInfo info = pair.first;
             const QString serialNumber = pair.second;
 
-            if(info.isValid()
-            && info.isReady()
-            && (!info.isRoot())
-            && (!info.isReadOnly())
-            && (QString::fromUtf8(info.fileSystemType()).contains(QStringLiteral("fat"), Qt::CaseInsensitive) || QString::fromUtf8(info.fileSystemType()).contains(QStringLiteral("msdos"), Qt::CaseInsensitive) || QString::fromUtf8(info.fileSystemType()).contains(QStringLiteral("fuseblk"), Qt::CaseInsensitive))
-            && ((!Utils::HostOsInfo::isMacHost()) || info.rootPath().startsWith(QStringLiteral("/volumes/"), Qt::CaseInsensitive))
-            && ((!Utils::HostOsInfo::isLinuxHost()) || info.rootPath().startsWith(QStringLiteral("/media/"), Qt::CaseInsensitive) || info.rootPath().startsWith(QStringLiteral("/mnt/"), Qt::CaseInsensitive) || info.rootPath().startsWith(QStringLiteral("/run/"), Qt::CaseInsensitive)))
+            if((((m_major < OPENMV_DISK_ADDED_MAJOR)
+            || ((m_major == OPENMV_DISK_ADDED_MAJOR) && (m_minor < OPENMV_DISK_ADDED_MINOR))
+            || ((m_major == OPENMV_DISK_ADDED_MAJOR) && (m_minor == OPENMV_DISK_ADDED_MINOR) && (m_patch < OPENMV_DISK_ADDED_PATCH)))
+            || QFile::exists(info.rootPath() + QStringLiteral(OPENMV_DISK_ADDED_NAME)))
+            && (serialNumber == m_portDriveSerialNumber))
             {
-                if((((m_major < OPENMV_DISK_ADDED_MAJOR)
-                || ((m_major == OPENMV_DISK_ADDED_MAJOR) && (m_minor < OPENMV_DISK_ADDED_MINOR))
-                || ((m_major == OPENMV_DISK_ADDED_MAJOR) && (m_minor == OPENMV_DISK_ADDED_MINOR) && (m_patch < OPENMV_DISK_ADDED_PATCH)))
-                || QFile::exists(info.rootPath() + QStringLiteral(OPENMV_DISK_ADDED_NAME)))
-                && (serialNumber == m_portDriveSerialNumber))
-                {
-                    drives.append(info.rootPath());
-                }
+                drives.append(info.rootPath());
             }
         }
 

@@ -336,8 +336,21 @@ class ScanDriveThread: public QObject
     }
     public slots: void scanDrivesSlot() {
         QList<QPair<QStorageInfo, QString> > drives;
-        for(const QStorageInfo &drive : QStorageInfo::mountedVolumes()) {
-            drives.append(QPair<QStorageInfo, QString>(drive, driveSerialNumber(drive.rootPath())));
+        for(const QStorageInfo &info : QStorageInfo::mountedVolumes()) {
+            if(info.isValid()
+            && info.isReady()
+            && (!info.isRoot())
+            && (!info.isReadOnly())
+            && (QString::fromUtf8(info.fileSystemType()).contains(QStringLiteral("fat"), Qt::CaseInsensitive) ||
+                QString::fromUtf8(info.fileSystemType()).contains(QStringLiteral("msdos"), Qt::CaseInsensitive) ||
+                QString::fromUtf8(info.fileSystemType()).contains(QStringLiteral("fuseblk"), Qt::CaseInsensitive))
+            && ((!Utils::HostOsInfo::isMacHost()) || info.rootPath().startsWith(QStringLiteral("/volumes/"), Qt::CaseInsensitive))
+            && ((!Utils::HostOsInfo::isLinuxHost()) || info.rootPath().startsWith(QStringLiteral("/media/"), Qt::CaseInsensitive) ||
+                info.rootPath().startsWith(QStringLiteral("/mnt/"), Qt::CaseInsensitive) ||
+                info.rootPath().startsWith(QStringLiteral("/run/"), Qt::CaseInsensitive)))
+            {
+                drives.append(QPair<QStorageInfo, QString>(info, driveSerialNumber(info.rootPath())));
+            }
         }
         emit driveScanned(drives);
     }
