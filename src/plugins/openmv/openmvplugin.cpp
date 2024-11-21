@@ -3966,7 +3966,7 @@ void OpenMVPlugin::setPortPath(bool silent)
             || ((m_major == OPENMV_DISK_ADDED_MAJOR) && (m_minor < OPENMV_DISK_ADDED_MINOR))
             || ((m_major == OPENMV_DISK_ADDED_MAJOR) && (m_minor == OPENMV_DISK_ADDED_MINOR) && (m_patch < OPENMV_DISK_ADDED_PATCH)))
             || QFile::exists(info.rootPath() + QStringLiteral(OPENMV_DISK_ADDED_NAME)))
-            && (serialNumber == m_portDriveSerialNumber))
+            && (serialNumber.toLower() == m_portDriveSerialNumber.toLower()))
             {
                 drives.append(info.rootPath());
             }

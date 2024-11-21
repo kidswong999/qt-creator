@@ -31,6 +31,8 @@ QString serialPortDriveSerialNumber(const QString &portName)
     MyQSerialPortInfo info = MyQSerialPortInfo(QSerialPortInfo(portName));
     return info.serialNumber();
 #elif defined(Q_OS_MAC)
+    MyQSerialPortInfo info = MyQSerialPortInfo(QSerialPortInfo(portName));
+    return info.serialNumber();
 #endif
 
     return QString();
@@ -100,6 +102,18 @@ QString driveSerialNumber(const QString &drivePath)
         }
     }
 #elif defined(Q_OS_MAC)
+    Utils::Process process;
+    std::chrono::seconds timeout(10);
+    process.setTextChannelMode(Utils::Channel::Output, Utils::TextChannelMode::MultiLine);
+    process.setTextChannelMode(Utils::Channel::Error, Utils::TextChannelMode::MultiLine);
+    process.setCommand(Utils::CommandLine(Utils::FilePath::fromString(QStringLiteral("system_profiler")), QStringList()
+                                          << QStringLiteral("SPUSBDataType")
+                                          << QStringLiteral("-json")));
+    process.runBlocking(timeout, Utils::EventLoopMode::On);
+
+    if(process.result() == Utils::ProcessResult::FinishedWithSuccess)
+    {
+    }
 #endif
 
     return QString();
