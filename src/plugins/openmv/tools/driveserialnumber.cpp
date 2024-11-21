@@ -27,10 +27,7 @@ QString serialPortDriveSerialNumber(const QString &portName)
         QRegularExpressionMatch match = QRegularExpression("\\\\(\\w+)$").match(process.stdOut().trimmed());
         if (match.hasMatch()) return match.captured(1);
     }
-#elif defined(Q_OS_LINUX)
-    MyQSerialPortInfo info = MyQSerialPortInfo(QSerialPortInfo(portName));
-    return info.serialNumber();
-#elif defined(Q_OS_MAC)
+#elif (defined(Q_OS_LINUX) || defined(Q_OS_MAC))
     MyQSerialPortInfo info = MyQSerialPortInfo(QSerialPortInfo(portName));
     return info.serialNumber();
 #endif
@@ -113,6 +110,41 @@ QString driveSerialNumber(const QString &drivePath)
 
     if(process.result() == Utils::ProcessResult::FinishedWithSuccess)
     {
+        QJsonDocument doc = QJsonDocument::fromJson(process.stdOut().toUtf8());
+
+        if (doc.isObject())
+        {
+            for (const QJsonValue &val : doc.object().value(QStringLiteral("SPUSBDataType")).toArray())
+            {
+                QJsonObject obj = val.toObject();
+
+                for (const QJsonValue &val : obj.value(QStringLiteral("_items")).toArray())
+                {
+                    QJsonObject obj = val.toObject();
+                    QString serialNumber = obj.value(QStringLiteral("serial_num")).toString();
+
+                    for (const QJsonValue &val : obj.value(QStringLiteral("Media")).toArray())
+                    {
+                        QJsonObject obj = val.toObject();
+                        QString diskName = obj.value(QStringLiteral("bsd_name")).toString();
+
+                        if (!diskName.isEmpty())
+                        {
+                            process.setCommand(Utils::CommandLine(Utils::FilePath::fromString(QStringLiteral("diskutil")), QStringList()
+                                                                  << QStringLiteral("list")
+                                                                  << QStringLiteral("-plist")
+                                                                  << diskName));
+                            process.runBlocking(timeout, Utils::EventLoopMode::On);
+
+                            if (process.stdOut().contains(QString(QStringLiteral("<string>%1</string>")).arg(drivePath)))
+                            {
+                                return serialNumber;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 #endif
 
