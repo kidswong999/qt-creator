@@ -885,6 +885,8 @@ void OpenMVPlugin::extensionsInitialized()
     toolsMenu->addAction(m_configureSettingsCommand);
     m_configureSettingsAction->setEnabled(false);
     connect(m_configureSettingsAction, &QAction::triggered, this, &OpenMVPlugin::configureSettings);
+    // DISABLED
+    m_configureSettingsAction->setVisible(false);
 
     m_saveAction = new QAction(Tr::tr("Save open script to OpenMV Cam (as main.py)"), this);
     m_saveCommand = Core::ActionManager::registerAction(m_saveAction, Utils::Id("OpenMV.Save"));
