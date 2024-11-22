@@ -2445,7 +2445,7 @@ bool OpenMVPlugin::delayedInitialize()
             }
         });
 
-        connect(scanDrivesThread, &ScanDriveThread::driveScanned, this, [this] (const QList<QPair<QStorageInfo, QString> > &output) {
+        connect(scanDrivesThread, &ScanDriveThread::driveScanned, this, [this] (const QList<QPair<QString, QString> > &output) {
             m_availableDrives = output;
         });
 
@@ -3957,18 +3957,18 @@ void OpenMVPlugin::setPortPath(bool silent)
     {
         QStringList drives;
 
-        for(const QPair<QStorageInfo, QString> &pair : m_availableDrives)
+        for(const QPair<QString, QString> &pair : m_availableDrives)
         {
-            const QStorageInfo info = pair.first;
+            const QString rootPath = pair.first;
             const QString serialNumber = pair.second;
 
             if((((m_major < OPENMV_DISK_ADDED_MAJOR)
             || ((m_major == OPENMV_DISK_ADDED_MAJOR) && (m_minor < OPENMV_DISK_ADDED_MINOR))
             || ((m_major == OPENMV_DISK_ADDED_MAJOR) && (m_minor == OPENMV_DISK_ADDED_MINOR) && (m_patch < OPENMV_DISK_ADDED_PATCH)))
-            || QFile::exists(info.rootPath() + QStringLiteral(OPENMV_DISK_ADDED_NAME)))
+            || QFile::exists(rootPath + QStringLiteral(OPENMV_DISK_ADDED_NAME)))
             && (serialNumber.toLower() == m_portDriveSerialNumber.toLower()))
             {
-                drives.append(info.rootPath());
+                drives.append(rootPath);
             }
         }
 

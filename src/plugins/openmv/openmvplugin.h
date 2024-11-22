@@ -335,7 +335,7 @@ class ScanDriveThread: public QObject
     public: explicit ScanDriveThread() {
     }
     public slots: void scanDrivesSlot() {
-        QList<QPair<QStorageInfo, QString> > drives;
+        QList<QPair<QString, QString> > drives;
         for(const QStorageInfo &info : QStorageInfo::mountedVolumes()) {
             if(info.isValid()
             && info.isReady()
@@ -349,12 +349,12 @@ class ScanDriveThread: public QObject
                 info.rootPath().startsWith(QStringLiteral("/mnt/"), Qt::CaseInsensitive) ||
                 info.rootPath().startsWith(QStringLiteral("/run/"), Qt::CaseInsensitive)))
             {
-                drives.append(QPair<QStorageInfo, QString>(info, driveSerialNumber(info.rootPath())));
+                drives.append(QPair<QString, QString>(info.rootPath(), driveSerialNumber(info.rootPath())));
             }
         }
         emit driveScanned(drives);
     }
-    signals: void driveScanned(const QList<QPair<QStorageInfo, QString> > &output);
+    signals: void driveScanned(const QList<QPair<QString, QString> > &output);
 };
 
 class OpenMVPlugin : public ExtensionSystem::IPlugin
@@ -577,7 +577,7 @@ private:
     QMap<QStringList, QStringList> m_argumentsByHierarchy;
     QMap<QStringList, QString> m_returnTypesByHierarchy;
     QList<wifiPort_t> m_availableWifiPorts;
-    QList<QPair<QStorageInfo, QString> > m_availableDrives;
+    QList<QPair<QString, QString> > m_availableDrives;
 
     typedef struct openTerminalMenuData
     {

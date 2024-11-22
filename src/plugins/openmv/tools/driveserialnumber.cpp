@@ -9,6 +9,8 @@
 namespace OpenMV {
 namespace Internal {
 
+extern QMutex dfu_util_working;
+
 QString serialPortDriveSerialNumber(const QString &portName)
 {
 #if defined(Q_OS_WIN)
@@ -20,7 +22,7 @@ QString serialPortDriveSerialNumber(const QString &portName)
         QStringList()
         << QStringLiteral("-Command")
         << QString(QStringLiteral("(Get-PnpDeviceProperty -InstanceId (Get-WmiObject Win32_SerialPort | Where-Object { $_.DeviceID -eq '%1' }).PNPDeviceId | Where-Object { $_.KeyName -eq 'DEVPKEY_Device_Parent' }).Data")).arg(QString(portName))));
-    process.runBlocking(timeout, Utils::EventLoopMode::On);
+    process.runBlocking(timeout, Utils::EventLoopMode::Off);
 
     if(process.result() == Utils::ProcessResult::FinishedWithSuccess)
     {
@@ -46,7 +48,7 @@ QString driveSerialNumber(const QString &drivePath)
         QStringList()
         << QStringLiteral("-Command")
         << QString(QStringLiteral("(Get-Disk -Number (Get-Partition -DriveLetter '%1').DiskNumber).SerialNumber")).arg(QString(drivePath).remove(QStringLiteral(":")).remove(QStringLiteral("/")))));
-    process.runBlocking(timeout, Utils::EventLoopMode::On);
+    process.runBlocking(timeout, Utils::EventLoopMode::Off);
 
     if(process.result() == Utils::ProcessResult::FinishedWithSuccess)
     {
@@ -54,6 +56,8 @@ QString driveSerialNumber(const QString &drivePath)
         return serialNumber;
     }
 #elif defined(Q_OS_LINUX)
+    if(!dfu_util_working.try_lock()) return QString();
+
     Utils::Process process;
     std::chrono::seconds timeout(10);
     process.setTextChannelMode(Utils::Channel::Output, Utils::TextChannelMode::MultiLine);
@@ -63,13 +67,13 @@ QString driveSerialNumber(const QString &drivePath)
         << QStringLiteral("-J")
         << QStringLiteral("-o")
         << QStringLiteral("MOUNTPOINT,NAME,SERIAL")));
-    process.runBlocking(timeout, Utils::EventLoopMode::On);
+    process.runBlocking(timeout, Utils::EventLoopMode::Off);
 
     if(process.result() == Utils::ProcessResult::FinishedWithSuccess)
     {
         QJsonDocument doc = QJsonDocument::fromJson(process.stdOut().toUtf8());
 
-        if (doc.isObject())
+        if (!doc.isNull())
         {
             QString cleanDrivePath = QDir::fromNativeSeparators(QDir::cleanPath(drivePath));
 
@@ -81,6 +85,7 @@ QString driveSerialNumber(const QString &drivePath)
 
                 if (mountPoint == cleanDrivePath)
                 {
+                    dfu_util_working.unlock();
                     return serialNumber;
                 }
 
@@ -92,12 +97,15 @@ QString driveSerialNumber(const QString &drivePath)
 
                     if (childMountPoint == cleanDrivePath)
                     {
+                        dfu_util_working.unlock();
                         return childSerialNumber.isEmpty() ? serialNumber : childSerialNumber;
                     }
                 }
             }
         }
     }
+
+    dfu_util_working.unlock();
 #elif defined(Q_OS_MAC)
     Utils::Process process;
     std::chrono::seconds timeout(10);
@@ -106,13 +114,13 @@ QString driveSerialNumber(const QString &drivePath)
     process.setCommand(Utils::CommandLine(Utils::FilePath::fromString(QStringLiteral("system_profiler")), QStringList()
                                           << QStringLiteral("SPUSBDataType")
                                           << QStringLiteral("-json")));
-    process.runBlocking(timeout, Utils::EventLoopMode::On);
+    process.runBlocking(timeout, Utils::EventLoopMode::Off);
 
     if(process.result() == Utils::ProcessResult::FinishedWithSuccess)
     {
         QJsonDocument doc = QJsonDocument::fromJson(process.stdOut().toUtf8());
 
-        if (doc.isObject())
+        if (!doc.isNull())
         {
             for (const QJsonValue &val : doc.object().value(QStringLiteral("SPUSBDataType")).toArray())
             {
@@ -134,7 +142,7 @@ QString driveSerialNumber(const QString &drivePath)
                                                                   << QStringLiteral("list")
                                                                   << QStringLiteral("-plist")
                                                                   << diskName));
-                            process.runBlocking(timeout, Utils::EventLoopMode::On);
+                            process.runBlocking(timeout, Utils::EventLoopMode::Off);
 
                             if (process.stdOut().contains(QString(QStringLiteral("<string>%1</string>")).arg(drivePath)))
                             {

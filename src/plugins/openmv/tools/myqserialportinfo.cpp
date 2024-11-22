@@ -83,7 +83,7 @@ MyQSerialPortInfo::MyQSerialPortInfo(const QSerialPortInfo &info)
                                               << QStringLiteral("-v")
                                               << QStringLiteral("-d")
                                               << QString(QStringLiteral("%1:%2")).arg(m_vendorIdentifier, 4, 16, QLatin1Char('0')).arg(m_productIdentifier, 4, 16, QLatin1Char('0'))));
-        process.runBlocking(timeout, Utils::EventLoopMode::On);
+        process.runBlocking(timeout, Utils::EventLoopMode::Off);
 
         if(process.result() == Utils::ProcessResult::FinishedWithSuccess)
         {

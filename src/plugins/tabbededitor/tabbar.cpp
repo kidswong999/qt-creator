@@ -136,7 +136,9 @@ void TabBar::activateEditor(int index)
 
 void TabBar::addEditorTab(Core::IEditor *editor)
 {
+    if (!editor) return;
     Core::IDocument *document = editor->document();
+    if (!document) return;
 
     const int index = addTab(document->displayName());
     // OPENMV-DIFF //
