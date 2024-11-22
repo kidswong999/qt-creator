@@ -4,7 +4,7 @@
 <context>
     <name>Language</name>
     <message>
-        <location filename="../../../src/libs/3rdparty/syntax-highlighting/src/lib/definition_p.h" line="+107"/>
+        <location filename="../../../src/libs/3rdparty/syntax-highlighting/src/lib/definition_p.h" line="+112"/>
         <source>None</source>
         <translation>Ei mitään</translation>
     </message>
@@ -148,7 +148,7 @@
 <context>
     <name>QAbstractFileIconProvider</name>
     <message>
-        <location filename="../../../src/libs/utils/fsengine/fileiconprovider.cpp" line="+130"/>
+        <location filename="../../../src/libs/utils/fsengine/fileiconprovider.cpp" line="+170"/>
         <source>File Folder</source>
         <comment>Match Windows Explorer</comment>
         <translation>Tiedostokansio</translation>
@@ -163,7 +163,7 @@
 <context>
     <name>QDockWidget</name>
     <message>
-        <location filename="../../../src/libs/utils/fancymainwindow.cpp" line="+144"/>
+        <location filename="../../../src/libs/utils/fancymainwindow.cpp" line="+219"/>
         <source>Float</source>
         <translation>Kellua</translation>
     </message>
@@ -343,7 +343,7 @@
 <context>
     <name>QtC::BinEditor</name>
     <message>
-        <location filename="../../../src/plugins/bineditor/bineditorplugin.cpp" line="+238"/>
+        <location filename="../../../src/plugins/bineditor/bineditorplugin.cpp" line="+230"/>
         <source>Cannot open %1: %2</source>
         <translation>Ei voi avata %1: %2</translation>
     </message>
@@ -366,12 +366,12 @@
         <translation>Tiedosto on liian suuri Binary Editorille (max. 32 Gt).</translation>
     </message>
     <message>
-        <location line="+76"/>
+        <location line="+87"/>
         <source>Byte Address</source>
         <translation>Tavuosoite</translation>
     </message>
     <message>
-        <location line="+96"/>
+        <location line="+123"/>
         <source>&amp;Undo</source>
         <translation>&amp;Kumoa</translation>
     </message>
@@ -381,7 +381,7 @@
         <translation>&amp;Tee uudelleen</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/bineditor/bineditorwidget.cpp" line="+1226"/>
+        <location filename="../../../src/plugins/bineditor/bineditorwidget.cpp" line="+1228"/>
         <source>Memory at 0x%1</source>
         <translation>Muisti 0x%1</translation>
     </message>
@@ -461,7 +461,7 @@
         <translation>Edellinen &lt;i&gt;float&lt;/i&gt;&amp;nbsp;-arvo:</translation>
     </message>
     <message>
-        <location line="+121"/>
+        <location line="+122"/>
         <source>Zoom: %1%</source>
         <translation>Zoomaus: %1%</translation>
     </message>
@@ -523,6 +523,309 @@
     </message>
 </context>
 <context>
+    <name>QtC::Copilot</name>
+    <message>
+        <location filename="../../../src/plugins/copilot/authwidget.cpp" line="+29"/>
+        <location line="+86"/>
+        <location line="+5"/>
+        <source>Sign In</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+26"/>
+        <source>A browser window will open. Enter the code %1 when asked.
+The code has been copied to your clipboard.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Login Failed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>The login request failed: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/copilot/copilotclient.cpp" line="+336"/>
+        <location filename="../../../src/plugins/copilot/copilotprojectpanel.cpp" line="+66"/>
+        <source>Copilot</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Proxy username and password required:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Do not ask again. This will disable Copilot for now.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/copilot/copilothoverhandler.cpp" line="+40"/>
+        <source>Select Previous Copilot Suggestion</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Select Next Copilot Suggestion</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Apply (%1)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Apply Word (%1)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>%1 of %2</source>
+        <translation type="unfinished">%1/%2</translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/copilot/copilotplugin.cpp" line="+65"/>
+        <source>Request Copilot Suggestion</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Request Copilot suggestion at the current editor&apos;s cursor position.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Show Next Copilot Suggestion</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Cycles through the received Copilot Suggestions showing the next available Suggestion.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>Show Previous Copilot Suggestion</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Cycles through the received Copilot Suggestions showing the previous available Suggestion.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>Disable Copilot</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <location line="+28"/>
+        <source>Disable Copilot.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-21"/>
+        <location filename="../../../src/plugins/copilot/copilotsettings.cpp" line="+31"/>
+        <location line="+1"/>
+        <source>Enable Copilot</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <location line="+20"/>
+        <source>Enable Copilot.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-13"/>
+        <source>Toggle Copilot</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/copilot/copilotsettings.cpp" line="+1"/>
+        <source>Enables the Copilot integration.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+84"/>
+        <source>Node.js path:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Node.js Path</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Select path to node.js executable. See %1 for installation instructions.</source>
+        <extracomment>%1 is the URL to nodejs</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>Path to %1:</source>
+        <extracomment>%1 is the filename of the copilot language server</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>%1 path</source>
+        <extracomment>%1 is the filename of the copilot language server</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Select path to %2 in Copilot Neovim plugin. See %1 for installation instructions.</source>
+        <extracomment>%1 is the URL to copilot.vim getting started, %2 is the filename of the copilot language server</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Auto Request</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Auto request</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Automatically request suggestions for the current text cursor position after changes to the document.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Use Proxy</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Use proxy</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Use a proxy to connect to the Copilot servers.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Proxy Host</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Proxy host:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>The host name of the proxy server.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Proxy Port</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Proxy port:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>The port of the proxy server.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Proxy User</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Proxy user:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>The user name to access the proxy server.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Save Proxy Password</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Save proxy password</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Save the password to access the proxy server. The password is stored insecurely.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Proxy Password</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Proxy password:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>The password for the proxy server.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Reject Unauthorized</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Reject unauthorized</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Reject unauthorized certificates from the proxy server. Turning this off is a security risk.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+31"/>
+        <source>Enabling %1 is subject to your agreement and abidance with your applicable %1 terms. It is your responsibility to know and accept the requirements and parameters of using tools like %1. This may include, but is not limited to, ensuring you have the rights to allow %1 access to your code, as well as understanding any implications of your use of %1 and suggestions produced (like copyright, accuracy, etc.).</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>The Copilot plugin requires node.js and the Copilot neovim plugin. If you install the neovim plugin as described in %1, the plugin will find the %3 file automatically.
+
+Otherwise you need to specify the path to the %2 file from the Copilot neovim plugin.</source>
+        <comment>Markdown text for the copilot instruction label</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+14"/>
+        <source>Note</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>QtC::Core</name>
     <message>
         <location filename="../../../src/plugins/coreplugin/basefilewizard.cpp" line="+86"/>
@@ -543,12 +846,12 @@
         <translation>Hakemistoa %1 ei voida luoda.</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/basefilewizardfactory.cpp" line="+170"/>
+        <location filename="../../../src/plugins/coreplugin/basefilewizardfactory.cpp" line="+171"/>
         <source>Failed to open an editor for &quot;%1&quot;.</source>
         <translation>Editorin avaaminen kohteelle &quot;%1&quot; epäonnistui.</translation>
     </message>
     <message>
-        <location line="+25"/>
+        <location line="+28"/>
         <source>[read only]</source>
         <translation>[Lue ainoastaan]</translation>
     </message>
@@ -570,52 +873,51 @@
 %2.</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/editormanager/editormanager.cpp" line="+369"/>
-        <location line="+17"/>
-        <location line="+1728"/>
-        <location line="+499"/>
+        <location filename="../../../src/plugins/coreplugin/editormanager/editormanager.cpp" line="+370"/>
+        <location line="+46"/>
+        <location line="+1689"/>
+        <location line="+534"/>
         <source>Revert to Saved</source>
         <translation>Palaa tallennettuun</translation>
     </message>
     <message>
-        <location line="-2241"/>
-        <location line="+15"/>
-        <location line="+94"/>
-        <location filename="../../../src/plugins/coreplugin/find/findtoolbar.cpp" line="+425"/>
-        <location filename="../../../src/plugins/coreplugin/navigationsubwidget.cpp" line="+63"/>
-        <location filename="../../../src/plugins/coreplugin/outputpanemanager.cpp" line="+339"/>
+        <location line="-2268"/>
+        <location line="+95"/>
+        <location filename="../../../src/plugins/coreplugin/find/findtoolbar.cpp" line="+445"/>
+        <location filename="../../../src/plugins/coreplugin/navigationsubwidget.cpp" line="+64"/>
+        <location filename="../../../src/plugins/coreplugin/outputpanemanager.cpp" line="+412"/>
         <location filename="../../../src/plugins/coreplugin/sidebarwidget.cpp" line="+57"/>
         <location line="+1"/>
         <source>Close</source>
         <translation>kiinni</translation>
     </message>
     <message>
-        <location line="-108"/>
-        <location line="+15"/>
+        <location line="-94"/>
+        <location line="+100"/>
         <source>Close All</source>
         <translation>Sulje kaikki</translation>
     </message>
     <message>
-        <location line="-14"/>
-        <location line="+15"/>
-        <location line="+1749"/>
+        <location line="-99"/>
+        <location line="+111"/>
+        <location line="+1645"/>
         <source>Close Others</source>
         <translation>Sulje Muut</translation>
     </message>
     <message>
-        <location line="-1696"/>
+        <location line="-1708"/>
         <source>Revert File to Saved</source>
         <translation>Palauta tiedosto tallennettuun</translation>
     </message>
     <message>
-        <location line="+23"/>
+        <location line="+30"/>
         <source>Ctrl+W</source>
         <translation>Ctrl+W</translation>
     </message>
     <message>
-        <location line="+158"/>
-        <location filename="../../../src/plugins/coreplugin/editortoolbar.cpp" line="+82"/>
-        <location line="+65"/>
+        <location line="+189"/>
+        <location filename="../../../src/plugins/coreplugin/editortoolbar.cpp" line="+101"/>
+        <location line="+67"/>
         <location filename="../../../src/plugins/coreplugin/navigationsubwidget.cpp" line="-9"/>
         <location filename="../../../src/plugins/coreplugin/sidebarwidget.cpp" line="-7"/>
         <location line="+1"/>
@@ -623,45 +925,45 @@
         <translation>Jakaa</translation>
     </message>
     <message>
-        <location line="+9"/>
-        <location filename="../../../src/plugins/coreplugin/editortoolbar.cpp" line="-63"/>
+        <location line="+12"/>
+        <location filename="../../../src/plugins/coreplugin/editortoolbar.cpp" line="-65"/>
         <source>Split Side by Side</source>
         <translation>Jaa vierekkäin</translation>
     </message>
     <message>
-        <location line="+17"/>
+        <location line="+20"/>
         <source>Remove Current Split</source>
         <translation>Poista nykyinen jako</translation>
     </message>
     <message>
-        <location line="+9"/>
+        <location line="+10"/>
         <source>Remove All Splits</source>
         <translation>Poista kaikki splitit</translation>
     </message>
     <message>
-        <location line="+2628"/>
+        <location line="+2669"/>
         <source>Opening File</source>
         <translation>Tiedoston avaaminen</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/documentmanager.cpp" line="+710"/>
+        <location filename="../../../src/plugins/coreplugin/documentmanager.cpp" line="+696"/>
         <source>Could not save the files.</source>
         <comment>error message</comment>
         <translation>Tiedostoja ei voitu tallentaa.</translation>
     </message>
     <message>
-        <location line="+43"/>
-        <location line="+600"/>
-        <location filename="../../../src/plugins/coreplugin/editormanager/editormanager.cpp" line="-2434"/>
+        <location line="+47"/>
+        <location line="+601"/>
+        <location filename="../../../src/plugins/coreplugin/editormanager/editormanager.cpp" line="-2471"/>
         <location line="+39"/>
         <location line="+24"/>
-        <location line="+1488"/>
-        <location line="+235"/>
+        <location line="+1475"/>
+        <location line="+246"/>
         <source>File Error</source>
         <translation>Tiedostovirhe</translation>
     </message>
     <message>
-        <location line="-599"/>
+        <location line="-600"/>
         <source>Error while saving file: %1</source>
         <translation>Virhe tallennettaessa tiedostoa: %1</translation>
     </message>
@@ -683,7 +985,7 @@
         <translation>Kohde nimeltä &quot;%1&quot; on jo olemassa tässä paikassa. Haluatko korvata sen?</translation>
     </message>
     <message>
-        <location line="+229"/>
+        <location line="+230"/>
         <source>Open File</source>
         <translation>Avaa tiedosto</translation>
     </message>
@@ -693,50 +995,50 @@
         <translation>Ei voi ladata uudelleen %1</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/iversioncontrol.cpp" line="+58"/>
+        <location filename="../../../src/plugins/coreplugin/iversioncontrol.cpp" line="+53"/>
         <source>Open with VCS (%1)</source>
         <translation>Avaa VCS:llä (% 1)</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/editormanager/editormanager.cpp" line="-557"/>
+        <location filename="../../../src/plugins/coreplugin/editormanager/editormanager.cpp" line="-588"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; You are changing a read-only file.</source>
         <translation>&lt;b&gt;Varoitus:&lt;/b&gt; Olet muuttamassa vain luku -tiedostoa.</translation>
     </message>
     <message>
-        <location line="-1705"/>
+        <location line="-1490"/>
         <source>Next Open Document in History</source>
         <translation>Seuraava avoin asiakirja historiassa</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="-11"/>
         <source>Previous Open Document in History</source>
         <translation>Edellinen avoin dokumentti historiassa</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+23"/>
         <location filename="../../../src/plugins/coreplugin/editortoolbar.cpp" line="-8"/>
         <source>Go Back</source>
         <translation>Mene takaisin</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+12"/>
         <location filename="../../../src/plugins/coreplugin/editortoolbar.cpp" line="+1"/>
         <source>Go Forward</source>
         <translation>Mene eteenpäin</translation>
     </message>
     <message>
-        <location line="-4"/>
-        <location line="+15"/>
+        <location line="-236"/>
+        <location line="+122"/>
         <source>Close All Except Visible</source>
         <translation>Sulje kaikki paitsi näkyvät</translation>
     </message>
     <message>
-        <location line="-10"/>
+        <location line="+135"/>
         <source>Go to Last Edit</source>
         <translation>Siirry kohtaan Viimeisin muokkaus</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="-266"/>
         <source>Copy Full Path</source>
         <translation>Kopioi koko polku</translation>
     </message>
@@ -751,7 +1053,7 @@
         <translation>Kopioi tiedoston nimi</translation>
     </message>
     <message>
-        <location line="+14"/>
+        <location line="+12"/>
         <source>Properties...</source>
         <translation>Ominaisuudet...</translation>
     </message>
@@ -761,38 +1063,47 @@
         <translation>Pin</translation>
     </message>
     <message>
-        <location line="+80"/>
         <source>Alternative Close</source>
-        <translation>Vaihtoehto Sulje</translation>
+        <translation type="vanished">Vaihtoehto Sulje</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+85"/>
         <source>Ctrl+F4</source>
         <translation>Ctrl+F4</translation>
     </message>
     <message>
-        <location line="+160"/>
+        <location line="+11"/>
+        <source>Ctrl+Shift+W</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+145"/>
+        <source>Reopen Last Closed Document</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+41"/>
         <location filename="../../../src/plugins/coreplugin/editortoolbar.cpp" line="+8"/>
         <source>Open in New Window</source>
         <translation>Avaa uudessa ikkunassa</translation>
     </message>
     <message>
-        <location line="+27"/>
+        <location line="+30"/>
         <source>Go to Previous Split or Window</source>
         <translation>Siirry kohtaan Edellinen jako tai ikkuna</translation>
     </message>
     <message>
-        <location line="+9"/>
+        <location line="+10"/>
         <source>Go to Next Split or Window</source>
         <translation>Siirry kohtaan Seuraava jako tai ikkuna</translation>
     </message>
     <message>
-        <location line="+11"/>
+        <location line="+12"/>
         <source>Ad&amp;vanced</source>
         <translation>Pitkälle kehittynyt</translation>
     </message>
     <message>
-        <location line="+39"/>
+        <location line="+38"/>
         <source>Current document</source>
         <translation>Nykyinen asiakirja</translation>
     </message>
@@ -807,7 +1118,7 @@
         <translation>Nykyisen editorin vasemman yläkulman Y-koordinaatti suhteessa näyttöön.</translation>
     </message>
     <message>
-        <location line="+41"/>
+        <location line="+49"/>
         <source>Continue Opening Huge Text File?</source>
         <translation>Jatketaanko valtavan tekstitiedoston avaamista?</translation>
     </message>
@@ -821,7 +1132,7 @@ Continue?</source>
 Jatkaa?</translation>
     </message>
     <message>
-        <location line="+71"/>
+        <location line="+65"/>
         <source>Could not open &quot;%1&quot;: Cannot open files of type &quot;%2&quot;.</source>
         <translation>Ei voitu avata &quot;%1&quot;: Ei voi avata tiedostoja &quot;%2&quot;.</translation>
     </message>
@@ -836,7 +1147,7 @@ Jatkaa?</translation>
         <translation>Ei voitu avata &quot;%1&quot;: Tuntematon virhe.</translation>
     </message>
     <message>
-        <location line="+1163"/>
+        <location line="+1130"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; This file was not opened in %1 yet.</source>
         <translation>&lt;b&gt;Varoitus:&lt;/b&gt; Tätä tiedostoa ei ole vielä avattu kohteessa %1.</translation>
     </message>
@@ -846,7 +1157,7 @@ Jatkaa?</translation>
         <translation>Avata</translation>
     </message>
     <message>
-        <location line="+29"/>
+        <location line="+25"/>
         <source>&amp;Save %1</source>
         <translation>&amp;Tallenna %1</translation>
     </message>
@@ -876,7 +1187,7 @@ Jatkaa?</translation>
         <translation>Sulje kaikki paitsi %1</translation>
     </message>
     <message>
-        <location line="+191"/>
+        <location line="+210"/>
         <source>Cannot Open File</source>
         <translation>Tiedostoa ei voi avata</translation>
     </message>
@@ -886,7 +1197,7 @@ Jatkaa?</translation>
         <translation>Tiedostoa ei voi avata muokattavaksi VCS:llä.</translation>
     </message>
     <message>
-        <location line="+285"/>
+        <location line="+301"/>
         <source>You will lose your current changes if you proceed reverting %1.</source>
         <translation>Menetät nykyiset muutokset, jos jatkat palauttamista %1.</translation>
     </message>
@@ -899,7 +1210,7 @@ Jatkaa?</translation>
         <location line="+1"/>
         <location filename="../../../src/plugins/coreplugin/find/searchresultwidget.cpp" line="+142"/>
         <location line="+117"/>
-        <location filename="../../../src/plugins/coreplugin/plugininstallwizard.cpp" line="+162"/>
+        <location filename="../../../src/plugins/coreplugin/plugininstallwizard.cpp" line="+191"/>
         <source>Cancel</source>
         <translation>Peruuttaa</translation>
     </message>
@@ -909,7 +1220,7 @@ Jatkaa?</translation>
         <translation>Peruuta &amp;&amp; &amp;Erot</translation>
     </message>
     <message>
-        <location line="+311"/>
+        <location line="+308"/>
         <source>Close &quot;%1&quot;</source>
         <translation>Sulje &quot;% 1&quot;</translation>
     </message>
@@ -929,12 +1240,12 @@ Jatkaa?</translation>
         <translation>Pin-editori</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/documentmanager.cpp" line="-488"/>
+        <location filename="../../../src/plugins/coreplugin/documentmanager.cpp" line="-489"/>
         <source>Overwrite?</source>
         <translation>Korvataanko?</translation>
     </message>
     <message>
-        <location line="+71"/>
+        <location line="+68"/>
         <source>Save File As</source>
         <translation>Tallenna tiedosto nimellä</translation>
     </message>
@@ -949,7 +1260,7 @@ Jatkaa?</translation>
         <translation>Vedä vetääksesi asiakirjoja jakojen välillä</translation>
     </message>
     <message>
-        <location line="+254"/>
+        <location line="+270"/>
         <source>Close Document</source>
         <translation>Sulje asiakirja</translation>
     </message>
@@ -964,12 +1275,12 @@ Jatkaa?</translation>
         <translation>Tiedosto on kirjoitettava</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/generalsettings.cpp" line="+96"/>
+        <location filename="../../../src/plugins/coreplugin/generalsettings.cpp" line="+139"/>
         <source>Reset Do Not Ask/Show Again Dialogs</source>
         <translation>Nollaa Älä kysy/näytä uudelleen -valintaikkunat</translation>
     </message>
     <message>
-        <location line="+4"/>
+        <location line="+6"/>
         <source>Reset to default.</source>
         <comment>Color</comment>
         <translation>Palauta oletusarvo.</translation>
@@ -980,27 +1291,25 @@ Jatkaa?</translation>
         <translation>Teema:</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+4"/>
         <source>Language:</source>
         <translation>Kieli:</translation>
     </message>
     <message>
-        <location line="+3"/>
         <source>Enable high DPI scaling</source>
-        <translation>Ota käyttöön korkean DPI-skaalaus</translation>
+        <translation type="vanished">Ota käyttöön korkean DPI-skaalaus</translation>
     </message>
     <message>
-        <location line="+8"/>
         <source>The high DPI settings will take effect after restart.</source>
-        <translation>Korkeat DPI-asetukset tulevat voimaan uudelleenkäynnistyksen jälkeen.</translation>
+        <translation type="vanished">Korkeat DPI-asetukset tulevat voimaan uudelleenkäynnistyksen jälkeen.</translation>
     </message>
     <message>
-        <location line="+11"/>
+        <location line="+50"/>
         <source>User Interface</source>
         <translation>Käyttöliittymä</translation>
     </message>
     <message>
-        <location line="+9"/>
+        <location line="-144"/>
         <source>Show keyboard shortcuts in context menus (default: %1)</source>
         <translation>Näytä pikanäppäimet kontekstivalikoissa (oletus: %1)</translation>
     </message>
@@ -1015,17 +1324,83 @@ Jatkaa?</translation>
         <translation>vinossa</translation>
     </message>
     <message>
-        <location line="+36"/>
+        <location line="+4"/>
+        <source>Override cursors for views</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Provide cursors for resizing views.
+If the system cursors for resizing views are not displayed properly, you can use the cursors provided by %1.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+93"/>
+        <source>Round Up for .5 and Above</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Always Round Up</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Always Round Down</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Round Up for .75 and Above</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Don&apos;t Round</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>DPI rounding policy:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>The following environment variables are set and can influence the UI scaling behavior of %1:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Environment influences UI scaling behavior.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+60"/>
         <source>&lt;System Language&gt;</source>
         <translation>&lt;Järjestelmän kieli&gt;</translation>
     </message>
     <message>
-        <location line="+82"/>
+        <location line="+92"/>
         <source>The language change will take effect after restart.</source>
         <translation>Kielen muutos tulee voimaan uudelleenkäynnistyksen jälkeen.</translation>
     </message>
     <message>
-        <location line="+46"/>
+        <location line="+45"/>
+        <source>Compact</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Relaxed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+14"/>
+        <source>The DPI rounding policy change will take effect after restart.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+19"/>
         <source>Interface</source>
         <translation>Käyttöliittymä</translation>
     </message>
@@ -1035,93 +1410,109 @@ Jatkaa?</translation>
         <translation>Ympäristö</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/systemsettings.cpp" line="+490"/>
+        <location filename="../../../src/plugins/coreplugin/systemsettings.cpp" line="+480"/>
         <source>Variables</source>
         <translation>Muuttujat</translation>
     </message>
     <message>
-        <location line="-340"/>
+        <location line="-271"/>
         <source>Terminal:</source>
         <translation>Terminaali:</translation>
     </message>
     <message>
-        <location line="-96"/>
+        <location line="-166"/>
         <source>Bytes</source>
         <translation>tavua</translation>
     </message>
     <message>
-        <location line="+0"/>
         <source>KB</source>
-        <translation>KB</translation>
+        <translation type="vanished">KB</translation>
     </message>
     <message>
-        <location line="+0"/>
-        <location line="+50"/>
+        <location line="+76"/>
         <source>MB</source>
         <translation>MB</translation>
     </message>
     <message>
-        <location line="-49"/>
         <source>GB</source>
-        <translation>GB</translation>
+        <translation type="vanished">GB</translation>
     </message>
     <message>
-        <location line="+0"/>
         <source>TB</source>
-        <translation>TB</translation>
+        <translation type="vanished">TB</translation>
     </message>
     <message>
-        <location line="+20"/>
+        <location line="-20"/>
         <source>Auto-suspend unmodified files</source>
         <translation>Keskeytä muokkaamattomat tiedostot automaattisesti</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+43"/>
         <source>Enable crash reporting</source>
         <translation>Ota kaatumisraportointi käyttöön</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="-26"/>
         <source>Warn before opening text files greater than</source>
         <translation>Varoita ennen kuin avaat tekstitiedostoja, jotka ovat suurempia kuin</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+20"/>
         <source>Ask for confirmation before exiting</source>
         <translation>Pyydä vahvistus ennen poistumista</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="-61"/>
         <source>Auto-save modified files</source>
         <translation>Tallenna muokatut tiedostot automaattisesti</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+96"/>
         <source>Clear Local Crash Reports</source>
         <translation>Tyhjennä paikalliset virheraportit</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="-79"/>
         <source>Auto-save files after refactoring</source>
         <translation>Tallenna tiedostot automaattisesti uudelleenmuodostuksen jälkeen</translation>
     </message>
     <message>
-        <location line="+4"/>
+        <location line="-49"/>
+        <source>KiB</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>MiB</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>GiB</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>TiB</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+59"/>
         <source>Automatically free resources of old documents that are not visible and not modified. They stay visible in the list of open documents.</source>
         <translation>Vapauta automaattisesti resurssit vanhoista asiakirjoista, jotka eivät ole näkyvissä ja joita ei ole muokattu. Ne pysyvät näkyvissä avoimien asiakirjojen luettelossa.</translation>
     </message>
     <message>
-        <location line="+6"/>
+        <location line="+42"/>
         <source>Allow crashes to be automatically reported. Collected reports are used for the sole purpose of fixing bugs.</source>
         <translation>Salli kaatumisista ilmoittaminen automaattisesti. Kerättyjä raportteja käytetään vain virheiden korjaamiseen.</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+35"/>
         <source>Command line arguments used for &quot;Run in terminal&quot;.</source>
         <translation>Komentoriviargumentteja käytetään &quot;Suorita terminaalissa&quot;.</translation>
     </message>
     <message>
-        <location line="+4"/>
+        <location line="-50"/>
         <source>Always Ask</source>
         <translation>Kysy aina</translation>
     </message>
@@ -1136,17 +1527,17 @@ Jatkaa?</translation>
         <translation>Ohita muutokset</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="-47"/>
         <source>min</source>
         <translation>min</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+105"/>
         <source>Command line arguments used for &quot;%1&quot;.</source>
         <translation>Komentoriviargumentteja käytetään kohteelle &quot;%1&quot;.</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+34"/>
         <source>File system case sensitivity:</source>
         <translation>Tiedostojärjestelmän kirjainherkkyys:</translation>
     </message>
@@ -1156,7 +1547,7 @@ Jatkaa?</translation>
         <translation>Vaikuttaa siihen, miten tiedostonimet yhdistetään, jotta voidaan päättää, ovatko ne samat.</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="-117"/>
         <source>Files to keep open:</source>
         <translation>Avoinna pidettävät tiedostot:</translation>
     </message>
@@ -1166,50 +1557,50 @@ Jatkaa?</translation>
         <translation>Vähimmäismäärä avoimia asiakirjoja, jotka tulee säilyttää muistissa. Tämän määrän lisääminen johtaa enemmän resurssien käyttöön, kun asiakirjoja ei suljeta manuaalisesti.</translation>
     </message>
     <message>
-        <location line="+5"/>
-        <location line="+2"/>
+        <location line="+84"/>
+        <location line="+3"/>
         <source>?</source>
         <translation>?</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+3"/>
         <source>Reset to default.</source>
         <comment>Terminal</comment>
         <translation>Palauta oletusarvo.</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="-130"/>
         <source>Patch command:</source>
         <translation>Patch komento:</translation>
     </message>
     <message>
-        <location line="+17"/>
+        <location line="+146"/>
         <source>External file browser:</source>
         <translation>Ulkoinen tiedostoselain:</translation>
     </message>
     <message>
-        <location line="+12"/>
+        <location line="-83"/>
         <source>When files are externally modified:</source>
         <translation>Kun tiedostoja muutetaan ulkoisesti:</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="-46"/>
         <source>Interval:</source>
         <translation>Aikaväli:</translation>
     </message>
     <message>
-        <location line="+6"/>
+        <location line="+147"/>
         <source>Maximum number of entries in &quot;Recent Files&quot;:</source>
         <translation>&quot;Viimeaikaiset tiedostot&quot; -kohdassa olevien merkintöjen enimmäismäärä:</translation>
     </message>
     <message>
         <location line="+12"/>
-        <location line="+309"/>
+        <location line="+248"/>
         <source>System</source>
         <translation>Järjestelmä</translation>
     </message>
     <message>
-        <location line="-288"/>
+        <location line="-423"/>
         <source>Command used for reverting diff chunks.</source>
         <translation>Komento, jota käytetään erotuspalojen palauttamiseen.</translation>
     </message>
@@ -1219,24 +1610,23 @@ Jatkaa?</translation>
         <translation>Luo automaattisesti väliaikaisia kopioita muokatuista tiedostoista. Jos %1 käynnistetään uudelleen kaatumisen tai sähkökatkon jälkeen, se kysyy, palautetaanko automaattisesti tallennettu sisältö.</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+16"/>
         <source>Automatically saves all open files affected by a refactoring operation,
 provided they were unmodified before the refactoring.</source>
         <translation>Tallentaa automaattisesti kaikki avoimet tiedostot, joihin uudelleenmuodostustoiminto vaikuttaa,
 edellyttäen, että niitä ei ole muutettu ennen refaktorointia.</translation>
     </message>
     <message>
-        <location line="+25"/>
+        <location line="+183"/>
         <source>Crash Reporting</source>
         <translation>Kaatumisraportointi</translation>
     </message>
     <message>
-        <location line="+3"/>
         <source>The change will take effect after restart.</source>
-        <translation>Muutos astuu voimaan uudelleenkäynnistyksen jälkeen.</translation>
+        <translation type="vanished">Muutos astuu voimaan uudelleenkäynnistyksen jälkeen.</translation>
     </message>
     <message>
-        <location line="+41"/>
+        <location line="+34"/>
         <source>Case Sensitive (Default)</source>
         <translation>Kirjainkoon erottelu (oletus)</translation>
     </message>
@@ -1251,27 +1641,27 @@ edellyttäen, että niitä ei ole muutettu ennen refaktorointia.</translation>
         <translation>Kirjainkoosta riippumaton</translation>
     </message>
     <message>
-        <location line="+109"/>
+        <location line="+83"/>
         <source>The file system case sensitivity change will take effect after restart.</source>
         <translation>Tiedostojärjestelmän kirjainkoon herkkyyden muutos tulee voimaan uudelleenkäynnistyksen jälkeen.</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/outputpanemanager.cpp" line="-26"/>
+        <location filename="../../../src/plugins/coreplugin/outputpanemanager.cpp" line="-25"/>
         <source>Output</source>
         <translation>Lähtö</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/mainwindow.cpp" line="+488"/>
+        <location filename="../../../src/plugins/coreplugin/icore.cpp" line="+1728"/>
         <source>&amp;File</source>
         <translation>&amp;Tiedosto</translation>
     </message>
     <message>
-        <location line="+15"/>
+        <location line="+17"/>
         <source>&amp;Edit</source>
         <translation>&amp;Muokata</translation>
     </message>
     <message>
-        <location line="+19"/>
+        <location line="+22"/>
         <source>&amp;Tools</source>
         <translation>&amp;Työkalut</translation>
     </message>
@@ -1286,48 +1676,48 @@ edellyttäen, että niitä ei ole muutettu ennen refaktorointia.</translation>
         <translation>&amp;Auta</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/dialogs/saveitemsdialog.cpp" line="+123"/>
-        <location filename="../../../src/plugins/coreplugin/editormanager/editormanager.cpp" line="-2581"/>
-        <location line="+1728"/>
-        <location filename="../../../src/plugins/coreplugin/mainwindow.cpp" line="+137"/>
+        <location filename="../../../src/plugins/coreplugin/dialogs/saveitemsdialog.cpp" line="+122"/>
+        <location filename="../../../src/plugins/coreplugin/editormanager/editormanager.cpp" line="-2620"/>
+        <location line="+1735"/>
+        <location filename="../../../src/plugins/coreplugin/icore.cpp" line="+139"/>
         <source>&amp;Save</source>
         <translation>&amp;Tallentaa</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/editormanager/editormanager.cpp" line="-1727"/>
-        <location line="+1728"/>
-        <location filename="../../../src/plugins/coreplugin/mainwindow.cpp" line="+10"/>
+        <location filename="../../../src/plugins/coreplugin/editormanager/editormanager.cpp" line="-1734"/>
+        <location line="+1735"/>
+        <location filename="../../../src/plugins/coreplugin/icore.cpp" line="+10"/>
         <source>Save &amp;As...</source>
         <translation>Tallenna nimellä...</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/mainwindow.cpp" line="+3"/>
+        <location filename="../../../src/plugins/coreplugin/icore.cpp" line="+3"/>
         <source>Ctrl+Shift+S</source>
         <translation>Ctrl+Shift+S</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/documentmanager.cpp" line="-669"/>
+        <location filename="../../../src/plugins/coreplugin/documentmanager.cpp" line="+701"/>
         <source>Save A&amp;ll</source>
         <translation>Tallenna kaikki</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/mainwindow.cpp" line="-287"/>
+        <location filename="../../../src/plugins/coreplugin/icore.cpp" line="-279"/>
         <location line="+1"/>
         <source>Exit %1?</source>
         <translation>Poistutaanko %1?</translation>
     </message>
     <message>
-        <location line="+114"/>
+        <location line="+101"/>
         <source>&amp;View</source>
         <translation>&amp;Näytä</translation>
     </message>
     <message>
-        <location line="+68"/>
+        <location line="+72"/>
         <source>Return to Editor</source>
         <translation>Palaa editoriin</translation>
     </message>
     <message>
-        <location line="+8"/>
+        <location line="+6"/>
         <source>&amp;New Project...</source>
         <translation>&amp;Uusi projekti...</translation>
     </message>
@@ -1338,17 +1728,17 @@ edellyttäen, että niitä ei ole muutettu ennen refaktorointia.</translation>
         <translation>Uusi projekti</translation>
     </message>
     <message>
-        <location line="+13"/>
+        <location line="+15"/>
         <source>&amp;New File...</source>
         <translation>&amp;Uusi tiedosto...</translation>
     </message>
     <message>
-        <location line="+24"/>
+        <location line="+25"/>
         <source>&amp;Open File...</source>
         <translation>&amp;Avaa tiedosto...</translation>
     </message>
     <message>
-        <location line="+12"/>
+        <location line="+13"/>
         <source>Open File &amp;With...</source>
         <translation>Avaa tiedosto &amp;kanssa...</translation>
     </message>
@@ -1358,7 +1748,7 @@ edellyttäen, että niitä ei ole muutettu ennen refaktorointia.</translation>
         <translation>Avaa laitteelta...</translation>
     </message>
     <message>
-        <location line="+11"/>
+        <location line="+10"/>
         <source>Recent &amp;Files</source>
         <translation>Viimeaikaiset tiedostot</translation>
     </message>
@@ -1393,12 +1783,12 @@ edellyttäen, että niitä ei ole muutettu ennen refaktorointia.</translation>
         <translation>Kumoa</translation>
     </message>
     <message>
-        <location line="+6"/>
+        <location line="+7"/>
         <source>&amp;Redo</source>
         <translation>&amp;Tee uudelleen</translation>
     </message>
     <message>
-        <location line="+4"/>
+        <location line="+3"/>
         <source>Redo</source>
         <translation>Toista</translation>
     </message>
@@ -1428,7 +1818,7 @@ edellyttäen, että niitä ei ole muutettu ennen refaktorointia.</translation>
         <translation>&amp;Siirry riville...</translation>
     </message>
     <message>
-        <location line="+9"/>
+        <location line="+8"/>
         <source>Zoom In</source>
         <translation>Lähennä</translation>
     </message>
@@ -1438,7 +1828,7 @@ edellyttäen, että niitä ei ole muutettu ennen refaktorointia.</translation>
         <translation>Ctrl++</translation>
     </message>
     <message>
-        <location line="+6"/>
+        <location line="+5"/>
         <source>Zoom Out</source>
         <translation>Loitontaa</translation>
     </message>
@@ -1454,7 +1844,7 @@ edellyttäen, että niitä ei ole muutettu ennen refaktorointia.</translation>
         <translation>Ctrl+Shift+-</translation>
     </message>
     <message>
-        <location line="+8"/>
+        <location line="+7"/>
         <source>Original Size</source>
         <translation>Alkuperäinen koko</translation>
     </message>
@@ -1469,7 +1859,7 @@ edellyttäen, että niitä ei ole muutettu ennen refaktorointia.</translation>
         <translation>Ctrl+0</translation>
     </message>
     <message>
-        <location line="+11"/>
+        <location line="+12"/>
         <source>Show Logs...</source>
         <translation>Näytä lokit...</translation>
     </message>
@@ -1479,7 +1869,7 @@ edellyttäen, että niitä ei ole muutettu ennen refaktorointia.</translation>
         <translation>Asetukset...</translation>
     </message>
     <message>
-        <location line="+35"/>
+        <location line="+32"/>
         <source>Ctrl+Meta+F</source>
         <translation>Ctrl+Meta+F</translation>
     </message>
@@ -1489,27 +1879,47 @@ edellyttäen, että niitä ei ole muutettu ennen refaktorointia.</translation>
         <translation>Ctrl+Shift+F11</translation>
     </message>
     <message>
-        <location line="+8"/>
+        <location line="+9"/>
         <source>Close Window</source>
         <translation>Sulje ikkuna</translation>
     </message>
     <message>
-        <location line="+58"/>
+        <location line="+49"/>
+        <source>Show Menu Bar</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Ctrl+Alt+M</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+20"/>
+        <source>Hide Menu Bar</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>This will hide the menu bar completely. You can show it again by typing %1.&lt;br&gt;&lt;br&gt;Or, trigger the &quot;%2&quot; action from the &quot;%3&quot; locator filter (%4).</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+21"/>
         <source>&amp;Views</source>
         <translation>&amp;Näkymät</translation>
     </message>
     <message>
-        <location line="+10"/>
+        <location line="+11"/>
         <source>About &amp;%1</source>
         <translation>Tietoja &amp;%1</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+0"/>
         <source>About &amp;%1...</source>
         <translation>Tietoja &amp;%1...</translation>
     </message>
     <message>
-        <location line="+26"/>
+        <location line="+21"/>
         <source>Change Log...</source>
         <translation>Muuta lokia...</translation>
     </message>
@@ -1519,12 +1929,12 @@ edellyttäen, että niitä ei ole muutettu ennen refaktorointia.</translation>
         <translation>Ottaa yhteyttä...</translation>
     </message>
     <message>
-        <location line="+24"/>
+        <location line="+23"/>
         <source>Cycle Mode Selector Styles</source>
         <translation>Cycle Mode Selector Styles</translation>
     </message>
     <message>
-        <location line="+13"/>
+        <location line="+12"/>
         <source>Mode Selector Style</source>
         <translation>Tilavalitsimen tyyli</translation>
     </message>
@@ -1544,17 +1954,17 @@ edellyttäen, että niitä ei ole muutettu ennen refaktorointia.</translation>
         <translation>Piilotettu</translation>
     </message>
     <message>
-        <location line="+535"/>
+        <location line="+460"/>
         <source>Version:</source>
         <translation>Versio:</translation>
     </message>
     <message>
-        <location line="+32"/>
+        <location line="+31"/>
         <source>Change Log</source>
         <translation>Muutosloki</translation>
     </message>
     <message>
-        <location line="+43"/>
+        <location line="+45"/>
         <source>Contact</source>
         <translation>Ottaa yhteyttä</translation>
     </message>
@@ -1564,40 +1974,41 @@ edellyttäen, että niitä ei ole muutettu ennen refaktorointia.</translation>
         <translation>&lt;p&gt;Qt Creator -kehittäjät tavoitat Qt Creator -postituslistalla:&lt;/p&gt;%1&lt;p&gt;tai #qt-creator-kanavalla Libera.Chat IRC:ssä:&lt;/p&gt;%2&lt;p&gt;Virheenseurantamme sijaitsee osoitteessa %3.&lt;/p&gt;&lt;p&gt;Käytä %4, jos haluat suurempia tekstiä.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location line="-859"/>
+        <location line="-809"/>
         <source>Ctrl+L</source>
         <translation>Ctrl+L</translation>
     </message>
     <message>
-        <location line="+67"/>
-        <location filename="../../../src/plugins/coreplugin/outputpanemanager.cpp" line="-30"/>
+        <location line="+65"/>
+        <location filename="../../../src/plugins/coreplugin/outputpanemanager.cpp" line="-27"/>
         <source>Minimize</source>
         <translation>Minimoida</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+2"/>
         <source>Ctrl+M</source>
         <translation>Ctrl+M</translation>
     </message>
     <message>
-        <location line="+4"/>
+        <location line="+5"/>
         <source>Zoom</source>
         <translation>Zoomaus</translation>
     </message>
     <message>
         <location line="+7"/>
+        <location filename="../../../src/plugins/coreplugin/windowsupport.cpp" line="+135"/>
         <source>Full Screen</source>
         <translation>Koko näyttö</translation>
     </message>
     <message>
-        <location line="+92"/>
+        <location line="+126"/>
         <source>About &amp;Plugins...</source>
         <translation>Tietoja &amp;laajennuksista...</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/editormanager/openeditorsview.cpp" line="+26"/>
-        <location line="+88"/>
-        <location filename="../../../src/plugins/coreplugin/locator/opendocumentsfilter.cpp" line="+24"/>
+        <location filename="../../../src/plugins/coreplugin/editormanager/openeditorsview.cpp" line="+76"/>
+        <location line="+240"/>
+        <location filename="../../../src/plugins/coreplugin/locator/opendocumentsfilter.cpp" line="+30"/>
         <source>Open Documents</source>
         <translation>Avaa Asiakirjat</translation>
     </message>
@@ -1612,7 +2023,7 @@ edellyttäen, että niitä ei ole muutettu ennen refaktorointia.</translation>
         <translation>Alt+O</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/editormanager/editormanager.cpp" line="+823"/>
+        <location filename="../../../src/plugins/coreplugin/editormanager/editormanager.cpp" line="+855"/>
         <source>Close Editor</source>
         <translation>Sulje editori</translation>
     </message>
@@ -1627,36 +2038,35 @@ edellyttäen, että niitä ei ole muutettu ennen refaktorointia.</translation>
         <translation>Sulje muut editorit</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/editormanager/openeditorswindow.cpp" line="+229"/>
+        <location filename="../../../src/plugins/coreplugin/editormanager/openeditorswindow.cpp" line="+52"/>
         <source>*</source>
         <translation>*</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/loggingviewer.cpp" line="+218"/>
-        <location line="+222"/>
+        <location filename="../../../src/plugins/coreplugin/loggingviewer.cpp" line="+452"/>
+        <location line="+88"/>
         <source>Category</source>
         <translation>Kategoria</translation>
     </message>
     <message>
-        <location line="-221"/>
-        <location line="+221"/>
-        <location filename="../../../src/plugins/coreplugin/mimetypesettings.cpp" line="+327"/>
+        <location line="+0"/>
+        <location filename="../../../src/plugins/coreplugin/mimetypesettings.cpp" line="+381"/>
         <source>Type</source>
         <translation>Tyyppi</translation>
     </message>
     <message>
-        <location line="-220"/>
+        <location line="-86"/>
         <source>Color</source>
         <translation>Väri</translation>
     </message>
     <message>
-        <location line="+165"/>
+        <location line="+170"/>
         <source>Logging Category Viewer</source>
         <translation>Logging Category Viewer</translation>
     </message>
     <message>
-        <location line="+10"/>
-        <location filename="../../../src/plugins/coreplugin/outputwindow.cpp" line="+887"/>
+        <location line="+3"/>
+        <location filename="../../../src/plugins/coreplugin/outputwindow.cpp" line="+927"/>
         <location line="+13"/>
         <location line="+11"/>
         <source>Save Log</source>
@@ -1664,23 +2074,23 @@ edellyttäen, että niitä ei ole muutettu ennen refaktorointia.</translation>
     </message>
     <message>
         <location line="+4"/>
-        <location filename="../../../src/plugins/coreplugin/outputpanemanager.cpp" line="+36"/>
+        <location filename="../../../src/plugins/coreplugin/outputpanemanager.cpp" line="+33"/>
+        <location filename="../../../src/plugins/coreplugin/outputwindow.cpp" line="-617"/>
         <source>Clear</source>
         <translation>Asia selvä</translation>
     </message>
     <message>
         <location line="+4"/>
-        <location line="+124"/>
+        <location line="+160"/>
         <source>Stop Logging</source>
         <translation>Lopeta kirjaaminen</translation>
     </message>
     <message>
-        <location line="-120"/>
         <source>Toggle Qt Internal Logging</source>
-        <translation>Vaihda Qt:n sisäinen kirjaus</translation>
+        <translation type="vanished">Vaihda Qt:n sisäinen kirjaus</translation>
     </message>
     <message>
-        <location line="+6"/>
+        <location line="-150"/>
         <source>Auto Scroll</source>
         <translation>Automaattinen vieritys</translation>
     </message>
@@ -1695,22 +2105,77 @@ edellyttäen, että niitä ei ole muutettu ennen refaktorointia.</translation>
         <translation>Viestityypit</translation>
     </message>
     <message>
-        <location line="+11"/>
+        <location line="-121"/>
         <source>Timestamp</source>
         <translation>Aikaleima</translation>
     </message>
     <message>
-        <location line="+0"/>
+        <location line="-411"/>
+        <source>Entry is missing a logging category name.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Entry is missing data.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Invalid level: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+312"/>
+        <source>Debug</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Warning</source>
+        <translation type="unfinished">Varoitus</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Critical</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Fatal</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Info</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+76"/>
         <source>Message</source>
         <translation>Viesti</translation>
     </message>
     <message>
-        <location line="+83"/>
+        <location line="+100"/>
+        <source>Filter Qt Internal Log Categories</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+56"/>
+        <source>Filter categories by regular expression</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Invalid regular expression: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+85"/>
         <source>Start Logging</source>
         <translation>Aloita kirjaaminen</translation>
     </message>
     <message>
-        <location line="+19"/>
+        <location line="+37"/>
         <source>Copy Selected Logs</source>
         <translation>Kopioi valitut lokit</translation>
     </message>
@@ -1718,6 +2183,21 @@ edellyttäen, että niitä ei ole muutettu ennen refaktorointia.</translation>
         <location line="+2"/>
         <source>Copy All</source>
         <translation>Kopioi kaikki</translation>
+    </message>
+    <message>
+        <location line="+65"/>
+        <source>Uncheck All %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Check All %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Reset All %1</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+31"/>
@@ -1730,32 +2210,41 @@ edellyttäen, että niitä ei ole muutettu ennen refaktorointia.</translation>
         <translation>Päivitys esiasetuksesta...</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+51"/>
+        <source>Save Enabled Categories As...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+51"/>
+        <source>Failed to open preset file &quot;%1&quot; for reading.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-172"/>
         <source>Uncheck All</source>
         <translation>Poista valinta Kaikki</translation>
     </message>
     <message>
-        <location line="+19"/>
+        <location line="+88"/>
         <source>Save Logs As</source>
         <translation>Tallenna lokit nimellä</translation>
     </message>
     <message>
-        <location line="+12"/>
+        <location line="+16"/>
         <source>Failed to write logs to &quot;%1&quot;.</source>
         <translation>Lokien kirjoittaminen kohteeseen &quot;%1&quot; epäonnistui.</translation>
     </message>
     <message>
-        <location line="+8"/>
+        <location line="+9"/>
         <source>Failed to open file &quot;%1&quot; for writing logs.</source>
         <translation>Tiedoston &quot;%1&quot; avaaminen lokien kirjoittamista varten epäonnistui.</translation>
     </message>
     <message>
-        <location line="+7"/>
         <source>Save Enabled Categories As</source>
-        <translation>Tallenna käytössä olevat luokat nimellä</translation>
+        <translation type="vanished">Tallenna käytössä olevat luokat nimellä</translation>
     </message>
     <message>
-        <location line="+20"/>
+        <location line="+45"/>
         <source>Failed to write preset file &quot;%1&quot;.</source>
         <translation>Esiasetustiedoston &quot;%1&quot; kirjoittaminen epäonnistui.</translation>
     </message>
@@ -1765,38 +2254,36 @@ edellyttäen, että niitä ei ole muutettu ennen refaktorointia.</translation>
         <translation>Lataa käytössä olevat luokat alkaen</translation>
     </message>
     <message>
-        <location line="+8"/>
         <source>Failed to open preset file &quot;%1&quot; for reading</source>
-        <translation>Esiasetustiedoston &quot;%1&quot; avaaminen lukemista varten epäonnistui</translation>
+        <translation type="vanished">Esiasetustiedoston &quot;%1&quot; avaaminen lukemista varten epäonnistui</translation>
     </message>
     <message>
-        <location line="+8"/>
+        <location line="+17"/>
         <source>Failed to read preset file &quot;%1&quot;: %2</source>
         <translation>Esiasetustiedoston &quot;%1&quot; lukeminen epäonnistui: %2</translation>
     </message>
     <message>
-        <location line="+28"/>
+        <location line="+29"/>
         <source>Unexpected preset file format.</source>
         <translation>Odottamaton esiasetettu tiedostomuoto.</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/outputpanemanager.cpp" line="-182"/>
+        <location filename="../../../src/plugins/coreplugin/outputpanemanager.cpp" line="-190"/>
         <source>Show Non-matching Lines</source>
         <translation>Näytä yhteensopimattomat rivit</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+8"/>
         <source>Filter output...</source>
         <translation>Suodata lähtö...</translation>
     </message>
     <message>
-        <location line="+142"/>
-        <location line="+48"/>
+        <location line="+153"/>
         <source>Maximize</source>
         <translation>Maksimoida</translation>
     </message>
     <message>
-        <location line="-10"/>
+        <location line="+34"/>
         <source>Next Item</source>
         <translation>Seuraava kohde</translation>
     </message>
@@ -1806,12 +2293,17 @@ edellyttäen, että niitä ei ole muutettu ennen refaktorointia.</translation>
         <translation>Edellinen kohde</translation>
     </message>
     <message>
-        <location line="+60"/>
+        <location line="+64"/>
         <source>Out&amp;put</source>
         <translation>Out&amp;put</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/mimetypesettings.cpp" line="-197"/>
+        <location line="+403"/>
+        <source>Reset to Default</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/coreplugin/mimetypesettings.cpp" line="-255"/>
         <source>MIME Type</source>
         <translation>MIME-tyyppi</translation>
     </message>
@@ -1821,33 +2313,36 @@ edellyttäen, että niitä ei ole muutettu ennen refaktorointia.</translation>
         <translation>Käsittelijä</translation>
     </message>
     <message>
-        <location line="+178"/>
+        <location line="+236"/>
         <source>Reset all MIME type definitions to their defaults.</source>
         <translation>Palauta kaikki MIME-tyyppimääritykset oletusarvoihinsa.</translation>
     </message>
     <message>
         <location line="+1"/>
         <location line="+247"/>
+        <location line="+182"/>
         <source>Reset MIME Types</source>
         <translation>Nollaa MIME-tyypit</translation>
     </message>
     <message>
-        <location line="-244"/>
+        <location line="-426"/>
         <source>Reset the assigned handler for all MIME type definitions to the default.</source>
         <translation>Palauta kaikkien MIME-tyyppimääritelmien määritetty käsittelijä oletusasetuksiin.</translation>
     </message>
     <message>
         <location line="+1"/>
+        <location line="+426"/>
         <source>Reset Handlers</source>
         <translation>Nollaa käsittelijät</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="-423"/>
+        <location line="+425"/>
         <source>Patterns:</source>
         <translation>Kuviot:</translation>
     </message>
     <message>
-        <location line="+4"/>
+        <location line="-421"/>
         <source>A semicolon-separated list of wildcarded file names.</source>
         <translation>Puolipisteillä eroteltu luettelo jokerimerkillä merkityistä tiedostonimistä.</translation>
     </message>
@@ -1868,32 +2363,34 @@ edellyttäen, että niitä ei ole muutettu ennen refaktorointia.</translation>
     </message>
     <message>
         <location line="+16"/>
+        <location line="+397"/>
         <source>Registered MIME Types</source>
         <translation>Rekisteröidyt MIME-tyypit</translation>
     </message>
     <message>
-        <location line="+3"/>
-        <location filename="../../../src/plugins/coreplugin/plugindialog.cpp" line="+50"/>
+        <location line="-394"/>
+        <location line="+399"/>
+        <location filename="../../../src/plugins/coreplugin/plugindialog.cpp" line="+42"/>
         <source>Details</source>
         <translation>Yksityiskohdat</translation>
     </message>
     <message>
-        <location line="+211"/>
+        <location line="-188"/>
         <source>Changes will take effect after restart.</source>
         <translation>Muutokset astuvat voimaan uudelleenkäynnistyksen jälkeen.</translation>
     </message>
     <message>
-        <location line="+162"/>
+        <location line="+168"/>
         <source>MIME Types</source>
         <translation>MIME-tyypit</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/plugindialog.cpp" line="+1"/>
+        <location filename="../../../src/plugins/coreplugin/plugindialog.cpp" line="+2"/>
         <source>Error Details</source>
         <translation>Virheen tiedot</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+3"/>
         <source>Install Plugin...</source>
         <translation>Asenna laajennus...</translation>
     </message>
@@ -1903,27 +2400,26 @@ edellyttäen, että niitä ei ole muutettu ennen refaktorointia.</translation>
         <translation>Asennetut laajennukset</translation>
     </message>
     <message>
-        <location line="+25"/>
+        <location line="+37"/>
         <source>Plugin changes will take effect after restart.</source>
         <translation>Plugin muutokset astuvat voimaan uudelleenkäynnistyksen jälkeen.</translation>
     </message>
     <message>
-        <location line="+29"/>
         <source>Plugin Details of %1</source>
-        <translation>Lisäosan tiedot %1</translation>
+        <translation type="vanished">Lisäosan tiedot %1</translation>
     </message>
     <message>
-        <location line="+20"/>
+        <location line="+35"/>
         <source>Plugin Errors of %1</source>
         <translation>Liitännäisvirheet %1</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/progressmanager/progressview.cpp" line="+23"/>
+        <location filename="../../../src/plugins/coreplugin/progressmanager/progressview.cpp" line="+31"/>
         <source>Processes</source>
         <translation>Prosessit</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/dialogs/saveitemsdialog.cpp" line="-70"/>
+        <location filename="../../../src/plugins/coreplugin/dialogs/saveitemsdialog.cpp" line="-72"/>
         <source>&amp;Diff</source>
         <translation>&amp;Erot</translation>
     </message>
@@ -1933,7 +2429,7 @@ edellyttäen, että niitä ei ole muutettu ennen refaktorointia.</translation>
         <translation>Älä säästä</translation>
     </message>
     <message>
-        <location line="+67"/>
+        <location line="+69"/>
         <source>&amp;Diff &amp;&amp; Cancel</source>
         <translation>&amp;Ero &amp;&amp; Peruuta</translation>
     </message>
@@ -1964,8 +2460,8 @@ edellyttäen, että niitä ei ole muutettu ennen refaktorointia.</translation>
     </message>
     <message>
         <location line="+0"/>
-        <location filename="../../../src/plugins/coreplugin/mainwindow.cpp" line="-262"/>
-        <location filename="../../../src/plugins/coreplugin/messageoutputwindow.cpp" line="+47"/>
+        <location filename="../../../src/plugins/coreplugin/icore.cpp" line="-294"/>
+        <location filename="../../../src/plugins/coreplugin/messageoutputwindow.cpp" line="+56"/>
         <source>Save</source>
         <translation>Tallentaa</translation>
     </message>
@@ -1975,7 +2471,7 @@ edellyttäen, että niitä ei ole muutettu ennen refaktorointia.</translation>
         <translation>Tallenna valitut</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/dialogs/shortcutsettings.cpp" line="+134"/>
+        <location filename="../../../src/plugins/coreplugin/dialogs/shortcutsettings.cpp" line="+180"/>
         <source>Click and type the new key sequence.</source>
         <translation>Napsauta ja kirjoita uusi näppäinsarja.</translation>
     </message>
@@ -1990,12 +2486,12 @@ edellyttäen, että niitä ei ole muutettu ennen refaktorointia.</translation>
         <translation>Ennätys</translation>
     </message>
     <message>
-        <location line="+159"/>
+        <location line="+589"/>
         <source>Keyboard</source>
         <translation>Näppäimistö</translation>
     </message>
     <message>
-        <location line="+96"/>
+        <location line="-630"/>
         <source>Invalid key sequence.</source>
         <translation>Virheellinen näppäinsarja.</translation>
     </message>
@@ -2005,7 +2501,7 @@ edellyttäen, että niitä ei ole muutettu ennen refaktorointia.</translation>
         <translation>Näppäinsarja ei toimi editorissa.</translation>
     </message>
     <message>
-        <location line="+74"/>
+        <location line="+451"/>
         <source>Import Keyboard Mapping Scheme</source>
         <translation>Tuo Keyboard Mapping Scheme</translation>
     </message>
@@ -2021,7 +2517,7 @@ edellyttäen, että niitä ei ole muutettu ennen refaktorointia.</translation>
         <translation>Vie Keyboard Mapping Scheme</translation>
     </message>
     <message>
-        <location line="+113"/>
+        <location line="-332"/>
         <source>Key sequence:</source>
         <translation>Näppäinjärjestys:</translation>
     </message>
@@ -2046,12 +2542,12 @@ edellyttäen, että niitä ei ole muutettu ennen refaktorointia.</translation>
         <translation>Avainsarjassa on mahdollisia ristiriitoja. &lt;a href=&quot;#conflicts&quot;&gt;Näytä.&lt;/a&gt;</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/find/findtoolbar.cpp" line="+111"/>
+        <location filename="../../../src/plugins/coreplugin/find/findtoolbar.cpp" line="+122"/>
         <source>Search for...</source>
         <translation>Etsiä...</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/find/findtoolwindow.cpp" line="+38"/>
+        <location filename="../../../src/plugins/coreplugin/find/findtoolwindow.cpp" line="+37"/>
         <source>Empty search term.</source>
         <translation>Tyhjä hakusana.</translation>
     </message>
@@ -2066,7 +2562,7 @@ edellyttäen, että niitä ei ole muutettu ennen refaktorointia.</translation>
         <translation>Hae &amp;&amp; &amp;Korvaa</translation>
     </message>
     <message>
-        <location line="+6"/>
+        <location line="+7"/>
         <source>Search f&amp;or:</source>
         <translation>Etsiä:</translation>
     </message>
@@ -2091,25 +2587,25 @@ edellyttäen, että niitä ei ole muutettu ennen refaktorointia.</translation>
         <translation>&amp;Kirjainkoon erottelu</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/find/findplugin.cpp" line="+265"/>
+        <location filename="../../../src/plugins/coreplugin/find/findplugin.cpp" line="+312"/>
         <source>&amp;Find/Replace</source>
         <translation>&amp;Etsi/Korvaa</translation>
     </message>
     <message>
-        <location line="+10"/>
+        <location line="+9"/>
         <source>Advanced Find</source>
         <translation>Tarkennettu haku</translation>
     </message>
     <message>
-        <location line="+2"/>
-        <location filename="../../../src/plugins/coreplugin/find/findtoolbar.cpp" line="-289"/>
+        <location line="+4"/>
+        <location filename="../../../src/plugins/coreplugin/find/findtoolbar.cpp" line="-333"/>
         <source>Open Advanced Find...</source>
         <translation>Avaa lisähaku...</translation>
     </message>
     <message>
         <location line="+1"/>
-        <location filename="../../../src/plugins/coreplugin/find/findtoolbar.cpp" line="-121"/>
-        <location line="+122"/>
+        <location filename="../../../src/plugins/coreplugin/find/findtoolbar.cpp" line="-109"/>
+        <location line="+110"/>
         <source>Advanced...</source>
         <translation>Pitkälle kehittynyt...</translation>
     </message>
@@ -2119,54 +2615,54 @@ edellyttäen, että niitä ei ole muutettu ennen refaktorointia.</translation>
         <translation>Ctrl+Shift+F</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/find/findtoolbar.cpp" line="+31"/>
+        <location filename="../../../src/plugins/coreplugin/find/findtoolbar.cpp" line="+33"/>
         <source>Enter Find String</source>
         <translation>Kirjoita Etsi-merkkijono</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+1"/>
         <source>Ctrl+E</source>
         <translation>Ctrl+E</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+8"/>
         <source>Find Next</source>
         <translation>Etsi Seuraava</translation>
     </message>
     <message>
-        <location line="+11"/>
+        <location line="+15"/>
         <source>Find Previous</source>
         <translation>Etsi edellinen</translation>
     </message>
     <message>
-        <location line="+48"/>
+        <location line="+61"/>
         <source>Ctrl+=</source>
         <translation>Ctrl+=</translation>
     </message>
     <message>
-        <location line="+10"/>
+        <location line="+14"/>
         <source>Replace &amp;&amp; Find Previous</source>
         <translation>Korvaa &amp;&amp; Etsi edellinen</translation>
     </message>
     <message>
-        <location line="-235"/>
-        <location line="+246"/>
+        <location line="-246"/>
+        <location line="+259"/>
         <source>Replace All</source>
         <translation>Korvaa kaikki</translation>
     </message>
     <message>
-        <location line="-296"/>
+        <location line="-309"/>
         <source>Find Flags</source>
         <translation>Etsi lippuja</translation>
     </message>
     <message>
         <location line="+45"/>
-        <location line="+228"/>
+        <location line="+235"/>
         <source>Replace &amp;&amp; Find</source>
         <translation>Korvaa &amp;&amp; Etsi</translation>
     </message>
     <message>
-        <location line="-131"/>
+        <location line="-148"/>
         <location line="+13"/>
         <source>Shift+Enter</source>
         <translation>Vaihto+Enter</translation>
@@ -2178,12 +2674,12 @@ edellyttäen, että niitä ei ole muutettu ennen refaktorointia.</translation>
         <translation>Vaihto+Return</translation>
     </message>
     <message>
-        <location line="+31"/>
+        <location line="+28"/>
         <source>Find/Replace</source>
         <translation>Etsi/korvaa</translation>
     </message>
     <message>
-        <location line="+46"/>
+        <location line="+57"/>
         <source>Find Next (Selected)</source>
         <translation>Etsi seuraava (valittu)</translation>
     </message>
@@ -2193,7 +2689,7 @@ edellyttäen, että niitä ei ole muutettu ennen refaktorointia.</translation>
         <translation>Ctrl+F3</translation>
     </message>
     <message>
-        <location line="+4"/>
+        <location line="+5"/>
         <source>Find Previous (Selected)</source>
         <translation>Etsi edellinen (valittu)</translation>
     </message>
@@ -2209,39 +2705,40 @@ edellyttäen, että niitä ei ole muutettu ennen refaktorointia.</translation>
     </message>
     <message>
         <location line="+2"/>
+        <location line="+59"/>
         <source>Ctrl+Alt+Return</source>
         <translation>Ctrl+Alt+Return</translation>
     </message>
     <message>
-        <location line="+53"/>
-        <location filename="../../../src/plugins/coreplugin/outputpanemanager.cpp" line="-259"/>
-        <location filename="../../../src/plugins/coreplugin/systemsettings.cpp" line="-115"/>
+        <location line="+13"/>
+        <location filename="../../../src/plugins/coreplugin/outputpanemanager.cpp" line="-672"/>
+        <location filename="../../../src/plugins/coreplugin/systemsettings.cpp" line="-89"/>
         <source>Case Sensitive</source>
         <translation>Kirjainkoon erottelu</translation>
     </message>
     <message>
-        <location line="+8"/>
+        <location line="+9"/>
         <source>Whole Words Only</source>
         <translation>Vain kokonaiset sanat</translation>
     </message>
     <message>
-        <location line="+8"/>
-        <location filename="../../../src/plugins/coreplugin/outputpanemanager.cpp" line="-6"/>
+        <location line="+9"/>
+        <location filename="../../../src/plugins/coreplugin/outputpanemanager.cpp" line="-5"/>
         <source>Use Regular Expressions</source>
         <translation>Käytä säännöllisiä lausekkeita</translation>
     </message>
     <message>
-        <location line="+8"/>
+        <location line="+9"/>
         <source>Preserve Case when Replacing</source>
         <translation>Säilytä kotelo vaihtaessasi</translation>
     </message>
     <message>
-        <location line="+148"/>
+        <location line="+159"/>
         <source>Replace with...</source>
         <translation>Korvata...</translation>
     </message>
     <message>
-        <location line="-488"/>
+        <location line="-520"/>
         <source>Find</source>
         <translation>löytö</translation>
     </message>
@@ -2256,46 +2753,58 @@ edellyttäen, että niitä ei ole muutettu ennen refaktorointia.</translation>
         <translation>Korvata:</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/find/searchresultwindow.cpp" line="+147"/>
+        <location filename="../../../src/plugins/coreplugin/find/searchresultwindow.cpp" line="+138"/>
+        <location line="+500"/>
+        <location filename="../../../src/plugins/coreplugin/locator/locatorsettingspage.cpp" line="+269"/>
+        <source>Show Paths in Relation to Active Project</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-488"/>
         <source>Filter Results</source>
         <translation>Suodata tulokset</translation>
     </message>
     <message>
         <location line="+7"/>
-        <location line="+480"/>
+        <location line="+512"/>
         <source>New Search</source>
         <translation>Uusi haku</translation>
     </message>
     <message>
-        <location line="-149"/>
+        <location line="-173"/>
         <source>%1 %2</source>
         <translation>%1 %2</translation>
     </message>
     <message>
-        <location line="+123"/>
-        <location filename="../../../src/plugins/coreplugin/foldernavigationwidget.cpp" line="+713"/>
+        <location line="+126"/>
+        <location filename="../../../src/plugins/coreplugin/foldernavigationwidget.cpp" line="+705"/>
         <source>Collapse All</source>
         <translation>Kutista kaikki</translation>
     </message>
     <message>
-        <location line="+17"/>
+        <location line="+14"/>
+        <source>Show Full Paths</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+24"/>
         <source>History:</source>
         <translation>Historia:</translation>
     </message>
     <message>
-        <location line="+106"/>
+        <location line="-265"/>
         <source>Search Results</source>
         <translation>Hakutulokset</translation>
     </message>
     <message>
-        <location line="-611"/>
-        <location line="+491"/>
+        <location line="-271"/>
+        <location line="+501"/>
         <source>Expand All</source>
         <translation>Laajenna kaikki</translation>
     </message>
     <message>
         <location filename="../../../src/plugins/coreplugin/find/findtoolbar.cpp" line="+8"/>
-        <location line="+222"/>
+        <location line="+225"/>
         <source>Replace</source>
         <translation>Korvata</translation>
     </message>
@@ -2315,7 +2824,7 @@ edellyttäen, että niitä ei ole muutettu ennen refaktorointia.</translation>
         <translation>Avaa tiedosto &quot;% 1&quot;:</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/foldernavigationwidget.cpp" line="-459"/>
+        <location filename="../../../src/plugins/coreplugin/foldernavigationwidget.cpp" line="-455"/>
         <source>Show Hidden Files</source>
         <translation>Näytä piilotetut tiedostot</translation>
     </message>
@@ -2341,8 +2850,8 @@ edellyttäen, että niitä ei ole muutettu ennen refaktorointia.</translation>
         <translation>Uusi tiedosto</translation>
     </message>
     <message>
-        <location line="+154"/>
-        <location line="+80"/>
+        <location line="+152"/>
+        <location line="+78"/>
         <source>New Folder</source>
         <translation>Uusi kansio</translation>
     </message>
@@ -2358,13 +2867,13 @@ edellyttäen, että niitä ei ole muutettu ennen refaktorointia.</translation>
     </message>
     <message>
         <location line="+25"/>
-        <location filename="../../../src/plugins/coreplugin/loggingviewer.cpp" line="-86"/>
-        <location line="+8"/>
-        <location line="+27"/>
+        <location filename="../../../src/plugins/coreplugin/loggingviewer.cpp" line="-107"/>
+        <location line="+9"/>
+        <location line="+45"/>
         <location line="+14"/>
-        <location line="+8"/>
-        <location line="+28"/>
-        <location filename="../../../src/plugins/coreplugin/mimetypemagicdialog.cpp" line="+159"/>
+        <location line="+9"/>
+        <location line="+29"/>
+        <location filename="../../../src/plugins/coreplugin/mimetypemagicdialog.cpp" line="+160"/>
         <source>Error</source>
         <translation>Virhe</translation>
     </message>
@@ -2394,27 +2903,27 @@ edellyttäen, että niitä ei ole muutettu ennen refaktorointia.</translation>
         <translation>Koti</translation>
     </message>
     <message>
-        <location line="+144"/>
+        <location line="+145"/>
         <source>Add New...</source>
         <translation>Lisää uusi...</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+8"/>
         <source>Rename...</source>
         <translation>Nimeä uudelleen...</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+8"/>
         <source>Remove...</source>
         <translation>Poista...</translation>
     </message>
     <message>
-        <location line="-619"/>
+        <location line="-618"/>
         <source>Synchronize with Editor</source>
         <translation>Synkronoi editorin kanssa</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/locator/ilocatorfilter.cpp" line="+257"/>
+        <location filename="../../../src/plugins/coreplugin/locator/ilocatorfilter.cpp" line="+643"/>
         <source>Filter Configuration</source>
         <translation>Suodattimen asetukset</translation>
     </message>
@@ -2444,23 +2953,21 @@ edellyttäen, että niitä ei ole muutettu ennen refaktorointia.</translation>
         <translation>Yleinen hakemistosuodatin</translation>
     </message>
     <message>
-        <location line="+10"/>
         <source>Matches all files from a custom set of directories. Append &quot;+&lt;number&gt;&quot; or &quot;:&lt;number&gt;&quot; to jump to the given line number. Append another &quot;+&lt;number&gt;&quot; or &quot;:&lt;number&gt;&quot; to jump to the column number as well.</source>
-        <translation>Vastaa kaikkia mukautetun hakemistojoukon tiedostoja. Liitä &quot;+&lt;numero&gt;&quot; tai &quot;:&lt;numero&gt;&quot; hypätäksesi annettuun rivinumeroon. Lisää toinen &quot;+&lt;numero&gt;&quot; tai &quot;:&lt;numero&gt;&quot; hypätäksesi myös sarakkeen numeroon.</translation>
+        <translation type="vanished">Vastaa kaikkia mukautetun hakemistojoukon tiedostoja. Liitä &quot;+&lt;numero&gt;&quot; tai &quot;:&lt;numero&gt;&quot; hypätäksesi annettuun rivinumeroon. Lisää toinen &quot;+&lt;numero&gt;&quot; tai &quot;:&lt;numero&gt;&quot; hypätäksesi myös sarakkeen numeroon.</translation>
     </message>
     <message>
-        <location line="+267"/>
+        <location line="+273"/>
         <location line="+10"/>
         <source>Select Directory</source>
         <translation>Valitse Hakemisto</translation>
     </message>
     <message>
-        <location line="+38"/>
         <source>%1 filter update: 0 files</source>
-        <translation>%1 suodatinpäivitys: 0 tiedostoa</translation>
+        <translation type="vanished">%1 suodatinpäivitys: 0 tiedostoa</translation>
     </message>
     <message numerus="yes">
-        <location line="+18"/>
+        <location line="-264"/>
         <source>%1 filter update: %n files</source>
         <translation>
             <numerusform>%1 suodattimen päivitys: %n tiedostoa</numerusform>
@@ -2468,14 +2975,14 @@ edellyttäen, että niitä ei ole muutettu ennen refaktorointia.</translation>
         </translation>
     </message>
     <message>
-        <location line="+10"/>
+        <location line="-5"/>
         <source>%1 filter update: canceled</source>
         <translation>%1 suodattimen päivitys: peruutettu</translation>
     </message>
     <message>
         <location filename="../../../src/plugins/coreplugin/dialogs/filepropertiesdialog.cpp" line="+69"/>
-        <location filename="../../../src/plugins/coreplugin/locator/directoryfilter.cpp" line="-246"/>
-        <location filename="../../../src/plugins/coreplugin/locator/urllocatorfilter.cpp" line="+36"/>
+        <location filename="../../../src/plugins/coreplugin/locator/directoryfilter.cpp" line="+96"/>
+        <location filename="../../../src/plugins/coreplugin/locator/urllocatorfilter.cpp" line="+33"/>
         <source>Name:</source>
         <translation>Nimi:</translation>
     </message>
@@ -2540,7 +3047,13 @@ edellyttäen, että niitä ei ole muutettu ennen refaktorointia.</translation>
         <translation>Kirjoitettava:</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+1"/>
+        <source>Executable:</source>
+        <comment>adjective</comment>
+        <translation type="unfinished">Suoritettava:</translation>
+    </message>
+    <message>
+        <location line="+1"/>
         <source>Symbolic link:</source>
         <translation>Symbolinen linkki:</translation>
     </message>
@@ -2551,7 +3064,7 @@ edellyttäen, että niitä ei ole muutettu ennen refaktorointia.</translation>
         <location line="+50"/>
         <location line="+32"/>
         <location line="+1"/>
-        <location filename="../../../src/plugins/coreplugin/progressmanager/processprogress.cpp" line="+58"/>
+        <location filename="../../../src/plugins/coreplugin/progressmanager/processprogress.cpp" line="+63"/>
         <source>Unknown</source>
         <translation>Tuntematon</translation>
     </message>
@@ -2592,16 +3105,23 @@ edellyttäen, että niitä ei ole muutettu ennen refaktorointia.</translation>
         <translation>Määrittämätön</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/locator/directoryfilter.cpp" line="+24"/>
-        <location filename="../../../src/plugins/coreplugin/locator/locatorsettingspage.cpp" line="+158"/>
-        <location filename="../../../src/plugins/coreplugin/mimetypesettings.cpp" line="-385"/>
+        <location filename="../../../src/plugins/coreplugin/locator/directoryfilter.cpp" line="-78"/>
+        <source>Locates files from a custom set of directories. Append &quot;+&lt;number&gt;&quot; or &quot;:&lt;number&gt;&quot; to jump to the given line number. Append another &quot;+&lt;number&gt;&quot; or &quot;:&lt;number&gt;&quot; to jump to the column number as well.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+102"/>
+        <location filename="../../../src/plugins/coreplugin/locator/locatorsettingspage.cpp" line="-16"/>
+        <location filename="../../../src/plugins/coreplugin/mimetypesettings.cpp" line="-391"/>
+        <location line="+408"/>
         <source>Add...</source>
         <translation>Lisätä...</translation>
     </message>
     <message>
         <location line="+1"/>
-        <location filename="../../../src/plugins/coreplugin/locator/locatorsettingspage.cpp" line="+41"/>
-        <location filename="../../../src/plugins/coreplugin/mimetypesettings.cpp" line="+3"/>
+        <location filename="../../../src/plugins/coreplugin/locator/locatorsettingspage.cpp" line="+55"/>
+        <location filename="../../../src/plugins/coreplugin/mimetypesettings.cpp" line="-405"/>
+        <location line="+406"/>
         <source>Edit...</source>
         <translation>Muokata...</translation>
     </message>
@@ -2616,7 +3136,7 @@ edellyttäen, että niitä ei ole muutettu ennen refaktorointia.</translation>
         <translation>Työkalut, jotka näkyvät suoraan Ulkoiset työkalut -valikon alla.</translation>
     </message>
     <message>
-        <location line="+199"/>
+        <location line="+207"/>
         <source>New Category</source>
         <translation>Uusi luokka</translation>
     </message>
@@ -2651,7 +3171,8 @@ edellyttäen, että niitä ei ole muutettu ennen refaktorointia.</translation>
         <location filename="../../../src/plugins/coreplugin/locator/directoryfilter.cpp" line="+1"/>
         <location filename="../../../src/plugins/coreplugin/locator/locatorsettingspage.cpp" line="-3"/>
         <location filename="../../../src/plugins/coreplugin/locator/urllocatorfilter.cpp" line="+20"/>
-        <location filename="../../../src/plugins/coreplugin/mimetypesettings.cpp" line="+3"/>
+        <location filename="../../../src/plugins/coreplugin/mimetypesettings.cpp" line="-403"/>
+        <location line="+404"/>
         <source>Remove</source>
         <translation>Poista</translation>
     </message>
@@ -2722,13 +3243,13 @@ edellyttäen, että niitä ei ole muutettu ennen refaktorointia.</translation>
     <message>
         <location line="+12"/>
         <location line="+413"/>
-        <location filename="../../../src/plugins/coreplugin/systemsettings.cpp" line="+153"/>
+        <location filename="../../../src/plugins/coreplugin/systemsettings.cpp" line="+126"/>
         <source>No changes to apply.</source>
         <translation>Ei sovellettavia muutoksia.</translation>
     </message>
     <message>
         <location line="-410"/>
-        <location filename="../../../src/plugins/coreplugin/systemsettings.cpp" line="-308"/>
+        <location filename="../../../src/plugins/coreplugin/systemsettings.cpp" line="-239"/>
         <source>Change...</source>
         <translation>Muuttaa...</translation>
     </message>
@@ -2759,10 +3280,14 @@ edellyttäen, että niitä ei ole muutettu ennen refaktorointia.</translation>
     </message>
     <message>
         <location line="+1"/>
-        <location filename="../../../src/plugins/coreplugin/dialogs/filepropertiesdialog.cpp" line="-115"/>
-        <location filename="../../../src/plugins/coreplugin/locator/spotlightlocatorfilter.cpp" line="+270"/>
+        <location filename="../../../src/plugins/coreplugin/locator/spotlightlocatorfilter.cpp" line="+223"/>
         <source>Executable:</source>
-        <translation>Suoritettava:</translation>
+        <comment>noun</comment>
+        <translation type="unfinished">Suoritettava:</translation>
+    </message>
+    <message>
+        <source>Executable:</source>
+        <translation type="vanished">Suoritettava:</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2782,7 +3307,7 @@ edellyttäen, että niitä ei ole muutettu ennen refaktorointia.</translation>
     </message>
     <message>
         <location line="+1"/>
-        <location filename="../../../src/plugins/coreplugin/systemsettings.cpp" line="+6"/>
+        <location filename="../../../src/plugins/coreplugin/systemsettings.cpp" line="+5"/>
         <source>Environment:</source>
         <translation>Ympäristö:</translation>
     </message>
@@ -2824,7 +3349,7 @@ To do this, you type this shortcut and a space in the Locator entry field, and t
 Voit tehdä tämän kirjoittamalla tämän pikanäppäimen ja välilyönnin Locator-syöttökenttään ja sitten etsittävän sanan.</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/locator/filesystemfilter.cpp" line="+53"/>
+        <location filename="../../../src/plugins/coreplugin/locator/filesystemfilter.cpp" line="+121"/>
         <source>Files in File System</source>
         <translation>Tiedostot tiedostojärjestelmässä</translation>
     </message>
@@ -2834,32 +3359,56 @@ Voit tehdä tämän kirjoittamalla tämän pikanäppäimen ja välilyönnin Loca
         <translation>Avaa nykyisen asiakirjan suhteellisen polun tai absoluuttisen polun antaman tiedoston. &quot;~&quot; viittaa kotihakemistoosi. Sinulla on mahdollisuus luoda tiedosto, jos sitä ei vielä ole olemassa.</translation>
     </message>
     <message>
-        <location line="+91"/>
         <source>Create and Open &quot;%1&quot;</source>
-        <translation>Luo ja avaa &quot;% 1&quot;</translation>
+        <translation type="vanished">Luo ja avaa &quot;% 1&quot;</translation>
     </message>
     <message>
-        <location line="+29"/>
+        <location line="-46"/>
         <source>Create File</source>
         <translation>Luo tiedosto</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="-13"/>
         <source>Create &quot;%1&quot;?</source>
         <translation>Luodaanko &quot;% 1&quot;?</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+6"/>
         <source>Always create</source>
         <translation>Luo aina</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="-1"/>
         <source>Create</source>
         <translation>Luoda</translation>
     </message>
     <message>
-        <location line="+34"/>
+        <location line="+12"/>
+        <source>Cannot Create File</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Cannot create file &quot;%1&quot;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+15"/>
+        <source>Create Directory</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+164"/>
+        <source>Create and Open File &quot;%1&quot;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+17"/>
+        <source>Create Directory &quot;%1&quot;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+58"/>
         <source>Include hidden files</source>
         <translation>Sisällytä piilotetut tiedostot</translation>
     </message>
@@ -2869,12 +3418,12 @@ Voit tehdä tämän kirjoittamalla tämän pikanäppäimen ja välilyönnin Loca
         <translation>Suodattaa:</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/locator/locatorfiltersfilter.cpp" line="+21"/>
+        <location filename="../../../src/plugins/coreplugin/locator/locatorfiltersfilter.cpp" line="+20"/>
         <source>Available filters</source>
         <translation>Saatavilla olevat suodattimet</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/locator/locatorwidget.cpp" line="+563"/>
+        <location filename="../../../src/plugins/coreplugin/locator/locatorwidget.cpp" line="+557"/>
         <source>Open as Centered Popup</source>
         <translation>Avaa keskitettynä ponnahdusikkunana</translation>
     </message>
@@ -2884,12 +3433,12 @@ Voit tehdä tämän kirjoittamalla tämän pikanäppäimen ja välilyönnin Loca
         <translation>virkistää</translation>
     </message>
     <message>
-        <location line="+102"/>
+        <location line="+89"/>
         <source>Type to locate (%1)</source>
         <translation>Etsi kirjoittamalla (% 1)</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/locator/locator.cpp" line="+62"/>
+        <location filename="../../../src/plugins/coreplugin/locator/locator.cpp" line="+67"/>
         <source>Web Search</source>
         <translation>Nettihaku</translation>
     </message>
@@ -2899,12 +3448,22 @@ Voit tehdä tämän kirjoittamalla tämän pikanäppäimen ja välilyönnin Loca
         <translation>Qt Project Bugs</translation>
     </message>
     <message>
-        <location line="+41"/>
+        <location line="+6"/>
+        <source>Triggers a web search with the selected search engine.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Triggers a search in the Qt bug tracker.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+27"/>
         <source>Locate...</source>
         <translation>Paikantaa...</translation>
     </message>
     <message>
-        <location line="+147"/>
+        <location line="+143"/>
         <source>&lt;html&gt;&lt;body style=&quot;color:#909090; font-size:14px&quot;&gt;&lt;div align=&apos;center&apos;&gt;&lt;div style=&quot;font-size:20px&quot;&gt;Open a document&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;hr/&gt;&lt;div style=&quot;margin-top: 5px&quot;&gt;&amp;bull; File &gt; Open File (%1)&lt;/div&gt;&lt;div style=&quot;margin-top: 5px&quot;&gt;&amp;bull; File &gt; Examples &lt;/div&gt;&lt;div style=&quot;margin-top: 5px&quot;&gt;&amp;bull; File &gt; Recent Files&lt;/div&gt;&lt;div style=&quot;margin-top: 5px&quot;&gt;&amp;bull; Drag and drop files here&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;body style=&quot;color:#909090; font-size:14px&quot;&gt;&lt;div align=&apos;center&apos;&gt;&lt;div style=&quot;font-size:20px&quot;&gt;Avaa asiakirja&lt;/div&gt;&lt;table&gt; &lt;tr&gt;&lt;td&gt;&lt;hr/&gt;&lt;div style=&quot;margin-top: 5px&quot;&gt;&amp;bull; Tiedosto &gt; Avaa tiedosto (%1)&lt;/div&gt;&lt;div style=&quot;margin-top: 5px&quot;&gt;&amp;bull; Tiedosto &gt; Esimerkit &lt;/div&gt;&lt;div style=&quot;margin-top: 5px&quot;&gt;&amp;bull; Tiedosto &gt; Viimeisimmät tiedostot&lt;/div&gt;&lt;div style=&quot;margin-top: 5px&quot;&gt;&amp;bull; Vedä ja pudota tiedostoja tähän&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
@@ -2919,7 +3478,7 @@ Voit tehdä tämän kirjoittamalla tämän pikanäppäimen ja välilyönnin Loca
         <translation>&lt;div style=&quot;margin-left: 1em&quot;&gt;- kirjoita &lt;code&gt;%1&amp;lt;space&amp;gt;&amp;lt;pattern&amp;gt;&lt;/code&gt; siirtyäksesi funktion määritykseen&lt;/div&gt;</translation>
     </message>
     <message>
-        <location line="+130"/>
+        <location line="+121"/>
         <source>Updating Locator Caches</source>
         <translation>Päivitetään paikannusvälimuistia</translation>
     </message>
@@ -2930,13 +3489,13 @@ Voit tehdä tämän kirjoittamalla tämän pikanäppäimen ja välilyönnin Loca
     </message>
     <message>
         <location filename="../../../src/plugins/coreplugin/dialogs/externaltoolconfig.cpp" line="-485"/>
-        <location filename="../../../src/plugins/coreplugin/dialogs/shortcutsettings.cpp" line="-298"/>
+        <location filename="../../../src/plugins/coreplugin/dialogs/shortcutsettings.cpp" line="+161"/>
         <location filename="../../../src/plugins/coreplugin/locator/urllocatorfilter.cpp" line="-1"/>
         <source>Add</source>
         <translation>Lisätä</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/locator/locatorsettingspage.cpp" line="-36"/>
+        <location filename="../../../src/plugins/coreplugin/locator/locatorsettingspage.cpp" line="-50"/>
         <source>Refresh interval:</source>
         <translation>Päivitysväli:</translation>
     </message>
@@ -2951,7 +3510,12 @@ Voit tehdä tämän kirjoittamalla tämän pikanäppäimen ja välilyönnin Loca
         <translation> min</translation>
     </message>
     <message>
-        <location line="+65"/>
+        <location line="+9"/>
+        <source>Locator filters show relative paths to the active project when possible.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+71"/>
         <source>Files in Directories</source>
         <translation>Tiedostot hakemistoissa</translation>
     </message>
@@ -2962,7 +3526,7 @@ Voit tehdä tämän kirjoittamalla tämän pikanäppäimen ja välilyönnin Loca
         <translation>URL-malli</translation>
     </message>
     <message>
-        <location line="+105"/>
+        <location line="+108"/>
         <source>Name</source>
         <translation>Nimi</translation>
     </message>
@@ -2987,7 +3551,7 @@ Voit tehdä tämän kirjoittamalla tämän pikanäppäimen ja välilyönnin Loca
         <translation>Mukautettu</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/dialogs/saveitemsdialog.cpp" line="-111"/>
+        <location filename="../../../src/plugins/coreplugin/dialogs/saveitemsdialog.cpp" line="-113"/>
         <source>Save Changes</source>
         <translation>Tallenna muutokset</translation>
     </message>
@@ -3002,40 +3566,41 @@ Voit tehdä tämän kirjoittamalla tämän pikanäppäimen ja välilyönnin Loca
         <translation>Tallenna kaikki tiedostot automaattisesti ennen rakentamista</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/dialogs/shortcutsettings.cpp" line="-112"/>
+        <location filename="../../../src/plugins/coreplugin/dialogs/shortcutsettings.cpp" line="-87"/>
         <source>Keyboard Shortcuts</source>
         <translation>Pikanäppäimet</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/actionmanager/commandmappings.cpp" line="+50"/>
-        <location line="+100"/>
+        <location filename="../../../src/plugins/coreplugin/actionmanager/commandmappings.cpp" line="+46"/>
+        <location line="+95"/>
         <source>Command</source>
         <translation>Komento</translation>
     </message>
     <message>
-        <location line="-101"/>
-        <location line="+101"/>
+        <location line="-96"/>
+        <location line="+96"/>
         <source>Label</source>
         <translation>Label</translation>
     </message>
     <message>
         <location filename="../../../src/plugins/coreplugin/dialogs/shortcutsettings.cpp" line="+1"/>
-        <location line="+12"/>
+        <location line="+15"/>
         <source>Shortcut</source>
         <translation>Pikakuvake</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/actionmanager/commandmappings.cpp" line="-114"/>
+        <location filename="../../../src/plugins/coreplugin/actionmanager/commandmappings.cpp" line="-80"/>
         <source>Command Mappings</source>
         <translation>Komentokartoitukset</translation>
     </message>
     <message>
-        <location line="+12"/>
+        <location line="-17"/>
         <source>Target</source>
         <translation>Kohde</translation>
     </message>
     <message>
         <location line="+4"/>
+        <location filename="../../../src/plugins/coreplugin/loggingviewer.cpp" line="-208"/>
         <source>Reset All</source>
         <translation>Nollaa kaikki</translation>
     </message>
@@ -3063,19 +3628,19 @@ Voit tehdä tämän kirjoittamalla tämän pikanäppäimen ja välilyönnin Loca
     <message>
         <location line="-5"/>
         <location filename="../../../src/plugins/coreplugin/dialogs/externaltoolconfig.cpp" line="+6"/>
-        <location filename="../../../src/plugins/coreplugin/generalsettings.cpp" line="-206"/>
+        <location filename="../../../src/plugins/coreplugin/generalsettings.cpp" line="-278"/>
         <location filename="../../../src/plugins/coreplugin/systemsettings.cpp" line="-1"/>
-        <location line="+6"/>
+        <location line="+8"/>
         <source>Reset</source>
         <translation>Nollaa</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/coreconstants.h" line="+51"/>
+        <location filename="../../../src/plugins/coreplugin/coreconstants.h" line="+56"/>
         <source>Plain Text Editor</source>
         <translation>Pelkkä tekstieditori</translation>
     </message>
     <message>
-        <location line="+38"/>
+        <location line="+39"/>
         <source>Show Left Sidebar</source>
         <translation>Näytä vasen sivupalkki</translation>
     </message>
@@ -3095,7 +3660,7 @@ Voit tehdä tämän kirjoittamalla tämän pikanäppäimen ja välilyönnin Loca
         <translation>Piilota oikea sivupalkki</translation>
     </message>
     <message>
-        <location line="+100"/>
+        <location line="+103"/>
         <source>Qt</source>
         <translation>Qt</translation>
     </message>
@@ -3110,13 +3675,18 @@ Voit tehdä tämän kirjoittamalla tämän pikanäppäimen ja välilyönnin Loca
         <translation>Binäärieditori</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/dialogs/settingsdialog.cpp" line="+433"/>
+        <location filename="../../../src/plugins/coreplugin/dialogs/settingsdialog.cpp" line="+484"/>
+        <source>Sort categories</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
         <source>Preferences</source>
         <translation>Asetukset</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/foldernavigationwidget.cpp" line="+492"/>
-        <location filename="../../../src/plugins/coreplugin/locator/locatorwidget.cpp" line="-79"/>
+        <location filename="../../../src/plugins/coreplugin/foldernavigationwidget.cpp" line="+488"/>
+        <location filename="../../../src/plugins/coreplugin/locator/locatorwidget.cpp" line="-66"/>
         <source>Options</source>
         <translation>Vaihtoehdot</translation>
     </message>
@@ -3202,7 +3772,7 @@ Voit tehdä tämän kirjoittamalla tämän pikanäppäimen ja välilyönnin Loca
         <translation>Muokkaa vi:llä</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/actionsfilter.cpp" line="+40"/>
+        <location filename="../../../src/plugins/coreplugin/actionsfilter.cpp" line="+50"/>
         <source>Global Actions &amp; Actions from the Menu</source>
         <translation>Globaalit toiminnot ja toiminnot valikosta</translation>
     </message>
@@ -3212,7 +3782,17 @@ Voit tehdä tämän kirjoittamalla tämän pikanäppäimen ja välilyönnin Loca
         <translation>Käynnistää toiminnon. Jos se on valikosta, se vastaa mitä tahansa valikkohierarkian osaa, erotettuna merkillä &quot;&gt;&quot;. Esimerkiksi &quot;sess def&quot; vastaa &quot;Tiedosto &gt; Istunnot &gt; Oletus&quot;.</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/coreplugin.cpp" line="+145"/>
+        <location filename="../../../src/plugins/coreplugin/coreplugin.cpp" line="+156"/>
+        <source>Proxy Authentication Required</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Do not ask again.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+24"/>
         <source>No themes found in installation.</source>
         <translation>Asennuksessa ei löytynyt teemoja.</translation>
     </message>
@@ -3262,22 +3842,22 @@ Voit tehdä tämän kirjoittamalla tämän pikanäppäimen ja välilyönnin Loca
         <translation>Onko % 1 käynnissä Windowsissa?</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+6"/>
         <source>Is %1 running on OS X?</source>
         <translation>Onko % 1 käynnissä OS X:ssä?</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+4"/>
         <source>Is %1 running on Linux?</source>
         <translation>Onko % 1 käynnissä Linuxissa?</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+4"/>
         <source>Is %1 running on any unix-based platform?</source>
         <translation>Onko % 1 käynnissä millä tahansa unix-pohjaisella alustalla?</translation>
     </message>
     <message>
-        <location line="+4"/>
+        <location line="+6"/>
         <source>The path list separator for the platform.</source>
         <translation>Alustan polkuluettelon erotin.</translation>
     </message>
@@ -3288,8 +3868,18 @@ Voit tehdä tämän kirjoittamalla tämän pikanäppäimen ja välilyönnin Loca
     </message>
     <message>
         <location line="+3"/>
+        <source>The path to the running %1 itself.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
         <source>The directory where %1 finds its pre-installed resources.</source>
         <translation>Hakemisto, josta %1 löytää esiasennetut resurssinsa.</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>The directory where %1 puts custom user data.</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
@@ -3312,12 +3902,17 @@ Voit tehdä tämän kirjoittamalla tämän pikanäppäimen ja välilyönnin Loca
         <translation>Kommentti.</translation>
     </message>
     <message>
-        <location line="+43"/>
+        <location line="+2"/>
+        <source>Convert string to pure ASCII.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+50"/>
         <source>%1 &gt; %2 Preferences...</source>
         <translation>%1 &gt; %2 Asetukset...</translation>
     </message>
     <message>
-        <location line="+103"/>
+        <location line="+96"/>
         <source>Create Folder</source>
         <translation>Luo kansio</translation>
     </message>
@@ -3344,14 +3939,14 @@ Et voi tallentaa %2 asetuksia.</translation>
         <translation>Tiedosto on virheellinen.</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+4"/>
         <source>Error reading settings file &quot;%1&quot;: %2
 You will likely experience further problems using this instance of %3.</source>
         <translation>Virhe luettaessa asetustiedostoa &quot;%1&quot;: %2
 Tulet todennäköisesti kohtaamaan lisää ongelmia tämän %3:n esiintymän käyttämisessä.</translation>
     </message>
     <message>
-        <location line="+13"/>
+        <location line="+14"/>
         <source>%1 collects crash reports for the sole purpose of fixing bugs. To disable this feature go to %2.</source>
         <translation>%1 kerää kaatumisraportteja ainoastaan virheiden korjaamista varten. Voit poistaa tämän ominaisuuden käytöstä siirtymällä kohtaan %2.</translation>
     </message>
@@ -3361,7 +3956,7 @@ Tulet todennäköisesti kohtaamaan lisää ongelmia tämän %3:n esiintymän kä
         <translation>%1 voi kerätä kaatumisraportteja vain virheiden korjaamista varten. Ota tämä ominaisuus käyttöön siirtymällä kohtaan %2.</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+6"/>
         <source> &gt; Preferences &gt; Environment &gt; System</source>
         <translation> &gt; Asetukset &gt; Ympäristö &gt; Järjestelmä</translation>
     </message>
@@ -3376,22 +3971,22 @@ Tulet todennäköisesti kohtaamaan lisää ongelmia tämän %3:n esiintymän kä
         <translation>%1 käyttää Google Crashpadia kaatumisten keräämiseen ja lähettämiseen taustajärjestelmäämme käsiteltäväksi. Crashpad voi kaapata mielivaltaista sisältöä kaatuneen prosessin muistista, mukaan lukien käyttäjän arkaluontoiset tiedot, URL-osoitteet ja mitä tahansa muuta sisältöä, johon käyttäjät ovat luottaneet %1:een. Kerättyjä kaatumisraportteja käytetään kuitenkin vain virheiden korjaamiseen.</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+6"/>
         <source>More information:</source>
         <translation>Lisää tietoa:</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+3"/>
         <source>Crashpad Overview</source>
         <translation>Crashpadin yleiskatsaus</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+3"/>
         <source>%1 security policy</source>
         <translation>%1 suojauskäytäntö</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/designmode.cpp" line="+69"/>
+        <location filename="../../../src/plugins/coreplugin/designmode.cpp" line="+88"/>
         <source>Design</source>
         <translation>Design</translation>
     </message>
@@ -3406,7 +4001,7 @@ Tulet todennäköisesti kohtaamaan lisää ongelmia tämän %3:n esiintymän kä
         <translation>Lisää tiedostot versionhallintaan (% 1)</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/dialogs/codecselector.cpp" line="+43"/>
+        <location filename="../../../src/plugins/coreplugin/dialogs/codecselector.cpp" line="+68"/>
         <source>Text Encoding</source>
         <translation>Tekstin koodaus</translation>
     </message>
@@ -3472,12 +4067,12 @@ Tulet todennäköisesti kohtaamaan lisää ongelmia tämän %3:n esiintymän kä
         <translation>Tuetut alustat</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/dialogs/promptoverwritedialog.cpp" line="+48"/>
+        <location filename="../../../src/plugins/coreplugin/dialogs/promptoverwritedialog.cpp" line="+61"/>
         <source>Overwrite Existing Files</source>
         <translation>Korvaa olemassa olevat tiedostot</translation>
     </message>
     <message>
-        <location line="+31"/>
+        <location line="+33"/>
         <source>The following files already exist in the folder
 %1.
 Would you like to overwrite them?</source>
@@ -3488,7 +4083,7 @@ Haluatko korvata ne?</translation>
     <message>
         <location filename="../../../src/plugins/coreplugin/dialogs/readonlyfilesdialog.cpp" line="+1"/>
         <location line="+299"/>
-        <location filename="../../../src/plugins/coreplugin/editormanager/editormanager.cpp" line="-857"/>
+        <location filename="../../../src/plugins/coreplugin/editormanager/editormanager.cpp" line="-885"/>
         <location filename="../../../src/plugins/coreplugin/editortoolbar.cpp" line="-5"/>
         <source>Make Writable</source>
         <translation>Tee kirjoitettavaksi</translation>
@@ -3588,20 +4183,19 @@ Versionhallintajärjestelmää ei löytynyt.</translation>
         <translation>Muuta &amp;lupaa</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+8"/>
         <source>Select all, if possible: </source>
         <translation>Valitse kaikki, jos mahdollista: </translation>
     </message>
     <message>
-        <location line="+83"/>
+        <location line="+86"/>
         <source>The following files are not checked out yet.
 Do you want to check them out now?</source>
         <translation>Seuraavia tiedostoja ei ole vielä kirjattu ulos.
 Haluatko tarkistaa ne nyt?</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/dialogs/restartdialog.cpp" line="+16"/>
-        <location filename="../../../src/plugins/coreplugin/generalsettings.cpp" line="+18"/>
+        <location filename="../../../src/plugins/coreplugin/icore.cpp" line="-943"/>
         <source>Restart Required</source>
         <translation>Uudelleenkäynnistys vaaditaan</translation>
     </message>
@@ -3616,7 +4210,7 @@ Haluatko tarkistaa ne nyt?</translation>
         <translation>Käynnistä uudelleen nyt</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/editormanager/documentmodel.cpp" line="+294"/>
+        <location filename="../../../src/plugins/coreplugin/editormanager/documentmodel.cpp" line="+288"/>
         <source>&lt;no document&gt;</source>
         <translation>&lt;ei asiakirjaa&gt;</translation>
     </message>
@@ -3631,17 +4225,17 @@ Haluatko tarkistaa ne nyt?</translation>
         <translation>Järjestelmäeditori</translation>
     </message>
     <message>
-        <location line="+12"/>
+        <location line="+10"/>
         <source>Could not open URL %1.</source>
         <translation>URL-osoitetta %1 ei voitu avata.</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/externaltool.cpp" line="+592"/>
+        <location filename="../../../src/plugins/coreplugin/externaltool.cpp" line="+590"/>
         <source>Could not find executable for &quot;%1&quot; (expanded &quot;%2&quot;)</source>
         <translation>Ei löytynyt suoritettavaa tiedostoa &quot;% 1&quot; (laajennettu &quot;% 2&quot;)</translation>
     </message>
     <message>
-        <location line="+52"/>
+        <location line="+50"/>
         <source>Starting external tool &quot;%1&quot;</source>
         <translation>Käynnistetään ulkoinen työkalu &quot;% 1&quot;</translation>
     </message>
@@ -3656,7 +4250,7 @@ Haluatko tarkistaa ne nyt?</translation>
         <translation>&quot;%1&quot; päättyi virheellä</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/externaltoolmanager.cpp" line="+60"/>
+        <location filename="../../../src/plugins/coreplugin/externaltoolmanager.cpp" line="+59"/>
         <source>&amp;External</source>
         <translation>&amp;Ulkoinen</translation>
     </message>
@@ -3671,7 +4265,7 @@ Haluatko tarkistaa ne nyt?</translation>
         <translation>Virhe: Ulkoisella työkalulla %1 on päällekkäinen tunnus</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/fileutils.cpp" line="+42"/>
+        <location filename="../../../src/plugins/coreplugin/fileutils.cpp" line="+60"/>
         <source>Launching a file browser failed</source>
         <translation>Tiedostoselaimen käynnistäminen epäonnistui</translation>
     </message>
@@ -3698,27 +4292,25 @@ Haluatko tarkistaa ne nyt?</translation>
 %2</translation>
     </message>
     <message>
-        <location line="+16"/>
         <source>Launching Windows Explorer Failed</source>
-        <translation>Windowsin Resurssienhallinnan käynnistäminen epäonnistui</translation>
+        <translation type="vanished">Windowsin Resurssienhallinnan käynnistäminen epäonnistui</translation>
     </message>
     <message>
-        <location line="+1"/>
         <source>Could not find explorer.exe in path to launch Windows Explorer.</source>
-        <translation>Explorer.exe-tiedostoa ei löytynyt polusta Windowsin Resurssienhallinnan käynnistämiseksi.</translation>
+        <translation type="vanished">Explorer.exe-tiedostoa ei löytynyt polusta Windowsin Resurssienhallinnan käynnistämiseksi.</translation>
     </message>
     <message>
-        <location line="+18"/>
+        <location line="+30"/>
         <source>The command for file browser is not set.</source>
         <translation>Tiedostoselaimen komentoa ei ole asetettu.</translation>
     </message>
     <message>
-        <location line="+8"/>
+        <location line="+4"/>
         <source>Error while starting file browser.</source>
         <translation>Virhe käynnistettäessä tiedostoselainta.</translation>
     </message>
     <message>
-        <location line="+24"/>
+        <location line="+23"/>
         <source>Find in This Directory...</source>
         <translation>Etsi tästä hakemistosta...</translation>
     </message>
@@ -3770,12 +4362,12 @@ Haluatko tarkistaa ne nyt?</translation>
         <translation>Tiedoston &quot;%1&quot; poistaminen epäonnistui.</translation>
     </message>
     <message>
-        <location line="+37"/>
+        <location line="+40"/>
         <source>Failed to rename the include guard in file &quot;%1&quot;.</source>
         <translation>Sisällytyssuojan uudelleennimeäminen tiedostossa &quot;%1&quot; epäonnistui.</translation>
     </message>
     <message numerus="yes">
-        <location filename="../../../src/plugins/coreplugin/find/currentdocumentfind.cpp" line="+130"/>
+        <location filename="../../../src/plugins/coreplugin/find/currentdocumentfind.cpp" line="+131"/>
         <source>%n occurrences replaced.</source>
         <translation>
             <numerusform>%n esiintymää korvattu.</numerusform>
@@ -3783,7 +4375,7 @@ Haluatko tarkistaa ne nyt?</translation>
         </translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/find/ifindfilter.cpp" line="+323"/>
+        <location filename="../../../src/plugins/coreplugin/find/ifindfilter.cpp" line="+369"/>
         <source>Case sensitive</source>
         <translation>Kirjainkoolla on merkitystä</translation>
     </message>
@@ -3866,7 +4458,7 @@ Haluatko tarkistaa ne nyt?</translation>
         <translation>Jatkaa</translation>
     </message>
     <message>
-        <location line="+179"/>
+        <location line="+184"/>
         <source>Search was canceled.</source>
         <translation>Haku peruttiin.</translation>
     </message>
@@ -3889,7 +4481,7 @@ Haluatko tarkistaa ne nyt?</translation>
         <translation>Ei hakua vastaavia tuloksia.</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/icore.cpp" line="+294"/>
+        <location filename="../../../src/plugins/coreplugin/icore.cpp" line="-415"/>
         <source>Configure...</source>
         <comment>msgShowOptionsDialog</comment>
         <translation>Määritä...</translation>
@@ -3907,37 +4499,35 @@ Haluatko tarkistaa ne nyt?</translation>
         <translation>Avaa Asetukset-valintaikkuna.</translation>
     </message>
     <message>
-        <location line="+315"/>
         <source> (%1)</source>
-        <translation> (% 1)</translation>
+        <translation type="vanished"> (% 1)</translation>
     </message>
     <message>
-        <location line="+1"/>
         <source>%1 %2%3</source>
-        <translation>%1 %2%3</translation>
+        <translation type="vanished">%1 %2%3</translation>
     </message>
     <message>
-        <location line="+10"/>
+        <location line="+759"/>
         <source>Based on Qt %1 (%2, %3)</source>
         <translation>Perustuu Qt % 1 (% 2, % 3)</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/idocument.cpp" line="+618"/>
+        <location filename="../../../src/plugins/coreplugin/idocument.cpp" line="+672"/>
         <source>File was restored from auto-saved copy. Select Save to confirm or Revert to Saved to discard changes.</source>
         <translation>Tiedosto palautettiin automaattisesti tallennetusta kopiosta. Vahvista valitsemalla Tallenna tai hylkää muutokset valitsemalla Palauta tallennettu.</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/iwizardfactory.cpp" line="+186"/>
+        <location filename="../../../src/plugins/coreplugin/iwizardfactory.cpp" line="+199"/>
         <source>Factory with id=&quot;%1&quot; already registered. Deleting.</source>
         <translation>Tehdas, jonka id=&quot;%1&quot; on jo rekisteröity. Poistetaan.</translation>
     </message>
     <message>
-        <location line="+218"/>
+        <location line="+230"/>
         <source>Reload All Wizards</source>
         <translation>Lataa kaikki ohjatut toiminnot uudelleen</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+12"/>
         <source>Inspect Wizard State</source>
         <translation>Tarkista ohjatun toiminnon tila</translation>
     </message>
@@ -3974,22 +4564,22 @@ Do you want to kill it?</source>
 Haluatko tappaa sen?</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+3"/>
         <source>Kill Previous Process?</source>
         <translation>Tappaa edellinen prosessi?</translation>
     </message>
     <message>
-        <location line="+48"/>
+        <location line="+46"/>
         <source>Could not find executable for &quot;%1&quot;.</source>
         <translation>Ei löytynyt suoritettavaa tiedostoa &quot;%1&quot;.</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+6"/>
         <source>Starting command &quot;%1&quot;.</source>
         <translation>Käynnistetään komento &quot;%1&quot;.</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/locator/externaltoolsfilter.cpp" line="+20"/>
+        <location filename="../../../src/plugins/coreplugin/locator/externaltoolsfilter.cpp" line="+21"/>
         <source>Run External Tool</source>
         <translation>Suorita ulkoinen työkalu</translation>
     </message>
@@ -3999,7 +4589,7 @@ Haluatko tappaa sen?</translation>
         <translation>Suorittaa ulkoisen työkalun, jonka olet määrittänyt asetuksissa (Ympäristö &gt; Ulkoiset työkalut).</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/locator/javascriptfilter.cpp" line="+20"/>
+        <location filename="../../../src/plugins/coreplugin/locator/javascriptfilter.cpp" line="+360"/>
         <source>Evaluate JavaScript</source>
         <translation>Arvioi JavaScript</translation>
     </message>
@@ -4009,28 +4599,43 @@ Haluatko tappaa sen?</translation>
         <translation>Arvioi mielivaltaiset JavaScript-lausekkeet ja kopioi tulokset.</translation>
     </message>
     <message>
-        <location line="+34"/>
+        <location line="+18"/>
         <source>Reset Engine</source>
         <translation>Nollaa moottori</translation>
     </message>
     <message>
-        <location line="+4"/>
+        <location line="-58"/>
         <source>Engine aborted after timeout.</source>
         <translation>Moottori katkesi aikakatkaisun jälkeen.</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="-190"/>
+        <source>The evaluation was interrupted.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Engine reinitialized properly.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location line="+1"/>
+        <source>Engine did not reinitialize properly.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+277"/>
+        <location line="+4"/>
         <source>Copy to clipboard: %1</source>
         <translation>Kopioi leikepöydälle: %1</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/locator/spotlightlocatorfilter.cpp" line="-198"/>
+        <location filename="../../../src/plugins/coreplugin/locator/spotlightlocatorfilter.cpp" line="-74"/>
         <source>Locator: Error occurred when running &quot;%1&quot;.</source>
         <translation>Locator: Virhe suoritettaessa &quot;%1&quot;.</translation>
     </message>
     <message>
-        <location line="+125"/>
+        <location line="-71"/>
         <source>Locator query string.</source>
         <translation>Paikannin kyselymerkkijono.</translation>
     </message>
@@ -4050,17 +4655,26 @@ Haluatko tappaa sen?</translation>
         <translation>Paikannin kyselymerkkijono säännöllisenä lausekkeena.</translation>
     </message>
     <message>
-        <location line="+15"/>
+        <location line="+14"/>
         <source>File Name Index</source>
         <translation>Tiedostonimihakemisto</translation>
     </message>
     <message>
-        <location line="+2"/>
-        <source>Matches files from a global file system index (Spotlight, Locate, Everything). Append &quot;+&lt;number&gt;&quot; or &quot;:&lt;number&gt;&quot; to jump to the given line number. Append another &quot;+&lt;number&gt;&quot; or &quot;:&lt;number&gt;&quot; to jump to the column number as well.</source>
-        <translation>Vastaa tiedostoja maailmanlaajuisesta tiedostojärjestelmähakemistosta (Spotlight, Locate, Everything). Liitä &quot;+&lt;numero&gt;&quot; tai &quot;:&lt;numero&gt;&quot; hypätäksesi annettuun rivinumeroon. Lisää toinen &quot;+&lt;numero&gt;&quot; tai &quot;:&lt;numero&gt;&quot; hypätäksesi myös sarakkeen numeroon.</translation>
+        <location line="+1"/>
+        <source>Locates files from a global file system index (Spotlight, Locate, Everything). Append &quot;+&lt;number&gt;&quot; or &quot;:&lt;number&gt;&quot; to jump to the given line number. Append another &quot;+&lt;number&gt;&quot; or &quot;:&lt;number&gt;&quot; to jump to the column number as well.</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+43"/>
+        <location line="+113"/>
+        <source>Sort results</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Matches files from a global file system index (Spotlight, Locate, Everything). Append &quot;+&lt;number&gt;&quot; or &quot;:&lt;number&gt;&quot; to jump to the given line number. Append another &quot;+&lt;number&gt;&quot; or &quot;:&lt;number&gt;&quot; to jump to the column number as well.</source>
+        <translation type="vanished">Vastaa tiedostoja maailmanlaajuisesta tiedostojärjestelmähakemistosta (Spotlight, Locate, Everything). Liitä &quot;+&lt;numero&gt;&quot; tai &quot;:&lt;numero&gt;&quot; hypätäksesi annettuun rivinumeroon. Lisää toinen &quot;+&lt;numero&gt;&quot; tai &quot;:&lt;numero&gt;&quot; hypätäksesi myös sarakkeen numeroon.</translation>
+    </message>
+    <message>
+        <location line="+4"/>
         <source>Case sensitive:</source>
         <translation>Kirjainkoon erottelu:</translation>
     </message>
@@ -4087,19 +4701,23 @@ Muokkaa kohdetta kaksoisnapsauttamalla.</translation>
         <translation>URL-osoitteet:</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/messageoutputwindow.cpp" line="+45"/>
+        <location filename="../../../src/plugins/coreplugin/messageoutputwindow.cpp" line="-22"/>
         <source>Serial Terminal</source>
         <translation>Sarjapääte</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/mimetypemagicdialog.cpp" line="-128"/>
+        <location filename="../../../src/plugins/coreplugin/mimetypemagicdialog.cpp" line="-129"/>
         <source>Add Magic Header</source>
         <translation>Lisää Magic Header</translation>
     </message>
     <message>
-        <location line="+3"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;MIME magic data is interpreted as defined by the Shared MIME-info Database specification from &lt;a href=&quot;http://standards.freedesktop.org/shared-mime-info-spec/shared-mime-info-spec-latest.html&quot;&gt;freedesktop.org&lt;/a&gt;.&lt;hr/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;MIME-maagiset tiedot tulkitaan Shared MIME-info Database -määrityksen mukaisesti osoitteessa &lt;a href=&quot;http://standards.freedesktop.org/shared-mime-info- spec/shared-mime-info-spec-latest.html&quot;&gt;freedesktop.org&lt;/a&gt;.&lt;hr/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation type="vanished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;MIME-maagiset tiedot tulkitaan Shared MIME-info Database -määrityksen mukaisesti osoitteessa &lt;a href=&quot;http://standards.freedesktop.org/shared-mime-info- spec/shared-mime-info-spec-latest.html&quot;&gt;freedesktop.org&lt;/a&gt;.&lt;hr/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;MIME magic data is interpreted as defined by the Shared MIME-info Database specification from &lt;a href=&quot;https://www.freedesktop.org/wiki/Specifications/shared-mime-info-spec/&quot;&gt;freedesktop.org&lt;/a&gt;.&lt;hr/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+9"/>
@@ -4192,23 +4810,34 @@ Muokkaa kohdetta kaksoisnapsauttamalla.</translation>
         <translation>Sisäinen virhe: tyyppi on virheellinen</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/modemanager.cpp" line="+219"/>
+        <location filename="../../../src/plugins/coreplugin/modemanager.cpp" line="+215"/>
         <source>Switch to &lt;b&gt;%1&lt;/b&gt; mode</source>
         <translation>Vaihda &lt;b&gt;%1&lt;/b&gt;-tilaan</translation>
     </message>
     <message>
         <location filename="../../../src/plugins/coreplugin/navigationsubwidget.cpp" line="+167"/>
-        <location filename="../../../src/plugins/coreplugin/navigationwidget.cpp" line="+235"/>
+        <location filename="../../../src/plugins/coreplugin/navigationwidget.cpp" line="+233"/>
         <source>Activate %1 View</source>
         <translation>Aktivoi %1 View</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/outputwindow.cpp" line="-619"/>
+        <location filename="../../../src/plugins/coreplugin/outputwindow.cpp" line="-244"/>
+        <source>output.txt</source>
+        <extracomment>default file name suggested for saving text from output views</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+210"/>
         <source>Zoom: %1%</source>
         <translation>Zoomaus: %1%</translation>
     </message>
+    <message>
+        <location line="+18"/>
+        <source>Save Contents...</source>
+        <translation type="unfinished"></translation>
+    </message>
     <message numerus="yes">
-        <location line="+145"/>
+        <location line="+159"/>
         <source>Elided %n characters due to Application Output settings</source>
         <translation>
             <numerusform>Poistettu %n merkkiä sovelluksen lähtöasetusten vuoksi</numerusform>
@@ -4234,7 +4863,7 @@ Muokkaa kohdetta kaksoisnapsauttamalla.</translation>
         <translation>Virhe: %L1!</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/patchtool.cpp" line="+52"/>
+        <location filename="../../../src/plugins/coreplugin/patchtool.cpp" line="+39"/>
         <source>Apply Chunk</source>
         <translation>Levitä Chunk</translation>
     </message>
@@ -4269,22 +4898,30 @@ Muokkaa kohdetta kaksoisnapsauttamalla.</translation>
         <translation>Yleisissä &quot;Ympäristö&quot;-asetuksissa määritettyä patch-komentoa ei ole olemassa.</translation>
     </message>
     <message>
-        <location line="+22"/>
-        <source>Running in %1: %2 %3</source>
-        <translation>Käynnissä %1: %2 %3</translation>
+        <location line="+23"/>
+        <source>Running in &quot;%1&quot;: %2 %3.</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+6"/>
+        <location line="+17"/>
+        <source>A timeout occurred running &quot;%1&quot;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Running in %1: %2 %3</source>
+        <translation type="vanished">Käynnissä %1: %2 %3</translation>
+    </message>
+    <message>
+        <location line="-11"/>
         <source>Unable to launch &quot;%1&quot;: %2</source>
         <translation>Ei voida käynnistää &quot;%1&quot;: %2</translation>
     </message>
     <message>
-        <location line="+10"/>
         <source>A timeout occurred running &quot;%1&quot;</source>
-        <translation>Aikakatkaisu suorituksessa &quot;% 1&quot;</translation>
+        <translation type="vanished">Aikakatkaisu suorituksessa &quot;% 1&quot;</translation>
     </message>
     <message>
-        <location line="+18"/>
+        <location line="+28"/>
         <source>&quot;%1&quot; crashed.</source>
         <translation>&quot;%1&quot; kaatui.</translation>
     </message>
@@ -4294,43 +4931,41 @@ Muokkaa kohdetta kaksoisnapsauttamalla.</translation>
         <translation>&quot;%1&quot; epäonnistui (poistumiskoodi %2).</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/plugininstallwizard.cpp" line="-80"/>
+        <location filename="../../../src/plugins/coreplugin/plugininstallwizard.cpp" line="-109"/>
         <source>Source</source>
         <translation>Lähde</translation>
     </message>
     <message>
-        <location line="+6"/>
+        <location line="+4"/>
         <source>Choose source location. This can be a plugin library file or a zip file.</source>
         <translation>Valitse lähteen sijainti. Tämä voi olla laajennuskirjastotiedosto tai zip-tiedosto.</translation>
     </message>
     <message>
-        <location line="+29"/>
+        <location line="+28"/>
         <source>File does not exist.</source>
         <translation>Tiedostoa ei ole.</translation>
     </message>
     <message>
-        <location line="+38"/>
+        <location line="+72"/>
         <source>Check Archive</source>
         <translation>Tarkista Arkisto</translation>
     </message>
     <message>
-        <location line="+28"/>
+        <location line="+29"/>
         <source>Checking archive...</source>
         <translation>Tarkistetaan arkistoa...</translation>
     </message>
     <message>
-        <location line="+9"/>
         <source>The file is not an archive.</source>
-        <translation>Tiedosto ei ole arkisto.</translation>
+        <translation type="vanished">Tiedosto ei ole arkisto.</translation>
     </message>
     <message>
-        <location line="+26"/>
-        <location line="+14"/>
+        <location line="-19"/>
         <source>Canceled.</source>
         <translation>Peruutettu.</translation>
     </message>
     <message>
-        <location line="-11"/>
+        <location line="+40"/>
         <source>There was an error while unarchiving.</source>
         <translation>Arkistoinnin purkamisessa tapahtui virhe.</translation>
     </message>
@@ -4340,27 +4975,27 @@ Muokkaa kohdetta kaksoisnapsauttamalla.</translation>
         <translation>Arkisto on kunnossa.</translation>
     </message>
     <message>
-        <location line="+43"/>
+        <location line="-82"/>
         <source>Plugin requires an incompatible version of %1 (%2).</source>
         <translation>Plugin vaatii yhteensopimattoman version %1 (%2).</translation>
     </message>
     <message>
-        <location line="+10"/>
+        <location line="+7"/>
         <source>Did not find %1 plugin.</source>
         <translation>% 1 -laajennusta ei löytynyt.</translation>
     </message>
     <message>
-        <location line="+36"/>
+        <location line="+117"/>
         <source>Install Location</source>
         <translation>Asenna sijainti</translation>
     </message>
     <message>
-        <location line="+4"/>
+        <location line="+2"/>
         <source>Choose install location.</source>
         <translation>Valitse asennuspaikka.</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+3"/>
         <source>User plugins</source>
         <translation>Käyttäjälaajennukset</translation>
     </message>
@@ -4370,22 +5005,22 @@ Muokkaa kohdetta kaksoisnapsauttamalla.</translation>
         <translation>Laajennus on kaikkien yhteensopivien %1-asennusten käytettävissä, mutta vain nykyiselle käyttäjälle.</translation>
     </message>
     <message>
-        <location line="+11"/>
+        <location line="+7"/>
         <source>%1 installation</source>
         <translation>%1 asennus</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+2"/>
         <source>The plugin will be available only to this %1 installation, but for all users that can access it.</source>
         <translation>Lisäosa on saatavilla vain tälle %1 asennukselle, mutta kaikille käyttäjille, jotka voivat käyttää sitä.</translation>
     </message>
     <message>
-        <location line="+27"/>
+        <location line="+30"/>
         <source>Summary</source>
         <translation>Yhteenveto</translation>
     </message>
     <message>
-        <location line="+13"/>
+        <location line="+10"/>
         <source>&quot;%1&quot; will be installed into &quot;%2&quot;.</source>
         <translation>&quot;% 1&quot; asennetaan kansioon &quot;% 2&quot;.</translation>
     </message>
@@ -4420,17 +5055,17 @@ Muokkaa kohdetta kaksoisnapsauttamalla.</translation>
         <translation>Asenna Plugin</translation>
     </message>
     <message>
-        <location line="+28"/>
+        <location line="+33"/>
         <source>Failed to Copy Plugin Files</source>
         <translation>Plugin-tiedostojen kopioiminen epäonnistui</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/progressmanager/progressmanager.cpp" line="+298"/>
+        <location filename="../../../src/plugins/coreplugin/progressmanager/progressmanager.cpp" line="+338"/>
         <source>Toggle Progress Details</source>
         <translation>Vaihda edistymistiedot</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/themechooser.cpp" line="+49"/>
+        <location filename="../../../src/plugins/coreplugin/themechooser.cpp" line="+47"/>
         <source>unnamed</source>
         <translation>nimetön</translation>
     </message>
@@ -4440,12 +5075,12 @@ Muokkaa kohdetta kaksoisnapsauttamalla.</translation>
         <translation>Nykyinen teema: %1</translation>
     </message>
     <message>
-        <location line="+48"/>
+        <location line="+47"/>
         <source>The theme change will take effect after restart.</source>
         <translation>Teeman muutos tulee voimaan uudelleenkäynnistyksen jälkeen.</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/vcsmanager.cpp" line="+265"/>
+        <location filename="../../../src/plugins/coreplugin/vcsmanager.cpp" line="+263"/>
         <source>%1 repository was detected but %1 is not configured.</source>
         <translation>%1 arkisto havaittiin, mutta %1:tä ei ole määritetty.</translation>
     </message>
@@ -4455,12 +5090,21 @@ Muokkaa kohdetta kaksoisnapsauttamalla.</translation>
         <translation>Versionhallinta</translation>
     </message>
     <message>
-        <location line="+1"/>
         <source>Remove the following files from the version control system (%2)? %1Note: This might remove the local file.</source>
-        <translation>Poistetaanko seuraavat tiedostot versionhallintajärjestelmästä (%2)? %1Huomautus: Tämä saattaa poistaa paikallisen tiedoston.</translation>
+        <translation type="vanished">Poistetaanko seuraavat tiedostot versionhallintajärjestelmästä (%2)? %1Huomautus: Tämä saattaa poistaa paikallisen tiedoston.</translation>
     </message>
     <message>
-        <location line="+17"/>
+        <location line="+1"/>
+        <source>Remove the following files from the version control system (%1)?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Note: This might remove the local file.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+16"/>
         <source>Add to Version Control</source>
         <translation>Lisää versionhallintaan</translation>
     </message>
@@ -4506,17 +5150,22 @@ versionhallintaan (% 2)
 %2</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/versiondialog.cpp" line="+35"/>
+        <location filename="../../../src/plugins/coreplugin/versiondialog.cpp" line="+37"/>
         <source>About %1</source>
         <translation>Tietoja %1</translation>
     </message>
     <message>
-        <location line="+8"/>
+        <location line="+11"/>
+        <source>Copy and Close</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/coreplugin/icore.cpp" line="+6"/>
         <source>&lt;br/&gt;From revision %1&lt;br/&gt;</source>
         <translation>&lt;br/&gt;Versiosta %1&lt;br/&gt;</translation>
     </message>
     <message>
-        <location line="+6"/>
+        <location line="+7"/>
         <source>&lt;br/&gt;Built on %1 %2&lt;br/&gt;</source>
         <translation>&lt;br/&gt;Rakennettu: %1 %2&lt;br/&gt;</translation>
     </message>
@@ -4531,25 +5180,50 @@ versionhallintaan (% 2)
         <translation>Qt-logo sekä Qt®, Qt Quick®, Built with Qt®, Boot to Qt®, Qt Quick Compiler®, Qt Enterprise®, Qt Mobile® ja Qt Embedded® ovat The Qt Company Ltd:n rekisteröityjä tavaramerkkejä.</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/welcomepagehelper.cpp" line="+555"/>
+        <location filename="../../../src/plugins/coreplugin/welcomepagehelper.cpp" line="+862"/>
         <source>Tags:</source>
         <translation>Tunnisteet:</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/windowsupport.cpp" line="+131"/>
+        <location line="+345"/>
+        <source>Show All</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+75"/>
+        <source>Back</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/coreplugin/windowsupport.cpp" line="-5"/>
         <source>Exit Full Screen</source>
         <translation>Poistu koko näytön tilasta</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+3"/>
         <source>Enter Full Screen</source>
         <translation>Siirry koko näytön tilaan</translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/coreplugin/locator/opendocumentsfilter.cpp" line="+1"/>
+        <source>Switches to an open document.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/python/pythonconstants.h" line="+14"/>
+        <source>Python Editor</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/texteditor/markdowneditor.cpp" line="+542"/>
+        <source>Markdown Editor</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>QtC::DiffEditor</name>
     <message>
-        <location filename="../../../src/plugins/diffeditor/diffeditor.cpp" line="+198"/>
+        <location filename="../../../src/plugins/diffeditor/diffeditor.cpp" line="+197"/>
         <source>Context lines:</source>
         <translation>Kontekstirivit:</translation>
     </message>
@@ -4565,23 +5239,23 @@ versionhallintaan (% 2)
         <translation>Reload Diff</translation>
     </message>
     <message>
-        <location line="+126"/>
+        <location line="+128"/>
         <source>[%1] vs. [%2] %3</source>
         <translation>[%1] vs. [%2] %3</translation>
     </message>
     <message>
-        <location line="+9"/>
-        <location line="+6"/>
+        <location line="+7"/>
+        <location line="+3"/>
         <source>%1 vs. %2</source>
         <translation>%1 vs. %2</translation>
     </message>
     <message>
-        <location line="+4"/>
+        <location line="+2"/>
         <source>[%1] %2 vs. [%3] %4</source>
         <translation>[%1] %2 vs. [%3] %4</translation>
     </message>
     <message>
-        <location line="+35"/>
+        <location line="+46"/>
         <source>Hide Change Description</source>
         <translation>Piilota Muutoksen kuvaus</translation>
     </message>
@@ -4591,31 +5265,31 @@ versionhallintaan (% 2)
         <translation>Näytä muutoksen kuvaus</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/diffeditor/diffeditordocument.cpp" line="+301"/>
+        <location filename="../../../src/plugins/diffeditor/diffeditordocument.cpp" line="+300"/>
         <source>Could not parse patch file &quot;%1&quot;. The content is not of unified diff format.</source>
         <translation>Korjaustiedostoa &quot;%1&quot; ei voitu jäsentää. Sisältö ei ole yhtenäistä diff-muotoa.</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/diffeditor/diffeditorfactory.cpp" line="+48"/>
+        <location filename="../../../src/plugins/diffeditor/diffeditorfactory.cpp" line="+21"/>
         <source>Diff Editor</source>
         <translation>Diff-editori</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/diffeditor/diffeditorplugin.cpp" line="+114"/>
+        <location filename="../../../src/plugins/diffeditor/diffeditorplugin.cpp" line="+111"/>
         <source>Diff</source>
         <translation>Diff</translation>
     </message>
     <message>
-        <location line="+94"/>
+        <location line="+89"/>
         <location line="+54"/>
-        <location line="+68"/>
+        <location line="+69"/>
         <source>Saved</source>
         <translation>Tallennettu</translation>
     </message>
     <message>
-        <location line="-121"/>
+        <location line="-122"/>
         <location line="+54"/>
-        <location line="+68"/>
+        <location line="+69"/>
         <source>Modified</source>
         <translation>Muokattu</translation>
     </message>
@@ -4630,7 +5304,7 @@ versionhallintaan (% 2)
         <translation>Erota muokatut tiedostot</translation>
     </message>
     <message>
-        <location line="+30"/>
+        <location line="+28"/>
         <source>&amp;Diff</source>
         <translation>&amp;Erot</translation>
     </message>
@@ -4691,7 +5365,7 @@ versionhallintaan (% 2)
         <translation>Ero &quot;% 1&quot;, &quot;% 2&quot;</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/diffeditor/diffeditorwidgetcontroller.cpp" line="+229"/>
+        <location filename="../../../src/plugins/diffeditor/diffeditorwidgetcontroller.cpp" line="+228"/>
         <source>Send Chunk to CodePaster...</source>
         <translation>Lähetä osa CodePasterille...</translation>
     </message>
@@ -4706,7 +5380,7 @@ versionhallintaan (% 2)
         <translation>Palauta pala...</translation>
     </message>
     <message>
-        <location line="+28"/>
+        <location line="+31"/>
         <source>&lt;b&gt;Error:&lt;/b&gt; Could not decode &quot;%1&quot; with &quot;%2&quot;-encoding.</source>
         <translation>&lt;b&gt;Virhe:&lt;/b&gt; &quot;%1&quot; ei voitu purkaa &quot;%2&quot;-koodauksella.</translation>
     </message>
@@ -4716,32 +5390,30 @@ versionhallintaan (% 2)
         <translation>Valitse Koodaus</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/diffeditor/diffview.cpp" line="+77"/>
+        <location filename="../../../src/plugins/diffeditor/diffview.cpp" line="+76"/>
         <source>Switch to Unified Diff Editor</source>
         <translation>Vaihda Unified Diff Editoriin</translation>
     </message>
     <message>
-        <location line="+27"/>
-        <location line="+16"/>
-        <location line="+64"/>
-        <location line="+16"/>
-        <location filename="../../../src/plugins/diffeditor/sidebysidediffeditorwidget.cpp" line="+821"/>
-        <location filename="../../../src/plugins/diffeditor/unifieddiffeditorwidget.cpp" line="+272"/>
+        <location filename="../../../src/plugins/diffeditor/diffeditor.cpp" line="+52"/>
+        <location filename="../../../src/plugins/diffeditor/diffview.cpp" line="+27"/>
+        <location line="+81"/>
+        <location filename="../../../src/plugins/diffeditor/sidebysidediffeditorwidget.cpp" line="+817"/>
+        <location filename="../../../src/plugins/diffeditor/unifieddiffeditorwidget.cpp" line="+69"/>
         <source>Waiting for data...</source>
         <translation>Odotetaan dataa...</translation>
     </message>
     <message>
-        <location line="-93"/>
-        <location line="+28"/>
-        <location line="+52"/>
-        <location line="+34"/>
-        <location filename="../../../src/plugins/diffeditor/sidebysidediffeditorwidget.cpp" line="+58"/>
-        <location filename="../../../src/plugins/diffeditor/unifieddiffeditorwidget.cpp" line="+196"/>
+        <location line="+9"/>
+        <location filename="../../../src/plugins/diffeditor/diffview.cpp" line="-78"/>
+        <location line="+81"/>
+        <location filename="../../../src/plugins/diffeditor/sidebysidediffeditorwidget.cpp" line="+57"/>
+        <location filename="../../../src/plugins/diffeditor/unifieddiffeditorwidget.cpp" line="+392"/>
         <source>Retrieving data failed.</source>
         <translation>Tietojen nouto epäonnistui.</translation>
     </message>
     <message>
-        <location line="-67"/>
+        <location filename="../../../src/plugins/diffeditor/diffview.cpp" line="-33"/>
         <source>Switch to Side By Side Diff Editor</source>
         <translation>Vaihda Side By Side Diff -editoriin</translation>
     </message>
@@ -4751,7 +5423,7 @@ versionhallintaan (% 2)
         <translation>Synkronoi vaakasuuntaiset vierityspalkit</translation>
     </message>
     <message numerus="yes">
-        <location filename="../../../src/plugins/diffeditor/sidebysidediffeditorwidget.cpp" line="-325"/>
+        <location filename="../../../src/plugins/diffeditor/sidebysidediffeditorwidget.cpp" line="-324"/>
         <source>Skipped %n lines...</source>
         <translation>
             <numerusform>Ohitettu %n riviä...</numerusform>
@@ -4775,18 +5447,18 @@ versionhallintaan (% 2)
     </message>
     <message>
         <location line="+233"/>
-        <location filename="../../../src/plugins/diffeditor/unifieddiffeditorwidget.cpp" line="-9"/>
+        <location filename="../../../src/plugins/diffeditor/unifieddiffeditorwidget.cpp" line="-8"/>
         <source>No difference.</source>
         <translation>Ei eroa.</translation>
     </message>
     <message>
-        <location line="+157"/>
-        <location filename="../../../src/plugins/diffeditor/unifieddiffeditorwidget.cpp" line="+80"/>
+        <location line="+152"/>
+        <location filename="../../../src/plugins/diffeditor/unifieddiffeditorwidget.cpp" line="+75"/>
         <source>Rendering diff</source>
         <translation>Renderöintiero</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/diffeditor/unifieddiffeditorwidget.cpp" line="-493"/>
+        <location filename="../../../src/plugins/diffeditor/unifieddiffeditorwidget.cpp" line="-487"/>
         <source>No document</source>
         <translation>Ei asiakirjaa</translation>
     </message>
@@ -4794,7 +5466,7 @@ versionhallintaan (% 2)
 <context>
     <name>QtC::ExtensionSystem</name>
     <message>
-        <location filename="../../../src/libs/extensionsystem/plugindetailsview.cpp" line="+60"/>
+        <location filename="../../../src/libs/extensionsystem/plugindetailsview.cpp" line="+64"/>
         <source>Name:</source>
         <translation>Nimi:</translation>
     </message>
@@ -4854,7 +5526,12 @@ versionhallintaan (% 2)
         <translation>Riippuvuudet:</translation>
     </message>
     <message>
-        <location line="+69"/>
+        <location line="+1"/>
+        <source>Loadable without restart:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+71"/>
         <source>None</source>
         <translation>Ei mitään</translation>
     </message>
@@ -4869,6 +5546,11 @@ versionhallintaan (% 2)
         <translation>% 1 (nykyinen: &quot;%2&quot;)</translation>
     </message>
     <message>
+        <location line="+21"/>
+        <source>Plugin Details of %1</source>
+        <translation type="unfinished">Lisäosan tiedot %1</translation>
+    </message>
+    <message>
         <location filename="../../../src/libs/extensionsystem/pluginerrorview.cpp" line="+47"/>
         <source>State:</source>
         <translation>Osavaltio:</translation>
@@ -4879,7 +5561,7 @@ versionhallintaan (% 2)
         <translation>Virheviesti:</translation>
     </message>
     <message>
-        <location line="+38"/>
+        <location line="+39"/>
         <source>Description file found, but error on read.</source>
         <translation>Kuvaustiedosto löytyi, mutta virhe luettaessa.</translation>
     </message>
@@ -4920,11 +5602,18 @@ versionhallintaan (% 2)
     </message>
     <message>
         <location filename="../../../src/libs/extensionsystem/pluginview.cpp" line="+103"/>
+        <source>%1 (deprecated)</source>
+        <extracomment>%1 is a plugin name</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
         <source>%1 (experimental)</source>
+        <extracomment>%1 is a plugin name</extracomment>
         <translation>% 1 (kokeellinen)</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+8"/>
         <source>Path: %1
 Plugin is not available on this platform.</source>
         <translation>Polku: %1
@@ -4977,7 +5666,7 @@ Plugin on poistettu käytöstä komentoriviargumentilla.</translation>
         <translation>Lataa käynnistyksen yhteydessä</translation>
     </message>
     <message>
-        <location line="+73"/>
+        <location line="+54"/>
         <source>Name</source>
         <translation>Nimi</translation>
     </message>
@@ -4997,12 +5686,12 @@ Plugin on poistettu käytöstä komentoriviargumentilla.</translation>
         <translation>Ladata</translation>
     </message>
     <message>
-        <location line="+69"/>
+        <location line="+86"/>
         <source>Utilities</source>
         <translation>Apuohjelmat</translation>
     </message>
     <message>
-        <location line="+31"/>
+        <location line="+36"/>
         <source>Enabling Plugins</source>
         <translation>Lisäosien käyttöönotto</translation>
     </message>
@@ -5078,17 +5767,22 @@ poistaa myös seuraavat lisäosat käytöstä:
         <translation>Poistettu</translation>
     </message>
     <message>
-        <location filename="../../../src/libs/extensionsystem/pluginmanager.cpp" line="+1427"/>
+        <location filename="../../../src/libs/extensionsystem/pluginmanager.cpp" line="+1072"/>
+        <source>Multiple versions of the same plugin have been found.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+440"/>
         <source>Circular dependency detected:</source>
         <translation>Pyöreä riippuvuus havaittu:</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+6"/>
         <source>%1 (%2) depends on</source>
         <translation>%1 (%2) riippuu</translation>
     </message>
     <message>
-        <location line="+4"/>
+        <location line="+3"/>
         <source>%1 (%2)</source>
         <translation>% 1 (% 2)</translation>
     </message>
@@ -5111,15 +5805,19 @@ Syy: %3</translation>
     </message>
     <message>
         <location line="+2"/>
+        <source>If you temporarily disable %1, the following plugins that depend on it are also disabled: %2.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>If you temporarily disable %1, the following plugins that depend on it are also disabled: %2.
 
 </source>
-        <translation>Jos poistat %1:n väliaikaisesti käytöstä, myös seuraavat siitä riippuvat lisäosat poistetaan käytöstä: %2.
+        <translation type="vanished">Jos poistat %1:n väliaikaisesti käytöstä, myös seuraavat siitä riippuvat lisäosat poistetaan käytöstä: %2.
 
 </translation>
     </message>
     <message>
-        <location line="+4"/>
+        <location line="+3"/>
         <source>Disable plugins permanently in %1.</source>
         <translation>Poista laajennukset pysyvästi käytöstä %1.</translation>
     </message>
@@ -5134,14 +5832,14 @@ Syy: %3</translation>
         <translation>Poista laajennus käytöstä</translation>
     </message>
     <message>
-        <location line="+67"/>
+        <location line="+73"/>
         <source>Cannot load plugin because dependency failed to load: %1(%2)
 Reason: %3</source>
         <translation>Laajennusta ei voi ladata, koska riippuvuuden lataus epäonnistui: %1(%2)
 Syy: %3</translation>
     </message>
     <message>
-        <location filename="../../../src/libs/extensionsystem/optionsparser.cpp" line="+116"/>
+        <location filename="../../../src/libs/extensionsystem/optionsparser.cpp" line="+118"/>
         <source>The plugin &quot;%1&quot; is specified twice for testing.</source>
         <translation>Plugin &quot;%1&quot; on määritetty kahdesti testausta varten.</translation>
     </message>
@@ -5164,7 +5862,7 @@ Syy: %3</translation>
         <translation>Skenaariota &quot;%1&quot; ei voi pyytää, koska sitä on jo pyydetty.</translation>
     </message>
     <message>
-        <location line="+120"/>
+        <location line="+130"/>
         <source>Unknown option %1</source>
         <translation>Tuntematon vaihtoehto %1</translation>
     </message>
@@ -5174,47 +5872,52 @@ Syy: %3</translation>
         <translation>Vaihtoehto %1 vaatii argumentin.</translation>
     </message>
     <message>
-        <location filename="../../../src/libs/extensionsystem/pluginspec.cpp" line="+1009"/>
+        <location filename="../../../src/libs/extensionsystem/pluginspec.cpp" line="+1071"/>
         <source>Resolving dependencies failed because state != Read</source>
         <translation>Riippuvuuksien ratkaiseminen epäonnistui, koska tila != Lue</translation>
     </message>
     <message>
-        <location line="+14"/>
+        <location line="+11"/>
         <source>Could not resolve dependency &apos;%1(%2)&apos;</source>
         <translation>Ei voitu ratkaista riippuvuutta &apos;% 1(% 2)&apos;</translation>
     </message>
     <message>
-        <location line="+47"/>
+        <location line="+61"/>
         <source>Loading the library failed because state != Resolved</source>
         <translation>Kirjaston lataus epäonnistui, koska tila != Ratkaistu</translation>
     </message>
     <message>
-        <location line="+15"/>
+        <location line="+10"/>
         <source>Plugin is not valid (does not derive from IPlugin)</source>
         <translation>Plugin ei ole kelvollinen (ei johdu IP-pluginista)</translation>
     </message>
     <message>
-        <location line="-392"/>
+        <location line="-416"/>
         <source>&quot;%1&quot; is missing</source>
         <translation>&quot;%1&quot; puuttuu</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="-24"/>
+        <source>Cannot open file</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+29"/>
         <source>Value for key &quot;%1&quot; is not a string</source>
         <translation>Avaimen &quot;%1&quot; arvo ei ole merkkijono</translation>
     </message>
     <message>
-        <location line="+6"/>
+        <location line="+5"/>
         <source>Value for key &quot;%1&quot; is not a bool</source>
         <translation>Avaimen &quot;%1&quot; arvo ei ole bool</translation>
     </message>
     <message>
-        <location line="+6"/>
+        <location line="+5"/>
         <source>Value for key &quot;%1&quot; is not an array of objects</source>
         <translation>Avaimen &quot;%1&quot; arvo ei ole objektijoukko</translation>
     </message>
     <message>
-        <location line="+6"/>
+        <location line="+5"/>
         <source>Value for key &quot;%1&quot; is not a string and not an array of strings</source>
         <translation>Avaimen &quot;%1&quot; arvo ei ole merkkijono eikä merkkijonojoukko</translation>
     </message>
@@ -5224,12 +5927,22 @@ Syy: %3</translation>
         <translation>Arvon &quot;%2&quot; avaimelle &quot;%1&quot; on virheellinen muoto</translation>
     </message>
     <message>
-        <location line="+23"/>
+        <location line="+21"/>
+        <source>No IID found</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Expected IID &quot;%1&quot;, but found &quot;%2&quot;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
         <source>Plugin meta data not found</source>
         <translation>Plugin metatietoja ei löydy</translation>
     </message>
     <message>
-        <location line="+88"/>
+        <location line="+108"/>
         <source>Invalid platform specification &quot;%1&quot;: %2</source>
         <translation>Virheellinen alustamääritys &quot;%1&quot;: %2</translation>
     </message>
@@ -5261,17 +5974,17 @@ Syy: %3</translation>
         <translation>Argumentti: &quot;%1&quot; on tyhjä</translation>
     </message>
     <message>
-        <location line="+180"/>
+        <location line="+182"/>
         <source>Initializing the plugin failed because state != Loaded</source>
         <translation>Liitännäisen alustus epäonnistui, koska tila != Ladattu</translation>
     </message>
     <message>
-        <location line="+6"/>
+        <location line="+5"/>
         <source>Internal error: have no plugin instance to initialize</source>
         <translation>Sisäinen virhe: sinulla ei ole alustettavaa laajennusesiintymää</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+5"/>
         <source>Plugin initialization failed: %1</source>
         <translation>Plugin alustus epäonnistui: %1</translation>
     </message>
@@ -5281,7 +5994,7 @@ Syy: %3</translation>
         <translation>Laajennuksia ei voi suorittaa Initialized, koska tila != Alustettu</translation>
     </message>
     <message>
-        <location line="+6"/>
+        <location line="+5"/>
         <source>Internal error: have no plugin instance to perform extensionsInitialized</source>
         <translation>Sisäinen virhe: sinulla ei ole laajennusesiintymää suorittamaan laajennuksia Initialized</translation>
     </message>
@@ -5291,13 +6004,18 @@ Syy: %3</translation>
         <translation>Sisäinen virhe: sinulla ei ole plugin-instanssia, joka suorittaa delayedInitialize</translation>
     </message>
     <message>
-        <location filename="../../../src/libs/extensionsystem/pluginerroroverview.cpp" line="+33"/>
-        <location filename="../../../src/libs/extensionsystem/pluginmanager.cpp" line="-65"/>
+        <location filename="../../../src/libs/extensionsystem/pluginerroroverview.cpp" line="+42"/>
+        <location filename="../../../src/libs/extensionsystem/pluginmanager.cpp" line="-71"/>
         <source>Continue</source>
         <translation>Jatkaa</translation>
     </message>
     <message>
-        <location line="+21"/>
+        <location line="+2"/>
+        <source>Details</source>
+        <translation type="unfinished">Yksityiskohdat</translation>
+    </message>
+    <message>
+        <location line="+28"/>
         <source>The following plugins have errors and cannot be loaded:</source>
         <translation>Seuraavissa laajennuksissa on virheitä, eikä niitä voi ladata:</translation>
     </message>
@@ -5385,8 +6103,8 @@ Syy: %3</translation>
 <context>
     <name>QtC::ImageViewer</name>
     <message>
-        <location filename="../../../src/plugins/imageviewer/exportdialog.cpp" line="+69"/>
-        <location filename="../../../src/plugins/imageviewer/multiexportdialog.cpp" line="+166"/>
+        <location filename="../../../src/plugins/imageviewer/exportdialog.cpp" line="+70"/>
+        <location filename="../../../src/plugins/imageviewer/multiexportdialog.cpp" line="+165"/>
         <source>File:</source>
         <translation>Tiedosto:</translation>
     </message>
@@ -5409,7 +6127,7 @@ Would you like to overwrite it?</source>
 Haluatko korvata sen?</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/imageviewer/imageview.cpp" line="+162"/>
+        <location filename="../../../src/plugins/imageviewer/imageview.cpp" line="+161"/>
         <source>Exported &quot;%1&quot;, %2x%3, %4 bytes</source>
         <translation>Vietiin &quot;%1&quot;, %2x%3, %4 tavua</translation>
     </message>
@@ -5420,27 +6138,27 @@ Haluatko korvata sen?</translation>
     </message>
     <message>
         <location line="+1"/>
-        <location filename="../../../src/plugins/imageviewer/imageviewerplugin.cpp" line="+96"/>
+        <location filename="../../../src/plugins/imageviewer/imageviewer.cpp" line="+506"/>
         <source>Export Image</source>
         <translation>Vie kuva</translation>
     </message>
     <message>
-        <location line="+31"/>
+        <location line="+30"/>
         <source>Export %1</source>
         <translation>Vie %1</translation>
     </message>
     <message>
-        <location line="+16"/>
+        <location line="+15"/>
         <source>Export a Series of Images from %1 (%2x%3)</source>
         <translation>Vie kuvasarja kohteesta % 1 (%2x%3)</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/imageviewer/imageviewer.cpp" line="+112"/>
+        <location filename="../../../src/plugins/imageviewer/imageviewer.cpp" line="-365"/>
         <source>Export</source>
         <translation>Viedä</translation>
     </message>
     <message>
-        <location line="+48"/>
+        <location line="+52"/>
         <source>Set as Default</source>
         <translation>Oletusasetuksena</translation>
     </message>
@@ -5485,17 +6203,22 @@ Haluatko korvata sen?</translation>
         <translation>Zoomaus</translation>
     </message>
     <message>
-        <location line="+207"/>
+        <location line="+228"/>
+        <source>Resume Paused Animation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
         <source>Pause Animation</source>
         <translation>Keskeytä animaatio</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="-9"/>
         <source>Play Animation</source>
         <translation>Pelaa animaatiota</translation>
     </message>
     <message>
-        <location line="+11"/>
+        <location line="+23"/>
         <source>Image Viewer</source>
         <translation>Kuvankatseluohjelma</translation>
     </message>
@@ -5511,52 +6234,52 @@ Haluatko korvata sen?</translation>
     </message>
     <message>
         <location line="+13"/>
-        <location line="+29"/>
+        <location line="+15"/>
         <source>Failed to read image.</source>
         <translation>Kuvan lukeminen epäonnistui.</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/imageviewer/imageviewerplugin.cpp" line="-27"/>
+        <location filename="../../../src/plugins/imageviewer/imageviewer.cpp" line="+36"/>
         <source>Fit to Screen</source>
         <translation>Sovita näytölle</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+0"/>
         <source>Ctrl+=</source>
         <translation>Ctrl+=</translation>
     </message>
     <message>
-        <location line="+6"/>
+        <location line="+3"/>
         <source>Switch Background</source>
         <translation>Vaihda taustaa</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+0"/>
         <source>Ctrl+[</source>
         <translation>Ctrl+[</translation>
     </message>
     <message>
-        <location line="+6"/>
+        <location line="+3"/>
         <source>Switch Outline</source>
         <translation>Vaihda Outline</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+0"/>
         <source>Ctrl+]</source>
         <translation>Ctrl+]</translation>
     </message>
     <message>
-        <location line="+6"/>
+        <location line="+3"/>
         <source>Toggle Animation</source>
         <translation>Vaihda animaatio</translation>
     </message>
     <message>
-        <location line="+12"/>
+        <location line="+6"/>
         <source>Export Multiple Images</source>
         <translation>Vie useita kuvia</translation>
     </message>
     <message>
-        <location line="+6"/>
+        <location line="+3"/>
         <source>Copy as Data URL</source>
         <translation>Kopioi tietojen URL-osoitteeksi</translation>
     </message>
@@ -5621,72 +6344,650 @@ Haluatko korvata ne?</translation>
     </message>
 </context>
 <context>
+    <name>QtC::LanguageClient</name>
+    <message>
+        <location filename="../../../src/libs/languageserverprotocol/jsonrpcmessages.h" line="+257"/>
+        <source>Error %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/languageclient/callandtypehierarchy.cpp" line="+60"/>
+        <source>Deprecated</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+88"/>
+        <source>Incoming</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+21"/>
+        <source>Outgoing</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+58"/>
+        <source>Bases</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+21"/>
+        <source>Derived</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+202"/>
+        <source>Call Hierarchy</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>Reloads the call hierarchy for the symbol under cursor position.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/languageclient/client.cpp" line="+394"/>
+        <source>%1 for %2</source>
+        <extracomment>&lt;language client&gt; for &lt;project&gt;</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+223"/>
+        <source>uninitialized</source>
+        <extracomment>language client state</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>initialize requested</source>
+        <extracomment>language client state</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>failed to initialize</source>
+        <extracomment>language client state</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>initialized</source>
+        <extracomment>language client state</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>shutdown requested</source>
+        <extracomment>language client state</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>shut down</source>
+        <extracomment>language client state</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>error</source>
+        <extracomment>language client state</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1342"/>
+        <source>Invalid parameter in &quot;%1&quot;:
+%2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+219"/>
+        <source>Language Server &quot;%1&quot; Initialization Error</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>Initialization error: %1.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Initialize result is invalid.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Server Info is invalid.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>No initialize result.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/languageclient/diagnosticmanager.cpp" line="+187"/>
+        <source>Copy to Clipboard</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/languageclient/languageclient_global.h" line="+22"/>
+        <source>Language Client</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Symbols in Current Document</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Locates symbols in the current document, based on a language server.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Symbols in Workspace</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Locates symbols in the language server workspace.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Classes and Structs in Workspace</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Locates classes and structs in the language server workspace.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Functions and Methods in Workspace</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Locates functions and methods in the language server workspace.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/languageclient/languageclientinterface.cpp" line="+77"/>
+        <source>Cannot handle MIME type &quot;%1&quot; of message.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+70"/>
+        <source>Cannot send data to unstarted server %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/languageclient/languageclientmanager.cpp" line="+178"/>
+        <source>Unexpectedly finished. Restarting in %1 seconds.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Unexpectedly finished.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/languageclient/languageclientoutline.cpp" line="+217"/>
+        <location filename="../../../src/plugins/languageclient/lspinspector.cpp" line="+82"/>
+        <source>Expand All</source>
+        <translation type="unfinished">Laajenna kaikki</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Collapse All</source>
+        <translation type="unfinished">Kutista kaikki</translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/languageclient/languageclientplugin.cpp" line="+57"/>
+        <source>Generic StdIO Language Server</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Inspect Language Clients...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>Language Server Diagnostics</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Issues provided by the Language Server in the current document.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/languageclient/languageclientsettings.cpp" line="+185"/>
+        <source>&amp;Add</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>&amp;Delete</source>
+        <translation type="unfinished">&amp;Poistaa</translation>
+    </message>
+    <message>
+        <location line="+106"/>
+        <source>General</source>
+        <translation type="unfinished">Kenraali</translation>
+    </message>
+    <message>
+        <location line="+513"/>
+        <source>Always On</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Requires an Open File</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Start Server per Project</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+23"/>
+        <source>Set MIME Types...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>File pattern</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>List of file patterns.
+Example: *.cpp%1*.h</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+18"/>
+        <source>Failed to parse JSON at %1: %2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>Language server-specific JSON to pass via &quot;initializationOptions&quot; field of &quot;initialize&quot; request.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Name:</source>
+        <translation type="unfinished">Nimi:</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Language:</source>
+        <translation type="unfinished">Kieli:</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>File pattern:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Startup behavior:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Initialization options:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+74"/>
+        <source>Select MIME Types</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>Filter</source>
+        <translation type="unfinished">Suodattaa</translation>
+    </message>
+    <message>
+        <location line="+53"/>
+        <source>Executable:</source>
+        <translation type="unfinished">Suoritettava:</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Arguments:</source>
+        <translation type="unfinished">Argumentit:</translation>
+    </message>
+    <message>
+        <location line="+93"/>
+        <source>JSON Error</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+57"/>
+        <source>Workspace Configuration</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Additional JSON configuration sent to all running language servers for this project.
+See the documentation of the specific language server for valid settings.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+20"/>
+        <source>Language Server</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/languageclient/languageclientsymbolsupport.cpp" line="+39"/>
+        <source>Search Again to update results and re-enable Replace</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message numerus="yes">
+        <location line="+21"/>
+        <source>Re&amp;name %n files</source>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+        </translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Files:
+%1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+331"/>
+        <location line="+227"/>
+        <source>Find References with %1 for:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-144"/>
+        <source>Renaming is not supported with %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+168"/>
+        <source>%1 is not reachable anymore.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+33"/>
+        <source>Start typing to see replacements.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/languageclient/languageclientutils.cpp" line="+158"/>
+        <source>Show available quick fixes</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+121"/>
+        <source>Restart %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Inspect Language Clients</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Manage...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+144"/>
+        <source>Install npm Package</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Running &quot;%1&quot; to install %2.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+17"/>
+        <source>The installation of &quot;%1&quot; was canceled by timeout.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>The installation of &quot;%1&quot; was canceled by the user.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>Installing &quot;%1&quot; failed with exit code %2.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+56"/>
+        <source>Install %1 language server via npm.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Setup %1 language server (%2).</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Install</source>
+        <translation type="unfinished">Asentaa</translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Setup</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>%1 Language Server</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/languageclient/lspinspector.cpp" line="+48"/>
+        <source>Capabilities:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Dynamic Capabilities:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Method:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Options:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+18"/>
+        <source>Server Capabilities</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+53"/>
+        <source>Client Message</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>Messages</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>Server Message</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+82"/>
+        <source>Log File</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+93"/>
+        <source>Language Client Inspector</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>&lt;Select&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Language Server:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Log</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Capabilities</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Clear</source>
+        <translation type="unfinished">Asia selvä</translation>
+    </message>
+</context>
+<context>
+    <name>QtC::LanguageServerProtocol</name>
+    <message>
+        <location filename="../../../src/libs/languageserverprotocol/basemessage.cpp" line="+84"/>
+        <source>Cannot decode content with &quot;%1&quot;. Falling back to &quot;%2&quot;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+15"/>
+        <source>Expected an integer in &quot;%1&quot;, but got &quot;%2&quot;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/libs/languageserverprotocol/jsonrpcmessages.cpp" line="+80"/>
+        <source>Could not parse JSON message: &quot;%1&quot;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Expected a JSON object, but got a JSON &quot;%1&quot; value.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/libs/languageserverprotocol/jsonrpcmessages.h" line="-91"/>
+        <source>No parameters in &quot;%1&quot;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+213"/>
+        <source>No ID set in &quot;%1&quot;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/libs/languageserverprotocol/lsptypes.cpp" line="+451"/>
+        <source>Create %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+15"/>
+        <source>Rename %1 to %2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+17"/>
+        <source>Delete %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>QtC::OpenMV</name>
     <message>
-        <location filename="../../../src/plugins/openmv/histogram/openmvpluginhistogram.cpp" line="+518"/>
+        <location filename="../../../src/plugins/openmv/histogram/openmvpluginhistogram.cpp" line="+548"/>
         <location line="+34"/>
         <source>Value %L1</source>
         <translation>Arvo %L1</translation>
     </message>
     <message>
         <location line="+34"/>
-        <location line="+205"/>
+        <location line="+245"/>
         <source>R</source>
         <translation>R</translation>
     </message>
     <message>
-        <location line="-189"/>
-        <location line="+205"/>
+        <location line="-229"/>
+        <location line="+245"/>
         <source>G</source>
         <translation>G</translation>
     </message>
     <message>
-        <location line="-189"/>
+        <location line="-229"/>
         <location line="+82"/>
-        <location line="+123"/>
+        <location line="+163"/>
         <location line="+72"/>
         <source>B</source>
         <translation>B</translation>
     </message>
     <message>
-        <location line="-252"/>
+        <location line="-292"/>
         <location line="+82"/>
-        <location line="+118"/>
+        <location line="+158"/>
         <location line="+72"/>
         <source>Y</source>
         <translation>Y</translation>
     </message>
     <message>
-        <location line="-247"/>
-        <location line="+195"/>
+        <location line="-287"/>
+        <location line="+235"/>
         <source>L</source>
         <translation>L</translation>
     </message>
     <message>
-        <location line="-179"/>
-        <location line="+195"/>
+        <location line="-219"/>
+        <location line="+235"/>
         <source>A</source>
         <translation>A</translation>
     </message>
     <message>
-        <location line="-138"/>
-        <location line="+190"/>
+        <location line="-178"/>
+        <location line="+230"/>
         <source>U</source>
         <translation>U</translation>
     </message>
     <message>
-        <location line="-174"/>
-        <location line="+190"/>
+        <location line="-214"/>
+        <location line="+230"/>
         <source>V</source>
         <translation>V</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/openmv/openmvcamerasettings.cpp" line="+51"/>
+        <location filename="../../../src/plugins/openmv/openmvcamerasettings.cpp" line="+81"/>
         <source>Please enter your WiFi network here</source>
         <translation>Kirjoita WiFi-verkkosi tähän</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/openmv/openmvdataseteditor.cpp" line="+115"/>
+        <location filename="../../../src/plugins/openmv/openmvdataseteditor.cpp" line="+145"/>
         <location line="+43"/>
         <location line="+7"/>
         <location line="+7"/>
@@ -5702,7 +7003,7 @@ Haluatko korvata ne?</translation>
         <location line="+11"/>
         <location line="+130"/>
         <location line="+7"/>
-        <location filename="../../../src/plugins/openmv/openmvplugin.cpp" line="+1573"/>
+        <location filename="../../../src/plugins/openmv/openmvplugin.cpp" line="+1136"/>
         <location line="+784"/>
         <source>Dataset Editor</source>
         <translation>Tietojoukkoeditori</translation>
@@ -5713,7 +7014,15 @@ Haluatko korvata ne?</translation>
         <translation>Anna luokan nimi</translation>
     </message>
     <message>
-        <location line="+44"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginarduinodfubootloader.cpp" line="+296"/>
+        <location line="+9"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginbootloader.cpp" line="+535"/>
+        <location line="+31"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvplugindfubootloader.cpp" line="+303"/>
+        <location line="+9"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginpicotoolbootloader.cpp" line="+250"/>
+        <location line="+9"/>
+        <location filename="../../../src/plugins/openmv/openmvdataseteditor.cpp" line="+44"/>
         <location line="+7"/>
         <location line="+70"/>
         <location line="+107"/>
@@ -5722,7 +7031,7 @@ Haluatko korvata ne?</translation>
         <location filename="../../../src/plugins/openmv/openmvplugin.cpp" line="-694"/>
         <location line="+19"/>
         <location line="+115"/>
-        <location line="+1274"/>
+        <location line="+1342"/>
         <location line="+106"/>
         <location line="+96"/>
         <location line="+101"/>
@@ -5731,52 +7040,34 @@ Haluatko korvata ne?</translation>
         <location line="+180"/>
         <location line="+204"/>
         <location line="+14"/>
-        <location line="+315"/>
+        <location line="+348"/>
         <location line="+13"/>
-        <location line="+346"/>
+        <location line="+345"/>
         <location line="+145"/>
         <location line="+114"/>
         <location line="+129"/>
         <location line="+114"/>
         <location line="+118"/>
-        <location filename="../../../src/plugins/openmv/openmvpluginconnect.cpp" line="+155"/>
+        <location filename="../../../src/plugins/openmv/openmvpluginconnect.cpp" line="+296"/>
         <location line="+234"/>
-        <location line="+156"/>
-        <location line="+682"/>
-        <location line="+295"/>
-        <location line="+468"/>
-        <location line="+31"/>
-        <location line="+122"/>
-        <location line="+9"/>
-        <location line="+379"/>
-        <location line="+9"/>
-        <location line="+68"/>
-        <location line="+9"/>
-        <location line="+201"/>
-        <location line="+9"/>
-        <location line="+160"/>
-        <location line="+9"/>
-        <location line="+78"/>
-        <location line="+9"/>
-        <location line="+187"/>
-        <location line="+168"/>
-        <location line="+786"/>
-        <location line="+13"/>
-        <location filename="../../../src/plugins/openmv/openmvpluginfb.cpp" line="+77"/>
+        <location line="+77"/>
+        <location line="+895"/>
+        <location line="+737"/>
+        <location filename="../../../src/plugins/openmv/openmvpluginfb.cpp" line="+107"/>
         <location line="+7"/>
-        <location filename="../../../src/plugins/openmv/openmvterminal.cpp" line="+520"/>
+        <location filename="../../../src/plugins/openmv/openmvterminal.cpp" line="+550"/>
         <location line="+11"/>
-        <location filename="../../../src/plugins/openmv/tools/edgeimpulse.cpp" line="+247"/>
-        <location filename="../../../src/plugins/openmv/tools/videotools.cpp" line="+452"/>
+        <location filename="../../../src/plugins/openmv/tools/edgeimpulse.cpp" line="+277"/>
+        <location filename="../../../src/plugins/openmv/tools/videotools.cpp" line="+506"/>
         <location line="+19"/>
         <location line="+11"/>
         <source>Error: %L1!</source>
         <translation>Virhe: %L1!</translation>
     </message>
     <message>
-        <location line="-307"/>
-        <location filename="../../../src/plugins/openmv/openmvplugin.cpp" line="-3651"/>
-        <location filename="../../../src/plugins/openmv/openmvpluginparse.cpp" line="+429"/>
+        <location filename="../../../src/plugins/openmv/openmvdataseteditor.cpp" line="-307"/>
+        <location filename="../../../src/plugins/openmv/openmvplugin.cpp" line="-3751"/>
+        <location filename="../../../src/plugins/openmv/openmvpluginparse.cpp" line="+459"/>
         <location line="+34"/>
         <location line="+48"/>
         <location line="+9"/>
@@ -5790,8 +7081,8 @@ Haluatko korvata ne?</translation>
     </message>
     <message>
         <location line="+31"/>
-        <location filename="../../../src/plugins/openmv/openmvplugin.cpp" line="+2406"/>
-        <location line="+1729"/>
+        <location filename="../../../src/plugins/openmv/openmvplugin.cpp" line="+2474"/>
+        <location line="+1761"/>
         <location filename="../../../src/plugins/openmv/openmvterminal.cpp" line="+353"/>
         <source>Failed to save the image file for an unknown reason!</source>
         <translation>Kuvatiedoston tallennus epäonnistui tuntemattomasta syystä!</translation>
@@ -5830,12 +7121,13 @@ Haluatko korvata ne?</translation>
         <translation>Tiedoston uudelleennimeäminen epäonnistui tuntemattomasta syystä!</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/openmv/openmvplugin.cpp" line="-5654"/>
+        <location filename="../../../src/plugins/openmv/openmvplugin.cpp" line="-5259"/>
+        <location filename="../../../src/plugins/openmv/tools/alif.cpp" line="+61"/>
         <source>Could not copy file &quot;%1&quot; to &quot;%2&quot;.</source>
         <translation>Tiedostoa &quot;%1&quot; ei voitu kopioida kohteeseen &quot;%2&quot;.</translation>
     </message>
     <message>
-        <location line="+180"/>
+        <location line="+46"/>
         <source>Invalid argument (%1) for -override_read_timeout</source>
         <translation>Virheellinen argumentti (%1) arvolle -override_read_timeout</translation>
     </message>
@@ -5855,15 +7147,22 @@ Haluatko korvata ne?</translation>
         <translation>Puuttuva argumentti: -override_read_stall_timeout</translation>
     </message>
     <message>
-        <location line="+99"/>
+        <location line="+50"/>
         <source>Missing argument for -serial_number_filter</source>
         <translation>-sarjanumerosuodattimen argumentti puuttuu</translation>
     </message>
     <message>
-        <location line="+120"/>
+        <location line="+119"/>
         <location line="+11"/>
-        <location line="+19"/>
-        <location filename="../../../src/plugins/openmv/openmvpluginconnect.cpp" line="-4120"/>
+        <location line="+17"/>
+        <location filename="../../../src/plugins/openmv/openmvpluginconnect.cpp" line="-1988"/>
+        <location filename="../../../src/plugins/openmv/openmvplugindoc.cpp" line="+830"/>
+        <location filename="../../../src/plugins/openmv/tools/alif.cpp" line="+41"/>
+        <location line="+36"/>
+        <location line="+7"/>
+        <location line="+8"/>
+        <location line="+10"/>
+        <location line="+7"/>
         <source>
 
 Please close any programs that are viewing/editing OpenMV IDE&apos;s application data and then restart OpenMV IDE!</source>
@@ -5872,7 +7171,7 @@ Please close any programs that are viewing/editing OpenMV IDE&apos;s application
 Sulje kaikki ohjelmat, jotka tarkastelevat/muokkaavat OpenMV IDE:n sovellustietoja ja käynnistä sitten OpenMV IDE uudelleen!</translation>
     </message>
     <message>
-        <location line="+393"/>
+        <location filename="../../../src/plugins/openmv/openmvplugindoc.cpp" line="-65"/>
         <source>Edit Grayscale threshold with Threshold Editor</source>
         <translation>Muokkaa harmaasävykynnystä Threshold Editorilla</translation>
     </message>
@@ -5882,12 +7181,12 @@ Sulje kaikki ohjelmat, jotka tarkastelevat/muokkaavat OpenMV IDE:n sovellustieto
         <translation>Muokkaa LAB-kynnystä Threshold Editorilla</translation>
     </message>
     <message>
-        <location line="+143"/>
+        <location filename="../../../src/plugins/openmv/openmvplugin.cpp" line="+235"/>
         <source>Missing argument for -form_key</source>
         <translation>-form_key-argumentti puuttuu</translation>
     </message>
     <message>
-        <location line="+811"/>
+        <location line="+826"/>
         <source>About OpenMV Viewer...</source>
         <translation>Tietoja OpenMV Viewerista...</translation>
     </message>
@@ -5902,12 +7201,12 @@ Sulje kaikki ohjelmat, jotka tarkastelevat/muokkaavat OpenMV IDE:n sovellustieto
         <translation>OpenMV IDE</translation>
     </message>
     <message>
-        <location line="-780"/>
+        <location line="-795"/>
         <source>untitled_$.py</source>
         <translation>untitled_$.py</translation>
     </message>
     <message>
-        <location line="-827"/>
+        <location line="-451"/>
         <source>Invalid argument (%1) for -override_per_command_wait</source>
         <translation>Virheellinen argumentti (%1) arvolle -override_per_command_wait</translation>
     </message>
@@ -5917,7 +7216,7 @@ Sulje kaikki ohjelmat, jotka tarkastelevat/muokkaavat OpenMV IDE:n sovellustieto
         <translation>-override_per_command_wait:n argumentti puuttuu</translation>
     </message>
     <message>
-        <location line="+98"/>
+        <location line="+49"/>
         <source>Invalid argument (%1) for -auto_update</source>
         <translation>Virheellinen argumentti (%1) arvolle -auto_update</translation>
     </message>
@@ -5927,7 +7226,19 @@ Sulje kaikki ohjelmat, jotka tarkastelevat/muokkaavat OpenMV IDE:n sovellustieto
         <translation>-auto_update:n argumentti puuttuu</translation>
     </message>
     <message>
-        <location line="+689"/>
+        <location line="+167"/>
+        <source>Error in parsing &lt;user_resources&gt;/openmvide/firmware/settings.json - %L1!
+
+Check the json file for errors and fix them.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Error reading &lt;user_resources&gt;/openmvide/firmware/settings.json: %L1.\n\nOpenMV IDE versions before v4.3.0 do not have this file and would have deleted it on installing resources.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+186"/>
         <source>Form Key</source>
         <translation>Lomakkeen avain</translation>
     </message>
@@ -5937,7 +7248,7 @@ Sulje kaikki ohjelmat, jotka tarkastelevat/muokkaavat OpenMV IDE:n sovellustieto
         <translation>Anna lomakeavain</translation>
     </message>
     <message>
-        <location line="+68"/>
+        <location line="+81"/>
         <location line="+7"/>
         <location line="+7"/>
         <source>New File</source>
@@ -6052,7 +7363,7 @@ Sulje kaikki ohjelmat, jotka tarkastelevat/muokkaavat OpenMV IDE:n sovellustieto
         <translation>Määritä OpenMV Cam -asetustiedosto</translation>
     </message>
     <message>
-        <location line="+6"/>
+        <location line="+8"/>
         <source>Save open script to OpenMV Cam (as main.py)</source>
         <translation>Tallenna avoin skripti OpenMV Camiin (main.py-muodossa)</translation>
     </message>
@@ -6068,33 +7379,33 @@ Sulje kaikki ohjelmat, jotka tarkastelevat/muokkaavat OpenMV IDE:n sovellustieto
     </message>
     <message>
         <location line="+9"/>
-        <location line="+3829"/>
+        <location line="+3929"/>
         <location line="+59"/>
         <source>Open Terminal</source>
         <translation>Avaa Terminaali</translation>
     </message>
     <message>
-        <location line="-3883"/>
+        <location line="-3983"/>
         <source>Machine Vision</source>
         <translation>Konenäkö</translation>
     </message>
     <message>
         <location line="+4"/>
-        <location line="+3910"/>
+        <location line="+4010"/>
         <location line="+76"/>
         <source>Threshold Editor</source>
         <translation>Kynnyseditori</translation>
     </message>
     <message>
-        <location line="-3981"/>
-        <location line="+4059"/>
-        <location filename="../../../src/plugins/openmv/tools/keypointseditor.cpp" line="+186"/>
+        <location line="-4081"/>
+        <location line="+4159"/>
+        <location filename="../../../src/plugins/openmv/tools/keypointseditor.cpp" line="+216"/>
         <source>Keypoints Editor</source>
         <translation>Keypoints Editor</translation>
     </message>
     <message>
-        <location line="-4052"/>
-        <location line="+4218"/>
+        <location line="-4152"/>
+        <location line="+4318"/>
         <location line="+98"/>
         <location line="+24"/>
         <location line="+11"/>
@@ -6103,7 +7414,7 @@ Sulje kaikki ohjelmat, jotka tarkastelevat/muokkaavat OpenMV IDE:n sovellustieto
         <translation>AprilTag Generator</translation>
     </message>
     <message>
-        <location line="-4366"/>
+        <location line="-4466"/>
         <source>TAG16H5 Family (30 Tags)</source>
         <translation>TAG16H5-perhe (30 tagia)</translation>
     </message>
@@ -6144,12 +7455,12 @@ Sulje kaikki ohjelmat, jotka tarkastelevat/muokkaavat OpenMV IDE:n sovellustieto
         <location line="+409"/>
         <location line="+14"/>
         <location line="+31"/>
-        <location line="+806"/>
+        <location line="+822"/>
         <source>Failed to open: &quot;%L1&quot;</source>
         <translation>Avaaminen epäonnistui: &quot;%L1&quot;</translation>
     </message>
     <message>
-        <location line="-1284"/>
+        <location line="-1300"/>
         <source>DataMatrix Generator</source>
         <translation>DataMatrix-generaattori</translation>
     </message>
@@ -6183,10 +7494,10 @@ Sulje kaikki ohjelmat, jotka tarkastelevat/muokkaavat OpenMV IDE:n sovellustieto
     <message>
         <location line="+1"/>
         <location line="+249"/>
-        <location line="+2250"/>
+        <location line="+2318"/>
         <location line="+47"/>
         <location line="+69"/>
-        <location line="+1457"/>
+        <location line="+1489"/>
         <location filename="../../../src/plugins/openmv/openmvterminal.cpp" line="-382"/>
         <location line="+364"/>
         <location filename="../../../src/plugins/openmv/tools/videotools.cpp" line="+856"/>
@@ -6195,7 +7506,7 @@ Sulje kaikki ohjelmat, jotka tarkastelevat/muokkaavat OpenMV IDE:n sovellustieto
         <translation>Lisää tiedostopääte!</translation>
     </message>
     <message>
-        <location line="-4052"/>
+        <location line="-4152"/>
         <location line="+7"/>
         <location filename="../../../src/plugins/openmv/tools/videotools.cpp" line="-268"/>
         <location line="+13"/>
@@ -6302,14 +7613,19 @@ Sulje kaikki ohjelmat, jotka tarkastelevat/muokkaavat OpenMV IDE:n sovellustieto
         <translation>Viedään...</translation>
     </message>
     <message>
-        <location line="+0"/>
-        <location line="+1273"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginbootloader.cpp" line="-459"/>
+        <location line="+188"/>
+        <location line="+138"/>
+        <location line="+67"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginimxbootloader.cpp" line="+179"/>
+        <location filename="../../../src/plugins/openmv/openmvplugin.cpp" line="+0"/>
+        <location line="+1341"/>
         <location line="+106"/>
         <location line="+96"/>
         <location line="+101"/>
         <location line="+96"/>
         <location line="+240"/>
-        <location line="+936"/>
+        <location line="+968"/>
         <location line="+145"/>
         <location line="+114"/>
         <location line="+129"/>
@@ -6317,23 +7633,18 @@ Sulje kaikki ohjelmat, jotka tarkastelevat/muokkaavat OpenMV IDE:n sovellustieto
         <location line="+118"/>
         <location line="+433"/>
         <location filename="../../../src/plugins/openmv/openmvpluginconnect.cpp" line="-34"/>
-        <location line="+223"/>
-        <location line="+201"/>
-        <location line="+680"/>
-        <location line="+407"/>
-        <location line="+156"/>
-        <location line="+138"/>
-        <location line="+67"/>
-        <location line="+238"/>
+        <location line="+230"/>
+        <location line="+122"/>
+        <location line="+893"/>
         <location filename="../../../src/plugins/openmv/tools/edgeimpulse.cpp" line="-147"/>
-        <location filename="../../../src/plugins/openmv/tools/videotools.cpp" line="-1282"/>
-        <location line="+78"/>
-        <location line="+557"/>
+        <location filename="../../../src/plugins/openmv/tools/videotools.cpp" line="-1297"/>
+        <location line="+85"/>
+        <location line="+565"/>
         <source>Cancel</source>
         <translation>Peruuttaa</translation>
     </message>
     <message>
-        <location line="-3849"/>
+        <location filename="../../../src/plugins/openmv/openmvplugin.cpp" line="-3949"/>
         <source>Upload to Edge Impulse Project</source>
         <translation>Lataa Edge Impulse Projectiin</translation>
     </message>
@@ -6434,119 +7745,153 @@ Sulje kaikki ohjelmat, jotka tarkastelevat/muokkaavat OpenMV IDE:n sovellustieto
         <translation>OpenMV-katseluohjelma</translation>
     </message>
     <message>
-        <location line="+13"/>
-        <location filename="../../../src/plugins/openmv/openmvpluginconnect.cpp" line="-1805"/>
-        <location line="+6"/>
-        <location line="+26"/>
-        <location line="+124"/>
-        <location line="+8"/>
-        <location line="+33"/>
-        <location line="+181"/>
-        <location line="+82"/>
-        <location line="+35"/>
-        <location line="+52"/>
-        <location line="+12"/>
-        <location line="+24"/>
-        <location line="+19"/>
-        <location line="+36"/>
-        <location line="+88"/>
-        <location line="+9"/>
-        <location line="+31"/>
-        <location line="+9"/>
-        <location line="+63"/>
-        <location line="+6"/>
-        <location line="+73"/>
-        <location line="+4"/>
-        <location line="+4"/>
-        <location line="+52"/>
-        <location line="+90"/>
-        <location line="+66"/>
-        <location line="+9"/>
-        <location line="+113"/>
-        <location line="+4"/>
-        <location line="+158"/>
-        <location line="+63"/>
-        <location line="+77"/>
-        <location line="+31"/>
-        <location line="+13"/>
-        <location line="+15"/>
-        <location line="+16"/>
-        <location line="+58"/>
-        <location line="+46"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginalifbootloader.cpp" line="+73"/>
+        <location line="+37"/>
         <location line="+9"/>
         <location line="+9"/>
-        <location line="+9"/>
-        <location line="+86"/>
-        <location line="+4"/>
-        <location line="+7"/>
-        <location line="+9"/>
-        <location line="+19"/>
-        <location line="+26"/>
-        <location line="+19"/>
-        <location line="+83"/>
-        <location line="+76"/>
-        <location line="+40"/>
-        <location line="+10"/>
-        <location line="+9"/>
-        <location line="+36"/>
+        <location line="+23"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginarduinodfubootloader.cpp" line="-199"/>
+        <location line="+75"/>
+        <location line="+45"/>
+        <location line="+37"/>
         <location line="+19"/>
         <location line="+13"/>
         <location line="+9"/>
         <location line="+20"/>
         <location line="+24"/>
         <location line="+14"/>
-        <location line="+34"/>
-        <location line="+35"/>
-        <location line="+39"/>
-        <location line="+25"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginbootloader.cpp" line="-316"/>
+        <location line="+4"/>
+        <location line="+162"/>
+        <location line="+63"/>
+        <location line="+77"/>
+        <location line="+31"/>
+        <location line="+13"/>
+        <location line="+15"/>
+        <location line="+16"/>
+        <location line="+23"/>
+        <location line="+7"/>
+        <location line="+15"/>
         <location line="+10"/>
-        <location line="+9"/>
-        <location line="+9"/>
-        <location line="+34"/>
+        <location line="+14"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginbossacbootloader.cpp" line="+149"/>
+        <location line="+54"/>
+        <location line="+32"/>
+        <location line="+27"/>
+        <location line="+10"/>
+        <location line="+41"/>
         <location line="+13"/>
         <location line="+14"/>
-        <location line="+50"/>
-        <location line="+30"/>
-        <location line="+10"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvplugindfubootloader.cpp" line="-157"/>
         <location line="+9"/>
-        <location line="+27"/>
+        <location line="+51"/>
+        <location line="+13"/>
+        <location line="+42"/>
+        <location line="+19"/>
+        <location line="+13"/>
+        <location line="+9"/>
+        <location line="+22"/>
+        <location line="+19"/>
+        <location line="+18"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginimxbootloader.cpp" line="-103"/>
+        <location line="+51"/>
+        <location line="+9"/>
+        <location line="+87"/>
+        <location line="+4"/>
+        <location line="+7"/>
+        <location line="+9"/>
+        <location line="+19"/>
+        <location line="+26"/>
+        <location line="+21"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginpicotoolbootloader.cpp" line="-123"/>
+        <location line="+34"/>
+        <location line="+28"/>
         <location line="+22"/>
         <location line="+16"/>
         <location line="+13"/>
         <location line="+9"/>
         <location line="+16"/>
         <location line="+14"/>
-        <location line="+19"/>
-        <location line="+7"/>
-        <location line="+15"/>
-        <location line="+10"/>
-        <location line="+14"/>
-        <location line="+92"/>
-        <location line="+9"/>
-        <location line="+197"/>
+        <location filename="../../../src/plugins/openmv/openmvplugin.cpp" line="+13"/>
+        <location filename="../../../src/plugins/openmv/openmvpluginconnect.cpp" line="-933"/>
+        <location line="+6"/>
+        <location line="+26"/>
+        <location line="+45"/>
+        <location line="+8"/>
         <location line="+33"/>
-        <location line="+157"/>
-        <location line="+38"/>
+        <location line="+331"/>
+        <location line="+80"/>
+        <location line="+47"/>
+        <location line="+64"/>
+        <location line="+12"/>
+        <location line="+35"/>
+        <location line="+10"/>
+        <location line="+12"/>
+        <location line="+28"/>
+        <location line="+36"/>
+        <location line="+81"/>
+        <location line="+9"/>
+        <location line="+35"/>
+        <location line="+9"/>
+        <location line="+65"/>
+        <location line="+6"/>
+        <location line="+73"/>
+        <location line="+4"/>
+        <location line="+4"/>
+        <location line="+72"/>
+        <location line="+104"/>
+        <location line="+77"/>
+        <location line="+39"/>
+        <location line="+123"/>
+        <location line="+91"/>
+        <location line="+182"/>
+        <location line="+33"/>
+        <location line="+208"/>
+        <location line="+35"/>
         <source>Connect</source>
         <translation>Kytkeä</translation>
     </message>
     <message>
-        <location line="+14"/>
-        <location filename="../../../src/plugins/openmv/openmvpluginconnect.cpp" line="-1535"/>
-        <location line="+12"/>
+        <location line="-40"/>
+        <source>No settings for the selected board type %L1!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>No settings found!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Only firmware recovery is supported using the Alif Semiconductor&apos;s SE Tools.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginarduinodfubootloader.cpp" line="-301"/>
+        <location line="+13"/>
         <location line="+7"/>
-        <location line="+171"/>
-        <location line="+12"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginbossacbootloader.cpp" line="-279"/>
+        <location line="+13"/>
         <location line="+7"/>
-        <location line="+1357"/>
-        <location line="+12"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvplugindfubootloader.cpp" line="-311"/>
+        <location line="+13"/>
         <location line="+7"/>
-        <location line="+129"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginimxbootloader.cpp" line="-156"/>
+        <location line="+13"/>
+        <location line="+7"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginpicotoolbootloader.cpp" line="-227"/>
+        <location line="+13"/>
+        <location line="+7"/>
+        <location filename="../../../src/plugins/openmv/openmvplugin.cpp" line="+14"/>
+        <location filename="../../../src/plugins/openmv/openmvpluginconnect.cpp" line="+31"/>
+        <location line="+13"/>
+        <location line="+7"/>
+        <location line="+165"/>
         <source>Disconnect</source>
         <translation>Katkaista</translation>
     </message>
     <message>
-        <location line="+19"/>
+        <location filename="../../../src/plugins/openmv/openmvplugin.cpp" line="+19"/>
         <source>Start (run script)</source>
         <translation>Aloita (suorita skripti)</translation>
     </message>
@@ -6575,7 +7920,7 @@ Sulje kaikki ohjelmat, jotka tarkastelevat/muokkaavat OpenMV IDE:n sovellustieto
     </message>
     <message>
         <location line="+5"/>
-        <location filename="../../../src/plugins/openmv/openmvpluginconnect.cpp" line="+246"/>
+        <location filename="../../../src/plugins/openmv/openmvpluginconnect.cpp" line="+332"/>
         <location filename="../../../src/plugins/openmv/openmvterminal.cpp" line="+5"/>
         <source>Stop</source>
         <translation>Lopettaa</translation>
@@ -6612,21 +7957,21 @@ Sulje kaikki ohjelmat, jotka tarkastelevat/muokkaavat OpenMV IDE:n sovellustieto
     <message>
         <location line="+17"/>
         <location line="+22"/>
-        <location line="+1782"/>
+        <location line="+1850"/>
         <location line="+55"/>
         <location line="+112"/>
         <location line="+69"/>
-        <location line="+246"/>
-        <location filename="../../../src/plugins/openmv/openmvpluginconnect.cpp" line="-424"/>
-        <location line="+179"/>
-        <location line="+124"/>
-        <location line="+122"/>
-        <location line="+115"/>
+        <location line="+276"/>
+        <location filename="../../../src/plugins/openmv/openmvpluginconnect.cpp" line="-547"/>
+        <location line="+216"/>
+        <location line="+167"/>
+        <location line="+165"/>
+        <location line="+85"/>
         <source>Busy... please wait...</source>
         <translation>Varattu... odota...</translation>
     </message>
     <message>
-        <location line="-2280"/>
+        <location line="-2378"/>
         <location line="+15"/>
         <source>Disable</source>
         <translation>Poista käytöstä</translation>
@@ -6744,7 +8089,7 @@ Sulje kaikki ohjelmat, jotka tarkastelevat/muokkaavat OpenMV IDE:n sovellustieto
     </message>
     <message>
         <location line="+65"/>
-        <location filename="../../../src/plugins/openmv/openmvpluginconnect.cpp" line="-384"/>
+        <location filename="../../../src/plugins/openmv/openmvpluginconnect.cpp" line="-442"/>
         <source>Board:</source>
         <translation>Hallitus:</translation>
     </message>
@@ -6788,14 +8133,14 @@ Sulje kaikki ohjelmat, jotka tarkastelevat/muokkaavat OpenMV IDE:n sovellustieto
     </message>
     <message>
         <location line="+6"/>
-        <location line="+1908"/>
-        <location filename="../../../src/plugins/openmv/openmvpluginconnect.cpp" line="-251"/>
-        <location line="+253"/>
+        <location line="+2004"/>
+        <location filename="../../../src/plugins/openmv/openmvpluginconnect.cpp" line="-300"/>
+        <location line="+302"/>
         <source>Drive:</source>
         <translation>Ajaa:</translation>
     </message>
     <message>
-        <location line="-1907"/>
+        <location line="-2003"/>
         <source>Drive associated with port</source>
         <translation>Porttiin liitetty asema</translation>
     </message>
@@ -6811,8 +8156,8 @@ Sulje kaikki ohjelmat, jotka tarkastelevat/muokkaavat OpenMV IDE:n sovellustieto
         <translation>Voi olla erilainen kuin kameran FPS</translation>
     </message>
     <message>
-        <location line="+218"/>
-        <location filename="../../../src/plugins/openmv/openmvpluginconnect.cpp" line="-3797"/>
+        <location line="+234"/>
+        <location filename="../../../src/plugins/openmv/openmvpluginconnect.cpp" line="-2547"/>
         <source>Update Available</source>
         <translation>Päivitys saatavilla</translation>
     </message>
@@ -6827,7 +8172,7 @@ Sulje kaikki ohjelmat, jotka tarkastelevat/muokkaavat OpenMV IDE:n sovellustieto
         <translation>ladata</translation>
     </message>
     <message>
-        <location line="+172"/>
+        <location line="+206"/>
         <source>WiFi Programming Disabled!</source>
         <translation>WiFi-ohjelmointi poissa käytöstä!</translation>
     </message>
@@ -6847,7 +8192,17 @@ Sulje kaikki ohjelmat, jotka tarkastelevat/muokkaavat OpenMV IDE:n sovellustieto
         <translation>Asiakirjakansion luominen epäonnistui!</translation>
     </message>
     <message>
-        <location line="+20"/>
+        <location line="+22"/>
+        <source>GitHub Copilot</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Would you like to enable GitHub Copilot?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+16"/>
         <source>OpenMV Cam LED Colors</source>
         <translation>OpenMV Cam LED -värit</translation>
     </message>
@@ -6897,18 +8252,18 @@ OpenMV Camin laiteohjelmisto on paniikissa laitteistovian vuoksi. Tarkista, ett�
 </translation>
     </message>
     <message>
-        <location line="+94"/>
-        <location line="+1561"/>
+        <location line="+93"/>
+        <location line="+1593"/>
         <source>Serial Port - %L1 - %L2 BPS</source>
         <translation>Sarjaportti - %L1 - %L2 BPS</translation>
     </message>
     <message>
-        <location line="-1529"/>
+        <location line="-1561"/>
         <location line="+106"/>
         <location line="+96"/>
         <location line="+101"/>
         <location line="+96"/>
-        <location line="+1176"/>
+        <location line="+1208"/>
         <location line="+145"/>
         <location line="+114"/>
         <location line="+129"/>
@@ -6918,7 +8273,7 @@ OpenMV Camin laiteohjelmisto on paniikissa laitteistovian vuoksi. Tarkista, ett�
         <translation>Yhdistetään... (30 sekunnin aikakatkaisu)</translation>
     </message>
     <message>
-        <location line="-2168"/>
+        <location line="-2200"/>
         <source>
 
 Try doing:
@@ -6971,12 +8326,12 @@ sudo adduser %L1 dialout
     </message>
     <message>
         <location line="+17"/>
-        <location line="+1618"/>
+        <location line="+1650"/>
         <source>UDP Server Connection - %1</source>
         <translation>UDP-palvelinyhteys - %1</translation>
     </message>
     <message>
-        <location line="-1544"/>
+        <location line="-1576"/>
         <source>Invalid port argument (%1) for -open_udp_server_terminal</source>
         <translation>Virheellinen porttiargumentti (%1) kohteelle -open_udp_server_terminal</translation>
     </message>
@@ -7007,12 +8362,12 @@ sudo adduser %L1 dialout
     </message>
     <message>
         <location line="+17"/>
-        <location line="+1664"/>
+        <location line="+1696"/>
         <source>TCP Server Connection - %1</source>
         <translation>TCP-palvelinyhteys - %1</translation>
     </message>
     <message>
-        <location line="-1590"/>
+        <location line="-1622"/>
         <source>Invalid port argument (%1) for -open_tcp_server_terminal</source>
         <translation>Virheellinen porttiargumentti (%1) kohteelle -open_tcp_server_terminal</translation>
     </message>
@@ -7039,7 +8394,7 @@ sudo adduser %L1 dialout
         <location line="+6"/>
         <location line="+8"/>
         <location line="+7"/>
-        <location filename="../../../src/plugins/openmv/openmvpluginconnect.cpp" line="+3355"/>
+        <location filename="../../../src/plugins/openmv/openmvpluginconnect.cpp" line="+2022"/>
         <location line="+9"/>
         <location line="+8"/>
         <location line="+19"/>
@@ -7177,9 +8532,9 @@ Haluatko rekisteröidä OpenMV-kamerasi nyt?</translation>
     </message>
     <message>
         <location line="+64"/>
-        <location filename="../../../src/plugins/openmv/openmvpluginconnect.cpp" line="+152"/>
-        <location line="+377"/>
-        <location line="+110"/>
+        <location filename="../../../src/plugins/openmv/openmvpluginconnect.cpp" line="+186"/>
+        <location line="+471"/>
+        <location line="+153"/>
         <source>FPS: 0</source>
         <translation>FPS: 0</translation>
     </message>
@@ -7213,13 +8568,13 @@ Haluatko rekisteröidä OpenMV-kamerasi nyt?</translation>
     </message>
     <message>
         <location line="-23"/>
-        <location line="+1384"/>
+        <location line="+1416"/>
         <location filename="../../../src/plugins/openmv/openmvterminal.cpp" line="-23"/>
         <source>Image Files (*.bmp *.jpg *.jpeg *.png *.ppm)</source>
         <translation>Kuvatiedostot (*.bmp *.jpg *.jpeg *.png *.ppm)</translation>
     </message>
     <message>
-        <location line="-1339"/>
+        <location line="-1371"/>
         <location line="+7"/>
         <location line="+17"/>
         <location line="+15"/>
@@ -7255,14 +8610,14 @@ Haluatko rekisteröidä OpenMV-kamerasi nyt?</translation>
     </message>
     <message>
         <location line="-48"/>
-        <location line="+1356"/>
+        <location line="+1388"/>
         <location line="+80"/>
         <location line="+21"/>
         <source>Keypoints Files (*.lbp *.orb)</source>
         <translation>Keypoints-tiedostot (*.lbp *.orb)</translation>
     </message>
     <message>
-        <location line="-1291"/>
+        <location line="-1290"/>
         <location line="+7"/>
         <location line="+6"/>
         <location line="+7"/>
@@ -7290,15 +8645,15 @@ Haluatko rekisteröidä OpenMV-kamerasi nyt?</translation>
         <translation>Esimerkkitiedostoa &quot;%L1&quot; ei voi avata!</translation>
     </message>
     <message>
-        <location line="+61"/>
+        <location line="+56"/>
         <location line="+11"/>
         <location line="+15"/>
-        <location line="+27"/>
+        <location line="+29"/>
         <source>Select Drive</source>
         <translation>Valitse Drive</translation>
     </message>
     <message>
-        <location line="-52"/>
+        <location line="-54"/>
         <source>No valid drives were found to associate with your OpenMV Cam!</source>
         <translation>OpenMV Cam -kameraasi ei löytynyt kelvollisia asemia!</translation>
     </message>
@@ -7318,7 +8673,7 @@ Haluatko rekisteröidä OpenMV-kamerasi nyt?</translation>
         <translation>Asema: %L1</translation>
     </message>
     <message>
-        <location line="+36"/>
+        <location line="+38"/>
         <source>Debug Protocol Settings</source>
         <translation>Protokollan asetusten virheenkorjaus</translation>
     </message>
@@ -7358,7 +8713,7 @@ Haluatko rekisteröidä OpenMV-kamerasi nyt?</translation>
         <translation>Tekstipuskurikysely (ms)</translation>
     </message>
     <message>
-        <location line="+34"/>
+        <location line="+36"/>
         <location line="+13"/>
         <location line="+31"/>
         <location line="+9"/>
@@ -7405,7 +8760,7 @@ Haluatko rekisteröidä OpenMV-kamerasi nyt?</translation>
     </message>
     <message>
         <location line="+31"/>
-        <location filename="../../../src/plugins/openmv/openmvpluginconnect.cpp" line="-3114"/>
+        <location filename="../../../src/plugins/openmv/openmvpluginconnect.cpp" line="-1810"/>
         <source>Please select a serial port</source>
         <translation>Valitse sarjaportti</translation>
     </message>
@@ -7416,7 +8771,7 @@ Haluatko rekisteröidä OpenMV-kamerasi nyt?</translation>
     </message>
     <message>
         <location line="+94"/>
-        <location filename="../../../src/plugins/openmv/openmvpluginconnect.cpp" line="+243"/>
+        <location filename="../../../src/plugins/openmv/openmvpluginconnect.cpp" line="+242"/>
         <source>Try doing:
 
 </source>
@@ -7643,7 +8998,7 @@ Haluatko rekisteröidä OpenMV-kamerasi nyt?</translation>
         <translation>Sukupolvi valmis!</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/openmv/openmvpluginconnect.cpp" line="-1160"/>
+        <location filename="../../../src/plugins/openmv/openmvpluginconnect.cpp" line="-1301"/>
         <source>New OpenMV IDE resources are available (e.g. examples, firmware, documentation, etc.).</source>
         <translation>Uusia OpenMV IDE -resursseja on saatavilla (esim. esimerkkejä, laiteohjelmistoa, dokumentaatiota jne.).</translation>
     </message>
@@ -7654,42 +9009,45 @@ Haluatko rekisteröidä OpenMV-kamerasi nyt?</translation>
     </message>
     <message>
         <location line="+7"/>
-        <location line="+223"/>
-        <location line="+201"/>
-        <location filename="../../../src/plugins/openmv/tools/bossac.cpp" line="+102"/>
+        <location line="+230"/>
+        <location line="+122"/>
+        <location filename="../../../src/plugins/openmv/tools/alif.cpp" line="+234"/>
+        <location line="+148"/>
+        <location filename="../../../src/plugins/openmv/tools/bossac.cpp" line="+132"/>
         <location line="+51"/>
-        <location filename="../../../src/plugins/openmv/tools/dfu-util.cpp" line="+173"/>
+        <location filename="../../../src/plugins/openmv/tools/dfu-util.cpp" line="+243"/>
         <location line="+46"/>
         <location line="+75"/>
         <location line="+46"/>
         <location line="+74"/>
         <location line="+46"/>
-        <location filename="../../../src/plugins/openmv/tools/imx.cpp" line="+352"/>
+        <location filename="../../../src/plugins/openmv/tools/imx.cpp" line="+378"/>
         <location line="+50"/>
         <location line="+705"/>
         <location line="+50"/>
-        <location filename="../../../src/plugins/openmv/tools/picotool.cpp" line="+187"/>
+        <location filename="../../../src/plugins/openmv/tools/picotool.cpp" line="+224"/>
         <location line="+51"/>
         <source>Downloading...</source>
         <translation>Ladataan...</translation>
     </message>
     <message>
-        <location line="-410"/>
+        <location line="-338"/>
         <source>Installing...</source>
         <translation>Asennetaan...</translation>
     </message>
     <message>
         <location line="+31"/>
+        <location filename="../../../src/plugins/openmv/tools/alif.cpp" line="+66"/>
         <source>Please close any programs that are viewing/editing OpenMV IDE&apos;s application data and then restart OpenMV IDE!</source>
         <translation>Sulje kaikki ohjelmat, jotka tarkastelevat/muokkaavat OpenMV IDE:n sovellustietoja ja käynnistä sitten OpenMV IDE uudelleen!</translation>
     </message>
     <message>
-        <location line="+16"/>
+        <location line="+18"/>
         <source>Installation Sucessful! Please restart OpenMV IDE.</source>
         <translation>Asennus onnistui! Käynnistä OpenMV IDE uudelleen.</translation>
     </message>
     <message>
-        <location line="+10"/>
+        <location line="+15"/>
         <location line="+6"/>
         <location line="+26"/>
         <source>Package Update</source>
@@ -7698,19 +9056,19 @@ Haluatko rekisteröidä OpenMV-kamerasi nyt?</translation>
     <message>
         <location line="-25"/>
         <location line="+234"/>
-        <location line="+158"/>
+        <location line="+79"/>
         <source>Cannot open the resources file &quot;%L1&quot;!</source>
         <translation>Resurssitiedostoa &quot;%L1&quot; ei voi avata!</translation>
     </message>
     <message>
-        <location line="-366"/>
+        <location line="-287"/>
         <location line="+234"/>
-        <location line="+165"/>
+        <location line="+86"/>
         <source>Network request failed &quot;%L1&quot;!</source>
         <translation>Verkkopyyntö &quot;%L1&quot; epäonnistui!</translation>
     </message>
     <message>
-        <location line="-375"/>
+        <location line="-296"/>
         <location line="+79"/>
         <location line="+45"/>
         <source>Bootloader</source>
@@ -7731,19 +9089,19 @@ Haluatko rekisteröidä OpenMV-kamerasi nyt?</translation>
         <location line="+11"/>
         <location line="+6"/>
         <location line="+115"/>
-        <location line="+433"/>
+        <location line="+504"/>
         <source>Erase internal file system</source>
         <translation>Tyhjennä sisäinen tiedostojärjestelmä</translation>
     </message>
     <message>
-        <location line="-550"/>
+        <location line="-621"/>
         <location line="+120"/>
-        <location line="+434"/>
+        <location line="+505"/>
         <source>If you enable this option all files on your OpenMV Cam&apos;s internal flash drive will be deleted. This does not erase files on any removable SD card (if inserted).</source>
         <translation>Jos otat tämän vaihtoehdon käyttöön, kaikki OpenMV Camin sisäisen flash-aseman tiedostot poistetaan. Tämä ei poista tiedostoja millään irrotettavalla SD-kortilla (jos se on asetettu).</translation>
     </message>
     <message>
-        <location line="-549"/>
+        <location line="-620"/>
         <source>Loading firmware via DFU always erases your OpenMV Cam&apos;s internal flash drive. This does not erase files on any removable SD card (if inserted).</source>
         <translation>Laiteohjelmiston lataaminen DFU:n kautta tyhjentää aina OpenMV Camin sisäisen flash-aseman. Tämä ei poista tiedostoja millään irrotettavalla SD-kortilla (jos se on asetettu).</translation>
     </message>
@@ -7759,7 +9117,7 @@ Haluatko rekisteröidä OpenMV-kamerasi nyt?</translation>
         <translation>&quot;%L1&quot; ei ole tiedosto!</translation>
     </message>
     <message>
-        <location line="+233"/>
+        <location line="+154"/>
         <source>Extracting...</source>
         <translation>Puretaan...</translation>
     </message>
@@ -7769,7 +9127,17 @@ Haluatko rekisteröidä OpenMV-kamerasi nyt?</translation>
         <translation>Laiteohjelmistoa ei voi purkaa!</translation>
     </message>
     <message>
-        <location line="+238"/>
+        <location line="+119"/>
+        <location line="+5"/>
+        <location line="+49"/>
+        <location line="+5"/>
+        <location line="+5"/>
+        <location line="+5"/>
+        <source>Unknown Board</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+200"/>
         <source>A board in DFU mode was detected. What would you like to do?</source>
         <translation>DFU-tilassa oleva kortti havaittiin. Mitä haluaisit tehdä?</translation>
     </message>
@@ -7789,53 +9157,70 @@ Haluatko rekisteröidä OpenMV-kamerasi nyt?</translation>
         <translation>Tyhjennä vain interal tiedostojärjestelmä</translation>
     </message>
     <message>
-        <location line="+73"/>
+        <location line="+71"/>
         <source>No OpenMV Cams found!</source>
         <translation>OpenMV-kameroita ei löytynyt!</translation>
     </message>
     <message>
-        <location line="+35"/>
+        <location line="+47"/>
         <source>Do you have an OpenMV Cam connected and is it bricked?</source>
         <translation>Onko sinulla OpenMV Cam kytkettynä ja onko se muurattu?</translation>
     </message>
     <message>
-        <location line="+51"/>
-        <location line="+520"/>
-        <location line="+623"/>
+        <location line="+775"/>
+        <source>Only loading *.dfu files is supported for the STM32 recovery bootloader!
+
+Please select a bootloader.dfu file and try again. Note that loading the firmware.dfu or openmv.dfu (bootloader + firmware) may not work on STM32H7 boards due to a bug in the chip&apos;s ROM bootloader!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+123"/>
+        <source>Note that loading the firmware.dfu or openmv.dfu (bootloader + firmware) may not work on STM32H7 boards due to a bug in the chip&apos;s ROM bootloader!
+
+OpenMV recommends only loading the bootloader.dfu to repair the bootloader.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginalifbootloader.cpp" line="-56"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginimxbootloader.cpp" line="-97"/>
+        <location filename="../../../src/plugins/openmv/openmvpluginconnect.cpp" line="-835"/>
+        <location line="+595"/>
         <source>Please select the board type</source>
         <translation>Valitse taulun tyyppi</translation>
     </message>
     <message>
-        <location line="-1130"/>
-        <location line="+3229"/>
+        <location filename="../../../src/plugins/openmv/openmvpluginconnect.cpp" line="-582"/>
+        <location line="+1957"/>
         <location line="+28"/>
         <source>Erase the internal file system?</source>
         <translation>Poistetaanko sisäinen tiedostojärjestelmä?</translation>
     </message>
     <message>
-        <location line="-3233"/>
+        <location line="-1928"/>
         <source>No released firmware available for the attached board!</source>
         <translation>Liitetylle levylle ei ole saatavilla julkaistua laiteohjelmistoa!</translation>
     </message>
     <message>
-        <location line="+54"/>
+        <location line="+63"/>
         <source>Please select a DFU Device</source>
         <translation>Valitse DFU-laite</translation>
     </message>
     <message>
-        <location line="+89"/>
-        <location line="+40"/>
+        <location line="-85"/>
+        <location line="+167"/>
+        <location line="+44"/>
         <source>Please update the bootloader to the latest version and install the SoftDevice to flash the OpenMV firmware. More information can be found on &lt;a href=&quot;https://docs.arduino.cc&quot;&gt;https://docs.arduino.cc&lt;/a&gt;</source>
         <translation>Päivitä käynnistyslatain uusimpaan versioon ja asenna SoftDevice OpenMV-laiteohjelmiston päivittämiseksi. Lisätietoja on osoitteessa &lt;a href=&quot;https://docs.arduino.cc&quot;&gt;https://docs.arduino.cc&lt;/a&gt;</translation>
     </message>
     <message>
-        <location line="-31"/>
-        <location line="+40"/>
+        <location line="-201"/>
+        <location line="+166"/>
+        <location line="+44"/>
         <source>Please short REC to GND and reset your board. More information can be found on &lt;a href=&quot;https://docs.arduino.cc&quot;&gt;https://docs.arduino.cc&lt;/a&gt;</source>
         <translation>Lyhennä REC GND:hen ja nollaa kortti. Lisätietoja on osoitteessa &lt;a href=&quot;https://docs.arduino.cc&quot;&gt;https://docs.arduino.cc&lt;/a&gt;</translation>
     </message>
     <message>
-        <location line="+23"/>
+        <location line="+25"/>
         <source>Connecting...
 
 (Hit cancel if this takes more than 5 seconds).</source>
@@ -7859,9 +9244,9 @@ Haluatko rekisteröidä OpenMV-kamerasi nyt?</translation>
         <translation>Yritätkö muodostaa yhteyden uudelleen?</translation>
     </message>
     <message>
-        <location line="+52"/>
-        <location line="+165"/>
-        <location line="+1945"/>
+        <location line="+72"/>
+        <location line="+181"/>
+        <location line="+435"/>
         <source>Timeout error while getting board architecture!</source>
         <translation>Aikakatkaisuvirhe kortin arkkitehtuuria haettaessa!</translation>
     </message>
@@ -7870,13 +9255,13 @@ Haluatko rekisteröidä OpenMV-kamerasi nyt?</translation>
         <translation type="vanished">Ei tuettu levyarkkitehtuuri!</translation>
     </message>
     <message>
-        <location line="-1883"/>
-        <location line="+600"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginbootloader.cpp" line="-530"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginimxbootloader.cpp" line="+103"/>
         <source>Disconnect your OpenMV Cam and then reconnect it...</source>
         <translation>Irrota OpenMV Cam ja liitä se sitten uudelleen...</translation>
     </message>
     <message>
-        <location line="-600"/>
+        <location line="+2"/>
         <source>
 
 Hit cancel to skip to DFU reprogramming.</source>
@@ -7885,24 +9270,24 @@ Hit cancel to skip to DFU reprogramming.</source>
 Paina Peruuta siirtyäksesi DFU-uudelleenohjelmointiin.</translation>
     </message>
     <message>
-        <location line="+0"/>
+        <location line="-3"/>
         <source>Reconnect your OpenMV Cam...</source>
         <translation>Yhdistä OpenMV Cam uudelleen...</translation>
     </message>
     <message>
-        <location line="+1"/>
-        <location line="+599"/>
+        <location line="+4"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginimxbootloader.cpp" line="+0"/>
         <source>Connecting... (Hit cancel if this takes more than 5 seconds).</source>
         <translation>Yhdistetään... (Paina Peruuta, jos tämä kestää yli 5 sekuntia).</translation>
     </message>
     <message>
-        <location line="-549"/>
-        <location line="+594"/>
+        <location line="+78"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginimxbootloader.cpp" line="+45"/>
         <source>Unable to connect to your OpenMV Cam&apos;s normal bootloader!</source>
         <translation>Ei voi muodostaa yhteyttä OpenMV Camin normaaliin käynnistyslataukseen!</translation>
     </message>
     <message>
-        <location line="-590"/>
+        <location line="+4"/>
         <source>OpenMV IDE can still try to repair your OpenMV Cam using your OpenMV Cam&apos;s DFU Bootloader.
 
 Continue?</source>
@@ -7911,7 +9296,7 @@ Continue?</source>
 Jatkaa?</translation>
     </message>
     <message>
-        <location line="+102"/>
+        <location line="+106"/>
         <location filename="../../../src/plugins/openmv/tools/dfu-util.cpp" line="-287"/>
         <location line="+46"/>
         <location line="+195"/>
@@ -7920,12 +9305,20 @@ Jatkaa?</translation>
         <translation>Poistetaan...</translation>
     </message>
     <message>
-        <location line="+56"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginarduinodfubootloader.cpp" line="+182"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginbootloader.cpp" line="+56"/>
         <location line="+63"/>
         <location line="+77"/>
-        <location line="+629"/>
-        <location line="+447"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvplugindfubootloader.cpp" line="+191"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginpicotoolbootloader.cpp" line="+117"/>
         <location line="+22"/>
+        <location filename="../../../src/plugins/openmv/tools/alif.cpp" line="+46"/>
+        <location line="+56"/>
+        <location line="+35"/>
+        <location line="+50"/>
+        <location line="+36"/>
+        <location line="+38"/>
+        <location line="+37"/>
         <location filename="../../../src/plugins/openmv/tools/imx.cpp" line="-653"/>
         <location line="+38"/>
         <location line="+48"/>
@@ -7948,17 +9341,18 @@ Jatkaa?</translation>
         <translation>Aikakatkaisuvirhe!</translation>
     </message>
     <message>
-        <location line="-1156"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginbootloader.cpp" line="-58"/>
         <location line="+67"/>
         <source>Programming...</source>
         <translation>Ohjelmointi...</translation>
     </message>
     <message>
-        <location line="+22"/>
-        <location line="+300"/>
-        <location line="+45"/>
-        <location line="+273"/>
-        <location line="+466"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginarduinodfubootloader.cpp" line="+20"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginbootloader.cpp" line="+22"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvplugindfubootloader.cpp" line="+20"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginimxbootloader.cpp" line="+39"/>
+        <location line="+47"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginpicotoolbootloader.cpp" line="+17"/>
         <source>Onboard Data Flash Erased!
 
 </source>
@@ -7967,9 +9361,9 @@ Jatkaa?</translation>
 </translation>
     </message>
     <message>
-        <location line="-1084"/>
-        <location line="+300"/>
-        <location line="+45"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginbootloader.cpp" line="+0"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginimxbootloader.cpp" line="-47"/>
+        <location line="+47"/>
         <source>Firmware Upgrade complete!
 
 </source>
@@ -7978,11 +9372,12 @@ Jatkaa?</translation>
 </translation>
     </message>
     <message>
-        <location line="-344"/>
-        <location line="+300"/>
-        <location line="+45"/>
-        <location line="+273"/>
-        <location line="+466"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginarduinodfubootloader.cpp" line="+1"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginbootloader.cpp" line="+1"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvplugindfubootloader.cpp" line="+1"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginimxbootloader.cpp" line="-46"/>
+        <location line="+47"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginpicotoolbootloader.cpp" line="+1"/>
         <source>Your OpenMV Cam will start running its built-in self-test if no sd card is attached... this may take a while.
 
 </source>
@@ -7991,24 +9386,29 @@ Jatkaa?</translation>
 </translation>
     </message>
     <message>
-        <location line="-1083"/>
-        <location line="+300"/>
-        <location line="+45"/>
-        <location line="+273"/>
-        <location line="+466"/>
+        <location line="+1"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginbootloader.cpp" line="+1"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvplugindfubootloader.cpp" line="+1"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginimxbootloader.cpp" line="-46"/>
+        <location line="+47"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginpicotoolbootloader.cpp" line="+1"/>
         <source>Click OK when your OpenMV Cam&apos;s RGB LED starts blinking blue - which indicates the self-test is complete.</source>
         <translation>Napsauta OK, kun OpenMV Camin RGB-LED alkaa vilkkua sinisenä - mikä osoittaa, että itsetesti on valmis.</translation>
     </message>
     <message>
-        <location line="-1083"/>
-        <location line="+281"/>
-        <location line="+19"/>
-        <location line="+25"/>
-        <location line="+20"/>
-        <location line="+273"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginalifbootloader.cpp" line="+81"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginarduinodfubootloader.cpp" line="+1"/>
         <location line="+65"/>
-        <location line="+222"/>
-        <location line="+179"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginbootloader.cpp" line="+1"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginbossacbootloader.cpp" line="+248"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvplugindfubootloader.cpp" line="+1"/>
+        <location line="+43"/>
+        <location line="+37"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginimxbootloader.cpp" line="-65"/>
+        <location line="+19"/>
+        <location line="+27"/>
+        <location line="+20"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginpicotoolbootloader.cpp" line="+1"/>
         <location line="+37"/>
         <source>
 
@@ -8022,12 +9422,12 @@ Jos kirjoitit main.py:n päälle OpenMV-kamerallasi etkä tyhjentänyt levyä, O
 Napsauta tässä tapauksessa OK, kun näet OpenMV Camin sisäisen flash-asemakiinnityksen (ikkuna saattaa avautua tai ei).</translation>
     </message>
     <message>
-        <location line="-1096"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginbootloader.cpp" line="+25"/>
         <source>The firmware file is empty!</source>
         <translation>Laiteohjelmistotiedosto on tyhjä!</translation>
     </message>
     <message>
-        <location line="+120"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginimxbootloader.cpp" line="-185"/>
         <source>No IMX settings for the selected board type %L1!</source>
         <translation>Ei IMX-asetuksia valitulle korttityypille %L1!</translation>
     </message>
@@ -8037,20 +9437,29 @@ Napsauta tässä tapauksessa OK, kun näet OpenMV Camin sisäisen flash-asemakii
         <translation>IMX-asetuksia ei löytynyt!</translation>
     </message>
     <message>
-        <location line="+35"/>
-        <location line="+12"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginarduinodfubootloader.cpp" line="-289"/>
+        <location line="+13"/>
         <location line="+7"/>
-        <location line="+171"/>
-        <location line="+12"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginbossacbootloader.cpp" line="-267"/>
+        <location line="+13"/>
         <location line="+7"/>
-        <location line="+1357"/>
-        <location line="+12"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvplugindfubootloader.cpp" line="-313"/>
+        <location line="+13"/>
+        <location line="+7"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginimxbootloader.cpp" line="+17"/>
+        <location line="+13"/>
+        <location line="+7"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginpicotoolbootloader.cpp" line="-215"/>
+        <location line="+13"/>
+        <location line="+7"/>
+        <location filename="../../../src/plugins/openmv/openmvpluginconnect.cpp" line="+307"/>
+        <location line="+13"/>
         <location line="+7"/>
         <source>Failed to eject &quot;%L1&quot;!</source>
         <translation>&quot;%L1&quot;:n poistaminen epäonnistui!</translation>
     </message>
     <message>
-        <location line="-1561"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginimxbootloader.cpp" line="+5"/>
         <source>
 
 Hit cancel to skip to SBL reprogramming.</source>
@@ -8077,7 +9486,15 @@ Click the Ok button after your OpenMV Cam&apos;s SBL Bootloader has enumerated.<
 Napsauta OK-painiketta, kun OpenMV-kamerasi SBL-käynnistyslataaja on lueteltu.</translation>
     </message>
     <message>
-        <location line="+9"/>
+        <location line="+55"/>
+        <source>If you are forcing SBL mode, disconnect your OpenMV Cam from your computer and remove the SBL wire jumper. Then reconnect your OpenMV Cam to your computer.
+
+</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginalifbootloader.cpp" line="-2"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginimxbootloader.cpp" line="-46"/>
         <location line="+45"/>
         <source>Firmware update complete!
 
@@ -8087,7 +9504,7 @@ Napsauta OK-painiketta, kun OpenMV-kamerasi SBL-käynnistyslataaja on lueteltu.<
 </translation>
     </message>
     <message>
-        <location line="-44"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginimxbootloader.cpp" line="-44"/>
         <source>Disconnect your OpenMV Cam from your computer, remove the jumper wire between the SBL and 3.3V pins, and then reconnect your OpenMV Cam to your computer.
 
 </source>
@@ -8096,56 +9513,68 @@ Napsauta OK-painiketta, kun OpenMV-kamerasi SBL-käynnistyslataaja on lueteltu.<
 </translation>
     </message>
     <message>
-        <location line="+1"/>
-        <location line="+44"/>
-        <location line="+358"/>
-        <location line="+222"/>
-        <location line="+216"/>
-        <location line="+66"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginalifbootloader.cpp" line="+1"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginarduinodfubootloader.cpp" line="+268"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginbootloader.cpp" line="+73"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginbossacbootloader.cpp" line="+246"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvplugindfubootloader.cpp" line="+255"/>
+        <location line="+37"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginimxbootloader.cpp" line="+1"/>
+        <location line="+46"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginpicotoolbootloader.cpp" line="+194"/>
         <source>Click the Ok button after your OpenMV Cam has enumerated and finished running its built-in self test (blue led blinking - this takes a while).</source>
         <translation>Napsauta OK-painiketta, kun OpenMV Cam on luetellut ja suorittanut sisäänrakennetun itsetestin (sininen LED vilkkuu - tämä kestää hetken).</translation>
     </message>
     <message>
-        <location line="-761"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginarduinodfubootloader.cpp" line="-243"/>
         <source>DFU Util may not be stable on this platform. If loading fails please use a regular computer.</source>
         <translation>DFU Util ei ehkä ole vakaa tällä alustalla. Jos lataus epäonnistuu, käytä tavallista tietokonetta.</translation>
     </message>
     <message>
-        <location line="+76"/>
+        <location line="+75"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvplugindfubootloader.cpp" line="-216"/>
         <source>No DFU settings for the selected board type!</source>
         <translation>Ei DFU-asetuksia valitulle korttityypille!</translation>
     </message>
     <message>
-        <location line="+40"/>
+        <location line="+45"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvplugindfubootloader.cpp" line="+60"/>
         <source>No DFU settings for the selected device!</source>
         <translation>Ei DFU-asetuksia valitulle laitteelle!</translation>
     </message>
     <message>
-        <location line="+50"/>
-        <location line="+447"/>
+        <location line="+32"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvplugindfubootloader.cpp" line="+47"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginpicotoolbootloader.cpp" line="-82"/>
         <source>Erasing Disk</source>
         <translation>Levyn tyhjentäminen</translation>
     </message>
     <message>
-        <location line="-386"/>
+        <location line="+61"/>
         <location line="+23"/>
-        <location line="+222"/>
-        <location line="+216"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginbossacbootloader.cpp" line="-7"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvplugindfubootloader.cpp" line="+60"/>
+        <location line="+22"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginpicotoolbootloader.cpp" line="+75"/>
+        <location filename="../../../src/plugins/openmv/tools/alif.cpp" line="-577"/>
         <location filename="../../../src/plugins/openmv/tools/imx.cpp" line="-1052"/>
         <location line="+767"/>
         <source>Flashing Firmware</source>
         <translation>Vilkkuva laiteohjelmisto</translation>
     </message>
     <message>
-        <location line="-457"/>
+        <location line="-19"/>
         <location line="+38"/>
-        <location line="+503"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginbootloader.cpp" line="+11"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvplugindfubootloader.cpp" line="+7"/>
         <source>DFU firmware update failed!</source>
         <translation>DFU-laiteohjelmiston päivitys epäonnistui!</translation>
     </message>
     <message>
-        <location line="-516"/>
-        <location line="+503"/>
+        <location line="-13"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginbootloader.cpp" line="-13"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvplugindfubootloader.cpp" line="-18"/>
+        <location line="+37"/>
         <source>DFU firmware update complete!
 
 </source>
@@ -8154,29 +9583,29 @@ Napsauta OK-painiketta, kun OpenMV-kamerasi SBL-käynnistyslataaja on lueteltu.<
 </translation>
     </message>
     <message>
-        <location line="-455"/>
-        <location line="+35"/>
-        <location line="+126"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginbossacbootloader.cpp" line="-171"/>
+        <location line="+54"/>
+        <location line="+110"/>
         <source>BOSSAC device %1 missing!</source>
         <translation>BOSSAC-laite %1 puuttuu!</translation>
     </message>
     <message>
-        <location line="-87"/>
+        <location line="-78"/>
         <source>No BOSSAC settings for the selected board type!</source>
         <translation>Ei BOSSAC-asetuksia valitulle korttityypille!</translation>
     </message>
     <message>
-        <location line="+25"/>
+        <location line="+27"/>
         <source>No BOSSAC settings for the selected device!</source>
         <translation>Ei BOSSAC-asetuksia valitulle laitteelle!</translation>
     </message>
     <message>
-        <location line="+29"/>
+        <location line="+11"/>
         <source>Your Nano 33 BLE doesn&apos;t have an onboard data flash disk.</source>
         <translation>Nano 33 BLE:ssäsi ei ole sisäänrakennettua data-flash-levyä.</translation>
     </message>
     <message>
-        <location line="+46"/>
+        <location line="+53"/>
         <source>BOSSAC firmware update complete!
 
 </source>
@@ -8190,17 +9619,17 @@ Napsauta OK-painiketta, kun OpenMV-kamerasi SBL-käynnistyslataaja on lueteltu.<
         <translation>BOSSAC-laiteohjelmiston päivitys epäonnistui!</translation>
     </message>
     <message>
-        <location line="+51"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginpicotoolbootloader.cpp" line="-132"/>
         <source>No PicoTool settings for the selected board type!</source>
         <translation>Ei PicoTool-asetuksia valitulle levytyypille!</translation>
     </message>
     <message>
-        <location line="+30"/>
+        <location line="+34"/>
         <source>No PicoTool settings for the selected device!</source>
         <translation>Ei PicoTool-asetuksia valitulle laitteelle!</translation>
     </message>
     <message>
-        <location line="+122"/>
+        <location line="+104"/>
         <source>PicoTool firmware update complete!
 
 </source>
@@ -8214,7 +9643,7 @@ Napsauta OK-painiketta, kun OpenMV-kamerasi SBL-käynnistyslataaja on lueteltu.<
         <translation>PicoTool-laiteohjelmiston päivitys epäonnistui!</translation>
     </message>
     <message>
-        <location line="+20"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginbootloader.cpp" line="-32"/>
         <source>DFU update erases your OpenMV Cam&apos;s internal flash file system.
 
 Backup your data before continuing!</source>
@@ -8278,29 +9707,29 @@ Napsauta OK-painiketta, kun OpenMV-kamerasi DFU-käynnistyslataaja on lueteltu.<
         <translation>DFU-käynnistyslataimen nollaus epäonnistui!</translation>
     </message>
     <message>
-        <location line="+61"/>
+        <location filename="../../../src/plugins/openmv/openmvpluginconnect.cpp" line="-534"/>
         <source>None</source>
         <translation>Ei mitään</translation>
     </message>
     <message>
-        <location line="+26"/>
         <location line="+18"/>
-        <location line="+45"/>
+        <location line="+10"/>
+        <location line="+54"/>
         <source>Unknown</source>
         <translation>Tuntematon</translation>
     </message>
     <message>
-        <location line="-48"/>
+        <location line="-57"/>
         <source>Timeout error while getting sensor type!</source>
         <translation>Aikakatkaisuvirhe anturityyppiä haettaessa!</translation>
     </message>
     <message>
-        <location line="+230"/>
+        <location line="+215"/>
         <source>Timeout error while learning MTU!</source>
         <translation>Aikakatkaisuvirhe opittaessa MTU:ta!</translation>
     </message>
     <message>
-        <location line="+98"/>
+        <location line="+132"/>
         <source>Board: %L1</source>
         <translation>Hallitus: %L1</translation>
     </message>
@@ -8320,7 +9749,7 @@ Napsauta OK-painiketta, kun OpenMV-kamerasi DFU-käynnistyslataaja on lueteltu.<
         <translation>Sarjaportti: %L1</translation>
     </message>
     <message>
-        <location line="+48"/>
+        <location line="+65"/>
         <source> - [ out of date - click here to updgrade ]</source>
         <translation> - [ vanhentunut - päivitä napsauttamalla tätä ]</translation>
     </message>
@@ -8330,22 +9759,22 @@ Napsauta OK-painiketta, kun OpenMV-kamerasi DFU-käynnistyslataaja on lueteltu.<
         <translation>OpenMV Camin laiteohjelmisto on vanhentunut. Haluatko päivittää?</translation>
     </message>
     <message>
-        <location line="+12"/>
+        <location line="+11"/>
         <source> - [ latest ]</source>
         <translation> - [ Viimeisin ]</translation>
     </message>
     <message>
-        <location line="+204"/>
+        <location line="+239"/>
         <source>Reset</source>
         <translation>Nollaa</translation>
     </message>
     <message>
-        <location line="+124"/>
+        <location line="+167"/>
         <source>Start</source>
         <translation>alkaa</translation>
     </message>
     <message>
-        <location line="+131"/>
+        <location line="+174"/>
         <source>More Examples</source>
         <translation>Lisää esimerkkejä</translation>
     </message>
@@ -8359,20 +9788,17 @@ In particular, checkout the Color-Tracking examples.</source>
 Tutustu erityisesti Color-Tracking-esimerkkeihin.</translation>
     </message>
     <message>
-        <location line="+32"/>
+        <location line="+22"/>
         <location line="+6"/>
         <location line="+18"/>
         <location line="+4"/>
         <location line="+6"/>
         <location line="+19"/>
-        <location line="+6"/>
-        <location line="+7"/>
-        <location line="+7"/>
         <source>Firmware Update</source>
         <translation>Laiteohjelmiston päivitys</translation>
     </message>
     <message>
-        <location line="-72"/>
+        <location line="-52"/>
         <source>Update your OpenMV Cam&apos;s firmware to the latest version?</source>
         <translation>Päivitetäänkö OpenMV Camin laiteohjelmisto uusimpaan versioon?</translation>
     </message>
@@ -8387,9 +9813,8 @@ Tutustu erityisesti Color-Tracking-esimerkkeihin.</translation>
         <translation>Haluatko nollata OpenMV Camin laiteohjelmiston julkaisuversioon?</translation>
     </message>
     <message>
-        <location line="+31"/>
         <source>Cannot open firmware.txt!</source>
-        <translation>Firmware.txt-tiedostoa ei voi avata!</translation>
+        <translation type="vanished">Firmware.txt-tiedostoa ei voi avata!</translation>
     </message>
     <message>
         <location filename="../../../src/plugins/openmv/openmvpluginfb.cpp" line="-55"/>
@@ -8790,7 +10215,29 @@ Lataa tietojoukko avaamalla se.</translation>
         <translation>NXP IMX</translation>
     </message>
     <message>
-        <location line="-1126"/>
+        <location filename="../../../src/plugins/openmv/tools/alif.cpp" line="+0"/>
+        <location line="+30"/>
+        <location line="+238"/>
+        <location line="+10"/>
+        <location line="+47"/>
+        <location line="+56"/>
+        <location line="+35"/>
+        <location line="+18"/>
+        <location line="+32"/>
+        <location line="+36"/>
+        <location line="+38"/>
+        <location line="+37"/>
+        <source>Alif Tools</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-546"/>
+        <source>Please turn on the hard maintenance mode switch, it not enabled, and then press the user button on your OpenMV Cam.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+238"/>
+        <location filename="../../../src/plugins/openmv/tools/imx.cpp" line="-1126"/>
         <location line="+215"/>
         <location line="+26"/>
         <location line="+725"/>
@@ -8798,7 +10245,12 @@ Lataa tietojoukko avaamalla se.</translation>
         <translation>Tätä ominaisuutta ei tueta tässä koneessa!</translation>
     </message>
     <message>
-        <location line="-347"/>
+        <location line="+166"/>
+        <source>Please disconnect your OpenMV Cam from your computer, turn off the hard maintenance mode switch, if enabled, reconnect your OpenMV Cam to your computer, and then press Ok.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/openmv/tools/imx.cpp" line="-347"/>
         <location line="+46"/>
         <location line="+313"/>
         <location line="+46"/>
@@ -8826,7 +10278,7 @@ Lataa tietojoukko avaamalla se.</translation>
         <translation>PicoTool</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/openmv/tools/thresholdeditor.cpp" line="+155"/>
+        <location filename="../../../src/plugins/openmv/tools/thresholdeditor.cpp" line="+185"/>
         <source>Threhsold Editor</source>
         <translation>Kynnyseditori</translation>
     </message>
@@ -8921,56 +10373,56 @@ Lataa tietojoukko avaamalla se.</translation>
         <translation>Kopioi yllä oleva kynnys ennen sulkemista.</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/openmv/tools/videotools.cpp" line="-461"/>
+        <location filename="../../../src/plugins/openmv/tools/videotools.cpp" line="-476"/>
         <source>Reading File...</source>
         <translation>Luetaan tiedostoa...</translation>
     </message>
     <message>
         <location line="+11"/>
-        <location line="+25"/>
+        <location line="+28"/>
         <location line="+10"/>
         <location line="+11"/>
-        <location line="+56"/>
+        <location line="+62"/>
         <source>Reading File</source>
         <translation>Tiedoston lukeminen</translation>
     </message>
     <message>
-        <location line="-101"/>
-        <location line="+78"/>
+        <location line="-110"/>
+        <location line="+85"/>
         <source>No frames found!</source>
         <translation>Kehyksiä ei löytynyt!</translation>
     </message>
     <message>
-        <location line="-53"/>
+        <location line="-57"/>
         <location line="+10"/>
         <location line="+11"/>
-        <location line="+56"/>
+        <location line="+62"/>
         <location line="+10"/>
         <location line="+11"/>
-        <location line="+13"/>
+        <location line="+18"/>
         <source>File is corrupt!</source>
         <translation>Tiedosto on korruptoitunut!</translation>
     </message>
     <message>
-        <location line="-70"/>
-        <location line="+557"/>
+        <location line="-77"/>
+        <location line="+565"/>
         <source>Transcoding File...</source>
         <translation>Transkoodataan tiedostoa...</translation>
     </message>
     <message>
-        <location line="-546"/>
-        <location line="+34"/>
+        <location line="-554"/>
+        <location line="+36"/>
         <location line="+11"/>
-        <location line="+13"/>
+        <location line="+18"/>
         <location line="+14"/>
-        <location line="+11"/>
+        <location line="+14"/>
         <location line="+11"/>
         <source>Transcoding File</source>
         <translation>Transkoodaus tiedosto</translation>
     </message>
     <message>
-        <location line="-21"/>
-        <location line="+11"/>
+        <location line="-24"/>
+        <location line="+14"/>
         <source>Painter Failed!</source>
         <translation>Maalari epäonnistui!</translation>
     </message>
@@ -8980,7 +10432,7 @@ Lataa tietojoukko avaamalla se.</translation>
         <translation>Kirjoittaminen epäonnistui!</translation>
     </message>
     <message>
-        <location line="+64"/>
+        <location line="+62"/>
         <location line="+7"/>
         <location line="+8"/>
         <location line="+7"/>
@@ -9171,7 +10623,7 @@ Lataa tietojoukko avaamalla se.</translation>
         <translation>Tallenna video</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/openmv/tools/loaderdialog.cpp" line="+44"/>
+        <location filename="../../../src/plugins/openmv/tools/loaderdialog.cpp" line="+74"/>
         <source>Busy</source>
         <translation>Kiireinen</translation>
     </message>
@@ -9186,41 +10638,54 @@ Lataa tietojoukko avaamalla se.</translation>
         <source>Hide Details</source>
         <translation>Piilota tiedot</translation>
     </message>
+    <message>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvplugindfubootloader.cpp" line="-206"/>
+        <location line="+64"/>
+        <source>No matching interface for the selected file name!</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>QtC::ProjectExplorer</name>
     <message>
-        <location filename="../../../../build/share/qtcreator/translations/jsonwizards_tr.h" line="+4"/>
         <source>This wizard creates a simple unit test project.</source>
-        <translation>Tämä ohjattu toiminto luo yksinkertaisen yksikkötestiprojektin.</translation>
+        <translation type="vanished">Tämä ohjattu toiminto luo yksinkertaisen yksikkötestiprojektin.</translation>
     </message>
     <message>
-        <location line="+1"/>
-        <location line="+104"/>
-        <location line="+194"/>
+        <location filename="../../../../build/share/qtcreator/translations/jsonwizards_tr.h" line="+5"/>
+        <location line="+25"/>
+        <location line="+26"/>
+        <location line="+25"/>
+        <location line="+22"/>
+        <location line="+81"/>
+        <location line="+235"/>
         <location line="+21"/>
-        <location line="+46"/>
+        <location line="+43"/>
         <location line="+11"/>
         <location line="+40"/>
         <location line="+18"/>
         <location line="+19"/>
         <location line="+11"/>
-        <location line="+12"/>
-        <location line="+20"/>
-        <location line="+17"/>
-        <location line="+19"/>
-        <location line="+29"/>
+        <location line="+15"/>
         <location line="+22"/>
+        <location line="+18"/>
+        <location line="+21"/>
+        <location line="+29"/>
+        <location line="+18"/>
         <location line="+28"/>
         <location line="+15"/>
-        <location line="+152"/>
+        <location line="+144"/>
         <source>Project Location</source>
         <translation>Projektin sijainti</translation>
     </message>
     <message>
-        <location line="-777"/>
-        <location line="+104"/>
-        <location line="+18"/>
+        <location line="-886"/>
+        <location line="+25"/>
+        <location line="+26"/>
+        <location line="+25"/>
+        <location line="+22"/>
+        <location line="+81"/>
+        <location line="+17"/>
         <location line="+1"/>
         <location line="+8"/>
         <location line="+1"/>
@@ -9238,7 +10703,9 @@ Lataa tietojoukko avaamalla se.</translation>
         <location line="+1"/>
         <location line="+8"/>
         <location line="+1"/>
-        <location line="+15"/>
+        <location line="+11"/>
+        <location line="+1"/>
+        <location line="+12"/>
         <location line="+13"/>
         <location line="+1"/>
         <location line="+8"/>
@@ -9250,45 +10717,46 @@ Lataa tietojoukko avaamalla se.</translation>
         <location line="+8"/>
         <location line="+1"/>
         <location line="+17"/>
+        <location line="+32"/>
+        <location line="+1"/>
         <location line="+8"/>
         <location line="+1"/>
         <location line="+10"/>
         <location line="+21"/>
-        <location line="+46"/>
+        <location line="+43"/>
         <location line="+11"/>
         <location line="+40"/>
         <location line="+18"/>
         <location line="+19"/>
         <location line="+11"/>
-        <location line="+12"/>
-        <location line="+20"/>
-        <location line="+17"/>
-        <location line="+19"/>
-        <location line="+29"/>
+        <location line="+15"/>
         <location line="+22"/>
+        <location line="+18"/>
+        <location line="+21"/>
+        <location line="+29"/>
+        <location line="+18"/>
         <location line="+28"/>
         <location line="+15"/>
-        <location line="+56"/>
+        <location line="+51"/>
         <location line="+1"/>
         <location line="+17"/>
         <location line="+1"/>
-        <location line="+23"/>
+        <location line="+22"/>
+        <location line="+1"/>
+        <location line="+18"/>
         <location line="+1"/>
         <location line="+19"/>
-        <location line="+1"/>
-        <location line="+20"/>
         <location line="+1"/>
         <location line="+12"/>
         <source>Location</source>
         <translation>Sijainti</translation>
     </message>
     <message>
-        <location line="-777"/>
         <source>Qt Test</source>
-        <translation>Qt testi</translation>
+        <translation type="vanished">Qt testi</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="-516"/>
         <source>Google Test</source>
         <translation>Google-testi</translation>
     </message>
@@ -9308,183 +10776,241 @@ Lataa tietojoukko avaamalla se.</translation>
         <translation>Catch2</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="-371"/>
+        <location line="+25"/>
+        <location line="+26"/>
+        <location line="+321"/>
         <source>Test framework:</source>
         <translation>Testikehys:</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="-296"/>
         <source>GUI Application</source>
         <translation>GUI-sovellus</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="-75"/>
+        <location line="+51"/>
+        <location line="+324"/>
         <source>Test suite name:</source>
         <translation>Testipaketin nimi:</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="-374"/>
+        <location line="+24"/>
+        <location line="+27"/>
+        <location line="+21"/>
+        <location line="+22"/>
+        <location line="+281"/>
         <source>Test case name:</source>
         <translation>Testitapauksen nimi:</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="-302"/>
         <source>Requires QApplication</source>
         <translation>Vaatii QApplication</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+22"/>
         <source>Generate setup code</source>
         <translation>Luo asetuskoodi</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="-20"/>
+        <location line="+21"/>
+        <location line="+280"/>
         <source>Generate initialization and cleanup code</source>
         <translation>Luo alustus- ja puhdistuskoodi</translation>
     </message>
     <message>
-        <location line="+1"/>
         <source>Enable C++11</source>
-        <translation>Ota C++11 käyttöön</translation>
+        <translation type="vanished">Ota C++11 käyttöön</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="-324"/>
         <source>Googletest source directory (optional):</source>
         <translation>Googletestin lähdehakemisto (valinnainen):</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="-51"/>
         <source>Boost include directory (optional):</source>
         <translation>Boost include -hakemisto (valinnainen):</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+24"/>
         <source>Catch2 include directory (optional):</source>
         <translation>Catch2 sisältää hakemiston (valinnainen):</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+3"/>
         <source>Use Qt libraries</source>
         <translation>Käytä Qt-kirjastoja</translation>
     </message>
     <message>
-        <location line="+1"/>
-        <location line="+281"/>
+        <location line="-25"/>
+        <location line="+26"/>
+        <location line="+25"/>
+        <location line="+22"/>
         <location line="+21"/>
-        <location line="+97"/>
+        <location line="+313"/>
+        <location line="+21"/>
+        <location line="+94"/>
         <location line="+18"/>
-        <location line="+99"/>
-        <location line="+50"/>
+        <location line="+107"/>
+        <location line="+46"/>
         <location line="+43"/>
         <source>qmake</source>
         <translation>qmake</translation>
     </message>
     <message>
-        <location line="-608"/>
-        <location line="+281"/>
+        <location line="-735"/>
+        <location line="+26"/>
+        <location line="+25"/>
+        <location line="+22"/>
         <location line="+21"/>
-        <location line="+97"/>
+        <location line="+313"/>
+        <location line="+21"/>
+        <location line="+94"/>
         <location line="+18"/>
-        <location line="+97"/>
-        <location line="+29"/>
-        <location line="+23"/>
+        <location line="+105"/>
+        <location line="+48"/>
         <location line="+43"/>
         <source>CMake</source>
         <translation>CMake</translation>
     </message>
     <message>
-        <location line="-608"/>
-        <location line="+281"/>
+        <location line="-735"/>
+        <location line="+26"/>
+        <location line="+25"/>
+        <location line="+22"/>
         <location line="+21"/>
-        <location line="+97"/>
+        <location line="+313"/>
+        <location line="+21"/>
+        <location line="+94"/>
         <location line="+18"/>
-        <location line="+126"/>
-        <location line="+23"/>
+        <location line="+153"/>
         <location line="+44"/>
         <source>Qbs</source>
         <translation>Qbs</translation>
     </message>
     <message>
-        <location line="-609"/>
-        <location line="+282"/>
+        <location line="-736"/>
+        <location line="+26"/>
+        <location line="+25"/>
+        <location line="+22"/>
         <location line="+21"/>
-        <location line="+97"/>
+        <location line="+314"/>
+        <location line="+21"/>
+        <location line="+94"/>
         <location line="+18"/>
-        <location line="+96"/>
-        <location line="+29"/>
-        <location line="+23"/>
+        <location line="+104"/>
+        <location line="+48"/>
         <location line="+44"/>
         <source>Build system:</source>
         <translation>Rakenna järjestelmä:</translation>
     </message>
     <message>
-        <location line="-609"/>
+        <location line="-736"/>
+        <location line="+26"/>
+        <location line="+25"/>
+        <location line="+22"/>
+        <location line="+21"/>
         <source>Project and Test Information</source>
         <translation>Projekti- ja testitiedot</translation>
     </message>
     <message>
-        <location line="+1"/>
-        <location line="+30"/>
-        <location line="+21"/>
-        <location line="+21"/>
-        <location line="+257"/>
-        <location line="+115"/>
-        <location line="+20"/>
-        <location line="+17"/>
-        <location line="+19"/>
-        <location line="+27"/>
+        <location line="-93"/>
+        <location line="+26"/>
+        <location line="+25"/>
         <location line="+22"/>
+        <location line="+21"/>
+        <location line="+25"/>
+        <location line="+19"/>
+        <location line="+19"/>
+        <location line="+216"/>
+        <location line="+79"/>
+        <location line="+116"/>
+        <location line="+18"/>
+        <location line="+4"/>
+        <location line="+18"/>
+        <location line="+17"/>
+        <location line="+33"/>
+        <location line="+18"/>
         <location line="+26"/>
         <location line="+16"/>
-        <location line="+32"/>
-        <location line="+148"/>
+        <location line="+28"/>
+        <location line="+142"/>
         <source>Details</source>
         <translation>Yksityiskohdat</translation>
     </message>
     <message>
-        <location line="-770"/>
-        <location line="+89"/>
-        <location line="+195"/>
-        <location line="+47"/>
+        <location line="-887"/>
+        <location line="+26"/>
+        <location line="+25"/>
+        <location line="+22"/>
+        <location line="+21"/>
+        <location line="+79"/>
+        <location line="+237"/>
+        <location line="+44"/>
         <location line="+11"/>
         <location line="+40"/>
         <location line="+18"/>
         <location line="+18"/>
         <location line="+12"/>
-        <location line="+97"/>
+        <location line="+15"/>
         <location line="+22"/>
+        <location line="+18"/>
+        <location line="+21"/>
+        <location line="+29"/>
+        <location line="+18"/>
         <location line="+28"/>
         <location line="+14"/>
-        <location line="+34"/>
-        <location line="+148"/>
+        <location line="+30"/>
+        <location line="+142"/>
+        <location filename="../../../src/plugins/projectexplorer/targetsetuppage.cpp" line="+252"/>
         <source>Kit Selection</source>
         <translation>Sarjan valinta</translation>
     </message>
     <message>
-        <location line="-772"/>
-        <location line="+89"/>
-        <location line="+195"/>
-        <location line="+47"/>
+        <location line="-889"/>
+        <location line="+26"/>
+        <location line="+25"/>
+        <location line="+22"/>
+        <location line="+21"/>
+        <location line="+79"/>
+        <location line="+237"/>
+        <location line="+44"/>
         <location line="+11"/>
         <location line="+40"/>
         <location line="+18"/>
         <location line="+18"/>
         <location line="+12"/>
-        <location line="+97"/>
+        <location line="+15"/>
         <location line="+22"/>
+        <location line="+18"/>
+        <location line="+21"/>
+        <location line="+29"/>
+        <location line="+18"/>
         <location line="+28"/>
         <location line="+14"/>
-        <location line="+34"/>
-        <location line="+148"/>
+        <location line="+30"/>
+        <location line="+142"/>
+        <location filename="../../../src/plugins/projectexplorer/kitoptionspage.cpp" line="+731"/>
+        <location line="+2"/>
+        <location filename="../../../src/plugins/projectexplorer/targetsetuppage.cpp" line="+7"/>
         <source>Kits</source>
         <translation>Sarjat</translation>
     </message>
     <message>
-        <location line="-772"/>
-        <location line="+28"/>
+        <location line="-889"/>
+        <location line="+26"/>
+        <location line="+25"/>
+        <location line="+22"/>
         <location line="+21"/>
-        <location line="+21"/>
+        <location line="+23"/>
         <location line="+19"/>
+        <location line="+19"/>
+        <location line="+18"/>
         <location line="+9"/>
         <location line="+9"/>
         <location line="+11"/>
@@ -9494,6 +11020,7 @@ Lataa tietojoukko avaamalla se.</translation>
         <location line="+9"/>
         <location line="+9"/>
         <location line="+12"/>
+        <location line="+9"/>
         <location line="+12"/>
         <location line="+14"/>
         <location line="+9"/>
@@ -9501,130 +11028,135 @@ Lataa tietojoukko avaamalla se.</translation>
         <location line="+9"/>
         <location line="+9"/>
         <location line="+17"/>
+        <location line="+24"/>
+        <location line="+9"/>
         <location line="+9"/>
         <location line="+21"/>
-        <location line="+47"/>
+        <location line="+44"/>
         <location line="+11"/>
         <location line="+40"/>
         <location line="+18"/>
         <location line="+18"/>
         <location line="+12"/>
-        <location line="+12"/>
-        <location line="+20"/>
-        <location line="+17"/>
-        <location line="+19"/>
-        <location line="+29"/>
+        <location line="+15"/>
         <location line="+22"/>
+        <location line="+18"/>
+        <location line="+21"/>
+        <location line="+29"/>
+        <location line="+18"/>
         <location line="+28"/>
         <location line="+14"/>
-        <location line="+34"/>
-        <location line="+148"/>
+        <location line="+30"/>
+        <location line="+142"/>
         <source>Project Management</source>
         <translation>Projektinhallinta</translation>
     </message>
     <message>
-        <location line="-772"/>
-        <location line="+28"/>
-        <location line="+21"/>
-        <location line="+40"/>
-        <location line="+9"/>
-        <location line="+9"/>
-        <location line="+11"/>
-        <location line="+9"/>
-        <location line="+9"/>
-        <location line="+9"/>
-        <location line="+9"/>
-        <location line="+9"/>
-        <location line="+12"/>
-        <location line="+12"/>
-        <location line="+14"/>
-        <location line="+9"/>
-        <location line="+9"/>
-        <location line="+9"/>
-        <location line="+9"/>
-        <location line="+17"/>
-        <location line="+9"/>
-        <location line="+21"/>
-        <location line="+47"/>
-        <location line="+11"/>
-        <location line="+40"/>
-        <location line="+18"/>
-        <location line="+18"/>
-        <location line="+12"/>
-        <location line="+12"/>
-        <location line="+20"/>
-        <location line="+17"/>
-        <location line="+19"/>
-        <location line="+29"/>
+        <location line="-889"/>
+        <location line="+26"/>
+        <location line="+25"/>
         <location line="+22"/>
+        <location line="+21"/>
+        <location line="+23"/>
+        <location line="+19"/>
+        <location line="+37"/>
+        <location line="+9"/>
+        <location line="+9"/>
+        <location line="+11"/>
+        <location line="+9"/>
+        <location line="+9"/>
+        <location line="+9"/>
+        <location line="+9"/>
+        <location line="+9"/>
+        <location line="+12"/>
+        <location line="+9"/>
+        <location line="+12"/>
+        <location line="+14"/>
+        <location line="+9"/>
+        <location line="+9"/>
+        <location line="+9"/>
+        <location line="+9"/>
+        <location line="+17"/>
+        <location line="+24"/>
+        <location line="+9"/>
+        <location line="+9"/>
+        <location line="+21"/>
+        <location line="+44"/>
+        <location line="+11"/>
+        <location line="+40"/>
+        <location line="+18"/>
+        <location line="+18"/>
+        <location line="+12"/>
+        <location line="+15"/>
+        <location line="+22"/>
+        <location line="+18"/>
+        <location line="+21"/>
+        <location line="+29"/>
+        <location line="+18"/>
         <location line="+28"/>
         <location line="+14"/>
-        <location line="+34"/>
-        <location line="+148"/>
+        <location line="+30"/>
+        <location line="+142"/>
+        <location filename="../../../src/plugins/projectexplorer/projectwizardpage.cpp" line="+305"/>
         <source>Summary</source>
         <translation>Yhteenveto</translation>
     </message>
     <message>
-        <location line="-772"/>
         <source>Creates a new unit test project. Unit tests allow you to verify that the code is fit for use and that there are no regressions.</source>
-        <translation>Luo uuden yksikkötestiprojektin. Yksikkötesteillä voit varmistaa, että koodi on käyttökelpoinen ja ettei siinä ole regressioita.</translation>
+        <translation type="vanished">Luo uuden yksikkötestiprojektin. Yksikkötesteillä voit varmistaa, että koodi on käyttökelpoinen ja ettei siinä ole regressioita.</translation>
     </message>
     <message>
-        <location line="+1"/>
-        <location line="+89"/>
-        <location line="+341"/>
-        <location line="+161"/>
+        <location line="-715"/>
+        <location line="+380"/>
+        <location line="+165"/>
+        <location filename="../../../src/plugins/projectexplorer/projectexplorerconstants.h" line="+107"/>
         <source>Other Project</source>
         <translation>Muu projekti</translation>
     </message>
     <message>
-        <location line="-590"/>
         <source>Auto Test Project</source>
-        <translation>Automaattinen testiprojekti</translation>
+        <translation type="vanished">Automaattinen testiprojekti</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="-620"/>
         <source>Fully qualified name, including namespaces</source>
         <translation>Täysin pätevä nimi, mukaan lukien nimitilat</translation>
     </message>
     <message>
         <location line="+1"/>
-        <location line="+27"/>
-        <location line="+21"/>
-        <location line="+251"/>
-        <location line="+146"/>
-        <location line="+37"/>
-        <location line="+120"/>
+        <location line="+22"/>
+        <location line="+19"/>
+        <location line="+289"/>
+        <location line="+145"/>
+        <location line="+40"/>
+        <location line="+119"/>
         <source>Class name:</source>
         <translation>Luokan nimi:</translation>
     </message>
     <message>
-        <location line="-601"/>
-        <location line="+49"/>
-        <location line="+396"/>
+        <location line="-633"/>
+        <location line="+42"/>
+        <location line="+433"/>
         <source>&lt;Custom&gt;</source>
         <translation>&lt;Mukautettu&gt;</translation>
     </message>
     <message>
-        <location line="-444"/>
-        <location line="+26"/>
-        <location line="+23"/>
-        <location line="+256"/>
-        <location line="+140"/>
-        <location line="+36"/>
-        <location line="+120"/>
+        <location line="-474"/>
+        <location line="+21"/>
+        <location line="+21"/>
+        <location line="+294"/>
+        <location line="+139"/>
+        <location line="+39"/>
+        <location line="+119"/>
         <source>Base class:</source>
         <translation>Perusluokka:</translation>
     </message>
     <message>
-        <location line="-600"/>
-        <location line="+1"/>
-        <location line="+49"/>
         <source>%{BaseCB}</source>
-        <translation>%{BaseCB}</translation>
+        <translation type="vanished">%{BaseCB}</translation>
     </message>
     <message>
-        <location line="-48"/>
+        <location line="-632"/>
         <source>Include QObject</source>
         <translation>Sisällytä QObject</translation>
     </message>
@@ -9639,17 +11171,15 @@ Lataa tietojoukko avaamalla se.</translation>
         <translation>Sisällytä QMainWindow</translation>
     </message>
     <message>
-        <location line="+1"/>
         <source>Include QDeclarativeItem - Qt Quick 1</source>
-        <translation>Sisällytä QDeclarativeItem - Qt Quick 1</translation>
+        <translation type="vanished">Sisällytä QDeclarativeItem - Qt Quick 1</translation>
     </message>
     <message>
-        <location line="+1"/>
         <source>Include QQuickItem - Qt Quick 2</source>
-        <translation>Sisällytä QQuickItem - Qt Quick 2</translation>
+        <translation type="vanished">Sisällytä QQuickItem - Qt Quick 2</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+2"/>
         <source>Include QSharedData</source>
         <translation>Sisällytä QSharedData</translation>
     </message>
@@ -9664,74 +11194,70 @@ Lataa tietojoukko avaamalla se.</translation>
         <translation>Lisää QML_ELEMENT</translation>
     </message>
     <message>
-        <location line="+1"/>
-        <location line="+21"/>
-        <location line="+279"/>
-        <location line="+291"/>
         <source>%{JS: Cpp.classToFileName(value(&apos;Class&apos;), Util.preferredSuffix(&apos;text/x-c++hdr&apos;))}</source>
-        <translation>%{JS: Cpp.classToFileName(value(&apos;Class&apos;), Util.preferredSuffix(&apos;text/x-c++hdr&apos;))}</translation>
+        <translation type="vanished">%{JS: Cpp.classToFileName(value(&apos;Class&apos;), Util.preferredSuffix(&apos;text/x-c++hdr&apos;))}</translation>
     </message>
     <message>
-        <location line="-590"/>
-        <location line="+21"/>
-        <location line="+279"/>
-        <location line="+291"/>
+        <location line="+1"/>
+        <location line="+19"/>
+        <location line="+315"/>
+        <location line="+292"/>
         <source>Header file:</source>
         <translation>Otsikkotiedosto:</translation>
     </message>
     <message>
-        <location line="-590"/>
-        <location line="+21"/>
-        <location line="+279"/>
-        <location line="+291"/>
         <source>%{JS: Cpp.classToFileName(value(&apos;Class&apos;), Util.preferredSuffix(&apos;text/x-c++src&apos;))}</source>
-        <translation>%{JS: Cpp.classToFileName(value(&apos;Class&apos;), Util.preferredSuffix(&apos;text/x-c++src&apos;))}</translation>
+        <translation type="vanished">%{JS: Cpp.classToFileName(value(&apos;Class&apos;), Util.preferredSuffix(&apos;text/x-c++src&apos;))}</translation>
     </message>
     <message>
-        <location line="-590"/>
-        <location line="+21"/>
-        <location line="+21"/>
-        <location line="+258"/>
+        <location line="-625"/>
+        <location line="+19"/>
+        <location line="+19"/>
+        <location line="+215"/>
+        <location line="+1"/>
+        <location line="+80"/>
         <location line="+133"/>
-        <location line="+36"/>
-        <location line="+122"/>
+        <location line="+39"/>
+        <location line="+120"/>
         <source>Source file:</source>
         <translation>Lähdetiedosto:</translation>
     </message>
     <message>
-        <location line="-590"/>
-        <location line="+21"/>
-        <location line="+21"/>
-        <location line="+570"/>
-        <location line="+35"/>
+        <location line="-625"/>
+        <location line="+19"/>
+        <location line="+19"/>
+        <location line="+216"/>
+        <location line="+392"/>
+        <location line="+34"/>
         <location line="+20"/>
-        <location line="+22"/>
-        <location line="+20"/>
+        <location line="+21"/>
+        <location line="+19"/>
+        <location filename="../../../src/plugins/projectexplorer/customwizard/customwizardpage.cpp" line="+412"/>
         <source>Path:</source>
         <translation>Polku:</translation>
     </message>
     <message>
-        <location line="-708"/>
-        <location line="+42"/>
-        <location line="+392"/>
-        <location line="+36"/>
+        <location line="-739"/>
+        <location line="+38"/>
+        <location line="+429"/>
+        <location line="+39"/>
         <source>Define Class</source>
         <translation>Määritä luokka</translation>
     </message>
     <message>
-        <location line="-466"/>
+        <location line="-502"/>
         <source>Creates a C++ header and a source file for a new class that you can add to a C++ project.</source>
         <translation>Luo C++-otsikon ja lähdetiedoston uudelle luokalle, jonka voit lisätä C++-projektiin.</translation>
     </message>
     <message>
         <location line="+1"/>
-        <location line="+70"/>
+        <location line="+65"/>
         <location line="+9"/>
         <source>C/C++</source>
         <translation>C/C++</translation>
     </message>
     <message>
-        <location line="-78"/>
+        <location line="-73"/>
         <source>C++ Class</source>
         <translation>C++ luokka</translation>
     </message>
@@ -9761,7 +11287,7 @@ Lataa tietojoukko avaamalla se.</translation>
         <translation>Hae tiedot dynaamisesti</translation>
     </message>
     <message>
-        <location line="+6"/>
+        <location line="+4"/>
         <source>Define Item Model Class</source>
         <translation>Määritä tuotemalliluokka</translation>
     </message>
@@ -9772,15 +11298,16 @@ Lataa tietojoukko avaamalla se.</translation>
     </message>
     <message>
         <location line="+1"/>
-        <location line="+69"/>
+        <location line="+66"/>
         <location line="+57"/>
-        <location line="+53"/>
+        <location line="+62"/>
         <location line="+9"/>
+        <location line="+59"/>
         <source>Qt</source>
         <translation>Qt</translation>
     </message>
     <message>
-        <location line="-187"/>
+        <location line="-252"/>
         <source>Qt Item Model</source>
         <translation>Qt-tuotemalli</translation>
     </message>
@@ -9795,7 +11322,7 @@ Lataa tietojoukko avaamalla se.</translation>
         <translation>Voit valita Qt-luokat vain, jos valitset Python-moduulin Qt:n.</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+1"/>
         <source>Import QtCore</source>
         <translation>Tuo QtCore</translation>
     </message>
@@ -9810,9 +11337,8 @@ Lataa tietojoukko avaamalla se.</translation>
         <translation>Tuo QtQuick</translation>
     </message>
     <message>
-        <location line="+1"/>
         <source>%{JS: Util.fileName(value(&apos;Class&apos;), Util.preferredSuffix(&apos;text/x-python&apos;))}</source>
-        <translation>%{JS: Util.fileName(value(&apos;Class&apos;), Util.preferredSuffix(&apos;text/x-python&apos;))}</translation>
+        <translation type="vanished">%{JS: Util.fileName(value(&apos;Class&apos;), Util.preferredSuffix(&apos;text/x-python&apos;))}</translation>
     </message>
     <message>
         <location line="+6"/>
@@ -9821,34 +11347,32 @@ Lataa tietojoukko avaamalla se.</translation>
     </message>
     <message>
         <location line="+1"/>
-        <location line="+150"/>
+        <location line="+158"/>
         <source>Python</source>
         <translation>Python</translation>
     </message>
     <message>
-        <location line="-149"/>
+        <location line="-157"/>
         <source>Python Class</source>
         <translation>Python-luokka</translation>
     </message>
     <message>
         <location line="+3"/>
-        <location line="+15"/>
         <source>Creates a CMake-based test project for which a code snippet can be entered.</source>
         <translation>Luo CMake-pohjaisen testiprojektin, johon voidaan syöttää koodinpätkä.</translation>
     </message>
     <message>
-        <location line="-12"/>
         <source>int main(int argc, char *argv[])
 {
     return 0;
 }</source>
-        <translation>int main(int argc, char *argv[])
+        <translation type="vanished">int main(int argc, char *argv[])
 {
     paluu 0;
 }</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+3"/>
         <source>Code:</source>
         <translation>Koodi:</translation>
     </message>
@@ -9918,17 +11442,15 @@ Lataa tietojoukko avaamalla se.</translation>
         <translation>Lomakemalli</translation>
     </message>
     <message>
-        <location line="+5"/>
         <source>Creates a Qt Designer form that you can add to a Qt Widget Project. This is useful if you already have an existing class for the UI business logic.</source>
-        <translation>Luo Qt Designer -lomakkeen, jonka voit lisätä Qt Widget -projektiin. Tämä on hyödyllistä, jos sinulla on jo olemassa oleva luokka käyttöliittymän liiketoimintalogiikkaa varten.</translation>
+        <translation type="vanished">Luo Qt Designer -lomakkeen, jonka voit lisätä Qt Widget -projektiin. Tämä on hyödyllistä, jos sinulla on jo olemassa oleva luokka käyttöliittymän liiketoimintalogiikkaa varten.</translation>
     </message>
     <message>
-        <location line="+2"/>
         <source>Qt Designer Form</source>
-        <translation>Qt-suunnittelijalomake</translation>
+        <translation type="vanished">Qt-suunnittelijalomake</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+14"/>
         <source>Creates a fragment shader in the Desktop OpenGL Shading Language (GLSL). Fragment shaders generate the final pixel colors for triangles, points and lines rendered with OpenGL.</source>
         <translation>Luo fragmenttivarjostimen Desktop OpenGL Shading Language (GLSL) -kielellä. Fragmenttien varjostimet luovat lopulliset pikselivärit kolmioihin, pisteisiin ja viivoille, jotka on renderöity OpenGL:llä.</translation>
     </message>
@@ -10012,13 +11534,14 @@ Lataa tietojoukko avaamalla se.</translation>
         <translation>JS tiedosto</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+12"/>
         <source>Model name:</source>
         <translation>Mallinimi:</translation>
     </message>
     <message>
         <location line="+1"/>
         <location line="+67"/>
+        <location filename="../../../src/plugins/projectexplorer/simpleprojectwizard.cpp" line="+121"/>
         <source>Location:</source>
         <translation>Sijainti:</translation>
     </message>
@@ -10122,13 +11645,180 @@ Lataa tietojoukko avaamalla se.</translation>
         <translation>Luo raaputuspuskurin väliaikaisen tiedoston avulla.</translation>
     </message>
     <message>
-        <location line="+1"/>
-        <location line="+21"/>
+        <location line="-66"/>
+        <location line="+67"/>
+        <location line="+45"/>
+        <location filename="../../../src/plugins/projectexplorer/devicesupport/devicesettingspage.cpp" line="+105"/>
+        <location filename="../../../src/plugins/projectexplorer/projectexplorersettings.cpp" line="+551"/>
         <source>General</source>
         <translation>Kenraali</translation>
     </message>
     <message>
-        <location line="-20"/>
+        <location line="-401"/>
+        <source>This wizard creates a simple unit test project using Boost.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Boost Test (header only)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Boost Test (shared libraries)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Boost install directory (optional):</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>Creates a new unit test project using Boost. Unit tests allow you to verify that the code is fit for use and that there are no regressions.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <location line="+26"/>
+        <location line="+25"/>
+        <location line="+22"/>
+        <location line="+21"/>
+        <source>Test Project</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-93"/>
+        <source>Boost Test Project</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>This wizard creates a simple unit test project using Catch2.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Catch2 v2 (header only)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Catch2 v3 (shared libraries)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Catch2 install directory (optional):</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Use own main</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+12"/>
+        <source>Creates a new unit test project using Catch2. Unit tests allow you to verify that the code is fit for use and that there are no regressions.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Catch2 Test Project</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>This wizard creates a simple unit test project using Google Test.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Google Test (header only)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Google Test (shared libraries)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Googletest install directory (optional):</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>Creates a new unit test project using Google Test. Unit tests allow you to verify that the code is fit for use and that there are no regressions.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Google Test Project</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>This wizard creates a simple unit test project using Qt Test.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+17"/>
+        <source>Creates a new unit test project using Qt Test. Unit tests allow you to verify that the code is fit for use and that there are no regressions.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Qt Test Project</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>This wizard creates a simple unit test project using Qt Quick Test.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>Creates a new unit test project using Qt Quick Test. Unit tests allow you to verify that the code is fit for use and that there are no regressions.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Qt Quick Test Project</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Include QQuickItem</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+67"/>
+        <source>Creates a CMake-based test project where you can enter a code snippet to compile and check it.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+29"/>
+        <source>Creates a Qt Widgets Designer form that you can add to a Qt Widget Project. This is useful if you already have an existing class for the UI business logic.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Qt Widgets Designer Form</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+64"/>
+        <source>Creates a markdown file.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Markdown File</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+67"/>
         <source>Scratch Buffer</source>
         <translation>Scratch Buffer</translation>
     </message>
@@ -10153,6 +11843,44 @@ Lataa tietojoukko avaamalla se.</translation>
         <translation>Osavaltiokaavio</translation>
     </message>
     <message>
+        <location line="+3"/>
+        <source>You must tell Qt Creator which test framework is used inside the project.
+
+You should not mix multiple test frameworks in a project.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>2.x</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>3.x</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Catch2 version:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Test Information</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Creates a source file that you can add to an existing test project.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <location line="+1"/>
+        <source>Test Case</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location line="+7"/>
         <source>Creates an empty file.</source>
         <translation>Luo tyhjän tiedoston.</translation>
@@ -10163,6 +11891,16 @@ Lataa tietojoukko avaamalla se.</translation>
         <translation>Tyhjä tiedosto</translation>
     </message>
     <message>
+        <location line="+7"/>
+        <source>Creates a translation file that you can add to a Qt project.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Qt Translation File</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location line="+3"/>
         <source>This wizard creates a simple Qt-based console application.</source>
         <translation>Tämä ohjattu toiminto luo yksinkertaisen Qt-pohjaisen konsolisovelluksen.</translation>
@@ -10170,73 +11908,114 @@ Lataa tietojoukko avaamalla se.</translation>
     <message>
         <location line="+6"/>
         <location line="+21"/>
-        <location line="+97"/>
+        <location line="+94"/>
         <location line="+18"/>
-        <location line="+191"/>
+        <location line="+195"/>
         <source>Meson</source>
         <translation>Meson</translation>
     </message>
     <message>
-        <location line="-325"/>
+        <location line="-326"/>
         <location line="+21"/>
-        <location line="+97"/>
+        <location line="+94"/>
         <location line="+18"/>
-        <location line="+96"/>
-        <location line="+29"/>
-        <location line="+23"/>
+        <location line="+104"/>
+        <location line="+48"/>
         <location line="+44"/>
         <source>Define Build System</source>
         <translation>Määritä rakennusjärjestelmä</translation>
     </message>
     <message>
-        <location line="-327"/>
+        <location line="-328"/>
         <location line="+21"/>
-        <location line="+97"/>
+        <location line="+94"/>
         <location line="+18"/>
-        <location line="+96"/>
-        <location line="+29"/>
-        <location line="+23"/>
+        <location line="+104"/>
+        <location line="+48"/>
         <location line="+44"/>
         <source>Build System</source>
         <translation>Rakenna järjestelmä</translation>
     </message>
     <message>
-        <location line="-327"/>
-        <location line="+47"/>
-        <location line="+246"/>
-        <location line="+48"/>
-        <location line="+148"/>
+        <location line="-328"/>
+        <location line="+44"/>
+        <location line="+250"/>
+        <location line="+44"/>
+        <location line="+142"/>
         <source>Translation File</source>
         <translation>Käännöstiedosto</translation>
     </message>
     <message>
-        <location line="-488"/>
-        <location line="+47"/>
-        <location line="+246"/>
-        <location line="+48"/>
-        <location line="+148"/>
+        <location line="-479"/>
+        <location line="+44"/>
+        <location line="+250"/>
+        <location line="+44"/>
+        <location line="+142"/>
         <source>Translation</source>
         <translation>Käännös</translation>
     </message>
     <message>
-        <location line="-484"/>
+        <location line="-262"/>
+        <source>Define Python Interpreter</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Interpreter</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Creates a Qt for Python application that includes a Qt Widgets Designer-based widget (ui file). Requires .ui to Python conversion.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+38"/>
+        <source>Qt 6.4</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Qt 6.5</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>Creates a Qt Quick application that can have both QML and C++ code. You can build the application and deploy it to desktop, embedded, and mobile target platforms.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+42"/>
+        <source>Creates a Qt Quick UI project for previewing and prototyping designs.
+
+To develop a full application, create a Qt Quick Application project instead.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+30"/>
+        <source>Creates a widget-based Qt application that contains a Qt Widgets Designer-based main window and C++ source and header files to implement the application logic.
+
+Preselects a desktop Qt for building the application if available.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>Creates a project containing a single main.cpp file with a stub implementation.
 
 Preselects a desktop Qt for building the application if available.</source>
-        <translation>Luo projektin, joka sisältää yhden main.cpp-tiedoston tynkätoteutuksen kanssa.
+        <translation type="vanished">Luo projektin, joka sisältää yhden main.cpp-tiedoston tynkätoteutuksen kanssa.
 
 Esivalitsee työpöydän Qt:n sovelluksen rakentamista varten, jos sellainen on käytettävissä.</translation>
     </message>
     <message>
-        <location line="+1"/>
-        <location line="+265"/>
+        <location line="-337"/>
+        <location line="+266"/>
         <location line="+28"/>
-        <location line="+48"/>
+        <location line="+44"/>
         <source>Application (Qt)</source>
         <translation>Sovellus (Qt)</translation>
     </message>
     <message>
-        <location line="-340"/>
+        <location line="-337"/>
         <source>Qt Console Application</source>
         <translation>Qt-konsolisovellus</translation>
     </message>
@@ -10247,12 +12026,12 @@ Esivalitsee työpöydän Qt:n sovelluksen rakentamista varten, jos sellainen on 
     </message>
     <message>
         <location line="+10"/>
-        <location line="+307"/>
+        <location line="+308"/>
         <source>Specify basic information about the classes for which you want to generate skeleton source code files.</source>
         <translation>Määritä perustiedot luokista, joille haluat luoda luurankolähdekooditiedostoja.</translation>
     </message>
     <message>
-        <location line="-306"/>
+        <location line="-307"/>
         <source>Shared Library</source>
         <translation>Jaettu kirjasto</translation>
     </message>
@@ -10268,17 +12047,17 @@ Esivalitsee työpöydän Qt:n sovelluksen rakentamista varten, jos sellainen on 
     </message>
     <message>
         <location line="+1"/>
-        <location line="+49"/>
+        <location line="+46"/>
+        <location filename="../../../src/plugins/projectexplorer/devicesupport/devicesettingspage.cpp" line="+61"/>
         <source>Type:</source>
         <translation>Tyyppi:</translation>
     </message>
     <message>
-        <location line="-48"/>
         <source>%{JS: value(&apos;Type&apos;) === &apos;qtplugin&apos; ? value(&apos;BaseClassName&apos;).slice(1) : (value(&apos;ProjectName&apos;).charAt(0).toUpperCase() + value(&apos;ProjectName&apos;).slice(1))}</source>
-        <translation>%{JS: value(&apos;Tyyppi&apos;) === &apos;qtplugin&apos; ? value(&apos;BaseClassName&apos;).slice(1) : (value(&apos;ProjectName&apos;).charAt(0).toUpperCase() + value(&apos;ProjectName&apos;).slice(1))}</translation>
+        <translation type="vanished">%{JS: value(&apos;Tyyppi&apos;) === &apos;qtplugin&apos; ? value(&apos;BaseClassName&apos;).slice(1) : (value(&apos;ProjectName&apos;).charAt(0).toUpperCase() + value(&apos;ProjectName&apos;).slice(1))}</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="-44"/>
         <source>QAccessiblePlugin</source>
         <translation>QAccessiblePlugin</translation>
     </message>
@@ -10314,6 +12093,12 @@ Esivalitsee työpöydän Qt:n sovelluksen rakentamista varten, jos sellainen on 
     </message>
     <message>
         <location line="+2"/>
+        <location filename="../../../src/plugins/projectexplorer/kitaspects.cpp" line="+485"/>
+        <location line="+18"/>
+        <location line="+13"/>
+        <location filename="../../../src/plugins/projectexplorer/projectexplorersettings.cpp" line="-202"/>
+        <location filename="../../../src/plugins/projectexplorer/toolchainmanager.cpp" line="+243"/>
+        <location line="+2"/>
         <source>None</source>
         <translation>Ei mitään</translation>
     </message>
@@ -10338,31 +12123,31 @@ Esivalitsee työpöydän Qt:n sovelluksen rakentamista varten, jos sellainen on 
         <translation>Qt-moduuli:</translation>
     </message>
     <message>
-        <location line="+5"/>
-        <location line="+115"/>
-        <location line="+37"/>
+        <location line="+3"/>
+        <location line="+116"/>
+        <location line="+22"/>
+        <location line="+18"/>
         <location line="+68"/>
         <location line="+26"/>
         <location line="+16"/>
-        <location line="+180"/>
+        <location line="+170"/>
         <source>Define Project Details</source>
         <translation>Määritä projektin tiedot</translation>
     </message>
     <message>
-        <location line="-434"/>
         <source>Creates a C++ library. This can be used to create:&lt;ul&gt;&lt;li&gt;a shared C++ library for use with &lt;tt&gt;QPluginLoader&lt;/tt&gt; and runtime (Plugins)&lt;/li&gt;&lt;li&gt;a shared or static C++ library for use with another project at linktime&lt;/li&gt;&lt;/ul&gt;</source>
-        <translation>Luo C++-kirjaston. Tätä voidaan käyttää luomaan:&lt;ul&gt;&lt;li&gt;jaettu C++-kirjasto käytettäväksi &lt;tt&gt;QPluginLoader&lt;/tt&gt;- ja runtime (Plugins) kanssa&lt;/li&gt;&lt;li&gt;jaettu tai staattinen C++-kirjasto käytettäväksi toisen kanssa projekti linktimessä&lt;/li&gt;&lt;/ul&gt;</translation>
+        <translation type="vanished">Luo C++-kirjaston. Tätä voidaan käyttää luomaan:&lt;ul&gt;&lt;li&gt;jaettu C++-kirjasto käytettäväksi &lt;tt&gt;QPluginLoader&lt;/tt&gt;- ja runtime (Plugins) kanssa&lt;/li&gt;&lt;li&gt;jaettu tai staattinen C++-kirjasto käytettäväksi toisen kanssa projekti linktimessä&lt;/li&gt;&lt;/ul&gt;</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="-427"/>
         <location line="+18"/>
-        <location line="+178"/>
-        <location line="+246"/>
+        <location line="+186"/>
+        <location line="+232"/>
         <source>Library</source>
         <translation>Kirjasto</translation>
     </message>
     <message>
-        <location line="-441"/>
+        <location line="-435"/>
         <source>C++ Library</source>
         <translation>C++-kirjasto</translation>
     </message>
@@ -10401,12 +12186,12 @@ Esivalitsee työpöydän Qt:n sovelluksen rakentamista varten, jos sellainen on 
     </message>
     <message>
         <location line="+1"/>
-        <location line="+407"/>
+        <location line="+402"/>
         <source>Description:</source>
         <translation>Kuvaus:</translation>
     </message>
     <message>
-        <location line="-406"/>
+        <location line="-401"/>
         <source>0.1.0</source>
         <translation>0.1.0</translation>
     </message>
@@ -10472,12 +12257,13 @@ Esivalitsee työpöydän Qt:n sovelluksen rakentamista varten, jos sellainen on 
     </message>
     <message>
         <location line="+1"/>
-        <location line="+391"/>
+        <location line="+386"/>
         <source>License:</source>
         <translation>Lisenssi:</translation>
     </message>
     <message>
-        <location line="-390"/>
+        <location line="-385"/>
+        <location filename="../../../src/plugins/projectexplorer/projectexplorer.cpp" line="+862"/>
         <source>C</source>
         <translation>C</translation>
     </message>
@@ -10520,19 +12306,19 @@ Esivalitsee työpöydän Qt:n sovelluksen rakentamista varten, jos sellainen on 
         <location line="+1"/>
         <location line="+253"/>
         <location line="+1"/>
-        <location line="+34"/>
+        <location line="+33"/>
         <location line="+1"/>
         <location line="+17"/>
         <location line="+1"/>
-        <location line="+23"/>
+        <location line="+22"/>
         <location line="+1"/>
-        <location line="+19"/>
+        <location line="+18"/>
         <location line="+1"/>
         <source>Configuration</source>
         <translation>Kokoonpano</translation>
     </message>
     <message>
-        <location line="-346"/>
+        <location line="-343"/>
         <source>Creates a Nim application with Nimble.</source>
         <translation>Luo Nim-sovelluksen Nimblen avulla.</translation>
     </message>
@@ -10577,57 +12363,47 @@ Esivalitsee työpöydän Qt:n sovelluksen rakentamista varten, jos sellainen on 
         <translation>Tyhjä qmake-projekti</translation>
     </message>
     <message>
-        <location line="+5"/>
-        <location line="+12"/>
-        <location line="+25"/>
-        <location line="+12"/>
         <source>PySide version:</source>
-        <translation>PySide-versio:</translation>
+        <translation type="vanished">PySide-versio:</translation>
     </message>
     <message>
-        <location line="-44"/>
+        <location line="+13"/>
         <source>Creates a Qt for Python application that contains only the main code for a QApplication.</source>
         <translation>Luo Python-sovelluksen Qt:n, joka sisältää vain Q-sovelluksen pääkoodin.</translation>
     </message>
     <message>
         <location line="+1"/>
-        <location line="+20"/>
-        <location line="+17"/>
-        <location line="+19"/>
+        <location line="+22"/>
+        <location line="+18"/>
+        <location line="+21"/>
         <source>Application (Qt for Python)</source>
         <translation>Sovellus (Qt Pythonille)</translation>
     </message>
     <message>
-        <location line="-55"/>
+        <location line="-60"/>
         <source>Empty Application</source>
         <translation>Tyhjä sovellus</translation>
     </message>
     <message>
-        <location line="+6"/>
-        <location line="+37"/>
         <source>%{JS: value(&apos;BaseCB&apos;) ? value(&apos;BaseCB&apos;).slice(1) : &apos;MyClass&apos;}</source>
-        <translation>%{JS: value(&apos;BaseCB&apos;) ? value(&apos;BaseCB&apos;).slice(1) : &apos;MyClass&apos;}</translation>
+        <translation type="vanished">%{JS: value(&apos;BaseCB&apos;) ? value(&apos;BaseCB&apos;).slice(1) : &apos;MyClass&apos;}</translation>
     </message>
     <message>
-        <location line="-33"/>
-        <location line="+36"/>
         <source>%{JS: Cpp.classToFileName(value(&apos;Class&apos;), Util.preferredSuffix(&apos;text/x-python&apos;))}</source>
-        <translation>%{JS: Cpp.classToFileName(value(&apos;Class&apos;), Util.preferredSuffix(&apos;text/x-python&apos;))}</translation>
+        <translation type="vanished">%{JS: Cpp.classToFileName(value(&apos;Class&apos;), Util.preferredSuffix(&apos;text/x-python&apos;))}</translation>
     </message>
     <message>
-        <location line="-34"/>
-        <location line="+36"/>
         <source>%{JS: Util.fileName(&apos;%{ProjectName}&apos;, &apos;pyproject&apos;)}</source>
-        <translation>%{JS: Util.fileName(&apos;%{ProjectName}&apos;, &apos;pyproject&apos;)}</translation>
+        <translation type="vanished">%{JS: Util.fileName(&apos;%{ProjectName}&apos;, &apos;pyproject&apos;)}</translation>
     </message>
     <message>
-        <location line="-35"/>
-        <location line="+36"/>
+        <location line="+9"/>
+        <location line="+39"/>
         <source>Project file:</source>
         <translation>Projektitiedosto:</translation>
     </message>
     <message>
-        <location line="-31"/>
+        <location line="-28"/>
         <source>Creates a Qt for Python application that contains an empty window.</source>
         <translation>Luo Qt for Python -sovelluksen, joka sisältää tyhjän ikkunan.</translation>
     </message>
@@ -10637,12 +12413,34 @@ Esivalitsee työpöydän Qt:n sovelluksen rakentamista varten, jos sellainen on 
         <translation>Tyhjä ikkuna</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="-32"/>
+        <location line="+22"/>
+        <location line="+15"/>
+        <location line="+24"/>
         <source>PySide 6</source>
         <translation>PySide 6</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="-211"/>
+        <source>Creates a project containing a single main.cpp file with a stub implementation and no graphical UI.
+
+Preselects a desktop Qt for building the application if available.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+44"/>
+        <source>Creates a C++ library. You can create:&lt;ul&gt;&lt;li&gt;a shared C++ library for use with &lt;tt&gt;QPluginLoader&lt;/tt&gt; and runtime (Plugins)&lt;/li&gt;&lt;li&gt;a shared or static C++ library for use with another project at linktime&lt;/li&gt;&lt;/ul&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+107"/>
+        <location line="+22"/>
+        <location line="+39"/>
+        <source>PySide 2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-24"/>
         <source>PySide 5.15</source>
         <translation>PySide 5.15</translation>
     </message>
@@ -10662,7 +12460,7 @@ Esivalitsee työpöydän Qt:n sovelluksen rakentamista varten, jos sellainen on 
         <translation>PySide 5.12</translation>
     </message>
     <message>
-        <location line="+6"/>
+        <location line="+7"/>
         <source>Creates a Qt Quick application that contains an empty window.</source>
         <translation>Luo Qt Quick -sovelluksen, joka sisältää tyhjän ikkunan.</translation>
     </message>
@@ -10672,53 +12470,54 @@ Esivalitsee työpöydän Qt:n sovelluksen rakentamista varten, jos sellainen on 
         <translation>Qt-pikasovellus - Tyhjä</translation>
     </message>
     <message>
-        <location line="+17"/>
         <source>Creates a Qt for Python application that includes a Qt Designer-based widget (ui file) - Requires .ui to Python conversion</source>
-        <translation>Luo Qt for Python -sovelluksen, joka sisältää Qt Designer -pohjaisen widgetin (ui-tiedoston) - Edellyttää muunnoksen .ui:sta Pythoniksi</translation>
+        <translation type="vanished">Luo Qt for Python -sovelluksen, joka sisältää Qt Designer -pohjaisen widgetin (ui-tiedoston) - Edellyttää muunnoksen .ui:sta Pythoniksi</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+21"/>
         <source>Window UI</source>
         <translation>Ikkunan käyttöliittymä</translation>
     </message>
     <message>
         <location line="+10"/>
-        <location line="+52"/>
+        <location line="+25"/>
+        <location line="+23"/>
         <source>Qt 6.2</source>
         <translation>Qt 6.2</translation>
     </message>
     <message>
-        <location line="-51"/>
-        <location line="+52"/>
+        <location line="-47"/>
+        <location line="+48"/>
         <source>Qt 5.15</source>
         <translation>Qt 5.15</translation>
     </message>
     <message>
-        <location line="-51"/>
-        <location line="+52"/>
+        <location line="-47"/>
+        <location line="+48"/>
         <source>Qt 5.14</source>
         <translation>Qt 5.14</translation>
     </message>
     <message>
-        <location line="-51"/>
-        <location line="+52"/>
+        <location line="-47"/>
+        <location line="+48"/>
         <source>Qt 5.13</source>
         <translation>Qt 5.13</translation>
     </message>
     <message>
-        <location line="-51"/>
-        <location line="+52"/>
+        <location line="-47"/>
+        <location line="+48"/>
         <source>Qt 5.12</source>
         <translation>Qt 5.12</translation>
     </message>
     <message>
-        <location line="-51"/>
-        <location line="+52"/>
+        <location line="-47"/>
+        <location line="+23"/>
+        <location line="+25"/>
         <source>Minimum required Qt version:</source>
         <translation>Minimi vaadittu Qt-versio:</translation>
     </message>
     <message>
-        <location line="-51"/>
+        <location line="-47"/>
         <source>MyItem</source>
         <translation>OmaTuote</translation>
     </message>
@@ -10758,34 +12557,30 @@ Esivalitsee työpöydän Qt:n sovelluksen rakentamista varten, jos sellainen on 
         <translation>Qt Quick 2 -laajennus</translation>
     </message>
     <message>
-        <location line="+10"/>
         <source>Create a project that you can open in Qt Design Studio</source>
-        <translation>Luo projekti, jonka voit avata Qt Design Studiossa</translation>
+        <translation type="vanished">Luo projekti, jonka voit avata Qt Design Studiossa</translation>
     </message>
     <message>
-        <location line="+1"/>
         <source>Create a project with a structure that is compatible both with Qt Design Studio (via .qmlproject) and with Qt Creator (via CMakeLists.txt). It contains a .ui.qml form that you can visually edit in Qt Design Studio.</source>
-        <translation>Luo projekti, jonka rakenne on yhteensopiva sekä Qt Design Studion (.qmlprojectin kautta) että Qt Creatorin kanssa (CMakeLists.txt:n kautta). Se sisältää .ui.qml-lomakkeen, jota voit muokata visuaalisesti Qt Design Studiossa.</translation>
+        <translation type="vanished">Luo projekti, jonka rakenne on yhteensopiva sekä Qt Design Studion (.qmlprojectin kautta) että Qt Creatorin kanssa (CMakeLists.txt:n kautta). Se sisältää .ui.qml-lomakkeen, jota voit muokata visuaalisesti Qt Design Studiossa.</translation>
     </message>
     <message>
-        <location line="+1"/>
-        <location line="+27"/>
+        <location line="+5"/>
+        <location line="+30"/>
         <location line="+16"/>
         <source>Use Qt Virtual Keyboard</source>
         <translation>Käytä Qt virtuaalista näppäimistöä</translation>
     </message>
     <message>
-        <location line="-42"/>
         <source>The minimum version of Qt you want to build the application for</source>
-        <translation>Qt:n vähimmäisversio, jolle haluat rakentaa sovelluksen</translation>
+        <translation type="vanished">Qt:n vähimmäisversio, jolle haluat rakentaa sovelluksen</translation>
     </message>
     <message>
-        <location line="+7"/>
         <source>Creates a Qt Quick application that contains an empty window. Optionally, you can create a Qt Design Studio project.</source>
-        <translation>Luo Qt Quick -sovelluksen, joka sisältää tyhjän ikkunan. Vaihtoehtoisesti voit luoda Qt Design Studio -projektin.</translation>
+        <translation type="vanished">Luo Qt Quick -sovelluksen, joka sisältää tyhjän ikkunan. Vaihtoehtoisesti voit luoda Qt Design Studio -projektin.</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="-33"/>
         <source>Qt Quick Application</source>
         <translation>Qt nopea sovellus</translation>
     </message>
@@ -10804,16 +12599,15 @@ Käytä tätä &quot;compat&quot;-versiota, jos haluat käyttää muita koontij�
         <translation>Qt-pikasovellus (yhteensopiva)</translation>
     </message>
     <message>
-        <location line="+12"/>
         <source>Creates a Qt Quick 2 UI project with a QML entry point. To use it, you need to have a QML runtime environment.
 
 Use this only if you are prototyping. You cannot create a full application with this. Consider using a Qt Quick Application project instead.</source>
-        <translation>Luo Qt Quick 2 UI -projektin, jossa on QML-tulopiste. Jotta voit käyttää sitä, sinulla on oltava QML-ajoympäristö.
+        <translation type="vanished">Luo Qt Quick 2 UI -projektin, jossa on QML-tulopiste. Jotta voit käyttää sitä, sinulla on oltava QML-ajoympäristö.
 
 Käytä tätä vain, jos teet prototyyppiä. Et voi luoda täyttä sovellusta tällä. Harkitse Qt Quick Application -projektin käyttöä sen sijaan.</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+14"/>
         <source>Qt Quick UI Prototype</source>
         <translation>Qt Quick UI Prototype</translation>
     </message>
@@ -10823,19 +12617,17 @@ Käytä tätä vain, jos teet prototyyppiä. Et voi luoda täyttä sovellusta t�
         <translation>Tämä ohjattu toiminto luo Qt Widgets -sovellusprojektin. Sovellus on oletusarvoisesti peräisin QApplicationista ja sisältää tyhjän widgetin.</translation>
     </message>
     <message>
-        <location line="+11"/>
         <source>%{JS: value(&apos;BaseClass&apos;) ? value(&apos;BaseClass&apos;).slice(1) : &apos;MyClass&apos;}</source>
-        <translation>%{JS: value(&apos;BaseClass&apos;) ? value(&apos;BaseClass&apos;).slice(1) : &apos;MyClass&apos;}</translation>
+        <translation type="vanished">%{JS: value(&apos;BaseClass&apos;) ? value(&apos;BaseClass&apos;).slice(1) : &apos;MyClass&apos;}</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+15"/>
         <source>Generate form</source>
         <translation>Luo lomake</translation>
     </message>
     <message>
-        <location line="+1"/>
         <source>%{JS: Cpp.classToFileName(value(&apos;Class&apos;), &apos;ui&apos;)}</source>
-        <translation>%{JS: Cpp.classToFileName(value(&apos;Class&apos;), &apos;ui&apos;)}</translation>
+        <translation type="vanished">%{JS: Cpp.classToFileName(value(&apos;Class&apos;), &apos;ui&apos;)}</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -10848,72 +12640,67 @@ Käytä tätä vain, jos teet prototyyppiä. Et voi luoda täyttä sovellusta t�
         <translation>Luokkatiedot</translation>
     </message>
     <message>
-        <location line="+8"/>
         <source>Creates a widget-based Qt application that contains a Qt Designer-based main window.
 
 Preselects a desktop Qt for building the application if available.</source>
-        <translation>Luo widget-pohjaisen Qt-sovelluksen, joka sisältää Qt Designer -pohjaisen pääikkunan.
+        <translation type="vanished">Luo widget-pohjaisen Qt-sovelluksen, joka sisältää Qt Designer -pohjaisen pääikkunan.
 
 Esivalitsee työpöydän Qt:n sovelluksen rakentamista varten, jos sellainen on käytettävissä.</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+10"/>
         <source>Qt Widgets Application</source>
         <translation>Qt Widgets -sovellus</translation>
     </message>
     <message>
         <location line="+5"/>
-        <location line="+35"/>
+        <location line="+34"/>
         <location line="+18"/>
-        <location line="+24"/>
-        <location line="+20"/>
+        <location line="+23"/>
+        <location line="+19"/>
         <source>Please configure &lt;b&gt;%{vcsName}&lt;/b&gt; now.</source>
         <translation>Määritä &lt;b&gt;%{vcsName}&lt;/b&gt; nyt.</translation>
     </message>
     <message>
-        <location line="-96"/>
-        <location line="+53"/>
-        <location line="+24"/>
-        <location line="+20"/>
+        <location line="-93"/>
+        <location line="+52"/>
+        <location line="+23"/>
+        <location line="+19"/>
         <source>Repository:</source>
         <translation>Arkisto:</translation>
     </message>
     <message>
-        <location line="-96"/>
-        <location line="+35"/>
+        <location line="-93"/>
+        <location line="+34"/>
         <location line="+18"/>
-        <location line="+24"/>
-        <location line="+20"/>
+        <location line="+23"/>
+        <location line="+19"/>
         <source>Repository URL is not valid</source>
         <translation>Tietovaraston URL-osoite ei kelpaa</translation>
     </message>
     <message>
-        <location line="-95"/>
-        <location line="+55"/>
-        <location line="+22"/>
-        <location line="+20"/>
         <source>%{defaultDir}</source>
-        <translation>%{defaultDir}</translation>
+        <translation type="vanished">%{defaultDir}</translation>
     </message>
     <message>
-        <location line="-96"/>
-        <location line="+55"/>
-        <location line="+22"/>
-        <location line="+20"/>
+        <location line="-92"/>
+        <location line="+54"/>
+        <location line="+21"/>
+        <location line="+19"/>
         <source>Directory:</source>
         <translation>Hakemisto:</translation>
     </message>
     <message>
-        <location line="-96"/>
+        <location line="-93"/>
         <location line="+33"/>
-        <location line="+22"/>
-        <location line="+22"/>
-        <location line="+20"/>
+        <location line="+21"/>
+        <location line="+21"/>
+        <location line="+19"/>
         <source>&quot;%{JS: Util.toNativeSeparators(&apos;%{TargetPath}&apos;)}&quot; exists in the filesystem.</source>
         <translation>&quot;%{JS: Util.toNativeSeparators(&apos;%{TargetPath}&apos;)}&quot; on olemassa tiedostojärjestelmässä.</translation>
     </message>
     <message>
-        <location line="-96"/>
+        <location line="-93"/>
         <source>Use existing directory</source>
         <translation>Käytä olemassa olevaa hakemistoa</translation>
     </message>
@@ -10989,19 +12776,22 @@ Esivalitsee työpöydän Qt:n sovelluksen rakentamista varten, jos sellainen on 
     </message>
     <message>
         <location line="+3"/>
-        <location line="+62"/>
-        <location line="+21"/>
+        <location line="+60"/>
+        <location line="+20"/>
         <source>Specify repository URL, checkout directory, and path.</source>
         <translation>Määritä arkiston URL-osoite, kassahakemisto ja polku.</translation>
     </message>
     <message>
-        <location line="-82"/>
+        <location line="-79"/>
         <source>Running Bazaar branch...</source>
         <translation>Bazaarin toimipiste...</translation>
     </message>
     <message>
         <location line="+1"/>
         <location line="+1"/>
+        <location filename="../../../src/plugins/projectexplorer/kitoptionspage.cpp" line="-227"/>
+        <location filename="../../../src/plugins/projectexplorer/projectwelcomepage.cpp" line="+485"/>
+        <location filename="../../../src/plugins/projectexplorer/toolchainoptionspage.cpp" line="+217"/>
         <source>Clone</source>
         <translation>Klooni</translation>
     </message>
@@ -11013,14 +12803,15 @@ Esivalitsee työpöydän Qt:n sovelluksen rakentamista varten, jos sellainen on 
     <message>
         <location line="+1"/>
         <location line="+18"/>
-        <location line="+24"/>
+        <location line="+23"/>
+        <location line="+19"/>
         <location line="+20"/>
-        <location line="+21"/>
+        <location filename="../../../src/plugins/projectexplorer/projectexplorerconstants.h" line="+3"/>
         <source>Import Project</source>
         <translation>Tuo projekti</translation>
     </message>
     <message>
-        <location line="-82"/>
+        <location line="-79"/>
         <source>Bazaar Clone (Or Branch)</source>
         <translation>Bazaar Clone (tai haara)</translation>
     </message>
@@ -11042,17 +12833,17 @@ Esivalitsee työpöydän Qt:n sovelluksen rakentamista varten, jos sellainen on 
     <message>
         <location line="+1"/>
         <location line="+1"/>
-        <location line="+23"/>
+        <location line="+22"/>
+        <location line="+1"/>
+        <location line="+18"/>
         <location line="+1"/>
         <location line="+19"/>
-        <location line="+1"/>
-        <location line="+20"/>
         <location line="+1"/>
         <source>Checkout</source>
         <translation>Tarkista</translation>
     </message>
     <message>
-        <location line="-64"/>
+        <location line="-61"/>
         <source>Checks out a CVS repository and tries to load the contained project.</source>
         <translation>Tarkistaa CVS-arkiston ja yrittää ladata sen sisältämän projektin.</translation>
     </message>
@@ -11072,7 +12863,7 @@ Esivalitsee työpöydän Qt:n sovelluksen rakentamista varten, jos sellainen on 
         <translation>Haara:</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+4"/>
         <source>Recursive</source>
         <translation>Rekursiivinen</translation>
     </message>
@@ -11102,7 +12893,7 @@ Esivalitsee työpöydän Qt:n sovelluksen rakentamista varten, jos sellainen on 
         <translation>Git Clone</translation>
     </message>
     <message>
-        <location line="+15"/>
+        <location line="+14"/>
         <source>Running Mercurial clone...</source>
         <translation>Käynnissä Mercurial-klooni...</translation>
     </message>
@@ -11117,7 +12908,7 @@ Esivalitsee työpöydän Qt:n sovelluksen rakentamista varten, jos sellainen on 
         <translation>Mercurial Clone</translation>
     </message>
     <message>
-        <location line="+12"/>
+        <location line="+11"/>
         <source>Trust Server Certificate</source>
         <translation>Luotettava palvelinsertifikaatti</translation>
     </message>
@@ -11147,9 +12938,8 @@ Esivalitsee työpöydän Qt:n sovelluksen rakentamista varten, jos sellainen on 
         <translation>Määritä mukautetun Qt Creator -laajennuksen tiedot.</translation>
     </message>
     <message>
-        <location line="+1"/>
         <source>%{JS: value(&apos;ProjectName&apos;).charAt(0).toUpperCase() + value(&apos;ProjectName&apos;).slice(1)}</source>
-        <translation>%{JS: value(&apos;ProjectName&apos;).charAt(0).toUpperCase() + value(&apos;ProjectName&apos;).slice(1)}</translation>
+        <translation type="vanished">%{JS: value(&apos;ProjectName&apos;).charAt(0).toUpperCase() + value(&apos;ProjectName&apos;).slice(1)}</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -11187,12 +12977,11 @@ Esivalitsee työpöydän Qt:n sovelluksen rakentamista varten, jos sellainen on 
         <translation>Laita lyhyt kuvaus laajennuksestasi tähän</translation>
     </message>
     <message>
-        <location line="+2"/>
         <source>https://www.%{JS: encodeURIComponent(value(&apos;VendorName&apos;).toLowerCase())}.com</source>
-        <translation>https://www.%{JS: encodeURIComponent(value(&apos;VendorName&apos;).toLowerCase())}.com</translation>
+        <translation type="vanished">https://www.%{JS: encodeURIComponent(value(&apos;VendorName&apos;).toLowerCase())}.com</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+2"/>
         <source>URL:</source>
         <translation>URL-osoite:</translation>
     </message>
@@ -11211,11 +13000,6037 @@ Esivalitsee työpöydän Qt:n sovelluksen rakentamista varten, jos sellainen on 
         <source>Qt Creator Plugin</source>
         <translation>Qt Creator -laajennus</translation>
     </message>
+    <message>
+        <location filename="../../../src/plugins/coreplugin/session.cpp" line="+149"/>
+        <source>S&amp;essions</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>&amp;Manage...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>File where current session is saved.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Name of current session.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+156"/>
+        <source>Delete Session</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Delete Sessions</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Delete session %1?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Delete these sessions?
+    %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+308"/>
+        <source>Error while restoring session</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Could not restore session %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+44"/>
+        <source>Loading Session</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+47"/>
+        <location line="+42"/>
+        <source>Error while saving session</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-41"/>
+        <source>Could not save session %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+42"/>
+        <source>Could not save session to file &quot;%1&quot;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/coreplugin/sessiondialog.cpp" line="+90"/>
+        <source>Enter the name of the session:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+42"/>
+        <source>Session Manager</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>&amp;New...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>&amp;Open</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>&amp;Rename...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>C&amp;lone...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>&amp;Delete...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Restore last session on startup</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>What is a Session?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/coreplugin/sessionmodel.cpp" line="+55"/>
+        <source>Session</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Last Modified</source>
+        <translation type="unfinished">Viimeksi muokattu</translation>
+    </message>
+    <message>
+        <location line="+131"/>
+        <location line="+11"/>
+        <source>New Session Name</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-10"/>
+        <source>&amp;Create</source>
+        <translation type="unfinished">&amp;Luoda</translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Create and &amp;Open</source>
+        <translation type="unfinished">Luo ja &amp;avaa</translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>&amp;Clone</source>
+        <translation type="unfinished">&amp;Klooni</translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Clone and &amp;Open</source>
+        <translation type="unfinished">Kloonaa ja &amp;avaa</translation>
+    </message>
+    <message>
+        <location line="+22"/>
+        <source>Rename Session</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>&amp;Rename</source>
+        <translation type="unfinished">&amp;Nimeä uudelleen</translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Rename and &amp;Open</source>
+        <translation type="unfinished">Nimeä uudelleen ja &amp;avaa</translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/abiwidget.cpp" line="+189"/>
+        <source>&lt;custom&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/abstractprocessstep.cpp" line="+98"/>
+        <source>Configuration is faulty. Check the Issues view for details.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+72"/>
+        <source>Could not create directory &quot;%1&quot;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>The program &quot;%1&quot; does not exist or is not executable.</source>
+        <translation type="unfinished">Ohjelmaa &quot;%1&quot; ei ole olemassa tai se ei ole suoritettavissa.</translation>
+    </message>
+    <message>
+        <location line="+34"/>
+        <source>Starting: &quot;%1&quot; %2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>The process &quot;%1&quot; exited normally.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>The process &quot;%1&quot; exited with code %2.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Could not start process &quot;%1&quot; %2.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>The process &quot;%1&quot; crashed.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/addrunconfigdialog.cpp" line="+54"/>
+        <source>[none]</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+15"/>
+        <location filename="../../../src/plugins/projectexplorer/kitoptionspage.cpp" line="-291"/>
+        <location filename="../../../src/plugins/projectexplorer/toolchainoptionspage.cpp" line="-56"/>
+        <source>Name</source>
+        <translation type="unfinished">Nimi</translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Source</source>
+        <translation type="unfinished">Lähde</translation>
+    </message>
+    <message>
+        <location line="+45"/>
+        <source>Create Run Configuration</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Filter candidates by name</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Create</source>
+        <translation type="unfinished">Luoda</translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/allprojectsfilter.cpp" line="+23"/>
+        <source>Files in Any Project</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Locates files of all open projects. Append &quot;+&lt;number&gt;&quot; or &quot;:&lt;number&gt;&quot; to jump to the given line number. Append another &quot;+&lt;number&gt;&quot; or &quot;:&lt;number&gt;&quot; to jump to the column number as well.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/allprojectsfind.cpp" line="+39"/>
+        <location filename="../../../src/plugins/projectexplorer/projectexplorer.cpp" line="+1969"/>
+        <source>All Projects</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+42"/>
+        <source>All Projects:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Filter: %1
+Excluding: %2
+%3</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/appoutputpane.cpp" line="+73"/>
+        <source>Attach debugger to this process</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Attach debugger to %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+70"/>
+        <source>Stop</source>
+        <translation type="unfinished">Lopettaa</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Close Tab</source>
+        <translation type="unfinished">Sulje välilehti</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Close All Tabs</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Close Other Tabs</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Show &amp;App Output</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Show the output that generated this issue in Application Output.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>A</source>
+        <translation type="unfinished">A</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <location line="+737"/>
+        <source>Application Output</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-727"/>
+        <source>Re-run this run-configuration.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Stop running program.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+232"/>
+        <source>application-output-%1.txt</source>
+        <extracomment>file name suggested for saving application output, %1 = run configuration display name</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+29"/>
+        <source>Application Output Window</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+280"/>
+        <source>PID %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <location filename="../../../src/plugins/projectexplorer/devicesupport/idevice.cpp" line="+604"/>
+        <source>Invalid</source>
+        <translation type="unfinished">Virheellinen</translation>
+    </message>
+    <message>
+        <location line="+109"/>
+        <location filename="../../../src/plugins/projectexplorer/compileoutputwindow.cpp" line="+250"/>
+        <source>Word-wrap output</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Clear old output on a new run</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Merge stderr and stdout</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Always</source>
+        <translation type="unfinished">Aina</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Never</source>
+        <translation type="unfinished">Ei koskaan</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>On First Output Only</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+14"/>
+        <location filename="../../../src/plugins/projectexplorer/compileoutputwindow.cpp" line="+13"/>
+        <source>Limit output to %1 characters</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Open Application Output when running:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Open Application Output when debugging:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/baseprojectwizarddialog.cpp" line="+146"/>
+        <location filename="../../../src/plugins/projectexplorer/jsonwizard/jsonprojectpage.cpp" line="+55"/>
+        <source>untitled</source>
+        <extracomment>File path suggestion for a new project. If you choose to translate it, make sure it is a valid path name without blanks and using only ascii chars.</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/buildaspects.cpp" line="+51"/>
+        <source>Build directory:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+18"/>
+        <source>The build directory is not reachable from the build device.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+22"/>
+        <source>Shadow build:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+105"/>
+        <source>Build directory contains potentially problematic character &quot;%1&quot;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>This warning can be suppressed &lt;a href=&quot;dummy&quot;&gt;here&lt;/a&gt;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+25"/>
+        <location filename="../../../src/plugins/projectexplorer/buildpropertiessettings.cpp" line="+65"/>
+        <source>Separate debug info:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/buildconfiguration.cpp" line="+62"/>
+        <location filename="../../../src/plugins/projectexplorer/environmentaspect.cpp" line="+130"/>
+        <location filename="../../../src/plugins/projectexplorer/projectexplorer.cpp" line="-1653"/>
+        <source>Build Environment</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Clear system environment</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+39"/>
+        <location filename="../../../src/plugins/projectexplorer/customparser.cpp" line="+165"/>
+        <location filename="../../../src/plugins/projectexplorer/customparserssettingspage.cpp" line="+123"/>
+        <source>Custom Output Parsers</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Parse standard output during build</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Makes output parsers look for diagnostics on stdout rather than stderr.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+56"/>
+        <location filename="../../../src/plugins/projectexplorer/targetsettingspanel.cpp" line="+635"/>
+        <source>Build Settings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <location line="+4"/>
+        <source>Build directory</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Name of the build configuration</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Variables in the build configuration&apos;s environment</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+24"/>
+        <source>Tooltip in target selector:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Appears as a tooltip when hovering the build configuration</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+281"/>
+        <location filename="../../../src/plugins/projectexplorer/environmentaspect.cpp" line="-3"/>
+        <source>System Environment</source>
+        <translation type="unfinished">Järjestelmäympäristö</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <location filename="../../../src/plugins/projectexplorer/environmentaspect.cpp" line="-2"/>
+        <source>Clean Environment</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+60"/>
+        <source>The project was not parsed successfully.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+52"/>
+        <source>Main file of the project</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Name of the project</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Name of the project&apos;s active build configuration</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Name of the project&apos;s active build system</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Type of current build</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Type of the project&apos;s active build configuration</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+50"/>
+        <source>No build device is set for the kit &quot;%1&quot;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>You can try mounting the folder in your device settings.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>The build device &quot;%1&quot; cannot reach the project directory.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>The build device &quot;%1&quot; cannot reach the build directory.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message numerus="yes">
+        <location filename="../../../src/plugins/projectexplorer/buildmanager.cpp" line="+182"/>
+        <source>Finished %1 of %n steps</source>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+        </translation>
+    </message>
+    <message>
+        <location line="+82"/>
+        <source>Stop Applications</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Stop these applications before building?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+26"/>
+        <source>The project %1 is not configured, skipping it.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>The build device failed to prepare for the build of %1 (%2).</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+138"/>
+        <source>Compile</source>
+        <comment>Category for compiler issues listed under &apos;Issues&apos;</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Issues parsed from the compile output.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Build System</source>
+        <comment>Category for build system issues listed under &apos;Issues&apos;</comment>
+        <translation type="unfinished">Rakenna järjestelmä</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Issues from the build system, such as CMake or qmake.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Deployment</source>
+        <comment>Category for deployment issues listed under &apos;Issues&apos;</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Issues found when deploying applications to devices.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Autotests</source>
+        <comment>Category for autotest issues listed under &apos;Issues&apos;</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Issues found when running tests.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+151"/>
+        <location filename="../../../src/plugins/projectexplorer/buildsteplist.cpp" line="+96"/>
+        <location filename="../../../src/plugins/projectexplorer/projectexplorer.cpp" line="+115"/>
+        <location line="+9"/>
+        <location line="+100"/>
+        <location line="+8"/>
+        <location line="+59"/>
+        <source>Clean</source>
+        <extracomment>Displayed name for a &quot;cleaning&quot; build step
+----------
+Display name of the clean build step list. Used as part of the labels in the project window.</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <location filename="../../../src/plugins/projectexplorer/buildsteplist.cpp" line="+4"/>
+        <location filename="../../../src/plugins/projectexplorer/miniprojecttargetselector.cpp" line="+694"/>
+        <location filename="../../../src/plugins/projectexplorer/projectexplorer.cpp" line="-204"/>
+        <location line="+111"/>
+        <location line="+121"/>
+        <source>Deploy</source>
+        <extracomment>Displayed name for a deploy step
+----------
+Display name of the deploy build step list. Used as part of the labels in the project window.</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <location filename="../../../src/plugins/projectexplorer/buildsteplist.cpp" line="-8"/>
+        <location filename="../../../src/plugins/projectexplorer/miniprojecttargetselector.cpp" line="-1"/>
+        <location filename="../../../src/plugins/projectexplorer/projectexplorer.cpp" line="-52"/>
+        <location filename="../../../src/plugins/projectexplorer/targetsettingspanel.cpp" line="-60"/>
+        <source>Build</source>
+        <extracomment>Displayed name for a normal build step
+----------
+Display name of the build build step list. Used as part of the labels in the project window.</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+41"/>
+        <source>Build/Deployment canceled</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Canceled build/deployment.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+83"/>
+        <source>Running steps for project %1...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>Skipping disabled step %1.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+24"/>
+        <location line="+104"/>
+        <source>Error while building/deploying project %1 (kit: %2)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-100"/>
+        <source>The kit %1 has configuration issues which might be the root cause for this problem.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <location line="+98"/>
+        <source>When executing step &quot;%1&quot;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/buildpropertiessettings.cpp" line="-33"/>
+        <location filename="../../../src/plugins/projectexplorer/buildstepspage.cpp" line="+118"/>
+        <location filename="../../../src/plugins/projectexplorer/environmentwidget.cpp" line="+525"/>
+        <source>Enable</source>
+        <translation type="unfinished">ota käyttöön</translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <location filename="../../../src/plugins/projectexplorer/buildstepspage.cpp" line="+0"/>
+        <location filename="../../../src/plugins/projectexplorer/environmentwidget.cpp" line="-289"/>
+        <location line="+289"/>
+        <location line="+6"/>
+        <source>Disable</source>
+        <translation type="unfinished">Poista käytöstä</translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Use Project Default</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+24"/>
+        <source>Default build directory:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Template used to construct the default build directory.&lt;br&gt;&lt;br&gt;The default value can be set using the environment variable &lt;tt&gt;%1&lt;/tt&gt;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>QML debugging:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Use qmlcachegen:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+23"/>
+        <source>Default Build Properties</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/buildsettingspropertiespage.cpp" line="+57"/>
+        <source>No build settings available</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Edit build configuration:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <location filename="../../../src/plugins/projectexplorer/deploymentdataview.cpp" line="+79"/>
+        <location filename="../../../src/plugins/projectexplorer/kitoptionspage.cpp" line="+290"/>
+        <location filename="../../../src/plugins/projectexplorer/runsettingspropertiespage.cpp" line="+47"/>
+        <location filename="../../../src/plugins/projectexplorer/toolchainoptionspage.cpp" line="+34"/>
+        <source>Add</source>
+        <translation type="unfinished">Lisätä</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <location filename="../../../src/plugins/projectexplorer/customparserssettingspage.cpp" line="-78"/>
+        <location filename="../../../src/plugins/projectexplorer/deploymentdataview.cpp" line="+1"/>
+        <location filename="../../../src/plugins/projectexplorer/environmentwidget.cpp" line="-469"/>
+        <location filename="../../../src/plugins/projectexplorer/kitoptionspage.cpp" line="+2"/>
+        <location filename="../../../src/plugins/projectexplorer/runsettingspropertiespage.cpp" line="+1"/>
+        <location line="+11"/>
+        <location filename="../../../src/plugins/projectexplorer/toolchainoptionspage.cpp" line="+25"/>
+        <source>Remove</source>
+        <translation type="unfinished">Poista</translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <location line="+158"/>
+        <location filename="../../../src/plugins/projectexplorer/projectexplorer.cpp" line="+157"/>
+        <location filename="../../../src/plugins/projectexplorer/runsettingspropertiespage.cpp" line="-10"/>
+        <location line="+12"/>
+        <location line="+216"/>
+        <location line="+103"/>
+        <source>Rename...</source>
+        <translation type="unfinished">Nimeä uudelleen...</translation>
+    </message>
+    <message>
+        <location line="-153"/>
+        <location filename="../../../src/plugins/projectexplorer/runsettingspropertiespage.cpp" line="-318"/>
+        <source>Clone...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+116"/>
+        <source>New Configuration</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <location line="+62"/>
+        <location filename="../../../src/plugins/projectexplorer/runsettingspropertiespage.cpp" line="+145"/>
+        <source>New configuration name:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-25"/>
+        <source>New name for build configuration &lt;b&gt;%1&lt;/b&gt;:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+24"/>
+        <location filename="../../../src/plugins/projectexplorer/runsettingspropertiespage.cpp" line="-1"/>
+        <source>Clone Configuration</source>
+        <extracomment>Title of a the cloned BuildConfiguration window, text of the window
+----------
+Title of a the cloned RunConfiguration window, text of the window</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+37"/>
+        <source>Cancel Build &amp;&amp; Remove Build Configuration</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <location filename="../../../src/plugins/projectexplorer/runsettingspropertiespage.cpp" line="+142"/>
+        <location filename="../../../src/plugins/projectexplorer/targetsettingspanel.cpp" line="-128"/>
+        <source>Do Not Remove</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Remove Build Configuration %1?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>The build configuration &lt;b&gt;%1&lt;/b&gt; is currently being built.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Do you want to cancel the build process and remove the Build Configuration anyway?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Remove Build Configuration?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Do you really want to delete build configuration &lt;b&gt;%1&lt;/b&gt;?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/buildstepspage.cpp" line="-58"/>
+        <source>Move Up</source>
+        <translation type="unfinished">Liiku ylös</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Move Down</source>
+        <translation type="unfinished">Siirrä alas</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Remove Item</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+97"/>
+        <source>%1 Steps</source>
+        <extracomment>%1 is the name returned by BuildStepList::displayName</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+19"/>
+        <source>No %1 Steps</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Add %1 Step</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+94"/>
+        <source>No Build Steps</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+39"/>
+        <source>Removing Step failed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Cannot remove build step while building</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/buildsystem.cpp" line="+394"/>
+        <source>The project is currently being parsed.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>The project could not be fully parsed.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>The project file &quot;%1&quot; does not exist.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/codestylesettingspropertiespage.cpp" line="+60"/>
+        <source>Language:</source>
+        <translation type="unfinished">Kieli:</translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>Code Style</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/compileoutputwindow.cpp" line="-206"/>
+        <location line="+230"/>
+        <source>Compile Output</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-219"/>
+        <source>compile-output.txt</source>
+        <extracomment>file name suggested for saving compile output</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+38"/>
+        <source>Show Compile &amp;Output</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Show the output that generated this issue in Compile Output.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>O</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+145"/>
+        <source>Open Compile Output when building</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/copystep.cpp" line="+27"/>
+        <source>Source:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Target:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+25"/>
+        <source>Copying finished.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Copying failed.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+22"/>
+        <location line="+26"/>
+        <source>Copy file</source>
+        <extracomment>Default CopyStep display name</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-11"/>
+        <location line="+18"/>
+        <source>Copy directory recursively</source>
+        <extracomment>Default CopyStep display name</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/copytaskhandler.cpp" line="+24"/>
+        <source>error:</source>
+        <extracomment>Task is of type: error</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>warning:</source>
+        <extracomment>Task is of type: warning</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/currentprojectfilter.cpp" line="+18"/>
+        <source>Files in Current Project</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Locates files from the current document&apos;s project. Append &quot;+&lt;number&gt;&quot; or &quot;:&lt;number&gt;&quot; to jump to the given line number. Append another &quot;+&lt;number&gt;&quot; or &quot;:&lt;number&gt;&quot; to jump to the column number as well.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/currentprojectfind.cpp" line="+65"/>
+        <source>Project &quot;%1&quot;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Current Project</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+30"/>
+        <source>Project &quot;%1&quot;:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/customexecutablerunconfiguration.cpp" line="+55"/>
+        <location line="+17"/>
+        <source>Custom Executable</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-16"/>
+        <location filename="../../../src/plugins/projectexplorer/projectexplorer.cpp" line="+1718"/>
+        <source>Run %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>You need to set an executable in the custom run configuration.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/customparser.cpp" line="+101"/>
+        <source>Custom output parsers scan command line output for user-provided error patterns&lt;br&gt;to create entries in Issues.&lt;br&gt;The parsers can be configured &lt;a href=&quot;dummy&quot;&gt;here&lt;/a&gt;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+82"/>
+        <source>There are no custom parsers active</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message numerus="yes">
+        <location line="+2"/>
+        <source>There are %n custom parsers active</source>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+        </translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/customparserconfigdialog.cpp" line="+32"/>
+        <source>Custom Parser</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>&amp;Error message capture pattern:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <location line="+33"/>
+        <source>&amp;File name:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-32"/>
+        <location line="+33"/>
+        <source>&amp;Line number:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-32"/>
+        <location line="+33"/>
+        <source>&amp;Message:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-15"/>
+        <location line="+33"/>
+        <source>Standard output</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-32"/>
+        <location line="+33"/>
+        <source>Standard error</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-31"/>
+        <source>E&amp;rror message:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+33"/>
+        <source>Warning message:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+14"/>
+        <source>Warning message capture pattern:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <location line="+29"/>
+        <source>Capture Positions</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-22"/>
+        <location line="+29"/>
+        <source>Capture Output Channels</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-25"/>
+        <location line="+29"/>
+        <location filename="../../../src/plugins/projectexplorer/devicesupport/devicesettingspage.cpp" line="+189"/>
+        <location filename="../../../src/plugins/projectexplorer/runconfigurationaspects.cpp" line="+803"/>
+        <source>Test</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-24"/>
+        <location line="+29"/>
+        <source>File name:</source>
+        <translation type="unfinished">Tiedoston nimi:</translation>
+    </message>
+    <message>
+        <location line="-28"/>
+        <location line="+29"/>
+        <source>Line number:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-28"/>
+        <location line="+29"/>
+        <source>Message:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <location filename="../../../src/plugins/projectexplorer/runcontrol.cpp" line="+743"/>
+        <location filename="../../../src/plugins/projectexplorer/taskhub.cpp" line="+47"/>
+        <source>Error</source>
+        <translation type="unfinished">Virhe</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <location filename="../../../src/plugins/projectexplorer/taskhub.cpp" line="+1"/>
+        <source>Warning</source>
+        <translation type="unfinished">Varoitus</translation>
+    </message>
+    <message>
+        <location line="+253"/>
+        <source>Not applicable:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Pattern is empty.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>No message given.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Pattern does not match the message.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/customparserssettingspage.cpp" line="-8"/>
+        <source>Custom output parsers defined here can be enabled individually in the project&apos;s build or run settings.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <location filename="../../../src/plugins/projectexplorer/environmentwidget.cpp" line="-1"/>
+        <location filename="../../../src/plugins/projectexplorer/runsettingspropertiespage.cpp" line="-290"/>
+        <source>Add...</source>
+        <translation type="unfinished">Lisätä...</translation>
+    </message>
+    <message>
+        <location line="+15"/>
+        <source>New Parser</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/customtoolchain.cpp" line="+55"/>
+        <location line="+511"/>
+        <source>Custom</source>
+        <translation type="unfinished">Mukautettu</translation>
+    </message>
+    <message>
+        <location line="-235"/>
+        <location filename="../../../src/plugins/projectexplorer/gcctoolchain.cpp" line="+367"/>
+        <location line="+925"/>
+        <source>GCC</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <location filename="../../../src/plugins/projectexplorer/gcctoolchain.cpp" line="-917"/>
+        <location line="+922"/>
+        <location filename="../../../src/plugins/projectexplorer/msvctoolchain.cpp" line="+1713"/>
+        <source>Clang</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <location filename="../../../src/plugins/projectexplorer/gcctoolchain.cpp" line="-926"/>
+        <location line="+936"/>
+        <source>ICC</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <location filename="../../../src/plugins/projectexplorer/msvctoolchain.cpp" line="-868"/>
+        <location line="+992"/>
+        <source>MSVC</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message numerus="yes">
+        <location line="+44"/>
+        <source>%n entries</source>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+        </translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Empty</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+60"/>
+        <source>MACRO[=VALUE]</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Each line defines a macro. Format is MACRO[=VALUE].</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Each line adds a global header lookup path.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Comma-separated list of flags that turn on C++11 support.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Comma-separated list of mkspecs.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <location filename="../../../src/plugins/projectexplorer/gcctoolchain.cpp" line="+420"/>
+        <location filename="../../../src/plugins/projectexplorer/msvctoolchain.cpp" line="-323"/>
+        <location line="+7"/>
+        <source>&amp;Compiler path:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>&amp;Make path:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <location filename="../../../src/plugins/projectexplorer/gcctoolchain.cpp" line="+7"/>
+        <location filename="../../../src/plugins/projectexplorer/msvctoolchain.cpp" line="-188"/>
+        <source>&amp;ABI:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>&amp;Predefined macros:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>&amp;Header paths:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>C++11 &amp;flags:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>&amp;Qt mkspecs:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>&amp;Error parser:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/dependenciespanel.cpp" line="+83"/>
+        <source>&lt;No other projects in this session&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+30"/>
+        <source>Unable to Add Dependency</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>This would create a circular dependency.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+133"/>
+        <source>Synchronize configuration</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Synchronize active kit, build, and deploy configuration between projects.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+19"/>
+        <source>Dependencies</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/deployconfiguration.cpp" line="+33"/>
+        <source>Deploy locally</source>
+        <extracomment>Default DeployConfiguration display name</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/deploymentdataview.cpp" line="-11"/>
+        <source>Source File Path</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Target Directory</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+20"/>
+        <source>Files to deploy:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Override deployment data from build system</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/desktoprunconfiguration.cpp" line="+101"/>
+        <source>Qt Run Configuration</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/devicesupport/desktopdevice.cpp" line="+45"/>
+        <source>Local PC</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <location filename="../../../src/plugins/projectexplorer/devicesupport/desktopdevicefactory.cpp" line="+25"/>
+        <location filename="../../../src/plugins/projectexplorer/kitmanager.cpp" line="+410"/>
+        <source>Desktop</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/devicesupport/desktopprocesssignaloperation.cpp" line="+69"/>
+        <source>Cannot kill process with pid %1: %2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>Cannot interrupt process with pid %1: %2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+15"/>
+        <source>Cannot open process.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <location line="+97"/>
+        <source>Invalid process id.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-46"/>
+        <source>Cannot open process: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>DebugBreakProcess failed:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>%1 does not exist. If you built %2 yourself, check out https://code.qt.io/cgit/qt-creator/binary-artifacts.git/.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>Cannot start %1. Check src\tools\win64interrupt\win64interrupt.c for more information.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>could not break the process.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/devicesupport/devicecheckbuildstep.cpp" line="+38"/>
+        <location line="+9"/>
+        <location line="+6"/>
+        <source>No device configured.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-11"/>
+        <source>Set Up Device</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>There is no device set up for this kit. Do you want to add a device?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+32"/>
+        <source>Check for a configured device</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/devicesupport/devicefactoryselectiondialog.cpp" line="+25"/>
+        <source>Start Wizard</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Available device types:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/devicesupport/devicemanager.cpp" line="+415"/>
+        <source>No device for path &quot;%1&quot;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <location line="+14"/>
+        <source>No device found for path &quot;%1&quot;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-9"/>
+        <source>No file access for device &quot;%1&quot;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/devicesupport/devicemanagermodel.cpp" line="+154"/>
+        <source>%1 (default for %2)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/devicesupport/deviceprocessesdialog.cpp" line="+103"/>
+        <source>Kit:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>List of Processes</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Filter</source>
+        <translation type="unfinished">Suodattaa</translation>
+    </message>
+    <message>
+        <location line="+22"/>
+        <source>&amp;Update List</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>&amp;Kill Process</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>&amp;Filter:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+64"/>
+        <source>Remote Error</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/devicesupport/devicesettingspage.cpp" line="-253"/>
+        <source>&amp;Device:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>Type Specific</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>&amp;Remove</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Set As Default</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>&amp;Add...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>&amp;Start Wizard to Add Device...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+12"/>
+        <source>Add %1</source>
+        <extracomment>Add &lt;Device Type Name&gt;</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+34"/>
+        <source>&amp;Name:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Auto-detected:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Current state:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+87"/>
+        <source>Yes (id is &quot;%1&quot;)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>No</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+107"/>
+        <source>Show Running Processes...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+55"/>
+        <location line="+2"/>
+        <source>Devices</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/devicesupport/devicetestdialog.cpp" line="+87"/>
+        <source>Close</source>
+        <translation type="unfinished">kiinni</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Device test finished successfully.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Device test failed.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/devicesupport/deviceusedportsgatherer.cpp" line="+81"/>
+        <source>Remote error output was: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message numerus="yes">
+        <location line="+41"/>
+        <source>Found %n free ports.</source>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+        </translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>Checking available ports...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/devicesupport/filetransfer.cpp" line="+70"/>
+        <source>No device set for test transfer.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>No files to transfer.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+27"/>
+        <source>Missing transfer implementation.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+83"/>
+        <source>sftp</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>rsync</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>generic file copy</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/devicesupport/idevice.cpp" line="-429"/>
+        <source>The device name cannot be empty.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>A device with this name already exists.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+56"/>
+        <source>Opening a terminal is not supported.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+121"/>
+        <location filename="../../../src/plugins/projectexplorer/kitaspects.cpp" line="+519"/>
+        <source>Device</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+245"/>
+        <source>Ready to use</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Connected</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Disconnected</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Unknown</source>
+        <translation type="unfinished">Tuntematon</translation>
+    </message>
+    <message>
+        <location line="+113"/>
+        <source>localSource() not implemented for this device type.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+30"/>
+        <source>No device for given path: &quot;%1&quot;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Device for path &quot;%1&quot; does not support killing processes.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/devicesupport/processlist.cpp" line="+68"/>
+        <source>Process ID</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Command Line</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>Fetching process list. This might take a while.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/devicesupport/sshsettingspage.cpp" line="+61"/>
+        <location line="+2"/>
+        <source>SSH</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+14"/>
+        <source>Enable connection sharing:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Connection sharing timeout:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Path to ssh executable:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Path to sftp executable:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Path to ssh-askpass executable:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Path to ssh-keygen executable:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+31"/>
+        <source> minutes</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/editorconfiguration.cpp" line="+78"/>
+        <source>Project %1</source>
+        <comment>Settings, %1 is a language (C++ or QML)</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Project</source>
+        <comment>Settings</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/editorsettingspropertiespage.cpp" line="+56"/>
+        <source>Restore Global</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Display Settings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Display right &amp;margin at column:</source>
+        <translation type="unfinished">Näytä oikea &amp;reunus sarakkeessa:</translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>Use context-specific margin</source>
+        <translation type="unfinished">Käytä kontekstikohtaista marginaalia</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>If available, use a different margin. For example, the ColumnLimit from the ClangFormat plugin.</source>
+        <translation type="unfinished">Jos mahdollista, käytä erilaista marginaalia. Esimerkiksi ColumnLimit ClangFormat-laajennuksesta.</translation>
+    </message>
+    <message>
+        <location line="+98"/>
+        <source>Editor</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/environmentaspect.cpp" line="-96"/>
+        <location filename="../../../src/plugins/projectexplorer/kitaspects.cpp" line="+496"/>
+        <location line="+49"/>
+        <location filename="../../../src/plugins/projectexplorer/projectexplorer.cpp" line="-2914"/>
+        <source>Environment</source>
+        <translation type="unfinished">Ympäristö</translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/environmentaspectwidget.cpp" line="+43"/>
+        <source>Base environment for this run configuration:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+29"/>
+        <source>Show in Application Output when running</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/environmentwidget.cpp" line="+2"/>
+        <source>Edit...</source>
+        <translation type="unfinished">Muokata...</translation>
+    </message>
+    <message>
+        <location line="+22"/>
+        <location line="+412"/>
+        <source>Choose Directory</source>
+        <translation type="unfinished">Valitse Hakemisto</translation>
+    </message>
+    <message>
+        <location line="-278"/>
+        <source>Ed&amp;it</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>&amp;Add</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>&amp;Reset</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>&amp;Unset</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+14"/>
+        <source>Append Path...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Prepend Path...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Open &amp;Terminal</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Open a terminal with this environment set up.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+123"/>
+        <source>Unset &lt;a href=&quot;%1&quot;&gt;&lt;b&gt;%1&lt;/b&gt;&lt;/a&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Set &lt;a href=&quot;%1&quot;&gt;&lt;b&gt;%1&lt;/b&gt;&lt;/a&gt; to &lt;b&gt;%2&lt;/b&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Append &lt;b&gt;%2&lt;/b&gt; to &lt;a href=&quot;%1&quot;&gt;&lt;b&gt;%1&lt;/b&gt;&lt;/a&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Prepend &lt;b&gt;%2&lt;/b&gt; to &lt;a href=&quot;%1&quot;&gt;&lt;b&gt;%1&lt;/b&gt;&lt;/a&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Set &lt;a href=&quot;%1&quot;&gt;&lt;b&gt;%1&lt;/b&gt;&lt;/a&gt; to &lt;b&gt;%2&lt;/b&gt; [disabled]</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>Use &lt;b&gt;%1&lt;/b&gt;</source>
+        <extracomment>%1 is &quot;System Environment&quot; or some such.</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>&lt;b&gt;No environment changes&lt;/b&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Use &lt;b&gt;%1&lt;/b&gt; and</source>
+        <extracomment>Yup, word puzzle. The Set/Unset phrases above are appended to this. %1 is &quot;System Environment&quot; or some such.</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/filesinallprojectsfind.cpp" line="+28"/>
+        <source>Files in All Project Directories</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+38"/>
+        <source>Files in All Project Directories:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/filterkitaspectsdialog.cpp" line="+83"/>
+        <source>Setting</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Visible</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/gcctoolchain.cpp" line="-1361"/>
+        <location line="+929"/>
+        <source>MinGW</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-877"/>
+        <source>%1 (%2, %3 %4 at %5)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1259"/>
+        <source>Override for code model</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Enable in the rare case that the code model
+fails because Clang does not understand the target architecture.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+45"/>
+        <source>Platform codegen flags:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Platform linker flags:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Target triple:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+27"/>
+        <source>Parent toolchain:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/importwidget.cpp" line="+28"/>
+        <source>Import Build From...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+12"/>
+        <source>Import</source>
+        <translation type="unfinished">Tuonti</translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/jsonwizard/jsonfieldpage.cpp" line="+107"/>
+        <source>Line Edit Validator Expander</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>The text edit input to fix up.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+61"/>
+        <source>Field is not an object.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Field has no name.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Field &quot;%1&quot; has no type.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Field &quot;%1&quot; has unsupported type &quot;%2&quot;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+18"/>
+        <source>When parsing Field &quot;%1&quot;: %2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+208"/>
+        <source>Label (&quot;%1&quot;) data is not an object.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Label (&quot;%1&quot;) has no trText.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+28"/>
+        <source>Spacer (&quot;%1&quot;) data is not an object.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Spacer (&quot;%1&quot;) property &quot;factor&quot; is no integer value.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+35"/>
+        <source>LineEdit (&quot;%1&quot;) data is not an object.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>LineEdit (&quot;%1&quot;) has an invalid regular expression &quot;%2&quot; in &quot;validator&quot;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+15"/>
+        <source>LineEdit (&quot;%1&quot;) has an invalid value &quot;%2&quot; in &quot;completion&quot;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+166"/>
+        <source>TextEdit (&quot;%1&quot;) data is not an object.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+83"/>
+        <source>PathChooser data is not an object.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+26"/>
+        <source>kind &quot;%1&quot; is not one of the supported &quot;existingDirectory&quot;, &quot;directory&quot;, &quot;file&quot;, &quot;saveFile&quot;, &quot;existingCommand&quot;, &quot;command&quot;, &quot;any&quot;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+80"/>
+        <source>CheckBox (&quot;%1&quot;) data is not an object.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>CheckBox (&quot;%1&quot;) values for checked and unchecked state are identical.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+80"/>
+        <source>No JSON lists allowed inside List items.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>No &quot;key&quot; found in List items.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+25"/>
+        <source>%1 (&quot;%2&quot;) data is not an object.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>%1 (&quot;%2&quot;) &quot;index&quot; is not an integer value.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>%1 (&quot;%2&quot;) &quot;disabledIndex&quot; is not an integer value.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>%1 (&quot;%2&quot;) &quot;items&quot; missing.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>%1 (&quot;%2&quot;) &quot;items&quot; is not a JSON list.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/jsonwizard/jsonkitspage.cpp" line="+46"/>
+        <source>At least one required feature is not present.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Platform is not supported.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>At least one preferred feature is not present.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+78"/>
+        <source>Feature list is set and not of type list.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>No &quot;%1&quot; key found in feature list object.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Feature list element is not a string or object.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/jsonwizard/jsonsummarypage.cpp" line="+161"/>
+        <source>Failed to Commit to Version Control</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Error message from Version Control System: &quot;%1&quot;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <location line="+12"/>
+        <source>Failed to Add to Project</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-11"/>
+        <location filename="../../../src/plugins/projectexplorer/projectfilewizardextension.cpp" line="+192"/>
+        <source>Failed to add subproject &quot;%1&quot;
+to project &quot;%2&quot;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+12"/>
+        <location filename="../../../src/plugins/projectexplorer/projectfilewizardextension.cpp" line="+8"/>
+        <source>Failed to add one or more files to project
+&quot;%1&quot; (%2).</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/jsonwizard/jsonwizard.cpp" line="+76"/>
+        <source>Project File</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+12"/>
+        <location filename="../../../src/plugins/projectexplorer/projectexplorer.cpp" line="+3118"/>
+        <source>Choose Project File</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+15"/>
+        <source>The project contains more than one project file. Select the one you would like to use.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+33"/>
+        <source>Check whether a variable exists.&lt;br&gt;Returns &quot;true&quot; if it does and an empty string if not.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+39"/>
+        <source>Could not determine target path. &quot;TargetPath&quot; was not set on any page.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+17"/>
+        <source>File Generation Failed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>The wizard failed to generate files.&lt;br&gt;The error message was: &quot;%1&quot;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+63"/>
+        <source>No &apos;key&apos; in options object.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+88"/>
+        <source>Failed to Overwrite Files</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Failed to Format Files</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+15"/>
+        <source>Failed to Write Files</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Failed to Post-Process Files</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Failed to Polish Files</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Failed to Open Files</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+58"/>
+        <source>&quot;%1&quot; does not exist in the file system.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Failed to open &quot;%1&quot; as a project.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+12"/>
+        <location line="+46"/>
+        <source>Failed to open an editor for &quot;%1&quot;.</source>
+        <translation type="unfinished">Editorin avaaminen kohteelle &quot;%1&quot; epäonnistui.</translation>
+    </message>
+    <message>
+        <location line="-27"/>
+        <source>No file to open found in &quot;%1&quot;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Failed to open project.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Failed to open project in &quot;%1&quot;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <location line="+23"/>
+        <source>Cannot Open Project</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/jsonwizard/jsonwizardfactory.cpp" line="+151"/>
+        <source>Generator is not a object.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Generator has no typeId set.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>TypeId &quot;%1&quot; of generator is unknown. Supported typeIds are: &quot;%2&quot;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+56"/>
+        <location line="+241"/>
+        <source>Path &quot;%1&quot; does not exist when checking JSON wizard search paths.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-228"/>
+        <source>Checking &quot;%1&quot; for %2.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+24"/>
+        <location line="+233"/>
+        <source>* Failed to parse &quot;%1&quot;:%2:%3: %4</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-223"/>
+        <source>* Did not find a JSON object in &quot;%1&quot;.
+</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <location line="+234"/>
+        <source>* Configuration found and parsed.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-224"/>
+        <source>JsonWizard: &quot;%1&quot; not found.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+96"/>
+        <source>Page is not an object.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+12"/>
+        <source>Page has no typeId set.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>TypeId &quot;%1&quot; of page is unknown. Supported typeIds are: &quot;%2&quot;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>Page with typeId &quot;%1&quot; has invalid &quot;index&quot;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+89"/>
+        <source>* Did not find a JSON object in &quot;%1&quot;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+12"/>
+        <source>* Version %1 not supported.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>* Failed to create: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+227"/>
+        <source>key not found.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Expected an object or a list.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+29"/>
+        <source>The platform selected for the wizard.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>The features available to this wizard.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>The plugins loaded.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+32"/>
+        <source>&quot;kind&quot; value &quot;%1&quot; is not &quot;class&quot; (deprecated), &quot;file&quot; or &quot;project&quot;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>&quot;kind&quot; is &quot;file&quot; or &quot;class&quot; (deprecated) and &quot;%1&quot; is also set.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>No id set.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>No category is set.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Icon file &quot;%1&quot; not found.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+20"/>
+        <source>Image file &quot;%1&quot; not found.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>No displayName set.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>No displayCategory set.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>No description set.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>When parsing &quot;generators&quot;: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+15"/>
+        <source>When parsing &quot;pages&quot;: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/jsonwizard/jsonwizardfilegenerator.cpp" line="+83"/>
+        <source>Files data list entry is not an object.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+21"/>
+        <source>Source and target are both empty.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+57"/>
+        <source>When processing &quot;%1&quot;:&lt;br&gt;%2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/jsonwizard/jsonwizardgeneratorfactory.cpp" line="+164"/>
+        <source>%1 [folder]</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>%1 [symbolic link]</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>%1 [read only]</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>The directory %1 contains files which cannot be overwritten:
+%2.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/jsonwizard/jsonwizardpagefactory_p.cpp" line="+72"/>
+        <source>When parsing fields of page &quot;%1&quot;: %2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+46"/>
+        <source>&quot;data&quot; for a &quot;File&quot; page needs to be unset or an empty object.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+48"/>
+        <source>Error parsing &quot;%1&quot; in &quot;Kits&quot; page: %2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+12"/>
+        <source>&quot;data&quot; must be a JSON object for &quot;Kits&quot; pages.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>&quot;Kits&quot; page requires a &quot;%1&quot; set.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+62"/>
+        <source>&quot;data&quot; must be empty or a JSON object for &quot;Project&quot; pages.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Invalid regular expression &quot;%1&quot; in &quot;%2&quot;. %3</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+46"/>
+        <source>&quot;data&quot; for a &quot;Summary&quot; page can be unset or needs to be an object.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/jsonwizard/jsonwizardscannergenerator.cpp" line="+50"/>
+        <source>Key is not an object.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>Pattern &quot;%1&quot; is no valid regular expression.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+23"/>
+        <source>ScannerGenerator: Binary pattern &quot;%1&quot; not valid.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/kit.cpp" line="+65"/>
+        <location line="+688"/>
+        <source>Unnamed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-686"/>
+        <location filename="../../../src/plugins/projectexplorer/miniprojecttargetselector.cpp" line="+0"/>
+        <source>Kit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Kit ID</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Kit filesystem-friendly name</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>The name of the kit.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>The name of the kit in a filesystem-friendly version.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>The ID of the kit.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+669"/>
+        <location filename="../../../src/plugins/projectexplorer/toolchainoptionspage.cpp" line="+319"/>
+        <source>Clone of %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/kitaspects.cpp" line="-1479"/>
+        <source>Sysroot</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>The root directory of the system image to use.&lt;br&gt;Leave empty when building for the desktop.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+17"/>
+        <source>Sys Root &quot;%1&quot; does not exist in the file system.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Sys Root &quot;%1&quot; is not a directory.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Sys Root &quot;%1&quot; is empty.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+14"/>
+        <location line="+7"/>
+        <source>Sys Root</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+112"/>
+        <source>&lt;No compiler&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+94"/>
+        <location line="+133"/>
+        <location line="+15"/>
+        <source>Compiler</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-147"/>
+        <source>The compiler to use for building.&lt;br&gt;Make sure the compiler will produce binaries compatible with the target device, Qt version and other libraries used.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+45"/>
+        <source>Compilers produce code for different ABIs: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+108"/>
+        <source>Path to the compiler executable</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Compiler for different languages</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Compiler executable for different languages</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+172"/>
+        <source>No compiler set in kit.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+100"/>
+        <source>Run device type</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>The type of device to run applications on.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+27"/>
+        <location filename="../../../src/plugins/projectexplorer/projectwindow.cpp" line="+235"/>
+        <source>Unknown device type</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Device type</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+140"/>
+        <source>Run device</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>The device to run the applications on.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+26"/>
+        <source>No device set.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Device is incompatible with this kit.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+43"/>
+        <location line="+258"/>
+        <location filename="../../../src/plugins/projectexplorer/miniprojecttargetselector.cpp" line="+779"/>
+        <source>Unconfigured</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-252"/>
+        <source>Host address</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>SSH port</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>User name</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Private key file</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Device name</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Device root directory</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+186"/>
+        <location line="+46"/>
+        <source>Build device</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-45"/>
+        <source>The device used to build applications on.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+25"/>
+        <source>No build device set.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+26"/>
+        <source>Build host address</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Build SSH port</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Build user name</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Build private key file</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Build device name</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Build device root directory</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+110"/>
+        <location filename="../../../src/plugins/projectexplorer/projectexplorersettings.cpp" line="+34"/>
+        <source>Change...</source>
+        <translation type="unfinished">Muuttaa...</translation>
+    </message>
+    <message>
+        <location line="+19"/>
+        <location filename="../../../src/plugins/projectexplorer/projectexplorersettings.cpp" line="+153"/>
+        <source>No changes to apply.</source>
+        <translation type="unfinished">Ei sovellettavia muutoksia.</translation>
+    </message>
+    <message>
+        <location line="+39"/>
+        <source>Force UTF-8 MSVC compiler output</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Either switches MSVC to English or keeps the language and just forces UTF-8 output (may vary depending on the used MSVC compiler).</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+42"/>
+        <source>Additional build environment settings when using this kit.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>The environment setting value is invalid.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/kitchooser.cpp" line="+93"/>
+        <source>Kit of Active Project: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/kitmanager.cpp" line="-52"/>
+        <source>Desktop (%1)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+131"/>
+        <source>Loading Kits</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+289"/>
+        <source>Mark as Mutable</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+56"/>
+        <location filename="../../../src/plugins/projectexplorer/projectwelcomepage.cpp" line="+303"/>
+        <source>Manage...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/kitmanagerconfigwidget.cpp" line="+50"/>
+        <location filename="../../../src/plugins/projectexplorer/toolchainconfigwidget.cpp" line="+47"/>
+        <source>Name:</source>
+        <translation type="unfinished">Nimi:</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Kit name and icon.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The name of the kit suitable for generating directory names. This value is used for the variable &lt;i&gt;%1&lt;/i&gt;, which for example determines the name of the shadow build directory.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>File system name:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+14"/>
+        <source>Kit icon.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Select Icon...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Reset to Device Default Icon</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+118"/>
+        <source>Display name is not unique.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+60"/>
+        <source>Default for %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>Select Icon</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Images (*.png *.xpm *.jpg)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/kitoptionspage.cpp" line="-427"/>
+        <source>%1 (default)</source>
+        <extracomment>Mark up a kit as the default one.</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+428"/>
+        <source>Make Default</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Settings Filter...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Choose which settings to display for this kit.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Default Settings Filter...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Choose which kit settings to display by default.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/makestep.cpp" line="+57"/>
+        <source>Make arguments:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Parallel jobs:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Override MAKEFLAGS</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Disable in subdirectories:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Runs this step only for a top-level build.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Targets:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Make:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Override %1:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+46"/>
+        <source>Make</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+35"/>
+        <source>Make command missing. Specify Make command in step configuration.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+163"/>
+        <source>&lt;b&gt;Make:&lt;/b&gt; %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>&lt;b&gt;Make:&lt;/b&gt; No build configuration.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>&lt;b&gt;Make:&lt;/b&gt; %1 not found in the environment.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+20"/>
+        <source>Overriding &lt;code&gt;MAKEFLAGS&lt;/code&gt; environment variable.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>&lt;code&gt;MAKEFLAGS&lt;/code&gt; specifies a conflicting job count.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>No conflict with &lt;code&gt;MAKEFLAGS&lt;/code&gt; environment variable.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/miniprojecttargetselector.cpp" line="-1348"/>
+        <location filename="../../../src/plugins/projectexplorer/projectexplorer.cpp" line="-2084"/>
+        <source>Run Without Deployment</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+563"/>
+        <location filename="../../../src/plugins/projectexplorer/project.cpp" line="+215"/>
+        <source>Project</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <location filename="../../../src/plugins/projectexplorer/projectexplorer.cpp" line="-396"/>
+        <location line="+383"/>
+        <location line="+74"/>
+        <location filename="../../../src/plugins/projectexplorer/runsettingspropertiespage.cpp" line="+13"/>
+        <location filename="../../../src/plugins/projectexplorer/targetsettingspanel.cpp" line="+130"/>
+        <source>Run</source>
+        <translation type="unfinished">Juosta</translation>
+    </message>
+    <message>
+        <location line="+783"/>
+        <source>&lt;b&gt;Project:&lt;/b&gt; %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>&lt;b&gt;Path:&lt;/b&gt; %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>&lt;b&gt;Kit:&lt;/b&gt; %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>&lt;b&gt;Build:&lt;/b&gt; %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>&lt;b&gt;Deploy:&lt;/b&gt; %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>&lt;b&gt;Run:&lt;/b&gt; %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>%1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+12"/>
+        <source>Project: &lt;b&gt;%1&lt;/b&gt;&lt;br/&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Kit: &lt;b&gt;%1&lt;/b&gt;&lt;br/&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Build: &lt;b&gt;%1&lt;/b&gt;&lt;br/&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Deploy: &lt;b&gt;%1&lt;/b&gt;&lt;br/&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Run: &lt;b&gt;%1&lt;/b&gt;&lt;br/&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>&lt;style type=text/css&gt;a:link {color: rgb(128, 128, 255);}&lt;/style&gt;The project &lt;b&gt;%1&lt;/b&gt; is not yet configured&lt;br/&gt;&lt;br/&gt;You can configure it in the &lt;a href=&quot;projectmode&quot;&gt;Projects mode&lt;/a&gt;&lt;br/&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/msvctoolchain.cpp" line="-555"/>
+        <source>Falling back to use the cached environment for &quot;%1&quot; after:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+483"/>
+        <location line="+71"/>
+        <location line="+177"/>
+        <source>Initialization:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-197"/>
+        <location line="+170"/>
+        <source>&lt;empty&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-154"/>
+        <source>Additional arguments for the vcvarsall.bat call</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+796"/>
+        <source>Failed to retrieve MSVC Environment from &quot;%1&quot;:
+%2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+83"/>
+        <source>clang-cl</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/osparser.cpp" line="+25"/>
+        <source>The process cannot access the file because it is being used by another process.
+Please close all running instances of your application before starting a build.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/parseissuesdialog.cpp" line="+44"/>
+        <source>Parse Build Output</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Output went to stderr</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Clear existing tasks</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Load from File...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Choose File</source>
+        <translation type="unfinished">Valitse tiedosto</translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Could Not Open File</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Could not open file: &quot;%1&quot;: %2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+23"/>
+        <source>Build Output</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+14"/>
+        <source>Parsing Options</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Use parsers from kit:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+18"/>
+        <source>Cannot Parse</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Cannot parse: The chosen kit does not provide an output parser.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/processstep.cpp" line="+31"/>
+        <source>Command:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <location filename="../../../src/plugins/projectexplorer/workspaceproject.cpp" line="+190"/>
+        <source>Arguments:</source>
+        <translation type="unfinished">Argumentit:</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <location filename="../../../src/plugins/projectexplorer/runconfigurationaspects.cpp" line="-594"/>
+        <location filename="../../../src/plugins/projectexplorer/workspaceproject.cpp" line="+5"/>
+        <source>Working directory:</source>
+        <translation type="unfinished">Työhakemisto:</translation>
+    </message>
+    <message>
+        <location line="+17"/>
+        <location line="+25"/>
+        <source>Custom Process Step</source>
+        <extracomment>Default ProcessStep display name</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/project.cpp" line="+1"/>
+        <source>Project Name</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+282"/>
+        <location filename="../../../src/plugins/projectexplorer/targetsetuppage.cpp" line="-194"/>
+        <source>Kit is not valid.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+81"/>
+        <source>Incompatible Kit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Kit %1 is incompatible with kit %2.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Build configurations:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Deploy configurations:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Run configurations:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Partially Incompatible Kit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Some configurations could not be copied.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+105"/>
+        <source>Could not load kits in a reasonable amount of time.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+88"/>
+        <source>Select the Root Directory</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+92"/>
+        <source>Project &quot;%1&quot; was configured for kit &quot;%2&quot; with id %3, which does not exist anymore. You can create a new kit or copy the steps of the vanished kit to another kit in %4 mode.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <location filename="../../../src/plugins/projectexplorer/projectexplorer.cpp" line="-1131"/>
+        <location filename="../../../src/plugins/projectexplorer/projecttreewidget.cpp" line="+622"/>
+        <location filename="../../../src/plugins/projectexplorer/projectwelcomepage.cpp" line="+26"/>
+        <location filename="../../../src/plugins/projectexplorer/projectwelcomepage.h" line="+47"/>
+        <location filename="../../../src/plugins/projectexplorer/projectwindow.cpp" line="+450"/>
+        <source>Projects</source>
+        <translation type="unfinished">Projektit</translation>
+    </message>
+    <message>
+        <location line="+265"/>
+        <source>Could not find any qml_*.qm file at &quot;%1&quot;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+87"/>
+        <source>%1: Name.</source>
+        <extracomment>%1 is something like &quot;Active project&quot;</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>%1: Full path to main file.</source>
+        <extracomment>%1 is something like &quot;Active project&quot;</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>%1: Full path to Project Directory.</source>
+        <extracomment>%1 is something like &quot;Active project&quot;</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>%1: The name of the active kit.</source>
+        <extracomment>%1 is something like &quot;Active project&quot;</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>%1: Name of the active build configuration.</source>
+        <extracomment>%1 is something like &quot;Active project&quot;</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>%1: Type of the active build configuration.</source>
+        <extracomment>%1 is something like &quot;Active project&quot;</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>%1: Full build path of active build configuration.</source>
+        <extracomment>%1 is something like &quot;Active project&quot;</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>%1: Variables in the active build environment.</source>
+        <extracomment>%1 is something like &quot;Active project&quot;</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>%1: Name of the active run configuration.</source>
+        <extracomment>%1 is something like &quot;Active project&quot;</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>%1: Executable of the active run configuration.</source>
+        <extracomment>%1 is something like &quot;Active project&quot;</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>%1: Variables in the environment of the active run configuration.</source>
+        <extracomment>%1 is something like &quot;Active project&quot;</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+12"/>
+        <source>%1: Working directory of the active run configuration.</source>
+        <extracomment>%1 is something like &quot;Active project&quot;</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/projectcommentssettings.cpp" line="+137"/>
+        <source>Documentation Comments</source>
+        <translation type="unfinished">Dokumentaatio Kommentit</translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/projectconfigurationmodel.cpp" line="+101"/>
+        <source>unavailable</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/projectexplorer.cpp" line="+12"/>
+        <source>Project Environment</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+81"/>
+        <source>Deploy Configuration</source>
+        <extracomment>Display name of the default deploy configuration</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+400"/>
+        <source>C++</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+100"/>
+        <location line="+5"/>
+        <source>Open...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>&amp;Build</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>&amp;Debug</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>&amp;Start Debugging</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+82"/>
+        <source>Open With</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+38"/>
+        <source>New Project...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Load Project...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Open Workspace...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>Open File</source>
+        <translation type="unfinished">Avaa tiedosto</translation>
+    </message>
+    <message>
+        <location line="+49"/>
+        <source>Run Environment</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+17"/>
+        <source>Recent P&amp;rojects</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+12"/>
+        <location line="+347"/>
+        <source>Close Project</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-347"/>
+        <source>Close Pro&amp;ject &quot;%1&quot;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Close All Files in Project</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <location line="+328"/>
+        <source>Close All Files in Project &quot;%1&quot;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-316"/>
+        <source>Close Pro&amp;ject</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Close All Projects and Editors</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Build All Projects</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Build All Projects for All Configurations</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>Deploy All Projects</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <location line="+9"/>
+        <location line="+102"/>
+        <location line="+8"/>
+        <location line="+65"/>
+        <source>Rebuild</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-182"/>
+        <source>Rebuild All Projects</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Rebuild All Projects for All Configurations</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Clean All Projects</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Clean All Projects for All Configurations</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>Build Project</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Build Project &quot;%1&quot;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+12"/>
+        <source>Build Project for All Configurations</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Build Project &quot;%1&quot; for All Configurations</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+20"/>
+        <source>Build for &amp;Run Configuration</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Build for &amp;Run Configuration &quot;%1&quot;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>Run Generator</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+19"/>
+        <source>Deploy Project</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>Rebuild Project</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Rebuild Project for All Configurations</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Clean Project</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>Clean Project for All Configurations</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>Cancel Build</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+32"/>
+        <location line="+30"/>
+        <source>Build Without Dependencies</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-18"/>
+        <location line="+22"/>
+        <source>Rebuild Without Dependencies</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-10"/>
+        <location line="+18"/>
+        <source>Clean Without Dependencies</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-4"/>
+        <source>Deploy Without Dependencies</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+18"/>
+        <source>Add New...</source>
+        <translation type="unfinished">Lisää uusi...</translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>Add Existing Files...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>Add Existing Projects...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Add Existing Directory...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>New Subproject...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Close All Files</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <location line="+1621"/>
+        <source>Close Project &quot;%1&quot;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-1614"/>
+        <source>Close Other Projects</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Close All Projects Except &quot;%1&quot;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>Properties...</source>
+        <translation type="unfinished">Ominaisuudet...</translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Remove...</source>
+        <translation type="unfinished">Poista...</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Duplicate File...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Remove Project...</source>
+        <extracomment>Remove project from parent profile (Project explorer view); will not physically delete any files.</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Delete File...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+24"/>
+        <source>Set as Active Project</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Set &quot;%1&quot; as Active Project</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>Expand</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Collapse All</source>
+        <translation type="unfinished">Kutista kaikki</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Expand All</source>
+        <translation type="unfinished">Laajenna kaikki</translation>
+    </message>
+    <message>
+        <location line="+24"/>
+        <source>Open Build and Run Kit Selector...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Quick Switch Kit Selector</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+228"/>
+        <source>Current Build Environment</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Current Run Environment</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+17"/>
+        <source>Active build environment of the active project.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Active run environment of the active project.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+31"/>
+        <source>Load Project</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+26"/>
+        <source>Open Workspace</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+43"/>
+        <source>Cancel Build &amp;&amp; Unload</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Do Not Unload</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Unload Project %1?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>The project %1 is currently being built.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Do you want to cancel the build process and unload the project anyway?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+62"/>
+        <source>Sanitizer</source>
+        <comment>Category for sanitizer issues listed under &apos;Issues&apos;</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Memory handling issues that the address sanitizer found.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>My Tasks</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Issues from a task list file (.tasks).</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+23"/>
+        <source>Parse Build Output...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+65"/>
+        <source>New Project</source>
+        <comment>Title of dialog</comment>
+        <translation type="unfinished">Uusi projekti</translation>
+    </message>
+    <message>
+        <location line="+130"/>
+        <source>Failed to Open Project</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>&lt;h3&gt;Project already open&lt;/h3&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+48"/>
+        <source>Failed opening project &quot;%1&quot;: No plugin can open project type &quot;%2&quot;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+195"/>
+        <source>Ignore All Errors?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Found some build errors in current task.
+Do you want to ignore them?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Run Configuration Removed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>The configuration that was supposed to run is no longer available.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+159"/>
+        <source>Always save files before build</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+23"/>
+        <source>Open Project in &quot;%1&quot;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Open Project &quot;%1&quot;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+19"/>
+        <source>The file &quot;%1&quot; was renamed to &quot;%2&quot;, but the following projects could not be automatically changed: %3</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <location line="+20"/>
+        <location line="+1109"/>
+        <location line="+26"/>
+        <source>Project Editing Failed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-1139"/>
+        <source>The following projects failed to automatically remove the file: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+62"/>
+        <source>Building &quot;%1&quot; is disabled: %2&lt;br&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+15"/>
+        <location line="+22"/>
+        <source>No project loaded.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-19"/>
+        <source>Currently building the active project.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>The project %1 is not configured.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <location line="+19"/>
+        <source>Project has no build settings.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-3"/>
+        <source>A build is in progress.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>Cancel Build &amp;&amp; Close</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Do Not Close</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Close %1?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>A project is currently being built.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Do you want to cancel the build process and close %1 anyway?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+164"/>
+        <source>No active project.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>The project &quot;%1&quot; is not configured.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>The project &quot;%1&quot; has no active kit.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>The kit &quot;%1&quot; for the project &quot;%2&quot; has no active run configuration.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>A build is still in progress.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Cannot run &quot;%1&quot;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>A run action is already scheduled for the active project.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+305"/>
+        <source>%1 in %2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+31"/>
+        <source>New File</source>
+        <comment>Title of dialog</comment>
+        <translation type="unfinished">Uusi tiedosto</translation>
+    </message>
+    <message>
+        <location line="+29"/>
+        <source>New Subproject</source>
+        <comment>Title of dialog</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+41"/>
+        <source>The following subprojects could not be added to project &quot;%1&quot;:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Adding Subproject Failed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+15"/>
+        <source>Add Existing Files</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+33"/>
+        <source>Could not add following files to project %1:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Adding Files to Project Failed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+87"/>
+        <location line="+40"/>
+        <source>Failed opening terminal.
+%1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+34"/>
+        <source>Remove More Files?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Remove these files as well?
+    %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>Removing File Failed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>File &quot;%1&quot; was not removed, because the project has changed in the meantime.
+Please try again.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+17"/>
+        <source>Could not remove file &quot;%1&quot; from project &quot;%2&quot;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+36"/>
+        <source>_copy</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Choose File Name</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>New file name:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <location line="+10"/>
+        <source>Duplicating File Failed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-9"/>
+        <source>Failed to copy file &quot;%1&quot; to &quot;%2&quot;: %3.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Failed to add new file &quot;%1&quot; to the project.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+17"/>
+        <source>Delete File</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Delete %1 from file system?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+17"/>
+        <source>Deleting File Failed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Could not delete file %1.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+37"/>
+        <source>The project file %1 cannot be automatically changed.
+
+Rename %2 to %3 anyway?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+17"/>
+        <source>The file %1 was renamed to %2, but the project file %3 could not be automatically changed.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+15"/>
+        <source>The file %1 could not be renamed %2.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Cannot Rename File</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+192"/>
+        <source>Locates files from all project directories. Append &quot;+&lt;number&gt;&quot; or &quot;:&lt;number&gt;&quot; to jump to the given line number. Append another &quot;+&lt;number&gt;&quot; or &quot;:&lt;number&gt;&quot; to jump to the column number as well.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+102"/>
+        <source>Run Run Configuration</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Runs a run configuration of the active project.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+14"/>
+        <source>Debug Run Configuration</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Starts debugging a run configuration of the active project.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+17"/>
+        <source>Switched run configuration to
+%1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Switch Run Configuration</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Switches the active run configuration of the active project.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/projectexplorerconstants.cpp" line="+15"/>
+        <source>Auto-detected</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Automatically managed by %1 or the installer.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Manual</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/projectexplorersettings.cpp" line="-222"/>
+        <source>s</source>
+        <extracomment>Suffix for &quot;seconds&quot;</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>The amount of seconds to wait between a &quot;soft kill&quot; and a &quot;hard kill&quot; of a running application.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Current directory</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Directory</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Close source files along with project</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Save all files before build</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Always deploy project before running it</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Add linker library search paths to run environment</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Always ask before stopping applications</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Create suitable run configurations automatically</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Clear issues list on new build</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Abort on error when building all projects</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Start build processes with low priority</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Warn against build directories with spaces or non-ASCII characters</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Some legacy build tools do not deal well with paths that contain &quot;special&quot; characters such as spaces, potentially resulting in spurious build errors.&lt;p&gt;Uncheck this option if you do not work with such tools.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Do Not Build Anything</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Build the Whole Project</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Build Only the Application to Be Run</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>All</source>
+        <translation type="unfinished">Kaikki</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Same Project</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Same Build Directory</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Same Application</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Enabled</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Disabled</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Deduced from Project</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Use jom instead of nmake</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Show all kits in &quot;Build &amp; Run&quot; in &quot;Projects&quot; mode</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Show also inactive kits in &quot;Build &amp; Run&quot; in &quot;Projects&quot; mode.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Environment changes to apply to run configurations, but not build configurations.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Application environment:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+20"/>
+        <source>Projects Directory</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Closing Projects</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Build and Run</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+14"/>
+        <source>Build before deploying:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Stop applications before building:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Default for &quot;Run in terminal&quot;:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Time to wait before force-stopping applications:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+125"/>
+        <location filename="../../../src/plugins/projectexplorer/projectwindow.cpp" line="-191"/>
+        <source>Build &amp; Run</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/projectfilewizardextension.cpp" line="-30"/>
+        <source>Open project anyway?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Version Control Failure</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/projectimporter.cpp" line="+87"/>
+        <source>No Build Found</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>No build found in %1 matching project %2.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+17"/>
+        <source>Import Warning</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Import Build</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+83"/>
+        <source>%1 - temporary</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+107"/>
+        <source>Imported Kit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/projectmanager.cpp" line="+407"/>
+        <source>Untitled</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+205"/>
+        <source>Failed to restore project files</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Could not restore the following project files:&lt;br&gt;&lt;b&gt;%1&lt;/b&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Keep projects in Session</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Remove projects from Session</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/projectmodels.cpp" line="+215"/>
+        <source>No kits are enabled for this project. Enable kits in the &quot;Projects&quot; mode.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+89"/>
+        <source>Rename More Files?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Would you like to rename these files as well?
+    %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+273"/>
+        <source>Choose Drop Action</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>You just dragged some files from one project node to another.
+What should %1 do now?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Copy Only File References</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Move Only File References</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Copy file references and files</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Move file references and files</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Target directory:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+24"/>
+        <source>Copy File References</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Move File References</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+202"/>
+        <source>Not all operations finished successfully.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>The following files could not be copied or moved:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>The following files could not be removed from the project file:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>The following files could not be added to the project file:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>The following files could not be deleted:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>A version control operation failed for the following files. Please check your repository.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Failure Updating Project</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/projecttree.cpp" line="+201"/>
+        <source>&lt;b&gt;Warning:&lt;/b&gt; This file is generated.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>&lt;b&gt;Warning:&lt;/b&gt; This file is outside the project directory.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/projecttreewidget.cpp" line="-391"/>
+        <source>Simplify Tree</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Hide Generated Files</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Hide Disabled Files</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>Focus Document in Project Tree</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Meta+Shift+L</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Alt+Shift+L</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Hide Empty Directories</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Hide Source and Header Groups</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+26"/>
+        <source>Synchronize with Editor</source>
+        <translation type="unfinished">Synkronoi editorin kanssa</translation>
+    </message>
+    <message>
+        <location line="+140"/>
+        <source>Filter Tree</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+194"/>
+        <source>Meta+X</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Alt+X</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/projectwelcomepage.cpp" line="-612"/>
+        <source>Open Session #%1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Ctrl+Meta+%1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Ctrl+Alt+%1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Open Recent Project #%1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Ctrl+Shift+%1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+50"/>
+        <source>Open %1 &quot;%2&quot;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Open %1 &quot;%2&quot; (%3)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+20"/>
+        <source>session</source>
+        <comment>Appears in &quot;Open session &lt;name&gt;&quot;</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+130"/>
+        <source>%1 (last session)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>%1 (current session)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+70"/>
+        <source>Rename</source>
+        <translation type="unfinished">Nimeä uudelleen</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <location filename="../../../src/plugins/projectexplorer/runsettingspropertiespage.cpp" line="+175"/>
+        <source>Delete</source>
+        <translation type="unfinished">Poistaa</translation>
+    </message>
+    <message>
+        <location line="+125"/>
+        <source>project</source>
+        <comment>Appears in &quot;Open project &lt;name&gt;&quot;</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+105"/>
+        <source>Remove Project from Recent Projects</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Clear Recent Project List</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+61"/>
+        <source>Sessions</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/projectwindow.cpp" line="-384"/>
+        <source>Use Regular Expressions</source>
+        <translation type="unfinished">Käytä säännöllisiä lausekkeita</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Case Sensitive</source>
+        <translation type="unfinished">Kirjainkoon erottelu</translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Show Non-matching Lines</source>
+        <translation type="unfinished">Näytä yhteensopimattomat rivit</translation>
+    </message>
+    <message>
+        <location line="+118"/>
+        <source>The project was configured for kits that no longer exist. Select one of the following options in the context menu to restore the project&apos;s settings:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Create a new kit with the same name for the same device type, with the original build, deploy, and run steps. Other kit settings are not restored.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Copy the build, deploy, and run steps to another kit.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>%1 (%2)</source>
+        <extracomment>vanished target display role: vanished target name (device type name)</extracomment>
+        <translation type="unfinished">% 1 (% 2)</translation>
+    </message>
+    <message>
+        <location line="+15"/>
+        <source>Create a New Kit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Copy Steps to Another Kit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+12"/>
+        <source>Remove Vanished Target &quot;%1&quot;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Remove All Vanished Targets</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+49"/>
+        <source>Vanished Targets</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+100"/>
+        <source>Project Settings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+268"/>
+        <location line="+171"/>
+        <source>Import Existing Build...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-159"/>
+        <source>Project Selector</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Active Project</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <location line="+148"/>
+        <source>Manage Kits...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-121"/>
+        <source>Build System Output</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+156"/>
+        <source>Import Directory</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/projectwizardpage.cpp" line="-157"/>
+        <source>The files are implicitly added to the projects:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+65"/>
+        <location line="+177"/>
+        <source>&lt;None&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-175"/>
+        <source>&lt;Implicitly Add&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+63"/>
+        <source>Add to &amp;version control:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+88"/>
+        <source>Add as a subproject to project:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Add to &amp;project:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+74"/>
+        <source>A version control system repository could not be created in &quot;%1&quot;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Failed to add &quot;%1&quot; to the version control system.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+94"/>
+        <source>Files to be added:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Files to be added in</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/removetaskhandler.cpp" line="+23"/>
+        <source>Remove</source>
+        <comment>Name of the action triggering the removetaskhandler</comment>
+        <translation type="unfinished">Poista</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Remove task from the task list.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/runconfiguration.cpp" line="+151"/>
+        <location filename="../../../src/plugins/projectexplorer/targetsettingspanel.cpp" line="+57"/>
+        <source>Run Settings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Variables in the run environment.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>The run configuration&apos;s working directory.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>The run configuration&apos;s name.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>The run configuration&apos;s executable.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+31"/>
+        <source>No build system active</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+306"/>
+        <source>Run on %{Device:Name}</source>
+        <extracomment>Shown in Run configuration if no executable is given, %1 is device name</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>%1 (on %{Device:Name})</source>
+        <extracomment>Shown in Run configuration, Add menu: &quot;name of runnable (on device name)&quot;</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/runconfigurationaspects.cpp" line="-156"/>
+        <source>Terminal</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>Run in terminal</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+90"/>
+        <source>Working Directory</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+26"/>
+        <source>Select Working Directory</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <location line="+303"/>
+        <source>Reset to Default</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-181"/>
+        <source>Arguments</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Command line arguments:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+147"/>
+        <source>Toggle multi-line mode.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+53"/>
+        <source>Executable</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Enter the path to the executable</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <location filename="../../../src/plugins/projectexplorer/workspaceproject.cpp" line="-15"/>
+        <source>Executable:</source>
+        <translation type="unfinished">Suoritettava:</translation>
+    </message>
+    <message>
+        <location line="+95"/>
+        <source>Alternate executable on device:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Use this command instead</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+115"/>
+        <source>Add build library search path to DYLD_LIBRARY_PATH and DYLD_FRAMEWORK_PATH</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Add build library search path to PATH</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Add build library search path to LD_LIBRARY_PATH</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+20"/>
+        <source>Use debug version of frameworks (DYLD_IMAGE_SUFFIX=_debug)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+17"/>
+        <source>Run as root user</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+22"/>
+        <source>Emulator</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+103"/>
+        <source>Launcher:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+58"/>
+        <source>X11 Forwarding:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Forward to local display</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/runcontrol.cpp" line="-14"/>
+        <source>Unexpected run control state %1 when worker %2 started.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+324"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;center&gt;&lt;i&gt;%1&lt;/i&gt; is still running.&lt;center/&gt;&lt;center&gt;Force it to quit?&lt;/center&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Application Still Running</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Force &amp;Quit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>&amp;Keep Running</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+246"/>
+        <source>Cannot retrieve debugging output.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+38"/>
+        <source>User requested stop. Shutting down...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Remote process did not finish in time. Connectivity lost?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+84"/>
+        <source>Cannot run: No command given.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+54"/>
+        <source>%1 exited with code %2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>%1 crashed.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>The process was ended forcefully.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+47"/>
+        <source>Starting %1...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Environment:</source>
+        <translation type="unfinished">Ympäristö:</translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>No executable specified.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+279"/>
+        <source>The process failed to start.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>An unknown error in the process occurred.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Either the invoked program &quot;%1&quot; is missing, or you may have insufficient permissions to invoke the program.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>The process crashed.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>An error occurred when attempting to write to the process. For example, the process may not be running, or it may have closed its input channel.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>An error occurred when attempting to read from the process. For example, the process may not be running.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/runsettingspropertiespage.cpp" line="-186"/>
+        <location filename="../../../src/plugins/projectexplorer/toolchainoptionspage.cpp" line="-317"/>
+        <source>Remove All</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Deployment</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Method:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Run configuration:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+153"/>
+        <source>Remove Run Configuration?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Do you really want to delete the run configuration &lt;b&gt;%1&lt;/b&gt;?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>Remove Run Configurations?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Do you really want to delete all run configurations?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+35"/>
+        <source>New name for run configuration &lt;b&gt;%1&lt;/b&gt;:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+69"/>
+        <source>Cancel Build &amp;&amp; Remove Deploy Configuration</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Remove Deploy Configuration %1?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>The deploy configuration &lt;b&gt;%1&lt;/b&gt; is currently being built.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Do you want to cancel the build process and remove the Deploy Configuration anyway?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Remove Deploy Configuration?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Do you really want to delete deploy configuration &lt;b&gt;%1&lt;/b&gt;?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+22"/>
+        <source>New name for deploy configuration &lt;b&gt;%1&lt;/b&gt;:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/selectablefilesmodel.cpp" line="+542"/>
+        <source>Source directory:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Start Parsing</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>Select files matching:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Hide files matching:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Apply Filters</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+126"/>
+        <source>Generating file list...
+
+%1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message numerus="yes">
+        <location line="+11"/>
+        <source>Not showing %n files that are outside of the base directory.
+These files are preserved.</source>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+        </translation>
+    </message>
+    <message>
+        <location line="+29"/>
+        <source>Edit Files</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+34"/>
+        <source>Add Existing Directory</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/showineditortaskhandler.cpp" line="+35"/>
+        <source>Show in Editor</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Show task location in an editor.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/simpleprojectwizard.cpp" line="-16"/>
+        <source>Files</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>Import Existing Project</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Project Name and Location</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Project name:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>File Selection</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+26"/>
+        <source>Import as qmake or CMake Project (Limited Functionality)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Imports existing projects that do not use qmake, CMake, Qbs, Meson, or Autotools.&lt;p&gt;This creates a project file that allows you to use %1 as a code editor and as a launcher for debugging and analyzing tools. If you want to build the project, you might need to edit the generated project file.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+172"/>
+        <source>Unknown build system &quot;%1&quot;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/target.cpp" line="+135"/>
+        <source>Target Settings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Source directory</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Build system</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Name of current project</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/targetsettingspanel.cpp" line="-517"/>
+        <source>&amp;Configure Project</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+91"/>
+        <source>Show All Kits</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Hide Inactive Kits</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+36"/>
+        <source>No kit defined in this project.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+14"/>
+        <location line="+12"/>
+        <source>Configure Project</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+79"/>
+        <source>Kit is unsuited for project</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Click to activate</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+71"/>
+        <source>Enable Kit for Project &quot;%1&quot;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Enable Kit for All Projects</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Disable Kit for Project &quot;%1&quot;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>Cancel Build and Disable Kit in This Project</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Disable Kit &quot;%1&quot; in This Project?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>The kit &lt;b&gt;%1&lt;/b&gt; is currently being built.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Do you want to cancel the build process and remove the kit anyway?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+12"/>
+        <source>Disable Kit for All Projects</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>Copy Steps From Another Kit...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+199"/>
+        <source>Enable Kit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/targetsetuppage.cpp" line="+29"/>
+        <source>No suitable kits found.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Add a kit in the &lt;a href=&quot;buildandrun&quot;&gt;options&lt;/a&gt; or via the maintenance tool of the SDK.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>Select all kits</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Type to filter kits by name...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+144"/>
+        <source>Select Kits for Your Project</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+105"/>
+        <source>The following kits can be used for project &lt;b&gt;%1&lt;/b&gt;:</source>
+        <comment>%1: Project name</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/targetsetupwidget.cpp" line="+359"/>
+        <source>&lt;b&gt;Error:&lt;/b&gt; </source>
+        <comment>Severity is Task::Error</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>&lt;b&gt;Warning:&lt;/b&gt; </source>
+        <comment>Severity is Task::Warning</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/task.cpp" line="+63"/>
+        <source>%1 needs a compiler set up to build. Configure a compiler in the kit options.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+143"/>
+        <source>Error:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Warning:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/taskfile.cpp" line="+110"/>
+        <source>Cannot open task file %1: %2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+43"/>
+        <source>Ignoring invalid task (no text).</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+49"/>
+        <source>File Error</source>
+        <translation type="unfinished">Tiedostovirhe</translation>
+    </message>
+    <message>
+        <location line="+27"/>
+        <source>Stop Monitoring</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Stop monitoring task files.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/taskhub.cpp" line="-18"/>
+        <source>Taskhub Error</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Taskhub Warning</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+21"/>
+        <source>Build Issue</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/taskwindow.cpp" line="+176"/>
+        <source>Issues</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+47"/>
+        <source>Show Warnings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Filter by categories</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/toolchainoptionspage.cpp" line="-152"/>
+        <source>&lt;nobr&gt;&lt;b&gt;ABI:&lt;/b&gt; %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>not up-to-date</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>This toolchain is invalid.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+43"/>
+        <source>Toolchain Auto-detection Settings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Detect x86_64 GCC compilers as x86_64 and x86</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>If checked, %1 will set up two instances of each x86_64 compiler:
+One for the native x86_64 target, and one for a plain x86 target.
+Enable this if you plan to create 32-bit x86 binaries without using a dedicated cross compiler.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+39"/>
+        <source>Type</source>
+        <translation type="unfinished">Tyyppi</translation>
+    </message>
+    <message>
+        <location line="+76"/>
+        <source>Re-detect</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Auto-detection Settings...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+251"/>
+        <location line="+8"/>
+        <source>Duplicate Compilers Detected</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-7"/>
+        <source>The following compiler was already configured:&lt;br&gt;&amp;nbsp;%1&lt;br&gt;It was not configured again.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>The following compilers were already configured:&lt;br&gt;&amp;nbsp;%1&lt;br&gt;They were not configured again.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+76"/>
+        <source>Compilers</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/vcsannotatetaskhandler.cpp" line="+43"/>
+        <source>&amp;Annotate</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Annotate using version control system.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/waitforstopdialog.cpp" line="+22"/>
+        <source>Waiting for Applications to Stop</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>Cancel</source>
+        <translation type="unfinished">Peruuttaa</translation>
+    </message>
+    <message>
+        <location line="+20"/>
+        <source>Waiting for applications to stop.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/workspaceproject.cpp" line="-3"/>
+        <source>You can edit this configuration inside the .qtcreator/project.json file.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+137"/>
+        <source>Exclude from Project</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>Rescan Workspace</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/xcodebuildparser.cpp" line="+56"/>
+        <location line="+183"/>
+        <source>Replacing signature</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-167"/>
+        <location line="+145"/>
+        <location line="+12"/>
+        <source>Xcodebuild failed.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>QtC::Python</name>
+    <message>
+        <location filename="../../../src/plugins/python/pipsupport.cpp" line="+93"/>
+        <source>Update Requirements</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Install Requirements</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Update %1</source>
+        <extracomment>%1 = package name</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Install %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Update Packages</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Install Packages</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+24"/>
+        <source>The installation of &quot;%1&quot; was canceled by timeout.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>The installation of &quot;%1&quot; was canceled by the user.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Installing &quot;%1&quot; failed with exit code %2.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/python/pythoneditor.cpp" line="+51"/>
+        <location line="+47"/>
+        <source>REPL</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-46"/>
+        <source>Open interactive Python.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>REPL Import File</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Open interactive Python and import file.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>REPL Import *</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Open interactive Python and import * from file.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+40"/>
+        <source>Open interactive Python. Either importing nothing, importing the current file, or importing everything (*) from the current file.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+159"/>
+        <source>No Python Selected</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Create Virtual Environment</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+22"/>
+        <source>Manage Python Interpreters</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/python/pythonkitaspect.cpp" line="+60"/>
+        <source>None</source>
+        <translation type="unfinished">Ei mitään</translation>
+    </message>
+    <message>
+        <location line="+33"/>
+        <location filename="../../../src/plugins/python/pythonsettings.cpp" line="+353"/>
+        <location line="+215"/>
+        <source>Python</source>
+        <translation type="unfinished">Python</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>The interpreter used for Python based projects.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+14"/>
+        <source>No Python setup.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Python &quot;%1&quot; not found.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Python &quot;%1&quot; is not executable.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Python &quot;%1&quot; does not contain a usable pip. pip is needed to install Python packages from the Python Package Index, like PySide and the Python language server. To use any of that functionality ensure that pip is installed for that Python.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Python &quot;%1&quot; does not contain a usable venv. venv is the recommended way to isolate a development environment for a project from the globally installed Python.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+32"/>
+        <source>Name of Python Interpreter</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Path to Python Interpreter</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/python/pythonlanguageclient.cpp" line="+228"/>
+        <source>Python Language Server (%1)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+303"/>
+        <source>Install Python language server (PyLS) for %1 (%2). The language server provides Python specific completion and annotation.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Install</source>
+        <translation type="unfinished">Asentaa</translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>Update Python language server (PyLS) for %1 (%2).</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Always Update</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Update</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Never</source>
+        <translation type="unfinished">Ei koskaan</translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/python/pythonplugin.cpp" line="+84"/>
+        <source>Issues parsed from Python runtime output.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/python/pythonproject.cpp" line="+41"/>
+        <source>No Python interpreter set for kit &quot;%1&quot;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/python/pythonrunconfiguration.cpp" line="+111"/>
+        <source>Buffered output</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Enabling improves output performance, but results in delayed output.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Script:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+12"/>
+        <location filename="../../../src/plugins/python/pythonsettings.cpp" line="+683"/>
+        <source>Python:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+20"/>
+        <source>Run %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/python/pythonsettings.cpp" line="-1147"/>
+        <location line="+283"/>
+        <source>Name:</source>
+        <translation type="unfinished">Nimi:</translation>
+    </message>
+    <message>
+        <location line="-282"/>
+        <location line="+283"/>
+        <source>Executable</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-205"/>
+        <source>Executable is empty.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>&quot;%1&quot; does not exist.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>&quot;%1&quot; is not an executable file.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <location line="+186"/>
+        <source>&amp;Add</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-184"/>
+        <location line="+185"/>
+        <source>&amp;Delete</source>
+        <translation type="unfinished">&amp;Poistaa</translation>
+    </message>
+    <message>
+        <location line="-183"/>
+        <location line="+185"/>
+        <source>&amp;Make Default</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-183"/>
+        <source>&amp;Generate Kit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <location line="+179"/>
+        <source>&amp;Clean Up</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-178"/>
+        <source>Remove all Python interpreters without a valid executable.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+138"/>
+        <source>Interpreters</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+79"/>
+        <source>Plugins:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Use Python Language Server</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+22"/>
+        <source>For a complete list of available options, consult the [Python LSP Server configuration documentation](%1).</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+12"/>
+        <source>Advanced</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+99"/>
+        <source>Language Server Configuration</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+466"/>
+        <source>Python interpreter:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>New Python Virtual Environment Directory</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Virtual environment directory:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Create</source>
+        <translation type="unfinished">Luoda</translation>
+    </message>
+    <message>
+        <location line="+34"/>
+        <location filename="../../../src/plugins/python/pythonutils.cpp" line="+185"/>
+        <source>Create Python venv</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+151"/>
+        <source>Searching Python binaries...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>Found &quot;%1&quot; (%2)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Removing Python</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/python/pythonwizardpage.cpp" line="+91"/>
+        <source>&quot;data&quot; of a Python wizard page expects a map with &quot;items&quot; containing a list of objects.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>An item of Python wizard page data expects a &quot;trKey&quot; field containing the UI visible string for that Python version and a &quot;value&quot; field containing an object with a &quot;PySideVersion&quot; field used for import statements in the Python files.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+15"/>
+        <source>PySide version:</source>
+        <translation type="unfinished">PySide-versio:</translation>
+    </message>
 </context>
 <context>
     <name>QtC::QmlJS</name>
     <message>
-        <location filename="../../../src/libs/utils/qrcparser.cpp" line="+364"/>
+        <location filename="../../../src/libs/utils/qrcparser.cpp" line="+363"/>
         <location line="+9"/>
         <source>XML error on line %1, col %2: %3</source>
         <translation>XML-virhe rivillä %1, sarake %2: %3</translation>
@@ -11245,9 +19060,17 @@ Esivalitsee työpöydän Qt:n sovelluksen rakentamista varten, jos sellainen on 
     </message>
 </context>
 <context>
+    <name>QtC::Terminal</name>
+    <message>
+        <location filename="../../../src/plugins/texteditor/texteditorplugin.cpp" line="+562"/>
+        <source>Clear Selection</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>QtC::TextEditor</name>
     <message>
-        <location filename="../../../src/plugins/texteditor/completionsettingspage.cpp" line="+72"/>
+        <location filename="../../../src/plugins/texteditor/completionsettingspage.cpp" line="+67"/>
         <source>Full</source>
         <translation>Koko</translation>
     </message>
@@ -11391,12 +19214,17 @@ Lisäksi Shift+Enter lisää koodinvaihtomerkin kohdistimen kohtaan ja siirtää
         <translation>Korvaa automaattisesti sulkevat sulut ja lainausmerkit.</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+72"/>
+        <source>&amp;Automatically Insert Matching Characters</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/texteditor/commentssettings.cpp" line="+91"/>
         <source>Enable Doxygen blocks</source>
         <translation>Ota Doxygen-estot käyttöön</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+2"/>
         <source>Automatically creates a Doxygen comment upon pressing enter after a &apos;/**&apos;, &apos;/*!&apos;, &apos;//!&apos; or &apos;///&apos;.</source>
         <translation>Luo automaattisesti Doxygen-kommentin, kun painat enteriä merkkien &apos;/**&apos;, &apos;/*!&apos;, &apos;//!&apos; jälkeen. tai &apos;///&apos;.</translation>
     </message>
@@ -11406,7 +19234,7 @@ Lisäksi Shift+Enter lisää koodinvaihtomerkin kohdistimen kohtaan ja siirtää
         <translation>Luo lyhyt kuvaus</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+2"/>
         <source>Generates a &lt;i&gt;brief&lt;/i&gt; command with an initial description for the corresponding declaration.</source>
         <translation>Luo &lt;i&gt;lyhyen&lt;/i&gt;-komennon, joka sisältää alkuperäisen kuvauksen vastaavalle ilmoitukselle.</translation>
     </message>
@@ -11421,30 +19249,41 @@ Lisäksi Shift+Enter lisää koodinvaihtomerkin kohdistimen kohtaan ja siirtää
         <translation>Lisää alkutähdet, kun jatkat C/C++ &quot;/*&quot;, Qt &quot;/*!&quot; ja Java &quot;/**&quot; -tyylisiä kommentteja uusille riveille.</translation>
     </message>
     <message>
-        <location line="+78"/>
-        <source>&amp;Automatically insert matching characters</source>
-        <translation>&amp;Lisää vastaavat merkit automaattisesti</translation>
+        <location line="+3"/>
+        <source>Doxygen command prefix:</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+20"/>
+        <location line="+1"/>
+        <source>Doxygen allows &quot;@&quot; and &quot;\&quot; to start commands.
+By default, &quot;@&quot; is used if the surrounding comment starts with &quot;/**&quot; or &quot;///&quot;, and &quot;\&quot; is used
+if the comment starts with &quot;/*!&quot; or &quot;//!&quot;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&amp;Automatically insert matching characters</source>
+        <translation type="vanished">&amp;Lisää vastaavat merkit automaattisesti</translation>
+    </message>
+    <message>
+        <location line="+66"/>
         <source>Documentation Comments</source>
         <translation>Dokumentaatio Kommentit</translation>
     </message>
     <message>
-        <location line="+101"/>
+        <location filename="../../../src/plugins/texteditor/completionsettingspage.cpp" line="+96"/>
         <source>Completion</source>
         <translation>Valmistuminen</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/texteditor/snippets/snippetssettingspage.cpp" line="+125"/>
+        <location filename="../../../src/plugins/texteditor/snippets/snippetssettingspage.cpp" line="+126"/>
         <location line="+79"/>
-        <location line="+268"/>
-        <location filename="../../../src/plugins/texteditor/texteditorsettings.cpp" line="+319"/>
+        <location line="+252"/>
+        <location filename="../../../src/plugins/texteditor/texteditorsettings.cpp" line="+327"/>
         <source>Error</source>
         <translation>Virhe</translation>
     </message>
     <message>
-        <location line="-346"/>
+        <location line="-330"/>
         <source>Not a valid trigger. A valid trigger can only contain letters, numbers, or underscores, where the first character is limited to letter or underscore.</source>
         <translation>Ei kelvollinen laukaisu. Kelvollinen liipaisin voi sisältää vain kirjaimia, numeroita tai alaviivoja, kun ensimmäinen merkki on rajoitettu kirjaimeen tai alaviivaan.</translation>
     </message>
@@ -11464,7 +19303,7 @@ Lisäksi Shift+Enter lisää koodinvaihtomerkin kohdistimen kohtaan ja siirtää
         <translation>Virhe katkelman palauttamisessa.</translation>
     </message>
     <message>
-        <location line="+121"/>
+        <location line="+98"/>
         <source>Revert Built-in</source>
         <translation>Palauta sisäänrakennettu</translation>
     </message>
@@ -11489,52 +19328,111 @@ Lisäksi Shift+Enter lisää koodinvaihtomerkin kohdistimen kohtaan ja siirtää
         <translation>Nollaa kaikki</translation>
     </message>
     <message>
-        <location line="+52"/>
+        <location line="+62"/>
         <source>Error While Saving Snippet Collection</source>
         <translation>Virhe tallennettaessa katkelmakokoelmaa</translation>
     </message>
     <message>
-        <location line="+72"/>
+        <location line="+69"/>
         <source>No snippet selected.</source>
         <translation>Katkelmaa ei ole valittu.</translation>
     </message>
     <message>
-        <location line="+88"/>
+        <location line="+86"/>
         <source>Snippets</source>
         <translation>Katkelmat</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/texteditor/texteditor.cpp" line="+158"/>
         <source>Line: 9999, Col: 999</source>
-        <translation>Rivi: 9999, Col: 999</translation>
+        <translation type="vanished">Rivi: 9999, Col: 999</translation>
     </message>
     <message>
-        <location line="+23"/>
+        <location filename="../../../src/plugins/texteditor/texteditor.cpp" line="+195"/>
+        <source>Cursors: %2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
         <source>Cursor position: %1</source>
         <translation>Kohdistimen sijainti: %1</translation>
     </message>
     <message>
-        <location line="+880"/>
+        <location line="+7"/>
+        <source>(Sel: %1)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+18"/>
+        <source>Cursors:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+14"/>
+        <source>Line:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Column:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Selection length:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Position in document:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Anchor:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+917"/>
+        <source>Unix Line Endings (LF)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Windows Line Endings (CRLF)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+71"/>
         <source>Other annotations</source>
         <translation>Muut huomautukset</translation>
     </message>
     <message>
-        <location line="+277"/>
+        <location line="+273"/>
         <source>Print Document</source>
         <translation>Tulosta asiakirja</translation>
     </message>
     <message>
-        <location line="+327"/>
+        <location line="+367"/>
         <source>File Error</source>
         <translation>Tiedostovirhe</translation>
     </message>
     <message>
-        <location line="+37"/>
+        <location line="+28"/>
+        <source>LF</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>CRLF</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+13"/>
         <source>The text is too large to be displayed (%1 MB).</source>
         <translation>Teksti on liian suuri näytettäväksi (%1 Mt).</translation>
     </message>
     <message>
-        <location line="+30"/>
+        <location line="+36"/>
         <source>&lt;b&gt;Error:&lt;/b&gt; Could not decode &quot;%1&quot; with &quot;%2&quot;-encoding. Editing not possible.</source>
         <translation>&lt;b&gt;Virhe:&lt;/b&gt; &quot;%1&quot; ei voitu purkaa &quot;%2&quot;-koodauksella. Editointi ei ole mahdollista.</translation>
     </message>
@@ -11544,12 +19442,12 @@ Lisäksi Shift+Enter lisää koodinvaihtomerkin kohdistimen kohtaan ja siirtää
         <translation>Valitse Koodaus</translation>
     </message>
     <message>
-        <location line="+1154"/>
+        <location line="+1297"/>
         <source>Snippet Parse Error</source>
         <translation>Katkelman jäsennysvirhe</translation>
     </message>
     <message>
-        <location line="+491"/>
+        <location line="+522"/>
         <source>A highlight definition was not found for this file. Would you like to download additional highlight definition files?</source>
         <translation>Tälle tiedostolle ei löytynyt korostuksen määritelmää. Haluatko ladata lisää korostuksen määrittelytiedostoja?</translation>
     </message>
@@ -11564,12 +19462,12 @@ Lisäksi Shift+Enter lisää koodinvaihtomerkin kohdistimen kohtaan ja siirtää
         <translation>Muista valintani</translation>
     </message>
     <message>
-        <location line="+2932"/>
+        <location line="+3822"/>
         <source>Zoom: %1%</source>
         <translation>Zoomaus: %1%</translation>
     </message>
     <message>
-        <location line="+1762"/>
+        <location line="+1851"/>
         <source>Delete UTF-8 BOM on Save</source>
         <translation>Poista UTF-8 BOM tallennuksen yhteydessä</translation>
     </message>
@@ -11579,12 +19477,17 @@ Lisäksi Shift+Enter lisää koodinvaihtomerkin kohdistimen kohtaan ja siirtää
         <translation>Lisää UTF-8 BOM tallennuksen yhteydessä</translation>
     </message>
     <message>
-        <location line="-7916"/>
+        <location line="+605"/>
+        <source>Could not find definition.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-9882"/>
         <source>Line: %1, Col: %2</source>
         <translation>Rivi: %1, Col: %2</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/texteditor/behaviorsettingswidget.cpp" line="+125"/>
+        <location filename="../../../src/plugins/texteditor/behaviorsettingswidget.cpp" line="+166"/>
         <source>&amp;Clean whitespace</source>
         <translation>&amp;Puhdista välilyönnit</translation>
     </message>
@@ -11657,7 +19560,7 @@ Vaikuttaa jatkorivien sisennykseen.
 &lt;/ul&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location line="+32"/>
+        <location line="+31"/>
         <source>Tabs And Indentation</source>
         <translation>Sarkaimet ja sisennykset</translation>
     </message>
@@ -11722,7 +19625,7 @@ Vaikuttaa jatkorivien sisennykseen.
         <translation>Välilehtikäytäntö:</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/texteditor/behaviorsettingswidget.cpp" line="-23"/>
+        <location filename="../../../src/plugins/texteditor/behaviorsettingswidget.cpp" line="-65"/>
         <source>Enable automatic &amp;indentation</source>
         <translation>Ota automaattinen &amp;sisennys käyttöön</translation>
     </message>
@@ -11733,7 +19636,7 @@ Vaikuttaa jatkorivien sisennykseen.
     </message>
     <message>
         <location line="+1"/>
-        <location filename="../../../src/plugins/texteditor/completionsettingspage.cpp" line="-279"/>
+        <location filename="../../../src/plugins/texteditor/completionsettingspage.cpp" line="-236"/>
         <source>Always</source>
         <translation>Aina</translation>
     </message>
@@ -11796,6 +19699,47 @@ Määrittää, kuinka askelpalautin toimii vuorovaikutuksessa sisennyksen kanssa
     </message>
     <message>
         <location line="+5"/>
+        <location filename="../../../src/plugins/texteditor/commentssettings.cpp" line="-61"/>
+        <source>Automatic</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>At Line Start</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>After Whitespace</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Specifies where single line comments should be positioned.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>%1: The highlight definition for the file determines the position. If no highlight definition is available, the comment is placed after leading whitespaces.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>%1: The comment is placed at the start of the line.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>%1: The comment is placed after leading whitespaces.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+22"/>
+        <source>Preferred comment position:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
         <source>Skip clean whitespace for file types:</source>
         <translation>Ohita tyhjät välilyönnit tiedostotyypeille:</translation>
     </message>
@@ -11937,7 +19881,7 @@ Määrittää, kuinka askelpalautin toimii vuorovaikutuksessa sisennyksen kanssa
         <translation>Askelpalautin sisennys:</translation>
     </message>
     <message>
-        <location line="+19"/>
+        <location line="+23"/>
         <source>Default encoding:</source>
         <translation>Oletuskoodaus:</translation>
     </message>
@@ -11957,7 +19901,7 @@ Määrittää, kuinka askelpalautin toimii vuorovaikutuksessa sisennyksen kanssa
         <translation>Näytä ohjetyökaluvihjeet hiirellä:</translation>
     </message>
     <message>
-        <location line="+142"/>
+        <location line="+152"/>
         <source>Displays context-sensitive help or type information on mouseover.</source>
         <translation>Näyttää tilannekohtaiset ohje- tai tyyppitiedot hiiren ottaessa.</translation>
     </message>
@@ -11967,13 +19911,13 @@ Määrittää, kuinka askelpalautin toimii vuorovaikutuksessa sisennyksen kanssa
         <translation>Näyttää tilannekohtaiset ohje- tai tyyppitiedot näppäinyhdistelmällä Shift+Mouseover.</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/texteditor/displaysettingspage.cpp" line="+141"/>
-        <location line="+217"/>
+        <location filename="../../../src/plugins/texteditor/displaysettingspage.cpp" line="+139"/>
+        <location line="+201"/>
         <source>Display</source>
         <translation>Näyttö</translation>
     </message>
     <message>
-        <location line="-268"/>
+        <location line="-256"/>
         <source>Display line &amp;numbers</source>
         <translation>Näytä rivit &amp; numerot</translation>
     </message>
@@ -12003,7 +19947,7 @@ Määrittää, kuinka askelpalautin toimii vuorovaikutuksessa sisennyksen kanssa
         <translation>Korosta nykyinen &amp;rivi</translation>
     </message>
     <message>
-        <location line="-44"/>
+        <location line="-39"/>
         <source>Enable text &amp;wrapping</source>
         <translation>Ota teksti &amp; rivitys käyttöön</translation>
     </message>
@@ -12013,7 +19957,7 @@ Määrittää, kuinka askelpalautin toimii vuorovaikutuksessa sisennyksen kanssa
         <translation>&lt;i&gt;Aseta &lt;a href=&quot;font zoom&quot;&gt;kirjasinten rivivälille&lt;/a&gt; 100 %, jotta tekstin rivitysvaihtoehto otetaan käyttöön.&lt;/i&gt;</translation>
     </message>
     <message>
-        <location line="+25"/>
+        <location line="+20"/>
         <source>Display right &amp;margin at column:</source>
         <translation>Näytä oikea &amp;reunus sarakkeessa:</translation>
     </message>
@@ -12089,6 +20033,16 @@ Määrittää, kuinka askelpalautin toimii vuorovaikutuksessa sisennyksen kanssa
     </message>
     <message>
         <location line="+2"/>
+        <source>&amp;Highlight selection</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Adds a colored background and a marker to the scrollbar to occurrences of the selected text.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
         <source>Next to editor content</source>
         <translation>Muokkaussisällön vieressä</translation>
     </message>
@@ -12109,8 +20063,12 @@ Määrittää, kuinka askelpalautin toimii vuorovaikutuksessa sisennyksen kanssa
     </message>
     <message>
         <location line="+2"/>
+        <source>Line Annotations</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>Line annotations</source>
-        <translation>Rivin huomautukset</translation>
+        <translation type="vanished">Rivin huomautukset</translation>
     </message>
     <message>
         <location line="+14"/>
@@ -12123,18 +20081,18 @@ Määrittää, kuinka askelpalautin toimii vuorovaikutuksessa sisennyksen kanssa
         <translation>Kääriminen</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/texteditor/behaviorsettingswidget.cpp" line="-206"/>
+        <location filename="../../../src/plugins/texteditor/behaviorsettingswidget.cpp" line="-220"/>
         <source>Enable &amp;mouse navigation</source>
         <translation>Ota &amp;hiiren navigointi käyttöön</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/texteditor/fontsettingspage.cpp" line="+544"/>
+        <location filename="../../../src/plugins/texteditor/fontsettingspage.cpp" line="+547"/>
         <source>Copy Color Scheme</source>
         <translation>Kopioi väriteema</translation>
     </message>
     <message>
-        <location line="-428"/>
-        <location line="+7"/>
+        <location line="-434"/>
+        <location line="+6"/>
         <source>%</source>
         <translation>%</translation>
     </message>
@@ -12171,7 +20129,7 @@ Alle 100 %:n arvo voi johtaa päällekkäisyyteen ja virheelliseen grafiikkaan.<
         <translation>Riviväli:</translation>
     </message>
     <message>
-        <location line="+363"/>
+        <location line="+370"/>
         <location line="+92"/>
         <source>Color scheme name:</source>
         <translation>Väriteeman nimi:</translation>
@@ -12209,8 +20167,8 @@ Alle 100 %:n arvo voi johtaa päällekkäisyyteen ja virheelliseen grafiikkaan.<
         <translation>Vie värimalli</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/texteditor/codestyleselectorwidget.cpp" line="+43"/>
-        <location filename="../../../src/plugins/texteditor/snippets/snippetssettingspage.cpp" line="-217"/>
+        <location filename="../../../src/plugins/texteditor/codestyleselectorwidget.cpp" line="+41"/>
+        <location filename="../../../src/plugins/texteditor/snippets/snippetssettingspage.cpp" line="-222"/>
         <source>Remove</source>
         <translation>Poista</translation>
     </message>
@@ -12225,9 +20183,13 @@ Alle 100 %:n arvo voi johtaa päällekkäisyyteen ja virheelliseen grafiikkaan.<
         <translation>Tuonti...</translation>
     </message>
     <message>
-        <location line="+7"/>
         <source>Current settings:</source>
-        <translation>Nykyiset asetukset:</translation>
+        <translation type="vanished">Nykyiset asetukset:</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Custom settings:</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+105"/>
@@ -12245,7 +20207,7 @@ Alle 100 %:n arvo voi johtaa päällekkäisyyteen ja virheelliseen grafiikkaan.<
         <translation>% 1 (kopioi)</translation>
     </message>
     <message>
-        <location line="+20"/>
+        <location line="+21"/>
         <source>Delete Code Style</source>
         <translation>Poista koodityyli</translation>
     </message>
@@ -12256,8 +20218,8 @@ Alle 100 %:n arvo voi johtaa päällekkäisyyteen ja virheelliseen grafiikkaan.<
     </message>
     <message>
         <location line="+6"/>
-        <location filename="../../../src/plugins/texteditor/fontsettingspage.cpp" line="-527"/>
-        <location line="+453"/>
+        <location filename="../../../src/plugins/texteditor/fontsettingspage.cpp" line="-534"/>
+        <location line="+460"/>
         <source>Delete</source>
         <translation>Poistaa</translation>
     </message>
@@ -12269,17 +20231,17 @@ Alle 100 %:n arvo voi johtaa päällekkäisyyteen ja virheelliseen grafiikkaan.<
     </message>
     <message>
         <location line="-8"/>
-        <location line="+19"/>
+        <location line="+21"/>
         <source>Code styles (*.xml);;All files (*)</source>
         <translation>Koodityylit (*.xml);;Kaikki tiedostot (*)</translation>
     </message>
     <message>
-        <location line="-10"/>
+        <location line="-12"/>
         <source>Cannot import code style from &quot;%1&quot;.</source>
         <translation>Koodityyliä ei voi tuoda kohteesta &quot;% 1&quot;.</translation>
     </message>
     <message>
-        <location line="+8"/>
+        <location line="+10"/>
         <source>Export Code Style</source>
         <translation>Vie koodityyli</translation>
     </message>
@@ -12292,6 +20254,11 @@ Alle 100 %:n arvo voi johtaa päällekkäisyyteen ja virheelliseen grafiikkaan.<
         <location line="+2"/>
         <source>%1 [built-in]</source>
         <translation>% 1 [sisäänrakennettu]</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>%1 [customizable]</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../../src/plugins/texteditor/fontsettingspage.cpp" line="+89"/>
@@ -12309,12 +20276,12 @@ Alle 100 %:n arvo voi johtaa päällekkäisyyteen ja virheelliseen grafiikkaan.<
         <translation>Hävitä</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/texteditor/findincurrentfile.cpp" line="+38"/>
+        <location filename="../../../src/plugins/texteditor/findincurrentfile.cpp" line="+69"/>
         <source>Current File</source>
         <translation>Nykyinen tiedosto</translation>
     </message>
     <message>
-        <location line="+25"/>
+        <location line="+16"/>
         <source>File &quot;%1&quot;:</source>
         <translation>Tiedosto &quot;% 1&quot;:</translation>
     </message>
@@ -12327,19 +20294,19 @@ Alle 100 %:n arvo voi johtaa päällekkäisyyteen ja virheelliseen grafiikkaan.<
     </message>
     <message>
         <location line="+7"/>
-        <location filename="../../../src/plugins/texteditor/findinopenfiles.cpp" line="+87"/>
+        <location filename="../../../src/plugins/texteditor/findinopenfiles.cpp" line="+106"/>
         <source>Please note that this only searches files that have been saved to disk.</source>
         <translation>Huomaa, että tämä etsii vain tiedostoja, jotka on tallennettu levylle.</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/texteditor/colorschemeedit.cpp" line="+197"/>
-        <location filename="../../../src/plugins/texteditor/fontsettingspage.cpp" line="-519"/>
-        <location line="+621"/>
+        <location filename="../../../src/plugins/texteditor/colorschemeedit.cpp" line="+188"/>
+        <location filename="../../../src/plugins/texteditor/fontsettingspage.cpp" line="-526"/>
+        <location line="+628"/>
         <source>Font</source>
         <translation>Fontti</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/texteditor/fontsettingspage.cpp" line="-618"/>
+        <location filename="../../../src/plugins/texteditor/fontsettingspage.cpp" line="-625"/>
         <source>Family:</source>
         <translation>Perhe:</translation>
     </message>
@@ -12422,7 +20389,7 @@ Alle 100 %:n arvo voi johtaa päällekkäisyyteen ja virheelliseen grafiikkaan.<
         <translation>Väri:</translation>
     </message>
     <message>
-        <location line="+488"/>
+        <location line="+477"/>
         <source>No Underline</source>
         <translation>Ei alleviivausta</translation>
     </message>
@@ -12457,18 +20424,18 @@ Alle 100 %:n arvo voi johtaa päällekkäisyyteen ja virheelliseen grafiikkaan.<
         <translation>Viiva-piste-piste alleviivaus</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/texteditor/fontsettingspage.cpp" line="-68"/>
+        <location filename="../../../src/plugins/texteditor/fontsettingspage.cpp" line="-67"/>
         <source>Antialias</source>
         <translation>Antialias</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/texteditor/codestyleselectorwidget.cpp" line="-249"/>
-        <location filename="../../../src/plugins/texteditor/fontsettingspage.cpp" line="+31"/>
+        <location filename="../../../src/plugins/texteditor/codestyleselectorwidget.cpp" line="-254"/>
+        <location filename="../../../src/plugins/texteditor/fontsettingspage.cpp" line="+30"/>
         <source>Copy...</source>
         <translation>Kopio...</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/texteditor/linenumberfilter.cpp" line="+28"/>
+        <location filename="../../../src/plugins/texteditor/linenumberfilter.cpp" line="+21"/>
         <source>Line in Current Document</source>
         <translation>Nykyisen asiakirjan rivi</translation>
     </message>
@@ -12483,7 +20450,7 @@ Alle 100 %:n arvo voi johtaa päällekkäisyyteen ja virheelliseen grafiikkaan.<
         <translation>&lt;rivi&gt;:&lt;sarake&gt;</translation>
     </message>
     <message>
-        <location line="+32"/>
+        <location line="+28"/>
         <source>Line %1, Column %2</source>
         <translation>Rivi %1, sarake %2</translation>
     </message>
@@ -12498,7 +20465,7 @@ Alle 100 %:n arvo voi johtaa päällekkäisyyteen ja virheelliseen grafiikkaan.<
         <translation>Sarake %1</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/texteditor/texteditorplugin.cpp" line="+98"/>
+        <location filename="../../../src/plugins/texteditor/texteditorplugin.cpp" line="-239"/>
         <source>Trigger Completion</source>
         <translation>Liipaisimen valmistuminen</translation>
     </message>
@@ -12513,38 +20480,38 @@ Alle 100 %:n arvo voi johtaa päällekkäisyyteen ja virheelliseen grafiikkaan.<
         <translation>Meta+avaruus</translation>
     </message>
     <message>
-        <location line="+11"/>
+        <location line="+9"/>
         <source>Display Function Hint</source>
         <translation>Näytön toimintovihje</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+1"/>
         <source>Meta+Shift+D</source>
         <translation>Meta+Vaihto+D</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+0"/>
         <source>Ctrl+Shift+D</source>
         <translation>Ctrl+Shift+D</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+4"/>
         <source>Trigger Refactoring Action</source>
         <translation>Käynnistä uudelleentekijätoiminto</translation>
     </message>
     <message>
-        <location line="+8"/>
+        <location line="+4"/>
         <source>Show Context Menu</source>
         <translation>Näytä kontekstivalikko</translation>
     </message>
     <message>
-        <location line="+11"/>
+        <location line="-215"/>
         <source>Text</source>
         <comment>SnippetProvider</comment>
         <translation>Teksti</translation>
     </message>
     <message>
-        <location line="+39"/>
+        <location line="+38"/>
         <source>Selected text within the current document.</source>
         <translation>Valittu teksti nykyisestä asiakirjasta.</translation>
     </message>
@@ -12579,22 +20546,20 @@ Alle 100 %:n arvo voi johtaa päällekkäisyyteen ja virheelliseen grafiikkaan.<
         <translation>Word nykyisen asiakirjan tekstikohdistimen alla.</translation>
     </message>
     <message>
-        <location line="-102"/>
+        <location line="+128"/>
         <source>Alt+Return</source>
         <translation>Alt+Return</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/texteditor/texteditoractionhandler.cpp" line="+153"/>
         <source>&amp;Undo</source>
-        <translation>&amp;Kumoa</translation>
+        <translation type="vanished">&amp;Kumoa</translation>
     </message>
     <message>
-        <location line="+2"/>
         <source>&amp;Redo</source>
-        <translation>&amp;Tee uudelleen</translation>
+        <translation type="vanished">&amp;Tee uudelleen</translation>
     </message>
     <message>
-        <location line="+158"/>
+        <location line="+124"/>
         <source>&amp;Visualize Whitespace</source>
         <translation>&amp;Visualisoi välilyönti</translation>
     </message>
@@ -12609,7 +20574,7 @@ Alle 100 %:n arvo voi johtaa päällekkäisyyteen ja virheelliseen grafiikkaan.<
         <translation>Puhdista välilyönti</translation>
     </message>
     <message>
-        <location line="+11"/>
+        <location line="+3"/>
         <source>Enable Text &amp;Wrapping</source>
         <translation>Ota tekstin rivitys käyttöön</translation>
     </message>
@@ -12624,32 +20589,42 @@ Alle 100 %:n arvo voi johtaa päällekkäisyyteen ja virheelliseen grafiikkaan.<
         <translation>Ctrl+/</translation>
     </message>
     <message>
-        <location line="-141"/>
+        <location line="-133"/>
         <source>Delete &amp;Line</source>
         <translation>Poista &amp;rivi</translation>
     </message>
     <message>
-        <location line="+145"/>
+        <location line="+50"/>
+        <source>Follow Type Under Cursor</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Ctrl+Shift+F2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+86"/>
         <source>Shift+Del</source>
         <translation>Vaihto+Del</translation>
     </message>
     <message>
-        <location line="-37"/>
+        <location line="-22"/>
         <source>&amp;Rewrap Paragraph</source>
         <translation>&amp;Kääritä kappale uudelleen</translation>
     </message>
     <message>
-        <location line="-129"/>
+        <location filename="../../../src/plugins/texteditor/texteditor.cpp" line="+3765"/>
         <source>Go to line number...</source>
         <translation>Siirry rivin numeroon...</translation>
     </message>
     <message>
-        <location line="+23"/>
+        <location filename="../../../src/plugins/texteditor/texteditorplugin.cpp" line="-114"/>
         <source>Delete Line from Cursor On</source>
         <translation>Poista rivi kohdistin päällä</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+1"/>
         <source>Delete Word from Cursor On</source>
         <translation>Poista sana kohdistin päällä</translation>
     </message>
@@ -12669,7 +20644,7 @@ Alle 100 %:n arvo voi johtaa päällekkäisyyteen ja virheelliseen grafiikkaan.<
         <translation>Ctrl+askelpalautin</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+1"/>
         <source>Delete Word up to Cursor</source>
         <translation>Poista Word kursoriin asti</translation>
     </message>
@@ -12719,17 +20694,17 @@ Alle 100 %:n arvo voi johtaa päällekkäisyyteen ja virheelliseen grafiikkaan.<
         <translation>Ctrl+Return</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+1"/>
         <source>Toggle UTF-8 BOM</source>
         <translation>Vaihda UTF-8 BOM</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+1"/>
         <source>Indent</source>
         <translation>Sisennys</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+1"/>
         <source>Unindent</source>
         <translation>Poista sisennys</translation>
     </message>
@@ -12739,44 +20714,37 @@ Alle 100 %:n arvo voi johtaa päällekkäisyyteen ja virheelliseen grafiikkaan.<
         <translation>Seuraa kohdistimen alla olevaa symbolia</translation>
     </message>
     <message>
-        <location line="+3"/>
         <source>Follow Symbol Under Cursor in Next Split</source>
-        <translation>Seuraa kursorin alla olevaa symbolia seuraavassa jaossa</translation>
+        <translation type="vanished">Seuraa kursorin alla olevaa symbolia seuraavassa jaossa</translation>
     </message>
     <message>
-        <location line="+1"/>
-        <location line="+12"/>
+        <location line="+26"/>
         <source>Meta+E, F2</source>
         <translation>Meta+E, F2</translation>
     </message>
     <message>
-        <location line="-12"/>
-        <location line="+12"/>
+        <location line="+0"/>
         <source>Ctrl+E, F2</source>
         <translation>Ctrl+E, F2</translation>
     </message>
     <message>
-        <location line="-10"/>
         <source>Find References to Symbol Under Cursor</source>
-        <translation>Etsi viittaukset symboleihin kohdistimen alta</translation>
+        <translation type="vanished">Etsi viittaukset symboleihin kohdistimen alta</translation>
     </message>
     <message>
-        <location line="+1"/>
         <source>Ctrl+Shift+U</source>
-        <translation>Ctrl+Shift+U</translation>
+        <translation type="vanished">Ctrl+Shift+U</translation>
     </message>
     <message>
-        <location line="+2"/>
         <source>Rename Symbol Under Cursor</source>
-        <translation>Nimeä symboli uudelleen kohdistimen alla</translation>
+        <translation type="vanished">Nimeä symboli uudelleen kohdistimen alla</translation>
     </message>
     <message>
-        <location line="+1"/>
         <source>Ctrl+Shift+R</source>
-        <translation>Ctrl+Shift+R</translation>
+        <translation type="vanished">Ctrl+Shift+R</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="-4"/>
         <source>Jump to File Under Cursor</source>
         <translation>Siirry kohdistimen alla olevaan tiedostoon</translation>
     </message>
@@ -12786,7 +20754,27 @@ Alle 100 %:n arvo voi johtaa päällekkäisyyteen ja virheelliseen grafiikkaan.<
         <translation>Siirry kohdistimen alla olevaan tiedostoon seuraavassa jaossa</translation>
     </message>
     <message>
-        <location line="+26"/>
+        <location line="+2"/>
+        <source>Open Call Hierarchy</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Open Type Hierarchy</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Meta+Shift+T</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Ctrl+Shift+T</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+23"/>
         <source>Paste from Clipboard History</source>
         <translation>Liitä leikepöydän historiasta</translation>
     </message>
@@ -12796,7 +20784,7 @@ Alle 100 %:n arvo voi johtaa päällekkäisyyteen ja virheelliseen grafiikkaan.<
         <translation>Ctrl+Shift+V</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+3"/>
         <source>Paste Without Formatting</source>
         <translation>Liitä ilman muotoilua</translation>
     </message>
@@ -12816,12 +20804,12 @@ Alle 100 %:n arvo voi johtaa päällekkäisyyteen ja virheelliseen grafiikkaan.<
         <translation>Meta+E, R</translation>
     </message>
     <message>
-        <location line="+11"/>
+        <location line="+4"/>
         <source>Meta+E, Meta+V</source>
         <translation>Meta+E, Meta+V</translation>
     </message>
     <message>
-        <location line="+16"/>
+        <location line="+8"/>
         <source>Meta+E, Meta+W</source>
         <translation>Meta+E, Meta+W</translation>
     </message>
@@ -12851,7 +20839,7 @@ Alle 100 %:n arvo voi johtaa päällekkäisyyteen ja virheelliseen grafiikkaan.<
         <translation>Kopioi korostamalla</translation>
     </message>
     <message>
-        <location line="+4"/>
+        <location line="+3"/>
         <source>Create Cursors at Selected Line Ends</source>
         <translation>Luo kohdistimet valittuihin rivien päihin</translation>
     </message>
@@ -12871,7 +20859,7 @@ Alle 100 %:n arvo voi johtaa päällekkäisyyteen ja virheelliseen grafiikkaan.<
         <translation>Ctrl+D</translation>
     </message>
     <message>
-        <location line="+13"/>
+        <location line="+11"/>
         <source>Uppercase Selection</source>
         <translation>Isojen kirjainten valinta</translation>
     </message>
@@ -12902,11 +20890,35 @@ Alle 100 %:n arvo voi johtaa päällekkäisyyteen ja virheelliseen grafiikkaan.<
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Sort Selected Lines</source>
-        <translation>&amp;Lajittele valitut rivit</translation>
+        <source>Sort Lines</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+59"/>
+        <source>Go to Previous Word (Camel Case)</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
+        <source>Go to Next Word (Camel Case)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+19"/>
+        <source>Go to Previous Word (Camel Case) with Selection</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Go to Next Word (Camel Case) with Selection</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&amp;Sort Selected Lines</source>
+        <translation type="vanished">&amp;Lajittele valitut rivit</translation>
+    </message>
+    <message>
+        <location line="-80"/>
         <source>Meta+Shift+S</source>
         <translation>Meta+Vaihto+S</translation>
     </message>
@@ -12931,22 +20943,21 @@ Alle 100 %:n arvo voi johtaa päällekkäisyyteen ja virheelliseen grafiikkaan.<
         <translation>&amp;Taita kaikki päälle/pois</translation>
     </message>
     <message>
-        <location line="+12"/>
+        <location line="+11"/>
         <source>Reset Font Size</source>
         <translation>Palauta fonttikoko</translation>
     </message>
     <message>
-        <location line="+1"/>
         <source>Meta+0</source>
-        <translation>Meta+0</translation>
+        <translation type="vanished">Meta+0</translation>
     </message>
     <message>
-        <location line="+0"/>
+        <location line="+1"/>
         <source>Ctrl+0</source>
         <translation>Ctrl+0</translation>
     </message>
     <message>
-        <location line="+22"/>
+        <location line="+20"/>
         <source>Select Word Under Cursor</source>
         <translation>Valitse Sana kohdistimen alta</translation>
     </message>
@@ -12956,62 +20967,60 @@ Alle 100 %:n arvo voi johtaa päällekkäisyyteen ja virheelliseen grafiikkaan.<
         <translation>Siirry kohtaan Asiakirjan aloitus</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+1"/>
         <source>Go to Document End</source>
         <translation>Siirry kohtaan Asiakirjan loppu</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+1"/>
         <source>Go to Line Start</source>
         <translation>Siirry rivin alkuun</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+1"/>
         <source>Go to Line End</source>
         <translation>Siirry rivin loppuun</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+1"/>
         <source>Go to Next Line</source>
         <translation>Siirry seuraavalle riville</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+1"/>
         <source>Go to Previous Line</source>
         <translation>Siirry edelliselle riville</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+1"/>
         <source>Go to Previous Character</source>
         <translation>Siirry kohtaan Edellinen hahmo</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+1"/>
         <source>Go to Next Character</source>
         <translation>Siirry kohtaan Seuraava hahmo</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+1"/>
         <source>Go to Previous Word</source>
         <translation>Siirry kohtaan Edellinen sana</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+1"/>
         <source>Go to Next Word</source>
         <translation>Siirry kohtaan Seuraava sana</translation>
     </message>
     <message>
-        <location line="+2"/>
         <source>Go to Previous Word Camel Case</source>
-        <translation>Siirry kohtaan Edellinen Word Camel Case</translation>
+        <translation type="vanished">Siirry kohtaan Edellinen Word Camel Case</translation>
     </message>
     <message>
-        <location line="+2"/>
         <source>Go to Next Word Camel Case</source>
-        <translation>Siirry kohtaan Next Word Camel Case</translation>
+        <translation type="vanished">Siirry kohtaan Next Word Camel Case</translation>
     </message>
     <message>
-        <location line="+4"/>
+        <location line="+6"/>
         <source>Go to Line Start with Selection</source>
         <translation>Siirry riville Aloita valinnalla</translation>
     </message>
@@ -13051,17 +21060,15 @@ Alle 100 %:n arvo voi johtaa päällekkäisyyteen ja virheelliseen grafiikkaan.<
         <translation>Siirry kohtaan Seuraava sana valinnalla</translation>
     </message>
     <message>
-        <location line="+2"/>
         <source>Go to Previous Word Camel Case with Selection</source>
-        <translation>Siirry kohtaan Edellinen Word Camel Case with Selection</translation>
+        <translation type="vanished">Siirry kohtaan Edellinen Word Camel Case with Selection</translation>
     </message>
     <message>
-        <location line="+2"/>
         <source>Go to Next Word Camel Case with Selection</source>
-        <translation>Siirry kohtaan Next Word Camel Case with Selection</translation>
+        <translation type="vanished">Siirry kohtaan Next Word Camel Case with Selection</translation>
     </message>
     <message>
-        <location line="-90"/>
+        <location line="-72"/>
         <source>Ctrl+&lt;</source>
         <translation>Ctrl+&lt;</translation>
     </message>
@@ -13071,7 +21078,7 @@ Alle 100 %:n arvo voi johtaa päällekkäisyyteen ja virheelliseen grafiikkaan.<
         <translation>Ctrl+&gt;</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+6"/>
         <source>Increase Font Size</source>
         <translation>Suurenna fonttikokoa</translation>
     </message>
@@ -13091,7 +21098,7 @@ Alle 100 %:n arvo voi johtaa päällekkäisyyteen ja virheelliseen grafiikkaan.<
         <translation>Ctrl+-</translation>
     </message>
     <message>
-        <location line="-187"/>
+        <location line="-178"/>
         <source>Ctrl+{</source>
         <translation>Ctrl+{</translation>
     </message>
@@ -13141,7 +21148,7 @@ Alle 100 %:n arvo voi johtaa päällekkäisyyteen ja virheelliseen grafiikkaan.<
         <translation>Ctrl+Alt+Alas</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/texteditor/texteditorsettings.cpp" line="-253"/>
+        <location filename="../../../src/plugins/texteditor/texteditorsettings.cpp" line="-255"/>
         <source>Text</source>
         <translation>Teksti</translation>
     </message>
@@ -13359,6 +21366,16 @@ Käytetään merkitsemään symbolin käytön sisältävä toiminto.</translatio
         <location line="+0"/>
         <source>Name of a type.</source>
         <translation>Tyypin nimi.</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Concept</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Name of a concept.</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
@@ -14002,24 +22019,25 @@ Ei käytetä välilyönnissä kommenteissa ja merkkijonoissa.</translation>
         <translation>Implisiittisen manuaalisen kattavuuden validointi</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/texteditor/behaviorsettingspage.cpp" line="+59"/>
+        <location filename="../../../src/plugins/texteditor/behaviorsettingspage.cpp" line="+55"/>
         <source>Global</source>
         <comment>Settings</comment>
         <translation>Maailmanlaajuinen</translation>
     </message>
     <message>
-        <location line="+23"/>
-        <location filename="../../../src/plugins/texteditor/completionsettingspage.cpp" line="+290"/>
-        <location filename="../../../src/plugins/texteditor/displaysettingspage.cpp" line="+226"/>
-        <location filename="../../../src/plugins/texteditor/fontsettingspage.cpp" line="+657"/>
-        <location filename="../../../src/plugins/texteditor/highlightersettingspage.cpp" line="+163"/>
-        <location filename="../../../src/plugins/texteditor/snippets/snippetssettingspage.cpp" line="+219"/>
+        <location line="+68"/>
+        <location filename="../../../src/plugins/texteditor/commentssettings.cpp" line="+63"/>
+        <location filename="../../../src/plugins/texteditor/completionsettingspage.cpp" line="+247"/>
+        <location filename="../../../src/plugins/texteditor/displaysettingspage.cpp" line="+210"/>
+        <location filename="../../../src/plugins/texteditor/fontsettingspage.cpp" line="+664"/>
+        <location filename="../../../src/plugins/texteditor/highlightersettingspage.cpp" line="+161"/>
+        <location filename="../../../src/plugins/texteditor/snippets/snippetssettingspage.cpp" line="+224"/>
         <source>Text Editor</source>
         <translation>Tekstieditori</translation>
     </message>
     <message>
         <location line="-3"/>
-        <location filename="../../../src/plugins/texteditor/completionsettingspage.cpp" line="-134"/>
+        <location filename="../../../src/plugins/texteditor/completionsettingspage.cpp" line="-109"/>
         <source>Behavior</source>
         <translation>Käyttäytyminen</translation>
     </message>
@@ -14029,7 +22047,7 @@ Ei käytetä välilyönnissä kommenteissa ja merkkijonoissa.</translation>
         <translation>Ei värimallitiedosto.</translation>
     </message>
     <message>
-        <location filename="../../../../build/share/qtcreator/translations/snippets_tr.h" line="+3"/>
+        <location filename="../../../../build/share/qtcreator/translations/snippets_tr.h" line="+5"/>
         <source>derived from QObject</source>
         <comment>group:&apos;C++&apos; trigger:&apos;class&apos;</comment>
         <translation>johdettu QObjectista</translation>
@@ -14090,9 +22108,14 @@ Ei käytetä välilyönnissä kommenteissa ja merkkijonoissa.</translation>
     </message>
     <message>
         <location line="+1"/>
+        <source>(type name READ name WRITE setName NOTIFY nameChanged FINAL)</source>
+        <comment>group:&apos;C++&apos; trigger:&apos;Q_PROPERTY&apos;</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>(type name READ name WRITE setName NOTIFY nameChanged)</source>
         <comment>group:&apos;C++&apos; trigger:&apos;Q_PROPERTY&apos;</comment>
-        <translation>(tyypin nimi READ name WRITE setName NOTIFY nameChanged)</translation>
+        <translation type="vanished">(tyypin nimi READ name WRITE setName NOTIFY nameChanged)</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -14117,6 +22140,54 @@ Ei käytetä välilyönnissä kommenteissa ja merkkijonoissa.</translation>
         <source>with target</source>
         <comment>group:&apos;QML&apos; trigger:&apos;PropertyAction&apos;</comment>
         <translation>kohteen kanssa</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>QuickTest Test Case</source>
+        <comment>group:&apos;QML&apos; trigger:&apos;TestCase&apos;</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>GTest Function</source>
+        <comment>group:&apos;C++&apos; trigger:&apos;TEST&apos;</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>GTest Fixture</source>
+        <comment>group:&apos;C++&apos; trigger:&apos;TEST_F&apos;</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>GTest Parameterized</source>
+        <comment>group:&apos;C++&apos; trigger:&apos;TEST_P&apos;</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Test Case</source>
+        <comment>group:&apos;C++&apos; trigger:&apos;BOOST_AUTO_TEST_CASE&apos;</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Test Suite</source>
+        <comment>group:&apos;C++&apos; trigger:&apos;BOOST_AUTO_TEST_SUITE&apos;</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Catch Test Case</source>
+        <comment>group:&apos;C++&apos; trigger:&apos;TEST_CASE&apos;</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Catch Scenario</source>
+        <comment>group:&apos;C++&apos; trigger:&apos;SCENARIO&apos;</comment>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
@@ -14125,12 +22196,12 @@ Ei käytetä välilyönnissä kommenteissa ja merkkijonoissa.</translation>
         <translation>esimerkki</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/texteditor/basefilefind.cpp" line="+48"/>
+        <location filename="../../../src/plugins/texteditor/basefilefind.cpp" line="+139"/>
         <source>Internal</source>
         <translation>Sisäinen</translation>
     </message>
     <message>
-        <location line="+261"/>
+        <location line="+219"/>
         <source>Searching</source>
         <translation>Etsitään</translation>
     </message>
@@ -14143,7 +22214,7 @@ Ei käytetä välilyönnissä kommenteissa ja merkkijonoissa.</translation>
         </translation>
     </message>
     <message numerus="yes">
-        <location line="+30"/>
+        <location line="+29"/>
         <source>%n occurrences replaced.</source>
         <translation>
             <numerusform>%n esiintymää korvattu.</numerusform>
@@ -14151,7 +22222,7 @@ Ei käytetä välilyönnissä kommenteissa ja merkkijonoissa.</translation>
         </translation>
     </message>
     <message>
-        <location line="+158"/>
+        <location line="+178"/>
         <source>Aborting replace.</source>
         <translation>Peruutetaan vaihto.</translation>
     </message>
@@ -14161,12 +22232,12 @@ Ei käytetä välilyönnissä kommenteissa ja merkkijonoissa.</translation>
         <translation>%1/%2</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/texteditor/codestyleeditor.cpp" line="+51"/>
+        <location filename="../../../src/plugins/texteditor/codestyleeditor.cpp" line="+52"/>
         <source>Edit preview contents to see how the current settings are applied to custom code snippets. Changes in the preview do not affect the current settings.</source>
         <translation>Muokkaa esikatselun sisältöä nähdäksesi, kuinka nykyisiä asetuksia sovelletaan mukautettuihin koodinpätkiin. Esikatselun muutokset eivät vaikuta nykyisiin asetuksiin.</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/texteditor/extraencodingsettings.cpp" line="+59"/>
+        <location filename="../../../src/plugins/texteditor/extraencodingsettings.cpp" line="+42"/>
         <source>Unix (LF)</source>
         <translation>Unix (LF)</translation>
     </message>
@@ -14176,12 +22247,12 @@ Ei käytetä välilyönnissä kommenteissa ja merkkijonoissa.</translation>
         <translation>Windows (CRLF)</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/texteditor/findinfiles.cpp" line="+62"/>
+        <location filename="../../../src/plugins/texteditor/findinfiles.cpp" line="+52"/>
         <source>Files in File System</source>
         <translation>Tiedostot tiedostojärjestelmässä</translation>
     </message>
     <message>
-        <location line="+31"/>
+        <location line="+25"/>
         <source>Folder &quot;%2&quot;:</source>
         <translation>Kansio &quot;% 2&quot;:</translation>
     </message>
@@ -14198,7 +22269,7 @@ Ei sisällä: %3
 %4</translation>
     </message>
     <message>
-        <location line="+43"/>
+        <location line="+48"/>
         <source>Search engine:</source>
         <translation>Hakukone:</translation>
     </message>
@@ -14213,12 +22284,12 @@ Ei sisällä: %3
         <translation>Hakemisto</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/texteditor/findinopenfiles.cpp" line="-49"/>
+        <location filename="../../../src/plugins/texteditor/findinopenfiles.cpp" line="-39"/>
         <source>Open Documents</source>
         <translation>Avaa Asiakirjat</translation>
     </message>
     <message>
-        <location line="+36"/>
+        <location line="+26"/>
         <source>Open documents:</source>
         <translation>Avaa asiakirjat:</translation>
     </message>
@@ -14230,36 +22301,44 @@ Ei sisällä: %3
 %1</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/texteditor/fontsettings.cpp" line="+164"/>
+        <location filename="../../../src/plugins/texteditor/fontsettings.cpp" line="+166"/>
         <source>Unused variable</source>
         <translation>Käyttämätön muuttuja</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/texteditor/formattexteditor.cpp" line="+59"/>
+        <location filename="../../../src/plugins/texteditor/formattexteditor.cpp" line="+71"/>
         <source>Cannot create temporary file &quot;%1&quot;: %2.</source>
         <translation>Väliaikaista tiedostoa &quot;%1&quot; ei voi luoda: %2.</translation>
     </message>
     <message>
-        <location line="+13"/>
         <source>TextEditor</source>
         <comment>Failed to format: %1.</comment>
-        <translation>Tekstieditori</translation>
+        <translation type="vanished">Tekstieditori</translation>
     </message>
     <message>
-        <location line="+11"/>
+        <location line="+21"/>
         <source>Cannot read file &quot;%1&quot;: %2.</source>
         <translation>Tiedostoa &quot;%1&quot; ei voi lukea: %2.</translation>
     </message>
     <message>
-        <location line="+17"/>
+        <location line="+15"/>
         <source>Cannot call %1 or some other error occurred. Timeout reached while formatting file %2.</source>
         <translation>Ei voi soittaa %1 tai tapahtui jokin muu virhe. Aikakatkaisu saavutettu formatoitaessa tiedostoa %2.</translation>
     </message>
     <message>
-        <location line="+152"/>
         <source>TextEditor</source>
         <comment>Error in text formatting: %1</comment>
-        <translation>Tekstieditori</translation>
+        <translation type="vanished">Tekstieditori</translation>
+    </message>
+    <message>
+        <location line="-25"/>
+        <source>Failed to format: %1.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+175"/>
+        <source>Error in text formatting: %1</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+16"/>
@@ -14267,17 +22346,17 @@ Ei sisällä: %3
         <translation>Tiedostoa %1 ei voitu alustaa.</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+5"/>
         <source>File %1 was closed.</source>
         <translation>Tiedosto %1 suljettiin.</translation>
     </message>
     <message>
-        <location line="+47"/>
+        <location line="+46"/>
         <source>File was modified.</source>
         <translation>Tiedostoa muokattiin.</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/texteditor/highlighter.cpp" line="+247"/>
+        <location filename="../../../src/plugins/texteditor/highlighterhelper.cpp" line="+196"/>
         <source>Highlighter updates: done</source>
         <translation>Highlighter-päivitykset: tehty</translation>
     </message>
@@ -14287,18 +22366,18 @@ Ei sisällä: %3
         <translation>Highlighter-päivitykset:</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+3"/>
         <source>Highlighter updates: starting</source>
         <translation>Highlighter-päivitykset: alkaa</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/texteditor/highlightersettingspage.cpp" line="-113"/>
+        <location filename="../../../src/plugins/texteditor/highlightersettingspage.cpp" line="-86"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Highlight definitions are provided by the &lt;a href=&quot;https://api.kde.org/frameworks/syntax-highlighting/html/index.html&quot;&gt;KSyntaxHighlighting&lt;/a&gt; engine.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Kohokohtien määritelmät tarjoaa &lt;a href=&quot;https://api.kde.org/frameworks/syntax-highlighting/html/index.html&quot;&gt;KSyntaxHighlighting&lt;/p&gt; a&gt; moottori.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location line="+4"/>
-        <location filename="../../../src/plugins/texteditor/texteditor.cpp" line="+3203"/>
+        <location filename="../../../src/plugins/texteditor/texteditor.cpp" line="-180"/>
         <source>Download Definitions</source>
         <translation>Lataa määritelmät</translation>
     </message>
@@ -14308,7 +22387,7 @@ Ei sisällä: %3
         <translation>Lataa puuttuvat ja päivitä olemassa olevat syntaksin määritystiedostot.</translation>
     </message>
     <message>
-        <location line="+9"/>
+        <location line="+10"/>
         <source>Reload Definitions</source>
         <translation>Lataa määritelmät uudelleen</translation>
     </message>
@@ -14348,12 +22427,12 @@ Ei sisällä: %3
         <translation>Lataus valmis</translation>
     </message>
     <message>
-        <location line="+67"/>
+        <location line="+39"/>
         <source>Generic Highlighter</source>
         <translation>Yleinen korostus</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/texteditor/outlinefactory.cpp" line="+48"/>
+        <location filename="../../../src/plugins/texteditor/outlinefactory.cpp" line="+113"/>
         <source>No outline available</source>
         <translation>Pääpiirteitä ei ole saatavilla</translation>
     </message>
@@ -14363,22 +22442,23 @@ Ei sisällä: %3
         <translation>Synkronoi editorin kanssa</translation>
     </message>
     <message>
-        <location line="+10"/>
+        <location line="+11"/>
         <source>Filter tree</source>
         <translation>Suodatinpuu</translation>
     </message>
     <message>
-        <location line="+10"/>
+        <location filename="../../../src/plugins/languageclient/languageclientoutline.cpp" line="+130"/>
+        <location filename="../../../src/plugins/texteditor/outlinefactory.cpp" line="+11"/>
         <source>Sort Alphabetically</source>
         <translation>Lajittele aakkosjärjestyksessä</translation>
     </message>
     <message>
-        <location line="+125"/>
+        <location filename="../../../src/plugins/texteditor/outlinefactory.cpp" line="+126"/>
         <source>Outline</source>
         <translation>Outline</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/texteditor/refactoringchanges.cpp" line="+300"/>
+        <location filename="../../../src/plugins/texteditor/refactoringchanges.cpp" line="+223"/>
         <source>Refactoring cannot be applied.</source>
         <translation>Refaktorointia ei voida soveltaa.</translation>
     </message>
@@ -14398,22 +22478,22 @@ Ei sisällä: %3
         <translation>Puuttuva sulkeva muuttujan erotin kohteelta:</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/texteditor/snippets/snippetscollection.cpp" line="+287"/>
+        <location filename="../../../src/plugins/texteditor/snippets/snippetscollection.cpp" line="+285"/>
         <source>Cannot create user snippet directory %1</source>
         <translation>Käyttäjän katkelman hakemistoa %1 ei voi luoda</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/texteditor/textdocument.cpp" line="+376"/>
+        <location filename="../../../src/plugins/texteditor/textdocument.cpp" line="+401"/>
         <source>Diff Against Current File</source>
         <translation>Ero nykyiseen tiedostoon</translation>
     </message>
     <message>
-        <location line="+406"/>
+        <location line="+425"/>
         <source>Opening File</source>
         <translation>Tiedoston avaaminen</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/texteditor/textmark.cpp" line="+286"/>
+        <location filename="../../../src/plugins/texteditor/textmark.cpp" line="+300"/>
         <source>Show inline annotations for %1</source>
         <translation>Näytä upotetut huomautukset kohteelle %1</translation>
     </message>
@@ -14427,11 +22507,162 @@ Ei sisällä: %3
         <source>Show Diagnostic Settings</source>
         <translation>Näytä diagnostiikkaasetukset</translation>
     </message>
+    <message>
+        <location filename="../../../src/plugins/texteditor/bookmark.cpp" line="+21"/>
+        <location line="+5"/>
+        <source>Bookmark</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/texteditor/bookmarkfilter.cpp" line="+25"/>
+        <location filename="../../../src/plugins/texteditor/bookmarkmanager.cpp" line="+202"/>
+        <location line="+827"/>
+        <source>Bookmarks</source>
+        <translation type="unfinished">Kirjanmerkit</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Locates bookmarks. Filter by file name, by the text on the line of the bookmark, or by the bookmark&apos;s note text.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/texteditor/bookmarkmanager.cpp" line="-788"/>
+        <source>Move Up</source>
+        <translation type="unfinished">Liiku ylös</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Move Down</source>
+        <translation type="unfinished">Siirrä alas</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>&amp;Edit</source>
+        <translation type="unfinished">&amp;Muokata</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>&amp;Remove</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Remove All</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+47"/>
+        <source>Remove All Bookmarks</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Are you sure you want to remove all bookmarks from all files in the current session?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+29"/>
+        <location line="+44"/>
+        <location line="+516"/>
+        <source>Edit Bookmark</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-559"/>
+        <location line="+27"/>
+        <source>Toggle Bookmark</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-15"/>
+        <source>&amp;Bookmarks</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+53"/>
+        <source>Previous Bookmark</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+12"/>
+        <source>Next Bookmark</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+14"/>
+        <source>Previous Bookmark in Document</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Next Bookmark in Document</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+473"/>
+        <source>Note text:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Line number:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/texteditor/jsoneditor.cpp" line="+158"/>
+        <source>JSON Editor</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/texteditor/markdowneditor.cpp" line="+9"/>
+        <source>Emphasis</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+20"/>
+        <source>Inline Code</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Hyperlink</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Show Editor</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Show Preview</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Swap Views</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/texteditor/typehierarchy.cpp" line="+33"/>
+        <source>Type Hierarchy</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+32"/>
+        <source>No type hierarchy available</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+40"/>
+        <source>Reloads the type hierarchy for the symbol under the cursor.</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>QtC::Utils</name>
     <message>
-        <location filename="../../../src/libs/utils/classnamevalidatinglineedit.cpp" line="+82"/>
+        <location filename="../../../src/libs/utils/classnamevalidatinglineedit.cpp" line="+83"/>
         <source>The class name must not contain namespace delimiters.</source>
         <translation>Luokan nimi ei saa sisältää nimitilan erottimia.</translation>
     </message>
@@ -14446,12 +22677,12 @@ Ei sisällä: %3
         <translation>Luokan nimi sisältää virheellisiä merkkejä.</translation>
     </message>
     <message>
-        <location filename="../../../src/libs/utils/terminalprocess.cpp" line="+62"/>
+        <location filename="../../../src/libs/utils/terminalinterface.cpp" line="+23"/>
         <source>Cannot set up communication channel: %1</source>
         <translation>Yhteyskanavaa ei voi määrittää: %1</translation>
     </message>
     <message>
-        <location line="+11"/>
+        <location line="+5"/>
         <source>Cannot create temporary file: %1</source>
         <translation>Väliaikaista tiedostoa ei voi luoda: %1</translation>
     </message>
@@ -14461,17 +22692,17 @@ Ei sisällä: %3
         <translation>Väliaikaista tiedostoa ei voi kirjoittaa. Levy täynnä?</translation>
     </message>
     <message>
-        <location line="+8"/>
+        <location line="+5"/>
         <source>Cannot create temporary directory &quot;%1&quot;: %2</source>
         <translation>Väliaikaista hakemistoa &quot;%1&quot; ei voi luoda: %2</translation>
     </message>
     <message>
-        <location line="+8"/>
+        <location line="+5"/>
         <source>Unexpected output from helper program (%1).</source>
         <translation>Odottamaton tulos apuohjelmasta (%1).</translation>
     </message>
     <message>
-        <location line="+6"/>
+        <location line="+5"/>
         <source>Cannot change to working directory &quot;%1&quot;: %2</source>
         <translation>Ei voi vaihtaa työhakemistoon &quot;%1&quot;: %2</translation>
     </message>
@@ -14481,57 +22712,59 @@ Ei sisällä: %3
         <translation>Ei voida suorittaa &quot;%1&quot;: %2</translation>
     </message>
     <message>
-        <location line="+195"/>
+        <location line="+109"/>
+        <source>Failed to start terminal process. The stub exited before the inferior was started.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+60"/>
+        <source>Cannot set permissions on temporary directory &quot;%1&quot;: %2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>The process &quot;%1&quot; could not be started: %2</source>
-        <translation>Prosessia &quot;%1&quot; ei voitu käynnistää: %2</translation>
+        <translation type="vanished">Prosessia &quot;%1&quot; ei voitu käynnistää: %2</translation>
     </message>
     <message>
-        <location line="+25"/>
         <source>Quoting error in command.</source>
-        <translation>Lainausvirhe komennossa.</translation>
+        <translation type="vanished">Lainausvirhe komennossa.</translation>
     </message>
     <message>
-        <location line="+6"/>
         <source>Debugging complex shell commands in a terminal is currently not supported.</source>
-        <translation>Monimutkaisten komentotulkkikomentojen virheenkorjausta terminaalissa ei tällä hetkellä tueta.</translation>
+        <translation type="vanished">Monimutkaisten komentotulkkikomentojen virheenkorjausta terminaalissa ei tällä hetkellä tueta.</translation>
     </message>
     <message>
-        <location line="+20"/>
         <source>Quoting error in terminal command.</source>
-        <translation>Lainausvirhe terminaalikomennossa.</translation>
+        <translation type="vanished">Lainausvirhe terminaalikomennossa.</translation>
     </message>
     <message>
-        <location line="+1"/>
         <source>Terminal command may not be a shell command.</source>
-        <translation>Päätekomento ei saa olla komentotulkkikomento.</translation>
+        <translation type="vanished">Päätekomento ei saa olla komentotulkkikomento.</translation>
     </message>
     <message>
-        <location line="+55"/>
         <source>Cannot start the terminal emulator &quot;%1&quot;, change the setting in the Environment preferences. (%2)</source>
-        <translation>Pääteemulaattoria &quot;%1&quot; ei voi käynnistää, muuta asetusta ympäristöasetuksissa. (%2)</translation>
+        <translation type="vanished">Pääteemulaattoria &quot;%1&quot; ei voi käynnistää, muuta asetusta ympäristöasetuksissa. (%2)</translation>
     </message>
     <message>
-        <location line="+131"/>
+        <location line="+8"/>
         <source>Cannot create socket &quot;%1&quot;: %2</source>
         <translation>Ei voida luoda kantaa &quot;% 1&quot;: %2</translation>
     </message>
     <message>
-        <location line="-470"/>
+        <location line="-171"/>
         <source>Press &lt;RETURN&gt; to close this window...</source>
         <translation>Paina &lt;RETURN&gt; sulkeaksesi tämän ikkunan...</translation>
     </message>
     <message>
-        <location line="+549"/>
         <source>Cannot obtain a handle to the inferior: %1</source>
-        <translation>Ei voi saada kahvaa huonompaan: %1</translation>
+        <translation type="vanished">Ei voi saada kahvaa huonompaan: %1</translation>
     </message>
     <message>
-        <location line="+11"/>
         <source>Cannot obtain exit status from inferior: %1</source>
-        <translation>Ei voida saada poistumistilaa huonommasta: %1</translation>
+        <translation type="vanished">Ei voida saada poistumistilaa huonommasta: %1</translation>
     </message>
     <message numerus="yes">
-        <location filename="../../../src/libs/utils/filesearch.cpp" line="+26"/>
+        <location filename="../../../src/libs/utils/filesearch.cpp" line="+205"/>
         <source>%1: canceled. %n occurrences found in %2 files.</source>
         <translation>
             <numerusform>%1: peruutettu. %n esiintymää %2 tiedostosta.</numerusform>
@@ -14547,7 +22780,7 @@ Ei sisällä: %3
         </translation>
     </message>
     <message>
-        <location line="+501"/>
+        <location line="+280"/>
         <source>Fi&amp;le pattern:</source>
         <translation>&amp;Tiedostomalli:</translation>
     </message>
@@ -14558,11 +22791,25 @@ Ei sisällä: %3
     </message>
     <message>
         <location line="+5"/>
-        <source>List of comma separated wildcard filters. Files with file name or full file path matching any filter are included.</source>
-        <translation>Luettelo pilkuilla erotetuista jokerimerkkisuodattimista. Mukana ovat tiedostot, joiden tiedostonimi tai täydellinen tiedostopolku vastaa mitä tahansa suodatinta.</translation>
+        <source>List of comma separated wildcard filters.</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../src/libs/utils/filewizardpage.cpp" line="+47"/>
+        <location line="+2"/>
+        <source>Files with file name or full file path matching any filter are included.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Files with file name or full file path matching any filter are excluded.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>List of comma separated wildcard filters. Files with file name or full file path matching any filter are included.</source>
+        <translation type="vanished">Luettelo pilkuilla erotetuista jokerimerkkisuodattimista. Mukana ovat tiedostot, joiden tiedostonimi tai täydellinen tiedostopolku vastaa mitä tahansa suodatinta.</translation>
+    </message>
+    <message>
+        <location filename="../../../src/libs/utils/filewizardpage.cpp" line="+48"/>
         <source>Choose the Location</source>
         <translation>Valitse Sijainti</translation>
     </message>
@@ -14573,13 +22820,13 @@ Ei sisällä: %3
     </message>
     <message>
         <location line="+1"/>
-        <location filename="../../../src/libs/utils/pathchooser.cpp" line="+653"/>
+        <location filename="../../../src/libs/utils/pathchooser.cpp" line="+648"/>
         <source>Path:</source>
         <translation>Polku:</translation>
     </message>
     <message>
         <location line="+20"/>
-        <location filename="../../../src/libs/utils/projectintropage.cpp" line="+138"/>
+        <location filename="../../../src/libs/utils/projectintropage.cpp" line="+141"/>
         <source>Location</source>
         <translation>Sijainti</translation>
     </message>
@@ -14589,7 +22836,7 @@ Ei sisällä: %3
         <translation>Oletusliite, jos et nimenomaisesti määritä tiedostotunnistetta, on &quot;.%1&quot;.</translation>
     </message>
     <message>
-        <location filename="../../../src/libs/utils/pathchooser.cpp" line="-384"/>
+        <location filename="../../../src/libs/utils/pathchooser.cpp" line="-376"/>
         <source>Local</source>
         <translation>Paikallinen</translation>
     </message>
@@ -14609,7 +22856,7 @@ Ei sisällä: %3
         <translation>Selaa...</translation>
     </message>
     <message>
-        <location line="+102"/>
+        <location line="+98"/>
         <source>Choose Directory</source>
         <translation>Valitse Hakemisto</translation>
     </message>
@@ -14626,56 +22873,56 @@ Ei sisällä: %3
         <translation>Valitse tiedosto</translation>
     </message>
     <message>
-        <location line="+109"/>
+        <location line="+176"/>
         <source>The path &quot;%1&quot; expanded to an empty string.</source>
         <translation>Polku &quot;%1&quot; laajennettiin tyhjäksi merkkijonoksi.</translation>
     </message>
     <message>
-        <location line="+9"/>
-        <location line="+12"/>
-        <location line="+24"/>
+        <location line="-72"/>
+        <location line="+10"/>
+        <location line="+20"/>
         <source>The path &quot;%1&quot; does not exist.</source>
         <translation>Polkua &quot;%1&quot; ei ole olemassa.</translation>
     </message>
     <message>
-        <location line="-31"/>
-        <location line="+43"/>
+        <location line="-26"/>
+        <location line="+36"/>
         <source>The path &quot;%1&quot; is not a directory.</source>
         <translation>Polku &quot;%1&quot; ei ole hakemisto.</translation>
     </message>
     <message>
-        <location line="-31"/>
-        <location line="+12"/>
+        <location line="-26"/>
+        <location line="+10"/>
         <source>The path &quot;%1&quot; is not a file.</source>
         <translation>Polku &quot;%1&quot; ei ole tiedosto.</translation>
     </message>
     <message>
-        <location line="-5"/>
+        <location line="-4"/>
         <source>The directory &quot;%1&quot; does not exist.</source>
         <translation>Hakemistoa &quot;%1&quot; ei ole olemassa.</translation>
     </message>
     <message>
-        <location line="+17"/>
+        <location line="+14"/>
         <source>The path &quot;%1&quot; is not an executable file.</source>
         <translation>Polku &quot;%1&quot; ei ole suoritettava tiedosto.</translation>
     </message>
     <message>
-        <location line="+13"/>
+        <location line="+10"/>
         <source>Invalid path &quot;%1&quot;.</source>
         <translation>Virheellinen polku &quot;%1&quot;.</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+5"/>
         <source>Cannot execute &quot;%1&quot;.</source>
         <translation>Ei voida suorittaa &quot;%1&quot;.</translation>
     </message>
     <message>
-        <location line="+10"/>
         <source>Full path: &quot;%1&quot;</source>
-        <translation>Koko polku: &quot;% 1&quot;</translation>
+        <translation type="vanished">Koko polku: &quot;% 1&quot;</translation>
     </message>
     <message>
-        <location line="-88"/>
+        <location line="-58"/>
+        <location line="+74"/>
         <source>The path must not be empty.</source>
         <translation>Polku ei saa olla tyhjä.</translation>
     </message>
@@ -14695,12 +22942,12 @@ Ei sisällä: %3
         <translation>Asia selvä</translation>
     </message>
     <message>
-        <location filename="../../../src/libs/utils/projectintropage.cpp" line="-68"/>
+        <location filename="../../../src/libs/utils/projectintropage.cpp" line="-71"/>
         <source>Introduction and Project Location</source>
         <translation>Esittely ja projektin sijainti</translation>
     </message>
     <message>
-        <location line="+15"/>
+        <location line="+17"/>
         <source>Use as default project location</source>
         <translation>Käytä projektin oletussijaintina</translation>
     </message>
@@ -14710,7 +22957,7 @@ Ei sisällä: %3
         <translation>Anna projektin nimi</translation>
     </message>
     <message>
-        <location line="+125"/>
+        <location line="+121"/>
         <source>Directory &quot;%1&quot; will be created.</source>
         <translation>Hakemisto &quot;%1&quot; luodaan.</translation>
     </message>
@@ -14725,7 +22972,7 @@ Ei sisällä: %3
         <translation>Samanniminen tiedosto on jo olemassa.</translation>
     </message>
     <message>
-        <location line="+73"/>
+        <location line="+92"/>
         <source>Project name is invalid.</source>
         <translation>Projektin nimi on virheellinen.</translation>
     </message>
@@ -14740,12 +22987,12 @@ Ei sisällä: %3
         <translation>Virheellinen merkki &quot;%1&quot; löytyi.</translation>
     </message>
     <message>
-        <location line="-217"/>
+        <location line="-232"/>
         <source>Name:</source>
         <translation>Nimi:</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+4"/>
         <source>Create in:</source>
         <translation>Luo:</translation>
     </message>
@@ -14802,12 +23049,12 @@ Ei sisällä: %3
         <translation>Sulje kaikki</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="-3"/>
         <source>Save &amp;as...</source>
         <translation>Tallenna nimellä...</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+5"/>
         <source>&amp;Save</source>
         <translation>&amp;Tallentaa</translation>
     </message>
@@ -14838,9 +23085,9 @@ Ei sisällä: %3
     %1</translation>
     </message>
     <message>
-        <location filename="../../../src/libs/utils/fileutils.cpp" line="+87"/>
+        <location filename="../../../src/libs/utils/fileutils.cpp" line="+89"/>
         <location line="+33"/>
-        <location filename="../../../src/libs/utils/persistentsettings.cpp" line="+418"/>
+        <location filename="../../../src/libs/utils/persistentsettings.cpp" line="+401"/>
         <source>File Error</source>
         <translation>Tiedostovirhe</translation>
     </message>
@@ -14853,22 +23100,44 @@ Ei sisällä: %3
         <translation type="vanished">Työtilaa %1 ei voitu palauttaa</translation>
     </message>
     <message>
-        <location filename="../../../src/libs/utils/archive.cpp" line="+124"/>
+        <location filename="../../../src/libs/utils/unarchiver.cpp" line="+112"/>
         <source>File format not supported.</source>
         <translation>Tiedostomuotoa ei tueta.</translation>
     </message>
     <message>
-        <location line="+8"/>
+        <location line="+11"/>
         <source>Could not find any unarchiving executable in PATH (%1).</source>
         <translation>Ei löytynyt arkistosta poistettavaa suoritettavaa tiedostoa hakemistosta PATH (%1).</translation>
     </message>
     <message>
-        <location line="+39"/>
+        <location line="+18"/>
+        <source>No source file set.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>No destination directory set.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+14"/>
+        <source>Failed to open output file.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Failed to write output file.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+12"/>
+        <location line="+21"/>
         <source>Command failed.</source>
         <translation>Komento epäonnistui.</translation>
     </message>
     <message>
-        <location line="+4"/>
+        <location line="-16"/>
+        <location line="+20"/>
         <source>Running %1
 in &quot;%2&quot;.
 
@@ -14880,12 +23149,12 @@ kohdassa &quot;%2&quot;.
 </translation>
     </message>
     <message>
-        <location filename="../../../src/libs/utils/aspects.cpp" line="+1142"/>
+        <location filename="../../../src/libs/utils/aspects.cpp" line="+1208"/>
         <source>Reset</source>
         <translation>Nollaa</translation>
     </message>
     <message>
-        <location line="+876"/>
+        <location line="+1385"/>
         <source>Enable</source>
         <translation>ota käyttöön</translation>
     </message>
@@ -14896,41 +23165,47 @@ kohdassa &quot;%2&quot;.
     </message>
     <message>
         <location line="+1"/>
-        <source>Leave at Default</source>
-        <translation>Jätä oletusarvoon</translation>
+        <source>Default</source>
+        <translation type="unfinished">Oletus</translation>
     </message>
     <message>
-        <location filename="../../../src/libs/utils/basetreeview.cpp" line="+544"/>
+        <source>Leave at Default</source>
+        <translation type="vanished">Jätä oletusarvoon</translation>
+    </message>
+    <message>
+        <location filename="../../../src/libs/utils/basetreeview.cpp" line="+542"/>
         <source>Show %1 Column</source>
         <translation>Näytä %1 sarake</translation>
     </message>
     <message>
-        <location filename="../../../src/libs/utils/checkablemessagebox.cpp" line="+60"/>
         <source>Do not ask again</source>
-        <translation>Älä kysy uudestaan</translation>
+        <translation type="vanished">Älä kysy uudestaan</translation>
     </message>
     <message>
-        <location line="+2"/>
         <source>Show Details...</source>
-        <translation>Näytä yksityiskohdat...</translation>
+        <translation type="vanished">Näytä yksityiskohdat...</translation>
     </message>
     <message>
-        <location line="+9"/>
         <source>Hide Details...</source>
-        <translation>Piilota tiedot...</translation>
+        <translation type="vanished">Piilota tiedot...</translation>
     </message>
     <message>
-        <location line="+403"/>
+        <location filename="../../../src/libs/utils/checkablemessagebox.cpp" line="+331"/>
         <source>Do not &amp;ask again</source>
         <translation>Älä kysy uudestaan</translation>
     </message>
     <message>
-        <location line="+9"/>
+        <location line="+8"/>
         <source>Do not &amp;show again</source>
         <translation>Älä näytä uudelleen</translation>
     </message>
     <message>
-        <location filename="../../../src/libs/utils/clangutils.cpp" line="+53"/>
+        <location filename="../../../src/libs/utils/clangutils.cpp" line="+49"/>
+        <source>No clangd executable specified.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
         <source>Failed to retrieve clangd version: Unexpected clangd output.</source>
         <translation>Clangd-version nouto epäonnistui: Odottamaton clangd-tulostus.</translation>
     </message>
@@ -14945,22 +23220,19 @@ kohdassa &quot;%2&quot;.
         <translation>Yksityiskohdat</translation>
     </message>
     <message>
-        <location filename="../../../src/libs/utils/devicefileaccess.cpp" line="+156"/>
         <source>copyFile is not implemented for &quot;%1&quot;</source>
-        <translation>copyFileä ei ole otettu käyttöön kohteelle &quot;% 1&quot;</translation>
+        <translation type="vanished">copyFileä ei ole otettu käyttöön kohteelle &quot;% 1&quot;</translation>
     </message>
     <message>
-        <location line="+36"/>
         <source>Cannot copy from %1, it is not a directory.</source>
-        <translation>Ei voi kopioida kohteesta %1, se ei ole hakemisto.</translation>
+        <translation type="vanished">Ei voi kopioida kohteesta %1, se ei ole hakemisto.</translation>
     </message>
     <message>
-        <location line="+6"/>
         <source>Cannot copy %1 to %2, it is not a writable directory.</source>
-        <translation>Ei voida kopioida %1:tä %2:een, se ei ole kirjoitettava hakemisto.</translation>
+        <translation type="vanished">Ei voida kopioida %1:tä %2:een, se ei ole kirjoitettava hakemisto.</translation>
     </message>
     <message>
-        <location line="+46"/>
+        <location filename="../../../src/libs/utils/devicefileaccess.cpp" line="+255"/>
         <source>Failed to copy recursively from &quot;%1&quot; to &quot;%2&quot; while trying to create tar archive from source: %3</source>
         <translation>Rekursiivinen kopiointi kohteesta &quot;% 1&quot; kohteeseen &quot;% 2&quot; epäonnistui, kun yritettiin luoda tar-arkisto lähteestä: % 3</translation>
     </message>
@@ -14970,32 +23242,75 @@ kohdassa &quot;%2&quot;.
         <translation>Rekursiivinen kopiointi kohteesta &quot;% 1&quot; kohteeseen &quot;% 2&quot; epäonnistui, kun tar-arkistoa yritettiin purkaa kohteeseen: % 3</translation>
     </message>
     <message>
-        <location line="+57"/>
         <source>fileContents is not implemented for &quot;%1&quot;</source>
-        <translation>fileContents ei ole käytössä &quot;% 1&quot;</translation>
+        <translation type="vanished">fileContents ei ole käytössä &quot;% 1&quot;</translation>
+    </message>
+    <message>
+        <source>writeFileContents is not implemented for &quot;%1&quot;</source>
+        <translation type="vanished">writeFileContents ei ole käytössä &quot;% 1&quot;</translation>
+    </message>
+    <message>
+        <source>createTempFile is not implemented for &quot;%1&quot;</source>
+        <translation type="vanished">createTempFileä ei ole otettu käyttöön kohteelle &quot;% 1&quot;</translation>
+    </message>
+    <message>
+        <location line="-139"/>
+        <location line="+409"/>
+        <source>Path &quot;%1&quot; exists but is not a writable directory.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-356"/>
+        <source>copyFile is not implemented for &quot;%1&quot;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+30"/>
+        <source>Cannot copy from &quot;%1&quot;, it is not a directory.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Cannot copy &quot;%1&quot; to &quot;%2&quot;: %3</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+103"/>
+        <source>fileContents is not implemented for &quot;%1&quot;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>writeFileContents is not implemented for &quot;%1&quot;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+66"/>
+        <source>createTempFile is not implemented for &quot;%1&quot;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>watch is not implemented.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+180"/>
+        <source>Refusing to remove the standard directory &quot;%1&quot;.</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+12"/>
-        <source>writeFileContents is not implemented for &quot;%1&quot;</source>
-        <translation>writeFileContents ei ole käytössä &quot;% 1&quot;</translation>
-    </message>
-    <message>
-        <location line="+88"/>
-        <source>createTempFile is not implemented for &quot;%1&quot;</source>
-        <translation>createTempFileä ei ole otettu käyttöön kohteelle &quot;% 1&quot;</translation>
-    </message>
-    <message>
-        <location line="+148"/>
         <source>Refusing to remove root directory.</source>
         <translation>Kieltäytyminen poistamasta juurihakemistoa.</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+6"/>
         <source>Refusing to remove your home directory.</source>
         <translation>Kieltäytyminen poistamasta kotihakemistoasi.</translation>
     </message>
     <message>
-        <location line="+12"/>
+        <location line="+37"/>
         <source>Failed to remove directory &quot;%1&quot;.</source>
         <translation>Hakemiston &quot;%1&quot; poistaminen epäonnistui.</translation>
     </message>
@@ -15005,67 +23320,99 @@ kohdassa &quot;%2&quot;.
         <translation>Tiedoston &quot;%1&quot; poistaminen epäonnistui.</translation>
     </message>
     <message>
-        <location line="+12"/>
+        <location line="+551"/>
+        <source>Failed creating temporary file &quot;%1&quot; (too many tries).</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>Failed to copy file &quot;%1&quot; to &quot;%2&quot;.</source>
-        <translation>Tiedoston &quot;%1&quot; kopioiminen kohteeseen &quot;%2&quot; epäonnistui.</translation>
+        <translation type="vanished">Tiedoston &quot;%1&quot; kopioiminen kohteeseen &quot;%2&quot; epäonnistui.</translation>
     </message>
     <message>
-        <location line="+73"/>
         <source>File &quot;%1&quot; does not exist</source>
-        <translation>Tiedostoa &quot;%1&quot; ei ole olemassa</translation>
+        <translation type="vanished">Tiedostoa &quot;%1&quot; ei ole olemassa</translation>
     </message>
     <message>
-        <location line="+3"/>
         <source>Could not open File &quot;%1&quot;</source>
-        <translation>Tiedostoa &quot;% 1&quot; ei voitu avata</translation>
+        <translation type="vanished">Tiedostoa &quot;% 1&quot; ei voitu avata</translation>
     </message>
     <message>
-        <location line="+11"/>
+        <location line="-449"/>
         <source>Cannot read &quot;%1&quot;: %2</source>
         <translation>Ei voida lukea &quot;%1&quot;: %2</translation>
     </message>
     <message>
-        <location line="+14"/>
         <source>Could not open file &quot;%1&quot; for writing</source>
-        <translation>Tiedostoa &quot;%1&quot; ei voitu avata kirjoittamista varten</translation>
+        <translation type="vanished">Tiedostoa &quot;%1&quot; ei voitu avata kirjoittamista varten</translation>
     </message>
     <message>
-        <location line="+7"/>
         <source>Could not write to file &quot;%1&quot; (only %2 of %3 bytes written)</source>
-        <translation>Ei voitu kirjoittaa tiedostoon &quot;% 1&quot; (vain % 2 / % 3 tavua kirjoitettu)</translation>
+        <translation type="vanished">Ei voitu kirjoittaa tiedostoon &quot;% 1&quot; (vain % 2 / % 3 tavua kirjoitettu)</translation>
     </message>
     <message>
-        <location line="+12"/>
         <source>Could not create temporary file in &quot;%1&quot; (%2)</source>
-        <translation>Ei voitu luoda väliaikaista tiedostoa kohteeseen &quot;% 1&quot; (% 2)</translation>
+        <translation type="vanished">Ei voitu luoda väliaikaista tiedostoa kohteeseen &quot;% 1&quot; (% 2)</translation>
     </message>
     <message>
-        <location line="+222"/>
+        <location line="-87"/>
+        <location line="+406"/>
         <source>Failed to copy file &quot;%1&quot; to &quot;%2&quot;: %3</source>
         <translation>Tiedoston &quot;%1&quot; kopiointi kohteeseen &quot;%2&quot; epäonnistui: %3</translation>
     </message>
     <message>
-        <location line="+37"/>
+        <location line="-333"/>
+        <source>File &quot;%1&quot; does not exist.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Could not open File &quot;%1&quot;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+24"/>
+        <source>Could not open file &quot;%1&quot; for writing.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message numerus="yes">
+        <location line="+5"/>
+        <source>Could not write to file &quot;%1&quot; (only %2 of %n byte(s) written).</source>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+        </translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>Could not create temporary file in &quot;%1&quot; (%2).</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+138"/>
+        <source>Device is not connected</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+202"/>
         <source>Failed reading file &quot;%1&quot;: %2</source>
         <translation>Tiedoston &quot;%1&quot; lukeminen epäonnistui: %2</translation>
     </message>
     <message>
-        <location line="+21"/>
+        <location line="+23"/>
         <source>Failed writing file &quot;%1&quot;: %2</source>
         <translation>Tiedoston &quot;%1&quot; kirjoitus epäonnistui: %2</translation>
     </message>
     <message>
-        <location line="+22"/>
+        <location line="+25"/>
         <source>Failed creating temporary file &quot;%1&quot;: %2</source>
         <translation>Väliaikaisen tiedoston &quot;%1&quot; luominen epäonnistui: %2</translation>
     </message>
     <message>
-        <location line="+30"/>
         <source>Failed creating temporary file &quot;%1&quot; (too many tries)</source>
-        <translation>Väliaikaisen tiedoston &quot;% 1&quot; luominen epäonnistui (liian monta yritystä)</translation>
+        <translation type="vanished">Väliaikaisen tiedoston &quot;% 1&quot; luominen epäonnistui (liian monta yritystä)</translation>
     </message>
     <message>
-        <location filename="../../../src/libs/utils/differ.cpp" line="+924"/>
+        <location filename="../../../src/libs/utils/differ.cpp" line="+922"/>
         <source>Delete</source>
         <translation>Poistaa</translation>
     </message>
@@ -15133,12 +23480,11 @@ kohdassa &quot;%2&quot;.
         <translation>osion nimi %1/%2 tiedoston lopun takana</translation>
     </message>
     <message>
-        <location filename="../../../src/libs/utils/environmentdialog.cpp" line="+19"/>
+        <location filename="../../../src/libs/utils/environmentdialog.cpp" line="+18"/>
         <source>Edit Environment</source>
         <translation>Muokkaa ympäristöä</translation>
     </message>
     <message>
-        <location line="+1"/>
         <source>Enter one environment variable per line.
 To set or change a variable, use VARIABLE=VALUE.
 To append to a variable, use VARIABLE+=VALUE.
@@ -15146,7 +23492,7 @@ To prepend to a variable, use VARIABLE=+VALUE.
 Existing variables can be referenced in a VALUE with ${OTHER}.
 To clear a variable, put its name on a line with nothing else on it.
 To disable a variable, prefix the line with &quot;#&quot;.</source>
-        <translation>Anna yksi ympäristömuuttuja riviä kohden.
+        <translation type="vanished">Anna yksi ympäristömuuttuja riviä kohden.
 Jos haluat asettaa tai muuttaa muuttujan, käytä MUUTTUJA=ARVO.
 Jos haluat lisätä muuttujaan, käytä MUUTTUJA+=ARVO.
 Jos haluat lisätä muuttujan alkuun, käytä VARIABLE=+ARVO.
@@ -15155,7 +23501,7 @@ Jos haluat tyhjentää muuttujan, laita sen nimi riville, jossa ei ole mitään 
 Jos haluat poistaa muuttujan käytöstä, liitä rivin eteen &quot;#&quot;.</translation>
     </message>
     <message>
-        <location filename="../../../src/libs/utils/fancylineedit.cpp" line="+422"/>
+        <location filename="../../../src/libs/utils/fancylineedit.cpp" line="+448"/>
         <source>Filter</source>
         <translation>Suodattaa</translation>
     </message>
@@ -15165,24 +23511,23 @@ Jos haluat poistaa muuttujan käytöstä, liitä rivin eteen &quot;#&quot;.</tra
         <translation>Selkeä teksti</translation>
     </message>
     <message>
-        <location filename="../../../src/libs/utils/fancymainwindow.cpp" line="+180"/>
+        <location filename="../../../src/libs/utils/fancymainwindow.cpp" line="+287"/>
         <source>Central Widget</source>
         <translation>Keski-widget</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+2"/>
         <source>Reset to Default Layout</source>
         <translation>Palauta oletusasettelu</translation>
     </message>
     <message>
-        <location line="+1"/>
         <source>Automatically Hide View Title Bars</source>
-        <translation>Piilota automaattisesti Näytä otsikkorivit</translation>
+        <translation type="vanished">Piilota automaattisesti Näytä otsikkorivit</translation>
     </message>
     <message>
-        <location filename="../../../src/libs/utils/filenamevalidatinglineedit.cpp" line="+92"/>
-        <location filename="../../../src/libs/utils/projectintropage.cpp" line="+97"/>
-        <location line="+86"/>
+        <location filename="../../../src/libs/utils/filenamevalidatinglineedit.cpp" line="+93"/>
+        <location filename="../../../src/libs/utils/projectintropage.cpp" line="+92"/>
+        <location line="+105"/>
         <source>Name is empty.</source>
         <translation>Nimi on tyhjä.</translation>
     </message>
@@ -15217,7 +23562,7 @@ Jos haluat poistaa muuttujan käytöstä, liitä rivin eteen &quot;#&quot;.</tra
         <translation>Tiedostotunnisteet % 1 vaaditaan:</translation>
     </message>
     <message>
-        <location filename="../../../src/libs/utils/filepath.cpp" line="+865"/>
+        <location filename="../../../src/libs/utils/filepath.cpp" line="+1098"/>
         <source>%1 on %2</source>
         <comment>File on device</comment>
         <translation>%1 %2</translation>
@@ -15229,7 +23574,7 @@ Jos haluat poistaa muuttujan käytöstä, liitä rivin eteen &quot;#&quot;.</tra
         <translation>%1 %2, %3</translation>
     </message>
     <message>
-        <location line="+580"/>
+        <location line="+869"/>
         <source>Error while trying to copy file: %1</source>
         <translation>Virhe kopioitaessa tiedostoa: %1</translation>
     </message>
@@ -15244,12 +23589,12 @@ Jos haluat poistaa muuttujan käytöstä, liitä rivin eteen &quot;#&quot;.</tra
         <translation>Ei voitu asettaa käyttöoikeuksia &quot;% 1&quot;</translation>
     </message>
     <message>
-        <location line="+272"/>
+        <location line="+250"/>
         <source>No &quot;localSource&quot; device hook set.</source>
         <translation>Ei &quot;localSource&quot;-laitteen koukkua asetettu.</translation>
     </message>
     <message>
-        <location filename="../../../src/libs/utils/filesystemmodel.cpp" line="+750"/>
+        <location filename="../../../src/libs/utils/filesystemmodel.cpp" line="+754"/>
         <source>My Computer</source>
         <translation>Tietokoneeni</translation>
     </message>
@@ -15259,7 +23604,7 @@ Jos haluat poistaa muuttujan käytöstä, liitä rivin eteen &quot;#&quot;.</tra
         <translation>Tietokone</translation>
     </message>
     <message>
-        <location line="+758"/>
+        <location line="+756"/>
         <source>Name</source>
         <translation>Nimi</translation>
     </message>
@@ -15301,7 +23646,7 @@ Jos haluat poistaa muuttujan käytöstä, liitä rivin eteen &quot;#&quot;.</tra
         <translation>%1: on varattu tiedostonimi Windowsissa. Ei voi tallentaa.</translation>
     </message>
     <message>
-        <location line="+22"/>
+        <location line="+24"/>
         <source>Cannot overwrite file %1: %2</source>
         <translation>Tiedostoa %1 ei voi korvata: %2</translation>
     </message>
@@ -15311,12 +23656,18 @@ Jos haluat poistaa muuttujan käytöstä, liitä rivin eteen &quot;#&quot;.</tra
         <translation>Tiedostoa %1 ei voi luoda: %2</translation>
     </message>
     <message>
-        <location line="+40"/>
+        <location line="+45"/>
         <source>Cannot create temporary file in %1: %2</source>
         <translation>Väliaikaista tiedostoa ei voi luoda kohteeseen %1: %2</translation>
     </message>
     <message>
-        <location line="+39"/>
+        <location line="+15"/>
+        <location line="+8"/>
+        <source>Cannot create temporary file %1: %2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+40"/>
         <source>Overwrite File?</source>
         <translation>Korvaako tiedosto?</translation>
     </message>
@@ -15331,12 +23682,14 @@ Jos haluat poistaa muuttujan käytöstä, liitä rivin eteen &quot;#&quot;.</tra
         <translation>Tiedostoa &quot;%1&quot; ei voitu kopioida kohteeseen &quot;%2&quot;.</translation>
     </message>
     <message>
-        <location line="+379"/>
+        <location filename="../../../src/libs/utils/devicefileaccess.cpp" line="-1026"/>
+        <location line="+409"/>
+        <location filename="../../../src/libs/utils/fileutils.cpp" line="+366"/>
         <source>Failed to create directory &quot;%1&quot;.</source>
         <translation>Hakemiston &quot;%1&quot; luominen epäonnistui.</translation>
     </message>
     <message>
-        <location filename="../../../src/libs/utils/hostosinfo.cpp" line="+91"/>
+        <location filename="../../../src/libs/utils/hostosinfo.cpp" line="+84"/>
         <source>Cannot create OpenGL context.</source>
         <translation>OpenGL-kontekstia ei voi luoda.</translation>
     </message>
@@ -15400,7 +23753,7 @@ Jos haluat poistaa muuttujan käytöstä, liitä rivin eteen &quot;#&quot;.</tra
         </translation>
     </message>
     <message>
-        <location filename="../../../src/libs/utils/launcherinterface.cpp" line="+126"/>
+        <location filename="../../../src/libs/utils/launcherinterface.cpp" line="+122"/>
         <source>Failed to start process launcher at &quot;%1&quot;: %2</source>
         <translation>Prosessin käynnistysohjelman käynnistäminen kohdassa &quot;%1&quot; epäonnistui: %2</translation>
     </message>
@@ -15415,7 +23768,7 @@ Jos haluat poistaa muuttujan käytöstä, liitä rivin eteen &quot;#&quot;.</tra
         <translation>Prosessin käynnistysohjelman kantavirhe.</translation>
     </message>
     <message>
-        <location line="+236"/>
+        <location line="+239"/>
         <source>Internal socket error: %1</source>
         <translation>Sisäinen liitäntävirhe: %1</translation>
     </message>
@@ -15445,17 +23798,17 @@ Jos haluat poistaa muuttujan käytöstä, liitä rivin eteen &quot;#&quot;.</tra
         <translation>Ääretön rekursiovirhe</translation>
     </message>
     <message>
-        <location line="+112"/>
+        <location line="+127"/>
         <source>%1: Full path including file name.</source>
         <translation>%1: Koko polku, mukaan lukien tiedoston nimi.</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+6"/>
         <source>%1: Full path excluding file name.</source>
         <translation>%1: Koko polku ilman tiedoston nimeä.</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+6"/>
         <source>%1: Full path including file name, with native path separator (backslash on Windows).</source>
         <translation>%1: Täysi polku, mukaan lukien tiedoston nimi, alkuperäisellä polun erottimella (Windowsissa kenoviiva).</translation>
     </message>
@@ -15470,7 +23823,7 @@ Jos haluat poistaa muuttujan käytöstä, liitä rivin eteen &quot;#&quot;.</tra
         <translation>%1: Tiedoston nimi ilman polkua.</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+6"/>
         <source>%1: File base name without path and suffix.</source>
         <translation>%1: Tiedoston perusnimi ilman polkua ja päätettä.</translation>
     </message>
@@ -15490,12 +23843,12 @@ Jos haluat poistaa muuttujan käytöstä, liitä rivin eteen &quot;#&quot;.</tra
         <translation>Minimoida</translation>
     </message>
     <message>
-        <location filename="../../../src/libs/utils/namevaluemodel.cpp" line="+34"/>
+        <location filename="../../../src/libs/utils/environmentmodel.cpp" line="+35"/>
         <source>&lt;UNSET&gt;</source>
         <translation>&lt;UNSET&gt;</translation>
     </message>
     <message>
-        <location line="+155"/>
+        <location line="+156"/>
         <source>Variable</source>
         <translation>Muuttuva</translation>
     </message>
@@ -15505,19 +23858,29 @@ Jos haluat poistaa muuttujan käytöstä, liitä rivin eteen &quot;#&quot;.</tra
         <translation>Arvo</translation>
     </message>
     <message>
-        <location line="+79"/>
+        <location filename="../../../src/plugins/projectexplorer/environmentwidget.cpp" line="-35"/>
         <source>&lt;VARIABLE&gt;</source>
-        <extracomment>Name when inserting a new variable</extracomment>
         <translation>&lt;MUUTTUJA&gt;</translation>
     </message>
     <message>
-        <location line="+2"/>
         <source>&lt;VALUE&gt;</source>
         <extracomment>Value when inserting a new variable</extracomment>
-        <translation>&lt;ARVO&gt;</translation>
+        <translation type="vanished">&lt;ARVO&gt;</translation>
     </message>
     <message>
-        <location filename="../../../src/libs/utils/namevaluesdialog.cpp" line="+78"/>
+        <location filename="../../../src/libs/utils/namevaluesdialog.cpp" line="+60"/>
+        <source>Enter one environment variable per line.
+To set or change a variable, use VARIABLE=VALUE.
+To disable a variable, prefix this line with &quot;#&quot;.
+To append to a variable, use VARIABLE+=VALUE.
+To prepend to a variable, use VARIABLE=+VALUE.
+Existing variables can be referenced in a VALUE with ${OTHER}.
+To clear a variable, put its name on a line with nothing else on it.
+Lines starting with &quot;##&quot; will be treated as comments.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+112"/>
         <source>&amp;OK</source>
         <translation>&amp;OK</translation>
     </message>
@@ -15527,7 +23890,7 @@ Jos haluat poistaa muuttujan käytöstä, liitä rivin eteen &quot;#&quot;.</tra
         <translation>&amp;Peruuttaa</translation>
     </message>
     <message>
-        <location filename="../../../src/libs/utils/qtcprocess.cpp" line="+249"/>
+        <location filename="../../../src/libs/utils/qtcprocess.cpp" line="+267"/>
         <source>Error in command line.</source>
         <translation>Virhe komentorivillä.</translation>
     </message>
@@ -15537,7 +23900,17 @@ Jos haluat poistaa muuttujan käytöstä, liitä rivin eteen &quot;#&quot;.</tra
         <translation>Ohjelmaa &quot;%1&quot; ei ole olemassa tai se ei ole suoritettavissa.</translation>
     </message>
     <message>
-        <location line="+970"/>
+        <location line="+79"/>
+        <source>The program &quot;%1&quot; could not be found.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+908"/>
+        <source>Failed to create process interface for &quot;%1&quot;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+163"/>
         <source>Process Not Responding</source>
         <translation>Prosessi ei vastaa</translation>
     </message>
@@ -15557,7 +23930,7 @@ Jos haluat poistaa muuttujan käytöstä, liitä rivin eteen &quot;#&quot;.</tra
         <translation>Lopettaako prosessi?</translation>
     </message>
     <message>
-        <location line="+271"/>
+        <location line="+233"/>
         <source>The command &quot;%1&quot; finished successfully.</source>
         <translation>Komento &quot;%1&quot; päättyi onnistuneesti.</translation>
     </message>
@@ -15567,7 +23940,7 @@ Jos haluat poistaa muuttujan käytöstä, liitä rivin eteen &quot;#&quot;.</tra
         <translation>Komento &quot;%1&quot; päättyi poistumiskoodiin %2.</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+2"/>
         <source>The command &quot;%1&quot; terminated abnormally.</source>
         <translation>Komento &quot;%1&quot; päättyi epänormaalisti.</translation>
     </message>
@@ -15577,9 +23950,13 @@ Jos haluat poistaa muuttujan käytöstä, liitä rivin eteen &quot;#&quot;.</tra
         <translation>Komentoa &quot;%1&quot; ei voitu käynnistää.</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+4"/>
+        <source>The command &quot;%1&quot; was canceled after %2 ms.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>The command &quot;%1&quot; did not respond within the timeout limit (%2 s).</source>
-        <translation>Komento &quot;%1&quot; ei vastannut aikakatkaisun (%2 s) sisällä.</translation>
+        <translation type="vanished">Komento &quot;%1&quot; ei vastannut aikakatkaisun (%2 s) sisällä.</translation>
     </message>
     <message>
         <location filename="../../../src/libs/utils/removefiledialog.cpp" line="+21"/>
@@ -15612,7 +23989,7 @@ Jos haluat poistaa muuttujan käytöstä, liitä rivin eteen &quot;#&quot;.</tra
         <translation>Poistettava kansio:</translation>
     </message>
     <message>
-        <location filename="../../../src/libs/utils/settingsaccessor.cpp" line="+118"/>
+        <location filename="../../../src/libs/utils/settingsaccessor.cpp" line="+114"/>
         <source>Failed to Read File</source>
         <translation>Tiedoston lukeminen epäonnistui</translation>
     </message>
@@ -15633,18 +24010,18 @@ Jos haluat poistaa muuttujan käytöstä, liitä rivin eteen &quot;#&quot;.</tra
         <translation>Ei ollut mitään kirjoitettavaa.</translation>
     </message>
     <message>
-        <location line="+112"/>
-        <location line="+269"/>
+        <location line="+101"/>
+        <location line="+265"/>
         <source>No Valid Settings Found</source>
         <translation>Kelvollisia asetuksia ei löytynyt</translation>
     </message>
     <message>
-        <location line="-268"/>
+        <location line="-264"/>
         <source>&lt;p&gt;No valid settings file could be found.&lt;/p&gt;&lt;p&gt;All settings files found in directory &quot;%1&quot; were unsuitable for the current version of %2, for instance because they were written by an incompatible version of %2, or because a different settings path was used.&lt;/p&gt;</source>
         <translation>&lt;p&gt;Yhtään kelvollista asetustiedostoa ei löytynyt.&lt;/p&gt;&lt;p&gt;Kaikki hakemistosta &quot;%1&quot; löytyneet asetustiedostot eivät sovellu nykyiselle versiolle %2, esimerkiksi koska ne on kirjoittanut tiedoston % yhteensopimaton versio 2 tai koska käytettiin eri asetuspolkua.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location line="+269"/>
+        <location line="+265"/>
         <source>&lt;p&gt;No valid settings file could be found.&lt;/p&gt;&lt;p&gt;All settings files found in directory &quot;%1&quot; were either too new or too old to be read.&lt;/p&gt;</source>
         <translation>&lt;p&gt;Kelvollista asetustiedostoa ei löytynyt.&lt;/p&gt;&lt;p&gt;Kaikki hakemistosta &quot;%1&quot; löydetyt asetustiedostot olivat joko liian uusia tai liian vanhoja luettavaksi.&lt;/p&gt;</translation>
     </message>
@@ -15669,7 +24046,7 @@ Jos haluat poistaa muuttujan käytöstä, liitä rivin eteen &quot;#&quot;.</tra
         <translation>&lt;p&gt;Tällä %1:n ilmentymällä luomaa asetustiedostoa ei löytynyt.&lt;/p&gt;&lt;p&gt;Oletko työskennellyt tämän projektin kanssa toisella koneella tai käyttämällä eri asetuspolkua aiemmin?&lt;/p&gt;&lt;p&gt;Oletko edelleen haluatko ladata asetustiedoston &quot;%2&quot;?&lt;/p&gt;</translation>
     </message>
     <message>
-        <location line="+60"/>
+        <location line="+55"/>
         <source>Unsupported Merge Settings File</source>
         <translation>Yhdistämisasetustiedostoa ei tueta</translation>
     </message>
@@ -15679,18 +24056,21 @@ Jos haluat poistaa muuttujan käytöstä, liitä rivin eteen &quot;#&quot;.</tra
         <translation>%2 ei tue &quot;%1&quot;. Haluatko silti yrittää ladata sen?</translation>
     </message>
     <message>
+        <location filename="../../../src/libs/utils/aspects.cpp" line="+92"/>
+        <location line="+952"/>
         <location filename="../../../src/libs/utils/settingsselector.cpp" line="+32"/>
         <source>Add</source>
         <translation>Lisätä</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="-951"/>
+        <location filename="../../../src/libs/utils/settingsselector.cpp" line="+1"/>
         <location line="+83"/>
         <source>Remove</source>
         <translation>Poista</translation>
     </message>
     <message>
-        <location line="-82"/>
+        <location filename="../../../src/libs/utils/settingsselector.cpp" line="-82"/>
         <source>Rename</source>
         <translation>Nimeä uudelleen</translation>
     </message>
@@ -15710,23 +24090,23 @@ Jos haluat poistaa muuttujan käytöstä, liitä rivin eteen &quot;#&quot;.</tra
         <translation>Nimeä uudelleen...</translation>
     </message>
     <message>
-        <location filename="../../../src/libs/utils/stringutils.cpp" line="+341"/>
+        <location filename="../../../src/libs/utils/stringutils.cpp" line="+366"/>
         <source>Elapsed time: %1.</source>
         <translation>Kulunut aika: %1.</translation>
     </message>
     <message>
-        <location filename="../../../src/libs/utils/textfileformat.cpp" line="+194"/>
-        <location line="+66"/>
+        <location filename="../../../src/libs/utils/textfileformat.cpp" line="+196"/>
+        <location line="+76"/>
         <source>Out of memory.</source>
         <translation>Muisti loppu.</translation>
     </message>
     <message>
-        <location line="-55"/>
+        <location line="-65"/>
         <source>An encoding error was encountered.</source>
         <translation>Tapahtui koodausvirhe.</translation>
     </message>
     <message>
-        <location filename="../../../src/libs/utils/unixutils.cpp" line="+36"/>
+        <location filename="../../../src/libs/utils/unixutils.cpp" line="+34"/>
         <source>&lt;table border=1 cellspacing=0 cellpadding=3&gt;&lt;tr&gt;&lt;th&gt;Variable&lt;/th&gt;&lt;th&gt;Expands to&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;%d&lt;/td&gt;&lt;td&gt;directory of current file&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;%f&lt;/td&gt;&lt;td&gt;file name (with full path)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;%n&lt;/td&gt;&lt;td&gt;file name (without path)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;%%&lt;/td&gt;&lt;td&gt;%&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</source>
         <translation>&lt;table border=1 cellpadding=0 cellpadding=3&gt;&lt;tr&gt;&lt;th&gt;Muuttuja&lt;/th&gt;&lt;th&gt;Laajenee&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;%d&lt;/td&gt;&lt;td &gt;nykyisen tiedoston hakemisto&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;%f&lt;/td&gt;&lt;td&gt;tiedoston nimi (koko polulla)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;% n&lt;/td&gt;&lt;td&gt;tiedoston nimi (ilman polkua)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;%%&lt;/td&gt;&lt;td&gt;%&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</translation>
     </message>
@@ -15767,15 +24147,107 @@ Jos haluat poistaa muuttujan käytöstä, liitä rivin eteen &quot;#&quot;.</tra
         <translation>Muuttujat</translation>
     </message>
     <message>
-        <location filename="../../../src/libs/utils/wizard.cpp" line="+119"/>
+        <location filename="../../../src/libs/utils/wizard.cpp" line="+123"/>
         <source>...</source>
         <translation>...</translation>
+    </message>
+    <message>
+        <location filename="../../../src/libs/utils/deviceshell.cpp" line="+189"/>
+        <source>The process failed to start.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+34"/>
+        <source>Failed to install shell script: %1
+%2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+17"/>
+        <source>Timeout while trying to check for %1.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Command &quot;%1&quot; was not found.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Script installation was forced to fail.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+26"/>
+        <source>Timeout while waiting for shell script installation.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>Failed to install shell script: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/libs/utils/externalterminalprocessimpl.cpp" line="+124"/>
+        <source>Failed to open temporary script file.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+28"/>
+        <location line="+45"/>
+        <source>Failed to start terminal process: &quot;%1&quot;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/libs/utils/filestreamermanager.cpp" line="+135"/>
+        <source>Failed copying file.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+24"/>
+        <source>Failed reading file.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+26"/>
+        <source>Failed writing file.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/libs/utils/lua.cpp" line="+25"/>
+        <source>No Lua interface set</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/libs/utils/passworddialog.cpp" line="+25"/>
+        <source>Show/Hide Password</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+94"/>
+        <source>User:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Password:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/libs/utils/terminalhooks.cpp" line="+30"/>
+        <source>Could not find any shell.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/processparameters.cpp" line="+160"/>
+        <source>Invalid command</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>TextEditor::Internal::Snippets</name>
     <message>
-        <location filename="../../../src/plugins/texteditor/snippets/snippetscollection.cpp" line="-257"/>
+        <location filename="../../../src/plugins/texteditor/snippets/snippetscollection.cpp" line="-255"/>
         <source></source>
         <comment>Snippets are text fragments that can be inserted into an editor via the usual completion mechanics using a trigger text. The translated text (trigger variant) is used to disambiguate between snippets with the same trigger.</comment>
         <translation></translation>

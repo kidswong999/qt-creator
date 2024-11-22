@@ -2003,7 +2003,7 @@ void OpenMVPlugin::connectClicked(bool forceBootloader, QString forceFirmwarePat
                                                  Tr::tr("Connect"),
                                                  Tr::tr("Note that loading the firmware.dfu or openmv.dfu (bootloader + firmware) "
                                                         "may not work on STM32H7 boards due to a bug in the chip's ROM bootloader!\n\n"
-                                                        "OpenMV reconmends only loading the bootloader.dfu to repair the bootloader."),
+                                                        "OpenMV recommends only loading the bootloader.dfu to repair the bootloader."),
                                                  QMessageBox::Ok | QMessageBox::Cancel, QMessageBox::Ok) != QMessageBox::Ok)
                         {
                             CONNECT_END();

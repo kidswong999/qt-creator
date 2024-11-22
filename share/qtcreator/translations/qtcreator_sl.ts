@@ -4,7 +4,7 @@
 <context>
     <name>Language</name>
     <message>
-        <location filename="../../../src/libs/3rdparty/syntax-highlighting/src/lib/definition_p.h" line="+107"/>
+        <location filename="../../../src/libs/3rdparty/syntax-highlighting/src/lib/definition_p.h" line="+112"/>
         <source>None</source>
         <translation>Brez</translation>
     </message>
@@ -148,7 +148,7 @@
 <context>
     <name>QAbstractFileIconProvider</name>
     <message>
-        <location filename="../../../src/libs/utils/fsengine/fileiconprovider.cpp" line="+130"/>
+        <location filename="../../../src/libs/utils/fsengine/fileiconprovider.cpp" line="+170"/>
         <source>File Folder</source>
         <comment>Match Windows Explorer</comment>
         <translation>Mapa z datotekami</translation>
@@ -163,7 +163,7 @@
 <context>
     <name>QDockWidget</name>
     <message>
-        <location filename="../../../src/libs/utils/fancymainwindow.cpp" line="+144"/>
+        <location filename="../../../src/libs/utils/fancymainwindow.cpp" line="+219"/>
         <source>Float</source>
         <translation>Lebdi</translation>
     </message>
@@ -343,7 +343,7 @@
 <context>
     <name>QtC::BinEditor</name>
     <message>
-        <location filename="../../../src/plugins/bineditor/bineditorplugin.cpp" line="+238"/>
+        <location filename="../../../src/plugins/bineditor/bineditorplugin.cpp" line="+230"/>
         <source>Cannot open %1: %2</source>
         <translation>Ni moč odpreti %1: %2</translation>
     </message>
@@ -366,12 +366,12 @@
         <translation>Datoteka je prevelika za binarni urejevalnik (največ 32 GB).</translation>
     </message>
     <message>
-        <location line="+76"/>
+        <location line="+87"/>
         <source>Byte Address</source>
         <translation>Bajtni naslov</translation>
     </message>
     <message>
-        <location line="+96"/>
+        <location line="+123"/>
         <source>&amp;Undo</source>
         <translation>&amp;Razveljavi</translation>
     </message>
@@ -381,7 +381,7 @@
         <translation>&amp;Uveljavi</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/bineditor/bineditorwidget.cpp" line="+1226"/>
+        <location filename="../../../src/plugins/bineditor/bineditorwidget.cpp" line="+1228"/>
         <source>Memory at 0x%1</source>
         <translation>Pomnilnik na 0x%1</translation>
     </message>
@@ -461,7 +461,7 @@
         <translation>Predhodna&amp;nbsp;vrednost&amp;nbsp;&lt;i&gt;float&lt;/i&gt;:</translation>
     </message>
     <message>
-        <location line="+121"/>
+        <location line="+122"/>
         <source>Zoom: %1%</source>
         <translation>Povečava: %1%</translation>
     </message>
@@ -523,6 +523,309 @@
     </message>
 </context>
 <context>
+    <name>QtC::Copilot</name>
+    <message>
+        <location filename="../../../src/plugins/copilot/authwidget.cpp" line="+29"/>
+        <location line="+86"/>
+        <location line="+5"/>
+        <source>Sign In</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+26"/>
+        <source>A browser window will open. Enter the code %1 when asked.
+The code has been copied to your clipboard.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Login Failed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>The login request failed: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/copilot/copilotclient.cpp" line="+336"/>
+        <location filename="../../../src/plugins/copilot/copilotprojectpanel.cpp" line="+66"/>
+        <source>Copilot</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Proxy username and password required:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Do not ask again. This will disable Copilot for now.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/copilot/copilothoverhandler.cpp" line="+40"/>
+        <source>Select Previous Copilot Suggestion</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Select Next Copilot Suggestion</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Apply (%1)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Apply Word (%1)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>%1 of %2</source>
+        <translation type="unfinished">%1 od %2</translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/copilot/copilotplugin.cpp" line="+65"/>
+        <source>Request Copilot Suggestion</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Request Copilot suggestion at the current editor&apos;s cursor position.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Show Next Copilot Suggestion</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Cycles through the received Copilot Suggestions showing the next available Suggestion.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>Show Previous Copilot Suggestion</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Cycles through the received Copilot Suggestions showing the previous available Suggestion.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>Disable Copilot</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <location line="+28"/>
+        <source>Disable Copilot.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-21"/>
+        <location filename="../../../src/plugins/copilot/copilotsettings.cpp" line="+31"/>
+        <location line="+1"/>
+        <source>Enable Copilot</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <location line="+20"/>
+        <source>Enable Copilot.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-13"/>
+        <source>Toggle Copilot</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/copilot/copilotsettings.cpp" line="+1"/>
+        <source>Enables the Copilot integration.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+84"/>
+        <source>Node.js path:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Node.js Path</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Select path to node.js executable. See %1 for installation instructions.</source>
+        <extracomment>%1 is the URL to nodejs</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>Path to %1:</source>
+        <extracomment>%1 is the filename of the copilot language server</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>%1 path</source>
+        <extracomment>%1 is the filename of the copilot language server</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Select path to %2 in Copilot Neovim plugin. See %1 for installation instructions.</source>
+        <extracomment>%1 is the URL to copilot.vim getting started, %2 is the filename of the copilot language server</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Auto Request</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Auto request</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Automatically request suggestions for the current text cursor position after changes to the document.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Use Proxy</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Use proxy</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Use a proxy to connect to the Copilot servers.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Proxy Host</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Proxy host:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>The host name of the proxy server.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Proxy Port</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Proxy port:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>The port of the proxy server.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Proxy User</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Proxy user:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>The user name to access the proxy server.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Save Proxy Password</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Save proxy password</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Save the password to access the proxy server. The password is stored insecurely.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Proxy Password</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Proxy password:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>The password for the proxy server.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Reject Unauthorized</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Reject unauthorized</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Reject unauthorized certificates from the proxy server. Turning this off is a security risk.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+31"/>
+        <source>Enabling %1 is subject to your agreement and abidance with your applicable %1 terms. It is your responsibility to know and accept the requirements and parameters of using tools like %1. This may include, but is not limited to, ensuring you have the rights to allow %1 access to your code, as well as understanding any implications of your use of %1 and suggestions produced (like copyright, accuracy, etc.).</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>The Copilot plugin requires node.js and the Copilot neovim plugin. If you install the neovim plugin as described in %1, the plugin will find the %3 file automatically.
+
+Otherwise you need to specify the path to the %2 file from the Copilot neovim plugin.</source>
+        <comment>Markdown text for the copilot instruction label</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+14"/>
+        <source>Note</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>QtC::Core</name>
     <message>
         <location filename="../../../src/plugins/coreplugin/basefilewizard.cpp" line="+86"/>
@@ -543,12 +846,12 @@
         <translation>Ni moč ustvariti mape %1.</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/basefilewizardfactory.cpp" line="+170"/>
+        <location filename="../../../src/plugins/coreplugin/basefilewizardfactory.cpp" line="+171"/>
         <source>Failed to open an editor for &quot;%1&quot;.</source>
         <translation>Urejevalnika za »%1« ni bilo mogoče odpreti.</translation>
     </message>
     <message>
-        <location line="+25"/>
+        <location line="+28"/>
         <source>[read only]</source>
         <translation>[le za branje]</translation>
     </message>
@@ -570,52 +873,51 @@
 %2.</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/editormanager/editormanager.cpp" line="+369"/>
-        <location line="+17"/>
-        <location line="+1728"/>
-        <location line="+499"/>
+        <location filename="../../../src/plugins/coreplugin/editormanager/editormanager.cpp" line="+370"/>
+        <location line="+46"/>
+        <location line="+1689"/>
+        <location line="+534"/>
         <source>Revert to Saved</source>
         <translation>Povrni na shranjeno</translation>
     </message>
     <message>
-        <location line="-2241"/>
-        <location line="+15"/>
-        <location line="+94"/>
-        <location filename="../../../src/plugins/coreplugin/find/findtoolbar.cpp" line="+425"/>
-        <location filename="../../../src/plugins/coreplugin/navigationsubwidget.cpp" line="+63"/>
-        <location filename="../../../src/plugins/coreplugin/outputpanemanager.cpp" line="+339"/>
+        <location line="-2268"/>
+        <location line="+95"/>
+        <location filename="../../../src/plugins/coreplugin/find/findtoolbar.cpp" line="+445"/>
+        <location filename="../../../src/plugins/coreplugin/navigationsubwidget.cpp" line="+64"/>
+        <location filename="../../../src/plugins/coreplugin/outputpanemanager.cpp" line="+412"/>
         <location filename="../../../src/plugins/coreplugin/sidebarwidget.cpp" line="+57"/>
         <location line="+1"/>
         <source>Close</source>
         <translation>Zapri</translation>
     </message>
     <message>
-        <location line="-108"/>
-        <location line="+15"/>
+        <location line="-94"/>
+        <location line="+100"/>
         <source>Close All</source>
         <translation>Zapri vse</translation>
     </message>
     <message>
-        <location line="-14"/>
-        <location line="+15"/>
-        <location line="+1749"/>
+        <location line="-99"/>
+        <location line="+111"/>
+        <location line="+1645"/>
         <source>Close Others</source>
         <translation>Zapri ostale</translation>
     </message>
     <message>
-        <location line="-1696"/>
+        <location line="-1708"/>
         <source>Revert File to Saved</source>
         <translation>Povrni datoteko na shranjeno</translation>
     </message>
     <message>
-        <location line="+23"/>
+        <location line="+30"/>
         <source>Ctrl+W</source>
         <translation>Ctrl+W</translation>
     </message>
     <message>
-        <location line="+158"/>
-        <location filename="../../../src/plugins/coreplugin/editortoolbar.cpp" line="+82"/>
-        <location line="+65"/>
+        <location line="+189"/>
+        <location filename="../../../src/plugins/coreplugin/editortoolbar.cpp" line="+101"/>
+        <location line="+67"/>
         <location filename="../../../src/plugins/coreplugin/navigationsubwidget.cpp" line="-9"/>
         <location filename="../../../src/plugins/coreplugin/sidebarwidget.cpp" line="-7"/>
         <location line="+1"/>
@@ -623,45 +925,45 @@
         <translation>Razdeli</translation>
     </message>
     <message>
-        <location line="+9"/>
-        <location filename="../../../src/plugins/coreplugin/editortoolbar.cpp" line="-63"/>
+        <location line="+12"/>
+        <location filename="../../../src/plugins/coreplugin/editortoolbar.cpp" line="-65"/>
         <source>Split Side by Side</source>
         <translation>Razdeli, da bo eno ob drugem</translation>
     </message>
     <message>
-        <location line="+17"/>
+        <location line="+20"/>
         <source>Remove Current Split</source>
         <translation>Odstrani trenutni razdelek</translation>
     </message>
     <message>
-        <location line="+9"/>
+        <location line="+10"/>
         <source>Remove All Splits</source>
         <translation>Odstrani vse razdelke</translation>
     </message>
     <message>
-        <location line="+2628"/>
+        <location line="+2669"/>
         <source>Opening File</source>
         <translation>Odpiranje datoteke</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/documentmanager.cpp" line="+710"/>
+        <location filename="../../../src/plugins/coreplugin/documentmanager.cpp" line="+696"/>
         <source>Could not save the files.</source>
         <comment>error message</comment>
         <translation>Datotek ni bilo mogoče shraniti.</translation>
     </message>
     <message>
-        <location line="+43"/>
-        <location line="+600"/>
-        <location filename="../../../src/plugins/coreplugin/editormanager/editormanager.cpp" line="-2434"/>
+        <location line="+47"/>
+        <location line="+601"/>
+        <location filename="../../../src/plugins/coreplugin/editormanager/editormanager.cpp" line="-2471"/>
         <location line="+39"/>
         <location line="+24"/>
-        <location line="+1488"/>
-        <location line="+235"/>
+        <location line="+1475"/>
+        <location line="+246"/>
         <source>File Error</source>
         <translation>Napaka glede datoteke</translation>
     </message>
     <message>
-        <location line="-599"/>
+        <location line="-600"/>
         <source>Error while saving file: %1</source>
         <translation>Napaka med shranjevanjem datoteke: %1</translation>
     </message>
@@ -683,7 +985,7 @@
         <translation>Element z imenom &quot;%1&quot; že obstaja na tej lokaciji. Ali ga želite prepisati?</translation>
     </message>
     <message>
-        <location line="+229"/>
+        <location line="+230"/>
         <source>Open File</source>
         <translation>Odpri datoteko</translation>
     </message>
@@ -693,50 +995,50 @@
         <translation>Ni moč znova naložiti %1</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/iversioncontrol.cpp" line="+58"/>
+        <location filename="../../../src/plugins/coreplugin/iversioncontrol.cpp" line="+53"/>
         <source>Open with VCS (%1)</source>
         <translation>Odpri v sistemu za nadzor različic (%1)</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/editormanager/editormanager.cpp" line="-557"/>
+        <location filename="../../../src/plugins/coreplugin/editormanager/editormanager.cpp" line="-588"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; You are changing a read-only file.</source>
         <translation>&lt;b&gt;Opozorilo:&lt;/b&gt; spreminjate datoteko, ki je samo za branje.</translation>
     </message>
     <message>
-        <location line="-1705"/>
+        <location line="-1490"/>
         <source>Next Open Document in History</source>
         <translation>Naslednji odprti dokument v zgodovini</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="-11"/>
         <source>Previous Open Document in History</source>
         <translation>Predhodni odprti dokument v zgodovini</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+23"/>
         <location filename="../../../src/plugins/coreplugin/editortoolbar.cpp" line="-8"/>
         <source>Go Back</source>
         <translation>Vrni se</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+12"/>
         <location filename="../../../src/plugins/coreplugin/editortoolbar.cpp" line="+1"/>
         <source>Go Forward</source>
         <translation>Nadaljuj</translation>
     </message>
     <message>
-        <location line="-4"/>
-        <location line="+15"/>
+        <location line="-236"/>
+        <location line="+122"/>
         <source>Close All Except Visible</source>
         <translation>Zapri vse razen vidnih</translation>
     </message>
     <message>
-        <location line="-10"/>
+        <location line="+135"/>
         <source>Go to Last Edit</source>
         <translation>Pojdi na Zadnje urejanje</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="-266"/>
         <source>Copy Full Path</source>
         <translation>Kopiraj celotno pot</translation>
     </message>
@@ -751,7 +1053,7 @@
         <translation>Kopiraj ime datoteke</translation>
     </message>
     <message>
-        <location line="+14"/>
+        <location line="+12"/>
         <source>Properties...</source>
         <translation>Lastnosti...</translation>
     </message>
@@ -761,38 +1063,47 @@
         <translation>Pin</translation>
     </message>
     <message>
-        <location line="+80"/>
         <source>Alternative Close</source>
-        <translation>Alternativa Zapri</translation>
+        <translation type="vanished">Alternativa Zapri</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+85"/>
         <source>Ctrl+F4</source>
         <translation>Ctrl+F4</translation>
     </message>
     <message>
-        <location line="+160"/>
+        <location line="+11"/>
+        <source>Ctrl+Shift+W</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+145"/>
+        <source>Reopen Last Closed Document</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+41"/>
         <location filename="../../../src/plugins/coreplugin/editortoolbar.cpp" line="+8"/>
         <source>Open in New Window</source>
         <translation>Odpri v novem oknu</translation>
     </message>
     <message>
-        <location line="+27"/>
+        <location line="+30"/>
         <source>Go to Previous Split or Window</source>
         <translation>Pojdite na prejšnji razdelek ali okno</translation>
     </message>
     <message>
-        <location line="+9"/>
+        <location line="+10"/>
         <source>Go to Next Split or Window</source>
         <translation>Pojdite na Next Split ali Window</translation>
     </message>
     <message>
-        <location line="+11"/>
+        <location line="+12"/>
         <source>Ad&amp;vanced</source>
         <translation>N&amp;apredno</translation>
     </message>
     <message>
-        <location line="+39"/>
+        <location line="+38"/>
         <source>Current document</source>
         <translation>Trenutni dokument</translation>
     </message>
@@ -807,7 +1118,7 @@
         <translation>Koordinata y zgornjega levega kota trenutnega urejevalnika, glede na zaslon.</translation>
     </message>
     <message>
-        <location line="+41"/>
+        <location line="+49"/>
         <source>Continue Opening Huge Text File?</source>
         <translation>Ali še naprej odpiram ogromno besedilno datoteko?</translation>
     </message>
@@ -821,7 +1132,7 @@ Continue?</source>
 Nadaljevati?</translation>
     </message>
     <message>
-        <location line="+71"/>
+        <location line="+65"/>
         <source>Could not open &quot;%1&quot;: Cannot open files of type &quot;%2&quot;.</source>
         <translation>Ni bilo mogoče odpreti »%1«: ni mogoče odpreti datotek vrste »%2«.</translation>
     </message>
@@ -836,7 +1147,7 @@ Nadaljevati?</translation>
         <translation>Ni bilo mogoče odpreti »%1«: Neznana napaka.</translation>
     </message>
     <message>
-        <location line="+1163"/>
+        <location line="+1130"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; This file was not opened in %1 yet.</source>
         <translation>&lt;b&gt;Opozorilo:&lt;/b&gt; ta datoteka še ni bila odprta v %1.</translation>
     </message>
@@ -846,7 +1157,7 @@ Nadaljevati?</translation>
         <translation>Odpri</translation>
     </message>
     <message>
-        <location line="+29"/>
+        <location line="+25"/>
         <source>&amp;Save %1</source>
         <translation>&amp;Shrani %1</translation>
     </message>
@@ -876,7 +1187,7 @@ Nadaljevati?</translation>
         <translation>Zapri vse, razen %1</translation>
     </message>
     <message>
-        <location line="+191"/>
+        <location line="+210"/>
         <source>Cannot Open File</source>
         <translation>Ni moč odpreti datoteke</translation>
     </message>
@@ -886,7 +1197,7 @@ Nadaljevati?</translation>
         <translation>Ni mogoče odpreti datoteke za urejanje z VCS.</translation>
     </message>
     <message>
-        <location line="+285"/>
+        <location line="+301"/>
         <source>You will lose your current changes if you proceed reverting %1.</source>
         <translation>Če nadaljujete s povračanjem %1, boste izgubili vse trenutne spremembe.</translation>
     </message>
@@ -899,7 +1210,7 @@ Nadaljevati?</translation>
         <location line="+1"/>
         <location filename="../../../src/plugins/coreplugin/find/searchresultwidget.cpp" line="+142"/>
         <location line="+117"/>
-        <location filename="../../../src/plugins/coreplugin/plugininstallwizard.cpp" line="+162"/>
+        <location filename="../../../src/plugins/coreplugin/plugininstallwizard.cpp" line="+191"/>
         <source>Cancel</source>
         <translation>Prekliči</translation>
     </message>
@@ -909,7 +1220,7 @@ Nadaljevati?</translation>
         <translation>Prekliči &amp;&amp; &amp;razl</translation>
     </message>
     <message>
-        <location line="+311"/>
+        <location line="+308"/>
         <source>Close &quot;%1&quot;</source>
         <translation>Zapri »%1«</translation>
     </message>
@@ -929,12 +1240,12 @@ Nadaljevati?</translation>
         <translation>Pin Editor</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/documentmanager.cpp" line="-488"/>
+        <location filename="../../../src/plugins/coreplugin/documentmanager.cpp" line="-489"/>
         <source>Overwrite?</source>
         <translation>Nadomestim?</translation>
     </message>
     <message>
-        <location line="+71"/>
+        <location line="+68"/>
         <source>Save File As</source>
         <translation>Shrani datoteko kot</translation>
     </message>
@@ -949,7 +1260,7 @@ Nadaljevati?</translation>
         <translation>Povlecite za vlečenje dokumentov med delitvami</translation>
     </message>
     <message>
-        <location line="+254"/>
+        <location line="+270"/>
         <source>Close Document</source>
         <translation>Zapri dokument</translation>
     </message>
@@ -964,12 +1275,12 @@ Nadaljevati?</translation>
         <translation>Datoteka je zapisljiva</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/generalsettings.cpp" line="+96"/>
+        <location filename="../../../src/plugins/coreplugin/generalsettings.cpp" line="+139"/>
         <source>Reset Do Not Ask/Show Again Dialogs</source>
         <translation>Ponastavite pogovorna okna Ne sprašuj/Pokaži znova</translation>
     </message>
     <message>
-        <location line="+4"/>
+        <location line="+6"/>
         <source>Reset to default.</source>
         <comment>Color</comment>
         <translation>Ponastavi na privzeto.</translation>
@@ -980,27 +1291,25 @@ Nadaljevati?</translation>
         <translation>Tema:</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+4"/>
         <source>Language:</source>
         <translation>Jezik:</translation>
     </message>
     <message>
-        <location line="+3"/>
         <source>Enable high DPI scaling</source>
-        <translation>Omogoči visoko skaliranje DPI</translation>
+        <translation type="vanished">Omogoči visoko skaliranje DPI</translation>
     </message>
     <message>
-        <location line="+8"/>
         <source>The high DPI settings will take effect after restart.</source>
-        <translation>Nastavitve visoke DPI bodo začele veljati po ponovnem zagonu.</translation>
+        <translation type="vanished">Nastavitve visoke DPI bodo začele veljati po ponovnem zagonu.</translation>
     </message>
     <message>
-        <location line="+11"/>
+        <location line="+50"/>
         <source>User Interface</source>
         <translation>Uporabniški vmesnik</translation>
     </message>
     <message>
-        <location line="+9"/>
+        <location line="-144"/>
         <source>Show keyboard shortcuts in context menus (default: %1)</source>
         <translation>Prikaži bližnjice na tipkovnici v kontekstnih menijih (privzeto: %1)</translation>
     </message>
@@ -1015,17 +1324,83 @@ Nadaljevati?</translation>
         <translation>izklopljeno</translation>
     </message>
     <message>
-        <location line="+36"/>
+        <location line="+4"/>
+        <source>Override cursors for views</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Provide cursors for resizing views.
+If the system cursors for resizing views are not displayed properly, you can use the cursors provided by %1.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+93"/>
+        <source>Round Up for .5 and Above</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Always Round Up</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Always Round Down</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Round Up for .75 and Above</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Don&apos;t Round</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>DPI rounding policy:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>The following environment variables are set and can influence the UI scaling behavior of %1:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Environment influences UI scaling behavior.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+60"/>
         <source>&lt;System Language&gt;</source>
         <translation>&lt;sistemski jezik&gt;</translation>
     </message>
     <message>
-        <location line="+82"/>
+        <location line="+92"/>
         <source>The language change will take effect after restart.</source>
         <translation>Sprememba jezika bo začela veljati po ponovnem zagonu.</translation>
     </message>
     <message>
-        <location line="+46"/>
+        <location line="+45"/>
+        <source>Compact</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Relaxed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+14"/>
+        <source>The DPI rounding policy change will take effect after restart.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+19"/>
         <source>Interface</source>
         <translation>Vmesnik</translation>
     </message>
@@ -1035,93 +1410,109 @@ Nadaljevati?</translation>
         <translation>Okolje</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/systemsettings.cpp" line="+490"/>
+        <location filename="../../../src/plugins/coreplugin/systemsettings.cpp" line="+480"/>
         <source>Variables</source>
         <translation>Spremenljivke</translation>
     </message>
     <message>
-        <location line="-340"/>
+        <location line="-271"/>
         <source>Terminal:</source>
         <translation>Konzola:</translation>
     </message>
     <message>
-        <location line="-96"/>
+        <location line="-166"/>
         <source>Bytes</source>
         <translation>Bajti</translation>
     </message>
     <message>
-        <location line="+0"/>
         <source>KB</source>
-        <translation>KB</translation>
+        <translation type="vanished">KB</translation>
     </message>
     <message>
-        <location line="+0"/>
-        <location line="+50"/>
+        <location line="+76"/>
         <source>MB</source>
         <translation>MB</translation>
     </message>
     <message>
-        <location line="-49"/>
         <source>GB</source>
-        <translation>GB</translation>
+        <translation type="vanished">GB</translation>
     </message>
     <message>
-        <location line="+0"/>
         <source>TB</source>
-        <translation>TB</translation>
+        <translation type="vanished">TB</translation>
     </message>
     <message>
-        <location line="+20"/>
+        <location line="-20"/>
         <source>Auto-suspend unmodified files</source>
         <translation>Samodejno začasno ustavi nespremenjene datoteke</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+43"/>
         <source>Enable crash reporting</source>
         <translation>Omogoči poročanje o zrušitvah</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="-26"/>
         <source>Warn before opening text files greater than</source>
         <translation>Opozori pred odpiranjem besedilnih datotek, večjih od</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+20"/>
         <source>Ask for confirmation before exiting</source>
         <translation>Pred izhodom vprašajte za potrditev</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="-61"/>
         <source>Auto-save modified files</source>
         <translation>Samodejno shranjuj spremenjene datoteke</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+96"/>
         <source>Clear Local Crash Reports</source>
         <translation>Počisti lokalna poročila o zrušitvah</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="-79"/>
         <source>Auto-save files after refactoring</source>
         <translation>Samodejno shranjevanje datotek po preoblikovanju</translation>
     </message>
     <message>
-        <location line="+4"/>
+        <location line="-49"/>
+        <source>KiB</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>MiB</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>GiB</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>TiB</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+59"/>
         <source>Automatically free resources of old documents that are not visible and not modified. They stay visible in the list of open documents.</source>
         <translation>Samodejno osvobodi vire starih dokumentov, ki niso vidni in niso spremenjeni. Ostajajo vidni na seznamu odprtih dokumentov.</translation>
     </message>
     <message>
-        <location line="+6"/>
+        <location line="+42"/>
         <source>Allow crashes to be automatically reported. Collected reports are used for the sole purpose of fixing bugs.</source>
         <translation>Dovoli samodejno poročanje o zrušitvah. Zbrana poročila se uporabljajo izključno za odpravljanje napak.</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+35"/>
         <source>Command line arguments used for &quot;Run in terminal&quot;.</source>
         <translation>Argumenti ukazne vrstice, uporabljeni za &quot;Zaženi v terminalu&quot;.</translation>
     </message>
     <message>
-        <location line="+4"/>
+        <location line="-50"/>
         <source>Always Ask</source>
         <translation>Vedno vprašaj</translation>
     </message>
@@ -1136,17 +1527,17 @@ Nadaljevati?</translation>
         <translation>Prezri spremembe</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="-47"/>
         <source>min</source>
         <translation> min</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+105"/>
         <source>Command line arguments used for &quot;%1&quot;.</source>
         <translation>Argumenti ukazne vrstice, uporabljeni za »%1«.</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+34"/>
         <source>File system case sensitivity:</source>
         <translation>Občutljivost velikih in malih črk datotečnega sistema:</translation>
     </message>
@@ -1156,7 +1547,7 @@ Nadaljevati?</translation>
         <translation>Vpliva na to, kako se imena datotek ujemajo, da se odloči, ali so enaka.</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="-117"/>
         <source>Files to keep open:</source>
         <translation>Datoteke, ki naj ostanejo odprte:</translation>
     </message>
@@ -1166,50 +1557,50 @@ Nadaljevati?</translation>
         <translation>Najmanjše število odprtih dokumentov, ki jih je treba hraniti v pomnilniku. Če povečate to število, bo poraba virov večja, ko dokumentov ne zaprete ročno.</translation>
     </message>
     <message>
-        <location line="+5"/>
-        <location line="+2"/>
+        <location line="+84"/>
+        <location line="+3"/>
         <source>?</source>
         <translation>?</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+3"/>
         <source>Reset to default.</source>
         <comment>Terminal</comment>
         <translation>Ponastavi na privzeto.</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="-130"/>
         <source>Patch command:</source>
         <translation>Ukaz popravka:</translation>
     </message>
     <message>
-        <location line="+17"/>
+        <location line="+146"/>
         <source>External file browser:</source>
         <translation>Zunanji brskalnik po datotekah:</translation>
     </message>
     <message>
-        <location line="+12"/>
+        <location line="-83"/>
         <source>When files are externally modified:</source>
         <translation>Ko so datoteke spremenjene od zunaj:</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="-46"/>
         <source>Interval:</source>
         <translation>Razmik:</translation>
     </message>
     <message>
-        <location line="+6"/>
+        <location line="+147"/>
         <source>Maximum number of entries in &quot;Recent Files&quot;:</source>
         <translation>Največje število vnosov v &quot;Nedavne datoteke&quot;:</translation>
     </message>
     <message>
         <location line="+12"/>
-        <location line="+309"/>
+        <location line="+248"/>
         <source>System</source>
         <translation>Sistem</translation>
     </message>
     <message>
-        <location line="-288"/>
+        <location line="-423"/>
         <source>Command used for reverting diff chunks.</source>
         <translation>Ukaz, ki se uporablja za vračanje kosov diff.</translation>
     </message>
@@ -1219,24 +1610,23 @@ Nadaljevati?</translation>
         <translation>Samodejno ustvari začasne kopije spremenjenih datotek. Če se %1 po zrušitvi ali izpadu električne energije znova zažene, vpraša, ali naj obnovi samodejno shranjeno vsebino.</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+16"/>
         <source>Automatically saves all open files affected by a refactoring operation,
 provided they were unmodified before the refactoring.</source>
         <translation>Samodejno shrani vse odprte datoteke, na katere vpliva operacija refaktoriranja,
 pod pogojem, da niso bili spremenjeni pred refaktoriranjem.</translation>
     </message>
     <message>
-        <location line="+25"/>
+        <location line="+183"/>
         <source>Crash Reporting</source>
         <translation>Poročanje o zrušitvah</translation>
     </message>
     <message>
-        <location line="+3"/>
         <source>The change will take effect after restart.</source>
-        <translation>Sprememba bo začela veljati po ponovnem zagonu.</translation>
+        <translation type="vanished">Sprememba bo začela veljati po ponovnem zagonu.</translation>
     </message>
     <message>
-        <location line="+41"/>
+        <location line="+34"/>
         <source>Case Sensitive (Default)</source>
         <translation>Razlikovanje velikih in malih črk (privzeto)</translation>
     </message>
@@ -1251,27 +1641,27 @@ pod pogojem, da niso bili spremenjeni pred refaktoriranjem.</translation>
         <translation>Neobčutljivo na velike in male črke</translation>
     </message>
     <message>
-        <location line="+109"/>
+        <location line="+83"/>
         <source>The file system case sensitivity change will take effect after restart.</source>
         <translation>Sprememba občutljivosti na velike in male črke datotečnega sistema bo začela veljati po ponovnem zagonu.</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/outputpanemanager.cpp" line="-26"/>
+        <location filename="../../../src/plugins/coreplugin/outputpanemanager.cpp" line="-25"/>
         <source>Output</source>
         <translation>Izhod</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/mainwindow.cpp" line="+488"/>
+        <location filename="../../../src/plugins/coreplugin/icore.cpp" line="+1728"/>
         <source>&amp;File</source>
         <translation>&amp;Datoteka</translation>
     </message>
     <message>
-        <location line="+15"/>
+        <location line="+17"/>
         <source>&amp;Edit</source>
         <translation>&amp;Urejanje</translation>
     </message>
     <message>
-        <location line="+19"/>
+        <location line="+22"/>
         <source>&amp;Tools</source>
         <translation>&amp;Orodja</translation>
     </message>
@@ -1286,48 +1676,48 @@ pod pogojem, da niso bili spremenjeni pred refaktoriranjem.</translation>
         <translation>&amp;Pomoč</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/dialogs/saveitemsdialog.cpp" line="+123"/>
-        <location filename="../../../src/plugins/coreplugin/editormanager/editormanager.cpp" line="-2581"/>
-        <location line="+1728"/>
-        <location filename="../../../src/plugins/coreplugin/mainwindow.cpp" line="+137"/>
+        <location filename="../../../src/plugins/coreplugin/dialogs/saveitemsdialog.cpp" line="+122"/>
+        <location filename="../../../src/plugins/coreplugin/editormanager/editormanager.cpp" line="-2620"/>
+        <location line="+1735"/>
+        <location filename="../../../src/plugins/coreplugin/icore.cpp" line="+139"/>
         <source>&amp;Save</source>
         <translation>&amp;Shrani</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/editormanager/editormanager.cpp" line="-1727"/>
-        <location line="+1728"/>
-        <location filename="../../../src/plugins/coreplugin/mainwindow.cpp" line="+10"/>
+        <location filename="../../../src/plugins/coreplugin/editormanager/editormanager.cpp" line="-1734"/>
+        <location line="+1735"/>
+        <location filename="../../../src/plugins/coreplugin/icore.cpp" line="+10"/>
         <source>Save &amp;As...</source>
         <translation>Shrani &amp;kot …</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/mainwindow.cpp" line="+3"/>
+        <location filename="../../../src/plugins/coreplugin/icore.cpp" line="+3"/>
         <source>Ctrl+Shift+S</source>
         <translation>Ctrl+Shift+S</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/documentmanager.cpp" line="-669"/>
+        <location filename="../../../src/plugins/coreplugin/documentmanager.cpp" line="+701"/>
         <source>Save A&amp;ll</source>
         <translation>Shrani &amp;vse</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/mainwindow.cpp" line="-287"/>
+        <location filename="../../../src/plugins/coreplugin/icore.cpp" line="-279"/>
         <location line="+1"/>
         <source>Exit %1?</source>
         <translation>Zapustiti %1?</translation>
     </message>
     <message>
-        <location line="+114"/>
+        <location line="+101"/>
         <source>&amp;View</source>
         <translation>&amp;Videz</translation>
     </message>
     <message>
-        <location line="+68"/>
+        <location line="+72"/>
         <source>Return to Editor</source>
         <translation>Nazaj na urejevalnik</translation>
     </message>
     <message>
-        <location line="+8"/>
+        <location line="+6"/>
         <source>&amp;New Project...</source>
         <translation>&amp;Nov projekt ...</translation>
     </message>
@@ -1338,17 +1728,17 @@ pod pogojem, da niso bili spremenjeni pred refaktoriranjem.</translation>
         <translation>Nov projekt</translation>
     </message>
     <message>
-        <location line="+13"/>
+        <location line="+15"/>
         <source>&amp;New File...</source>
         <translation>&amp;Nova datoteka ...</translation>
     </message>
     <message>
-        <location line="+24"/>
+        <location line="+25"/>
         <source>&amp;Open File...</source>
         <translation>&amp;Odpri datoteko...</translation>
     </message>
     <message>
-        <location line="+12"/>
+        <location line="+13"/>
         <source>Open File &amp;With...</source>
         <translation>Odpri datoteko &amp;v …</translation>
     </message>
@@ -1358,7 +1748,7 @@ pod pogojem, da niso bili spremenjeni pred refaktoriranjem.</translation>
         <translation>Odpri iz naprave ...</translation>
     </message>
     <message>
-        <location line="+11"/>
+        <location line="+10"/>
         <source>Recent &amp;Files</source>
         <translation>Nedavne &amp;datoteke</translation>
     </message>
@@ -1393,12 +1783,12 @@ pod pogojem, da niso bili spremenjeni pred refaktoriranjem.</translation>
         <translation>Razveljavi</translation>
     </message>
     <message>
-        <location line="+6"/>
+        <location line="+7"/>
         <source>&amp;Redo</source>
         <translation>&amp;Uveljavi</translation>
     </message>
     <message>
-        <location line="+4"/>
+        <location line="+3"/>
         <source>Redo</source>
         <translation>Ponovi</translation>
     </message>
@@ -1428,7 +1818,7 @@ pod pogojem, da niso bili spremenjeni pred refaktoriranjem.</translation>
         <translation>&amp;Pojdi na vrstico ...</translation>
     </message>
     <message>
-        <location line="+9"/>
+        <location line="+8"/>
         <source>Zoom In</source>
         <translation>Približaj</translation>
     </message>
@@ -1438,7 +1828,7 @@ pod pogojem, da niso bili spremenjeni pred refaktoriranjem.</translation>
         <translation>Ctrl++</translation>
     </message>
     <message>
-        <location line="+6"/>
+        <location line="+5"/>
         <source>Zoom Out</source>
         <translation>Pomanjšanje</translation>
     </message>
@@ -1454,7 +1844,7 @@ pod pogojem, da niso bili spremenjeni pred refaktoriranjem.</translation>
         <translation>Ctrl+Shift+-</translation>
     </message>
     <message>
-        <location line="+8"/>
+        <location line="+7"/>
         <source>Original Size</source>
         <translation>Izvirna velikost</translation>
     </message>
@@ -1469,7 +1859,7 @@ pod pogojem, da niso bili spremenjeni pred refaktoriranjem.</translation>
         <translation>Ctrl+0</translation>
     </message>
     <message>
-        <location line="+11"/>
+        <location line="+12"/>
         <source>Show Logs...</source>
         <translation>Prikaži dnevnike ...</translation>
     </message>
@@ -1479,7 +1869,7 @@ pod pogojem, da niso bili spremenjeni pred refaktoriranjem.</translation>
         <translation>Nastavitve ...</translation>
     </message>
     <message>
-        <location line="+35"/>
+        <location line="+32"/>
         <source>Ctrl+Meta+F</source>
         <translation>Ctrl+Meta+F</translation>
     </message>
@@ -1489,27 +1879,47 @@ pod pogojem, da niso bili spremenjeni pred refaktoriranjem.</translation>
         <translation>Ctrl+Shift+F11</translation>
     </message>
     <message>
-        <location line="+8"/>
+        <location line="+9"/>
         <source>Close Window</source>
         <translation>Zapri okno</translation>
     </message>
     <message>
-        <location line="+58"/>
+        <location line="+49"/>
+        <source>Show Menu Bar</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Ctrl+Alt+M</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+20"/>
+        <source>Hide Menu Bar</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>This will hide the menu bar completely. You can show it again by typing %1.&lt;br&gt;&lt;br&gt;Or, trigger the &quot;%2&quot; action from the &quot;%3&quot; locator filter (%4).</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+21"/>
         <source>&amp;Views</source>
         <translation>&amp;Prikazi</translation>
     </message>
     <message>
-        <location line="+10"/>
+        <location line="+11"/>
         <source>About &amp;%1</source>
         <translation>O &amp;%1</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+0"/>
         <source>About &amp;%1...</source>
         <translation>O &amp;%1 ...</translation>
     </message>
     <message>
-        <location line="+26"/>
+        <location line="+21"/>
         <source>Change Log...</source>
         <translation>Dnevnik sprememb ...</translation>
     </message>
@@ -1519,12 +1929,12 @@ pod pogojem, da niso bili spremenjeni pred refaktoriranjem.</translation>
         <translation>Kontakt...</translation>
     </message>
     <message>
-        <location line="+24"/>
+        <location line="+23"/>
         <source>Cycle Mode Selector Styles</source>
         <translation>Slogi izbirnika načina cikla</translation>
     </message>
     <message>
-        <location line="+13"/>
+        <location line="+12"/>
         <source>Mode Selector Style</source>
         <translation>Slog izbirnika načina</translation>
     </message>
@@ -1544,17 +1954,17 @@ pod pogojem, da niso bili spremenjeni pred refaktoriranjem.</translation>
         <translation>Skrito</translation>
     </message>
     <message>
-        <location line="+535"/>
+        <location line="+460"/>
         <source>Version:</source>
         <translation>Različica:</translation>
     </message>
     <message>
-        <location line="+32"/>
+        <location line="+31"/>
         <source>Change Log</source>
         <translation>Dnevnik sprememb</translation>
     </message>
     <message>
-        <location line="+43"/>
+        <location line="+45"/>
         <source>Contact</source>
         <translation>Kontakt</translation>
     </message>
@@ -1564,40 +1974,41 @@ pod pogojem, da niso bili spremenjeni pred refaktoriranjem.</translation>
         <translation>&lt;p&gt;Razvijalci Qt Creator so dosegljivi na poštnem seznamu Qt Creator:&lt;/p&gt;%1&lt;p&gt;ali kanalu #qt-creator na Libera.Chat IRC:&lt;/p&gt;%2&lt;p&gt;Naš sledilnik napak se nahaja na %3.&lt;/p&gt;&lt;p&gt;Uporabite %4 za večje dele besedila.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location line="-859"/>
+        <location line="-809"/>
         <source>Ctrl+L</source>
         <translation>Ctrl+L</translation>
     </message>
     <message>
-        <location line="+67"/>
-        <location filename="../../../src/plugins/coreplugin/outputpanemanager.cpp" line="-30"/>
+        <location line="+65"/>
+        <location filename="../../../src/plugins/coreplugin/outputpanemanager.cpp" line="-27"/>
         <source>Minimize</source>
         <translation>Pomanjšaj</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+2"/>
         <source>Ctrl+M</source>
         <translation>Ctrl+M</translation>
     </message>
     <message>
-        <location line="+4"/>
+        <location line="+5"/>
         <source>Zoom</source>
         <translation>Povečava</translation>
     </message>
     <message>
         <location line="+7"/>
+        <location filename="../../../src/plugins/coreplugin/windowsupport.cpp" line="+135"/>
         <source>Full Screen</source>
         <translation>Celozaslonski način</translation>
     </message>
     <message>
-        <location line="+92"/>
+        <location line="+126"/>
         <source>About &amp;Plugins...</source>
         <translation>O &amp;vstavkih …</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/editormanager/openeditorsview.cpp" line="+26"/>
-        <location line="+88"/>
-        <location filename="../../../src/plugins/coreplugin/locator/opendocumentsfilter.cpp" line="+24"/>
+        <location filename="../../../src/plugins/coreplugin/editormanager/openeditorsview.cpp" line="+76"/>
+        <location line="+240"/>
+        <location filename="../../../src/plugins/coreplugin/locator/opendocumentsfilter.cpp" line="+30"/>
         <source>Open Documents</source>
         <translation>Odprti dokumenti</translation>
     </message>
@@ -1612,7 +2023,7 @@ pod pogojem, da niso bili spremenjeni pred refaktoriranjem.</translation>
         <translation>Alt+O</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/editormanager/editormanager.cpp" line="+823"/>
+        <location filename="../../../src/plugins/coreplugin/editormanager/editormanager.cpp" line="+855"/>
         <source>Close Editor</source>
         <translation>Zapri urejevalnik</translation>
     </message>
@@ -1627,36 +2038,35 @@ pod pogojem, da niso bili spremenjeni pred refaktoriranjem.</translation>
         <translation>Zapri druge urejevalnike</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/editormanager/openeditorswindow.cpp" line="+229"/>
+        <location filename="../../../src/plugins/coreplugin/editormanager/openeditorswindow.cpp" line="+52"/>
         <source>*</source>
         <translation>*</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/loggingviewer.cpp" line="+218"/>
-        <location line="+222"/>
+        <location filename="../../../src/plugins/coreplugin/loggingviewer.cpp" line="+452"/>
+        <location line="+88"/>
         <source>Category</source>
         <translation>Kategorija</translation>
     </message>
     <message>
-        <location line="-221"/>
-        <location line="+221"/>
-        <location filename="../../../src/plugins/coreplugin/mimetypesettings.cpp" line="+327"/>
+        <location line="+0"/>
+        <location filename="../../../src/plugins/coreplugin/mimetypesettings.cpp" line="+381"/>
         <source>Type</source>
         <translation>Vrsta</translation>
     </message>
     <message>
-        <location line="-220"/>
+        <location line="-86"/>
         <source>Color</source>
         <translation>Barva</translation>
     </message>
     <message>
-        <location line="+165"/>
+        <location line="+170"/>
         <source>Logging Category Viewer</source>
         <translation>Pregledovalnik kategorij beleženja</translation>
     </message>
     <message>
-        <location line="+10"/>
-        <location filename="../../../src/plugins/coreplugin/outputwindow.cpp" line="+887"/>
+        <location line="+3"/>
+        <location filename="../../../src/plugins/coreplugin/outputwindow.cpp" line="+927"/>
         <location line="+13"/>
         <location line="+11"/>
         <source>Save Log</source>
@@ -1664,23 +2074,23 @@ pod pogojem, da niso bili spremenjeni pred refaktoriranjem.</translation>
     </message>
     <message>
         <location line="+4"/>
-        <location filename="../../../src/plugins/coreplugin/outputpanemanager.cpp" line="+36"/>
+        <location filename="../../../src/plugins/coreplugin/outputpanemanager.cpp" line="+33"/>
+        <location filename="../../../src/plugins/coreplugin/outputwindow.cpp" line="-617"/>
         <source>Clear</source>
         <translation>Počisti</translation>
     </message>
     <message>
         <location line="+4"/>
-        <location line="+124"/>
+        <location line="+160"/>
         <source>Stop Logging</source>
         <translation>Ustavi beleženje</translation>
     </message>
     <message>
-        <location line="-120"/>
         <source>Toggle Qt Internal Logging</source>
-        <translation>Preklopi interno beleženje Qt</translation>
+        <translation type="vanished">Preklopi interno beleženje Qt</translation>
     </message>
     <message>
-        <location line="+6"/>
+        <location line="-150"/>
         <source>Auto Scroll</source>
         <translation>Samodejno drsenje</translation>
     </message>
@@ -1695,22 +2105,77 @@ pod pogojem, da niso bili spremenjeni pred refaktoriranjem.</translation>
         <translation>Vrste sporočil</translation>
     </message>
     <message>
-        <location line="+11"/>
+        <location line="-121"/>
         <source>Timestamp</source>
         <translation>Časovni žig</translation>
     </message>
     <message>
-        <location line="+0"/>
+        <location line="-411"/>
+        <source>Entry is missing a logging category name.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Entry is missing data.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Invalid level: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+312"/>
+        <source>Debug</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Warning</source>
+        <translation type="unfinished">Opozorilo</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Critical</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Fatal</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Info</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+76"/>
         <source>Message</source>
         <translation>Sporočilo</translation>
     </message>
     <message>
-        <location line="+83"/>
+        <location line="+100"/>
+        <source>Filter Qt Internal Log Categories</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+56"/>
+        <source>Filter categories by regular expression</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Invalid regular expression: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+85"/>
         <source>Start Logging</source>
         <translation>Začni beleženje</translation>
     </message>
     <message>
-        <location line="+19"/>
+        <location line="+37"/>
         <source>Copy Selected Logs</source>
         <translation>Kopiraj izbrane dnevnike</translation>
     </message>
@@ -1718,6 +2183,21 @@ pod pogojem, da niso bili spremenjeni pred refaktoriranjem.</translation>
         <location line="+2"/>
         <source>Copy All</source>
         <translation>Kopiraj vse</translation>
+    </message>
+    <message>
+        <location line="+65"/>
+        <source>Uncheck All %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Check All %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Reset All %1</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+31"/>
@@ -1730,32 +2210,41 @@ pod pogojem, da niso bili spremenjeni pred refaktoriranjem.</translation>
         <translation>Posodobi iz prednastavitve ...</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+51"/>
+        <source>Save Enabled Categories As...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+51"/>
+        <source>Failed to open preset file &quot;%1&quot; for reading.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-172"/>
         <source>Uncheck All</source>
         <translation>Odizberi vse</translation>
     </message>
     <message>
-        <location line="+19"/>
+        <location line="+88"/>
         <source>Save Logs As</source>
         <translation>Shrani dnevnike kot</translation>
     </message>
     <message>
-        <location line="+12"/>
+        <location line="+16"/>
         <source>Failed to write logs to &quot;%1&quot;.</source>
         <translation>Pisanje dnevnikov v »%1« ni uspelo.</translation>
     </message>
     <message>
-        <location line="+8"/>
+        <location line="+9"/>
         <source>Failed to open file &quot;%1&quot; for writing logs.</source>
         <translation>Datoteke »%1« za pisanje dnevnikov ni bilo mogoče odpreti.</translation>
     </message>
     <message>
-        <location line="+7"/>
         <source>Save Enabled Categories As</source>
-        <translation>Shrani omogočene kategorije kot</translation>
+        <translation type="vanished">Shrani omogočene kategorije kot</translation>
     </message>
     <message>
-        <location line="+20"/>
+        <location line="+45"/>
         <source>Failed to write preset file &quot;%1&quot;.</source>
         <translation>Zapis prednastavljene datoteke »%1« ni uspel.</translation>
     </message>
@@ -1765,38 +2254,36 @@ pod pogojem, da niso bili spremenjeni pred refaktoriranjem.</translation>
         <translation>Naloži omogočene kategorije iz</translation>
     </message>
     <message>
-        <location line="+8"/>
         <source>Failed to open preset file &quot;%1&quot; for reading</source>
-        <translation>Prednastavljene datoteke »%1« za branje ni bilo mogoče odpreti</translation>
+        <translation type="vanished">Prednastavljene datoteke »%1« za branje ni bilo mogoče odpreti</translation>
     </message>
     <message>
-        <location line="+8"/>
+        <location line="+17"/>
         <source>Failed to read preset file &quot;%1&quot;: %2</source>
         <translation>Branje prednastavljene datoteke &quot;%1&quot; ni uspelo: %2</translation>
     </message>
     <message>
-        <location line="+28"/>
+        <location line="+29"/>
         <source>Unexpected preset file format.</source>
         <translation>Nepričakovan prednastavljen format datoteke.</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/outputpanemanager.cpp" line="-182"/>
+        <location filename="../../../src/plugins/coreplugin/outputpanemanager.cpp" line="-190"/>
         <source>Show Non-matching Lines</source>
         <translation>Prikaži črte, ki se ne ujemajo</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+8"/>
         <source>Filter output...</source>
         <translation>Izhod filtra ...</translation>
     </message>
     <message>
-        <location line="+142"/>
-        <location line="+48"/>
+        <location line="+153"/>
         <source>Maximize</source>
         <translation>Povečaj</translation>
     </message>
     <message>
-        <location line="-10"/>
+        <location line="+34"/>
         <source>Next Item</source>
         <translation>Naslednja postavka</translation>
     </message>
@@ -1806,12 +2293,17 @@ pod pogojem, da niso bili spremenjeni pred refaktoriranjem.</translation>
         <translation>Predhodna postavka</translation>
     </message>
     <message>
-        <location line="+60"/>
+        <location line="+64"/>
         <source>Out&amp;put</source>
         <translation>Izhod&amp;izhod</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/mimetypesettings.cpp" line="-197"/>
+        <location line="+403"/>
+        <source>Reset to Default</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/coreplugin/mimetypesettings.cpp" line="-255"/>
         <source>MIME Type</source>
         <translation>Zvrst MIME</translation>
     </message>
@@ -1821,33 +2313,36 @@ pod pogojem, da niso bili spremenjeni pred refaktoriranjem.</translation>
         <translation>Rokovalnik</translation>
     </message>
     <message>
-        <location line="+178"/>
+        <location line="+236"/>
         <source>Reset all MIME type definitions to their defaults.</source>
         <translation>Ponastavite vse definicije vrste MIME na privzete vrednosti.</translation>
     </message>
     <message>
         <location line="+1"/>
         <location line="+247"/>
+        <location line="+182"/>
         <source>Reset MIME Types</source>
         <translation>Ponastavi vrste MIME</translation>
     </message>
     <message>
-        <location line="-244"/>
+        <location line="-426"/>
         <source>Reset the assigned handler for all MIME type definitions to the default.</source>
         <translation>Ponastavite dodeljeni upravljalnik za vse definicije vrste MIME na privzeto.</translation>
     </message>
     <message>
         <location line="+1"/>
+        <location line="+426"/>
         <source>Reset Handlers</source>
         <translation>Ponastavi obdelovalce</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="-423"/>
+        <location line="+425"/>
         <source>Patterns:</source>
         <translation>Vzorci:</translation>
     </message>
     <message>
-        <location line="+4"/>
+        <location line="-421"/>
         <source>A semicolon-separated list of wildcarded file names.</source>
         <translation>Seznam imen datotek z nadomestnimi znaki, ločenih s podpičjem.</translation>
     </message>
@@ -1868,32 +2363,34 @@ pod pogojem, da niso bili spremenjeni pred refaktoriranjem.</translation>
     </message>
     <message>
         <location line="+16"/>
+        <location line="+397"/>
         <source>Registered MIME Types</source>
         <translation>Registrirane vrste MIME</translation>
     </message>
     <message>
-        <location line="+3"/>
-        <location filename="../../../src/plugins/coreplugin/plugindialog.cpp" line="+50"/>
+        <location line="-394"/>
+        <location line="+399"/>
+        <location filename="../../../src/plugins/coreplugin/plugindialog.cpp" line="+42"/>
         <source>Details</source>
         <translation>Podrobnosti</translation>
     </message>
     <message>
-        <location line="+211"/>
+        <location line="-188"/>
         <source>Changes will take effect after restart.</source>
         <translation>Spremembe bodo začele veljati po ponovnem zagonu.</translation>
     </message>
     <message>
-        <location line="+162"/>
+        <location line="+168"/>
         <source>MIME Types</source>
         <translation>Zvrsti MIME</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/plugindialog.cpp" line="+1"/>
+        <location filename="../../../src/plugins/coreplugin/plugindialog.cpp" line="+2"/>
         <source>Error Details</source>
         <translation>Podrobnosti napake</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+3"/>
         <source>Install Plugin...</source>
         <translation>Namesti vtičnik ...</translation>
     </message>
@@ -1903,27 +2400,26 @@ pod pogojem, da niso bili spremenjeni pred refaktoriranjem.</translation>
         <translation>Nameščeni vstavki</translation>
     </message>
     <message>
-        <location line="+25"/>
+        <location line="+37"/>
         <source>Plugin changes will take effect after restart.</source>
         <translation>Spremembe vtičnika bodo začele veljati po ponovnem zagonu.</translation>
     </message>
     <message>
-        <location line="+29"/>
         <source>Plugin Details of %1</source>
-        <translation>Podrobnosti vstavka %1</translation>
+        <translation type="vanished">Podrobnosti vstavka %1</translation>
     </message>
     <message>
-        <location line="+20"/>
+        <location line="+35"/>
         <source>Plugin Errors of %1</source>
         <translation>Napake vstavka %1</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/progressmanager/progressview.cpp" line="+23"/>
+        <location filename="../../../src/plugins/coreplugin/progressmanager/progressview.cpp" line="+31"/>
         <source>Processes</source>
         <translation>Procesi</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/dialogs/saveitemsdialog.cpp" line="-70"/>
+        <location filename="../../../src/plugins/coreplugin/dialogs/saveitemsdialog.cpp" line="-72"/>
         <source>&amp;Diff</source>
         <translation>&amp;Razlike</translation>
     </message>
@@ -1933,7 +2429,7 @@ pod pogojem, da niso bili spremenjeni pred refaktoriranjem.</translation>
         <translation>Ne shranite</translation>
     </message>
     <message>
-        <location line="+67"/>
+        <location line="+69"/>
         <source>&amp;Diff &amp;&amp; Cancel</source>
         <translation>&amp;Razl. &amp;&amp; Prekliči</translation>
     </message>
@@ -1964,8 +2460,8 @@ pod pogojem, da niso bili spremenjeni pred refaktoriranjem.</translation>
     </message>
     <message>
         <location line="+0"/>
-        <location filename="../../../src/plugins/coreplugin/mainwindow.cpp" line="-262"/>
-        <location filename="../../../src/plugins/coreplugin/messageoutputwindow.cpp" line="+47"/>
+        <location filename="../../../src/plugins/coreplugin/icore.cpp" line="-294"/>
+        <location filename="../../../src/plugins/coreplugin/messageoutputwindow.cpp" line="+56"/>
         <source>Save</source>
         <translation>Shrani</translation>
     </message>
@@ -1975,7 +2471,7 @@ pod pogojem, da niso bili spremenjeni pred refaktoriranjem.</translation>
         <translation>Shrani izbrane</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/dialogs/shortcutsettings.cpp" line="+134"/>
+        <location filename="../../../src/plugins/coreplugin/dialogs/shortcutsettings.cpp" line="+180"/>
         <source>Click and type the new key sequence.</source>
         <translation>Kliknite in vnesite novo zaporedje tipk.</translation>
     </message>
@@ -1990,12 +2486,12 @@ pod pogojem, da niso bili spremenjeni pred refaktoriranjem.</translation>
         <translation>Zapis</translation>
     </message>
     <message>
-        <location line="+159"/>
+        <location line="+589"/>
         <source>Keyboard</source>
         <translation>Tipkovnica</translation>
     </message>
     <message>
-        <location line="+96"/>
+        <location line="-630"/>
         <source>Invalid key sequence.</source>
         <translation>Neveljavno zaporedje tipk.</translation>
     </message>
@@ -2005,7 +2501,7 @@ pod pogojem, da niso bili spremenjeni pred refaktoriranjem.</translation>
         <translation>Zaporedje tipk ne bo delovalo v urejevalniku.</translation>
     </message>
     <message>
-        <location line="+74"/>
+        <location line="+451"/>
         <source>Import Keyboard Mapping Scheme</source>
         <translation>Uvozi shemo preslikave tipkovnice</translation>
     </message>
@@ -2021,7 +2517,7 @@ pod pogojem, da niso bili spremenjeni pred refaktoriranjem.</translation>
         <translation>Izvozi shemo preslikave tipkovnice</translation>
     </message>
     <message>
-        <location line="+113"/>
+        <location line="-332"/>
         <source>Key sequence:</source>
         <translation>Zaporedje tipk:</translation>
     </message>
@@ -2046,12 +2542,12 @@ pod pogojem, da niso bili spremenjeni pred refaktoriranjem.</translation>
         <translation>Zaporedje tipk ima potencialne konflikte. &lt;a href=&quot;#conflicts&quot;&gt;Pokaži.&lt;/a&gt;</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/find/findtoolbar.cpp" line="+111"/>
+        <location filename="../../../src/plugins/coreplugin/find/findtoolbar.cpp" line="+122"/>
         <source>Search for...</source>
         <translation>Poišči …</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/find/findtoolwindow.cpp" line="+38"/>
+        <location filename="../../../src/plugins/coreplugin/find/findtoolwindow.cpp" line="+37"/>
         <source>Empty search term.</source>
         <translation>Prazen iskalni izraz.</translation>
     </message>
@@ -2066,7 +2562,7 @@ pod pogojem, da niso bili spremenjeni pred refaktoriranjem.</translation>
         <translation>Išči &amp;&amp; &amp;Zamenjaj</translation>
     </message>
     <message>
-        <location line="+6"/>
+        <location line="+7"/>
         <source>Search f&amp;or:</source>
         <translation>Išči:</translation>
     </message>
@@ -2091,25 +2587,25 @@ pod pogojem, da niso bili spremenjeni pred refaktoriranjem.</translation>
         <translation>O&amp;bčutljivo na velikost črk</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/find/findplugin.cpp" line="+265"/>
+        <location filename="../../../src/plugins/coreplugin/find/findplugin.cpp" line="+312"/>
         <source>&amp;Find/Replace</source>
         <translation>&amp;Najdi in zamenjaj</translation>
     </message>
     <message>
-        <location line="+10"/>
+        <location line="+9"/>
         <source>Advanced Find</source>
         <translation>Napredno iskanje</translation>
     </message>
     <message>
-        <location line="+2"/>
-        <location filename="../../../src/plugins/coreplugin/find/findtoolbar.cpp" line="-289"/>
+        <location line="+4"/>
+        <location filename="../../../src/plugins/coreplugin/find/findtoolbar.cpp" line="-333"/>
         <source>Open Advanced Find...</source>
         <translation>Odpri napredno iskanje …</translation>
     </message>
     <message>
         <location line="+1"/>
-        <location filename="../../../src/plugins/coreplugin/find/findtoolbar.cpp" line="-121"/>
-        <location line="+122"/>
+        <location filename="../../../src/plugins/coreplugin/find/findtoolbar.cpp" line="-109"/>
+        <location line="+110"/>
         <source>Advanced...</source>
         <translation>Napredno ...</translation>
     </message>
@@ -2119,54 +2615,54 @@ pod pogojem, da niso bili spremenjeni pred refaktoriranjem.</translation>
         <translation>Ctrl+Shift+F</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/find/findtoolbar.cpp" line="+31"/>
+        <location filename="../../../src/plugins/coreplugin/find/findtoolbar.cpp" line="+33"/>
         <source>Enter Find String</source>
         <translation>Vnesite iskani niz</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+1"/>
         <source>Ctrl+E</source>
         <translation>Ctrl+E</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+8"/>
         <source>Find Next</source>
         <translation>Najdi naslednje</translation>
     </message>
     <message>
-        <location line="+11"/>
+        <location line="+15"/>
         <source>Find Previous</source>
         <translation>Najdi prejšnje</translation>
     </message>
     <message>
-        <location line="+48"/>
+        <location line="+61"/>
         <source>Ctrl+=</source>
         <translation>Ctrl+=</translation>
     </message>
     <message>
-        <location line="+10"/>
+        <location line="+14"/>
         <source>Replace &amp;&amp; Find Previous</source>
         <translation>Zamenjaj in najdi prejšnje</translation>
     </message>
     <message>
-        <location line="-235"/>
-        <location line="+246"/>
+        <location line="-246"/>
+        <location line="+259"/>
         <source>Replace All</source>
         <translation>Zamenjaj vse</translation>
     </message>
     <message>
-        <location line="-296"/>
+        <location line="-309"/>
         <source>Find Flags</source>
         <translation>Poiščite zastave</translation>
     </message>
     <message>
         <location line="+45"/>
-        <location line="+228"/>
+        <location line="+235"/>
         <source>Replace &amp;&amp; Find</source>
         <translation>Zamenjaj in najdi</translation>
     </message>
     <message>
-        <location line="-131"/>
+        <location line="-148"/>
         <location line="+13"/>
         <source>Shift+Enter</source>
         <translation>Shift+Enter</translation>
@@ -2178,12 +2674,12 @@ pod pogojem, da niso bili spremenjeni pred refaktoriranjem.</translation>
         <translation>Shift+Return</translation>
     </message>
     <message>
-        <location line="+31"/>
+        <location line="+28"/>
         <source>Find/Replace</source>
         <translation>Najdi in zamenjaj</translation>
     </message>
     <message>
-        <location line="+46"/>
+        <location line="+57"/>
         <source>Find Next (Selected)</source>
         <translation>Poišči naslednje (izbrano)</translation>
     </message>
@@ -2193,7 +2689,7 @@ pod pogojem, da niso bili spremenjeni pred refaktoriranjem.</translation>
         <translation>Ctrl+F3</translation>
     </message>
     <message>
-        <location line="+4"/>
+        <location line="+5"/>
         <source>Find Previous (Selected)</source>
         <translation>Poišči prejšnje (izbrano)</translation>
     </message>
@@ -2209,39 +2705,40 @@ pod pogojem, da niso bili spremenjeni pred refaktoriranjem.</translation>
     </message>
     <message>
         <location line="+2"/>
+        <location line="+59"/>
         <source>Ctrl+Alt+Return</source>
         <translation>Ctrl+Alt+Return</translation>
     </message>
     <message>
-        <location line="+53"/>
-        <location filename="../../../src/plugins/coreplugin/outputpanemanager.cpp" line="-259"/>
-        <location filename="../../../src/plugins/coreplugin/systemsettings.cpp" line="-115"/>
+        <location line="+13"/>
+        <location filename="../../../src/plugins/coreplugin/outputpanemanager.cpp" line="-672"/>
+        <location filename="../../../src/plugins/coreplugin/systemsettings.cpp" line="-89"/>
         <source>Case Sensitive</source>
         <translation>Občutljivo na velikost črk</translation>
     </message>
     <message>
-        <location line="+8"/>
+        <location line="+9"/>
         <source>Whole Words Only</source>
         <translation>Samo cele besede</translation>
     </message>
     <message>
-        <location line="+8"/>
-        <location filename="../../../src/plugins/coreplugin/outputpanemanager.cpp" line="-6"/>
+        <location line="+9"/>
+        <location filename="../../../src/plugins/coreplugin/outputpanemanager.cpp" line="-5"/>
         <source>Use Regular Expressions</source>
         <translation>Uporabi regularne izraze</translation>
     </message>
     <message>
-        <location line="+8"/>
+        <location line="+9"/>
         <source>Preserve Case when Replacing</source>
         <translation>Pri zamenjavi ohranite ohišje</translation>
     </message>
     <message>
-        <location line="+148"/>
+        <location line="+159"/>
         <source>Replace with...</source>
         <translation>Zamenjaj z...</translation>
     </message>
     <message>
-        <location line="-488"/>
+        <location line="-520"/>
         <source>Find</source>
         <translation>Najdi</translation>
     </message>
@@ -2256,46 +2753,58 @@ pod pogojem, da niso bili spremenjeni pred refaktoriranjem.</translation>
         <translation>Zamenjaj z:</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/find/searchresultwindow.cpp" line="+147"/>
+        <location filename="../../../src/plugins/coreplugin/find/searchresultwindow.cpp" line="+138"/>
+        <location line="+500"/>
+        <location filename="../../../src/plugins/coreplugin/locator/locatorsettingspage.cpp" line="+269"/>
+        <source>Show Paths in Relation to Active Project</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-488"/>
         <source>Filter Results</source>
         <translation>Filtriraj rezultate</translation>
     </message>
     <message>
         <location line="+7"/>
-        <location line="+480"/>
+        <location line="+512"/>
         <source>New Search</source>
         <translation>Novo iskanje</translation>
     </message>
     <message>
-        <location line="-149"/>
+        <location line="-173"/>
         <source>%1 %2</source>
         <translation>%1 %2</translation>
     </message>
     <message>
-        <location line="+123"/>
-        <location filename="../../../src/plugins/coreplugin/foldernavigationwidget.cpp" line="+713"/>
+        <location line="+126"/>
+        <location filename="../../../src/plugins/coreplugin/foldernavigationwidget.cpp" line="+705"/>
         <source>Collapse All</source>
         <translation>Skrči vse</translation>
     </message>
     <message>
-        <location line="+17"/>
+        <location line="+14"/>
+        <source>Show Full Paths</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+24"/>
         <source>History:</source>
         <translation>Zgodovina:</translation>
     </message>
     <message>
-        <location line="+106"/>
+        <location line="-265"/>
         <source>Search Results</source>
         <translation>Rezultati iskanja</translation>
     </message>
     <message>
-        <location line="-611"/>
-        <location line="+491"/>
+        <location line="-271"/>
+        <location line="+501"/>
         <source>Expand All</source>
         <translation>Razširi vse</translation>
     </message>
     <message>
         <location filename="../../../src/plugins/coreplugin/find/findtoolbar.cpp" line="+8"/>
-        <location line="+222"/>
+        <location line="+225"/>
         <source>Replace</source>
         <translation>Zamenjaj</translation>
     </message>
@@ -2315,7 +2824,7 @@ pod pogojem, da niso bili spremenjeni pred refaktoriranjem.</translation>
         <translation>Odpri datoteko »%1« z:</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/foldernavigationwidget.cpp" line="-459"/>
+        <location filename="../../../src/plugins/coreplugin/foldernavigationwidget.cpp" line="-455"/>
         <source>Show Hidden Files</source>
         <translation>Pokaži skrite datoteke</translation>
     </message>
@@ -2341,8 +2850,8 @@ pod pogojem, da niso bili spremenjeni pred refaktoriranjem.</translation>
         <translation>Nova datoteka</translation>
     </message>
     <message>
-        <location line="+154"/>
-        <location line="+80"/>
+        <location line="+152"/>
+        <location line="+78"/>
         <source>New Folder</source>
         <translation>Nova mapa</translation>
     </message>
@@ -2358,13 +2867,13 @@ pod pogojem, da niso bili spremenjeni pred refaktoriranjem.</translation>
     </message>
     <message>
         <location line="+25"/>
-        <location filename="../../../src/plugins/coreplugin/loggingviewer.cpp" line="-86"/>
-        <location line="+8"/>
-        <location line="+27"/>
+        <location filename="../../../src/plugins/coreplugin/loggingviewer.cpp" line="-107"/>
+        <location line="+9"/>
+        <location line="+45"/>
         <location line="+14"/>
-        <location line="+8"/>
-        <location line="+28"/>
-        <location filename="../../../src/plugins/coreplugin/mimetypemagicdialog.cpp" line="+159"/>
+        <location line="+9"/>
+        <location line="+29"/>
+        <location filename="../../../src/plugins/coreplugin/mimetypemagicdialog.cpp" line="+160"/>
         <source>Error</source>
         <translation>Napaka</translation>
     </message>
@@ -2394,27 +2903,27 @@ pod pogojem, da niso bili spremenjeni pred refaktoriranjem.</translation>
         <translation>Domov</translation>
     </message>
     <message>
-        <location line="+144"/>
+        <location line="+145"/>
         <source>Add New...</source>
         <translation>Dodaj novo …</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+8"/>
         <source>Rename...</source>
         <translation>Preimenuj ...</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+8"/>
         <source>Remove...</source>
         <translation>Odstrani...</translation>
     </message>
     <message>
-        <location line="-619"/>
+        <location line="-618"/>
         <source>Synchronize with Editor</source>
         <translation>Uskladi z urejevalnikom</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/locator/ilocatorfilter.cpp" line="+257"/>
+        <location filename="../../../src/plugins/coreplugin/locator/ilocatorfilter.cpp" line="+643"/>
         <source>Filter Configuration</source>
         <translation>Nastavitev filtrov</translation>
     </message>
@@ -2444,23 +2953,21 @@ pod pogojem, da niso bili spremenjeni pred refaktoriranjem.</translation>
         <translation>Splošen filter map</translation>
     </message>
     <message>
-        <location line="+10"/>
         <source>Matches all files from a custom set of directories. Append &quot;+&lt;number&gt;&quot; or &quot;:&lt;number&gt;&quot; to jump to the given line number. Append another &quot;+&lt;number&gt;&quot; or &quot;:&lt;number&gt;&quot; to jump to the column number as well.</source>
-        <translation>Ujema se z vsemi datotekami iz nabora imenikov po meri. Dodajte &quot;+&lt;število&gt;&quot; ali &quot;:&lt;število&gt;&quot;, da skočite na dano številko vrstice. Dodajte še en &quot;+&lt;število&gt;&quot; ali &quot;:&lt;število&gt;&quot;, da skočite tudi na številko stolpca.</translation>
+        <translation type="vanished">Ujema se z vsemi datotekami iz nabora imenikov po meri. Dodajte &quot;+&lt;število&gt;&quot; ali &quot;:&lt;število&gt;&quot;, da skočite na dano številko vrstice. Dodajte še en &quot;+&lt;število&gt;&quot; ali &quot;:&lt;število&gt;&quot;, da skočite tudi na številko stolpca.</translation>
     </message>
     <message>
-        <location line="+267"/>
+        <location line="+273"/>
         <location line="+10"/>
         <source>Select Directory</source>
         <translation>Izberite mapo</translation>
     </message>
     <message>
-        <location line="+38"/>
         <source>%1 filter update: 0 files</source>
-        <translation>Posodobitev filtra %1: 0 datotek</translation>
+        <translation type="vanished">Posodobitev filtra %1: 0 datotek</translation>
     </message>
     <message numerus="yes">
-        <location line="+18"/>
+        <location line="-264"/>
         <source>%1 filter update: %n files</source>
         <translation>
             <numerusform>Posodobitev filtra %1: %n datoteka</numerusform>
@@ -2470,14 +2977,14 @@ pod pogojem, da niso bili spremenjeni pred refaktoriranjem.</translation>
         </translation>
     </message>
     <message>
-        <location line="+10"/>
+        <location line="-5"/>
         <source>%1 filter update: canceled</source>
         <translation>Posodobitev filtra %1: preklicana</translation>
     </message>
     <message>
         <location filename="../../../src/plugins/coreplugin/dialogs/filepropertiesdialog.cpp" line="+69"/>
-        <location filename="../../../src/plugins/coreplugin/locator/directoryfilter.cpp" line="-246"/>
-        <location filename="../../../src/plugins/coreplugin/locator/urllocatorfilter.cpp" line="+36"/>
+        <location filename="../../../src/plugins/coreplugin/locator/directoryfilter.cpp" line="+96"/>
+        <location filename="../../../src/plugins/coreplugin/locator/urllocatorfilter.cpp" line="+33"/>
         <source>Name:</source>
         <translation>Ime:</translation>
     </message>
@@ -2542,7 +3049,13 @@ pod pogojem, da niso bili spremenjeni pred refaktoriranjem.</translation>
         <translation>Zapisljivo:</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+1"/>
+        <source>Executable:</source>
+        <comment>adjective</comment>
+        <translation type="unfinished">Izvršljiva datoteka:</translation>
+    </message>
+    <message>
+        <location line="+1"/>
         <source>Symbolic link:</source>
         <translation>Simbolična povezava:</translation>
     </message>
@@ -2553,7 +3066,7 @@ pod pogojem, da niso bili spremenjeni pred refaktoriranjem.</translation>
         <location line="+50"/>
         <location line="+32"/>
         <location line="+1"/>
-        <location filename="../../../src/plugins/coreplugin/progressmanager/processprogress.cpp" line="+58"/>
+        <location filename="../../../src/plugins/coreplugin/progressmanager/processprogress.cpp" line="+63"/>
         <source>Unknown</source>
         <translation>Neznano</translation>
     </message>
@@ -2594,16 +3107,23 @@ pod pogojem, da niso bili spremenjeni pred refaktoriranjem.</translation>
         <translation>Nedoločeno</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/locator/directoryfilter.cpp" line="+24"/>
-        <location filename="../../../src/plugins/coreplugin/locator/locatorsettingspage.cpp" line="+158"/>
-        <location filename="../../../src/plugins/coreplugin/mimetypesettings.cpp" line="-385"/>
+        <location filename="../../../src/plugins/coreplugin/locator/directoryfilter.cpp" line="-78"/>
+        <source>Locates files from a custom set of directories. Append &quot;+&lt;number&gt;&quot; or &quot;:&lt;number&gt;&quot; to jump to the given line number. Append another &quot;+&lt;number&gt;&quot; or &quot;:&lt;number&gt;&quot; to jump to the column number as well.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+102"/>
+        <location filename="../../../src/plugins/coreplugin/locator/locatorsettingspage.cpp" line="-16"/>
+        <location filename="../../../src/plugins/coreplugin/mimetypesettings.cpp" line="-391"/>
+        <location line="+408"/>
         <source>Add...</source>
         <translation>Dodaj …</translation>
     </message>
     <message>
         <location line="+1"/>
-        <location filename="../../../src/plugins/coreplugin/locator/locatorsettingspage.cpp" line="+41"/>
-        <location filename="../../../src/plugins/coreplugin/mimetypesettings.cpp" line="+3"/>
+        <location filename="../../../src/plugins/coreplugin/locator/locatorsettingspage.cpp" line="+55"/>
+        <location filename="../../../src/plugins/coreplugin/mimetypesettings.cpp" line="-405"/>
+        <location line="+406"/>
         <source>Edit...</source>
         <translation>Urejanje …</translation>
     </message>
@@ -2618,7 +3138,7 @@ pod pogojem, da niso bili spremenjeni pred refaktoriranjem.</translation>
         <translation>Orodja, ki bodo prikazana neposredno v meniju zunanjih orodij.</translation>
     </message>
     <message>
-        <location line="+199"/>
+        <location line="+207"/>
         <source>New Category</source>
         <translation>Nova kategorija</translation>
     </message>
@@ -2653,7 +3173,8 @@ pod pogojem, da niso bili spremenjeni pred refaktoriranjem.</translation>
         <location filename="../../../src/plugins/coreplugin/locator/directoryfilter.cpp" line="+1"/>
         <location filename="../../../src/plugins/coreplugin/locator/locatorsettingspage.cpp" line="-3"/>
         <location filename="../../../src/plugins/coreplugin/locator/urllocatorfilter.cpp" line="+20"/>
-        <location filename="../../../src/plugins/coreplugin/mimetypesettings.cpp" line="+3"/>
+        <location filename="../../../src/plugins/coreplugin/mimetypesettings.cpp" line="-403"/>
+        <location line="+404"/>
         <source>Remove</source>
         <translation>Odstrani</translation>
     </message>
@@ -2724,13 +3245,13 @@ pod pogojem, da niso bili spremenjeni pred refaktoriranjem.</translation>
     <message>
         <location line="+12"/>
         <location line="+413"/>
-        <location filename="../../../src/plugins/coreplugin/systemsettings.cpp" line="+153"/>
+        <location filename="../../../src/plugins/coreplugin/systemsettings.cpp" line="+126"/>
         <source>No changes to apply.</source>
         <translation>Ni sprememb za uporabo.</translation>
     </message>
     <message>
         <location line="-410"/>
-        <location filename="../../../src/plugins/coreplugin/systemsettings.cpp" line="-308"/>
+        <location filename="../../../src/plugins/coreplugin/systemsettings.cpp" line="-239"/>
         <source>Change...</source>
         <translation>Spremeni ...</translation>
     </message>
@@ -2761,10 +3282,14 @@ pod pogojem, da niso bili spremenjeni pred refaktoriranjem.</translation>
     </message>
     <message>
         <location line="+1"/>
-        <location filename="../../../src/plugins/coreplugin/dialogs/filepropertiesdialog.cpp" line="-115"/>
-        <location filename="../../../src/plugins/coreplugin/locator/spotlightlocatorfilter.cpp" line="+270"/>
+        <location filename="../../../src/plugins/coreplugin/locator/spotlightlocatorfilter.cpp" line="+223"/>
         <source>Executable:</source>
-        <translation>Izvršljiva datoteka:</translation>
+        <comment>noun</comment>
+        <translation type="unfinished">Izvršljiva datoteka:</translation>
+    </message>
+    <message>
+        <source>Executable:</source>
+        <translation type="vanished">Izvršljiva datoteka:</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2784,7 +3309,7 @@ pod pogojem, da niso bili spremenjeni pred refaktoriranjem.</translation>
     </message>
     <message>
         <location line="+1"/>
-        <location filename="../../../src/plugins/coreplugin/systemsettings.cpp" line="+6"/>
+        <location filename="../../../src/plugins/coreplugin/systemsettings.cpp" line="+5"/>
         <source>Environment:</source>
         <translation>Okolje:</translation>
     </message>
@@ -2826,7 +3351,7 @@ To do this, you type this shortcut and a space in the Locator entry field, and t
 Za uporabo v polje Iskalnika vtipkajte to bližnjico in presledek ter nato iskano besedo.</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/locator/filesystemfilter.cpp" line="+53"/>
+        <location filename="../../../src/plugins/coreplugin/locator/filesystemfilter.cpp" line="+121"/>
         <source>Files in File System</source>
         <translation>Datoteke v datotečnem sistemu</translation>
     </message>
@@ -2836,32 +3361,56 @@ Za uporabo v polje Iskalnika vtipkajte to bližnjico in presledek ter nato iskan
         <translation>Odpre datoteko, podano z relativno potjo do trenutnega dokumenta ali absolutno potjo. &quot;~&quot; se nanaša na vaš domači imenik. Imate možnost ustvariti datoteko, če še ne obstaja.</translation>
     </message>
     <message>
-        <location line="+91"/>
         <source>Create and Open &quot;%1&quot;</source>
-        <translation>Ustvari in odpri »%1«</translation>
+        <translation type="vanished">Ustvari in odpri »%1«</translation>
     </message>
     <message>
-        <location line="+29"/>
+        <location line="-46"/>
         <source>Create File</source>
         <translation>Ustvari datoteko</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="-13"/>
         <source>Create &quot;%1&quot;?</source>
         <translation>Ustvariti »%1«?</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+6"/>
         <source>Always create</source>
         <translation>Vedno ustvarjaj</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="-1"/>
         <source>Create</source>
         <translation>Ustvarjanje</translation>
     </message>
     <message>
-        <location line="+34"/>
+        <location line="+12"/>
+        <source>Cannot Create File</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Cannot create file &quot;%1&quot;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+15"/>
+        <source>Create Directory</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+164"/>
+        <source>Create and Open File &quot;%1&quot;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+17"/>
+        <source>Create Directory &quot;%1&quot;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+58"/>
         <source>Include hidden files</source>
         <translation>Vključi skrite datoteke</translation>
     </message>
@@ -2871,12 +3420,12 @@ Za uporabo v polje Iskalnika vtipkajte to bližnjico in presledek ter nato iskan
         <translation>Filter:</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/locator/locatorfiltersfilter.cpp" line="+21"/>
+        <location filename="../../../src/plugins/coreplugin/locator/locatorfiltersfilter.cpp" line="+20"/>
         <source>Available filters</source>
         <translation>Razpoložljivi filtri</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/locator/locatorwidget.cpp" line="+563"/>
+        <location filename="../../../src/plugins/coreplugin/locator/locatorwidget.cpp" line="+557"/>
         <source>Open as Centered Popup</source>
         <translation>Odpri kot sredinsko pojavno okno</translation>
     </message>
@@ -2886,12 +3435,12 @@ Za uporabo v polje Iskalnika vtipkajte to bližnjico in presledek ter nato iskan
         <translation>Osveži</translation>
     </message>
     <message>
-        <location line="+102"/>
+        <location line="+89"/>
         <source>Type to locate (%1)</source>
         <translation>Tipkajte za iskanje (%1)</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/locator/locator.cpp" line="+62"/>
+        <location filename="../../../src/plugins/coreplugin/locator/locator.cpp" line="+67"/>
         <source>Web Search</source>
         <translation>Spletno iskanje</translation>
     </message>
@@ -2901,12 +3450,22 @@ Za uporabo v polje Iskalnika vtipkajte to bližnjico in presledek ter nato iskan
         <translation>Napake projekta Qt</translation>
     </message>
     <message>
-        <location line="+41"/>
+        <location line="+6"/>
+        <source>Triggers a web search with the selected search engine.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Triggers a search in the Qt bug tracker.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+27"/>
         <source>Locate...</source>
         <translation>Lociraj …</translation>
     </message>
     <message>
-        <location line="+147"/>
+        <location line="+143"/>
         <source>&lt;html&gt;&lt;body style=&quot;color:#909090; font-size:14px&quot;&gt;&lt;div align=&apos;center&apos;&gt;&lt;div style=&quot;font-size:20px&quot;&gt;Open a document&lt;/div&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;hr/&gt;&lt;div style=&quot;margin-top: 5px&quot;&gt;&amp;bull; File &gt; Open File (%1)&lt;/div&gt;&lt;div style=&quot;margin-top: 5px&quot;&gt;&amp;bull; File &gt; Examples &lt;/div&gt;&lt;div style=&quot;margin-top: 5px&quot;&gt;&amp;bull; File &gt; Recent Files&lt;/div&gt;&lt;div style=&quot;margin-top: 5px&quot;&gt;&amp;bull; Drag and drop files here&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;body style=&quot;color:#909090; font-size:14px&quot;&gt;&lt;div align=&apos;center&apos;&gt;&lt;div style=&quot;font-size:20px&quot;&gt;Odpri dokument&lt;/div&gt;&lt;table&gt; &lt;tr&gt;&lt;td&gt;&lt;hr/&gt;&lt;div style=&quot;margin-top: 5px&quot;&gt;&amp;bull; Datoteka &gt; Odpri datoteko (%1)&lt;/div&gt;&lt;div style=&quot;margin-top: 5px&quot;&gt;&amp;bull; Datoteka &gt; Primeri &lt;/div&gt;&lt;div style=&quot;margin-top: 5px&quot;&gt;&amp;bull; Datoteka &gt; Nedavne datoteke&lt;/div&gt;&lt;div style=&quot;margin-top: 5px&quot;&gt;&amp;bull; Povlecite in spustite datoteke sem&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
@@ -2921,7 +3480,7 @@ Za uporabo v polje Iskalnika vtipkajte to bližnjico in presledek ter nato iskan
         <translation>&lt;div style=&quot;margin-left: 1em&quot;&gt;- vnesite &lt;code&gt;%1&amp;lt;space&amp;gt;&amp;lt;pattern&amp;gt;&lt;/code&gt; za skok na definicijo funkcije&lt;/div&gt;</translation>
     </message>
     <message>
-        <location line="+130"/>
+        <location line="+121"/>
         <source>Updating Locator Caches</source>
         <translation>Posodabljanje predpomnilnikov lokatorja</translation>
     </message>
@@ -2932,13 +3491,13 @@ Za uporabo v polje Iskalnika vtipkajte to bližnjico in presledek ter nato iskan
     </message>
     <message>
         <location filename="../../../src/plugins/coreplugin/dialogs/externaltoolconfig.cpp" line="-485"/>
-        <location filename="../../../src/plugins/coreplugin/dialogs/shortcutsettings.cpp" line="-298"/>
+        <location filename="../../../src/plugins/coreplugin/dialogs/shortcutsettings.cpp" line="+161"/>
         <location filename="../../../src/plugins/coreplugin/locator/urllocatorfilter.cpp" line="-1"/>
         <source>Add</source>
         <translation>Dodaj</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/locator/locatorsettingspage.cpp" line="-36"/>
+        <location filename="../../../src/plugins/coreplugin/locator/locatorsettingspage.cpp" line="-50"/>
         <source>Refresh interval:</source>
         <translation>Interval osveževanja:</translation>
     </message>
@@ -2953,7 +3512,12 @@ Za uporabo v polje Iskalnika vtipkajte to bližnjico in presledek ter nato iskan
         <translation> min</translation>
     </message>
     <message>
-        <location line="+65"/>
+        <location line="+9"/>
+        <source>Locator filters show relative paths to the active project when possible.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+71"/>
         <source>Files in Directories</source>
         <translation>Datoteke v imenikih</translation>
     </message>
@@ -2964,7 +3528,7 @@ Za uporabo v polje Iskalnika vtipkajte to bližnjico in presledek ter nato iskan
         <translation>Predloga URL-ja</translation>
     </message>
     <message>
-        <location line="+105"/>
+        <location line="+108"/>
         <source>Name</source>
         <translation>Ime</translation>
     </message>
@@ -2989,7 +3553,7 @@ Za uporabo v polje Iskalnika vtipkajte to bližnjico in presledek ter nato iskan
         <translation>Po meri</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/dialogs/saveitemsdialog.cpp" line="-111"/>
+        <location filename="../../../src/plugins/coreplugin/dialogs/saveitemsdialog.cpp" line="-113"/>
         <source>Save Changes</source>
         <translation>Shrani spremembe</translation>
     </message>
@@ -3004,40 +3568,41 @@ Za uporabo v polje Iskalnika vtipkajte to bližnjico in presledek ter nato iskan
         <translation>Pred gradnjo samodejno shrani vse datoteke</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/dialogs/shortcutsettings.cpp" line="-112"/>
+        <location filename="../../../src/plugins/coreplugin/dialogs/shortcutsettings.cpp" line="-87"/>
         <source>Keyboard Shortcuts</source>
         <translation>Tipkovnične bližnjice</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/actionmanager/commandmappings.cpp" line="+50"/>
-        <location line="+100"/>
+        <location filename="../../../src/plugins/coreplugin/actionmanager/commandmappings.cpp" line="+46"/>
+        <location line="+95"/>
         <source>Command</source>
         <translation>Ukaz</translation>
     </message>
     <message>
-        <location line="-101"/>
-        <location line="+101"/>
+        <location line="-96"/>
+        <location line="+96"/>
         <source>Label</source>
         <translation>Oznaka</translation>
     </message>
     <message>
         <location filename="../../../src/plugins/coreplugin/dialogs/shortcutsettings.cpp" line="+1"/>
-        <location line="+12"/>
+        <location line="+15"/>
         <source>Shortcut</source>
         <translation>Bližnjica</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/actionmanager/commandmappings.cpp" line="-114"/>
+        <location filename="../../../src/plugins/coreplugin/actionmanager/commandmappings.cpp" line="-80"/>
         <source>Command Mappings</source>
         <translation>Preslikava ukazov</translation>
     </message>
     <message>
-        <location line="+12"/>
+        <location line="-17"/>
         <source>Target</source>
         <translation>Cilj</translation>
     </message>
     <message>
         <location line="+4"/>
+        <location filename="../../../src/plugins/coreplugin/loggingviewer.cpp" line="-208"/>
         <source>Reset All</source>
         <translation>Ponastavi vse</translation>
     </message>
@@ -3065,19 +3630,19 @@ Za uporabo v polje Iskalnika vtipkajte to bližnjico in presledek ter nato iskan
     <message>
         <location line="-5"/>
         <location filename="../../../src/plugins/coreplugin/dialogs/externaltoolconfig.cpp" line="+6"/>
-        <location filename="../../../src/plugins/coreplugin/generalsettings.cpp" line="-206"/>
+        <location filename="../../../src/plugins/coreplugin/generalsettings.cpp" line="-278"/>
         <location filename="../../../src/plugins/coreplugin/systemsettings.cpp" line="-1"/>
-        <location line="+6"/>
+        <location line="+8"/>
         <source>Reset</source>
         <translation>Ponastavi</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/coreconstants.h" line="+51"/>
+        <location filename="../../../src/plugins/coreplugin/coreconstants.h" line="+56"/>
         <source>Plain Text Editor</source>
         <translation>Urejevalniku navadnih besedil</translation>
     </message>
     <message>
-        <location line="+38"/>
+        <location line="+39"/>
         <source>Show Left Sidebar</source>
         <translation>Prikaži levo stransko vrstico</translation>
     </message>
@@ -3097,7 +3662,7 @@ Za uporabo v polje Iskalnika vtipkajte to bližnjico in presledek ter nato iskan
         <translation>Skrij desno stransko vrstico</translation>
     </message>
     <message>
-        <location line="+100"/>
+        <location line="+103"/>
         <source>Qt</source>
         <translation>Qt</translation>
     </message>
@@ -3112,13 +3677,18 @@ Za uporabo v polje Iskalnika vtipkajte to bližnjico in presledek ter nato iskan
         <translation>Binarnem urejevalniku</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/dialogs/settingsdialog.cpp" line="+433"/>
+        <location filename="../../../src/plugins/coreplugin/dialogs/settingsdialog.cpp" line="+484"/>
+        <source>Sort categories</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
         <source>Preferences</source>
         <translation>Nastavitve</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/foldernavigationwidget.cpp" line="+492"/>
-        <location filename="../../../src/plugins/coreplugin/locator/locatorwidget.cpp" line="-79"/>
+        <location filename="../../../src/plugins/coreplugin/foldernavigationwidget.cpp" line="+488"/>
+        <location filename="../../../src/plugins/coreplugin/locator/locatorwidget.cpp" line="-66"/>
         <source>Options</source>
         <translation>Možnosti</translation>
     </message>
@@ -3204,7 +3774,7 @@ Za uporabo v polje Iskalnika vtipkajte to bližnjico in presledek ter nato iskan
         <translation>Uredite z vi</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/actionsfilter.cpp" line="+40"/>
+        <location filename="../../../src/plugins/coreplugin/actionsfilter.cpp" line="+50"/>
         <source>Global Actions &amp; Actions from the Menu</source>
         <translation>Globalna dejanja in dejanja iz menija</translation>
     </message>
@@ -3214,7 +3784,17 @@ Za uporabo v polje Iskalnika vtipkajte to bližnjico in presledek ter nato iskan
         <translation>Sproži dejanje. Če je iz menija, se ujema s katerim koli delom hierarhije menija, ločenim z &quot;&gt;&quot;. Na primer &quot;sess def&quot; se ujema z &quot;Datoteka &gt; Seje &gt; Privzeto&quot;.</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/coreplugin.cpp" line="+145"/>
+        <location filename="../../../src/plugins/coreplugin/coreplugin.cpp" line="+156"/>
+        <source>Proxy Authentication Required</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Do not ask again.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+24"/>
         <source>No themes found in installation.</source>
         <translation>Med namestitvijo ni bilo najdenih tem.</translation>
     </message>
@@ -3264,22 +3844,22 @@ Za uporabo v polje Iskalnika vtipkajte to bližnjico in presledek ter nato iskan
         <translation>Ali %1 deluje v sistemu Windows?</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+6"/>
         <source>Is %1 running on OS X?</source>
         <translation>Ali %1 deluje v OS X?</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+4"/>
         <source>Is %1 running on Linux?</source>
         <translation>Ali %1 deluje v sistemu Linux?</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+4"/>
         <source>Is %1 running on any unix-based platform?</source>
         <translation>Ali %1 deluje na kateri koli platformi, ki temelji na unixu?</translation>
     </message>
     <message>
-        <location line="+4"/>
+        <location line="+6"/>
         <source>The path list separator for the platform.</source>
         <translation>Ločilo seznama poti za platformo.</translation>
     </message>
@@ -3290,8 +3870,18 @@ Za uporabo v polje Iskalnika vtipkajte to bližnjico in presledek ter nato iskan
     </message>
     <message>
         <location line="+3"/>
+        <source>The path to the running %1 itself.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
         <source>The directory where %1 finds its pre-installed resources.</source>
         <translation>Imenik, kjer %1 najde svoje vnaprej nameščene vire.</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>The directory where %1 puts custom user data.</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
@@ -3314,12 +3904,17 @@ Za uporabo v polje Iskalnika vtipkajte to bližnjico in presledek ter nato iskan
         <translation>Komentar.</translation>
     </message>
     <message>
-        <location line="+43"/>
+        <location line="+2"/>
+        <source>Convert string to pure ASCII.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+50"/>
         <source>%1 &gt; %2 Preferences...</source>
         <translation>%1 &gt; %2 Nastavitve ...</translation>
     </message>
     <message>
-        <location line="+103"/>
+        <location line="+96"/>
         <source>Create Folder</source>
         <translation>Ustvari mapo</translation>
     </message>
@@ -3346,14 +3941,14 @@ Ne boste mogli shraniti nobenih nastavitev %2.</translation>
         <translation>Datoteka ni veljavna.</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+4"/>
         <source>Error reading settings file &quot;%1&quot;: %2
 You will likely experience further problems using this instance of %3.</source>
         <translation>Napaka pri branju nastavitvene datoteke &quot;%1&quot;: %2
 Pri uporabi tega primerka %3 boste verjetno imeli nadaljnje težave.</translation>
     </message>
     <message>
-        <location line="+13"/>
+        <location line="+14"/>
         <source>%1 collects crash reports for the sole purpose of fixing bugs. To disable this feature go to %2.</source>
         <translation>%1 zbira poročila o zrušitvah z edinim namenom odpravljanja napak. Če želite onemogočiti to funkcijo, pojdite na %2.</translation>
     </message>
@@ -3363,7 +3958,7 @@ Pri uporabi tega primerka %3 boste verjetno imeli nadaljnje težave.</translatio
         <translation>%1 lahko zbira poročila o zrušitvah z edinim namenom odpravljanja napak. Če želite omogočiti to funkcijo, pojdite na %2.</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+6"/>
         <source> &gt; Preferences &gt; Environment &gt; System</source>
         <translation> &gt; Nastavitve &gt; Okolje &gt; Sistem</translation>
     </message>
@@ -3378,22 +3973,22 @@ Pri uporabi tega primerka %3 boste verjetno imeli nadaljnje težave.</translatio
         <translation>%1 uporablja Google Crashpad za zbiranje zrušitev in njihovo pošiljanje našemu zaledju v obdelavo. Crashpad lahko zajame poljubno vsebino iz pomnilnika zrušenega procesa, vključno z uporabniško občutljivimi informacijami, URL-ji in katero koli drugo vsebino, ki so jo uporabniki zaupali %1. Zbrana poročila o zrušitvah pa se uporabljajo samo za odpravljanje napak.</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+6"/>
         <source>More information:</source>
         <translation>Več informacij:</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+3"/>
         <source>Crashpad Overview</source>
         <translation>Crashpad Pregled</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+3"/>
         <source>%1 security policy</source>
         <translation>Varnostni pravilnik %1</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/designmode.cpp" line="+69"/>
+        <location filename="../../../src/plugins/coreplugin/designmode.cpp" line="+88"/>
         <source>Design</source>
         <translation>Oblikovanje</translation>
     </message>
@@ -3408,7 +4003,7 @@ Pri uporabi tega primerka %3 boste verjetno imeli nadaljnje težave.</translatio
         <translation>Dodajte datoteke v nadzor različic (%1)</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/dialogs/codecselector.cpp" line="+43"/>
+        <location filename="../../../src/plugins/coreplugin/dialogs/codecselector.cpp" line="+68"/>
         <source>Text Encoding</source>
         <translation>Nabor znakov</translation>
     </message>
@@ -3474,12 +4069,12 @@ Pri uporabi tega primerka %3 boste verjetno imeli nadaljnje težave.</translatio
         <translation>Podprte platforme</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/dialogs/promptoverwritedialog.cpp" line="+48"/>
+        <location filename="../../../src/plugins/coreplugin/dialogs/promptoverwritedialog.cpp" line="+61"/>
         <source>Overwrite Existing Files</source>
         <translation>Nadomesti obstoječe datoteke</translation>
     </message>
     <message>
-        <location line="+31"/>
+        <location line="+33"/>
         <source>The following files already exist in the folder
 %1.
 Would you like to overwrite them?</source>
@@ -3490,7 +4085,7 @@ Ali jih želite nadomestiti?</translation>
     <message>
         <location filename="../../../src/plugins/coreplugin/dialogs/readonlyfilesdialog.cpp" line="+1"/>
         <location line="+299"/>
-        <location filename="../../../src/plugins/coreplugin/editormanager/editormanager.cpp" line="-857"/>
+        <location filename="../../../src/plugins/coreplugin/editormanager/editormanager.cpp" line="-885"/>
         <location filename="../../../src/plugins/coreplugin/editortoolbar.cpp" line="-5"/>
         <source>Make Writable</source>
         <translation>Naredi zapisljivo</translation>
@@ -3590,20 +4185,19 @@ Sistem za nadzor različic ni bil najden.</translation>
         <translation>Spremeni &amp;dovoljenje</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+8"/>
         <source>Select all, if possible: </source>
         <translation>Izberite vse, če je mogoče: </translation>
     </message>
     <message>
-        <location line="+83"/>
+        <location line="+86"/>
         <source>The following files are not checked out yet.
 Do you want to check them out now?</source>
         <translation>Naslednje datoteke še niso odjavljene.
 Ali jih želite zdaj preveriti?</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/dialogs/restartdialog.cpp" line="+16"/>
-        <location filename="../../../src/plugins/coreplugin/generalsettings.cpp" line="+18"/>
+        <location filename="../../../src/plugins/coreplugin/icore.cpp" line="-943"/>
         <source>Restart Required</source>
         <translation>Potreben je ponovni zagon</translation>
     </message>
@@ -3618,7 +4212,7 @@ Ali jih želite zdaj preveriti?</translation>
         <translation>Ponovno zaženi zdaj</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/editormanager/documentmodel.cpp" line="+294"/>
+        <location filename="../../../src/plugins/coreplugin/editormanager/documentmodel.cpp" line="+288"/>
         <source>&lt;no document&gt;</source>
         <translation>&lt;brez dokumenta&gt;</translation>
     </message>
@@ -3633,17 +4227,17 @@ Ali jih želite zdaj preveriti?</translation>
         <translation>Urejevalnik sistema</translation>
     </message>
     <message>
-        <location line="+12"/>
+        <location line="+10"/>
         <source>Could not open URL %1.</source>
         <translation>URL-ja %1 ni bilo mogoče odpreti.</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/externaltool.cpp" line="+592"/>
+        <location filename="../../../src/plugins/coreplugin/externaltool.cpp" line="+590"/>
         <source>Could not find executable for &quot;%1&quot; (expanded &quot;%2&quot;)</source>
         <translation>Ni bilo mogoče najti izvedljive datoteke za &quot;%1&quot; (razširjeno &quot;%2&quot;)</translation>
     </message>
     <message>
-        <location line="+52"/>
+        <location line="+50"/>
         <source>Starting external tool &quot;%1&quot;</source>
         <translation>Zagon zunanjega orodja &quot;%1&quot;</translation>
     </message>
@@ -3658,7 +4252,7 @@ Ali jih želite zdaj preveriti?</translation>
         <translation>»%1« se je končal z napako</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/externaltoolmanager.cpp" line="+60"/>
+        <location filename="../../../src/plugins/coreplugin/externaltoolmanager.cpp" line="+59"/>
         <source>&amp;External</source>
         <translation>&amp;Zunanja</translation>
     </message>
@@ -3673,7 +4267,7 @@ Ali jih želite zdaj preveriti?</translation>
         <translation>Napaka: zunanje orodje v %1 ima podvojeno identifikacijo</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/fileutils.cpp" line="+42"/>
+        <location filename="../../../src/plugins/coreplugin/fileutils.cpp" line="+60"/>
         <source>Launching a file browser failed</source>
         <translation>Zagon upravljalnika datotek ni uspel</translation>
     </message>
@@ -3700,27 +4294,25 @@ Ali jih želite zdaj preveriti?</translation>
 %2</translation>
     </message>
     <message>
-        <location line="+16"/>
         <source>Launching Windows Explorer Failed</source>
-        <translation>Zaganjanje Windows Explorer-ja ni uspelo</translation>
+        <translation type="vanished">Zaganjanje Windows Explorer-ja ni uspelo</translation>
     </message>
     <message>
-        <location line="+1"/>
         <source>Could not find explorer.exe in path to launch Windows Explorer.</source>
-        <translation>V poti ni bilo moč najti explorer.exe in zato ni bilo moč zagnati Windows Explorer.</translation>
+        <translation type="vanished">V poti ni bilo moč najti explorer.exe in zato ni bilo moč zagnati Windows Explorer.</translation>
     </message>
     <message>
-        <location line="+18"/>
+        <location line="+30"/>
         <source>The command for file browser is not set.</source>
         <translation>Ukaz za brskalnik datotek ni nastavljen.</translation>
     </message>
     <message>
-        <location line="+8"/>
+        <location line="+4"/>
         <source>Error while starting file browser.</source>
         <translation>Napaka pri zagonu brskalnika datotek.</translation>
     </message>
     <message>
-        <location line="+24"/>
+        <location line="+23"/>
         <source>Find in This Directory...</source>
         <translation>Najdi v tem imeniku ...</translation>
     </message>
@@ -3772,12 +4364,12 @@ Ali jih želite zdaj preveriti?</translation>
         <translation>Datoteke »%1« ni bilo mogoče odstraniti.</translation>
     </message>
     <message>
-        <location line="+37"/>
+        <location line="+40"/>
         <source>Failed to rename the include guard in file &quot;%1&quot;.</source>
         <translation>Preimenovanje vključitvenega ščitnika v datoteko »%1« ni uspelo.</translation>
     </message>
     <message numerus="yes">
-        <location filename="../../../src/plugins/coreplugin/find/currentdocumentfind.cpp" line="+130"/>
+        <location filename="../../../src/plugins/coreplugin/find/currentdocumentfind.cpp" line="+131"/>
         <source>%n occurrences replaced.</source>
         <translation>
             <numerusform>Zamenjanih %n pojavitev.</numerusform>
@@ -3787,7 +4379,7 @@ Ali jih želite zdaj preveriti?</translation>
         </translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/find/ifindfilter.cpp" line="+323"/>
+        <location filename="../../../src/plugins/coreplugin/find/ifindfilter.cpp" line="+369"/>
         <source>Case sensitive</source>
         <translation>Razlikuje med velikimi in malimi črkami</translation>
     </message>
@@ -3872,7 +4464,7 @@ Ali jih želite zdaj preveriti?</translation>
         <translation>Nadaljuj</translation>
     </message>
     <message>
-        <location line="+179"/>
+        <location line="+184"/>
         <source>Search was canceled.</source>
         <translation>Iskanje je bilo preklicano.</translation>
     </message>
@@ -3897,7 +4489,7 @@ Ali jih želite zdaj preveriti?</translation>
         <translation>Ni zadetkov.</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/icore.cpp" line="+294"/>
+        <location filename="../../../src/plugins/coreplugin/icore.cpp" line="-415"/>
         <source>Configure...</source>
         <comment>msgShowOptionsDialog</comment>
         <translation>Konfiguriraj ...</translation>
@@ -3915,37 +4507,35 @@ Ali jih želite zdaj preveriti?</translation>
         <translation>Odprite pogovorno okno Možnosti.</translation>
     </message>
     <message>
-        <location line="+315"/>
         <source> (%1)</source>
-        <translation> (%1)</translation>
+        <translation type="vanished"> (%1)</translation>
     </message>
     <message>
-        <location line="+1"/>
         <source>%1 %2%3</source>
-        <translation>%1 %2%3</translation>
+        <translation type="vanished">%1 %2%3</translation>
     </message>
     <message>
-        <location line="+10"/>
+        <location line="+759"/>
         <source>Based on Qt %1 (%2, %3)</source>
         <translation>Na podlagi Qt %1 (%2, %3)</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/idocument.cpp" line="+618"/>
+        <location filename="../../../src/plugins/coreplugin/idocument.cpp" line="+672"/>
         <source>File was restored from auto-saved copy. Select Save to confirm or Revert to Saved to discard changes.</source>
         <translation>Datoteka je bila obnovljena iz samodejno shranjene kopije. Izberite Shrani, da potrdite, ali Povrni na Shranjeno, da zavržete spremembe.</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/iwizardfactory.cpp" line="+186"/>
+        <location filename="../../../src/plugins/coreplugin/iwizardfactory.cpp" line="+199"/>
         <source>Factory with id=&quot;%1&quot; already registered. Deleting.</source>
         <translation>Tovarna z id=&quot;%1&quot; je že registrirana. Brisanje.</translation>
     </message>
     <message>
-        <location line="+218"/>
+        <location line="+230"/>
         <source>Reload All Wizards</source>
         <translation>Ponovno naloži vse čarovnike</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+12"/>
         <source>Inspect Wizard State</source>
         <translation>Preglejte stanje čarovnika</translation>
     </message>
@@ -3982,22 +4572,22 @@ Do you want to kill it?</source>
 Ali ga hočeš ubiti?</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+3"/>
         <source>Kill Previous Process?</source>
         <translation>Ubiti prejšnji proces?</translation>
     </message>
     <message>
-        <location line="+48"/>
+        <location line="+46"/>
         <source>Could not find executable for &quot;%1&quot;.</source>
         <translation>Ni bilo mogoče najti izvedljive datoteke za &quot;%1&quot;.</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+6"/>
         <source>Starting command &quot;%1&quot;.</source>
         <translation>Zagon ukaza &quot;%1&quot;.</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/locator/externaltoolsfilter.cpp" line="+20"/>
+        <location filename="../../../src/plugins/coreplugin/locator/externaltoolsfilter.cpp" line="+21"/>
         <source>Run External Tool</source>
         <translation>Zaženite zunanje orodje</translation>
     </message>
@@ -4007,7 +4597,7 @@ Ali ga hočeš ubiti?</translation>
         <translation>Zažene zunanje orodje, ki ste ga nastavili v nastavitvah (Okolje &gt; Zunanja orodja).</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/locator/javascriptfilter.cpp" line="+20"/>
+        <location filename="../../../src/plugins/coreplugin/locator/javascriptfilter.cpp" line="+360"/>
         <source>Evaluate JavaScript</source>
         <translation>Ocenite JavaScript</translation>
     </message>
@@ -4017,28 +4607,43 @@ Ali ga hočeš ubiti?</translation>
         <translation>Ocenjuje poljubne izraze JavaScript in kopira rezultat.</translation>
     </message>
     <message>
-        <location line="+34"/>
+        <location line="+18"/>
         <source>Reset Engine</source>
         <translation>Ponastavi motor</translation>
     </message>
     <message>
-        <location line="+4"/>
+        <location line="-58"/>
         <source>Engine aborted after timeout.</source>
         <translation>Motor prekinjen po časovni omejitvi.</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="-190"/>
+        <source>The evaluation was interrupted.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Engine reinitialized properly.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location line="+1"/>
+        <source>Engine did not reinitialize properly.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+277"/>
+        <location line="+4"/>
         <source>Copy to clipboard: %1</source>
         <translation>Kopiraj v odložišče: %1</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/locator/spotlightlocatorfilter.cpp" line="-198"/>
+        <location filename="../../../src/plugins/coreplugin/locator/spotlightlocatorfilter.cpp" line="-74"/>
         <source>Locator: Error occurred when running &quot;%1&quot;.</source>
         <translation>Lokator: Pri izvajanju »%1« je prišlo do napake.</translation>
     </message>
     <message>
-        <location line="+125"/>
+        <location line="-71"/>
         <source>Locator query string.</source>
         <translation>Poizvedbeni niz lokatorja.</translation>
     </message>
@@ -4058,17 +4663,26 @@ Ali ga hočeš ubiti?</translation>
         <translation>Poizvedbeni niz lokatorja kot regularni izraz.</translation>
     </message>
     <message>
-        <location line="+15"/>
+        <location line="+14"/>
         <source>File Name Index</source>
         <translation>Indeks imen datotek</translation>
     </message>
     <message>
-        <location line="+2"/>
-        <source>Matches files from a global file system index (Spotlight, Locate, Everything). Append &quot;+&lt;number&gt;&quot; or &quot;:&lt;number&gt;&quot; to jump to the given line number. Append another &quot;+&lt;number&gt;&quot; or &quot;:&lt;number&gt;&quot; to jump to the column number as well.</source>
-        <translation>Ujema datoteke iz globalnega indeksa datotečnega sistema (Spotlight, Locate, Everything). Dodajte &quot;+&lt;število&gt;&quot; ali &quot;:&lt;število&gt;&quot;, da skočite na dano številko vrstice. Dodajte še en &quot;+&lt;število&gt;&quot; ali &quot;:&lt;število&gt;&quot;, da skočite tudi na številko stolpca.</translation>
+        <location line="+1"/>
+        <source>Locates files from a global file system index (Spotlight, Locate, Everything). Append &quot;+&lt;number&gt;&quot; or &quot;:&lt;number&gt;&quot; to jump to the given line number. Append another &quot;+&lt;number&gt;&quot; or &quot;:&lt;number&gt;&quot; to jump to the column number as well.</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+43"/>
+        <location line="+113"/>
+        <source>Sort results</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Matches files from a global file system index (Spotlight, Locate, Everything). Append &quot;+&lt;number&gt;&quot; or &quot;:&lt;number&gt;&quot; to jump to the given line number. Append another &quot;+&lt;number&gt;&quot; or &quot;:&lt;number&gt;&quot; to jump to the column number as well.</source>
+        <translation type="vanished">Ujema datoteke iz globalnega indeksa datotečnega sistema (Spotlight, Locate, Everything). Dodajte &quot;+&lt;število&gt;&quot; ali &quot;:&lt;število&gt;&quot;, da skočite na dano številko vrstice. Dodajte še en &quot;+&lt;število&gt;&quot; ali &quot;:&lt;število&gt;&quot;, da skočite tudi na številko stolpca.</translation>
+    </message>
+    <message>
+        <location line="+4"/>
         <source>Case sensitive:</source>
         <translation>Razlikuje med velikimi in malimi črkami:</translation>
     </message>
@@ -4095,19 +4709,23 @@ Dvokliknite za urejanje predmeta.</translation>
         <translation>URL-ji:</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/messageoutputwindow.cpp" line="+45"/>
+        <location filename="../../../src/plugins/coreplugin/messageoutputwindow.cpp" line="-22"/>
         <source>Serial Terminal</source>
         <translation>Serijski terminal</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/mimetypemagicdialog.cpp" line="-128"/>
+        <location filename="../../../src/plugins/coreplugin/mimetypemagicdialog.cpp" line="-129"/>
         <source>Add Magic Header</source>
         <translation>Dodaj čarobno glavo</translation>
     </message>
     <message>
-        <location line="+3"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;MIME magic data is interpreted as defined by the Shared MIME-info Database specification from &lt;a href=&quot;http://standards.freedesktop.org/shared-mime-info-spec/shared-mime-info-spec-latest.html&quot;&gt;freedesktop.org&lt;/a&gt;.&lt;hr/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Čarobni podatki MIME se razlagajo, kot je opredeljeno v specifikaciji skupne baze podatkov MIME-info iz &lt;a href=&quot;http://standards.freedesktop.org/shared-mime-info- spec/shared-mime-info-spec-latest.html&quot;&gt;freedesktop.org&lt;/a&gt;.&lt;hr/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation type="vanished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Čarobni podatki MIME se razlagajo, kot je opredeljeno v specifikaciji skupne baze podatkov MIME-info iz &lt;a href=&quot;http://standards.freedesktop.org/shared-mime-info- spec/shared-mime-info-spec-latest.html&quot;&gt;freedesktop.org&lt;/a&gt;.&lt;hr/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;MIME magic data is interpreted as defined by the Shared MIME-info Database specification from &lt;a href=&quot;https://www.freedesktop.org/wiki/Specifications/shared-mime-info-spec/&quot;&gt;freedesktop.org&lt;/a&gt;.&lt;hr/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+9"/>
@@ -4200,23 +4818,34 @@ Dvokliknite za urejanje predmeta.</translation>
         <translation>Notranja napaka: vrsta ni veljavna</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/modemanager.cpp" line="+219"/>
+        <location filename="../../../src/plugins/coreplugin/modemanager.cpp" line="+215"/>
         <source>Switch to &lt;b&gt;%1&lt;/b&gt; mode</source>
         <translation>Preklopi v način &lt;b&gt;%1&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../../../src/plugins/coreplugin/navigationsubwidget.cpp" line="+167"/>
-        <location filename="../../../src/plugins/coreplugin/navigationwidget.cpp" line="+235"/>
+        <location filename="../../../src/plugins/coreplugin/navigationwidget.cpp" line="+233"/>
         <source>Activate %1 View</source>
         <translation>Aktivirajte pogled %1</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/outputwindow.cpp" line="-619"/>
+        <location filename="../../../src/plugins/coreplugin/outputwindow.cpp" line="-244"/>
+        <source>output.txt</source>
+        <extracomment>default file name suggested for saving text from output views</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+210"/>
         <source>Zoom: %1%</source>
         <translation>Povečava: %1%</translation>
     </message>
+    <message>
+        <location line="+18"/>
+        <source>Save Contents...</source>
+        <translation type="unfinished"></translation>
+    </message>
     <message numerus="yes">
-        <location line="+145"/>
+        <location line="+159"/>
         <source>Elided %n characters due to Application Output settings</source>
         <translation>
             <numerusform>Izločenih %n znakov zaradi nastavitev izpisa aplikacije</numerusform>
@@ -4244,7 +4873,7 @@ Dvokliknite za urejanje predmeta.</translation>
         <translation>Napaka: %L1!</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/patchtool.cpp" line="+52"/>
+        <location filename="../../../src/plugins/coreplugin/patchtool.cpp" line="+39"/>
         <source>Apply Chunk</source>
         <translation>Nanesite Chunk</translation>
     </message>
@@ -4279,22 +4908,30 @@ Dvokliknite za urejanje predmeta.</translation>
         <translation>Ukaz za popravek, konfiguriran v splošnih nastavitvah »Okolje«, ne obstaja.</translation>
     </message>
     <message>
-        <location line="+22"/>
-        <source>Running in %1: %2 %3</source>
-        <translation>Izvajanje v %1: %2 %3</translation>
+        <location line="+23"/>
+        <source>Running in &quot;%1&quot;: %2 %3.</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+6"/>
+        <location line="+17"/>
+        <source>A timeout occurred running &quot;%1&quot;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Running in %1: %2 %3</source>
+        <translation type="vanished">Izvajanje v %1: %2 %3</translation>
+    </message>
+    <message>
+        <location line="-11"/>
         <source>Unable to launch &quot;%1&quot;: %2</source>
         <translation>Ni moč zagnati »%1«: %2</translation>
     </message>
     <message>
-        <location line="+10"/>
         <source>A timeout occurred running &quot;%1&quot;</source>
-        <translation>Pri izvajanju »%1« je prišlo do časovne omejitve</translation>
+        <translation type="vanished">Pri izvajanju »%1« je prišlo do časovne omejitve</translation>
     </message>
     <message>
-        <location line="+18"/>
+        <location line="+28"/>
         <source>&quot;%1&quot; crashed.</source>
         <translation>»%1« se je sesul.</translation>
     </message>
@@ -4304,43 +4941,41 @@ Dvokliknite za urejanje predmeta.</translation>
         <translation>»%1« ni uspelo (izhodna koda %2).</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/plugininstallwizard.cpp" line="-80"/>
+        <location filename="../../../src/plugins/coreplugin/plugininstallwizard.cpp" line="-109"/>
         <source>Source</source>
         <translation>Vir</translation>
     </message>
     <message>
-        <location line="+6"/>
+        <location line="+4"/>
         <source>Choose source location. This can be a plugin library file or a zip file.</source>
         <translation>Izberite izvorno lokacijo. To je lahko datoteka knjižnice vtičnikov ali datoteka zip.</translation>
     </message>
     <message>
-        <location line="+29"/>
+        <location line="+28"/>
         <source>File does not exist.</source>
         <translation>Datoteka ne obstaja.</translation>
     </message>
     <message>
-        <location line="+38"/>
+        <location line="+72"/>
         <source>Check Archive</source>
         <translation>Preverite arhiv</translation>
     </message>
     <message>
-        <location line="+28"/>
+        <location line="+29"/>
         <source>Checking archive...</source>
         <translation>Preverjanje arhiva ...</translation>
     </message>
     <message>
-        <location line="+9"/>
         <source>The file is not an archive.</source>
-        <translation>Datoteka ni arhiv.</translation>
+        <translation type="vanished">Datoteka ni arhiv.</translation>
     </message>
     <message>
-        <location line="+26"/>
-        <location line="+14"/>
+        <location line="-19"/>
         <source>Canceled.</source>
         <translation>Preklicano.</translation>
     </message>
     <message>
-        <location line="-11"/>
+        <location line="+40"/>
         <source>There was an error while unarchiving.</source>
         <translation>Pri odstranjevanju iz arhiva je prišlo do napake.</translation>
     </message>
@@ -4350,27 +4985,27 @@ Dvokliknite za urejanje predmeta.</translation>
         <translation>Arhiv je OK.</translation>
     </message>
     <message>
-        <location line="+43"/>
+        <location line="-82"/>
         <source>Plugin requires an incompatible version of %1 (%2).</source>
         <translation>Vtičnik zahteva nezdružljivo različico %1 (%2).</translation>
     </message>
     <message>
-        <location line="+10"/>
+        <location line="+7"/>
         <source>Did not find %1 plugin.</source>
         <translation>Vtičnika %1 ni bilo mogoče najti.</translation>
     </message>
     <message>
-        <location line="+36"/>
+        <location line="+117"/>
         <source>Install Location</source>
         <translation>Lokacija namestitve</translation>
     </message>
     <message>
-        <location line="+4"/>
+        <location line="+2"/>
         <source>Choose install location.</source>
         <translation>Izberite mesto namestitve.</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+3"/>
         <source>User plugins</source>
         <translation>Uporabniški vtičniki</translation>
     </message>
@@ -4380,22 +5015,22 @@ Dvokliknite za urejanje predmeta.</translation>
         <translation>Vtičnik bo na voljo za vse združljive namestitve %1, vendar samo za trenutnega uporabnika.</translation>
     </message>
     <message>
-        <location line="+11"/>
+        <location line="+7"/>
         <source>%1 installation</source>
         <translation>Namestitev %1</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+2"/>
         <source>The plugin will be available only to this %1 installation, but for all users that can access it.</source>
         <translation>Vtičnik bo na voljo samo za to namestitev %1, vendar za vse uporabnike, ki lahko dostopajo do njega.</translation>
     </message>
     <message>
-        <location line="+27"/>
+        <location line="+30"/>
         <source>Summary</source>
         <translation>Povzetek</translation>
     </message>
     <message>
-        <location line="+13"/>
+        <location line="+10"/>
         <source>&quot;%1&quot; will be installed into &quot;%2&quot;.</source>
         <translation>»%1« bo nameščen v »%2«.</translation>
     </message>
@@ -4430,17 +5065,17 @@ Dvokliknite za urejanje predmeta.</translation>
         <translation>Namestite vtičnik</translation>
     </message>
     <message>
-        <location line="+28"/>
+        <location line="+33"/>
         <source>Failed to Copy Plugin Files</source>
         <translation>Kopiranje datotek vtičnikov ni uspelo</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/progressmanager/progressmanager.cpp" line="+298"/>
+        <location filename="../../../src/plugins/coreplugin/progressmanager/progressmanager.cpp" line="+338"/>
         <source>Toggle Progress Details</source>
         <translation>Preklopi podrobnosti napredka</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/themechooser.cpp" line="+49"/>
+        <location filename="../../../src/plugins/coreplugin/themechooser.cpp" line="+47"/>
         <source>unnamed</source>
         <translation>neimenovano</translation>
     </message>
@@ -4450,12 +5085,12 @@ Dvokliknite za urejanje predmeta.</translation>
         <translation>Trenutna tema: %1</translation>
     </message>
     <message>
-        <location line="+48"/>
+        <location line="+47"/>
         <source>The theme change will take effect after restart.</source>
         <translation>Sprememba teme bo začela veljati po ponovnem zagonu.</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/vcsmanager.cpp" line="+265"/>
+        <location filename="../../../src/plugins/coreplugin/vcsmanager.cpp" line="+263"/>
         <source>%1 repository was detected but %1 is not configured.</source>
         <translation>Zaznan je bil repozitorij %1, vendar %1 ni konfiguriran.</translation>
     </message>
@@ -4465,12 +5100,21 @@ Dvokliknite za urejanje predmeta.</translation>
         <translation>Nadzor različic</translation>
     </message>
     <message>
-        <location line="+1"/>
         <source>Remove the following files from the version control system (%2)? %1Note: This might remove the local file.</source>
-        <translation>Odstranite naslednje datoteke iz sistema za nadzor različic (%2)? %1Opomba: To lahko odstrani lokalno datoteko.</translation>
+        <translation type="vanished">Odstranite naslednje datoteke iz sistema za nadzor različic (%2)? %1Opomba: To lahko odstrani lokalno datoteko.</translation>
     </message>
     <message>
-        <location line="+17"/>
+        <location line="+1"/>
+        <source>Remove the following files from the version control system (%1)?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Note: This might remove the local file.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+16"/>
         <source>Add to Version Control</source>
         <translation>Dodaj v sistem za nadzor različic</translation>
     </message>
@@ -4516,17 +5160,22 @@ v nadzor različic (%2)
 %2</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/versiondialog.cpp" line="+35"/>
+        <location filename="../../../src/plugins/coreplugin/versiondialog.cpp" line="+37"/>
         <source>About %1</source>
         <translation>Približno %1</translation>
     </message>
     <message>
-        <location line="+8"/>
+        <location line="+11"/>
+        <source>Copy and Close</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/coreplugin/icore.cpp" line="+6"/>
         <source>&lt;br/&gt;From revision %1&lt;br/&gt;</source>
         <translation>&lt;br/&gt;Iz revizije %1&lt;br/&gt;</translation>
     </message>
     <message>
-        <location line="+6"/>
+        <location line="+7"/>
         <source>&lt;br/&gt;Built on %1 %2&lt;br/&gt;</source>
         <translation>&lt;br/&gt;Zgrajeno na %1 %2&lt;br/&gt;</translation>
     </message>
@@ -4541,25 +5190,50 @@ v nadzor različic (%2)
         <translation>Logotip Qt ter Qt®, Qt Quick®, Built with Qt®, Boot to Qt®, Qt Quick Compiler®, Qt Enterprise®, Qt Mobile® in Qt Embedded® so registrirane blagovne znamke družbe The Qt Company Ltd.</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/welcomepagehelper.cpp" line="+555"/>
+        <location filename="../../../src/plugins/coreplugin/welcomepagehelper.cpp" line="+862"/>
         <source>Tags:</source>
         <translation>Oznake:</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/coreplugin/windowsupport.cpp" line="+131"/>
+        <location line="+345"/>
+        <source>Show All</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+75"/>
+        <source>Back</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/coreplugin/windowsupport.cpp" line="-5"/>
         <source>Exit Full Screen</source>
         <translation>Izhod iz celotnega zaslona</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+3"/>
         <source>Enter Full Screen</source>
         <translation>Vnesite celozaslonski način</translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/coreplugin/locator/opendocumentsfilter.cpp" line="+1"/>
+        <source>Switches to an open document.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/python/pythonconstants.h" line="+14"/>
+        <source>Python Editor</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/texteditor/markdowneditor.cpp" line="+542"/>
+        <source>Markdown Editor</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>QtC::DiffEditor</name>
     <message>
-        <location filename="../../../src/plugins/diffeditor/diffeditor.cpp" line="+198"/>
+        <location filename="../../../src/plugins/diffeditor/diffeditor.cpp" line="+197"/>
         <source>Context lines:</source>
         <translation>Kontekstne vrstice:</translation>
     </message>
@@ -4575,23 +5249,23 @@ v nadzor različic (%2)
         <translation>Ponovno naloži dif</translation>
     </message>
     <message>
-        <location line="+126"/>
+        <location line="+128"/>
         <source>[%1] vs. [%2] %3</source>
         <translation>[%1] proti [%2] %3</translation>
     </message>
     <message>
-        <location line="+9"/>
-        <location line="+6"/>
+        <location line="+7"/>
+        <location line="+3"/>
         <source>%1 vs. %2</source>
         <translation>%1 proti %2</translation>
     </message>
     <message>
-        <location line="+4"/>
+        <location line="+2"/>
         <source>[%1] %2 vs. [%3] %4</source>
         <translation>[%1] %2 proti [%3] %4</translation>
     </message>
     <message>
-        <location line="+35"/>
+        <location line="+46"/>
         <source>Hide Change Description</source>
         <translation>Skrij Spremeni opis</translation>
     </message>
@@ -4601,31 +5275,31 @@ v nadzor različic (%2)
         <translation>Pokaži spremembo opisa</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/diffeditor/diffeditordocument.cpp" line="+301"/>
+        <location filename="../../../src/plugins/diffeditor/diffeditordocument.cpp" line="+300"/>
         <source>Could not parse patch file &quot;%1&quot;. The content is not of unified diff format.</source>
         <translation>Ni bilo mogoče razčleniti datoteke popravka »%1«. Vsebina ni v poenotenem formatu diff.</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/diffeditor/diffeditorfactory.cpp" line="+48"/>
+        <location filename="../../../src/plugins/diffeditor/diffeditorfactory.cpp" line="+21"/>
         <source>Diff Editor</source>
         <translation>Urejevalnik razlik</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/diffeditor/diffeditorplugin.cpp" line="+114"/>
+        <location filename="../../../src/plugins/diffeditor/diffeditorplugin.cpp" line="+111"/>
         <source>Diff</source>
         <translation>Razl</translation>
     </message>
     <message>
-        <location line="+94"/>
+        <location line="+89"/>
         <location line="+54"/>
-        <location line="+68"/>
+        <location line="+69"/>
         <source>Saved</source>
         <translation>Shranjeno</translation>
     </message>
     <message>
-        <location line="-121"/>
+        <location line="-122"/>
         <location line="+54"/>
-        <location line="+68"/>
+        <location line="+69"/>
         <source>Modified</source>
         <translation>Spremenjena</translation>
     </message>
@@ -4640,7 +5314,7 @@ v nadzor različic (%2)
         <translation>Diff spremenjene datoteke</translation>
     </message>
     <message>
-        <location line="+30"/>
+        <location line="+28"/>
         <source>&amp;Diff</source>
         <translation>&amp;Razlike</translation>
     </message>
@@ -4701,7 +5375,7 @@ v nadzor različic (%2)
         <translation>Razlika &quot;%1&quot;, &quot;%2&quot;</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/diffeditor/diffeditorwidgetcontroller.cpp" line="+229"/>
+        <location filename="../../../src/plugins/diffeditor/diffeditorwidgetcontroller.cpp" line="+228"/>
         <source>Send Chunk to CodePaster...</source>
         <translation>Pošlji kos v CodePaster ...</translation>
     </message>
@@ -4716,7 +5390,7 @@ v nadzor različic (%2)
         <translation>Povrni delček ...</translation>
     </message>
     <message>
-        <location line="+28"/>
+        <location line="+31"/>
         <source>&lt;b&gt;Error:&lt;/b&gt; Could not decode &quot;%1&quot; with &quot;%2&quot;-encoding.</source>
         <translation>&lt;b&gt;Napaka:&lt;/b&gt; »%1« ni bilo mogoče dekodirati s kodiranjem »%2«.</translation>
     </message>
@@ -4726,32 +5400,30 @@ v nadzor različic (%2)
         <translation>Izberite kodiranje</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/diffeditor/diffview.cpp" line="+77"/>
+        <location filename="../../../src/plugins/diffeditor/diffview.cpp" line="+76"/>
         <source>Switch to Unified Diff Editor</source>
         <translation>Preklopite na poenoteni urejevalnik razlik</translation>
     </message>
     <message>
-        <location line="+27"/>
-        <location line="+16"/>
-        <location line="+64"/>
-        <location line="+16"/>
-        <location filename="../../../src/plugins/diffeditor/sidebysidediffeditorwidget.cpp" line="+821"/>
-        <location filename="../../../src/plugins/diffeditor/unifieddiffeditorwidget.cpp" line="+272"/>
+        <location filename="../../../src/plugins/diffeditor/diffeditor.cpp" line="+52"/>
+        <location filename="../../../src/plugins/diffeditor/diffview.cpp" line="+27"/>
+        <location line="+81"/>
+        <location filename="../../../src/plugins/diffeditor/sidebysidediffeditorwidget.cpp" line="+817"/>
+        <location filename="../../../src/plugins/diffeditor/unifieddiffeditorwidget.cpp" line="+69"/>
         <source>Waiting for data...</source>
         <translation>Čakanje na podatke …</translation>
     </message>
     <message>
-        <location line="-93"/>
-        <location line="+28"/>
-        <location line="+52"/>
-        <location line="+34"/>
-        <location filename="../../../src/plugins/diffeditor/sidebysidediffeditorwidget.cpp" line="+58"/>
-        <location filename="../../../src/plugins/diffeditor/unifieddiffeditorwidget.cpp" line="+196"/>
+        <location line="+9"/>
+        <location filename="../../../src/plugins/diffeditor/diffview.cpp" line="-78"/>
+        <location line="+81"/>
+        <location filename="../../../src/plugins/diffeditor/sidebysidediffeditorwidget.cpp" line="+57"/>
+        <location filename="../../../src/plugins/diffeditor/unifieddiffeditorwidget.cpp" line="+392"/>
         <source>Retrieving data failed.</source>
         <translation>Pridobivanje podatkov ni uspelo.</translation>
     </message>
     <message>
-        <location line="-67"/>
+        <location filename="../../../src/plugins/diffeditor/diffview.cpp" line="-33"/>
         <source>Switch to Side By Side Diff Editor</source>
         <translation>Preklopite na urejevalnik razlik drug ob drugem</translation>
     </message>
@@ -4761,7 +5433,7 @@ v nadzor različic (%2)
         <translation>Sinhronizirajte vodoravne drsne trakove</translation>
     </message>
     <message numerus="yes">
-        <location filename="../../../src/plugins/diffeditor/sidebysidediffeditorwidget.cpp" line="-325"/>
+        <location filename="../../../src/plugins/diffeditor/sidebysidediffeditorwidget.cpp" line="-324"/>
         <source>Skipped %n lines...</source>
         <translation>
             <numerusform>Preskočenih %n vrstic ...</numerusform>
@@ -4787,18 +5459,18 @@ v nadzor različic (%2)
     </message>
     <message>
         <location line="+233"/>
-        <location filename="../../../src/plugins/diffeditor/unifieddiffeditorwidget.cpp" line="-9"/>
+        <location filename="../../../src/plugins/diffeditor/unifieddiffeditorwidget.cpp" line="-8"/>
         <source>No difference.</source>
         <translation>Brez razlike.</translation>
     </message>
     <message>
-        <location line="+157"/>
-        <location filename="../../../src/plugins/diffeditor/unifieddiffeditorwidget.cpp" line="+80"/>
+        <location line="+152"/>
+        <location filename="../../../src/plugins/diffeditor/unifieddiffeditorwidget.cpp" line="+75"/>
         <source>Rendering diff</source>
         <translation>Razl. upodabljanja</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/diffeditor/unifieddiffeditorwidget.cpp" line="-493"/>
+        <location filename="../../../src/plugins/diffeditor/unifieddiffeditorwidget.cpp" line="-487"/>
         <source>No document</source>
         <translation>Brez dokumenta</translation>
     </message>
@@ -4806,7 +5478,7 @@ v nadzor različic (%2)
 <context>
     <name>QtC::ExtensionSystem</name>
     <message>
-        <location filename="../../../src/libs/extensionsystem/plugindetailsview.cpp" line="+60"/>
+        <location filename="../../../src/libs/extensionsystem/plugindetailsview.cpp" line="+64"/>
         <source>Name:</source>
         <translation>Ime:</translation>
     </message>
@@ -4866,7 +5538,12 @@ v nadzor različic (%2)
         <translation>Odvisnosti:</translation>
     </message>
     <message>
-        <location line="+69"/>
+        <location line="+1"/>
+        <source>Loadable without restart:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+71"/>
         <source>None</source>
         <translation>Brez</translation>
     </message>
@@ -4881,6 +5558,11 @@ v nadzor različic (%2)
         <translation>%1 (trenutno: &quot;%2&quot;)</translation>
     </message>
     <message>
+        <location line="+21"/>
+        <source>Plugin Details of %1</source>
+        <translation type="unfinished">Podrobnosti vstavka %1</translation>
+    </message>
+    <message>
         <location filename="../../../src/libs/extensionsystem/pluginerrorview.cpp" line="+47"/>
         <source>State:</source>
         <translation>Stanje:</translation>
@@ -4891,7 +5573,7 @@ v nadzor različic (%2)
         <translation>Sporočilo napake:</translation>
     </message>
     <message>
-        <location line="+38"/>
+        <location line="+39"/>
         <source>Description file found, but error on read.</source>
         <translation>Opisna datoteka je bila najdena, vendar je prišlo do napake pri branju.</translation>
     </message>
@@ -4932,11 +5614,18 @@ v nadzor različic (%2)
     </message>
     <message>
         <location filename="../../../src/libs/extensionsystem/pluginview.cpp" line="+103"/>
+        <source>%1 (deprecated)</source>
+        <extracomment>%1 is a plugin name</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
         <source>%1 (experimental)</source>
+        <extracomment>%1 is a plugin name</extracomment>
         <translation>%1 (eksperimentalno)</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+8"/>
         <source>Path: %1
 Plugin is not available on this platform.</source>
         <translation>Pot: %1
@@ -4989,7 +5678,7 @@ Vtičnik je onemogočen z argumentom ukazne vrstice.</translation>
         <translation>Naloži ob zagonu</translation>
     </message>
     <message>
-        <location line="+73"/>
+        <location line="+54"/>
         <source>Name</source>
         <translation>Ime</translation>
     </message>
@@ -5009,12 +5698,12 @@ Vtičnik je onemogočen z argumentom ukazne vrstice.</translation>
         <translation>Naloži</translation>
     </message>
     <message>
-        <location line="+69"/>
+        <location line="+86"/>
         <source>Utilities</source>
         <translation>Potrebščine</translation>
     </message>
     <message>
-        <location line="+31"/>
+        <location line="+36"/>
         <source>Enabling Plugins</source>
         <translation>Omogočanje vtičnikov</translation>
     </message>
@@ -5090,17 +5779,22 @@ bo onemogočil tudi naslednje vtičnike:
         <translation>Zbrisano</translation>
     </message>
     <message>
-        <location filename="../../../src/libs/extensionsystem/pluginmanager.cpp" line="+1427"/>
+        <location filename="../../../src/libs/extensionsystem/pluginmanager.cpp" line="+1072"/>
+        <source>Multiple versions of the same plugin have been found.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+440"/>
         <source>Circular dependency detected:</source>
         <translation>Zaznana krožna odvisnost:</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+6"/>
         <source>%1 (%2) depends on</source>
         <translation>%1 (%2) je odvisno od</translation>
     </message>
     <message>
-        <location line="+4"/>
+        <location line="+3"/>
         <source>%1 (%2)</source>
         <translation>%1 (%2)</translation>
     </message>
@@ -5123,15 +5817,19 @@ Razlog: %3</translation>
     </message>
     <message>
         <location line="+2"/>
+        <source>If you temporarily disable %1, the following plugins that depend on it are also disabled: %2.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>If you temporarily disable %1, the following plugins that depend on it are also disabled: %2.
 
 </source>
-        <translation>Če začasno onemogočite %1, so onemogočeni tudi naslednji vtičniki, ki so odvisni od njega: %2.
+        <translation type="vanished">Če začasno onemogočite %1, so onemogočeni tudi naslednji vtičniki, ki so odvisni od njega: %2.
 
 </translation>
     </message>
     <message>
-        <location line="+4"/>
+        <location line="+3"/>
         <source>Disable plugins permanently in %1.</source>
         <translation>Onemogoči vtičnike trajno v %1.</translation>
     </message>
@@ -5146,14 +5844,14 @@ Razlog: %3</translation>
         <translation>Onemogoči vtičnik</translation>
     </message>
     <message>
-        <location line="+67"/>
+        <location line="+73"/>
         <source>Cannot load plugin because dependency failed to load: %1(%2)
 Reason: %3</source>
         <translation>Ni moč naložiti vstavka, ker odvisnosti ni bilo moč naložiti: %1 (%2)
 Razlog: %3</translation>
     </message>
     <message>
-        <location filename="../../../src/libs/extensionsystem/optionsparser.cpp" line="+116"/>
+        <location filename="../../../src/libs/extensionsystem/optionsparser.cpp" line="+118"/>
         <source>The plugin &quot;%1&quot; is specified twice for testing.</source>
         <translation>Vtičnik »%1« je dvakrat določen za testiranje.</translation>
     </message>
@@ -5176,7 +5874,7 @@ Razlog: %3</translation>
         <translation>Ni mogoče zahtevati scenarija &quot;%1&quot;, saj je bil že zahtevan.</translation>
     </message>
     <message>
-        <location line="+120"/>
+        <location line="+130"/>
         <source>Unknown option %1</source>
         <translation>Neznana možnost %1</translation>
     </message>
@@ -5186,47 +5884,52 @@ Razlog: %3</translation>
         <translation>Možnost %1 potrebuje argument.</translation>
     </message>
     <message>
-        <location filename="../../../src/libs/extensionsystem/pluginspec.cpp" line="+1009"/>
+        <location filename="../../../src/libs/extensionsystem/pluginspec.cpp" line="+1071"/>
         <source>Resolving dependencies failed because state != Read</source>
         <translation>Razreševanje odvisnosti ni uspelo, ker stanje ni enako Prebrano</translation>
     </message>
     <message>
-        <location line="+14"/>
+        <location line="+11"/>
         <source>Could not resolve dependency &apos;%1(%2)&apos;</source>
         <translation>Ni bilo moč razrešiti odvisnosti »%1 (%2)«</translation>
     </message>
     <message>
-        <location line="+47"/>
+        <location line="+61"/>
         <source>Loading the library failed because state != Resolved</source>
         <translation>Nalaganje knjižnice ni uspelo, ker stanje ni enako Razrešeno</translation>
     </message>
     <message>
-        <location line="+15"/>
+        <location line="+10"/>
         <source>Plugin is not valid (does not derive from IPlugin)</source>
         <translation>Vstavek ni veljaven (ni izpeljan iz IPlugin)</translation>
     </message>
     <message>
-        <location line="-392"/>
+        <location line="-416"/>
         <source>&quot;%1&quot; is missing</source>
         <translation>»%1« manjka</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="-24"/>
+        <source>Cannot open file</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+29"/>
         <source>Value for key &quot;%1&quot; is not a string</source>
         <translation>Vrednost za ključ »%1« ni niz</translation>
     </message>
     <message>
-        <location line="+6"/>
+        <location line="+5"/>
         <source>Value for key &quot;%1&quot; is not a bool</source>
         <translation>Vrednost za ključ &quot;%1&quot; ni Bool</translation>
     </message>
     <message>
-        <location line="+6"/>
+        <location line="+5"/>
         <source>Value for key &quot;%1&quot; is not an array of objects</source>
         <translation>Vrednost za ključ »%1« ni niz predmetov</translation>
     </message>
     <message>
-        <location line="+6"/>
+        <location line="+5"/>
         <source>Value for key &quot;%1&quot; is not a string and not an array of strings</source>
         <translation>Vrednost za ključ »%1« ni niz in ni niz nizov</translation>
     </message>
@@ -5236,12 +5939,22 @@ Razlog: %3</translation>
         <translation>Vrednost »%2« za ključ »%1« ima neveljavno obliko</translation>
     </message>
     <message>
-        <location line="+23"/>
+        <location line="+21"/>
+        <source>No IID found</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Expected IID &quot;%1&quot;, but found &quot;%2&quot;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
         <source>Plugin meta data not found</source>
         <translation>Metapodatki vtičnika niso bili najdeni</translation>
     </message>
     <message>
-        <location line="+88"/>
+        <location line="+108"/>
         <source>Invalid platform specification &quot;%1&quot;: %2</source>
         <translation>Neveljavna specifikacija platforme &quot;%1&quot;: %2</translation>
     </message>
@@ -5273,17 +5986,17 @@ Razlog: %3</translation>
         <translation>Argument: »%1« je prazen</translation>
     </message>
     <message>
-        <location line="+180"/>
+        <location line="+182"/>
         <source>Initializing the plugin failed because state != Loaded</source>
         <translation>Inicializacija vstavka ni uspela, ker stanje ni enako Naložen</translation>
     </message>
     <message>
-        <location line="+6"/>
+        <location line="+5"/>
         <source>Internal error: have no plugin instance to initialize</source>
         <translation>Notranja napaka: ni izvoda vstavka za inicializacijo</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+5"/>
         <source>Plugin initialization failed: %1</source>
         <translation>Inicializacija vstavka ni uspela: %1</translation>
     </message>
@@ -5293,7 +6006,7 @@ Razlog: %3</translation>
         <translation>Ni moč izvesti extensionsInitialized, ker stanje ni enako Inicializirano</translation>
     </message>
     <message>
-        <location line="+6"/>
+        <location line="+5"/>
         <source>Internal error: have no plugin instance to perform extensionsInitialized</source>
         <translation>Notranja napaka: ni izvoda vstavka, da bi se izvedlo extensionsInitialized</translation>
     </message>
@@ -5303,13 +6016,18 @@ Razlog: %3</translation>
         <translation>Notranja napaka: ni primerka vtičnika za izvedbo delayedInitialize</translation>
     </message>
     <message>
-        <location filename="../../../src/libs/extensionsystem/pluginerroroverview.cpp" line="+33"/>
-        <location filename="../../../src/libs/extensionsystem/pluginmanager.cpp" line="-65"/>
+        <location filename="../../../src/libs/extensionsystem/pluginerroroverview.cpp" line="+42"/>
+        <location filename="../../../src/libs/extensionsystem/pluginmanager.cpp" line="-71"/>
         <source>Continue</source>
         <translation>Nadaljuj</translation>
     </message>
     <message>
-        <location line="+21"/>
+        <location line="+2"/>
+        <source>Details</source>
+        <translation type="unfinished">Podrobnosti</translation>
+    </message>
+    <message>
+        <location line="+28"/>
         <source>The following plugins have errors and cannot be loaded:</source>
         <translation>Naslednji vtičniki imajo napake in jih ni mogoče naložiti:</translation>
     </message>
@@ -5397,8 +6115,8 @@ Razlog: %3</translation>
 <context>
     <name>QtC::ImageViewer</name>
     <message>
-        <location filename="../../../src/plugins/imageviewer/exportdialog.cpp" line="+69"/>
-        <location filename="../../../src/plugins/imageviewer/multiexportdialog.cpp" line="+166"/>
+        <location filename="../../../src/plugins/imageviewer/exportdialog.cpp" line="+70"/>
+        <location filename="../../../src/plugins/imageviewer/multiexportdialog.cpp" line="+165"/>
         <source>File:</source>
         <translation>Datoteka:</translation>
     </message>
@@ -5421,7 +6139,7 @@ Would you like to overwrite it?</source>
 Ali ga želite prepisati?</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/imageviewer/imageview.cpp" line="+162"/>
+        <location filename="../../../src/plugins/imageviewer/imageview.cpp" line="+161"/>
         <source>Exported &quot;%1&quot;, %2x%3, %4 bytes</source>
         <translation>Izvožen »%1«, %2x%3, %4 bajtov</translation>
     </message>
@@ -5432,27 +6150,27 @@ Ali ga želite prepisati?</translation>
     </message>
     <message>
         <location line="+1"/>
-        <location filename="../../../src/plugins/imageviewer/imageviewerplugin.cpp" line="+96"/>
+        <location filename="../../../src/plugins/imageviewer/imageviewer.cpp" line="+506"/>
         <source>Export Image</source>
         <translation>Izvozi sliko</translation>
     </message>
     <message>
-        <location line="+31"/>
+        <location line="+30"/>
         <source>Export %1</source>
         <translation>Izvoz %1</translation>
     </message>
     <message>
-        <location line="+16"/>
+        <location line="+15"/>
         <source>Export a Series of Images from %1 (%2x%3)</source>
         <translation>Izvoz niza slik iz %1 (%2x%3)</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/imageviewer/imageviewer.cpp" line="+112"/>
+        <location filename="../../../src/plugins/imageviewer/imageviewer.cpp" line="-365"/>
         <source>Export</source>
         <translation>Izvozi</translation>
     </message>
     <message>
-        <location line="+48"/>
+        <location line="+52"/>
         <source>Set as Default</source>
         <translation>Nastavi kot privzeto</translation>
     </message>
@@ -5497,17 +6215,22 @@ Ali ga želite prepisati?</translation>
         <translation>Povečava</translation>
     </message>
     <message>
-        <location line="+207"/>
+        <location line="+228"/>
+        <source>Resume Paused Animation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
         <source>Pause Animation</source>
         <translation>Zaustavi animacijo</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="-9"/>
         <source>Play Animation</source>
         <translation>Predvajaj animacijo</translation>
     </message>
     <message>
-        <location line="+11"/>
+        <location line="+23"/>
         <source>Image Viewer</source>
         <translation>Pregledovalniku slik</translation>
     </message>
@@ -5523,52 +6246,52 @@ Ali ga želite prepisati?</translation>
     </message>
     <message>
         <location line="+13"/>
-        <location line="+29"/>
+        <location line="+15"/>
         <source>Failed to read image.</source>
         <translation>Slike ni bilo mogoče prebrati.</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/imageviewer/imageviewerplugin.cpp" line="-27"/>
+        <location filename="../../../src/plugins/imageviewer/imageviewer.cpp" line="+36"/>
         <source>Fit to Screen</source>
         <translation>Prilagodi zaslonu</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+0"/>
         <source>Ctrl+=</source>
         <translation>Ctrl+=</translation>
     </message>
     <message>
-        <location line="+6"/>
+        <location line="+3"/>
         <source>Switch Background</source>
         <translation>Preklopi ozadje</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+0"/>
         <source>Ctrl+[</source>
         <translation>Ctrl+[</translation>
     </message>
     <message>
-        <location line="+6"/>
+        <location line="+3"/>
         <source>Switch Outline</source>
         <translation>Preklopi obris</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+0"/>
         <source>Ctrl+]</source>
         <translation>Ctrl+]</translation>
     </message>
     <message>
-        <location line="+6"/>
+        <location line="+3"/>
         <source>Toggle Animation</source>
         <translation>Preklopi animacijo</translation>
     </message>
     <message>
-        <location line="+12"/>
+        <location line="+6"/>
         <source>Export Multiple Images</source>
         <translation>Izvozi več slik</translation>
     </message>
     <message>
-        <location line="+6"/>
+        <location line="+3"/>
         <source>Copy as Data URL</source>
         <translation>Kopiraj kot podatkovni URL</translation>
     </message>
@@ -5633,72 +6356,652 @@ Bi jih radi prepisali?</translation>
     </message>
 </context>
 <context>
+    <name>QtC::LanguageClient</name>
+    <message>
+        <location filename="../../../src/libs/languageserverprotocol/jsonrpcmessages.h" line="+257"/>
+        <source>Error %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/languageclient/callandtypehierarchy.cpp" line="+60"/>
+        <source>Deprecated</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+88"/>
+        <source>Incoming</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+21"/>
+        <source>Outgoing</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+58"/>
+        <source>Bases</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+21"/>
+        <source>Derived</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+202"/>
+        <source>Call Hierarchy</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>Reloads the call hierarchy for the symbol under cursor position.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/languageclient/client.cpp" line="+394"/>
+        <source>%1 for %2</source>
+        <extracomment>&lt;language client&gt; for &lt;project&gt;</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+223"/>
+        <source>uninitialized</source>
+        <extracomment>language client state</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>initialize requested</source>
+        <extracomment>language client state</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>failed to initialize</source>
+        <extracomment>language client state</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>initialized</source>
+        <extracomment>language client state</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>shutdown requested</source>
+        <extracomment>language client state</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>shut down</source>
+        <extracomment>language client state</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>error</source>
+        <extracomment>language client state</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1342"/>
+        <source>Invalid parameter in &quot;%1&quot;:
+%2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+219"/>
+        <source>Language Server &quot;%1&quot; Initialization Error</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>Initialization error: %1.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Initialize result is invalid.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Server Info is invalid.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>No initialize result.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/languageclient/diagnosticmanager.cpp" line="+187"/>
+        <source>Copy to Clipboard</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/languageclient/languageclient_global.h" line="+22"/>
+        <source>Language Client</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Symbols in Current Document</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Locates symbols in the current document, based on a language server.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Symbols in Workspace</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Locates symbols in the language server workspace.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Classes and Structs in Workspace</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Locates classes and structs in the language server workspace.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Functions and Methods in Workspace</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Locates functions and methods in the language server workspace.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/languageclient/languageclientinterface.cpp" line="+77"/>
+        <source>Cannot handle MIME type &quot;%1&quot; of message.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+70"/>
+        <source>Cannot send data to unstarted server %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/languageclient/languageclientmanager.cpp" line="+178"/>
+        <source>Unexpectedly finished. Restarting in %1 seconds.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Unexpectedly finished.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/languageclient/languageclientoutline.cpp" line="+217"/>
+        <location filename="../../../src/plugins/languageclient/lspinspector.cpp" line="+82"/>
+        <source>Expand All</source>
+        <translation type="unfinished">Razširi vse</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Collapse All</source>
+        <translation type="unfinished">Skrči vse</translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/languageclient/languageclientplugin.cpp" line="+57"/>
+        <source>Generic StdIO Language Server</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Inspect Language Clients...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>Language Server Diagnostics</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Issues provided by the Language Server in the current document.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/languageclient/languageclientsettings.cpp" line="+185"/>
+        <source>&amp;Add</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>&amp;Delete</source>
+        <translation type="unfinished">&amp;Izbriši</translation>
+    </message>
+    <message>
+        <location line="+106"/>
+        <source>General</source>
+        <translation type="unfinished">Splošno</translation>
+    </message>
+    <message>
+        <location line="+513"/>
+        <source>Always On</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Requires an Open File</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Start Server per Project</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+23"/>
+        <source>Set MIME Types...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>File pattern</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>List of file patterns.
+Example: *.cpp%1*.h</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+18"/>
+        <source>Failed to parse JSON at %1: %2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>Language server-specific JSON to pass via &quot;initializationOptions&quot; field of &quot;initialize&quot; request.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Name:</source>
+        <translation type="unfinished">Ime:</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Language:</source>
+        <translation type="unfinished">Jezik:</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>File pattern:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Startup behavior:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Initialization options:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+74"/>
+        <source>Select MIME Types</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>Filter</source>
+        <translation type="unfinished">Filter</translation>
+    </message>
+    <message>
+        <location line="+53"/>
+        <source>Executable:</source>
+        <translation type="unfinished">Izvršljiva datoteka:</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Arguments:</source>
+        <translation type="unfinished">Argumenti:</translation>
+    </message>
+    <message>
+        <location line="+93"/>
+        <source>JSON Error</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+57"/>
+        <source>Workspace Configuration</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Additional JSON configuration sent to all running language servers for this project.
+See the documentation of the specific language server for valid settings.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+20"/>
+        <source>Language Server</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/languageclient/languageclientsymbolsupport.cpp" line="+39"/>
+        <source>Search Again to update results and re-enable Replace</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message numerus="yes">
+        <location line="+21"/>
+        <source>Re&amp;name %n files</source>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+        </translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Files:
+%1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+331"/>
+        <location line="+227"/>
+        <source>Find References with %1 for:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-144"/>
+        <source>Renaming is not supported with %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+168"/>
+        <source>%1 is not reachable anymore.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+33"/>
+        <source>Start typing to see replacements.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/languageclient/languageclientutils.cpp" line="+158"/>
+        <source>Show available quick fixes</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+121"/>
+        <source>Restart %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Inspect Language Clients</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Manage...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+144"/>
+        <source>Install npm Package</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Running &quot;%1&quot; to install %2.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+17"/>
+        <source>The installation of &quot;%1&quot; was canceled by timeout.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>The installation of &quot;%1&quot; was canceled by the user.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>Installing &quot;%1&quot; failed with exit code %2.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+56"/>
+        <source>Install %1 language server via npm.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Setup %1 language server (%2).</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Install</source>
+        <translation type="unfinished">Namestite</translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Setup</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>%1 Language Server</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/languageclient/lspinspector.cpp" line="+48"/>
+        <source>Capabilities:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Dynamic Capabilities:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Method:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Options:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+18"/>
+        <source>Server Capabilities</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+53"/>
+        <source>Client Message</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>Messages</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>Server Message</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+82"/>
+        <source>Log File</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+93"/>
+        <source>Language Client Inspector</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>&lt;Select&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Language Server:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Log</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Capabilities</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Clear</source>
+        <translation type="unfinished">Počisti</translation>
+    </message>
+</context>
+<context>
+    <name>QtC::LanguageServerProtocol</name>
+    <message>
+        <location filename="../../../src/libs/languageserverprotocol/basemessage.cpp" line="+84"/>
+        <source>Cannot decode content with &quot;%1&quot;. Falling back to &quot;%2&quot;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+15"/>
+        <source>Expected an integer in &quot;%1&quot;, but got &quot;%2&quot;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/libs/languageserverprotocol/jsonrpcmessages.cpp" line="+80"/>
+        <source>Could not parse JSON message: &quot;%1&quot;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Expected a JSON object, but got a JSON &quot;%1&quot; value.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/libs/languageserverprotocol/jsonrpcmessages.h" line="-91"/>
+        <source>No parameters in &quot;%1&quot;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+213"/>
+        <source>No ID set in &quot;%1&quot;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/libs/languageserverprotocol/lsptypes.cpp" line="+451"/>
+        <source>Create %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+15"/>
+        <source>Rename %1 to %2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+17"/>
+        <source>Delete %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>QtC::OpenMV</name>
     <message>
-        <location filename="../../../src/plugins/openmv/histogram/openmvpluginhistogram.cpp" line="+518"/>
+        <location filename="../../../src/plugins/openmv/histogram/openmvpluginhistogram.cpp" line="+548"/>
         <location line="+34"/>
         <source>Value %L1</source>
         <translation>Vrednost %L1</translation>
     </message>
     <message>
         <location line="+34"/>
-        <location line="+205"/>
+        <location line="+245"/>
         <source>R</source>
         <translation>R</translation>
     </message>
     <message>
-        <location line="-189"/>
-        <location line="+205"/>
+        <location line="-229"/>
+        <location line="+245"/>
         <source>G</source>
         <translation>Z</translation>
     </message>
     <message>
-        <location line="-189"/>
+        <location line="-229"/>
         <location line="+82"/>
-        <location line="+123"/>
+        <location line="+163"/>
         <location line="+72"/>
         <source>B</source>
         <translation>M</translation>
     </message>
     <message>
-        <location line="-252"/>
+        <location line="-292"/>
         <location line="+82"/>
-        <location line="+118"/>
+        <location line="+158"/>
         <location line="+72"/>
         <source>Y</source>
         <translation>Y</translation>
     </message>
     <message>
-        <location line="-247"/>
-        <location line="+195"/>
+        <location line="-287"/>
+        <location line="+235"/>
         <source>L</source>
         <translation>L</translation>
     </message>
     <message>
-        <location line="-179"/>
-        <location line="+195"/>
+        <location line="-219"/>
+        <location line="+235"/>
         <source>A</source>
         <translation>A</translation>
     </message>
     <message>
-        <location line="-138"/>
-        <location line="+190"/>
+        <location line="-178"/>
+        <location line="+230"/>
         <source>U</source>
         <translation>U</translation>
     </message>
     <message>
-        <location line="-174"/>
-        <location line="+190"/>
+        <location line="-214"/>
+        <location line="+230"/>
         <source>V</source>
         <translation>V</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/openmv/openmvcamerasettings.cpp" line="+51"/>
+        <location filename="../../../src/plugins/openmv/openmvcamerasettings.cpp" line="+81"/>
         <source>Please enter your WiFi network here</source>
         <translation>Tukaj vnesite svoje WiFi omrežje</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/openmv/openmvdataseteditor.cpp" line="+115"/>
+        <location filename="../../../src/plugins/openmv/openmvdataseteditor.cpp" line="+145"/>
         <location line="+43"/>
         <location line="+7"/>
         <location line="+7"/>
@@ -5714,7 +7017,7 @@ Bi jih radi prepisali?</translation>
         <location line="+11"/>
         <location line="+130"/>
         <location line="+7"/>
-        <location filename="../../../src/plugins/openmv/openmvplugin.cpp" line="+1573"/>
+        <location filename="../../../src/plugins/openmv/openmvplugin.cpp" line="+1136"/>
         <location line="+784"/>
         <source>Dataset Editor</source>
         <translation>Urejevalnik nabora podatkov</translation>
@@ -5725,7 +7028,15 @@ Bi jih radi prepisali?</translation>
         <translation>Vnesite ime razreda</translation>
     </message>
     <message>
-        <location line="+44"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginarduinodfubootloader.cpp" line="+296"/>
+        <location line="+9"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginbootloader.cpp" line="+535"/>
+        <location line="+31"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvplugindfubootloader.cpp" line="+303"/>
+        <location line="+9"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginpicotoolbootloader.cpp" line="+250"/>
+        <location line="+9"/>
+        <location filename="../../../src/plugins/openmv/openmvdataseteditor.cpp" line="+44"/>
         <location line="+7"/>
         <location line="+70"/>
         <location line="+107"/>
@@ -5734,7 +7045,7 @@ Bi jih radi prepisali?</translation>
         <location filename="../../../src/plugins/openmv/openmvplugin.cpp" line="-694"/>
         <location line="+19"/>
         <location line="+115"/>
-        <location line="+1274"/>
+        <location line="+1342"/>
         <location line="+106"/>
         <location line="+96"/>
         <location line="+101"/>
@@ -5743,52 +7054,34 @@ Bi jih radi prepisali?</translation>
         <location line="+180"/>
         <location line="+204"/>
         <location line="+14"/>
-        <location line="+315"/>
+        <location line="+348"/>
         <location line="+13"/>
-        <location line="+346"/>
+        <location line="+345"/>
         <location line="+145"/>
         <location line="+114"/>
         <location line="+129"/>
         <location line="+114"/>
         <location line="+118"/>
-        <location filename="../../../src/plugins/openmv/openmvpluginconnect.cpp" line="+155"/>
+        <location filename="../../../src/plugins/openmv/openmvpluginconnect.cpp" line="+296"/>
         <location line="+234"/>
-        <location line="+156"/>
-        <location line="+682"/>
-        <location line="+295"/>
-        <location line="+468"/>
-        <location line="+31"/>
-        <location line="+122"/>
-        <location line="+9"/>
-        <location line="+379"/>
-        <location line="+9"/>
-        <location line="+68"/>
-        <location line="+9"/>
-        <location line="+201"/>
-        <location line="+9"/>
-        <location line="+160"/>
-        <location line="+9"/>
-        <location line="+78"/>
-        <location line="+9"/>
-        <location line="+187"/>
-        <location line="+168"/>
-        <location line="+786"/>
-        <location line="+13"/>
-        <location filename="../../../src/plugins/openmv/openmvpluginfb.cpp" line="+77"/>
+        <location line="+77"/>
+        <location line="+895"/>
+        <location line="+737"/>
+        <location filename="../../../src/plugins/openmv/openmvpluginfb.cpp" line="+107"/>
         <location line="+7"/>
-        <location filename="../../../src/plugins/openmv/openmvterminal.cpp" line="+520"/>
+        <location filename="../../../src/plugins/openmv/openmvterminal.cpp" line="+550"/>
         <location line="+11"/>
-        <location filename="../../../src/plugins/openmv/tools/edgeimpulse.cpp" line="+247"/>
-        <location filename="../../../src/plugins/openmv/tools/videotools.cpp" line="+452"/>
+        <location filename="../../../src/plugins/openmv/tools/edgeimpulse.cpp" line="+277"/>
+        <location filename="../../../src/plugins/openmv/tools/videotools.cpp" line="+506"/>
         <location line="+19"/>
         <location line="+11"/>
         <source>Error: %L1!</source>
         <translation>Napaka: %L1!</translation>
     </message>
     <message>
-        <location line="-307"/>
-        <location filename="../../../src/plugins/openmv/openmvplugin.cpp" line="-3651"/>
-        <location filename="../../../src/plugins/openmv/openmvpluginparse.cpp" line="+429"/>
+        <location filename="../../../src/plugins/openmv/openmvdataseteditor.cpp" line="-307"/>
+        <location filename="../../../src/plugins/openmv/openmvplugin.cpp" line="-3751"/>
+        <location filename="../../../src/plugins/openmv/openmvpluginparse.cpp" line="+459"/>
         <location line="+34"/>
         <location line="+48"/>
         <location line="+9"/>
@@ -5802,8 +7095,8 @@ Bi jih radi prepisali?</translation>
     </message>
     <message>
         <location line="+31"/>
-        <location filename="../../../src/plugins/openmv/openmvplugin.cpp" line="+2406"/>
-        <location line="+1729"/>
+        <location filename="../../../src/plugins/openmv/openmvplugin.cpp" line="+2474"/>
+        <location line="+1761"/>
         <location filename="../../../src/plugins/openmv/openmvterminal.cpp" line="+353"/>
         <source>Failed to save the image file for an unknown reason!</source>
         <translation>Slikovne datoteke ni bilo mogoče shraniti iz neznanega razloga!</translation>
@@ -5842,12 +7135,13 @@ Bi jih radi prepisali?</translation>
         <translation>Preimenovanje datoteke ni uspelo iz neznanega razloga!</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/openmv/openmvplugin.cpp" line="-5654"/>
+        <location filename="../../../src/plugins/openmv/openmvplugin.cpp" line="-5259"/>
+        <location filename="../../../src/plugins/openmv/tools/alif.cpp" line="+61"/>
         <source>Could not copy file &quot;%1&quot; to &quot;%2&quot;.</source>
         <translation>Ni bilo mogoče kopirati datoteke »%1« v »%2«.</translation>
     </message>
     <message>
-        <location line="+180"/>
+        <location line="+46"/>
         <source>Invalid argument (%1) for -override_read_timeout</source>
         <translation>Neveljaven argument (%1) za -override_read_timeout</translation>
     </message>
@@ -5867,15 +7161,22 @@ Bi jih radi prepisali?</translation>
         <translation>Manjka argument za -override_read_stall_timeout</translation>
     </message>
     <message>
-        <location line="+99"/>
+        <location line="+50"/>
         <source>Missing argument for -serial_number_filter</source>
         <translation>Manjka argument za -serial_number_filter</translation>
     </message>
     <message>
-        <location line="+120"/>
+        <location line="+119"/>
         <location line="+11"/>
-        <location line="+19"/>
-        <location filename="../../../src/plugins/openmv/openmvpluginconnect.cpp" line="-4120"/>
+        <location line="+17"/>
+        <location filename="../../../src/plugins/openmv/openmvpluginconnect.cpp" line="-1988"/>
+        <location filename="../../../src/plugins/openmv/openmvplugindoc.cpp" line="+830"/>
+        <location filename="../../../src/plugins/openmv/tools/alif.cpp" line="+41"/>
+        <location line="+36"/>
+        <location line="+7"/>
+        <location line="+8"/>
+        <location line="+10"/>
+        <location line="+7"/>
         <source>
 
 Please close any programs that are viewing/editing OpenMV IDE&apos;s application data and then restart OpenMV IDE!</source>
@@ -5884,7 +7185,7 @@ Please close any programs that are viewing/editing OpenMV IDE&apos;s application
 Zaprite vse programe, ki si ogledujejo/urejajo podatke aplikacije OpenMV IDE in nato znova zaženite OpenMV IDE!</translation>
     </message>
     <message>
-        <location line="+393"/>
+        <location filename="../../../src/plugins/openmv/openmvplugindoc.cpp" line="-65"/>
         <source>Edit Grayscale threshold with Threshold Editor</source>
         <translation>Uredite prag sivine z urejevalnikom pragov</translation>
     </message>
@@ -5894,12 +7195,12 @@ Zaprite vse programe, ki si ogledujejo/urejajo podatke aplikacije OpenMV IDE in 
         <translation>Uredite prag LAB z urejevalnikom pragov</translation>
     </message>
     <message>
-        <location line="+143"/>
+        <location filename="../../../src/plugins/openmv/openmvplugin.cpp" line="+235"/>
         <source>Missing argument for -form_key</source>
         <translation>Manjka argument za -form_key</translation>
     </message>
     <message>
-        <location line="+811"/>
+        <location line="+826"/>
         <source>About OpenMV Viewer...</source>
         <translation>O pregledovalniku OpenMV ...</translation>
     </message>
@@ -5914,12 +7215,12 @@ Zaprite vse programe, ki si ogledujejo/urejajo podatke aplikacije OpenMV IDE in 
         <translation>OpenMV IDE</translation>
     </message>
     <message>
-        <location line="-780"/>
+        <location line="-795"/>
         <source>untitled_$.py</source>
         <translation>untitled_$.py</translation>
     </message>
     <message>
-        <location line="-827"/>
+        <location line="-451"/>
         <source>Invalid argument (%1) for -override_per_command_wait</source>
         <translation>Neveljaven argument (%1) za -override_per_command_wait</translation>
     </message>
@@ -5929,7 +7230,7 @@ Zaprite vse programe, ki si ogledujejo/urejajo podatke aplikacije OpenMV IDE in 
         <translation>Manjkajoči argument za -override_per_command_wait</translation>
     </message>
     <message>
-        <location line="+98"/>
+        <location line="+49"/>
         <source>Invalid argument (%1) for -auto_update</source>
         <translation>Neveljaven argument (%1) za -auto_update</translation>
     </message>
@@ -5939,7 +7240,19 @@ Zaprite vse programe, ki si ogledujejo/urejajo podatke aplikacije OpenMV IDE in 
         <translation>Manjkajoči argument za -auto_update</translation>
     </message>
     <message>
-        <location line="+689"/>
+        <location line="+167"/>
+        <source>Error in parsing &lt;user_resources&gt;/openmvide/firmware/settings.json - %L1!
+
+Check the json file for errors and fix them.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Error reading &lt;user_resources&gt;/openmvide/firmware/settings.json: %L1.\n\nOpenMV IDE versions before v4.3.0 do not have this file and would have deleted it on installing resources.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+186"/>
         <source>Form Key</source>
         <translation>Ključ obrazca</translation>
     </message>
@@ -5949,7 +7262,7 @@ Zaprite vse programe, ki si ogledujejo/urejajo podatke aplikacije OpenMV IDE in 
         <translation>Prosimo, vnesite ključ obrazca</translation>
     </message>
     <message>
-        <location line="+68"/>
+        <location line="+81"/>
         <location line="+7"/>
         <location line="+7"/>
         <source>New File</source>
@@ -6064,7 +7377,7 @@ Zaprite vse programe, ki si ogledujejo/urejajo podatke aplikacije OpenMV IDE in 
         <translation>Konfigurirajte datoteko z nastavitvami OpenMV Cam</translation>
     </message>
     <message>
-        <location line="+6"/>
+        <location line="+8"/>
         <source>Save open script to OpenMV Cam (as main.py)</source>
         <translation>Shrani odprti skript v OpenMV Cam (kot main.py)</translation>
     </message>
@@ -6080,33 +7393,33 @@ Zaprite vse programe, ki si ogledujejo/urejajo podatke aplikacije OpenMV IDE in 
     </message>
     <message>
         <location line="+9"/>
-        <location line="+3829"/>
+        <location line="+3929"/>
         <location line="+59"/>
         <source>Open Terminal</source>
         <translation>Odprite terminal</translation>
     </message>
     <message>
-        <location line="-3883"/>
+        <location line="-3983"/>
         <source>Machine Vision</source>
         <translation>Strojni vid</translation>
     </message>
     <message>
         <location line="+4"/>
-        <location line="+3910"/>
+        <location line="+4010"/>
         <location line="+76"/>
         <source>Threshold Editor</source>
         <translation>Urejevalnik pragov</translation>
     </message>
     <message>
-        <location line="-3981"/>
-        <location line="+4059"/>
-        <location filename="../../../src/plugins/openmv/tools/keypointseditor.cpp" line="+186"/>
+        <location line="-4081"/>
+        <location line="+4159"/>
+        <location filename="../../../src/plugins/openmv/tools/keypointseditor.cpp" line="+216"/>
         <source>Keypoints Editor</source>
         <translation>Urejevalnik ključnih točk</translation>
     </message>
     <message>
-        <location line="-4052"/>
-        <location line="+4218"/>
+        <location line="-4152"/>
+        <location line="+4318"/>
         <location line="+98"/>
         <location line="+24"/>
         <location line="+11"/>
@@ -6115,7 +7428,7 @@ Zaprite vse programe, ki si ogledujejo/urejajo podatke aplikacije OpenMV IDE in 
         <translation>Generator aprilskih oznak</translation>
     </message>
     <message>
-        <location line="-4366"/>
+        <location line="-4466"/>
         <source>TAG16H5 Family (30 Tags)</source>
         <translation>Družina TAG16H5 (30 oznak)</translation>
     </message>
@@ -6156,12 +7469,12 @@ Zaprite vse programe, ki si ogledujejo/urejajo podatke aplikacije OpenMV IDE in 
         <location line="+409"/>
         <location line="+14"/>
         <location line="+31"/>
-        <location line="+806"/>
+        <location line="+822"/>
         <source>Failed to open: &quot;%L1&quot;</source>
         <translation>Odpiranje ni uspelo: &quot;%L1&quot;</translation>
     </message>
     <message>
-        <location line="-1284"/>
+        <location line="-1300"/>
         <source>DataMatrix Generator</source>
         <translation>DataMatrix Generator</translation>
     </message>
@@ -6195,10 +7508,10 @@ Zaprite vse programe, ki si ogledujejo/urejajo podatke aplikacije OpenMV IDE in 
     <message>
         <location line="+1"/>
         <location line="+249"/>
-        <location line="+2250"/>
+        <location line="+2318"/>
         <location line="+47"/>
         <location line="+69"/>
-        <location line="+1457"/>
+        <location line="+1489"/>
         <location filename="../../../src/plugins/openmv/openmvterminal.cpp" line="-382"/>
         <location line="+364"/>
         <location filename="../../../src/plugins/openmv/tools/videotools.cpp" line="+856"/>
@@ -6207,7 +7520,7 @@ Zaprite vse programe, ki si ogledujejo/urejajo podatke aplikacije OpenMV IDE in 
         <translation>Dodajte pripono datoteke!</translation>
     </message>
     <message>
-        <location line="-4052"/>
+        <location line="-4152"/>
         <location line="+7"/>
         <location filename="../../../src/plugins/openmv/tools/videotools.cpp" line="-268"/>
         <location line="+13"/>
@@ -6314,14 +7627,19 @@ Zaprite vse programe, ki si ogledujejo/urejajo podatke aplikacije OpenMV IDE in 
         <translation>Izvažanje ...</translation>
     </message>
     <message>
-        <location line="+0"/>
-        <location line="+1273"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginbootloader.cpp" line="-459"/>
+        <location line="+188"/>
+        <location line="+138"/>
+        <location line="+67"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginimxbootloader.cpp" line="+179"/>
+        <location filename="../../../src/plugins/openmv/openmvplugin.cpp" line="+0"/>
+        <location line="+1341"/>
         <location line="+106"/>
         <location line="+96"/>
         <location line="+101"/>
         <location line="+96"/>
         <location line="+240"/>
-        <location line="+936"/>
+        <location line="+968"/>
         <location line="+145"/>
         <location line="+114"/>
         <location line="+129"/>
@@ -6329,23 +7647,18 @@ Zaprite vse programe, ki si ogledujejo/urejajo podatke aplikacije OpenMV IDE in 
         <location line="+118"/>
         <location line="+433"/>
         <location filename="../../../src/plugins/openmv/openmvpluginconnect.cpp" line="-34"/>
-        <location line="+223"/>
-        <location line="+201"/>
-        <location line="+680"/>
-        <location line="+407"/>
-        <location line="+156"/>
-        <location line="+138"/>
-        <location line="+67"/>
-        <location line="+238"/>
+        <location line="+230"/>
+        <location line="+122"/>
+        <location line="+893"/>
         <location filename="../../../src/plugins/openmv/tools/edgeimpulse.cpp" line="-147"/>
-        <location filename="../../../src/plugins/openmv/tools/videotools.cpp" line="-1282"/>
-        <location line="+78"/>
-        <location line="+557"/>
+        <location filename="../../../src/plugins/openmv/tools/videotools.cpp" line="-1297"/>
+        <location line="+85"/>
+        <location line="+565"/>
         <source>Cancel</source>
         <translation>Prekliči</translation>
     </message>
     <message>
-        <location line="-3849"/>
+        <location filename="../../../src/plugins/openmv/openmvplugin.cpp" line="-3949"/>
         <source>Upload to Edge Impulse Project</source>
         <translation>Naložite v Edge Impulse Project</translation>
     </message>
@@ -6446,119 +7759,153 @@ Zaprite vse programe, ki si ogledujejo/urejajo podatke aplikacije OpenMV IDE in 
         <translation>Pregledovalnik OpenMV</translation>
     </message>
     <message>
-        <location line="+13"/>
-        <location filename="../../../src/plugins/openmv/openmvpluginconnect.cpp" line="-1805"/>
-        <location line="+6"/>
-        <location line="+26"/>
-        <location line="+124"/>
-        <location line="+8"/>
-        <location line="+33"/>
-        <location line="+181"/>
-        <location line="+82"/>
-        <location line="+35"/>
-        <location line="+52"/>
-        <location line="+12"/>
-        <location line="+24"/>
-        <location line="+19"/>
-        <location line="+36"/>
-        <location line="+88"/>
-        <location line="+9"/>
-        <location line="+31"/>
-        <location line="+9"/>
-        <location line="+63"/>
-        <location line="+6"/>
-        <location line="+73"/>
-        <location line="+4"/>
-        <location line="+4"/>
-        <location line="+52"/>
-        <location line="+90"/>
-        <location line="+66"/>
-        <location line="+9"/>
-        <location line="+113"/>
-        <location line="+4"/>
-        <location line="+158"/>
-        <location line="+63"/>
-        <location line="+77"/>
-        <location line="+31"/>
-        <location line="+13"/>
-        <location line="+15"/>
-        <location line="+16"/>
-        <location line="+58"/>
-        <location line="+46"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginalifbootloader.cpp" line="+73"/>
+        <location line="+37"/>
         <location line="+9"/>
         <location line="+9"/>
-        <location line="+9"/>
-        <location line="+86"/>
-        <location line="+4"/>
-        <location line="+7"/>
-        <location line="+9"/>
-        <location line="+19"/>
-        <location line="+26"/>
-        <location line="+19"/>
-        <location line="+83"/>
-        <location line="+76"/>
-        <location line="+40"/>
-        <location line="+10"/>
-        <location line="+9"/>
-        <location line="+36"/>
+        <location line="+23"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginarduinodfubootloader.cpp" line="-199"/>
+        <location line="+75"/>
+        <location line="+45"/>
+        <location line="+37"/>
         <location line="+19"/>
         <location line="+13"/>
         <location line="+9"/>
         <location line="+20"/>
         <location line="+24"/>
         <location line="+14"/>
-        <location line="+34"/>
-        <location line="+35"/>
-        <location line="+39"/>
-        <location line="+25"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginbootloader.cpp" line="-316"/>
+        <location line="+4"/>
+        <location line="+162"/>
+        <location line="+63"/>
+        <location line="+77"/>
+        <location line="+31"/>
+        <location line="+13"/>
+        <location line="+15"/>
+        <location line="+16"/>
+        <location line="+23"/>
+        <location line="+7"/>
+        <location line="+15"/>
         <location line="+10"/>
-        <location line="+9"/>
-        <location line="+9"/>
-        <location line="+34"/>
+        <location line="+14"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginbossacbootloader.cpp" line="+149"/>
+        <location line="+54"/>
+        <location line="+32"/>
+        <location line="+27"/>
+        <location line="+10"/>
+        <location line="+41"/>
         <location line="+13"/>
         <location line="+14"/>
-        <location line="+50"/>
-        <location line="+30"/>
-        <location line="+10"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvplugindfubootloader.cpp" line="-157"/>
         <location line="+9"/>
-        <location line="+27"/>
+        <location line="+51"/>
+        <location line="+13"/>
+        <location line="+42"/>
+        <location line="+19"/>
+        <location line="+13"/>
+        <location line="+9"/>
+        <location line="+22"/>
+        <location line="+19"/>
+        <location line="+18"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginimxbootloader.cpp" line="-103"/>
+        <location line="+51"/>
+        <location line="+9"/>
+        <location line="+87"/>
+        <location line="+4"/>
+        <location line="+7"/>
+        <location line="+9"/>
+        <location line="+19"/>
+        <location line="+26"/>
+        <location line="+21"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginpicotoolbootloader.cpp" line="-123"/>
+        <location line="+34"/>
+        <location line="+28"/>
         <location line="+22"/>
         <location line="+16"/>
         <location line="+13"/>
         <location line="+9"/>
         <location line="+16"/>
         <location line="+14"/>
-        <location line="+19"/>
-        <location line="+7"/>
-        <location line="+15"/>
-        <location line="+10"/>
-        <location line="+14"/>
-        <location line="+92"/>
-        <location line="+9"/>
-        <location line="+197"/>
+        <location filename="../../../src/plugins/openmv/openmvplugin.cpp" line="+13"/>
+        <location filename="../../../src/plugins/openmv/openmvpluginconnect.cpp" line="-933"/>
+        <location line="+6"/>
+        <location line="+26"/>
+        <location line="+45"/>
+        <location line="+8"/>
         <location line="+33"/>
-        <location line="+157"/>
-        <location line="+38"/>
+        <location line="+331"/>
+        <location line="+80"/>
+        <location line="+47"/>
+        <location line="+64"/>
+        <location line="+12"/>
+        <location line="+35"/>
+        <location line="+10"/>
+        <location line="+12"/>
+        <location line="+28"/>
+        <location line="+36"/>
+        <location line="+81"/>
+        <location line="+9"/>
+        <location line="+35"/>
+        <location line="+9"/>
+        <location line="+65"/>
+        <location line="+6"/>
+        <location line="+73"/>
+        <location line="+4"/>
+        <location line="+4"/>
+        <location line="+72"/>
+        <location line="+104"/>
+        <location line="+77"/>
+        <location line="+39"/>
+        <location line="+123"/>
+        <location line="+91"/>
+        <location line="+182"/>
+        <location line="+33"/>
+        <location line="+208"/>
+        <location line="+35"/>
         <source>Connect</source>
         <translation>Povežite se</translation>
     </message>
     <message>
-        <location line="+14"/>
-        <location filename="../../../src/plugins/openmv/openmvpluginconnect.cpp" line="-1535"/>
-        <location line="+12"/>
+        <location line="-40"/>
+        <source>No settings for the selected board type %L1!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>No settings found!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Only firmware recovery is supported using the Alif Semiconductor&apos;s SE Tools.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginarduinodfubootloader.cpp" line="-301"/>
+        <location line="+13"/>
         <location line="+7"/>
-        <location line="+171"/>
-        <location line="+12"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginbossacbootloader.cpp" line="-279"/>
+        <location line="+13"/>
         <location line="+7"/>
-        <location line="+1357"/>
-        <location line="+12"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvplugindfubootloader.cpp" line="-311"/>
+        <location line="+13"/>
         <location line="+7"/>
-        <location line="+129"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginimxbootloader.cpp" line="-156"/>
+        <location line="+13"/>
+        <location line="+7"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginpicotoolbootloader.cpp" line="-227"/>
+        <location line="+13"/>
+        <location line="+7"/>
+        <location filename="../../../src/plugins/openmv/openmvplugin.cpp" line="+14"/>
+        <location filename="../../../src/plugins/openmv/openmvpluginconnect.cpp" line="+31"/>
+        <location line="+13"/>
+        <location line="+7"/>
+        <location line="+165"/>
         <source>Disconnect</source>
         <translation>Prekini povezavo</translation>
     </message>
     <message>
-        <location line="+19"/>
+        <location filename="../../../src/plugins/openmv/openmvplugin.cpp" line="+19"/>
         <source>Start (run script)</source>
         <translation>Zaženi (zaženi skript)</translation>
     </message>
@@ -6587,7 +7934,7 @@ Zaprite vse programe, ki si ogledujejo/urejajo podatke aplikacije OpenMV IDE in 
     </message>
     <message>
         <location line="+5"/>
-        <location filename="../../../src/plugins/openmv/openmvpluginconnect.cpp" line="+246"/>
+        <location filename="../../../src/plugins/openmv/openmvpluginconnect.cpp" line="+332"/>
         <location filename="../../../src/plugins/openmv/openmvterminal.cpp" line="+5"/>
         <source>Stop</source>
         <translation>Ustavi</translation>
@@ -6624,21 +7971,21 @@ Zaprite vse programe, ki si ogledujejo/urejajo podatke aplikacije OpenMV IDE in 
     <message>
         <location line="+17"/>
         <location line="+22"/>
-        <location line="+1782"/>
+        <location line="+1850"/>
         <location line="+55"/>
         <location line="+112"/>
         <location line="+69"/>
-        <location line="+246"/>
-        <location filename="../../../src/plugins/openmv/openmvpluginconnect.cpp" line="-424"/>
-        <location line="+179"/>
-        <location line="+124"/>
-        <location line="+122"/>
-        <location line="+115"/>
+        <location line="+276"/>
+        <location filename="../../../src/plugins/openmv/openmvpluginconnect.cpp" line="-547"/>
+        <location line="+216"/>
+        <location line="+167"/>
+        <location line="+165"/>
+        <location line="+85"/>
         <source>Busy... please wait...</source>
         <translation>Zaseden ... prosim počakajte ...</translation>
     </message>
     <message>
-        <location line="-2280"/>
+        <location line="-2378"/>
         <location line="+15"/>
         <source>Disable</source>
         <translation>Onemogoči</translation>
@@ -6756,7 +8103,7 @@ Zaprite vse programe, ki si ogledujejo/urejajo podatke aplikacije OpenMV IDE in 
     </message>
     <message>
         <location line="+65"/>
-        <location filename="../../../src/plugins/openmv/openmvpluginconnect.cpp" line="-384"/>
+        <location filename="../../../src/plugins/openmv/openmvpluginconnect.cpp" line="-442"/>
         <source>Board:</source>
         <translation>Odbor:</translation>
     </message>
@@ -6800,14 +8147,14 @@ Zaprite vse programe, ki si ogledujejo/urejajo podatke aplikacije OpenMV IDE in 
     </message>
     <message>
         <location line="+6"/>
-        <location line="+1908"/>
-        <location filename="../../../src/plugins/openmv/openmvpluginconnect.cpp" line="-251"/>
-        <location line="+253"/>
+        <location line="+2004"/>
+        <location filename="../../../src/plugins/openmv/openmvpluginconnect.cpp" line="-300"/>
+        <location line="+302"/>
         <source>Drive:</source>
         <translation>pogon:</translation>
     </message>
     <message>
-        <location line="-1907"/>
+        <location line="-2003"/>
         <source>Drive associated with port</source>
         <translation>Pogon, povezan z vrati</translation>
     </message>
@@ -6823,8 +8170,8 @@ Zaprite vse programe, ki si ogledujejo/urejajo podatke aplikacije OpenMV IDE in 
         <translation>Lahko se razlikuje od FPS kamere</translation>
     </message>
     <message>
-        <location line="+218"/>
-        <location filename="../../../src/plugins/openmv/openmvpluginconnect.cpp" line="-3797"/>
+        <location line="+234"/>
+        <location filename="../../../src/plugins/openmv/openmvpluginconnect.cpp" line="-2547"/>
         <source>Update Available</source>
         <translation>Posodobitev na voljo</translation>
     </message>
@@ -6839,7 +8186,7 @@ Zaprite vse programe, ki si ogledujejo/urejajo podatke aplikacije OpenMV IDE in 
         <translation>Prenesi</translation>
     </message>
     <message>
-        <location line="+172"/>
+        <location line="+206"/>
         <source>WiFi Programming Disabled!</source>
         <translation>Programiranje WiFi onemogočeno!</translation>
     </message>
@@ -6859,7 +8206,17 @@ Zaprite vse programe, ki si ogledujejo/urejajo podatke aplikacije OpenMV IDE in 
         <translation>Mape z dokumenti ni bilo mogoče ustvariti!</translation>
     </message>
     <message>
-        <location line="+20"/>
+        <location line="+22"/>
+        <source>GitHub Copilot</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Would you like to enable GitHub Copilot?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+16"/>
         <source>OpenMV Cam LED Colors</source>
         <translation>Barve LED OpenMV Cam</translation>
     </message>
@@ -6909,18 +8266,18 @@ Vdelana programska oprema vaše OpenMV Cam je panična zaradi okvare strojne opr
 </translation>
     </message>
     <message>
-        <location line="+94"/>
-        <location line="+1561"/>
+        <location line="+93"/>
+        <location line="+1593"/>
         <source>Serial Port - %L1 - %L2 BPS</source>
         <translation>Serijska vrata - %L1 - %L2 BPS</translation>
     </message>
     <message>
-        <location line="-1529"/>
+        <location line="-1561"/>
         <location line="+106"/>
         <location line="+96"/>
         <location line="+101"/>
         <location line="+96"/>
-        <location line="+1176"/>
+        <location line="+1208"/>
         <location line="+145"/>
         <location line="+114"/>
         <location line="+129"/>
@@ -6930,7 +8287,7 @@ Vdelana programska oprema vaše OpenMV Cam je panična zaradi okvare strojne opr
         <translation>Povezovanje ... (30 sekundna časovna omejitev)</translation>
     </message>
     <message>
-        <location line="-2168"/>
+        <location line="-2200"/>
         <source>
 
 Try doing:
@@ -6983,12 +8340,12 @@ sudo adduser %L1 klic
     </message>
     <message>
         <location line="+17"/>
-        <location line="+1618"/>
+        <location line="+1650"/>
         <source>UDP Server Connection - %1</source>
         <translation>Povezava s strežnikom UDP - %1</translation>
     </message>
     <message>
-        <location line="-1544"/>
+        <location line="-1576"/>
         <source>Invalid port argument (%1) for -open_udp_server_terminal</source>
         <translation>Neveljaven argument vrat (%1) za -open_udp_server_terminal</translation>
     </message>
@@ -7019,12 +8376,12 @@ sudo adduser %L1 klic
     </message>
     <message>
         <location line="+17"/>
-        <location line="+1664"/>
+        <location line="+1696"/>
         <source>TCP Server Connection - %1</source>
         <translation>Povezava s strežnikom TCP - %1</translation>
     </message>
     <message>
-        <location line="-1590"/>
+        <location line="-1622"/>
         <source>Invalid port argument (%1) for -open_tcp_server_terminal</source>
         <translation>Neveljaven argument vrat (%1) za -open_tcp_server_terminal</translation>
     </message>
@@ -7051,7 +8408,7 @@ sudo adduser %L1 klic
         <location line="+6"/>
         <location line="+8"/>
         <location line="+7"/>
-        <location filename="../../../src/plugins/openmv/openmvpluginconnect.cpp" line="+3355"/>
+        <location filename="../../../src/plugins/openmv/openmvpluginconnect.cpp" line="+2022"/>
         <location line="+9"/>
         <location line="+8"/>
         <location line="+19"/>
@@ -7189,9 +8546,9 @@ Ali želite zdaj registrirati svojo OpenMV Cam?</translation>
     </message>
     <message>
         <location line="+64"/>
-        <location filename="../../../src/plugins/openmv/openmvpluginconnect.cpp" line="+152"/>
-        <location line="+377"/>
-        <location line="+110"/>
+        <location filename="../../../src/plugins/openmv/openmvpluginconnect.cpp" line="+186"/>
+        <location line="+471"/>
+        <location line="+153"/>
         <source>FPS: 0</source>
         <translation>FPS: 0</translation>
     </message>
@@ -7225,13 +8582,13 @@ Ali želite zdaj registrirati svojo OpenMV Cam?</translation>
     </message>
     <message>
         <location line="-23"/>
-        <location line="+1384"/>
+        <location line="+1416"/>
         <location filename="../../../src/plugins/openmv/openmvterminal.cpp" line="-23"/>
         <source>Image Files (*.bmp *.jpg *.jpeg *.png *.ppm)</source>
         <translation>Slikovne datoteke (*.bmp *.jpg *.jpeg *.png *.ppm)</translation>
     </message>
     <message>
-        <location line="-1339"/>
+        <location line="-1371"/>
         <location line="+7"/>
         <location line="+17"/>
         <location line="+15"/>
@@ -7267,14 +8624,14 @@ Ali želite zdaj registrirati svojo OpenMV Cam?</translation>
     </message>
     <message>
         <location line="-48"/>
-        <location line="+1356"/>
+        <location line="+1388"/>
         <location line="+80"/>
         <location line="+21"/>
         <source>Keypoints Files (*.lbp *.orb)</source>
         <translation>Datoteke ključnih točk (*.lbp *.orb)</translation>
     </message>
     <message>
-        <location line="-1291"/>
+        <location line="-1290"/>
         <location line="+7"/>
         <location line="+6"/>
         <location line="+7"/>
@@ -7302,15 +8659,15 @@ Ali želite zdaj registrirati svojo OpenMV Cam?</translation>
         <translation>Ne morem odpreti vzorčne datoteke &quot;%L1&quot;!</translation>
     </message>
     <message>
-        <location line="+61"/>
+        <location line="+56"/>
         <location line="+11"/>
         <location line="+15"/>
-        <location line="+27"/>
+        <location line="+29"/>
         <source>Select Drive</source>
         <translation>Izberite Drive</translation>
     </message>
     <message>
-        <location line="-52"/>
+        <location line="-54"/>
         <source>No valid drives were found to associate with your OpenMV Cam!</source>
         <translation>Ni veljavnih pogonov za povezavo z vašo OpenMV Cam!</translation>
     </message>
@@ -7330,7 +8687,7 @@ Ali želite zdaj registrirati svojo OpenMV Cam?</translation>
         <translation>Pogon: %L1</translation>
     </message>
     <message>
-        <location line="+36"/>
+        <location line="+38"/>
         <source>Debug Protocol Settings</source>
         <translation>Nastavitve protokola za odpravljanje napak</translation>
     </message>
@@ -7370,7 +8727,7 @@ Ali želite zdaj registrirati svojo OpenMV Cam?</translation>
         <translation>Anketiranje besedilnega medpomnilnika (ms)</translation>
     </message>
     <message>
-        <location line="+34"/>
+        <location line="+36"/>
         <location line="+13"/>
         <location line="+31"/>
         <location line="+9"/>
@@ -7417,7 +8774,7 @@ Ali želite zdaj registrirati svojo OpenMV Cam?</translation>
     </message>
     <message>
         <location line="+31"/>
-        <location filename="../../../src/plugins/openmv/openmvpluginconnect.cpp" line="-3114"/>
+        <location filename="../../../src/plugins/openmv/openmvpluginconnect.cpp" line="-1810"/>
         <source>Please select a serial port</source>
         <translation>Izberite serijska vrata</translation>
     </message>
@@ -7428,7 +8785,7 @@ Ali želite zdaj registrirati svojo OpenMV Cam?</translation>
     </message>
     <message>
         <location line="+94"/>
-        <location filename="../../../src/plugins/openmv/openmvpluginconnect.cpp" line="+243"/>
+        <location filename="../../../src/plugins/openmv/openmvpluginconnect.cpp" line="+242"/>
         <source>Try doing:
 
 </source>
@@ -7657,7 +9014,7 @@ Ali želite zdaj registrirati svojo OpenMV Cam?</translation>
         <translation>Generacija končana!</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/openmv/openmvpluginconnect.cpp" line="-1160"/>
+        <location filename="../../../src/plugins/openmv/openmvpluginconnect.cpp" line="-1301"/>
         <source>New OpenMV IDE resources are available (e.g. examples, firmware, documentation, etc.).</source>
         <translation>Na voljo so novi viri OpenMV IDE (npr. primeri, vdelana programska oprema, dokumentacija itd.).</translation>
     </message>
@@ -7668,42 +9025,45 @@ Ali želite zdaj registrirati svojo OpenMV Cam?</translation>
     </message>
     <message>
         <location line="+7"/>
-        <location line="+223"/>
-        <location line="+201"/>
-        <location filename="../../../src/plugins/openmv/tools/bossac.cpp" line="+102"/>
+        <location line="+230"/>
+        <location line="+122"/>
+        <location filename="../../../src/plugins/openmv/tools/alif.cpp" line="+234"/>
+        <location line="+148"/>
+        <location filename="../../../src/plugins/openmv/tools/bossac.cpp" line="+132"/>
         <location line="+51"/>
-        <location filename="../../../src/plugins/openmv/tools/dfu-util.cpp" line="+173"/>
+        <location filename="../../../src/plugins/openmv/tools/dfu-util.cpp" line="+243"/>
         <location line="+46"/>
         <location line="+75"/>
         <location line="+46"/>
         <location line="+74"/>
         <location line="+46"/>
-        <location filename="../../../src/plugins/openmv/tools/imx.cpp" line="+352"/>
+        <location filename="../../../src/plugins/openmv/tools/imx.cpp" line="+378"/>
         <location line="+50"/>
         <location line="+705"/>
         <location line="+50"/>
-        <location filename="../../../src/plugins/openmv/tools/picotool.cpp" line="+187"/>
+        <location filename="../../../src/plugins/openmv/tools/picotool.cpp" line="+224"/>
         <location line="+51"/>
         <source>Downloading...</source>
         <translation>Prenašanje ...</translation>
     </message>
     <message>
-        <location line="-410"/>
+        <location line="-338"/>
         <source>Installing...</source>
         <translation>Namestitev ...</translation>
     </message>
     <message>
         <location line="+31"/>
+        <location filename="../../../src/plugins/openmv/tools/alif.cpp" line="+66"/>
         <source>Please close any programs that are viewing/editing OpenMV IDE&apos;s application data and then restart OpenMV IDE!</source>
         <translation>Zaprite vse programe, ki si ogledujejo/urejajo podatke aplikacije OpenMV IDE in nato znova zaženite OpenMV IDE!</translation>
     </message>
     <message>
-        <location line="+16"/>
+        <location line="+18"/>
         <source>Installation Sucessful! Please restart OpenMV IDE.</source>
         <translation>Namestitev uspešna! Znova zaženite OpenMV IDE.</translation>
     </message>
     <message>
-        <location line="+10"/>
+        <location line="+15"/>
         <location line="+6"/>
         <location line="+26"/>
         <source>Package Update</source>
@@ -7712,19 +9072,19 @@ Ali želite zdaj registrirati svojo OpenMV Cam?</translation>
     <message>
         <location line="-25"/>
         <location line="+234"/>
-        <location line="+158"/>
+        <location line="+79"/>
         <source>Cannot open the resources file &quot;%L1&quot;!</source>
         <translation>Ni mogoče odpreti datoteke virov &quot;%L1&quot;!</translation>
     </message>
     <message>
-        <location line="-366"/>
+        <location line="-287"/>
         <location line="+234"/>
-        <location line="+165"/>
+        <location line="+86"/>
         <source>Network request failed &quot;%L1&quot;!</source>
         <translation>Omrežna zahteva ni uspela &quot;%L1&quot;!</translation>
     </message>
     <message>
-        <location line="-375"/>
+        <location line="-296"/>
         <location line="+79"/>
         <location line="+45"/>
         <source>Bootloader</source>
@@ -7745,19 +9105,19 @@ Ali želite zdaj registrirati svojo OpenMV Cam?</translation>
         <location line="+11"/>
         <location line="+6"/>
         <location line="+115"/>
-        <location line="+433"/>
+        <location line="+504"/>
         <source>Erase internal file system</source>
         <translation>Izbriši notranji datotečni sistem</translation>
     </message>
     <message>
-        <location line="-550"/>
+        <location line="-621"/>
         <location line="+120"/>
-        <location line="+434"/>
+        <location line="+505"/>
         <source>If you enable this option all files on your OpenMV Cam&apos;s internal flash drive will be deleted. This does not erase files on any removable SD card (if inserted).</source>
         <translation>Če omogočite to možnost, bodo vse datoteke na notranjem bliskovnem pogonu vašega OpenMV Cam izbrisane. To ne izbriše datotek na kateri koli odstranljivi kartici SD (če je vstavljena).</translation>
     </message>
     <message>
-        <location line="-549"/>
+        <location line="-620"/>
         <source>Loading firmware via DFU always erases your OpenMV Cam&apos;s internal flash drive. This does not erase files on any removable SD card (if inserted).</source>
         <translation>Nalaganje vdelane programske opreme prek DFU vedno izbriše notranji bliskovni pogon OpenMV Cam. To ne izbriše datotek na kateri koli odstranljivi kartici SD (če je vstavljena).</translation>
     </message>
@@ -7773,7 +9133,7 @@ Ali želite zdaj registrirati svojo OpenMV Cam?</translation>
         <translation>»%L1« ni datoteka!</translation>
     </message>
     <message>
-        <location line="+233"/>
+        <location line="+154"/>
         <source>Extracting...</source>
         <translation>Ekstrahiranje ...</translation>
     </message>
@@ -7783,7 +9143,17 @@ Ali želite zdaj registrirati svojo OpenMV Cam?</translation>
         <translation>Vdelane programske opreme ni mogoče ekstrahirati!</translation>
     </message>
     <message>
-        <location line="+238"/>
+        <location line="+119"/>
+        <location line="+5"/>
+        <location line="+49"/>
+        <location line="+5"/>
+        <location line="+5"/>
+        <location line="+5"/>
+        <source>Unknown Board</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+200"/>
         <source>A board in DFU mode was detected. What would you like to do?</source>
         <translation>Zaznana je bila plošča v načinu DFU. Kaj bi rad počel?</translation>
     </message>
@@ -7803,53 +9173,70 @@ Ali želite zdaj registrirati svojo OpenMV Cam?</translation>
         <translation>Samo izbrišite notranji datotečni sistem</translation>
     </message>
     <message>
-        <location line="+73"/>
+        <location line="+71"/>
         <source>No OpenMV Cams found!</source>
         <translation>Ni najdenih kamer OpenMV!</translation>
     </message>
     <message>
-        <location line="+35"/>
+        <location line="+47"/>
         <source>Do you have an OpenMV Cam connected and is it bricked?</source>
         <translation>Ali imate priklopljeno kamero OpenMV Cam in je zaklenjena?</translation>
     </message>
     <message>
-        <location line="+51"/>
-        <location line="+520"/>
-        <location line="+623"/>
+        <location line="+775"/>
+        <source>Only loading *.dfu files is supported for the STM32 recovery bootloader!
+
+Please select a bootloader.dfu file and try again. Note that loading the firmware.dfu or openmv.dfu (bootloader + firmware) may not work on STM32H7 boards due to a bug in the chip&apos;s ROM bootloader!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+123"/>
+        <source>Note that loading the firmware.dfu or openmv.dfu (bootloader + firmware) may not work on STM32H7 boards due to a bug in the chip&apos;s ROM bootloader!
+
+OpenMV recommends only loading the bootloader.dfu to repair the bootloader.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginalifbootloader.cpp" line="-56"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginimxbootloader.cpp" line="-97"/>
+        <location filename="../../../src/plugins/openmv/openmvpluginconnect.cpp" line="-835"/>
+        <location line="+595"/>
         <source>Please select the board type</source>
         <translation>Izberite vrsto plošče</translation>
     </message>
     <message>
-        <location line="-1130"/>
-        <location line="+3229"/>
+        <location filename="../../../src/plugins/openmv/openmvpluginconnect.cpp" line="-582"/>
+        <location line="+1957"/>
         <location line="+28"/>
         <source>Erase the internal file system?</source>
         <translation>Želite izbrisati notranji datotečni sistem?</translation>
     </message>
     <message>
-        <location line="-3233"/>
+        <location line="-1928"/>
         <source>No released firmware available for the attached board!</source>
         <translation>Za priloženo ploščo ni na voljo izdane vdelane programske opreme!</translation>
     </message>
     <message>
-        <location line="+54"/>
+        <location line="+63"/>
         <source>Please select a DFU Device</source>
         <translation>Izberite napravo DFU</translation>
     </message>
     <message>
-        <location line="+89"/>
-        <location line="+40"/>
+        <location line="-85"/>
+        <location line="+167"/>
+        <location line="+44"/>
         <source>Please update the bootloader to the latest version and install the SoftDevice to flash the OpenMV firmware. More information can be found on &lt;a href=&quot;https://docs.arduino.cc&quot;&gt;https://docs.arduino.cc&lt;/a&gt;</source>
         <translation>Posodobite zagonski nalagalnik na najnovejšo različico in namestite SoftDevice za flash vdelane programske opreme OpenMV. Več informacij najdete na &lt;a href=&quot;https://docs.arduino.cc&quot;&gt;https://docs.arduino.cc&lt;/a&gt;</translation>
     </message>
     <message>
-        <location line="-31"/>
-        <location line="+40"/>
+        <location line="-201"/>
+        <location line="+166"/>
+        <location line="+44"/>
         <source>Please short REC to GND and reset your board. More information can be found on &lt;a href=&quot;https://docs.arduino.cc&quot;&gt;https://docs.arduino.cc&lt;/a&gt;</source>
         <translation>Prosimo, skrajšajte REC na GND in ponastavite svojo ploščo. Več informacij najdete na &lt;a href=&quot;https://docs.arduino.cc&quot;&gt;https://docs.arduino.cc&lt;/a&gt;</translation>
     </message>
     <message>
-        <location line="+23"/>
+        <location line="+25"/>
         <source>Connecting...
 
 (Hit cancel if this takes more than 5 seconds).</source>
@@ -7873,9 +9260,9 @@ Ali želite zdaj registrirati svojo OpenMV Cam?</translation>
         <translation>Poskusite znova vzpostaviti povezavo?</translation>
     </message>
     <message>
-        <location line="+52"/>
-        <location line="+165"/>
-        <location line="+1945"/>
+        <location line="+72"/>
+        <location line="+181"/>
+        <location line="+435"/>
         <source>Timeout error while getting board architecture!</source>
         <translation>Napaka časovne omejitve pri pridobivanju arhitekture plošče!</translation>
     </message>
@@ -7884,13 +9271,13 @@ Ali želite zdaj registrirati svojo OpenMV Cam?</translation>
         <translation type="vanished">Nepodprta arhitektura plošče!</translation>
     </message>
     <message>
-        <location line="-1883"/>
-        <location line="+600"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginbootloader.cpp" line="-530"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginimxbootloader.cpp" line="+103"/>
         <source>Disconnect your OpenMV Cam and then reconnect it...</source>
         <translation>Odklopite vaš OpenMV Cam in ga nato ponovno priklopite ...</translation>
     </message>
     <message>
-        <location line="-600"/>
+        <location line="+2"/>
         <source>
 
 Hit cancel to skip to DFU reprogramming.</source>
@@ -7899,24 +9286,24 @@ Hit cancel to skip to DFU reprogramming.</source>
 Pritisnite Prekliči, da preskočite na reprogramiranje DFU.</translation>
     </message>
     <message>
-        <location line="+0"/>
+        <location line="-3"/>
         <source>Reconnect your OpenMV Cam...</source>
         <translation>Znova priključite kamero OpenMV ...</translation>
     </message>
     <message>
-        <location line="+1"/>
-        <location line="+599"/>
+        <location line="+4"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginimxbootloader.cpp" line="+0"/>
         <source>Connecting... (Hit cancel if this takes more than 5 seconds).</source>
         <translation>Povezovanje ... (Pritisnite Prekliči, če to traja več kot 5 sekund).</translation>
     </message>
     <message>
-        <location line="-549"/>
-        <location line="+594"/>
+        <location line="+78"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginimxbootloader.cpp" line="+45"/>
         <source>Unable to connect to your OpenMV Cam&apos;s normal bootloader!</source>
         <translation>Ni mogoče vzpostaviti povezave z običajnim zagonskim programom OpenMV Cam!</translation>
     </message>
     <message>
-        <location line="-590"/>
+        <location line="+4"/>
         <source>OpenMV IDE can still try to repair your OpenMV Cam using your OpenMV Cam&apos;s DFU Bootloader.
 
 Continue?</source>
@@ -7925,7 +9312,7 @@ Continue?</source>
 Nadaljevati?</translation>
     </message>
     <message>
-        <location line="+102"/>
+        <location line="+106"/>
         <location filename="../../../src/plugins/openmv/tools/dfu-util.cpp" line="-287"/>
         <location line="+46"/>
         <location line="+195"/>
@@ -7934,12 +9321,20 @@ Nadaljevati?</translation>
         <translation>Brisanje ...</translation>
     </message>
     <message>
-        <location line="+56"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginarduinodfubootloader.cpp" line="+182"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginbootloader.cpp" line="+56"/>
         <location line="+63"/>
         <location line="+77"/>
-        <location line="+629"/>
-        <location line="+447"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvplugindfubootloader.cpp" line="+191"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginpicotoolbootloader.cpp" line="+117"/>
         <location line="+22"/>
+        <location filename="../../../src/plugins/openmv/tools/alif.cpp" line="+46"/>
+        <location line="+56"/>
+        <location line="+35"/>
+        <location line="+50"/>
+        <location line="+36"/>
+        <location line="+38"/>
+        <location line="+37"/>
         <location filename="../../../src/plugins/openmv/tools/imx.cpp" line="-653"/>
         <location line="+38"/>
         <location line="+48"/>
@@ -7962,17 +9357,18 @@ Nadaljevati?</translation>
         <translation>Napaka časovne omejitve!</translation>
     </message>
     <message>
-        <location line="-1156"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginbootloader.cpp" line="-58"/>
         <location line="+67"/>
         <source>Programming...</source>
         <translation>Programiranje ...</translation>
     </message>
     <message>
-        <location line="+22"/>
-        <location line="+300"/>
-        <location line="+45"/>
-        <location line="+273"/>
-        <location line="+466"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginarduinodfubootloader.cpp" line="+20"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginbootloader.cpp" line="+22"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvplugindfubootloader.cpp" line="+20"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginimxbootloader.cpp" line="+39"/>
+        <location line="+47"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginpicotoolbootloader.cpp" line="+17"/>
         <source>Onboard Data Flash Erased!
 
 </source>
@@ -7981,9 +9377,9 @@ Nadaljevati?</translation>
 </translation>
     </message>
     <message>
-        <location line="-1084"/>
-        <location line="+300"/>
-        <location line="+45"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginbootloader.cpp" line="+0"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginimxbootloader.cpp" line="-47"/>
+        <location line="+47"/>
         <source>Firmware Upgrade complete!
 
 </source>
@@ -7992,11 +9388,12 @@ Nadaljevati?</translation>
 </translation>
     </message>
     <message>
-        <location line="-344"/>
-        <location line="+300"/>
-        <location line="+45"/>
-        <location line="+273"/>
-        <location line="+466"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginarduinodfubootloader.cpp" line="+1"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginbootloader.cpp" line="+1"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvplugindfubootloader.cpp" line="+1"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginimxbootloader.cpp" line="-46"/>
+        <location line="+47"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginpicotoolbootloader.cpp" line="+1"/>
         <source>Your OpenMV Cam will start running its built-in self-test if no sd card is attached... this may take a while.
 
 </source>
@@ -8005,24 +9402,29 @@ Nadaljevati?</translation>
 </translation>
     </message>
     <message>
-        <location line="-1083"/>
-        <location line="+300"/>
-        <location line="+45"/>
-        <location line="+273"/>
-        <location line="+466"/>
+        <location line="+1"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginbootloader.cpp" line="+1"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvplugindfubootloader.cpp" line="+1"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginimxbootloader.cpp" line="-46"/>
+        <location line="+47"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginpicotoolbootloader.cpp" line="+1"/>
         <source>Click OK when your OpenMV Cam&apos;s RGB LED starts blinking blue - which indicates the self-test is complete.</source>
         <translation>Kliknite V redu, ko LED RGB vaše OpenMV Cam začne utripati modro – kar pomeni, da je samotestiranje končano.</translation>
     </message>
     <message>
-        <location line="-1083"/>
-        <location line="+281"/>
-        <location line="+19"/>
-        <location line="+25"/>
-        <location line="+20"/>
-        <location line="+273"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginalifbootloader.cpp" line="+81"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginarduinodfubootloader.cpp" line="+1"/>
         <location line="+65"/>
-        <location line="+222"/>
-        <location line="+179"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginbootloader.cpp" line="+1"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginbossacbootloader.cpp" line="+248"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvplugindfubootloader.cpp" line="+1"/>
+        <location line="+43"/>
+        <location line="+37"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginimxbootloader.cpp" line="-65"/>
+        <location line="+19"/>
+        <location line="+27"/>
+        <location line="+20"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginpicotoolbootloader.cpp" line="+1"/>
         <location line="+37"/>
         <source>
 
@@ -8036,12 +9438,12 @@ In this case click OK when you see your OpenMV Cam&apos;s internal flash drive m
 V tem primeru kliknite V redu, ko vidite notranji nosilec bliskovnega pogona OpenMV Cam (odpre se okno ali pa ne).</translation>
     </message>
     <message>
-        <location line="-1096"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginbootloader.cpp" line="+25"/>
         <source>The firmware file is empty!</source>
         <translation>Datoteka vdelane programske opreme je prazna!</translation>
     </message>
     <message>
-        <location line="+120"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginimxbootloader.cpp" line="-185"/>
         <source>No IMX settings for the selected board type %L1!</source>
         <translation>Ni nastavitev IMX za izbrano vrsto plošče %L1!</translation>
     </message>
@@ -8051,20 +9453,29 @@ V tem primeru kliknite V redu, ko vidite notranji nosilec bliskovnega pogona Ope
         <translation>Ni nastavitev IMX!</translation>
     </message>
     <message>
-        <location line="+35"/>
-        <location line="+12"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginarduinodfubootloader.cpp" line="-289"/>
+        <location line="+13"/>
         <location line="+7"/>
-        <location line="+171"/>
-        <location line="+12"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginbossacbootloader.cpp" line="-267"/>
+        <location line="+13"/>
         <location line="+7"/>
-        <location line="+1357"/>
-        <location line="+12"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvplugindfubootloader.cpp" line="-313"/>
+        <location line="+13"/>
+        <location line="+7"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginimxbootloader.cpp" line="+17"/>
+        <location line="+13"/>
+        <location line="+7"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginpicotoolbootloader.cpp" line="-215"/>
+        <location line="+13"/>
+        <location line="+7"/>
+        <location filename="../../../src/plugins/openmv/openmvpluginconnect.cpp" line="+307"/>
+        <location line="+13"/>
         <location line="+7"/>
         <source>Failed to eject &quot;%L1&quot;!</source>
         <translation>Izmet &quot;%L1&quot; ni uspel!</translation>
     </message>
     <message>
-        <location line="-1561"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginimxbootloader.cpp" line="+5"/>
         <source>
 
 Hit cancel to skip to SBL reprogramming.</source>
@@ -8091,7 +9502,15 @@ Click the Ok button after your OpenMV Cam&apos;s SBL Bootloader has enumerated.<
 Kliknite gumb V redu, ko je zagonski nalagalnik SBL vaše OpenMV Cam oštevilčen.</translation>
     </message>
     <message>
-        <location line="+9"/>
+        <location line="+55"/>
+        <source>If you are forcing SBL mode, disconnect your OpenMV Cam from your computer and remove the SBL wire jumper. Then reconnect your OpenMV Cam to your computer.
+
+</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginalifbootloader.cpp" line="-2"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginimxbootloader.cpp" line="-46"/>
         <location line="+45"/>
         <source>Firmware update complete!
 
@@ -8101,7 +9520,7 @@ Kliknite gumb V redu, ko je zagonski nalagalnik SBL vaše OpenMV Cam oštevilče
 </translation>
     </message>
     <message>
-        <location line="-44"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginimxbootloader.cpp" line="-44"/>
         <source>Disconnect your OpenMV Cam from your computer, remove the jumper wire between the SBL and 3.3V pins, and then reconnect your OpenMV Cam to your computer.
 
 </source>
@@ -8110,56 +9529,68 @@ Kliknite gumb V redu, ko je zagonski nalagalnik SBL vaše OpenMV Cam oštevilče
 </translation>
     </message>
     <message>
-        <location line="+1"/>
-        <location line="+44"/>
-        <location line="+358"/>
-        <location line="+222"/>
-        <location line="+216"/>
-        <location line="+66"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginalifbootloader.cpp" line="+1"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginarduinodfubootloader.cpp" line="+268"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginbootloader.cpp" line="+73"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginbossacbootloader.cpp" line="+246"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvplugindfubootloader.cpp" line="+255"/>
+        <location line="+37"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginimxbootloader.cpp" line="+1"/>
+        <location line="+46"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginpicotoolbootloader.cpp" line="+194"/>
         <source>Click the Ok button after your OpenMV Cam has enumerated and finished running its built-in self test (blue led blinking - this takes a while).</source>
         <translation>Kliknite gumb V redu, ko je vaša OpenMV Cam oštevilčila in končala izvajanje vgrajenega samotestiranja (modra lučka utripa - to traja nekaj časa).</translation>
     </message>
     <message>
-        <location line="-761"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginarduinodfubootloader.cpp" line="-243"/>
         <source>DFU Util may not be stable on this platform. If loading fails please use a regular computer.</source>
         <translation>DFU Util morda ni stabilen na tej platformi. Če nalaganje ne uspe, uporabite običajni računalnik.</translation>
     </message>
     <message>
-        <location line="+76"/>
+        <location line="+75"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvplugindfubootloader.cpp" line="-216"/>
         <source>No DFU settings for the selected board type!</source>
         <translation>Ni nastavitev DFU za izbrano vrsto plošče!</translation>
     </message>
     <message>
-        <location line="+40"/>
+        <location line="+45"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvplugindfubootloader.cpp" line="+60"/>
         <source>No DFU settings for the selected device!</source>
         <translation>Za izbrano napravo ni nastavitev DFU!</translation>
     </message>
     <message>
-        <location line="+50"/>
-        <location line="+447"/>
+        <location line="+32"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvplugindfubootloader.cpp" line="+47"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginpicotoolbootloader.cpp" line="-82"/>
         <source>Erasing Disk</source>
         <translation>Brisanje diska</translation>
     </message>
     <message>
-        <location line="-386"/>
+        <location line="+61"/>
         <location line="+23"/>
-        <location line="+222"/>
-        <location line="+216"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginbossacbootloader.cpp" line="-7"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvplugindfubootloader.cpp" line="+60"/>
+        <location line="+22"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginpicotoolbootloader.cpp" line="+75"/>
+        <location filename="../../../src/plugins/openmv/tools/alif.cpp" line="-577"/>
         <location filename="../../../src/plugins/openmv/tools/imx.cpp" line="-1052"/>
         <location line="+767"/>
         <source>Flashing Firmware</source>
         <translation>Utripajoča vdelana programska oprema</translation>
     </message>
     <message>
-        <location line="-457"/>
+        <location line="-19"/>
         <location line="+38"/>
-        <location line="+503"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginbootloader.cpp" line="+11"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvplugindfubootloader.cpp" line="+7"/>
         <source>DFU firmware update failed!</source>
         <translation>Posodobitev vdelane programske opreme DFU ni uspela!</translation>
     </message>
     <message>
-        <location line="-516"/>
-        <location line="+503"/>
+        <location line="-13"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginbootloader.cpp" line="-13"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvplugindfubootloader.cpp" line="-18"/>
+        <location line="+37"/>
         <source>DFU firmware update complete!
 
 </source>
@@ -8168,29 +9599,29 @@ Kliknite gumb V redu, ko je zagonski nalagalnik SBL vaše OpenMV Cam oštevilče
 </translation>
     </message>
     <message>
-        <location line="-455"/>
-        <location line="+35"/>
-        <location line="+126"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginbossacbootloader.cpp" line="-171"/>
+        <location line="+54"/>
+        <location line="+110"/>
         <source>BOSSAC device %1 missing!</source>
         <translation>Manjka naprava BOSSAC %1!</translation>
     </message>
     <message>
-        <location line="-87"/>
+        <location line="-78"/>
         <source>No BOSSAC settings for the selected board type!</source>
         <translation>Ni nastavitev BOSSAC za izbrano vrsto plošče!</translation>
     </message>
     <message>
-        <location line="+25"/>
+        <location line="+27"/>
         <source>No BOSSAC settings for the selected device!</source>
         <translation>Za izbrano napravo ni nastavitev BOSSAC!</translation>
     </message>
     <message>
-        <location line="+29"/>
+        <location line="+11"/>
         <source>Your Nano 33 BLE doesn&apos;t have an onboard data flash disk.</source>
         <translation>Vaš Nano 33 BLE nima vgrajenega podatkovnega bliskovnega diska.</translation>
     </message>
     <message>
-        <location line="+46"/>
+        <location line="+53"/>
         <source>BOSSAC firmware update complete!
 
 </source>
@@ -8204,17 +9635,17 @@ Kliknite gumb V redu, ko je zagonski nalagalnik SBL vaše OpenMV Cam oštevilče
         <translation>Posodobitev vdelane programske opreme BOSSAC ni uspela!</translation>
     </message>
     <message>
-        <location line="+51"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginpicotoolbootloader.cpp" line="-132"/>
         <source>No PicoTool settings for the selected board type!</source>
         <translation>Brez nastavitev PicoTool za izbrano vrsto plošče!</translation>
     </message>
     <message>
-        <location line="+30"/>
+        <location line="+34"/>
         <source>No PicoTool settings for the selected device!</source>
         <translation>Za izbrano napravo ni nastavitev PicoTool!</translation>
     </message>
     <message>
-        <location line="+122"/>
+        <location line="+104"/>
         <source>PicoTool firmware update complete!
 
 </source>
@@ -8228,7 +9659,7 @@ Kliknite gumb V redu, ko je zagonski nalagalnik SBL vaše OpenMV Cam oštevilče
         <translation>Posodobitev vdelane programske opreme PicoTool ni uspela!</translation>
     </message>
     <message>
-        <location line="+20"/>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvpluginbootloader.cpp" line="-32"/>
         <source>DFU update erases your OpenMV Cam&apos;s internal flash file system.
 
 Backup your data before continuing!</source>
@@ -8292,29 +9723,29 @@ Kliknite gumb V redu, ko je zagonski nalagalnik DFU vaše OpenMV Cam oštevilče
         <translation>Ponastavitev zagonskega nalagalnika DFU ni uspela!</translation>
     </message>
     <message>
-        <location line="+61"/>
+        <location filename="../../../src/plugins/openmv/openmvpluginconnect.cpp" line="-534"/>
         <source>None</source>
         <translation>Brez</translation>
     </message>
     <message>
-        <location line="+26"/>
         <location line="+18"/>
-        <location line="+45"/>
+        <location line="+10"/>
+        <location line="+54"/>
         <source>Unknown</source>
         <translation>Neznano</translation>
     </message>
     <message>
-        <location line="-48"/>
+        <location line="-57"/>
         <source>Timeout error while getting sensor type!</source>
         <translation>Napaka časovne omejitve pri pridobivanju vrste senzorja!</translation>
     </message>
     <message>
-        <location line="+230"/>
+        <location line="+215"/>
         <source>Timeout error while learning MTU!</source>
         <translation>Napaka časovne omejitve med učenjem MTU!</translation>
     </message>
     <message>
-        <location line="+98"/>
+        <location line="+132"/>
         <source>Board: %L1</source>
         <translation>Plošča: %L1</translation>
     </message>
@@ -8334,7 +9765,7 @@ Kliknite gumb V redu, ko je zagonski nalagalnik DFU vaše OpenMV Cam oštevilče
         <translation>Serijska vrata: %L1</translation>
     </message>
     <message>
-        <location line="+48"/>
+        <location line="+65"/>
         <source> - [ out of date - click here to updgrade ]</source>
         <translation> - [ zastarelo - kliknite tukaj za nadgradnjo ]</translation>
     </message>
@@ -8344,22 +9775,22 @@ Kliknite gumb V redu, ko je zagonski nalagalnik DFU vaše OpenMV Cam oštevilče
         <translation>Vdelana programska oprema vaše OpenMV Cam je zastarela. Bi radi nadgradili?</translation>
     </message>
     <message>
-        <location line="+12"/>
+        <location line="+11"/>
         <source> - [ latest ]</source>
         <translation> - [ najnovejše ]</translation>
     </message>
     <message>
-        <location line="+204"/>
+        <location line="+239"/>
         <source>Reset</source>
         <translation>Ponastavi</translation>
     </message>
     <message>
-        <location line="+124"/>
+        <location line="+167"/>
         <source>Start</source>
         <translation>Začni</translation>
     </message>
     <message>
-        <location line="+131"/>
+        <location line="+174"/>
         <source>More Examples</source>
         <translation>Več primerov</translation>
     </message>
@@ -8373,20 +9804,17 @@ In particular, checkout the Color-Tracking examples.</source>
 Še posebej si oglejte primere sledenja barvam.</translation>
     </message>
     <message>
-        <location line="+32"/>
+        <location line="+22"/>
         <location line="+6"/>
         <location line="+18"/>
         <location line="+4"/>
         <location line="+6"/>
         <location line="+19"/>
-        <location line="+6"/>
-        <location line="+7"/>
-        <location line="+7"/>
         <source>Firmware Update</source>
         <translation>Posodobitev vdelane programske opreme</translation>
     </message>
     <message>
-        <location line="-72"/>
+        <location line="-52"/>
         <source>Update your OpenMV Cam&apos;s firmware to the latest version?</source>
         <translation>Želite posodobiti vdelano programsko opremo OpenMV Cam na najnovejšo različico?</translation>
     </message>
@@ -8401,9 +9829,8 @@ In particular, checkout the Color-Tracking examples.</source>
         <translation>Ali morate vdelano programsko opremo OpenMV Cam ponastaviti na različico za izdajo?</translation>
     </message>
     <message>
-        <location line="+31"/>
         <source>Cannot open firmware.txt!</source>
-        <translation>Ni mogoče odpreti firmware.txt!</translation>
+        <translation type="vanished">Ni mogoče odpreti firmware.txt!</translation>
     </message>
     <message>
         <location filename="../../../src/plugins/openmv/openmvpluginfb.cpp" line="-55"/>
@@ -8804,7 +10231,29 @@ Odprite nabor podatkov, da ga naložite.</translation>
         <translation>NXP IMX</translation>
     </message>
     <message>
-        <location line="-1126"/>
+        <location filename="../../../src/plugins/openmv/tools/alif.cpp" line="+0"/>
+        <location line="+30"/>
+        <location line="+238"/>
+        <location line="+10"/>
+        <location line="+47"/>
+        <location line="+56"/>
+        <location line="+35"/>
+        <location line="+18"/>
+        <location line="+32"/>
+        <location line="+36"/>
+        <location line="+38"/>
+        <location line="+37"/>
+        <source>Alif Tools</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-546"/>
+        <source>Please turn on the hard maintenance mode switch, it not enabled, and then press the user button on your OpenMV Cam.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+238"/>
+        <location filename="../../../src/plugins/openmv/tools/imx.cpp" line="-1126"/>
         <location line="+215"/>
         <location line="+26"/>
         <location line="+725"/>
@@ -8812,7 +10261,12 @@ Odprite nabor podatkov, da ga naložite.</translation>
         <translation>Ta funkcija ni podprta na tem stroju!</translation>
     </message>
     <message>
-        <location line="-347"/>
+        <location line="+166"/>
+        <source>Please disconnect your OpenMV Cam from your computer, turn off the hard maintenance mode switch, if enabled, reconnect your OpenMV Cam to your computer, and then press Ok.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/openmv/tools/imx.cpp" line="-347"/>
         <location line="+46"/>
         <location line="+313"/>
         <location line="+46"/>
@@ -8840,7 +10294,7 @@ Odprite nabor podatkov, da ga naložite.</translation>
         <translation>PicoTool</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/openmv/tools/thresholdeditor.cpp" line="+155"/>
+        <location filename="../../../src/plugins/openmv/tools/thresholdeditor.cpp" line="+185"/>
         <source>Threhsold Editor</source>
         <translation>Threshold Editor</translation>
     </message>
@@ -8935,56 +10389,56 @@ Odprite nabor podatkov, da ga naložite.</translation>
         <translation>Kopirajte zgornji prag pred zaprtjem.</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/openmv/tools/videotools.cpp" line="-461"/>
+        <location filename="../../../src/plugins/openmv/tools/videotools.cpp" line="-476"/>
         <source>Reading File...</source>
         <translation>Branje datoteke ...</translation>
     </message>
     <message>
         <location line="+11"/>
-        <location line="+25"/>
+        <location line="+28"/>
         <location line="+10"/>
         <location line="+11"/>
-        <location line="+56"/>
+        <location line="+62"/>
         <source>Reading File</source>
         <translation>Branje datoteke</translation>
     </message>
     <message>
-        <location line="-101"/>
-        <location line="+78"/>
+        <location line="-110"/>
+        <location line="+85"/>
         <source>No frames found!</source>
         <translation>Ni okvirjev!</translation>
     </message>
     <message>
-        <location line="-53"/>
+        <location line="-57"/>
         <location line="+10"/>
         <location line="+11"/>
-        <location line="+56"/>
+        <location line="+62"/>
         <location line="+10"/>
         <location line="+11"/>
-        <location line="+13"/>
+        <location line="+18"/>
         <source>File is corrupt!</source>
         <translation>Datoteka je poškodovana!</translation>
     </message>
     <message>
-        <location line="-70"/>
-        <location line="+557"/>
+        <location line="-77"/>
+        <location line="+565"/>
         <source>Transcoding File...</source>
         <translation>Prekodiranje datoteke ...</translation>
     </message>
     <message>
-        <location line="-546"/>
-        <location line="+34"/>
+        <location line="-554"/>
+        <location line="+36"/>
         <location line="+11"/>
-        <location line="+13"/>
+        <location line="+18"/>
         <location line="+14"/>
-        <location line="+11"/>
+        <location line="+14"/>
         <location line="+11"/>
         <source>Transcoding File</source>
         <translation>Datoteka za prekodiranje</translation>
     </message>
     <message>
-        <location line="-21"/>
-        <location line="+11"/>
+        <location line="-24"/>
+        <location line="+14"/>
         <source>Painter Failed!</source>
         <translation>Slikar ni uspel!</translation>
     </message>
@@ -8994,7 +10448,7 @@ Odprite nabor podatkov, da ga naložite.</translation>
         <translation>Neuspešno pisanje!</translation>
     </message>
     <message>
-        <location line="+64"/>
+        <location line="+62"/>
         <location line="+7"/>
         <location line="+8"/>
         <location line="+7"/>
@@ -9185,7 +10639,7 @@ Odprite nabor podatkov, da ga naložite.</translation>
         <translation>Shrani video</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/openmv/tools/loaderdialog.cpp" line="+44"/>
+        <location filename="../../../src/plugins/openmv/tools/loaderdialog.cpp" line="+74"/>
         <source>Busy</source>
         <translation>Zaseden</translation>
     </message>
@@ -9200,41 +10654,54 @@ Odprite nabor podatkov, da ga naložite.</translation>
         <source>Hide Details</source>
         <translation>Skrij podrobnosti</translation>
     </message>
+    <message>
+        <location filename="../../../src/plugins/openmv/bootloaders/openmvplugindfubootloader.cpp" line="-206"/>
+        <location line="+64"/>
+        <source>No matching interface for the selected file name!</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>QtC::ProjectExplorer</name>
     <message>
-        <location filename="../../../../build/share/qtcreator/translations/jsonwizards_tr.h" line="+4"/>
         <source>This wizard creates a simple unit test project.</source>
-        <translation>Ta čarovnik ustvari preprost projekt za testiranje enote.</translation>
+        <translation type="vanished">Ta čarovnik ustvari preprost projekt za testiranje enote.</translation>
     </message>
     <message>
-        <location line="+1"/>
-        <location line="+104"/>
-        <location line="+194"/>
+        <location filename="../../../../build/share/qtcreator/translations/jsonwizards_tr.h" line="+5"/>
+        <location line="+25"/>
+        <location line="+26"/>
+        <location line="+25"/>
+        <location line="+22"/>
+        <location line="+81"/>
+        <location line="+235"/>
         <location line="+21"/>
-        <location line="+46"/>
+        <location line="+43"/>
         <location line="+11"/>
         <location line="+40"/>
         <location line="+18"/>
         <location line="+19"/>
         <location line="+11"/>
-        <location line="+12"/>
-        <location line="+20"/>
-        <location line="+17"/>
-        <location line="+19"/>
-        <location line="+29"/>
+        <location line="+15"/>
         <location line="+22"/>
+        <location line="+18"/>
+        <location line="+21"/>
+        <location line="+29"/>
+        <location line="+18"/>
         <location line="+28"/>
         <location line="+15"/>
-        <location line="+152"/>
+        <location line="+144"/>
         <source>Project Location</source>
         <translation>Lokacija projekta</translation>
     </message>
     <message>
-        <location line="-777"/>
-        <location line="+104"/>
-        <location line="+18"/>
+        <location line="-886"/>
+        <location line="+25"/>
+        <location line="+26"/>
+        <location line="+25"/>
+        <location line="+22"/>
+        <location line="+81"/>
+        <location line="+17"/>
         <location line="+1"/>
         <location line="+8"/>
         <location line="+1"/>
@@ -9252,7 +10719,9 @@ Odprite nabor podatkov, da ga naložite.</translation>
         <location line="+1"/>
         <location line="+8"/>
         <location line="+1"/>
-        <location line="+15"/>
+        <location line="+11"/>
+        <location line="+1"/>
+        <location line="+12"/>
         <location line="+13"/>
         <location line="+1"/>
         <location line="+8"/>
@@ -9264,45 +10733,46 @@ Odprite nabor podatkov, da ga naložite.</translation>
         <location line="+8"/>
         <location line="+1"/>
         <location line="+17"/>
+        <location line="+32"/>
+        <location line="+1"/>
         <location line="+8"/>
         <location line="+1"/>
         <location line="+10"/>
         <location line="+21"/>
-        <location line="+46"/>
+        <location line="+43"/>
         <location line="+11"/>
         <location line="+40"/>
         <location line="+18"/>
         <location line="+19"/>
         <location line="+11"/>
-        <location line="+12"/>
-        <location line="+20"/>
-        <location line="+17"/>
-        <location line="+19"/>
-        <location line="+29"/>
+        <location line="+15"/>
         <location line="+22"/>
+        <location line="+18"/>
+        <location line="+21"/>
+        <location line="+29"/>
+        <location line="+18"/>
         <location line="+28"/>
         <location line="+15"/>
-        <location line="+56"/>
+        <location line="+51"/>
         <location line="+1"/>
         <location line="+17"/>
         <location line="+1"/>
-        <location line="+23"/>
+        <location line="+22"/>
+        <location line="+1"/>
+        <location line="+18"/>
         <location line="+1"/>
         <location line="+19"/>
-        <location line="+1"/>
-        <location line="+20"/>
         <location line="+1"/>
         <location line="+12"/>
         <source>Location</source>
         <translation>Mesto</translation>
     </message>
     <message>
-        <location line="-777"/>
         <source>Qt Test</source>
-        <translation>Qt Test</translation>
+        <translation type="vanished">Qt Test</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="-516"/>
         <source>Google Test</source>
         <translation>Google Test</translation>
     </message>
@@ -9322,183 +10792,241 @@ Odprite nabor podatkov, da ga naložite.</translation>
         <translation>Catch2</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="-371"/>
+        <location line="+25"/>
+        <location line="+26"/>
+        <location line="+321"/>
         <source>Test framework:</source>
         <translation>Testni okvir:</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="-296"/>
         <source>GUI Application</source>
         <translation>Aplikacija GUI</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="-75"/>
+        <location line="+51"/>
+        <location line="+324"/>
         <source>Test suite name:</source>
         <translation>Ime testne zbirke:</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="-374"/>
+        <location line="+24"/>
+        <location line="+27"/>
+        <location line="+21"/>
+        <location line="+22"/>
+        <location line="+281"/>
         <source>Test case name:</source>
         <translation>Ime testnega primera:</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="-302"/>
         <source>Requires QApplication</source>
         <translation>Potrebuje QApplication</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+22"/>
         <source>Generate setup code</source>
         <translation>Ustvarite nastavitveno kodo</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="-20"/>
+        <location line="+21"/>
+        <location line="+280"/>
         <source>Generate initialization and cleanup code</source>
         <translation>Ustvari kodo za inicializacijo in čiščenje</translation>
     </message>
     <message>
-        <location line="+1"/>
         <source>Enable C++11</source>
-        <translation>Omogoči C++11</translation>
+        <translation type="vanished">Omogoči C++11</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="-324"/>
         <source>Googletest source directory (optional):</source>
         <translation>Izvorni imenik Googletest (neobvezno):</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="-51"/>
         <source>Boost include directory (optional):</source>
         <translation>Imenik Boost include (neobvezno):</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+24"/>
         <source>Catch2 include directory (optional):</source>
         <translation>Imenik Catch2 include (neobvezno):</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+3"/>
         <source>Use Qt libraries</source>
         <translation>Uporabite knjižnice Qt</translation>
     </message>
     <message>
-        <location line="+1"/>
-        <location line="+281"/>
+        <location line="-25"/>
+        <location line="+26"/>
+        <location line="+25"/>
+        <location line="+22"/>
         <location line="+21"/>
-        <location line="+97"/>
+        <location line="+313"/>
+        <location line="+21"/>
+        <location line="+94"/>
         <location line="+18"/>
-        <location line="+99"/>
-        <location line="+50"/>
+        <location line="+107"/>
+        <location line="+46"/>
         <location line="+43"/>
         <source>qmake</source>
         <translation>qmake</translation>
     </message>
     <message>
-        <location line="-608"/>
-        <location line="+281"/>
+        <location line="-735"/>
+        <location line="+26"/>
+        <location line="+25"/>
+        <location line="+22"/>
         <location line="+21"/>
-        <location line="+97"/>
+        <location line="+313"/>
+        <location line="+21"/>
+        <location line="+94"/>
         <location line="+18"/>
-        <location line="+97"/>
-        <location line="+29"/>
-        <location line="+23"/>
+        <location line="+105"/>
+        <location line="+48"/>
         <location line="+43"/>
         <source>CMake</source>
         <translation>CMake</translation>
     </message>
     <message>
-        <location line="-608"/>
-        <location line="+281"/>
+        <location line="-735"/>
+        <location line="+26"/>
+        <location line="+25"/>
+        <location line="+22"/>
         <location line="+21"/>
-        <location line="+97"/>
+        <location line="+313"/>
+        <location line="+21"/>
+        <location line="+94"/>
         <location line="+18"/>
-        <location line="+126"/>
-        <location line="+23"/>
+        <location line="+153"/>
         <location line="+44"/>
         <source>Qbs</source>
         <translation>Qbs</translation>
     </message>
     <message>
-        <location line="-609"/>
-        <location line="+282"/>
+        <location line="-736"/>
+        <location line="+26"/>
+        <location line="+25"/>
+        <location line="+22"/>
         <location line="+21"/>
-        <location line="+97"/>
+        <location line="+314"/>
+        <location line="+21"/>
+        <location line="+94"/>
         <location line="+18"/>
-        <location line="+96"/>
-        <location line="+29"/>
-        <location line="+23"/>
+        <location line="+104"/>
+        <location line="+48"/>
         <location line="+44"/>
         <source>Build system:</source>
         <translation>Gradi sistem:</translation>
     </message>
     <message>
-        <location line="-609"/>
+        <location line="-736"/>
+        <location line="+26"/>
+        <location line="+25"/>
+        <location line="+22"/>
+        <location line="+21"/>
         <source>Project and Test Information</source>
         <translation>Informacije o projektu in preizkusu</translation>
     </message>
     <message>
-        <location line="+1"/>
-        <location line="+30"/>
-        <location line="+21"/>
-        <location line="+21"/>
-        <location line="+257"/>
-        <location line="+115"/>
-        <location line="+20"/>
-        <location line="+17"/>
-        <location line="+19"/>
-        <location line="+27"/>
+        <location line="-93"/>
+        <location line="+26"/>
+        <location line="+25"/>
         <location line="+22"/>
+        <location line="+21"/>
+        <location line="+25"/>
+        <location line="+19"/>
+        <location line="+19"/>
+        <location line="+216"/>
+        <location line="+79"/>
+        <location line="+116"/>
+        <location line="+18"/>
+        <location line="+4"/>
+        <location line="+18"/>
+        <location line="+17"/>
+        <location line="+33"/>
+        <location line="+18"/>
         <location line="+26"/>
         <location line="+16"/>
-        <location line="+32"/>
-        <location line="+148"/>
+        <location line="+28"/>
+        <location line="+142"/>
         <source>Details</source>
         <translation>Podrobnosti</translation>
     </message>
     <message>
-        <location line="-770"/>
-        <location line="+89"/>
-        <location line="+195"/>
-        <location line="+47"/>
+        <location line="-887"/>
+        <location line="+26"/>
+        <location line="+25"/>
+        <location line="+22"/>
+        <location line="+21"/>
+        <location line="+79"/>
+        <location line="+237"/>
+        <location line="+44"/>
         <location line="+11"/>
         <location line="+40"/>
         <location line="+18"/>
         <location line="+18"/>
         <location line="+12"/>
-        <location line="+97"/>
+        <location line="+15"/>
         <location line="+22"/>
+        <location line="+18"/>
+        <location line="+21"/>
+        <location line="+29"/>
+        <location line="+18"/>
         <location line="+28"/>
         <location line="+14"/>
-        <location line="+34"/>
-        <location line="+148"/>
+        <location line="+30"/>
+        <location line="+142"/>
+        <location filename="../../../src/plugins/projectexplorer/targetsetuppage.cpp" line="+252"/>
         <source>Kit Selection</source>
         <translation>Izbira kompleta</translation>
     </message>
     <message>
-        <location line="-772"/>
-        <location line="+89"/>
-        <location line="+195"/>
-        <location line="+47"/>
+        <location line="-889"/>
+        <location line="+26"/>
+        <location line="+25"/>
+        <location line="+22"/>
+        <location line="+21"/>
+        <location line="+79"/>
+        <location line="+237"/>
+        <location line="+44"/>
         <location line="+11"/>
         <location line="+40"/>
         <location line="+18"/>
         <location line="+18"/>
         <location line="+12"/>
-        <location line="+97"/>
+        <location line="+15"/>
         <location line="+22"/>
+        <location line="+18"/>
+        <location line="+21"/>
+        <location line="+29"/>
+        <location line="+18"/>
         <location line="+28"/>
         <location line="+14"/>
-        <location line="+34"/>
-        <location line="+148"/>
+        <location line="+30"/>
+        <location line="+142"/>
+        <location filename="../../../src/plugins/projectexplorer/kitoptionspage.cpp" line="+731"/>
+        <location line="+2"/>
+        <location filename="../../../src/plugins/projectexplorer/targetsetuppage.cpp" line="+7"/>
         <source>Kits</source>
         <translation>Kompleti</translation>
     </message>
     <message>
-        <location line="-772"/>
-        <location line="+28"/>
+        <location line="-889"/>
+        <location line="+26"/>
+        <location line="+25"/>
+        <location line="+22"/>
         <location line="+21"/>
-        <location line="+21"/>
+        <location line="+23"/>
         <location line="+19"/>
+        <location line="+19"/>
+        <location line="+18"/>
         <location line="+9"/>
         <location line="+9"/>
         <location line="+11"/>
@@ -9508,6 +11036,7 @@ Odprite nabor podatkov, da ga naložite.</translation>
         <location line="+9"/>
         <location line="+9"/>
         <location line="+12"/>
+        <location line="+9"/>
         <location line="+12"/>
         <location line="+14"/>
         <location line="+9"/>
@@ -9515,130 +11044,135 @@ Odprite nabor podatkov, da ga naložite.</translation>
         <location line="+9"/>
         <location line="+9"/>
         <location line="+17"/>
+        <location line="+24"/>
+        <location line="+9"/>
         <location line="+9"/>
         <location line="+21"/>
-        <location line="+47"/>
+        <location line="+44"/>
         <location line="+11"/>
         <location line="+40"/>
         <location line="+18"/>
         <location line="+18"/>
         <location line="+12"/>
-        <location line="+12"/>
-        <location line="+20"/>
-        <location line="+17"/>
-        <location line="+19"/>
-        <location line="+29"/>
+        <location line="+15"/>
         <location line="+22"/>
+        <location line="+18"/>
+        <location line="+21"/>
+        <location line="+29"/>
+        <location line="+18"/>
         <location line="+28"/>
         <location line="+14"/>
-        <location line="+34"/>
-        <location line="+148"/>
+        <location line="+30"/>
+        <location line="+142"/>
         <source>Project Management</source>
         <translation>Upravljanje projektov</translation>
     </message>
     <message>
-        <location line="-772"/>
-        <location line="+28"/>
-        <location line="+21"/>
-        <location line="+40"/>
-        <location line="+9"/>
-        <location line="+9"/>
-        <location line="+11"/>
-        <location line="+9"/>
-        <location line="+9"/>
-        <location line="+9"/>
-        <location line="+9"/>
-        <location line="+9"/>
-        <location line="+12"/>
-        <location line="+12"/>
-        <location line="+14"/>
-        <location line="+9"/>
-        <location line="+9"/>
-        <location line="+9"/>
-        <location line="+9"/>
-        <location line="+17"/>
-        <location line="+9"/>
-        <location line="+21"/>
-        <location line="+47"/>
-        <location line="+11"/>
-        <location line="+40"/>
-        <location line="+18"/>
-        <location line="+18"/>
-        <location line="+12"/>
-        <location line="+12"/>
-        <location line="+20"/>
-        <location line="+17"/>
-        <location line="+19"/>
-        <location line="+29"/>
+        <location line="-889"/>
+        <location line="+26"/>
+        <location line="+25"/>
         <location line="+22"/>
+        <location line="+21"/>
+        <location line="+23"/>
+        <location line="+19"/>
+        <location line="+37"/>
+        <location line="+9"/>
+        <location line="+9"/>
+        <location line="+11"/>
+        <location line="+9"/>
+        <location line="+9"/>
+        <location line="+9"/>
+        <location line="+9"/>
+        <location line="+9"/>
+        <location line="+12"/>
+        <location line="+9"/>
+        <location line="+12"/>
+        <location line="+14"/>
+        <location line="+9"/>
+        <location line="+9"/>
+        <location line="+9"/>
+        <location line="+9"/>
+        <location line="+17"/>
+        <location line="+24"/>
+        <location line="+9"/>
+        <location line="+9"/>
+        <location line="+21"/>
+        <location line="+44"/>
+        <location line="+11"/>
+        <location line="+40"/>
+        <location line="+18"/>
+        <location line="+18"/>
+        <location line="+12"/>
+        <location line="+15"/>
+        <location line="+22"/>
+        <location line="+18"/>
+        <location line="+21"/>
+        <location line="+29"/>
+        <location line="+18"/>
         <location line="+28"/>
         <location line="+14"/>
-        <location line="+34"/>
-        <location line="+148"/>
+        <location line="+30"/>
+        <location line="+142"/>
+        <location filename="../../../src/plugins/projectexplorer/projectwizardpage.cpp" line="+305"/>
         <source>Summary</source>
         <translation>Povzetek</translation>
     </message>
     <message>
-        <location line="-772"/>
         <source>Creates a new unit test project. Unit tests allow you to verify that the code is fit for use and that there are no regressions.</source>
-        <translation>Ustvari nov testni projekt enote. Preskusi enote vam omogočajo, da preverite, ali je koda primerna za uporabo in da ni nobenih regresij.</translation>
+        <translation type="vanished">Ustvari nov testni projekt enote. Preskusi enote vam omogočajo, da preverite, ali je koda primerna za uporabo in da ni nobenih regresij.</translation>
     </message>
     <message>
-        <location line="+1"/>
-        <location line="+89"/>
-        <location line="+341"/>
-        <location line="+161"/>
+        <location line="-715"/>
+        <location line="+380"/>
+        <location line="+165"/>
+        <location filename="../../../src/plugins/projectexplorer/projectexplorerconstants.h" line="+107"/>
         <source>Other Project</source>
         <translation>Drugi projekt</translation>
     </message>
     <message>
-        <location line="-590"/>
         <source>Auto Test Project</source>
-        <translation>Projekt samodejnega testiranja</translation>
+        <translation type="vanished">Projekt samodejnega testiranja</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="-620"/>
         <source>Fully qualified name, including namespaces</source>
         <translation>Popolnoma kvalificirano ime, vključno z imenskimi prostori</translation>
     </message>
     <message>
         <location line="+1"/>
-        <location line="+27"/>
-        <location line="+21"/>
-        <location line="+251"/>
-        <location line="+146"/>
-        <location line="+37"/>
-        <location line="+120"/>
+        <location line="+22"/>
+        <location line="+19"/>
+        <location line="+289"/>
+        <location line="+145"/>
+        <location line="+40"/>
+        <location line="+119"/>
         <source>Class name:</source>
         <translation>Ime razreda:</translation>
     </message>
     <message>
-        <location line="-601"/>
-        <location line="+49"/>
-        <location line="+396"/>
+        <location line="-633"/>
+        <location line="+42"/>
+        <location line="+433"/>
         <source>&lt;Custom&gt;</source>
         <translation>&lt;Po meri&gt;</translation>
     </message>
     <message>
-        <location line="-444"/>
-        <location line="+26"/>
-        <location line="+23"/>
-        <location line="+256"/>
-        <location line="+140"/>
-        <location line="+36"/>
-        <location line="+120"/>
+        <location line="-474"/>
+        <location line="+21"/>
+        <location line="+21"/>
+        <location line="+294"/>
+        <location line="+139"/>
+        <location line="+39"/>
+        <location line="+119"/>
         <source>Base class:</source>
         <translation>Osnovni razred:</translation>
     </message>
     <message>
-        <location line="-600"/>
-        <location line="+1"/>
-        <location line="+49"/>
         <source>%{BaseCB}</source>
-        <translation>%{BaseCB}</translation>
+        <translation type="vanished">%{BaseCB}</translation>
     </message>
     <message>
-        <location line="-48"/>
+        <location line="-632"/>
         <source>Include QObject</source>
         <translation>Vključi QObject</translation>
     </message>
@@ -9653,17 +11187,15 @@ Odprite nabor podatkov, da ga naložite.</translation>
         <translation>Vključi QMainWindow</translation>
     </message>
     <message>
-        <location line="+1"/>
         <source>Include QDeclarativeItem - Qt Quick 1</source>
-        <translation>Vključi QDeclarativeItem – Qt Quick 1</translation>
+        <translation type="vanished">Vključi QDeclarativeItem – Qt Quick 1</translation>
     </message>
     <message>
-        <location line="+1"/>
         <source>Include QQuickItem - Qt Quick 2</source>
-        <translation>Vključi QQuickItem – Qt Quick 2</translation>
+        <translation type="vanished">Vključi QQuickItem – Qt Quick 2</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+2"/>
         <source>Include QSharedData</source>
         <translation>Vključi QSharedData</translation>
     </message>
@@ -9678,74 +11210,70 @@ Odprite nabor podatkov, da ga naložite.</translation>
         <translation>Dodaj QML_ELEMENT</translation>
     </message>
     <message>
-        <location line="+1"/>
-        <location line="+21"/>
-        <location line="+279"/>
-        <location line="+291"/>
         <source>%{JS: Cpp.classToFileName(value(&apos;Class&apos;), Util.preferredSuffix(&apos;text/x-c++hdr&apos;))}</source>
-        <translation>%{JS: Cpp.classToFileName(value(&apos;Class&apos;), Util.preferredSuffix(&apos;text/x-c++hdr&apos;))}</translation>
+        <translation type="vanished">%{JS: Cpp.classToFileName(value(&apos;Class&apos;), Util.preferredSuffix(&apos;text/x-c++hdr&apos;))}</translation>
     </message>
     <message>
-        <location line="-590"/>
-        <location line="+21"/>
-        <location line="+279"/>
-        <location line="+291"/>
+        <location line="+1"/>
+        <location line="+19"/>
+        <location line="+315"/>
+        <location line="+292"/>
         <source>Header file:</source>
         <translation>Datoteka glave:</translation>
     </message>
     <message>
-        <location line="-590"/>
-        <location line="+21"/>
-        <location line="+279"/>
-        <location line="+291"/>
         <source>%{JS: Cpp.classToFileName(value(&apos;Class&apos;), Util.preferredSuffix(&apos;text/x-c++src&apos;))}</source>
-        <translation>%{JS: Cpp.classToFileName(value(&apos;Class&apos;), Util.preferredSuffix(&apos;text/x-c++src&apos;))}</translation>
+        <translation type="vanished">%{JS: Cpp.classToFileName(value(&apos;Class&apos;), Util.preferredSuffix(&apos;text/x-c++src&apos;))}</translation>
     </message>
     <message>
-        <location line="-590"/>
-        <location line="+21"/>
-        <location line="+21"/>
-        <location line="+258"/>
+        <location line="-625"/>
+        <location line="+19"/>
+        <location line="+19"/>
+        <location line="+215"/>
+        <location line="+1"/>
+        <location line="+80"/>
         <location line="+133"/>
-        <location line="+36"/>
-        <location line="+122"/>
+        <location line="+39"/>
+        <location line="+120"/>
         <source>Source file:</source>
         <translation>Izvorna datoteka:</translation>
     </message>
     <message>
-        <location line="-590"/>
-        <location line="+21"/>
-        <location line="+21"/>
-        <location line="+570"/>
-        <location line="+35"/>
+        <location line="-625"/>
+        <location line="+19"/>
+        <location line="+19"/>
+        <location line="+216"/>
+        <location line="+392"/>
+        <location line="+34"/>
         <location line="+20"/>
-        <location line="+22"/>
-        <location line="+20"/>
+        <location line="+21"/>
+        <location line="+19"/>
+        <location filename="../../../src/plugins/projectexplorer/customwizard/customwizardpage.cpp" line="+412"/>
         <source>Path:</source>
         <translation>Pot:</translation>
     </message>
     <message>
-        <location line="-708"/>
-        <location line="+42"/>
-        <location line="+392"/>
-        <location line="+36"/>
+        <location line="-739"/>
+        <location line="+38"/>
+        <location line="+429"/>
+        <location line="+39"/>
         <source>Define Class</source>
         <translation>Določite razred</translation>
     </message>
     <message>
-        <location line="-466"/>
+        <location line="-502"/>
         <source>Creates a C++ header and a source file for a new class that you can add to a C++ project.</source>
         <translation>Ustvari datoteki z glavo in izvorno kodo C++ za nov razred, ki ga lahko dodate v projekt C++.</translation>
     </message>
     <message>
         <location line="+1"/>
-        <location line="+70"/>
+        <location line="+65"/>
         <location line="+9"/>
         <source>C/C++</source>
         <translation>C/C++</translation>
     </message>
     <message>
-        <location line="-78"/>
+        <location line="-73"/>
         <source>C++ Class</source>
         <translation>Razred C++</translation>
     </message>
@@ -9775,7 +11303,7 @@ Odprite nabor podatkov, da ga naložite.</translation>
         <translation>Dinamično pridobivanje podatkov</translation>
     </message>
     <message>
-        <location line="+6"/>
+        <location line="+4"/>
         <source>Define Item Model Class</source>
         <translation>Določite razred modela predmeta</translation>
     </message>
@@ -9786,15 +11314,16 @@ Odprite nabor podatkov, da ga naložite.</translation>
     </message>
     <message>
         <location line="+1"/>
-        <location line="+69"/>
+        <location line="+66"/>
         <location line="+57"/>
-        <location line="+53"/>
+        <location line="+62"/>
         <location line="+9"/>
+        <location line="+59"/>
         <source>Qt</source>
         <translation>Qt</translation>
     </message>
     <message>
-        <location line="-187"/>
+        <location line="-252"/>
         <source>Qt Item Model</source>
         <translation>Model predmeta Qt</translation>
     </message>
@@ -9809,7 +11338,7 @@ Odprite nabor podatkov, da ga naložite.</translation>
         <translation>Razrede Qt lahko izberete le, če izberete modul Qt za Python.</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+1"/>
         <source>Import QtCore</source>
         <translation>Uvoz QtCore</translation>
     </message>
@@ -9824,9 +11353,8 @@ Odprite nabor podatkov, da ga naložite.</translation>
         <translation>Uvoz QtQuick</translation>
     </message>
     <message>
-        <location line="+1"/>
         <source>%{JS: Util.fileName(value(&apos;Class&apos;), Util.preferredSuffix(&apos;text/x-python&apos;))}</source>
-        <translation>%{JS: Util.fileName(value(&apos;Class&apos;), Util.preferredSuffix(&apos;text/x-python&apos;))}</translation>
+        <translation type="vanished">%{JS: Util.fileName(value(&apos;Class&apos;), Util.preferredSuffix(&apos;text/x-python&apos;))}</translation>
     </message>
     <message>
         <location line="+6"/>
@@ -9835,34 +11363,32 @@ Odprite nabor podatkov, da ga naložite.</translation>
     </message>
     <message>
         <location line="+1"/>
-        <location line="+150"/>
+        <location line="+158"/>
         <source>Python</source>
         <translation>Python</translation>
     </message>
     <message>
-        <location line="-149"/>
+        <location line="-157"/>
         <source>Python Class</source>
         <translation>Razred Python</translation>
     </message>
     <message>
         <location line="+3"/>
-        <location line="+15"/>
         <source>Creates a CMake-based test project for which a code snippet can be entered.</source>
         <translation>Ustvari testni projekt na osnovi CMake, za katerega je mogoče vnesti delček kode.</translation>
     </message>
     <message>
-        <location line="-12"/>
         <source>int main(int argc, char *argv[])
 {
     return 0;
 }</source>
-        <translation>int main(int argc, char *argv[])
+        <translation type="vanished">int main(int argc, char *argv[])
 {
     vrni 0;
 }</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+3"/>
         <source>Code:</source>
         <translation>Koda:</translation>
     </message>
@@ -9932,17 +11458,15 @@ Odprite nabor podatkov, da ga naložite.</translation>
         <translation>Predloga obrazca</translation>
     </message>
     <message>
-        <location line="+5"/>
         <source>Creates a Qt Designer form that you can add to a Qt Widget Project. This is useful if you already have an existing class for the UI business logic.</source>
-        <translation>Ustvari obrazec Qt Designerja, ki ga lahko dodate v projekt iz gradnikov Qt. To je uporabno, če že imate obstoječ razred, ki vsebuje logiko za uporabniški vmesnik.</translation>
+        <translation type="vanished">Ustvari obrazec Qt Designerja, ki ga lahko dodate v projekt iz gradnikov Qt. To je uporabno, če že imate obstoječ razred, ki vsebuje logiko za uporabniški vmesnik.</translation>
     </message>
     <message>
-        <location line="+2"/>
         <source>Qt Designer Form</source>
-        <translation>Obrazec Qt Designer</translation>
+        <translation type="vanished">Obrazec Qt Designer</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+14"/>
         <source>Creates a fragment shader in the Desktop OpenGL Shading Language (GLSL). Fragment shaders generate the final pixel colors for triangles, points and lines rendered with OpenGL.</source>
         <translation>Ustvari senčilnik za fragmente v jeziku Desktop OpenGL Shading Language (GLSL). Senčilniki za fragmente določajo končne barve slikovnih pik v trikotnikih, točkah in črtah, ki so izrisani z OpenGL.</translation>
     </message>
@@ -10026,13 +11550,14 @@ Odprite nabor podatkov, da ga naložite.</translation>
         <translation>Datoteka JavaScript</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+12"/>
         <source>Model name:</source>
         <translation>Ime modela:</translation>
     </message>
     <message>
         <location line="+1"/>
         <location line="+67"/>
+        <location filename="../../../src/plugins/projectexplorer/simpleprojectwizard.cpp" line="+121"/>
         <source>Location:</source>
         <translation>Lokacija:</translation>
     </message>
@@ -10136,13 +11661,180 @@ Odprite nabor podatkov, da ga naložite.</translation>
         <translation>Ustvari medpomnilnik za praske z uporabo začasne datoteke.</translation>
     </message>
     <message>
-        <location line="+1"/>
-        <location line="+21"/>
+        <location line="-66"/>
+        <location line="+67"/>
+        <location line="+45"/>
+        <location filename="../../../src/plugins/projectexplorer/devicesupport/devicesettingspage.cpp" line="+105"/>
+        <location filename="../../../src/plugins/projectexplorer/projectexplorersettings.cpp" line="+551"/>
         <source>General</source>
         <translation>Splošno</translation>
     </message>
     <message>
-        <location line="-20"/>
+        <location line="-401"/>
+        <source>This wizard creates a simple unit test project using Boost.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Boost Test (header only)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Boost Test (shared libraries)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Boost install directory (optional):</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>Creates a new unit test project using Boost. Unit tests allow you to verify that the code is fit for use and that there are no regressions.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <location line="+26"/>
+        <location line="+25"/>
+        <location line="+22"/>
+        <location line="+21"/>
+        <source>Test Project</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-93"/>
+        <source>Boost Test Project</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>This wizard creates a simple unit test project using Catch2.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Catch2 v2 (header only)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Catch2 v3 (shared libraries)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Catch2 install directory (optional):</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Use own main</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+12"/>
+        <source>Creates a new unit test project using Catch2. Unit tests allow you to verify that the code is fit for use and that there are no regressions.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Catch2 Test Project</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>This wizard creates a simple unit test project using Google Test.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Google Test (header only)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Google Test (shared libraries)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Googletest install directory (optional):</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>Creates a new unit test project using Google Test. Unit tests allow you to verify that the code is fit for use and that there are no regressions.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Google Test Project</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>This wizard creates a simple unit test project using Qt Test.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+17"/>
+        <source>Creates a new unit test project using Qt Test. Unit tests allow you to verify that the code is fit for use and that there are no regressions.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Qt Test Project</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>This wizard creates a simple unit test project using Qt Quick Test.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>Creates a new unit test project using Qt Quick Test. Unit tests allow you to verify that the code is fit for use and that there are no regressions.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Qt Quick Test Project</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Include QQuickItem</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+67"/>
+        <source>Creates a CMake-based test project where you can enter a code snippet to compile and check it.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+29"/>
+        <source>Creates a Qt Widgets Designer form that you can add to a Qt Widget Project. This is useful if you already have an existing class for the UI business logic.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Qt Widgets Designer Form</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+64"/>
+        <source>Creates a markdown file.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Markdown File</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+67"/>
         <source>Scratch Buffer</source>
         <translation>Scratch Buffer</translation>
     </message>
@@ -10167,6 +11859,44 @@ Odprite nabor podatkov, da ga naložite.</translation>
         <translation>Državna karta</translation>
     </message>
     <message>
+        <location line="+3"/>
+        <source>You must tell Qt Creator which test framework is used inside the project.
+
+You should not mix multiple test frameworks in a project.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>2.x</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>3.x</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Catch2 version:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Test Information</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Creates a source file that you can add to an existing test project.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <location line="+1"/>
+        <source>Test Case</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location line="+7"/>
         <source>Creates an empty file.</source>
         <translation>Ustvari prazno datoteko.</translation>
@@ -10177,6 +11907,16 @@ Odprite nabor podatkov, da ga naložite.</translation>
         <translation>Prazna datoteka</translation>
     </message>
     <message>
+        <location line="+7"/>
+        <source>Creates a translation file that you can add to a Qt project.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Qt Translation File</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location line="+3"/>
         <source>This wizard creates a simple Qt-based console application.</source>
         <translation>Ta čarovnik ustvari preprosto konzolno aplikacijo, ki temelji na Qt.</translation>
@@ -10184,73 +11924,114 @@ Odprite nabor podatkov, da ga naložite.</translation>
     <message>
         <location line="+6"/>
         <location line="+21"/>
-        <location line="+97"/>
+        <location line="+94"/>
         <location line="+18"/>
-        <location line="+191"/>
+        <location line="+195"/>
         <source>Meson</source>
         <translation>Meson</translation>
     </message>
     <message>
-        <location line="-325"/>
+        <location line="-326"/>
         <location line="+21"/>
-        <location line="+97"/>
+        <location line="+94"/>
         <location line="+18"/>
-        <location line="+96"/>
-        <location line="+29"/>
-        <location line="+23"/>
+        <location line="+104"/>
+        <location line="+48"/>
         <location line="+44"/>
         <source>Define Build System</source>
         <translation>Določite Build System</translation>
     </message>
     <message>
-        <location line="-327"/>
+        <location line="-328"/>
         <location line="+21"/>
-        <location line="+97"/>
+        <location line="+94"/>
         <location line="+18"/>
-        <location line="+96"/>
-        <location line="+29"/>
-        <location line="+23"/>
+        <location line="+104"/>
+        <location line="+48"/>
         <location line="+44"/>
         <source>Build System</source>
         <translation>Sistem za gradnjo</translation>
     </message>
     <message>
-        <location line="-327"/>
-        <location line="+47"/>
-        <location line="+246"/>
-        <location line="+48"/>
-        <location line="+148"/>
+        <location line="-328"/>
+        <location line="+44"/>
+        <location line="+250"/>
+        <location line="+44"/>
+        <location line="+142"/>
         <source>Translation File</source>
         <translation>Prevajalska datoteka</translation>
     </message>
     <message>
-        <location line="-488"/>
-        <location line="+47"/>
-        <location line="+246"/>
-        <location line="+48"/>
-        <location line="+148"/>
+        <location line="-479"/>
+        <location line="+44"/>
+        <location line="+250"/>
+        <location line="+44"/>
+        <location line="+142"/>
         <source>Translation</source>
         <translation>Prevajanje</translation>
     </message>
     <message>
-        <location line="-484"/>
+        <location line="-262"/>
+        <source>Define Python Interpreter</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Interpreter</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Creates a Qt for Python application that includes a Qt Widgets Designer-based widget (ui file). Requires .ui to Python conversion.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+38"/>
+        <source>Qt 6.4</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Qt 6.5</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>Creates a Qt Quick application that can have both QML and C++ code. You can build the application and deploy it to desktop, embedded, and mobile target platforms.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+42"/>
+        <source>Creates a Qt Quick UI project for previewing and prototyping designs.
+
+To develop a full application, create a Qt Quick Application project instead.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+30"/>
+        <source>Creates a widget-based Qt application that contains a Qt Widgets Designer-based main window and C++ source and header files to implement the application logic.
+
+Preselects a desktop Qt for building the application if available.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>Creates a project containing a single main.cpp file with a stub implementation.
 
 Preselects a desktop Qt for building the application if available.</source>
-        <translation>Ustvari projekt, ki vsebuje eno datoteko *.cpp z začetno implementacijo.
+        <translation type="vanished">Ustvari projekt, ki vsebuje eno datoteko *.cpp z začetno implementacijo.
 
 Če je na voljo, za gradnjo programa Izbere Qt za namizje.</translation>
     </message>
     <message>
-        <location line="+1"/>
-        <location line="+265"/>
+        <location line="-337"/>
+        <location line="+266"/>
         <location line="+28"/>
-        <location line="+48"/>
+        <location line="+44"/>
         <source>Application (Qt)</source>
         <translation>Aplikacija (Qt)</translation>
     </message>
     <message>
-        <location line="-340"/>
+        <location line="-337"/>
         <source>Qt Console Application</source>
         <translation>Konzolni program Qt</translation>
     </message>
@@ -10261,12 +12042,12 @@ Preselects a desktop Qt for building the application if available.</source>
     </message>
     <message>
         <location line="+10"/>
-        <location line="+307"/>
+        <location line="+308"/>
         <source>Specify basic information about the classes for which you want to generate skeleton source code files.</source>
         <translation>Podajte osnovne podatke o razredih, za katere želite ustvariti datoteke z ogrodjem izvorne kode.</translation>
     </message>
     <message>
-        <location line="-306"/>
+        <location line="-307"/>
         <source>Shared Library</source>
         <translation>Deljena knjižnica</translation>
     </message>
@@ -10282,17 +12063,17 @@ Preselects a desktop Qt for building the application if available.</source>
     </message>
     <message>
         <location line="+1"/>
-        <location line="+49"/>
+        <location line="+46"/>
+        <location filename="../../../src/plugins/projectexplorer/devicesupport/devicesettingspage.cpp" line="+61"/>
         <source>Type:</source>
         <translation>Vrsta:</translation>
     </message>
     <message>
-        <location line="-48"/>
         <source>%{JS: value(&apos;Type&apos;) === &apos;qtplugin&apos; ? value(&apos;BaseClassName&apos;).slice(1) : (value(&apos;ProjectName&apos;).charAt(0).toUpperCase() + value(&apos;ProjectName&apos;).slice(1))}</source>
-        <translation>%{JS: value(&apos;Type&apos;) === &apos;qtplugin&apos;? value(&apos;BaseClassName&apos;).slice(1) : (value(&apos;ProjectName&apos;).charAt(0).toUpperCase() + value(&apos;ProjectName&apos;).slice(1))}</translation>
+        <translation type="vanished">%{JS: value(&apos;Type&apos;) === &apos;qtplugin&apos;? value(&apos;BaseClassName&apos;).slice(1) : (value(&apos;ProjectName&apos;).charAt(0).toUpperCase() + value(&apos;ProjectName&apos;).slice(1))}</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="-44"/>
         <source>QAccessiblePlugin</source>
         <translation>QAccessiblePlugin</translation>
     </message>
@@ -10328,6 +12109,12 @@ Preselects a desktop Qt for building the application if available.</source>
     </message>
     <message>
         <location line="+2"/>
+        <location filename="../../../src/plugins/projectexplorer/kitaspects.cpp" line="+485"/>
+        <location line="+18"/>
+        <location line="+13"/>
+        <location filename="../../../src/plugins/projectexplorer/projectexplorersettings.cpp" line="-202"/>
+        <location filename="../../../src/plugins/projectexplorer/toolchainmanager.cpp" line="+243"/>
+        <location line="+2"/>
         <source>None</source>
         <translation>Brez</translation>
     </message>
@@ -10352,31 +12139,31 @@ Preselects a desktop Qt for building the application if available.</source>
         <translation>Qt modul:</translation>
     </message>
     <message>
-        <location line="+5"/>
-        <location line="+115"/>
-        <location line="+37"/>
+        <location line="+3"/>
+        <location line="+116"/>
+        <location line="+22"/>
+        <location line="+18"/>
         <location line="+68"/>
         <location line="+26"/>
         <location line="+16"/>
-        <location line="+180"/>
+        <location line="+170"/>
         <source>Define Project Details</source>
         <translation>Določite podrobnosti projekta</translation>
     </message>
     <message>
-        <location line="-434"/>
         <source>Creates a C++ library. This can be used to create:&lt;ul&gt;&lt;li&gt;a shared C++ library for use with &lt;tt&gt;QPluginLoader&lt;/tt&gt; and runtime (Plugins)&lt;/li&gt;&lt;li&gt;a shared or static C++ library for use with another project at linktime&lt;/li&gt;&lt;/ul&gt;</source>
-        <translation>Ustvari knjižnico C++. To lahko uporabite za ustvarjanje:&lt;ul&gt;&lt;li&gt;skupne knjižnice C++ za uporabo z &lt;tt&gt;QPluginLoader&lt;/tt&gt; in izvajalnim okoljem (vtičniki)&lt;/li&gt;&lt;li&gt;skupne ali statične knjižnice C++ za uporabo z drugim projekt ob času povezave&lt;/li&gt;&lt;/ul&gt;</translation>
+        <translation type="vanished">Ustvari knjižnico C++. To lahko uporabite za ustvarjanje:&lt;ul&gt;&lt;li&gt;skupne knjižnice C++ za uporabo z &lt;tt&gt;QPluginLoader&lt;/tt&gt; in izvajalnim okoljem (vtičniki)&lt;/li&gt;&lt;li&gt;skupne ali statične knjižnice C++ za uporabo z drugim projekt ob času povezave&lt;/li&gt;&lt;/ul&gt;</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="-427"/>
         <location line="+18"/>
-        <location line="+178"/>
-        <location line="+246"/>
+        <location line="+186"/>
+        <location line="+232"/>
         <source>Library</source>
         <translation>Knjižnica</translation>
     </message>
     <message>
-        <location line="-441"/>
+        <location line="-435"/>
         <source>C++ Library</source>
         <translation>Knjižnica C++</translation>
     </message>
@@ -10415,12 +12202,12 @@ Preselects a desktop Qt for building the application if available.</source>
     </message>
     <message>
         <location line="+1"/>
-        <location line="+407"/>
+        <location line="+402"/>
         <source>Description:</source>
         <translation>Opis:</translation>
     </message>
     <message>
-        <location line="-406"/>
+        <location line="-401"/>
         <source>0.1.0</source>
         <translation>0.1.0</translation>
     </message>
@@ -10486,12 +12273,13 @@ Preselects a desktop Qt for building the application if available.</source>
     </message>
     <message>
         <location line="+1"/>
-        <location line="+391"/>
+        <location line="+386"/>
         <source>License:</source>
         <translation>Licenca:</translation>
     </message>
     <message>
-        <location line="-390"/>
+        <location line="-385"/>
+        <location filename="../../../src/plugins/projectexplorer/projectexplorer.cpp" line="+862"/>
         <source>C</source>
         <translation>C</translation>
     </message>
@@ -10534,19 +12322,19 @@ Preselects a desktop Qt for building the application if available.</source>
         <location line="+1"/>
         <location line="+253"/>
         <location line="+1"/>
-        <location line="+34"/>
+        <location line="+33"/>
         <location line="+1"/>
         <location line="+17"/>
         <location line="+1"/>
-        <location line="+23"/>
+        <location line="+22"/>
         <location line="+1"/>
-        <location line="+19"/>
+        <location line="+18"/>
         <location line="+1"/>
         <source>Configuration</source>
         <translation>Nastavitve</translation>
     </message>
     <message>
-        <location line="-346"/>
+        <location line="-343"/>
         <source>Creates a Nim application with Nimble.</source>
         <translation>Z Nimble ustvari aplikacijo Nim.</translation>
     </message>
@@ -10591,57 +12379,47 @@ Preselects a desktop Qt for building the application if available.</source>
         <translation>Prazen projekt qmake</translation>
     </message>
     <message>
-        <location line="+5"/>
-        <location line="+12"/>
-        <location line="+25"/>
-        <location line="+12"/>
         <source>PySide version:</source>
-        <translation>Različica PySide:</translation>
+        <translation type="vanished">Različica PySide:</translation>
     </message>
     <message>
-        <location line="-44"/>
+        <location line="+13"/>
         <source>Creates a Qt for Python application that contains only the main code for a QApplication.</source>
         <translation>Ustvari aplikacijo Qt za Python, ki vsebuje samo glavno kodo za QApplication.</translation>
     </message>
     <message>
         <location line="+1"/>
-        <location line="+20"/>
-        <location line="+17"/>
-        <location line="+19"/>
+        <location line="+22"/>
+        <location line="+18"/>
+        <location line="+21"/>
         <source>Application (Qt for Python)</source>
         <translation>Aplikacija (Qt za Python)</translation>
     </message>
     <message>
-        <location line="-55"/>
+        <location line="-60"/>
         <source>Empty Application</source>
         <translation>Prazna aplikacija</translation>
     </message>
     <message>
-        <location line="+6"/>
-        <location line="+37"/>
         <source>%{JS: value(&apos;BaseCB&apos;) ? value(&apos;BaseCB&apos;).slice(1) : &apos;MyClass&apos;}</source>
-        <translation>%{JS: value(&apos;BaseCB&apos;) ? value(&apos;BaseCB&apos;).slice(1) : &apos;MyClass&apos;}</translation>
+        <translation type="vanished">%{JS: value(&apos;BaseCB&apos;) ? value(&apos;BaseCB&apos;).slice(1) : &apos;MyClass&apos;}</translation>
     </message>
     <message>
-        <location line="-33"/>
-        <location line="+36"/>
         <source>%{JS: Cpp.classToFileName(value(&apos;Class&apos;), Util.preferredSuffix(&apos;text/x-python&apos;))}</source>
-        <translation>%{JS: Cpp.classToFileName(value(&apos;Class&apos;), Util.preferredSuffix(&apos;text/x-python&apos;))}</translation>
+        <translation type="vanished">%{JS: Cpp.classToFileName(value(&apos;Class&apos;), Util.preferredSuffix(&apos;text/x-python&apos;))}</translation>
     </message>
     <message>
-        <location line="-34"/>
-        <location line="+36"/>
         <source>%{JS: Util.fileName(&apos;%{ProjectName}&apos;, &apos;pyproject&apos;)}</source>
-        <translation>%{JS: Util.fileName(&apos;%{ProjectName}&apos;, &apos;pyproject&apos;)}</translation>
+        <translation type="vanished">%{JS: Util.fileName(&apos;%{ProjectName}&apos;, &apos;pyproject&apos;)}</translation>
     </message>
     <message>
-        <location line="-35"/>
-        <location line="+36"/>
+        <location line="+9"/>
+        <location line="+39"/>
         <source>Project file:</source>
         <translation>Projektna datoteka:</translation>
     </message>
     <message>
-        <location line="-31"/>
+        <location line="-28"/>
         <source>Creates a Qt for Python application that contains an empty window.</source>
         <translation>Ustvari aplikacijo Qt za Python, ki vsebuje prazno okno.</translation>
     </message>
@@ -10651,12 +12429,34 @@ Preselects a desktop Qt for building the application if available.</source>
         <translation>Prazno okno</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="-32"/>
+        <location line="+22"/>
+        <location line="+15"/>
+        <location line="+24"/>
         <source>PySide 6</source>
         <translation>PySide 6</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="-211"/>
+        <source>Creates a project containing a single main.cpp file with a stub implementation and no graphical UI.
+
+Preselects a desktop Qt for building the application if available.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+44"/>
+        <source>Creates a C++ library. You can create:&lt;ul&gt;&lt;li&gt;a shared C++ library for use with &lt;tt&gt;QPluginLoader&lt;/tt&gt; and runtime (Plugins)&lt;/li&gt;&lt;li&gt;a shared or static C++ library for use with another project at linktime&lt;/li&gt;&lt;/ul&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+107"/>
+        <location line="+22"/>
+        <location line="+39"/>
+        <source>PySide 2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-24"/>
         <source>PySide 5.15</source>
         <translation>PySide 5.15</translation>
     </message>
@@ -10676,7 +12476,7 @@ Preselects a desktop Qt for building the application if available.</source>
         <translation>PySide 5.12</translation>
     </message>
     <message>
-        <location line="+6"/>
+        <location line="+7"/>
         <source>Creates a Qt Quick application that contains an empty window.</source>
         <translation>Ustvari aplikacijo Qt Quick, ki vsebuje prazno okno.</translation>
     </message>
@@ -10686,53 +12486,54 @@ Preselects a desktop Qt for building the application if available.</source>
         <translation>Qt Quick Application – prazno</translation>
     </message>
     <message>
-        <location line="+17"/>
         <source>Creates a Qt for Python application that includes a Qt Designer-based widget (ui file) - Requires .ui to Python conversion</source>
-        <translation>Ustvari aplikacijo Qt za Python, ki vključuje gradnik, ki temelji na Qt Designerju (datoteka ui) – Zahteva pretvorbo .ui v Python</translation>
+        <translation type="vanished">Ustvari aplikacijo Qt za Python, ki vključuje gradnik, ki temelji na Qt Designerju (datoteka ui) – Zahteva pretvorbo .ui v Python</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+21"/>
         <source>Window UI</source>
         <translation>okenski uporabniški vmesnik</translation>
     </message>
     <message>
         <location line="+10"/>
-        <location line="+52"/>
+        <location line="+25"/>
+        <location line="+23"/>
         <source>Qt 6.2</source>
         <translation>Qt 6.2</translation>
     </message>
     <message>
-        <location line="-51"/>
-        <location line="+52"/>
+        <location line="-47"/>
+        <location line="+48"/>
         <source>Qt 5.15</source>
         <translation>Qt 5.15</translation>
     </message>
     <message>
-        <location line="-51"/>
-        <location line="+52"/>
+        <location line="-47"/>
+        <location line="+48"/>
         <source>Qt 5.14</source>
         <translation>Qt 5.14</translation>
     </message>
     <message>
-        <location line="-51"/>
-        <location line="+52"/>
+        <location line="-47"/>
+        <location line="+48"/>
         <source>Qt 5.13</source>
         <translation>Qt 5.13</translation>
     </message>
     <message>
-        <location line="-51"/>
-        <location line="+52"/>
+        <location line="-47"/>
+        <location line="+48"/>
         <source>Qt 5.12</source>
         <translation>Qt 5.12</translation>
     </message>
     <message>
-        <location line="-51"/>
-        <location line="+52"/>
+        <location line="-47"/>
+        <location line="+23"/>
+        <location line="+25"/>
         <source>Minimum required Qt version:</source>
         <translation>Najmanjša zahtevana različica Qt:</translation>
     </message>
     <message>
-        <location line="-51"/>
+        <location line="-47"/>
         <source>MyItem</source>
         <translation>MyItem</translation>
     </message>
@@ -10772,34 +12573,30 @@ Preselects a desktop Qt for building the application if available.</source>
         <translation>Razširitveni vtičnik Qt Quick 2</translation>
     </message>
     <message>
-        <location line="+10"/>
         <source>Create a project that you can open in Qt Design Studio</source>
-        <translation>Ustvarite projekt, ki ga lahko odprete v Qt Design Studio</translation>
+        <translation type="vanished">Ustvarite projekt, ki ga lahko odprete v Qt Design Studio</translation>
     </message>
     <message>
-        <location line="+1"/>
         <source>Create a project with a structure that is compatible both with Qt Design Studio (via .qmlproject) and with Qt Creator (via CMakeLists.txt). It contains a .ui.qml form that you can visually edit in Qt Design Studio.</source>
-        <translation>Ustvarite projekt s strukturo, ki je združljiva s Qt Design Studio (prek .qmlproject) in s Qt Creator (prek CMakeLists.txt). Vsebuje obrazec .ui.qml, ki ga lahko vizualno urejate v Qt Design Studio.</translation>
+        <translation type="vanished">Ustvarite projekt s strukturo, ki je združljiva s Qt Design Studio (prek .qmlproject) in s Qt Creator (prek CMakeLists.txt). Vsebuje obrazec .ui.qml, ki ga lahko vizualno urejate v Qt Design Studio.</translation>
     </message>
     <message>
-        <location line="+1"/>
-        <location line="+27"/>
+        <location line="+5"/>
+        <location line="+30"/>
         <location line="+16"/>
         <source>Use Qt Virtual Keyboard</source>
         <translation>Uporabite virtualno tipkovnico Qt</translation>
     </message>
     <message>
-        <location line="-42"/>
         <source>The minimum version of Qt you want to build the application for</source>
-        <translation>Najmanjša različica Qt, za katero želite zgraditi aplikacijo</translation>
+        <translation type="vanished">Najmanjša različica Qt, za katero želite zgraditi aplikacijo</translation>
     </message>
     <message>
-        <location line="+7"/>
         <source>Creates a Qt Quick application that contains an empty window. Optionally, you can create a Qt Design Studio project.</source>
-        <translation>Ustvari aplikacijo Qt Quick, ki vsebuje prazno okno. Po želji lahko ustvarite projekt Qt Design Studio.</translation>
+        <translation type="vanished">Ustvari aplikacijo Qt Quick, ki vsebuje prazno okno. Po želji lahko ustvarite projekt Qt Design Studio.</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="-33"/>
         <source>Qt Quick Application</source>
         <translation>Program Qt Quick</translation>
     </message>
@@ -10818,16 +12615,15 @@ Uporabite to »compat« različico, če želite uporabljati druge gradbene siste
         <translation>Qt Quick Application (compat)</translation>
     </message>
     <message>
-        <location line="+12"/>
         <source>Creates a Qt Quick 2 UI project with a QML entry point. To use it, you need to have a QML runtime environment.
 
 Use this only if you are prototyping. You cannot create a full application with this. Consider using a Qt Quick Application project instead.</source>
-        <translation>Ustvari projekt uporabniškega vmesnika Qt Quick 2 z vstopno točko QML. Če ga želite uporabljati, morate imeti izvajalno okolje QML.
+        <translation type="vanished">Ustvari projekt uporabniškega vmesnika Qt Quick 2 z vstopno točko QML. Če ga želite uporabljati, morate imeti izvajalno okolje QML.
 
 To uporabite le, če izdelujete prototip. S tem ne morete ustvariti celotne aplikacije. Namesto tega razmislite o uporabi projekta Qt Quick Application.</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+14"/>
         <source>Qt Quick UI Prototype</source>
         <translation>Prototip hitrega uporabniškega vmesnika Qt</translation>
     </message>
@@ -10837,19 +12633,17 @@ To uporabite le, če izdelujete prototip. S tem ne morete ustvariti celotne apli
         <translation>Ta čarovnik ustvari projekt aplikacije Qt Widgets. Aplikacija privzeto izhaja iz QApplication in vključuje prazen gradnik.</translation>
     </message>
     <message>
-        <location line="+11"/>
         <source>%{JS: value(&apos;BaseClass&apos;) ? value(&apos;BaseClass&apos;).slice(1) : &apos;MyClass&apos;}</source>
-        <translation>%{JS: value(&apos;BaseClass&apos;) ? value(&apos;BaseClass&apos;).slice(1) : &apos;MyClass&apos;}</translation>
+        <translation type="vanished">%{JS: value(&apos;BaseClass&apos;) ? value(&apos;BaseClass&apos;).slice(1) : &apos;MyClass&apos;}</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+15"/>
         <source>Generate form</source>
         <translation>Ustvari obrazec</translation>
     </message>
     <message>
-        <location line="+1"/>
         <source>%{JS: Cpp.classToFileName(value(&apos;Class&apos;), &apos;ui&apos;)}</source>
-        <translation>%{JS: Cpp.classToFileName(value(&apos;Class&apos;), &apos;ui&apos;)}</translation>
+        <translation type="vanished">%{JS: Cpp.classToFileName(value(&apos;Class&apos;), &apos;ui&apos;)}</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -10862,72 +12656,67 @@ To uporabite le, če izdelujete prototip. S tem ne morete ustvariti celotne apli
         <translation>Podatki o razredih</translation>
     </message>
     <message>
-        <location line="+8"/>
         <source>Creates a widget-based Qt application that contains a Qt Designer-based main window.
 
 Preselects a desktop Qt for building the application if available.</source>
-        <translation>Ustvari aplikacijo Qt, ki temelji na pripomočkih in vsebuje glavno okno, ki temelji na Qt Designerju.
+        <translation type="vanished">Ustvari aplikacijo Qt, ki temelji na pripomočkih in vsebuje glavno okno, ki temelji na Qt Designerju.
 
 Vnaprej izbere namizni Qt za izdelavo aplikacije, če je na voljo.</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+10"/>
         <source>Qt Widgets Application</source>
         <translation>Aplikacija Qt Widgets</translation>
     </message>
     <message>
         <location line="+5"/>
-        <location line="+35"/>
+        <location line="+34"/>
         <location line="+18"/>
-        <location line="+24"/>
-        <location line="+20"/>
+        <location line="+23"/>
+        <location line="+19"/>
         <source>Please configure &lt;b&gt;%{vcsName}&lt;/b&gt; now.</source>
         <translation>Konfigurirajte &lt;b&gt;%{vcsName}&lt;/b&gt; zdaj.</translation>
     </message>
     <message>
-        <location line="-96"/>
-        <location line="+53"/>
-        <location line="+24"/>
-        <location line="+20"/>
+        <location line="-93"/>
+        <location line="+52"/>
+        <location line="+23"/>
+        <location line="+19"/>
         <source>Repository:</source>
         <translation>Skladišče:</translation>
     </message>
     <message>
-        <location line="-96"/>
-        <location line="+35"/>
+        <location line="-93"/>
+        <location line="+34"/>
         <location line="+18"/>
-        <location line="+24"/>
-        <location line="+20"/>
+        <location line="+23"/>
+        <location line="+19"/>
         <source>Repository URL is not valid</source>
         <translation>URL skladišča ni veljaven</translation>
     </message>
     <message>
-        <location line="-95"/>
-        <location line="+55"/>
-        <location line="+22"/>
-        <location line="+20"/>
         <source>%{defaultDir}</source>
-        <translation>%{defaultDir}</translation>
+        <translation type="vanished">%{defaultDir}</translation>
     </message>
     <message>
-        <location line="-96"/>
-        <location line="+55"/>
-        <location line="+22"/>
-        <location line="+20"/>
+        <location line="-92"/>
+        <location line="+54"/>
+        <location line="+21"/>
+        <location line="+19"/>
         <source>Directory:</source>
         <translation>Mapa:</translation>
     </message>
     <message>
-        <location line="-96"/>
+        <location line="-93"/>
         <location line="+33"/>
-        <location line="+22"/>
-        <location line="+22"/>
-        <location line="+20"/>
+        <location line="+21"/>
+        <location line="+21"/>
+        <location line="+19"/>
         <source>&quot;%{JS: Util.toNativeSeparators(&apos;%{TargetPath}&apos;)}&quot; exists in the filesystem.</source>
         <translation>&quot;%{JS: Util.toNativeSeparators(&apos;%{TargetPath}&apos;)}&quot; obstaja v datotečnem sistemu.</translation>
     </message>
     <message>
-        <location line="-96"/>
+        <location line="-93"/>
         <source>Use existing directory</source>
         <translation>Uporabi obstoječo mapo</translation>
     </message>
@@ -11003,19 +12792,22 @@ Vnaprej izbere namizni Qt za izdelavo aplikacije, če je na voljo.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <location line="+62"/>
-        <location line="+21"/>
+        <location line="+60"/>
+        <location line="+20"/>
         <source>Specify repository URL, checkout directory, and path.</source>
         <translation>Določite URL skladišča, imenik za odjavo in pot.</translation>
     </message>
     <message>
-        <location line="-82"/>
+        <location line="-79"/>
         <source>Running Bazaar branch...</source>
         <translation>Podružnica Running Bazaar ...</translation>
     </message>
     <message>
         <location line="+1"/>
         <location line="+1"/>
+        <location filename="../../../src/plugins/projectexplorer/kitoptionspage.cpp" line="-227"/>
+        <location filename="../../../src/plugins/projectexplorer/projectwelcomepage.cpp" line="+485"/>
+        <location filename="../../../src/plugins/projectexplorer/toolchainoptionspage.cpp" line="+217"/>
         <source>Clone</source>
         <translation>Podvoji</translation>
     </message>
@@ -11027,14 +12819,15 @@ Vnaprej izbere namizni Qt za izdelavo aplikacije, če je na voljo.</translation>
     <message>
         <location line="+1"/>
         <location line="+18"/>
-        <location line="+24"/>
+        <location line="+23"/>
+        <location line="+19"/>
         <location line="+20"/>
-        <location line="+21"/>
+        <location filename="../../../src/plugins/projectexplorer/projectexplorerconstants.h" line="+3"/>
         <source>Import Project</source>
         <translation>Uvozi projekt</translation>
     </message>
     <message>
-        <location line="-82"/>
+        <location line="-79"/>
         <source>Bazaar Clone (Or Branch)</source>
         <translation>Klon (ali veja) skladišča Bazaar</translation>
     </message>
@@ -11056,17 +12849,17 @@ Vnaprej izbere namizni Qt za izdelavo aplikacije, če je na voljo.</translation>
     <message>
         <location line="+1"/>
         <location line="+1"/>
-        <location line="+23"/>
+        <location line="+22"/>
+        <location line="+1"/>
+        <location line="+18"/>
         <location line="+1"/>
         <location line="+19"/>
-        <location line="+1"/>
-        <location line="+20"/>
         <location line="+1"/>
         <source>Checkout</source>
         <translation>Preveri</translation>
     </message>
     <message>
-        <location line="-64"/>
+        <location line="-61"/>
         <source>Checks out a CVS repository and tries to load the contained project.</source>
         <translation>Prevzame skladišče CVS in poskusi naložiti vsebovani projekt.</translation>
     </message>
@@ -11086,7 +12879,7 @@ Vnaprej izbere namizni Qt za izdelavo aplikacije, če je na voljo.</translation>
         <translation>Veja:</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+4"/>
         <source>Recursive</source>
         <translation>Rekurzivno</translation>
     </message>
@@ -11116,7 +12909,7 @@ Vnaprej izbere namizni Qt za izdelavo aplikacije, če je na voljo.</translation>
         <translation>Git Clone</translation>
     </message>
     <message>
-        <location line="+15"/>
+        <location line="+14"/>
         <source>Running Mercurial clone...</source>
         <translation>Poganja se Mercurialov klon ...</translation>
     </message>
@@ -11131,7 +12924,7 @@ Vnaprej izbere namizni Qt za izdelavo aplikacije, če je na voljo.</translation>
         <translation>Klon skladišča Mercurial</translation>
     </message>
     <message>
-        <location line="+12"/>
+        <location line="+11"/>
         <source>Trust Server Certificate</source>
         <translation>Certifikat strežnika zaupanja</translation>
     </message>
@@ -11161,9 +12954,8 @@ Vnaprej izbere namizni Qt za izdelavo aplikacije, če je na voljo.</translation>
         <translation>Določite podrobnosti o svojem vtičniku Qt Creator po meri.</translation>
     </message>
     <message>
-        <location line="+1"/>
         <source>%{JS: value(&apos;ProjectName&apos;).charAt(0).toUpperCase() + value(&apos;ProjectName&apos;).slice(1)}</source>
-        <translation>%{JS: value(&apos;ProjectName&apos;).charAt(0).toUpperCase() + value(&apos;ProjectName&apos;).slice(1)}</translation>
+        <translation type="vanished">%{JS: value(&apos;ProjectName&apos;).charAt(0).toUpperCase() + value(&apos;ProjectName&apos;).slice(1)}</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -11201,12 +12993,11 @@ Vnaprej izbere namizni Qt za izdelavo aplikacije, če je na voljo.</translation>
         <translation>Tukaj vnesite kratek opis vašega vtičnika</translation>
     </message>
     <message>
-        <location line="+2"/>
         <source>https://www.%{JS: encodeURIComponent(value(&apos;VendorName&apos;).toLowerCase())}.com</source>
-        <translation>https://www.%{JS: encodeURIComponent(value(&apos;VendorName&apos;).toLowerCase())}.com</translation>
+        <translation type="vanished">https://www.%{JS: encodeURIComponent(value(&apos;VendorName&apos;).toLowerCase())}.com</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+2"/>
         <source>URL:</source>
         <translation>URL:</translation>
     </message>
@@ -11225,11 +13016,6047 @@ Vnaprej izbere namizni Qt za izdelavo aplikacije, če je na voljo.</translation>
         <source>Qt Creator Plugin</source>
         <translation>Vtičnik Qt Creator</translation>
     </message>
+    <message>
+        <location filename="../../../src/plugins/coreplugin/session.cpp" line="+149"/>
+        <source>S&amp;essions</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>&amp;Manage...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>File where current session is saved.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Name of current session.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+156"/>
+        <source>Delete Session</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Delete Sessions</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Delete session %1?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Delete these sessions?
+    %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+308"/>
+        <source>Error while restoring session</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Could not restore session %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+44"/>
+        <source>Loading Session</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+47"/>
+        <location line="+42"/>
+        <source>Error while saving session</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-41"/>
+        <source>Could not save session %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+42"/>
+        <source>Could not save session to file &quot;%1&quot;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/coreplugin/sessiondialog.cpp" line="+90"/>
+        <source>Enter the name of the session:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+42"/>
+        <source>Session Manager</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>&amp;New...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>&amp;Open</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>&amp;Rename...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>C&amp;lone...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>&amp;Delete...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Restore last session on startup</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>What is a Session?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/coreplugin/sessionmodel.cpp" line="+55"/>
+        <source>Session</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Last Modified</source>
+        <translation type="unfinished">Nazadnje spremenjeno</translation>
+    </message>
+    <message>
+        <location line="+131"/>
+        <location line="+11"/>
+        <source>New Session Name</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-10"/>
+        <source>&amp;Create</source>
+        <translation type="unfinished">&amp;Ustvari</translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Create and &amp;Open</source>
+        <translation type="unfinished">Ustvari in &amp;odpri</translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>&amp;Clone</source>
+        <translation type="unfinished">&amp;Kloniraj</translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Clone and &amp;Open</source>
+        <translation type="unfinished">Kloniraj in &amp;odpri</translation>
+    </message>
+    <message>
+        <location line="+22"/>
+        <source>Rename Session</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>&amp;Rename</source>
+        <translation type="unfinished">Pre&amp;imenuj</translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Rename and &amp;Open</source>
+        <translation type="unfinished">Preimenuj in &amp;Odpri</translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/abiwidget.cpp" line="+189"/>
+        <source>&lt;custom&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/abstractprocessstep.cpp" line="+98"/>
+        <source>Configuration is faulty. Check the Issues view for details.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+72"/>
+        <source>Could not create directory &quot;%1&quot;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>The program &quot;%1&quot; does not exist or is not executable.</source>
+        <translation type="unfinished">Program &quot;%1&quot; ne obstaja ali pa ni izvršljiv.</translation>
+    </message>
+    <message>
+        <location line="+34"/>
+        <source>Starting: &quot;%1&quot; %2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>The process &quot;%1&quot; exited normally.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>The process &quot;%1&quot; exited with code %2.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Could not start process &quot;%1&quot; %2.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>The process &quot;%1&quot; crashed.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/addrunconfigdialog.cpp" line="+54"/>
+        <source>[none]</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+15"/>
+        <location filename="../../../src/plugins/projectexplorer/kitoptionspage.cpp" line="-291"/>
+        <location filename="../../../src/plugins/projectexplorer/toolchainoptionspage.cpp" line="-56"/>
+        <source>Name</source>
+        <translation type="unfinished">Ime</translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Source</source>
+        <translation type="unfinished">Vir</translation>
+    </message>
+    <message>
+        <location line="+45"/>
+        <source>Create Run Configuration</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Filter candidates by name</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Create</source>
+        <translation type="unfinished">Ustvarjanje</translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/allprojectsfilter.cpp" line="+23"/>
+        <source>Files in Any Project</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Locates files of all open projects. Append &quot;+&lt;number&gt;&quot; or &quot;:&lt;number&gt;&quot; to jump to the given line number. Append another &quot;+&lt;number&gt;&quot; or &quot;:&lt;number&gt;&quot; to jump to the column number as well.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/allprojectsfind.cpp" line="+39"/>
+        <location filename="../../../src/plugins/projectexplorer/projectexplorer.cpp" line="+1969"/>
+        <source>All Projects</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+42"/>
+        <source>All Projects:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Filter: %1
+Excluding: %2
+%3</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/appoutputpane.cpp" line="+73"/>
+        <source>Attach debugger to this process</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Attach debugger to %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+70"/>
+        <source>Stop</source>
+        <translation type="unfinished">Ustavi</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Close Tab</source>
+        <translation type="unfinished">Zapri zavihek</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Close All Tabs</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Close Other Tabs</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Show &amp;App Output</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Show the output that generated this issue in Application Output.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>A</source>
+        <translation type="unfinished">A</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <location line="+737"/>
+        <source>Application Output</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-727"/>
+        <source>Re-run this run-configuration.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Stop running program.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+232"/>
+        <source>application-output-%1.txt</source>
+        <extracomment>file name suggested for saving application output, %1 = run configuration display name</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+29"/>
+        <source>Application Output Window</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+280"/>
+        <source>PID %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <location filename="../../../src/plugins/projectexplorer/devicesupport/idevice.cpp" line="+604"/>
+        <source>Invalid</source>
+        <translation type="unfinished">Neveljavno</translation>
+    </message>
+    <message>
+        <location line="+109"/>
+        <location filename="../../../src/plugins/projectexplorer/compileoutputwindow.cpp" line="+250"/>
+        <source>Word-wrap output</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Clear old output on a new run</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Merge stderr and stdout</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Always</source>
+        <translation type="unfinished">Vedno</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Never</source>
+        <translation type="unfinished">Nikoli</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>On First Output Only</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+14"/>
+        <location filename="../../../src/plugins/projectexplorer/compileoutputwindow.cpp" line="+13"/>
+        <source>Limit output to %1 characters</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Open Application Output when running:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Open Application Output when debugging:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/baseprojectwizarddialog.cpp" line="+146"/>
+        <location filename="../../../src/plugins/projectexplorer/jsonwizard/jsonprojectpage.cpp" line="+55"/>
+        <source>untitled</source>
+        <extracomment>File path suggestion for a new project. If you choose to translate it, make sure it is a valid path name without blanks and using only ascii chars.</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/buildaspects.cpp" line="+51"/>
+        <source>Build directory:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+18"/>
+        <source>The build directory is not reachable from the build device.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+22"/>
+        <source>Shadow build:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+105"/>
+        <source>Build directory contains potentially problematic character &quot;%1&quot;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>This warning can be suppressed &lt;a href=&quot;dummy&quot;&gt;here&lt;/a&gt;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+25"/>
+        <location filename="../../../src/plugins/projectexplorer/buildpropertiessettings.cpp" line="+65"/>
+        <source>Separate debug info:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/buildconfiguration.cpp" line="+62"/>
+        <location filename="../../../src/plugins/projectexplorer/environmentaspect.cpp" line="+130"/>
+        <location filename="../../../src/plugins/projectexplorer/projectexplorer.cpp" line="-1653"/>
+        <source>Build Environment</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Clear system environment</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+39"/>
+        <location filename="../../../src/plugins/projectexplorer/customparser.cpp" line="+165"/>
+        <location filename="../../../src/plugins/projectexplorer/customparserssettingspage.cpp" line="+123"/>
+        <source>Custom Output Parsers</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Parse standard output during build</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Makes output parsers look for diagnostics on stdout rather than stderr.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+56"/>
+        <location filename="../../../src/plugins/projectexplorer/targetsettingspanel.cpp" line="+635"/>
+        <source>Build Settings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <location line="+4"/>
+        <source>Build directory</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Name of the build configuration</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Variables in the build configuration&apos;s environment</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+24"/>
+        <source>Tooltip in target selector:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Appears as a tooltip when hovering the build configuration</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+281"/>
+        <location filename="../../../src/plugins/projectexplorer/environmentaspect.cpp" line="-3"/>
+        <source>System Environment</source>
+        <translation type="unfinished">Sistemsko okolje</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <location filename="../../../src/plugins/projectexplorer/environmentaspect.cpp" line="-2"/>
+        <source>Clean Environment</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+60"/>
+        <source>The project was not parsed successfully.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+52"/>
+        <source>Main file of the project</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Name of the project</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Name of the project&apos;s active build configuration</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Name of the project&apos;s active build system</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Type of current build</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Type of the project&apos;s active build configuration</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+50"/>
+        <source>No build device is set for the kit &quot;%1&quot;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>You can try mounting the folder in your device settings.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>The build device &quot;%1&quot; cannot reach the project directory.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>The build device &quot;%1&quot; cannot reach the build directory.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message numerus="yes">
+        <location filename="../../../src/plugins/projectexplorer/buildmanager.cpp" line="+182"/>
+        <source>Finished %1 of %n steps</source>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+        </translation>
+    </message>
+    <message>
+        <location line="+82"/>
+        <source>Stop Applications</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Stop these applications before building?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+26"/>
+        <source>The project %1 is not configured, skipping it.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>The build device failed to prepare for the build of %1 (%2).</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+138"/>
+        <source>Compile</source>
+        <comment>Category for compiler issues listed under &apos;Issues&apos;</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Issues parsed from the compile output.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Build System</source>
+        <comment>Category for build system issues listed under &apos;Issues&apos;</comment>
+        <translation type="unfinished">Sistem za gradnjo</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Issues from the build system, such as CMake or qmake.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Deployment</source>
+        <comment>Category for deployment issues listed under &apos;Issues&apos;</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Issues found when deploying applications to devices.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Autotests</source>
+        <comment>Category for autotest issues listed under &apos;Issues&apos;</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Issues found when running tests.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+151"/>
+        <location filename="../../../src/plugins/projectexplorer/buildsteplist.cpp" line="+96"/>
+        <location filename="../../../src/plugins/projectexplorer/projectexplorer.cpp" line="+115"/>
+        <location line="+9"/>
+        <location line="+100"/>
+        <location line="+8"/>
+        <location line="+59"/>
+        <source>Clean</source>
+        <extracomment>Displayed name for a &quot;cleaning&quot; build step
+----------
+Display name of the clean build step list. Used as part of the labels in the project window.</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <location filename="../../../src/plugins/projectexplorer/buildsteplist.cpp" line="+4"/>
+        <location filename="../../../src/plugins/projectexplorer/miniprojecttargetselector.cpp" line="+694"/>
+        <location filename="../../../src/plugins/projectexplorer/projectexplorer.cpp" line="-204"/>
+        <location line="+111"/>
+        <location line="+121"/>
+        <source>Deploy</source>
+        <extracomment>Displayed name for a deploy step
+----------
+Display name of the deploy build step list. Used as part of the labels in the project window.</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <location filename="../../../src/plugins/projectexplorer/buildsteplist.cpp" line="-8"/>
+        <location filename="../../../src/plugins/projectexplorer/miniprojecttargetselector.cpp" line="-1"/>
+        <location filename="../../../src/plugins/projectexplorer/projectexplorer.cpp" line="-52"/>
+        <location filename="../../../src/plugins/projectexplorer/targetsettingspanel.cpp" line="-60"/>
+        <source>Build</source>
+        <extracomment>Displayed name for a normal build step
+----------
+Display name of the build build step list. Used as part of the labels in the project window.</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+41"/>
+        <source>Build/Deployment canceled</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Canceled build/deployment.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+83"/>
+        <source>Running steps for project %1...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>Skipping disabled step %1.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+24"/>
+        <location line="+104"/>
+        <source>Error while building/deploying project %1 (kit: %2)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-100"/>
+        <source>The kit %1 has configuration issues which might be the root cause for this problem.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <location line="+98"/>
+        <source>When executing step &quot;%1&quot;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/buildpropertiessettings.cpp" line="-33"/>
+        <location filename="../../../src/plugins/projectexplorer/buildstepspage.cpp" line="+118"/>
+        <location filename="../../../src/plugins/projectexplorer/environmentwidget.cpp" line="+525"/>
+        <source>Enable</source>
+        <translation type="unfinished">Omogoči</translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <location filename="../../../src/plugins/projectexplorer/buildstepspage.cpp" line="+0"/>
+        <location filename="../../../src/plugins/projectexplorer/environmentwidget.cpp" line="-289"/>
+        <location line="+289"/>
+        <location line="+6"/>
+        <source>Disable</source>
+        <translation type="unfinished">Onemogoči</translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Use Project Default</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+24"/>
+        <source>Default build directory:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Template used to construct the default build directory.&lt;br&gt;&lt;br&gt;The default value can be set using the environment variable &lt;tt&gt;%1&lt;/tt&gt;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>QML debugging:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Use qmlcachegen:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+23"/>
+        <source>Default Build Properties</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/buildsettingspropertiespage.cpp" line="+57"/>
+        <source>No build settings available</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Edit build configuration:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <location filename="../../../src/plugins/projectexplorer/deploymentdataview.cpp" line="+79"/>
+        <location filename="../../../src/plugins/projectexplorer/kitoptionspage.cpp" line="+290"/>
+        <location filename="../../../src/plugins/projectexplorer/runsettingspropertiespage.cpp" line="+47"/>
+        <location filename="../../../src/plugins/projectexplorer/toolchainoptionspage.cpp" line="+34"/>
+        <source>Add</source>
+        <translation type="unfinished">Dodaj</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <location filename="../../../src/plugins/projectexplorer/customparserssettingspage.cpp" line="-78"/>
+        <location filename="../../../src/plugins/projectexplorer/deploymentdataview.cpp" line="+1"/>
+        <location filename="../../../src/plugins/projectexplorer/environmentwidget.cpp" line="-469"/>
+        <location filename="../../../src/plugins/projectexplorer/kitoptionspage.cpp" line="+2"/>
+        <location filename="../../../src/plugins/projectexplorer/runsettingspropertiespage.cpp" line="+1"/>
+        <location line="+11"/>
+        <location filename="../../../src/plugins/projectexplorer/toolchainoptionspage.cpp" line="+25"/>
+        <source>Remove</source>
+        <translation type="unfinished">Odstrani</translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <location line="+158"/>
+        <location filename="../../../src/plugins/projectexplorer/projectexplorer.cpp" line="+157"/>
+        <location filename="../../../src/plugins/projectexplorer/runsettingspropertiespage.cpp" line="-10"/>
+        <location line="+12"/>
+        <location line="+216"/>
+        <location line="+103"/>
+        <source>Rename...</source>
+        <translation type="unfinished">Preimenuj ...</translation>
+    </message>
+    <message>
+        <location line="-153"/>
+        <location filename="../../../src/plugins/projectexplorer/runsettingspropertiespage.cpp" line="-318"/>
+        <source>Clone...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+116"/>
+        <source>New Configuration</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <location line="+62"/>
+        <location filename="../../../src/plugins/projectexplorer/runsettingspropertiespage.cpp" line="+145"/>
+        <source>New configuration name:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-25"/>
+        <source>New name for build configuration &lt;b&gt;%1&lt;/b&gt;:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+24"/>
+        <location filename="../../../src/plugins/projectexplorer/runsettingspropertiespage.cpp" line="-1"/>
+        <source>Clone Configuration</source>
+        <extracomment>Title of a the cloned BuildConfiguration window, text of the window
+----------
+Title of a the cloned RunConfiguration window, text of the window</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+37"/>
+        <source>Cancel Build &amp;&amp; Remove Build Configuration</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <location filename="../../../src/plugins/projectexplorer/runsettingspropertiespage.cpp" line="+142"/>
+        <location filename="../../../src/plugins/projectexplorer/targetsettingspanel.cpp" line="-128"/>
+        <source>Do Not Remove</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Remove Build Configuration %1?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>The build configuration &lt;b&gt;%1&lt;/b&gt; is currently being built.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Do you want to cancel the build process and remove the Build Configuration anyway?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Remove Build Configuration?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Do you really want to delete build configuration &lt;b&gt;%1&lt;/b&gt;?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/buildstepspage.cpp" line="-58"/>
+        <source>Move Up</source>
+        <translation type="unfinished">Premakni gor</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Move Down</source>
+        <translation type="unfinished">Premakni dol</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Remove Item</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+97"/>
+        <source>%1 Steps</source>
+        <extracomment>%1 is the name returned by BuildStepList::displayName</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+19"/>
+        <source>No %1 Steps</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Add %1 Step</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+94"/>
+        <source>No Build Steps</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+39"/>
+        <source>Removing Step failed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Cannot remove build step while building</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/buildsystem.cpp" line="+394"/>
+        <source>The project is currently being parsed.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>The project could not be fully parsed.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>The project file &quot;%1&quot; does not exist.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/codestylesettingspropertiespage.cpp" line="+60"/>
+        <source>Language:</source>
+        <translation type="unfinished">Jezik:</translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>Code Style</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/compileoutputwindow.cpp" line="-206"/>
+        <location line="+230"/>
+        <source>Compile Output</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-219"/>
+        <source>compile-output.txt</source>
+        <extracomment>file name suggested for saving compile output</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+38"/>
+        <source>Show Compile &amp;Output</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Show the output that generated this issue in Compile Output.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>O</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+145"/>
+        <source>Open Compile Output when building</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/copystep.cpp" line="+27"/>
+        <source>Source:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Target:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+25"/>
+        <source>Copying finished.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Copying failed.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+22"/>
+        <location line="+26"/>
+        <source>Copy file</source>
+        <extracomment>Default CopyStep display name</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-11"/>
+        <location line="+18"/>
+        <source>Copy directory recursively</source>
+        <extracomment>Default CopyStep display name</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/copytaskhandler.cpp" line="+24"/>
+        <source>error:</source>
+        <extracomment>Task is of type: error</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>warning:</source>
+        <extracomment>Task is of type: warning</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/currentprojectfilter.cpp" line="+18"/>
+        <source>Files in Current Project</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Locates files from the current document&apos;s project. Append &quot;+&lt;number&gt;&quot; or &quot;:&lt;number&gt;&quot; to jump to the given line number. Append another &quot;+&lt;number&gt;&quot; or &quot;:&lt;number&gt;&quot; to jump to the column number as well.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/currentprojectfind.cpp" line="+65"/>
+        <source>Project &quot;%1&quot;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Current Project</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+30"/>
+        <source>Project &quot;%1&quot;:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/customexecutablerunconfiguration.cpp" line="+55"/>
+        <location line="+17"/>
+        <source>Custom Executable</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-16"/>
+        <location filename="../../../src/plugins/projectexplorer/projectexplorer.cpp" line="+1718"/>
+        <source>Run %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>You need to set an executable in the custom run configuration.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/customparser.cpp" line="+101"/>
+        <source>Custom output parsers scan command line output for user-provided error patterns&lt;br&gt;to create entries in Issues.&lt;br&gt;The parsers can be configured &lt;a href=&quot;dummy&quot;&gt;here&lt;/a&gt;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+82"/>
+        <source>There are no custom parsers active</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message numerus="yes">
+        <location line="+2"/>
+        <source>There are %n custom parsers active</source>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+        </translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/customparserconfigdialog.cpp" line="+32"/>
+        <source>Custom Parser</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>&amp;Error message capture pattern:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <location line="+33"/>
+        <source>&amp;File name:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-32"/>
+        <location line="+33"/>
+        <source>&amp;Line number:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-32"/>
+        <location line="+33"/>
+        <source>&amp;Message:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-15"/>
+        <location line="+33"/>
+        <source>Standard output</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-32"/>
+        <location line="+33"/>
+        <source>Standard error</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-31"/>
+        <source>E&amp;rror message:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+33"/>
+        <source>Warning message:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+14"/>
+        <source>Warning message capture pattern:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <location line="+29"/>
+        <source>Capture Positions</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-22"/>
+        <location line="+29"/>
+        <source>Capture Output Channels</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-25"/>
+        <location line="+29"/>
+        <location filename="../../../src/plugins/projectexplorer/devicesupport/devicesettingspage.cpp" line="+189"/>
+        <location filename="../../../src/plugins/projectexplorer/runconfigurationaspects.cpp" line="+803"/>
+        <source>Test</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-24"/>
+        <location line="+29"/>
+        <source>File name:</source>
+        <translation type="unfinished">Ime datoteke:</translation>
+    </message>
+    <message>
+        <location line="-28"/>
+        <location line="+29"/>
+        <source>Line number:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-28"/>
+        <location line="+29"/>
+        <source>Message:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <location filename="../../../src/plugins/projectexplorer/runcontrol.cpp" line="+743"/>
+        <location filename="../../../src/plugins/projectexplorer/taskhub.cpp" line="+47"/>
+        <source>Error</source>
+        <translation type="unfinished">Napaka</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <location filename="../../../src/plugins/projectexplorer/taskhub.cpp" line="+1"/>
+        <source>Warning</source>
+        <translation type="unfinished">Opozorilo</translation>
+    </message>
+    <message>
+        <location line="+253"/>
+        <source>Not applicable:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Pattern is empty.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>No message given.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Pattern does not match the message.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/customparserssettingspage.cpp" line="-8"/>
+        <source>Custom output parsers defined here can be enabled individually in the project&apos;s build or run settings.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <location filename="../../../src/plugins/projectexplorer/environmentwidget.cpp" line="-1"/>
+        <location filename="../../../src/plugins/projectexplorer/runsettingspropertiespage.cpp" line="-290"/>
+        <source>Add...</source>
+        <translation type="unfinished">Dodaj …</translation>
+    </message>
+    <message>
+        <location line="+15"/>
+        <source>New Parser</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/customtoolchain.cpp" line="+55"/>
+        <location line="+511"/>
+        <source>Custom</source>
+        <translation type="unfinished">Po meri</translation>
+    </message>
+    <message>
+        <location line="-235"/>
+        <location filename="../../../src/plugins/projectexplorer/gcctoolchain.cpp" line="+367"/>
+        <location line="+925"/>
+        <source>GCC</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <location filename="../../../src/plugins/projectexplorer/gcctoolchain.cpp" line="-917"/>
+        <location line="+922"/>
+        <location filename="../../../src/plugins/projectexplorer/msvctoolchain.cpp" line="+1713"/>
+        <source>Clang</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <location filename="../../../src/plugins/projectexplorer/gcctoolchain.cpp" line="-926"/>
+        <location line="+936"/>
+        <source>ICC</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <location filename="../../../src/plugins/projectexplorer/msvctoolchain.cpp" line="-868"/>
+        <location line="+992"/>
+        <source>MSVC</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message numerus="yes">
+        <location line="+44"/>
+        <source>%n entries</source>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+        </translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Empty</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+60"/>
+        <source>MACRO[=VALUE]</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Each line defines a macro. Format is MACRO[=VALUE].</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Each line adds a global header lookup path.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Comma-separated list of flags that turn on C++11 support.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Comma-separated list of mkspecs.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <location filename="../../../src/plugins/projectexplorer/gcctoolchain.cpp" line="+420"/>
+        <location filename="../../../src/plugins/projectexplorer/msvctoolchain.cpp" line="-323"/>
+        <location line="+7"/>
+        <source>&amp;Compiler path:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>&amp;Make path:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <location filename="../../../src/plugins/projectexplorer/gcctoolchain.cpp" line="+7"/>
+        <location filename="../../../src/plugins/projectexplorer/msvctoolchain.cpp" line="-188"/>
+        <source>&amp;ABI:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>&amp;Predefined macros:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>&amp;Header paths:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>C++11 &amp;flags:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>&amp;Qt mkspecs:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>&amp;Error parser:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/dependenciespanel.cpp" line="+83"/>
+        <source>&lt;No other projects in this session&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+30"/>
+        <source>Unable to Add Dependency</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>This would create a circular dependency.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+133"/>
+        <source>Synchronize configuration</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Synchronize active kit, build, and deploy configuration between projects.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+19"/>
+        <source>Dependencies</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/deployconfiguration.cpp" line="+33"/>
+        <source>Deploy locally</source>
+        <extracomment>Default DeployConfiguration display name</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/deploymentdataview.cpp" line="-11"/>
+        <source>Source File Path</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Target Directory</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+20"/>
+        <source>Files to deploy:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Override deployment data from build system</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/desktoprunconfiguration.cpp" line="+101"/>
+        <source>Qt Run Configuration</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/devicesupport/desktopdevice.cpp" line="+45"/>
+        <source>Local PC</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <location filename="../../../src/plugins/projectexplorer/devicesupport/desktopdevicefactory.cpp" line="+25"/>
+        <location filename="../../../src/plugins/projectexplorer/kitmanager.cpp" line="+410"/>
+        <source>Desktop</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/devicesupport/desktopprocesssignaloperation.cpp" line="+69"/>
+        <source>Cannot kill process with pid %1: %2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>Cannot interrupt process with pid %1: %2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+15"/>
+        <source>Cannot open process.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <location line="+97"/>
+        <source>Invalid process id.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-46"/>
+        <source>Cannot open process: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>DebugBreakProcess failed:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>%1 does not exist. If you built %2 yourself, check out https://code.qt.io/cgit/qt-creator/binary-artifacts.git/.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>Cannot start %1. Check src\tools\win64interrupt\win64interrupt.c for more information.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>could not break the process.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/devicesupport/devicecheckbuildstep.cpp" line="+38"/>
+        <location line="+9"/>
+        <location line="+6"/>
+        <source>No device configured.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-11"/>
+        <source>Set Up Device</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>There is no device set up for this kit. Do you want to add a device?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+32"/>
+        <source>Check for a configured device</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/devicesupport/devicefactoryselectiondialog.cpp" line="+25"/>
+        <source>Start Wizard</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Available device types:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/devicesupport/devicemanager.cpp" line="+415"/>
+        <source>No device for path &quot;%1&quot;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <location line="+14"/>
+        <source>No device found for path &quot;%1&quot;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-9"/>
+        <source>No file access for device &quot;%1&quot;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/devicesupport/devicemanagermodel.cpp" line="+154"/>
+        <source>%1 (default for %2)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/devicesupport/deviceprocessesdialog.cpp" line="+103"/>
+        <source>Kit:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>List of Processes</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Filter</source>
+        <translation type="unfinished">Filter</translation>
+    </message>
+    <message>
+        <location line="+22"/>
+        <source>&amp;Update List</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>&amp;Kill Process</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>&amp;Filter:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+64"/>
+        <source>Remote Error</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/devicesupport/devicesettingspage.cpp" line="-253"/>
+        <source>&amp;Device:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>Type Specific</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>&amp;Remove</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Set As Default</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>&amp;Add...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>&amp;Start Wizard to Add Device...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+12"/>
+        <source>Add %1</source>
+        <extracomment>Add &lt;Device Type Name&gt;</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+34"/>
+        <source>&amp;Name:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Auto-detected:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Current state:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+87"/>
+        <source>Yes (id is &quot;%1&quot;)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>No</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+107"/>
+        <source>Show Running Processes...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+55"/>
+        <location line="+2"/>
+        <source>Devices</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/devicesupport/devicetestdialog.cpp" line="+87"/>
+        <source>Close</source>
+        <translation type="unfinished">Zapri</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Device test finished successfully.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Device test failed.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/devicesupport/deviceusedportsgatherer.cpp" line="+81"/>
+        <source>Remote error output was: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message numerus="yes">
+        <location line="+41"/>
+        <source>Found %n free ports.</source>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+        </translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>Checking available ports...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/devicesupport/filetransfer.cpp" line="+70"/>
+        <source>No device set for test transfer.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>No files to transfer.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+27"/>
+        <source>Missing transfer implementation.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+83"/>
+        <source>sftp</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>rsync</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>generic file copy</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/devicesupport/idevice.cpp" line="-429"/>
+        <source>The device name cannot be empty.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>A device with this name already exists.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+56"/>
+        <source>Opening a terminal is not supported.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+121"/>
+        <location filename="../../../src/plugins/projectexplorer/kitaspects.cpp" line="+519"/>
+        <source>Device</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+245"/>
+        <source>Ready to use</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Connected</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Disconnected</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Unknown</source>
+        <translation type="unfinished">Neznano</translation>
+    </message>
+    <message>
+        <location line="+113"/>
+        <source>localSource() not implemented for this device type.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+30"/>
+        <source>No device for given path: &quot;%1&quot;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Device for path &quot;%1&quot; does not support killing processes.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/devicesupport/processlist.cpp" line="+68"/>
+        <source>Process ID</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Command Line</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>Fetching process list. This might take a while.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/devicesupport/sshsettingspage.cpp" line="+61"/>
+        <location line="+2"/>
+        <source>SSH</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+14"/>
+        <source>Enable connection sharing:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Connection sharing timeout:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Path to ssh executable:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Path to sftp executable:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Path to ssh-askpass executable:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Path to ssh-keygen executable:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+31"/>
+        <source> minutes</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/editorconfiguration.cpp" line="+78"/>
+        <source>Project %1</source>
+        <comment>Settings, %1 is a language (C++ or QML)</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Project</source>
+        <comment>Settings</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/editorsettingspropertiespage.cpp" line="+56"/>
+        <source>Restore Global</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Display Settings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Display right &amp;margin at column:</source>
+        <translation type="unfinished">Prikaži desni &amp;rob pri stolpcu:</translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>Use context-specific margin</source>
+        <translation type="unfinished">Uporabite rob, specifičen za kontekst</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>If available, use a different margin. For example, the ColumnLimit from the ClangFormat plugin.</source>
+        <translation type="unfinished">Če je na voljo, uporabite drug rob. Na primer ColumnLimit iz vtičnika ClangFormat.</translation>
+    </message>
+    <message>
+        <location line="+98"/>
+        <source>Editor</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/environmentaspect.cpp" line="-96"/>
+        <location filename="../../../src/plugins/projectexplorer/kitaspects.cpp" line="+496"/>
+        <location line="+49"/>
+        <location filename="../../../src/plugins/projectexplorer/projectexplorer.cpp" line="-2914"/>
+        <source>Environment</source>
+        <translation type="unfinished">Okolje</translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/environmentaspectwidget.cpp" line="+43"/>
+        <source>Base environment for this run configuration:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+29"/>
+        <source>Show in Application Output when running</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/environmentwidget.cpp" line="+2"/>
+        <source>Edit...</source>
+        <translation type="unfinished">Urejanje …</translation>
+    </message>
+    <message>
+        <location line="+22"/>
+        <location line="+412"/>
+        <source>Choose Directory</source>
+        <translation type="unfinished">Izberite mapo</translation>
+    </message>
+    <message>
+        <location line="-278"/>
+        <source>Ed&amp;it</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>&amp;Add</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>&amp;Reset</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>&amp;Unset</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+14"/>
+        <source>Append Path...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Prepend Path...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Open &amp;Terminal</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Open a terminal with this environment set up.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+123"/>
+        <source>Unset &lt;a href=&quot;%1&quot;&gt;&lt;b&gt;%1&lt;/b&gt;&lt;/a&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Set &lt;a href=&quot;%1&quot;&gt;&lt;b&gt;%1&lt;/b&gt;&lt;/a&gt; to &lt;b&gt;%2&lt;/b&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Append &lt;b&gt;%2&lt;/b&gt; to &lt;a href=&quot;%1&quot;&gt;&lt;b&gt;%1&lt;/b&gt;&lt;/a&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Prepend &lt;b&gt;%2&lt;/b&gt; to &lt;a href=&quot;%1&quot;&gt;&lt;b&gt;%1&lt;/b&gt;&lt;/a&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Set &lt;a href=&quot;%1&quot;&gt;&lt;b&gt;%1&lt;/b&gt;&lt;/a&gt; to &lt;b&gt;%2&lt;/b&gt; [disabled]</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>Use &lt;b&gt;%1&lt;/b&gt;</source>
+        <extracomment>%1 is &quot;System Environment&quot; or some such.</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>&lt;b&gt;No environment changes&lt;/b&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Use &lt;b&gt;%1&lt;/b&gt; and</source>
+        <extracomment>Yup, word puzzle. The Set/Unset phrases above are appended to this. %1 is &quot;System Environment&quot; or some such.</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/filesinallprojectsfind.cpp" line="+28"/>
+        <source>Files in All Project Directories</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+38"/>
+        <source>Files in All Project Directories:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/filterkitaspectsdialog.cpp" line="+83"/>
+        <source>Setting</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Visible</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/gcctoolchain.cpp" line="-1361"/>
+        <location line="+929"/>
+        <source>MinGW</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-877"/>
+        <source>%1 (%2, %3 %4 at %5)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1259"/>
+        <source>Override for code model</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Enable in the rare case that the code model
+fails because Clang does not understand the target architecture.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+45"/>
+        <source>Platform codegen flags:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Platform linker flags:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Target triple:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+27"/>
+        <source>Parent toolchain:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/importwidget.cpp" line="+28"/>
+        <source>Import Build From...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+12"/>
+        <source>Import</source>
+        <translation type="unfinished">Uvozi</translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/jsonwizard/jsonfieldpage.cpp" line="+107"/>
+        <source>Line Edit Validator Expander</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>The text edit input to fix up.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+61"/>
+        <source>Field is not an object.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Field has no name.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Field &quot;%1&quot; has no type.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Field &quot;%1&quot; has unsupported type &quot;%2&quot;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+18"/>
+        <source>When parsing Field &quot;%1&quot;: %2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+208"/>
+        <source>Label (&quot;%1&quot;) data is not an object.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Label (&quot;%1&quot;) has no trText.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+28"/>
+        <source>Spacer (&quot;%1&quot;) data is not an object.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Spacer (&quot;%1&quot;) property &quot;factor&quot; is no integer value.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+35"/>
+        <source>LineEdit (&quot;%1&quot;) data is not an object.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>LineEdit (&quot;%1&quot;) has an invalid regular expression &quot;%2&quot; in &quot;validator&quot;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+15"/>
+        <source>LineEdit (&quot;%1&quot;) has an invalid value &quot;%2&quot; in &quot;completion&quot;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+166"/>
+        <source>TextEdit (&quot;%1&quot;) data is not an object.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+83"/>
+        <source>PathChooser data is not an object.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+26"/>
+        <source>kind &quot;%1&quot; is not one of the supported &quot;existingDirectory&quot;, &quot;directory&quot;, &quot;file&quot;, &quot;saveFile&quot;, &quot;existingCommand&quot;, &quot;command&quot;, &quot;any&quot;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+80"/>
+        <source>CheckBox (&quot;%1&quot;) data is not an object.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>CheckBox (&quot;%1&quot;) values for checked and unchecked state are identical.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+80"/>
+        <source>No JSON lists allowed inside List items.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>No &quot;key&quot; found in List items.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+25"/>
+        <source>%1 (&quot;%2&quot;) data is not an object.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>%1 (&quot;%2&quot;) &quot;index&quot; is not an integer value.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>%1 (&quot;%2&quot;) &quot;disabledIndex&quot; is not an integer value.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>%1 (&quot;%2&quot;) &quot;items&quot; missing.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>%1 (&quot;%2&quot;) &quot;items&quot; is not a JSON list.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/jsonwizard/jsonkitspage.cpp" line="+46"/>
+        <source>At least one required feature is not present.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Platform is not supported.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>At least one preferred feature is not present.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+78"/>
+        <source>Feature list is set and not of type list.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>No &quot;%1&quot; key found in feature list object.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Feature list element is not a string or object.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/jsonwizard/jsonsummarypage.cpp" line="+161"/>
+        <source>Failed to Commit to Version Control</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Error message from Version Control System: &quot;%1&quot;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <location line="+12"/>
+        <source>Failed to Add to Project</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-11"/>
+        <location filename="../../../src/plugins/projectexplorer/projectfilewizardextension.cpp" line="+192"/>
+        <source>Failed to add subproject &quot;%1&quot;
+to project &quot;%2&quot;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+12"/>
+        <location filename="../../../src/plugins/projectexplorer/projectfilewizardextension.cpp" line="+8"/>
+        <source>Failed to add one or more files to project
+&quot;%1&quot; (%2).</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/jsonwizard/jsonwizard.cpp" line="+76"/>
+        <source>Project File</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+12"/>
+        <location filename="../../../src/plugins/projectexplorer/projectexplorer.cpp" line="+3118"/>
+        <source>Choose Project File</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+15"/>
+        <source>The project contains more than one project file. Select the one you would like to use.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+33"/>
+        <source>Check whether a variable exists.&lt;br&gt;Returns &quot;true&quot; if it does and an empty string if not.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+39"/>
+        <source>Could not determine target path. &quot;TargetPath&quot; was not set on any page.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+17"/>
+        <source>File Generation Failed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>The wizard failed to generate files.&lt;br&gt;The error message was: &quot;%1&quot;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+63"/>
+        <source>No &apos;key&apos; in options object.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+88"/>
+        <source>Failed to Overwrite Files</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Failed to Format Files</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+15"/>
+        <source>Failed to Write Files</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Failed to Post-Process Files</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Failed to Polish Files</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Failed to Open Files</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+58"/>
+        <source>&quot;%1&quot; does not exist in the file system.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Failed to open &quot;%1&quot; as a project.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+12"/>
+        <location line="+46"/>
+        <source>Failed to open an editor for &quot;%1&quot;.</source>
+        <translation type="unfinished">Urejevalnika za »%1« ni bilo mogoče odpreti.</translation>
+    </message>
+    <message>
+        <location line="-27"/>
+        <source>No file to open found in &quot;%1&quot;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Failed to open project.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Failed to open project in &quot;%1&quot;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <location line="+23"/>
+        <source>Cannot Open Project</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/jsonwizard/jsonwizardfactory.cpp" line="+151"/>
+        <source>Generator is not a object.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Generator has no typeId set.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>TypeId &quot;%1&quot; of generator is unknown. Supported typeIds are: &quot;%2&quot;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+56"/>
+        <location line="+241"/>
+        <source>Path &quot;%1&quot; does not exist when checking JSON wizard search paths.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-228"/>
+        <source>Checking &quot;%1&quot; for %2.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+24"/>
+        <location line="+233"/>
+        <source>* Failed to parse &quot;%1&quot;:%2:%3: %4</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-223"/>
+        <source>* Did not find a JSON object in &quot;%1&quot;.
+</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <location line="+234"/>
+        <source>* Configuration found and parsed.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-224"/>
+        <source>JsonWizard: &quot;%1&quot; not found.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+96"/>
+        <source>Page is not an object.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+12"/>
+        <source>Page has no typeId set.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>TypeId &quot;%1&quot; of page is unknown. Supported typeIds are: &quot;%2&quot;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>Page with typeId &quot;%1&quot; has invalid &quot;index&quot;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+89"/>
+        <source>* Did not find a JSON object in &quot;%1&quot;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+12"/>
+        <source>* Version %1 not supported.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>* Failed to create: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+227"/>
+        <source>key not found.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Expected an object or a list.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+29"/>
+        <source>The platform selected for the wizard.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>The features available to this wizard.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>The plugins loaded.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+32"/>
+        <source>&quot;kind&quot; value &quot;%1&quot; is not &quot;class&quot; (deprecated), &quot;file&quot; or &quot;project&quot;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>&quot;kind&quot; is &quot;file&quot; or &quot;class&quot; (deprecated) and &quot;%1&quot; is also set.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>No id set.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>No category is set.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Icon file &quot;%1&quot; not found.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+20"/>
+        <source>Image file &quot;%1&quot; not found.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>No displayName set.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>No displayCategory set.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>No description set.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>When parsing &quot;generators&quot;: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+15"/>
+        <source>When parsing &quot;pages&quot;: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/jsonwizard/jsonwizardfilegenerator.cpp" line="+83"/>
+        <source>Files data list entry is not an object.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+21"/>
+        <source>Source and target are both empty.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+57"/>
+        <source>When processing &quot;%1&quot;:&lt;br&gt;%2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/jsonwizard/jsonwizardgeneratorfactory.cpp" line="+164"/>
+        <source>%1 [folder]</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>%1 [symbolic link]</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>%1 [read only]</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>The directory %1 contains files which cannot be overwritten:
+%2.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/jsonwizard/jsonwizardpagefactory_p.cpp" line="+72"/>
+        <source>When parsing fields of page &quot;%1&quot;: %2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+46"/>
+        <source>&quot;data&quot; for a &quot;File&quot; page needs to be unset or an empty object.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+48"/>
+        <source>Error parsing &quot;%1&quot; in &quot;Kits&quot; page: %2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+12"/>
+        <source>&quot;data&quot; must be a JSON object for &quot;Kits&quot; pages.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>&quot;Kits&quot; page requires a &quot;%1&quot; set.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+62"/>
+        <source>&quot;data&quot; must be empty or a JSON object for &quot;Project&quot; pages.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Invalid regular expression &quot;%1&quot; in &quot;%2&quot;. %3</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+46"/>
+        <source>&quot;data&quot; for a &quot;Summary&quot; page can be unset or needs to be an object.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/jsonwizard/jsonwizardscannergenerator.cpp" line="+50"/>
+        <source>Key is not an object.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>Pattern &quot;%1&quot; is no valid regular expression.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+23"/>
+        <source>ScannerGenerator: Binary pattern &quot;%1&quot; not valid.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/kit.cpp" line="+65"/>
+        <location line="+688"/>
+        <source>Unnamed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-686"/>
+        <location filename="../../../src/plugins/projectexplorer/miniprojecttargetselector.cpp" line="+0"/>
+        <source>Kit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Kit ID</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Kit filesystem-friendly name</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>The name of the kit.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>The name of the kit in a filesystem-friendly version.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>The ID of the kit.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+669"/>
+        <location filename="../../../src/plugins/projectexplorer/toolchainoptionspage.cpp" line="+319"/>
+        <source>Clone of %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/kitaspects.cpp" line="-1479"/>
+        <source>Sysroot</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>The root directory of the system image to use.&lt;br&gt;Leave empty when building for the desktop.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+17"/>
+        <source>Sys Root &quot;%1&quot; does not exist in the file system.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Sys Root &quot;%1&quot; is not a directory.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Sys Root &quot;%1&quot; is empty.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+14"/>
+        <location line="+7"/>
+        <source>Sys Root</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+112"/>
+        <source>&lt;No compiler&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+94"/>
+        <location line="+133"/>
+        <location line="+15"/>
+        <source>Compiler</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-147"/>
+        <source>The compiler to use for building.&lt;br&gt;Make sure the compiler will produce binaries compatible with the target device, Qt version and other libraries used.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+45"/>
+        <source>Compilers produce code for different ABIs: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+108"/>
+        <source>Path to the compiler executable</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Compiler for different languages</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Compiler executable for different languages</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+172"/>
+        <source>No compiler set in kit.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+100"/>
+        <source>Run device type</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>The type of device to run applications on.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+27"/>
+        <location filename="../../../src/plugins/projectexplorer/projectwindow.cpp" line="+235"/>
+        <source>Unknown device type</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Device type</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+140"/>
+        <source>Run device</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>The device to run the applications on.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+26"/>
+        <source>No device set.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Device is incompatible with this kit.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+43"/>
+        <location line="+258"/>
+        <location filename="../../../src/plugins/projectexplorer/miniprojecttargetselector.cpp" line="+779"/>
+        <source>Unconfigured</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-252"/>
+        <source>Host address</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>SSH port</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>User name</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Private key file</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Device name</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Device root directory</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+186"/>
+        <location line="+46"/>
+        <source>Build device</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-45"/>
+        <source>The device used to build applications on.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+25"/>
+        <source>No build device set.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+26"/>
+        <source>Build host address</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Build SSH port</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Build user name</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Build private key file</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Build device name</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Build device root directory</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+110"/>
+        <location filename="../../../src/plugins/projectexplorer/projectexplorersettings.cpp" line="+34"/>
+        <source>Change...</source>
+        <translation type="unfinished">Spremeni ...</translation>
+    </message>
+    <message>
+        <location line="+19"/>
+        <location filename="../../../src/plugins/projectexplorer/projectexplorersettings.cpp" line="+153"/>
+        <source>No changes to apply.</source>
+        <translation type="unfinished">Ni sprememb za uporabo.</translation>
+    </message>
+    <message>
+        <location line="+39"/>
+        <source>Force UTF-8 MSVC compiler output</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Either switches MSVC to English or keeps the language and just forces UTF-8 output (may vary depending on the used MSVC compiler).</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+42"/>
+        <source>Additional build environment settings when using this kit.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>The environment setting value is invalid.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/kitchooser.cpp" line="+93"/>
+        <source>Kit of Active Project: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/kitmanager.cpp" line="-52"/>
+        <source>Desktop (%1)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+131"/>
+        <source>Loading Kits</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+289"/>
+        <source>Mark as Mutable</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+56"/>
+        <location filename="../../../src/plugins/projectexplorer/projectwelcomepage.cpp" line="+303"/>
+        <source>Manage...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/kitmanagerconfigwidget.cpp" line="+50"/>
+        <location filename="../../../src/plugins/projectexplorer/toolchainconfigwidget.cpp" line="+47"/>
+        <source>Name:</source>
+        <translation type="unfinished">Ime:</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Kit name and icon.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The name of the kit suitable for generating directory names. This value is used for the variable &lt;i&gt;%1&lt;/i&gt;, which for example determines the name of the shadow build directory.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>File system name:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+14"/>
+        <source>Kit icon.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Select Icon...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Reset to Device Default Icon</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+118"/>
+        <source>Display name is not unique.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+60"/>
+        <source>Default for %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>Select Icon</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Images (*.png *.xpm *.jpg)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/kitoptionspage.cpp" line="-427"/>
+        <source>%1 (default)</source>
+        <extracomment>Mark up a kit as the default one.</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+428"/>
+        <source>Make Default</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Settings Filter...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Choose which settings to display for this kit.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Default Settings Filter...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Choose which kit settings to display by default.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/makestep.cpp" line="+57"/>
+        <source>Make arguments:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Parallel jobs:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Override MAKEFLAGS</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Disable in subdirectories:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Runs this step only for a top-level build.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Targets:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Make:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Override %1:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+46"/>
+        <source>Make</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+35"/>
+        <source>Make command missing. Specify Make command in step configuration.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+163"/>
+        <source>&lt;b&gt;Make:&lt;/b&gt; %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>&lt;b&gt;Make:&lt;/b&gt; No build configuration.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>&lt;b&gt;Make:&lt;/b&gt; %1 not found in the environment.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+20"/>
+        <source>Overriding &lt;code&gt;MAKEFLAGS&lt;/code&gt; environment variable.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>&lt;code&gt;MAKEFLAGS&lt;/code&gt; specifies a conflicting job count.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>No conflict with &lt;code&gt;MAKEFLAGS&lt;/code&gt; environment variable.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/miniprojecttargetselector.cpp" line="-1348"/>
+        <location filename="../../../src/plugins/projectexplorer/projectexplorer.cpp" line="-2084"/>
+        <source>Run Without Deployment</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+563"/>
+        <location filename="../../../src/plugins/projectexplorer/project.cpp" line="+215"/>
+        <source>Project</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <location filename="../../../src/plugins/projectexplorer/projectexplorer.cpp" line="-396"/>
+        <location line="+383"/>
+        <location line="+74"/>
+        <location filename="../../../src/plugins/projectexplorer/runsettingspropertiespage.cpp" line="+13"/>
+        <location filename="../../../src/plugins/projectexplorer/targetsettingspanel.cpp" line="+130"/>
+        <source>Run</source>
+        <translation type="unfinished">Zaženi</translation>
+    </message>
+    <message>
+        <location line="+783"/>
+        <source>&lt;b&gt;Project:&lt;/b&gt; %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>&lt;b&gt;Path:&lt;/b&gt; %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>&lt;b&gt;Kit:&lt;/b&gt; %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>&lt;b&gt;Build:&lt;/b&gt; %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>&lt;b&gt;Deploy:&lt;/b&gt; %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>&lt;b&gt;Run:&lt;/b&gt; %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>%1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+12"/>
+        <source>Project: &lt;b&gt;%1&lt;/b&gt;&lt;br/&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Kit: &lt;b&gt;%1&lt;/b&gt;&lt;br/&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Build: &lt;b&gt;%1&lt;/b&gt;&lt;br/&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Deploy: &lt;b&gt;%1&lt;/b&gt;&lt;br/&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Run: &lt;b&gt;%1&lt;/b&gt;&lt;br/&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>&lt;style type=text/css&gt;a:link {color: rgb(128, 128, 255);}&lt;/style&gt;The project &lt;b&gt;%1&lt;/b&gt; is not yet configured&lt;br/&gt;&lt;br/&gt;You can configure it in the &lt;a href=&quot;projectmode&quot;&gt;Projects mode&lt;/a&gt;&lt;br/&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/msvctoolchain.cpp" line="-555"/>
+        <source>Falling back to use the cached environment for &quot;%1&quot; after:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+483"/>
+        <location line="+71"/>
+        <location line="+177"/>
+        <source>Initialization:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-197"/>
+        <location line="+170"/>
+        <source>&lt;empty&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-154"/>
+        <source>Additional arguments for the vcvarsall.bat call</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+796"/>
+        <source>Failed to retrieve MSVC Environment from &quot;%1&quot;:
+%2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+83"/>
+        <source>clang-cl</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/osparser.cpp" line="+25"/>
+        <source>The process cannot access the file because it is being used by another process.
+Please close all running instances of your application before starting a build.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/parseissuesdialog.cpp" line="+44"/>
+        <source>Parse Build Output</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Output went to stderr</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Clear existing tasks</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Load from File...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Choose File</source>
+        <translation type="unfinished">Izberite datoteko</translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Could Not Open File</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Could not open file: &quot;%1&quot;: %2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+23"/>
+        <source>Build Output</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+14"/>
+        <source>Parsing Options</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Use parsers from kit:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+18"/>
+        <source>Cannot Parse</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Cannot parse: The chosen kit does not provide an output parser.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/processstep.cpp" line="+31"/>
+        <source>Command:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <location filename="../../../src/plugins/projectexplorer/workspaceproject.cpp" line="+190"/>
+        <source>Arguments:</source>
+        <translation type="unfinished">Argumenti:</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <location filename="../../../src/plugins/projectexplorer/runconfigurationaspects.cpp" line="-594"/>
+        <location filename="../../../src/plugins/projectexplorer/workspaceproject.cpp" line="+5"/>
+        <source>Working directory:</source>
+        <translation type="unfinished">Delovna mapa:</translation>
+    </message>
+    <message>
+        <location line="+17"/>
+        <location line="+25"/>
+        <source>Custom Process Step</source>
+        <extracomment>Default ProcessStep display name</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/project.cpp" line="+1"/>
+        <source>Project Name</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+282"/>
+        <location filename="../../../src/plugins/projectexplorer/targetsetuppage.cpp" line="-194"/>
+        <source>Kit is not valid.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+81"/>
+        <source>Incompatible Kit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Kit %1 is incompatible with kit %2.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Build configurations:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Deploy configurations:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Run configurations:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Partially Incompatible Kit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Some configurations could not be copied.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+105"/>
+        <source>Could not load kits in a reasonable amount of time.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+88"/>
+        <source>Select the Root Directory</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+92"/>
+        <source>Project &quot;%1&quot; was configured for kit &quot;%2&quot; with id %3, which does not exist anymore. You can create a new kit or copy the steps of the vanished kit to another kit in %4 mode.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <location filename="../../../src/plugins/projectexplorer/projectexplorer.cpp" line="-1131"/>
+        <location filename="../../../src/plugins/projectexplorer/projecttreewidget.cpp" line="+622"/>
+        <location filename="../../../src/plugins/projectexplorer/projectwelcomepage.cpp" line="+26"/>
+        <location filename="../../../src/plugins/projectexplorer/projectwelcomepage.h" line="+47"/>
+        <location filename="../../../src/plugins/projectexplorer/projectwindow.cpp" line="+450"/>
+        <source>Projects</source>
+        <translation type="unfinished">Projekti</translation>
+    </message>
+    <message>
+        <location line="+265"/>
+        <source>Could not find any qml_*.qm file at &quot;%1&quot;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+87"/>
+        <source>%1: Name.</source>
+        <extracomment>%1 is something like &quot;Active project&quot;</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>%1: Full path to main file.</source>
+        <extracomment>%1 is something like &quot;Active project&quot;</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>%1: Full path to Project Directory.</source>
+        <extracomment>%1 is something like &quot;Active project&quot;</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>%1: The name of the active kit.</source>
+        <extracomment>%1 is something like &quot;Active project&quot;</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>%1: Name of the active build configuration.</source>
+        <extracomment>%1 is something like &quot;Active project&quot;</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>%1: Type of the active build configuration.</source>
+        <extracomment>%1 is something like &quot;Active project&quot;</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>%1: Full build path of active build configuration.</source>
+        <extracomment>%1 is something like &quot;Active project&quot;</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>%1: Variables in the active build environment.</source>
+        <extracomment>%1 is something like &quot;Active project&quot;</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>%1: Name of the active run configuration.</source>
+        <extracomment>%1 is something like &quot;Active project&quot;</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>%1: Executable of the active run configuration.</source>
+        <extracomment>%1 is something like &quot;Active project&quot;</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>%1: Variables in the environment of the active run configuration.</source>
+        <extracomment>%1 is something like &quot;Active project&quot;</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+12"/>
+        <source>%1: Working directory of the active run configuration.</source>
+        <extracomment>%1 is something like &quot;Active project&quot;</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/projectcommentssettings.cpp" line="+137"/>
+        <source>Documentation Comments</source>
+        <translation type="unfinished">Komentarji na dokumentacijo</translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/projectconfigurationmodel.cpp" line="+101"/>
+        <source>unavailable</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/projectexplorer.cpp" line="+12"/>
+        <source>Project Environment</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+81"/>
+        <source>Deploy Configuration</source>
+        <extracomment>Display name of the default deploy configuration</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+400"/>
+        <source>C++</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+100"/>
+        <location line="+5"/>
+        <source>Open...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>&amp;Build</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>&amp;Debug</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>&amp;Start Debugging</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+82"/>
+        <source>Open With</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+38"/>
+        <source>New Project...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Load Project...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Open Workspace...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>Open File</source>
+        <translation type="unfinished">Odpri datoteko</translation>
+    </message>
+    <message>
+        <location line="+49"/>
+        <source>Run Environment</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+17"/>
+        <source>Recent P&amp;rojects</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+12"/>
+        <location line="+347"/>
+        <source>Close Project</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-347"/>
+        <source>Close Pro&amp;ject &quot;%1&quot;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Close All Files in Project</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <location line="+328"/>
+        <source>Close All Files in Project &quot;%1&quot;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-316"/>
+        <source>Close Pro&amp;ject</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Close All Projects and Editors</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Build All Projects</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Build All Projects for All Configurations</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>Deploy All Projects</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <location line="+9"/>
+        <location line="+102"/>
+        <location line="+8"/>
+        <location line="+65"/>
+        <source>Rebuild</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-182"/>
+        <source>Rebuild All Projects</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Rebuild All Projects for All Configurations</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Clean All Projects</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Clean All Projects for All Configurations</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>Build Project</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Build Project &quot;%1&quot;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+12"/>
+        <source>Build Project for All Configurations</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Build Project &quot;%1&quot; for All Configurations</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+20"/>
+        <source>Build for &amp;Run Configuration</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Build for &amp;Run Configuration &quot;%1&quot;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>Run Generator</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+19"/>
+        <source>Deploy Project</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>Rebuild Project</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Rebuild Project for All Configurations</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Clean Project</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>Clean Project for All Configurations</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>Cancel Build</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+32"/>
+        <location line="+30"/>
+        <source>Build Without Dependencies</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-18"/>
+        <location line="+22"/>
+        <source>Rebuild Without Dependencies</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-10"/>
+        <location line="+18"/>
+        <source>Clean Without Dependencies</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-4"/>
+        <source>Deploy Without Dependencies</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+18"/>
+        <source>Add New...</source>
+        <translation type="unfinished">Dodaj novo …</translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>Add Existing Files...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>Add Existing Projects...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Add Existing Directory...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>New Subproject...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Close All Files</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <location line="+1621"/>
+        <source>Close Project &quot;%1&quot;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-1614"/>
+        <source>Close Other Projects</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Close All Projects Except &quot;%1&quot;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>Properties...</source>
+        <translation type="unfinished">Lastnosti...</translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Remove...</source>
+        <translation type="unfinished">Odstrani...</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Duplicate File...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Remove Project...</source>
+        <extracomment>Remove project from parent profile (Project explorer view); will not physically delete any files.</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Delete File...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+24"/>
+        <source>Set as Active Project</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Set &quot;%1&quot; as Active Project</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>Expand</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Collapse All</source>
+        <translation type="unfinished">Skrči vse</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Expand All</source>
+        <translation type="unfinished">Razširi vse</translation>
+    </message>
+    <message>
+        <location line="+24"/>
+        <source>Open Build and Run Kit Selector...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Quick Switch Kit Selector</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+228"/>
+        <source>Current Build Environment</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Current Run Environment</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+17"/>
+        <source>Active build environment of the active project.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Active run environment of the active project.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+31"/>
+        <source>Load Project</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+26"/>
+        <source>Open Workspace</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+43"/>
+        <source>Cancel Build &amp;&amp; Unload</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Do Not Unload</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Unload Project %1?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>The project %1 is currently being built.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Do you want to cancel the build process and unload the project anyway?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+62"/>
+        <source>Sanitizer</source>
+        <comment>Category for sanitizer issues listed under &apos;Issues&apos;</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Memory handling issues that the address sanitizer found.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>My Tasks</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Issues from a task list file (.tasks).</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+23"/>
+        <source>Parse Build Output...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+65"/>
+        <source>New Project</source>
+        <comment>Title of dialog</comment>
+        <translation type="unfinished">Nov projekt</translation>
+    </message>
+    <message>
+        <location line="+130"/>
+        <source>Failed to Open Project</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>&lt;h3&gt;Project already open&lt;/h3&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+48"/>
+        <source>Failed opening project &quot;%1&quot;: No plugin can open project type &quot;%2&quot;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+195"/>
+        <source>Ignore All Errors?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Found some build errors in current task.
+Do you want to ignore them?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Run Configuration Removed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>The configuration that was supposed to run is no longer available.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+159"/>
+        <source>Always save files before build</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+23"/>
+        <source>Open Project in &quot;%1&quot;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Open Project &quot;%1&quot;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+19"/>
+        <source>The file &quot;%1&quot; was renamed to &quot;%2&quot;, but the following projects could not be automatically changed: %3</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <location line="+20"/>
+        <location line="+1109"/>
+        <location line="+26"/>
+        <source>Project Editing Failed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-1139"/>
+        <source>The following projects failed to automatically remove the file: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+62"/>
+        <source>Building &quot;%1&quot; is disabled: %2&lt;br&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+15"/>
+        <location line="+22"/>
+        <source>No project loaded.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-19"/>
+        <source>Currently building the active project.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>The project %1 is not configured.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <location line="+19"/>
+        <source>Project has no build settings.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-3"/>
+        <source>A build is in progress.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>Cancel Build &amp;&amp; Close</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Do Not Close</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Close %1?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>A project is currently being built.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Do you want to cancel the build process and close %1 anyway?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+164"/>
+        <source>No active project.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>The project &quot;%1&quot; is not configured.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>The project &quot;%1&quot; has no active kit.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>The kit &quot;%1&quot; for the project &quot;%2&quot; has no active run configuration.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>A build is still in progress.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Cannot run &quot;%1&quot;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>A run action is already scheduled for the active project.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+305"/>
+        <source>%1 in %2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+31"/>
+        <source>New File</source>
+        <comment>Title of dialog</comment>
+        <translation type="unfinished">Nova datoteka</translation>
+    </message>
+    <message>
+        <location line="+29"/>
+        <source>New Subproject</source>
+        <comment>Title of dialog</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+41"/>
+        <source>The following subprojects could not be added to project &quot;%1&quot;:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Adding Subproject Failed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+15"/>
+        <source>Add Existing Files</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+33"/>
+        <source>Could not add following files to project %1:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Adding Files to Project Failed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+87"/>
+        <location line="+40"/>
+        <source>Failed opening terminal.
+%1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+34"/>
+        <source>Remove More Files?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Remove these files as well?
+    %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>Removing File Failed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>File &quot;%1&quot; was not removed, because the project has changed in the meantime.
+Please try again.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+17"/>
+        <source>Could not remove file &quot;%1&quot; from project &quot;%2&quot;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+36"/>
+        <source>_copy</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Choose File Name</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>New file name:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <location line="+10"/>
+        <source>Duplicating File Failed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-9"/>
+        <source>Failed to copy file &quot;%1&quot; to &quot;%2&quot;: %3.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Failed to add new file &quot;%1&quot; to the project.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+17"/>
+        <source>Delete File</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Delete %1 from file system?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+17"/>
+        <source>Deleting File Failed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Could not delete file %1.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+37"/>
+        <source>The project file %1 cannot be automatically changed.
+
+Rename %2 to %3 anyway?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+17"/>
+        <source>The file %1 was renamed to %2, but the project file %3 could not be automatically changed.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+15"/>
+        <source>The file %1 could not be renamed %2.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Cannot Rename File</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+192"/>
+        <source>Locates files from all project directories. Append &quot;+&lt;number&gt;&quot; or &quot;:&lt;number&gt;&quot; to jump to the given line number. Append another &quot;+&lt;number&gt;&quot; or &quot;:&lt;number&gt;&quot; to jump to the column number as well.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+102"/>
+        <source>Run Run Configuration</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Runs a run configuration of the active project.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+14"/>
+        <source>Debug Run Configuration</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Starts debugging a run configuration of the active project.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+17"/>
+        <source>Switched run configuration to
+%1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Switch Run Configuration</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Switches the active run configuration of the active project.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/projectexplorerconstants.cpp" line="+15"/>
+        <source>Auto-detected</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Automatically managed by %1 or the installer.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Manual</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/projectexplorersettings.cpp" line="-222"/>
+        <source>s</source>
+        <extracomment>Suffix for &quot;seconds&quot;</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>The amount of seconds to wait between a &quot;soft kill&quot; and a &quot;hard kill&quot; of a running application.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Current directory</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Directory</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Close source files along with project</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Save all files before build</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Always deploy project before running it</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Add linker library search paths to run environment</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Always ask before stopping applications</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Create suitable run configurations automatically</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Clear issues list on new build</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Abort on error when building all projects</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Start build processes with low priority</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Warn against build directories with spaces or non-ASCII characters</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Some legacy build tools do not deal well with paths that contain &quot;special&quot; characters such as spaces, potentially resulting in spurious build errors.&lt;p&gt;Uncheck this option if you do not work with such tools.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Do Not Build Anything</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Build the Whole Project</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Build Only the Application to Be Run</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>All</source>
+        <translation type="unfinished">Vse</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Same Project</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Same Build Directory</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Same Application</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Enabled</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Disabled</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Deduced from Project</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Use jom instead of nmake</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Show all kits in &quot;Build &amp; Run&quot; in &quot;Projects&quot; mode</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Show also inactive kits in &quot;Build &amp; Run&quot; in &quot;Projects&quot; mode.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Environment changes to apply to run configurations, but not build configurations.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Application environment:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+20"/>
+        <source>Projects Directory</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Closing Projects</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Build and Run</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+14"/>
+        <source>Build before deploying:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Stop applications before building:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Default for &quot;Run in terminal&quot;:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Time to wait before force-stopping applications:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+125"/>
+        <location filename="../../../src/plugins/projectexplorer/projectwindow.cpp" line="-191"/>
+        <source>Build &amp; Run</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/projectfilewizardextension.cpp" line="-30"/>
+        <source>Open project anyway?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Version Control Failure</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/projectimporter.cpp" line="+87"/>
+        <source>No Build Found</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>No build found in %1 matching project %2.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+17"/>
+        <source>Import Warning</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Import Build</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+83"/>
+        <source>%1 - temporary</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+107"/>
+        <source>Imported Kit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/projectmanager.cpp" line="+407"/>
+        <source>Untitled</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+205"/>
+        <source>Failed to restore project files</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Could not restore the following project files:&lt;br&gt;&lt;b&gt;%1&lt;/b&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Keep projects in Session</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Remove projects from Session</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/projectmodels.cpp" line="+215"/>
+        <source>No kits are enabled for this project. Enable kits in the &quot;Projects&quot; mode.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+89"/>
+        <source>Rename More Files?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Would you like to rename these files as well?
+    %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+273"/>
+        <source>Choose Drop Action</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>You just dragged some files from one project node to another.
+What should %1 do now?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Copy Only File References</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Move Only File References</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Copy file references and files</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Move file references and files</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Target directory:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+24"/>
+        <source>Copy File References</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Move File References</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+202"/>
+        <source>Not all operations finished successfully.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>The following files could not be copied or moved:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>The following files could not be removed from the project file:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>The following files could not be added to the project file:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>The following files could not be deleted:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>A version control operation failed for the following files. Please check your repository.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Failure Updating Project</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/projecttree.cpp" line="+201"/>
+        <source>&lt;b&gt;Warning:&lt;/b&gt; This file is generated.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>&lt;b&gt;Warning:&lt;/b&gt; This file is outside the project directory.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/projecttreewidget.cpp" line="-391"/>
+        <source>Simplify Tree</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Hide Generated Files</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Hide Disabled Files</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>Focus Document in Project Tree</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Meta+Shift+L</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Alt+Shift+L</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Hide Empty Directories</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Hide Source and Header Groups</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+26"/>
+        <source>Synchronize with Editor</source>
+        <translation type="unfinished">Uskladi z urejevalnikom</translation>
+    </message>
+    <message>
+        <location line="+140"/>
+        <source>Filter Tree</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+194"/>
+        <source>Meta+X</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Alt+X</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/projectwelcomepage.cpp" line="-612"/>
+        <source>Open Session #%1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Ctrl+Meta+%1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Ctrl+Alt+%1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Open Recent Project #%1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Ctrl+Shift+%1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+50"/>
+        <source>Open %1 &quot;%2&quot;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Open %1 &quot;%2&quot; (%3)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+20"/>
+        <source>session</source>
+        <comment>Appears in &quot;Open session &lt;name&gt;&quot;</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+130"/>
+        <source>%1 (last session)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>%1 (current session)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+70"/>
+        <source>Rename</source>
+        <translation type="unfinished">Preimenuj</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <location filename="../../../src/plugins/projectexplorer/runsettingspropertiespage.cpp" line="+175"/>
+        <source>Delete</source>
+        <translation type="unfinished">Izbriši</translation>
+    </message>
+    <message>
+        <location line="+125"/>
+        <source>project</source>
+        <comment>Appears in &quot;Open project &lt;name&gt;&quot;</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+105"/>
+        <source>Remove Project from Recent Projects</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Clear Recent Project List</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+61"/>
+        <source>Sessions</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/projectwindow.cpp" line="-384"/>
+        <source>Use Regular Expressions</source>
+        <translation type="unfinished">Uporabi regularne izraze</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Case Sensitive</source>
+        <translation type="unfinished">Občutljivo na velikost črk</translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Show Non-matching Lines</source>
+        <translation type="unfinished">Prikaži črte, ki se ne ujemajo</translation>
+    </message>
+    <message>
+        <location line="+118"/>
+        <source>The project was configured for kits that no longer exist. Select one of the following options in the context menu to restore the project&apos;s settings:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Create a new kit with the same name for the same device type, with the original build, deploy, and run steps. Other kit settings are not restored.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Copy the build, deploy, and run steps to another kit.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>%1 (%2)</source>
+        <extracomment>vanished target display role: vanished target name (device type name)</extracomment>
+        <translation type="unfinished">%1 (%2)</translation>
+    </message>
+    <message>
+        <location line="+15"/>
+        <source>Create a New Kit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Copy Steps to Another Kit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+12"/>
+        <source>Remove Vanished Target &quot;%1&quot;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Remove All Vanished Targets</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+49"/>
+        <source>Vanished Targets</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+100"/>
+        <source>Project Settings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+268"/>
+        <location line="+171"/>
+        <source>Import Existing Build...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-159"/>
+        <source>Project Selector</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Active Project</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <location line="+148"/>
+        <source>Manage Kits...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-121"/>
+        <source>Build System Output</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+156"/>
+        <source>Import Directory</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/projectwizardpage.cpp" line="-157"/>
+        <source>The files are implicitly added to the projects:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+65"/>
+        <location line="+177"/>
+        <source>&lt;None&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-175"/>
+        <source>&lt;Implicitly Add&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+63"/>
+        <source>Add to &amp;version control:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+88"/>
+        <source>Add as a subproject to project:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Add to &amp;project:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+74"/>
+        <source>A version control system repository could not be created in &quot;%1&quot;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Failed to add &quot;%1&quot; to the version control system.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+94"/>
+        <source>Files to be added:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Files to be added in</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/removetaskhandler.cpp" line="+23"/>
+        <source>Remove</source>
+        <comment>Name of the action triggering the removetaskhandler</comment>
+        <translation type="unfinished">Odstrani</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Remove task from the task list.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/runconfiguration.cpp" line="+151"/>
+        <location filename="../../../src/plugins/projectexplorer/targetsettingspanel.cpp" line="+57"/>
+        <source>Run Settings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Variables in the run environment.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>The run configuration&apos;s working directory.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>The run configuration&apos;s name.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>The run configuration&apos;s executable.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+31"/>
+        <source>No build system active</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+306"/>
+        <source>Run on %{Device:Name}</source>
+        <extracomment>Shown in Run configuration if no executable is given, %1 is device name</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>%1 (on %{Device:Name})</source>
+        <extracomment>Shown in Run configuration, Add menu: &quot;name of runnable (on device name)&quot;</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/runconfigurationaspects.cpp" line="-156"/>
+        <source>Terminal</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>Run in terminal</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+90"/>
+        <source>Working Directory</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+26"/>
+        <source>Select Working Directory</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <location line="+303"/>
+        <source>Reset to Default</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-181"/>
+        <source>Arguments</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Command line arguments:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+147"/>
+        <source>Toggle multi-line mode.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+53"/>
+        <source>Executable</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Enter the path to the executable</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <location filename="../../../src/plugins/projectexplorer/workspaceproject.cpp" line="-15"/>
+        <source>Executable:</source>
+        <translation type="unfinished">Izvršljiva datoteka:</translation>
+    </message>
+    <message>
+        <location line="+95"/>
+        <source>Alternate executable on device:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Use this command instead</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+115"/>
+        <source>Add build library search path to DYLD_LIBRARY_PATH and DYLD_FRAMEWORK_PATH</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Add build library search path to PATH</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Add build library search path to LD_LIBRARY_PATH</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+20"/>
+        <source>Use debug version of frameworks (DYLD_IMAGE_SUFFIX=_debug)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+17"/>
+        <source>Run as root user</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+22"/>
+        <source>Emulator</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+103"/>
+        <source>Launcher:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+58"/>
+        <source>X11 Forwarding:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Forward to local display</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/runcontrol.cpp" line="-14"/>
+        <source>Unexpected run control state %1 when worker %2 started.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+324"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;center&gt;&lt;i&gt;%1&lt;/i&gt; is still running.&lt;center/&gt;&lt;center&gt;Force it to quit?&lt;/center&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Application Still Running</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Force &amp;Quit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>&amp;Keep Running</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+246"/>
+        <source>Cannot retrieve debugging output.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+38"/>
+        <source>User requested stop. Shutting down...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Remote process did not finish in time. Connectivity lost?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+84"/>
+        <source>Cannot run: No command given.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+54"/>
+        <source>%1 exited with code %2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>%1 crashed.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>The process was ended forcefully.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+47"/>
+        <source>Starting %1...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Environment:</source>
+        <translation type="unfinished">Okolje:</translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>No executable specified.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+279"/>
+        <source>The process failed to start.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>An unknown error in the process occurred.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Either the invoked program &quot;%1&quot; is missing, or you may have insufficient permissions to invoke the program.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>The process crashed.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>An error occurred when attempting to write to the process. For example, the process may not be running, or it may have closed its input channel.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>An error occurred when attempting to read from the process. For example, the process may not be running.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/runsettingspropertiespage.cpp" line="-186"/>
+        <location filename="../../../src/plugins/projectexplorer/toolchainoptionspage.cpp" line="-317"/>
+        <source>Remove All</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Deployment</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Method:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Run configuration:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+153"/>
+        <source>Remove Run Configuration?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Do you really want to delete the run configuration &lt;b&gt;%1&lt;/b&gt;?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>Remove Run Configurations?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Do you really want to delete all run configurations?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+35"/>
+        <source>New name for run configuration &lt;b&gt;%1&lt;/b&gt;:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+69"/>
+        <source>Cancel Build &amp;&amp; Remove Deploy Configuration</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Remove Deploy Configuration %1?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>The deploy configuration &lt;b&gt;%1&lt;/b&gt; is currently being built.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Do you want to cancel the build process and remove the Deploy Configuration anyway?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Remove Deploy Configuration?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Do you really want to delete deploy configuration &lt;b&gt;%1&lt;/b&gt;?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+22"/>
+        <source>New name for deploy configuration &lt;b&gt;%1&lt;/b&gt;:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/selectablefilesmodel.cpp" line="+542"/>
+        <source>Source directory:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Start Parsing</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>Select files matching:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Hide files matching:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Apply Filters</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+126"/>
+        <source>Generating file list...
+
+%1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message numerus="yes">
+        <location line="+11"/>
+        <source>Not showing %n files that are outside of the base directory.
+These files are preserved.</source>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+        </translation>
+    </message>
+    <message>
+        <location line="+29"/>
+        <source>Edit Files</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+34"/>
+        <source>Add Existing Directory</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/showineditortaskhandler.cpp" line="+35"/>
+        <source>Show in Editor</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Show task location in an editor.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/simpleprojectwizard.cpp" line="-16"/>
+        <source>Files</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>Import Existing Project</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Project Name and Location</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Project name:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>File Selection</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+26"/>
+        <source>Import as qmake or CMake Project (Limited Functionality)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Imports existing projects that do not use qmake, CMake, Qbs, Meson, or Autotools.&lt;p&gt;This creates a project file that allows you to use %1 as a code editor and as a launcher for debugging and analyzing tools. If you want to build the project, you might need to edit the generated project file.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+172"/>
+        <source>Unknown build system &quot;%1&quot;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/target.cpp" line="+135"/>
+        <source>Target Settings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Source directory</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Build system</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Name of current project</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/targetsettingspanel.cpp" line="-517"/>
+        <source>&amp;Configure Project</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+91"/>
+        <source>Show All Kits</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Hide Inactive Kits</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+36"/>
+        <source>No kit defined in this project.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+14"/>
+        <location line="+12"/>
+        <source>Configure Project</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+79"/>
+        <source>Kit is unsuited for project</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Click to activate</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+71"/>
+        <source>Enable Kit for Project &quot;%1&quot;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Enable Kit for All Projects</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Disable Kit for Project &quot;%1&quot;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>Cancel Build and Disable Kit in This Project</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Disable Kit &quot;%1&quot; in This Project?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>The kit &lt;b&gt;%1&lt;/b&gt; is currently being built.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Do you want to cancel the build process and remove the kit anyway?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+12"/>
+        <source>Disable Kit for All Projects</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>Copy Steps From Another Kit...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+199"/>
+        <source>Enable Kit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/targetsetuppage.cpp" line="+29"/>
+        <source>No suitable kits found.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Add a kit in the &lt;a href=&quot;buildandrun&quot;&gt;options&lt;/a&gt; or via the maintenance tool of the SDK.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>Select all kits</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Type to filter kits by name...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+144"/>
+        <source>Select Kits for Your Project</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+105"/>
+        <source>The following kits can be used for project &lt;b&gt;%1&lt;/b&gt;:</source>
+        <comment>%1: Project name</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/targetsetupwidget.cpp" line="+359"/>
+        <source>&lt;b&gt;Error:&lt;/b&gt; </source>
+        <comment>Severity is Task::Error</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>&lt;b&gt;Warning:&lt;/b&gt; </source>
+        <comment>Severity is Task::Warning</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/task.cpp" line="+63"/>
+        <source>%1 needs a compiler set up to build. Configure a compiler in the kit options.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+143"/>
+        <source>Error:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Warning:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/taskfile.cpp" line="+110"/>
+        <source>Cannot open task file %1: %2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+43"/>
+        <source>Ignoring invalid task (no text).</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+49"/>
+        <source>File Error</source>
+        <translation type="unfinished">Napaka glede datoteke</translation>
+    </message>
+    <message>
+        <location line="+27"/>
+        <source>Stop Monitoring</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Stop monitoring task files.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/taskhub.cpp" line="-18"/>
+        <source>Taskhub Error</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Taskhub Warning</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+21"/>
+        <source>Build Issue</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/taskwindow.cpp" line="+176"/>
+        <source>Issues</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+47"/>
+        <source>Show Warnings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Filter by categories</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/toolchainoptionspage.cpp" line="-152"/>
+        <source>&lt;nobr&gt;&lt;b&gt;ABI:&lt;/b&gt; %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>not up-to-date</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>This toolchain is invalid.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+43"/>
+        <source>Toolchain Auto-detection Settings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Detect x86_64 GCC compilers as x86_64 and x86</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>If checked, %1 will set up two instances of each x86_64 compiler:
+One for the native x86_64 target, and one for a plain x86 target.
+Enable this if you plan to create 32-bit x86 binaries without using a dedicated cross compiler.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+39"/>
+        <source>Type</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+76"/>
+        <source>Re-detect</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Auto-detection Settings...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+251"/>
+        <location line="+8"/>
+        <source>Duplicate Compilers Detected</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-7"/>
+        <source>The following compiler was already configured:&lt;br&gt;&amp;nbsp;%1&lt;br&gt;It was not configured again.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>The following compilers were already configured:&lt;br&gt;&amp;nbsp;%1&lt;br&gt;They were not configured again.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+76"/>
+        <source>Compilers</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/vcsannotatetaskhandler.cpp" line="+43"/>
+        <source>&amp;Annotate</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Annotate using version control system.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/waitforstopdialog.cpp" line="+22"/>
+        <source>Waiting for Applications to Stop</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>Cancel</source>
+        <translation type="unfinished">Prekliči</translation>
+    </message>
+    <message>
+        <location line="+20"/>
+        <source>Waiting for applications to stop.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/workspaceproject.cpp" line="-3"/>
+        <source>You can edit this configuration inside the .qtcreator/project.json file.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+137"/>
+        <source>Exclude from Project</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>Rescan Workspace</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/xcodebuildparser.cpp" line="+56"/>
+        <location line="+183"/>
+        <source>Replacing signature</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-167"/>
+        <location line="+145"/>
+        <location line="+12"/>
+        <source>Xcodebuild failed.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>QtC::Python</name>
+    <message>
+        <location filename="../../../src/plugins/python/pipsupport.cpp" line="+93"/>
+        <source>Update Requirements</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Install Requirements</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Update %1</source>
+        <extracomment>%1 = package name</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Install %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Update Packages</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Install Packages</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+24"/>
+        <source>The installation of &quot;%1&quot; was canceled by timeout.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>The installation of &quot;%1&quot; was canceled by the user.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Installing &quot;%1&quot; failed with exit code %2.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/python/pythoneditor.cpp" line="+51"/>
+        <location line="+47"/>
+        <source>REPL</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-46"/>
+        <source>Open interactive Python.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>REPL Import File</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Open interactive Python and import file.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>REPL Import *</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Open interactive Python and import * from file.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+40"/>
+        <source>Open interactive Python. Either importing nothing, importing the current file, or importing everything (*) from the current file.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+159"/>
+        <source>No Python Selected</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Create Virtual Environment</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+22"/>
+        <source>Manage Python Interpreters</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/python/pythonkitaspect.cpp" line="+60"/>
+        <source>None</source>
+        <translation type="unfinished">Brez</translation>
+    </message>
+    <message>
+        <location line="+33"/>
+        <location filename="../../../src/plugins/python/pythonsettings.cpp" line="+353"/>
+        <location line="+215"/>
+        <source>Python</source>
+        <translation type="unfinished">Python</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>The interpreter used for Python based projects.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+14"/>
+        <source>No Python setup.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Python &quot;%1&quot; not found.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Python &quot;%1&quot; is not executable.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Python &quot;%1&quot; does not contain a usable pip. pip is needed to install Python packages from the Python Package Index, like PySide and the Python language server. To use any of that functionality ensure that pip is installed for that Python.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Python &quot;%1&quot; does not contain a usable venv. venv is the recommended way to isolate a development environment for a project from the globally installed Python.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+32"/>
+        <source>Name of Python Interpreter</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Path to Python Interpreter</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/python/pythonlanguageclient.cpp" line="+228"/>
+        <source>Python Language Server (%1)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+303"/>
+        <source>Install Python language server (PyLS) for %1 (%2). The language server provides Python specific completion and annotation.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Install</source>
+        <translation type="unfinished">Namestite</translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>Update Python language server (PyLS) for %1 (%2).</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Always Update</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Update</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Never</source>
+        <translation type="unfinished">Nikoli</translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/python/pythonplugin.cpp" line="+84"/>
+        <source>Issues parsed from Python runtime output.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/python/pythonproject.cpp" line="+41"/>
+        <source>No Python interpreter set for kit &quot;%1&quot;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/python/pythonrunconfiguration.cpp" line="+111"/>
+        <source>Buffered output</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Enabling improves output performance, but results in delayed output.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Script:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+12"/>
+        <location filename="../../../src/plugins/python/pythonsettings.cpp" line="+683"/>
+        <source>Python:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+20"/>
+        <source>Run %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/python/pythonsettings.cpp" line="-1147"/>
+        <location line="+283"/>
+        <source>Name:</source>
+        <translation type="unfinished">Ime:</translation>
+    </message>
+    <message>
+        <location line="-282"/>
+        <location line="+283"/>
+        <source>Executable</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-205"/>
+        <source>Executable is empty.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>&quot;%1&quot; does not exist.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>&quot;%1&quot; is not an executable file.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <location line="+186"/>
+        <source>&amp;Add</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-184"/>
+        <location line="+185"/>
+        <source>&amp;Delete</source>
+        <translation type="unfinished">&amp;Izbriši</translation>
+    </message>
+    <message>
+        <location line="-183"/>
+        <location line="+185"/>
+        <source>&amp;Make Default</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-183"/>
+        <source>&amp;Generate Kit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <location line="+179"/>
+        <source>&amp;Clean Up</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-178"/>
+        <source>Remove all Python interpreters without a valid executable.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+138"/>
+        <source>Interpreters</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+79"/>
+        <source>Plugins:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Use Python Language Server</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+22"/>
+        <source>For a complete list of available options, consult the [Python LSP Server configuration documentation](%1).</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+12"/>
+        <source>Advanced</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+99"/>
+        <source>Language Server Configuration</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+466"/>
+        <source>Python interpreter:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>New Python Virtual Environment Directory</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Virtual environment directory:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Create</source>
+        <translation type="unfinished">Ustvarjanje</translation>
+    </message>
+    <message>
+        <location line="+34"/>
+        <location filename="../../../src/plugins/python/pythonutils.cpp" line="+185"/>
+        <source>Create Python venv</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+151"/>
+        <source>Searching Python binaries...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>Found &quot;%1&quot; (%2)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Removing Python</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/python/pythonwizardpage.cpp" line="+91"/>
+        <source>&quot;data&quot; of a Python wizard page expects a map with &quot;items&quot; containing a list of objects.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>An item of Python wizard page data expects a &quot;trKey&quot; field containing the UI visible string for that Python version and a &quot;value&quot; field containing an object with a &quot;PySideVersion&quot; field used for import statements in the Python files.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+15"/>
+        <source>PySide version:</source>
+        <translation type="unfinished">Različica PySide:</translation>
+    </message>
 </context>
 <context>
     <name>QtC::QmlJS</name>
     <message>
-        <location filename="../../../src/libs/utils/qrcparser.cpp" line="+364"/>
+        <location filename="../../../src/libs/utils/qrcparser.cpp" line="+363"/>
         <location line="+9"/>
         <source>XML error on line %1, col %2: %3</source>
         <translation>Napaka XML v vrstici %1 in stolpcu %2: %3</translation>
@@ -11259,9 +19086,17 @@ Vnaprej izbere namizni Qt za izdelavo aplikacije, če je na voljo.</translation>
     </message>
 </context>
 <context>
+    <name>QtC::Terminal</name>
+    <message>
+        <location filename="../../../src/plugins/texteditor/texteditorplugin.cpp" line="+562"/>
+        <source>Clear Selection</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>QtC::TextEditor</name>
     <message>
-        <location filename="../../../src/plugins/texteditor/completionsettingspage.cpp" line="+72"/>
+        <location filename="../../../src/plugins/texteditor/completionsettingspage.cpp" line="+67"/>
         <source>Full</source>
         <translation>Polno</translation>
     </message>
@@ -11405,12 +19240,17 @@ Poleg tega Shift+Enter vstavi ubežni znak na položaj kazalke in premakne preos
         <translation>Samodejno prepiši zaključne oklepaje in narekovaje.</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+72"/>
+        <source>&amp;Automatically Insert Matching Characters</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/texteditor/commentssettings.cpp" line="+91"/>
         <source>Enable Doxygen blocks</source>
         <translation>Omogoči bloke Doxygen</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+2"/>
         <source>Automatically creates a Doxygen comment upon pressing enter after a &apos;/**&apos;, &apos;/*!&apos;, &apos;//!&apos; or &apos;///&apos;.</source>
         <translation>Samodejno ustvari komentar Doxygen, ko pritisnete enter za &apos;/**&apos;, &apos;/*!&apos;, &apos;//!&apos; ali &apos;///&apos;.</translation>
     </message>
@@ -11420,7 +19260,7 @@ Poleg tega Shift+Enter vstavi ubežni znak na položaj kazalke in premakne preos
         <translation>Ustvari kratek opis</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+2"/>
         <source>Generates a &lt;i&gt;brief&lt;/i&gt; command with an initial description for the corresponding declaration.</source>
         <translation>Generira &lt;i&gt;kratek&lt;/i&gt; ukaz z začetnim opisom za ustrezno deklaracijo.</translation>
     </message>
@@ -11435,30 +19275,41 @@ Poleg tega Shift+Enter vstavi ubežni znak na položaj kazalke in premakne preos
         <translation>Dodaja uvodne zvezdice pri nadaljevanju C/C++ &quot;/*&quot;, Qt &quot;/*!&quot; in komentarji v slogu Java &quot;/**&quot; v novih vrsticah.</translation>
     </message>
     <message>
-        <location line="+78"/>
-        <source>&amp;Automatically insert matching characters</source>
-        <translation>&amp;Samodejno vstavi ujemajoče se znake</translation>
+        <location line="+3"/>
+        <source>Doxygen command prefix:</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+20"/>
+        <location line="+1"/>
+        <source>Doxygen allows &quot;@&quot; and &quot;\&quot; to start commands.
+By default, &quot;@&quot; is used if the surrounding comment starts with &quot;/**&quot; or &quot;///&quot;, and &quot;\&quot; is used
+if the comment starts with &quot;/*!&quot; or &quot;//!&quot;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&amp;Automatically insert matching characters</source>
+        <translation type="vanished">&amp;Samodejno vstavi ujemajoče se znake</translation>
+    </message>
+    <message>
+        <location line="+66"/>
         <source>Documentation Comments</source>
         <translation>Komentarji na dokumentacijo</translation>
     </message>
     <message>
-        <location line="+101"/>
+        <location filename="../../../src/plugins/texteditor/completionsettingspage.cpp" line="+96"/>
         <source>Completion</source>
         <translation>Dokončevanje</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/texteditor/snippets/snippetssettingspage.cpp" line="+125"/>
+        <location filename="../../../src/plugins/texteditor/snippets/snippetssettingspage.cpp" line="+126"/>
         <location line="+79"/>
-        <location line="+268"/>
-        <location filename="../../../src/plugins/texteditor/texteditorsettings.cpp" line="+319"/>
+        <location line="+252"/>
+        <location filename="../../../src/plugins/texteditor/texteditorsettings.cpp" line="+327"/>
         <source>Error</source>
         <translation>Napaka</translation>
     </message>
     <message>
-        <location line="-346"/>
+        <location line="-330"/>
         <source>Not a valid trigger. A valid trigger can only contain letters, numbers, or underscores, where the first character is limited to letter or underscore.</source>
         <translation>Ni veljaven sprožilec. Veljaven sprožilec lahko vsebuje samo črke, številke ali podčrtaje, pri čemer je prvi znak omejen na črko ali podčrtaj.</translation>
     </message>
@@ -11478,7 +19329,7 @@ Poleg tega Shift+Enter vstavi ubežni znak na položaj kazalke in premakne preos
         <translation>Napaka pri povrnitvi izrezka.</translation>
     </message>
     <message>
-        <location line="+121"/>
+        <location line="+98"/>
         <source>Revert Built-in</source>
         <translation>Povrni vgrajene</translation>
     </message>
@@ -11503,52 +19354,111 @@ Poleg tega Shift+Enter vstavi ubežni znak na položaj kazalke in premakne preos
         <translation>Ponastavi vse</translation>
     </message>
     <message>
-        <location line="+52"/>
+        <location line="+62"/>
         <source>Error While Saving Snippet Collection</source>
         <translation>Napaka med shranjevanjem zbirke izrezkov</translation>
     </message>
     <message>
-        <location line="+72"/>
+        <location line="+69"/>
         <source>No snippet selected.</source>
         <translation>Izbran ni noben izrezek.</translation>
     </message>
     <message>
-        <location line="+88"/>
+        <location line="+86"/>
         <source>Snippets</source>
         <translation>Izrezki</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/texteditor/texteditor.cpp" line="+158"/>
         <source>Line: 9999, Col: 999</source>
-        <translation>Vrstica: 9999, Stolpec: 999</translation>
+        <translation type="vanished">Vrstica: 9999, Stolpec: 999</translation>
     </message>
     <message>
-        <location line="+23"/>
+        <location filename="../../../src/plugins/texteditor/texteditor.cpp" line="+195"/>
+        <source>Cursors: %2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
         <source>Cursor position: %1</source>
         <translation>Položaj kazalca: %1</translation>
     </message>
     <message>
-        <location line="+880"/>
+        <location line="+7"/>
+        <source>(Sel: %1)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+18"/>
+        <source>Cursors:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+14"/>
+        <source>Line:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Column:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Selection length:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Position in document:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Anchor:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+917"/>
+        <source>Unix Line Endings (LF)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Windows Line Endings (CRLF)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+71"/>
         <source>Other annotations</source>
         <translation>Druge opombe</translation>
     </message>
     <message>
-        <location line="+277"/>
+        <location line="+273"/>
         <source>Print Document</source>
         <translation>Natisni dokument</translation>
     </message>
     <message>
-        <location line="+327"/>
+        <location line="+367"/>
         <source>File Error</source>
         <translation>Napaka glede datoteke</translation>
     </message>
     <message>
-        <location line="+37"/>
+        <location line="+28"/>
+        <source>LF</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>CRLF</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+13"/>
         <source>The text is too large to be displayed (%1 MB).</source>
         <translation>Besedilo je preveliko in ga ni moč prikazati (%1 MiB).</translation>
     </message>
     <message>
-        <location line="+30"/>
+        <location line="+36"/>
         <source>&lt;b&gt;Error:&lt;/b&gt; Could not decode &quot;%1&quot; with &quot;%2&quot;-encoding. Editing not possible.</source>
         <translation>&lt;b&gt;Napaka:&lt;/b&gt; »%1« ni moč dekodirati s kodiranjem »%2«. Urejanje ni možno.</translation>
     </message>
@@ -11558,12 +19468,12 @@ Poleg tega Shift+Enter vstavi ubežni znak na položaj kazalke in premakne preos
         <translation>Izberite kodiranje</translation>
     </message>
     <message>
-        <location line="+1154"/>
+        <location line="+1297"/>
         <source>Snippet Parse Error</source>
         <translation>Napaka pri razčlenjevanju delčka</translation>
     </message>
     <message>
-        <location line="+491"/>
+        <location line="+522"/>
         <source>A highlight definition was not found for this file. Would you like to download additional highlight definition files?</source>
         <translation>Za to datoteko ni bilo mogoče najti definicije poudarka. Ali želite prenesti dodatne datoteke z definicijo poudarkov?</translation>
     </message>
@@ -11578,12 +19488,12 @@ Poleg tega Shift+Enter vstavi ubežni znak na položaj kazalke in premakne preos
         <translation>Zapomni si mojo izbiro</translation>
     </message>
     <message>
-        <location line="+2932"/>
+        <location line="+3822"/>
         <source>Zoom: %1%</source>
         <translation>Povečava: %1%</translation>
     </message>
     <message>
-        <location line="+1762"/>
+        <location line="+1851"/>
         <source>Delete UTF-8 BOM on Save</source>
         <translation>Izbriši UTF-8 BOM ob shranjevanju</translation>
     </message>
@@ -11593,12 +19503,17 @@ Poleg tega Shift+Enter vstavi ubežni znak na položaj kazalke in premakne preos
         <translation>Dodajte UTF-8 BOM ob shranjevanju</translation>
     </message>
     <message>
-        <location line="-7916"/>
+        <location line="+605"/>
+        <source>Could not find definition.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-9882"/>
         <source>Line: %1, Col: %2</source>
         <translation>Vrstica: %1, Stolpec: %2</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/texteditor/behaviorsettingswidget.cpp" line="+125"/>
+        <location filename="../../../src/plugins/texteditor/behaviorsettingswidget.cpp" line="+166"/>
         <source>&amp;Clean whitespace</source>
         <translation>&amp;Počisti presledke</translation>
     </message>
@@ -11672,7 +19587,7 @@ Vpliva na zamik nadaljevalnih vrstic.
 &lt;/ul&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location line="+32"/>
+        <location line="+31"/>
         <source>Tabs And Indentation</source>
         <translation>Tabulator in zamikanje</translation>
     </message>
@@ -11737,7 +19652,7 @@ Vpliva na zamik nadaljevalnih vrstic.
         <translation>Politika zavihkov:</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/texteditor/behaviorsettingswidget.cpp" line="-23"/>
+        <location filename="../../../src/plugins/texteditor/behaviorsettingswidget.cpp" line="-65"/>
         <source>Enable automatic &amp;indentation</source>
         <translation>Omogoči &amp;samodejno zamikanje</translation>
     </message>
@@ -11748,7 +19663,7 @@ Vpliva na zamik nadaljevalnih vrstic.
     </message>
     <message>
         <location line="+1"/>
-        <location filename="../../../src/plugins/texteditor/completionsettingspage.cpp" line="-279"/>
+        <location filename="../../../src/plugins/texteditor/completionsettingspage.cpp" line="-236"/>
         <source>Always</source>
         <translation>Vedno</translation>
     </message>
@@ -11811,6 +19726,47 @@ Določa, kako vračalka vpliva na zamik.
     </message>
     <message>
         <location line="+5"/>
+        <location filename="../../../src/plugins/texteditor/commentssettings.cpp" line="-61"/>
+        <source>Automatic</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>At Line Start</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>After Whitespace</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Specifies where single line comments should be positioned.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>%1: The highlight definition for the file determines the position. If no highlight definition is available, the comment is placed after leading whitespaces.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>%1: The comment is placed at the start of the line.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>%1: The comment is placed after leading whitespaces.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+22"/>
+        <source>Preferred comment position:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
         <source>Skip clean whitespace for file types:</source>
         <translation>Preskoči prazen presledek za vrste datotek:</translation>
     </message>
@@ -11952,7 +19908,7 @@ Določa, kako vračalka vpliva na zamik.
         <translation>Zamik vračalke:</translation>
     </message>
     <message>
-        <location line="+19"/>
+        <location line="+23"/>
         <source>Default encoding:</source>
         <translation>Privzeto kodiranje: </translation>
     </message>
@@ -11972,7 +19928,7 @@ Določa, kako vračalka vpliva na zamik.
         <translation>Prikažite nasvete za pomoč z miško:</translation>
     </message>
     <message>
-        <location line="+142"/>
+        <location line="+152"/>
         <source>Displays context-sensitive help or type information on mouseover.</source>
         <translation>Prikaže pomoč, ki je odvisna od konteksta, ali vnesite informacije ob miški.</translation>
     </message>
@@ -11982,13 +19938,13 @@ Določa, kako vračalka vpliva na zamik.
         <translation>Prikaže kontekstno občutljivo pomoč ali vnesite informacije s tipkama Shift+preverjanje miške.</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/texteditor/displaysettingspage.cpp" line="+141"/>
-        <location line="+217"/>
+        <location filename="../../../src/plugins/texteditor/displaysettingspage.cpp" line="+139"/>
+        <location line="+201"/>
         <source>Display</source>
         <translation>Prikaz</translation>
     </message>
     <message>
-        <location line="-268"/>
+        <location line="-256"/>
         <source>Display line &amp;numbers</source>
         <translation>Prikaži &amp;številke vrstic</translation>
     </message>
@@ -12018,7 +19974,7 @@ Določa, kako vračalka vpliva na zamik.
         <translation>Poudari &amp;trenutno vrstico</translation>
     </message>
     <message>
-        <location line="-44"/>
+        <location line="-39"/>
         <source>Enable text &amp;wrapping</source>
         <translation>Omogoči pre&amp;lamljanje vrstic</translation>
     </message>
@@ -12028,7 +19984,7 @@ Določa, kako vračalka vpliva na zamik.
         <translation>&lt;i&gt;Nastavite &lt;a href=&quot;font zoom&quot;&gt;razmik med vrsticami pisave&lt;/a&gt; na 100 %, da omogočite možnost prelivanja besedila.&lt;/i&gt;</translation>
     </message>
     <message>
-        <location line="+25"/>
+        <location line="+20"/>
         <source>Display right &amp;margin at column:</source>
         <translation>Prikaži desni &amp;rob pri stolpcu:</translation>
     </message>
@@ -12104,6 +20060,16 @@ Določa, kako vračalka vpliva na zamik.
     </message>
     <message>
         <location line="+2"/>
+        <source>&amp;Highlight selection</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Adds a colored background and a marker to the scrollbar to occurrences of the selected text.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
         <source>Next to editor content</source>
         <translation>Poleg vsebine urednika</translation>
     </message>
@@ -12124,8 +20090,12 @@ Določa, kako vračalka vpliva na zamik.
     </message>
     <message>
         <location line="+2"/>
+        <source>Line Annotations</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>Line annotations</source>
-        <translation>Opombe vrstic</translation>
+        <translation type="vanished">Opombe vrstic</translation>
     </message>
     <message>
         <location line="+14"/>
@@ -12138,18 +20108,18 @@ Določa, kako vračalka vpliva na zamik.
         <translation>Zavijanje</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/texteditor/behaviorsettingswidget.cpp" line="-206"/>
+        <location filename="../../../src/plugins/texteditor/behaviorsettingswidget.cpp" line="-220"/>
         <source>Enable &amp;mouse navigation</source>
         <translation>Omogoči krmarjenje z &amp;miško</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/texteditor/fontsettingspage.cpp" line="+544"/>
+        <location filename="../../../src/plugins/texteditor/fontsettingspage.cpp" line="+547"/>
         <source>Copy Color Scheme</source>
         <translation>Skopiraj barvno shemo</translation>
     </message>
     <message>
-        <location line="-428"/>
-        <location line="+7"/>
+        <location line="-434"/>
+        <location line="+6"/>
         <source>%</source>
         <translation> %</translation>
     </message>
@@ -12186,7 +20156,7 @@ Vrednost, manjša od 100 %, lahko povzroči prekrivanje in neporavnano grafiko.<
         <translation>Razmik med vrsticami:</translation>
     </message>
     <message>
-        <location line="+363"/>
+        <location line="+370"/>
         <location line="+92"/>
         <source>Color scheme name:</source>
         <translation>Ime barvne sheme:</translation>
@@ -12224,8 +20194,8 @@ Vrednost, manjša od 100 %, lahko povzroči prekrivanje in neporavnano grafiko.<
         <translation>Izvoz barvne sheme</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/texteditor/codestyleselectorwidget.cpp" line="+43"/>
-        <location filename="../../../src/plugins/texteditor/snippets/snippetssettingspage.cpp" line="-217"/>
+        <location filename="../../../src/plugins/texteditor/codestyleselectorwidget.cpp" line="+41"/>
+        <location filename="../../../src/plugins/texteditor/snippets/snippetssettingspage.cpp" line="-222"/>
         <source>Remove</source>
         <translation>Odstrani</translation>
     </message>
@@ -12240,9 +20210,13 @@ Vrednost, manjša od 100 %, lahko povzroči prekrivanje in neporavnano grafiko.<
         <translation>Uvozi …</translation>
     </message>
     <message>
-        <location line="+7"/>
         <source>Current settings:</source>
-        <translation>Trenutne nastavitve:</translation>
+        <translation type="vanished">Trenutne nastavitve:</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Custom settings:</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+105"/>
@@ -12260,7 +20234,7 @@ Vrednost, manjša od 100 %, lahko povzroči prekrivanje in neporavnano grafiko.<
         <translation>%1 (kopiraj)</translation>
     </message>
     <message>
-        <location line="+20"/>
+        <location line="+21"/>
         <source>Delete Code Style</source>
         <translation>Izbriši slog kode</translation>
     </message>
@@ -12271,8 +20245,8 @@ Vrednost, manjša od 100 %, lahko povzroči prekrivanje in neporavnano grafiko.<
     </message>
     <message>
         <location line="+6"/>
-        <location filename="../../../src/plugins/texteditor/fontsettingspage.cpp" line="-527"/>
-        <location line="+453"/>
+        <location filename="../../../src/plugins/texteditor/fontsettingspage.cpp" line="-534"/>
+        <location line="+460"/>
         <source>Delete</source>
         <translation>Izbriši</translation>
     </message>
@@ -12284,17 +20258,17 @@ Vrednost, manjša od 100 %, lahko povzroči prekrivanje in neporavnano grafiko.<
     </message>
     <message>
         <location line="-8"/>
-        <location line="+19"/>
+        <location line="+21"/>
         <source>Code styles (*.xml);;All files (*)</source>
         <translation>Slogi kode (*.xml);;Vse datoteke (*)</translation>
     </message>
     <message>
-        <location line="-10"/>
+        <location line="-12"/>
         <source>Cannot import code style from &quot;%1&quot;.</source>
         <translation>Sloga kode ni mogoče uvoziti iz »%1«.</translation>
     </message>
     <message>
-        <location line="+8"/>
+        <location line="+10"/>
         <source>Export Code Style</source>
         <translation>Slog izvozne kode</translation>
     </message>
@@ -12307,6 +20281,11 @@ Vrednost, manjša od 100 %, lahko povzroči prekrivanje in neporavnano grafiko.<
         <location line="+2"/>
         <source>%1 [built-in]</source>
         <translation>%1 [vgrajeno]</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>%1 [customizable]</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../../src/plugins/texteditor/fontsettingspage.cpp" line="+89"/>
@@ -12324,12 +20303,12 @@ Vrednost, manjša od 100 %, lahko povzroči prekrivanje in neporavnano grafiko.<
         <translation>Zavrzi</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/texteditor/findincurrentfile.cpp" line="+38"/>
+        <location filename="../../../src/plugins/texteditor/findincurrentfile.cpp" line="+69"/>
         <source>Current File</source>
         <translation>Trenutna datoteka</translation>
     </message>
     <message>
-        <location line="+25"/>
+        <location line="+16"/>
         <source>File &quot;%1&quot;:</source>
         <translation>Datoteka &quot;%1&quot;:</translation>
     </message>
@@ -12342,19 +20321,19 @@ Vrednost, manjša od 100 %, lahko povzroči prekrivanje in neporavnano grafiko.<
     </message>
     <message>
         <location line="+7"/>
-        <location filename="../../../src/plugins/texteditor/findinopenfiles.cpp" line="+87"/>
+        <location filename="../../../src/plugins/texteditor/findinopenfiles.cpp" line="+106"/>
         <source>Please note that this only searches files that have been saved to disk.</source>
         <translation>Upoštevajte, da to išče samo datoteke, ki so bile shranjene na disk.</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/texteditor/colorschemeedit.cpp" line="+197"/>
-        <location filename="../../../src/plugins/texteditor/fontsettingspage.cpp" line="-519"/>
-        <location line="+621"/>
+        <location filename="../../../src/plugins/texteditor/colorschemeedit.cpp" line="+188"/>
+        <location filename="../../../src/plugins/texteditor/fontsettingspage.cpp" line="-526"/>
+        <location line="+628"/>
         <source>Font</source>
         <translation>Pisava</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/texteditor/fontsettingspage.cpp" line="-618"/>
+        <location filename="../../../src/plugins/texteditor/fontsettingspage.cpp" line="-625"/>
         <source>Family:</source>
         <translation>Družina:</translation>
     </message>
@@ -12437,7 +20416,7 @@ Vrednost, manjša od 100 %, lahko povzroči prekrivanje in neporavnano grafiko.<
         <translation>Barva:</translation>
     </message>
     <message>
-        <location line="+488"/>
+        <location line="+477"/>
         <source>No Underline</source>
         <translation>Brez podčrtaja</translation>
     </message>
@@ -12472,18 +20451,18 @@ Vrednost, manjša od 100 %, lahko povzroči prekrivanje in neporavnano grafiko.<
         <translation>Črta-pika-pika Podčrtaj</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/texteditor/fontsettingspage.cpp" line="-68"/>
+        <location filename="../../../src/plugins/texteditor/fontsettingspage.cpp" line="-67"/>
         <source>Antialias</source>
         <translation>Glajenje robov</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/texteditor/codestyleselectorwidget.cpp" line="-249"/>
-        <location filename="../../../src/plugins/texteditor/fontsettingspage.cpp" line="+31"/>
+        <location filename="../../../src/plugins/texteditor/codestyleselectorwidget.cpp" line="-254"/>
+        <location filename="../../../src/plugins/texteditor/fontsettingspage.cpp" line="+30"/>
         <source>Copy...</source>
         <translation>Skopiraj …</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/texteditor/linenumberfilter.cpp" line="+28"/>
+        <location filename="../../../src/plugins/texteditor/linenumberfilter.cpp" line="+21"/>
         <source>Line in Current Document</source>
         <translation>Vrstica v trenutnem dokumentu</translation>
     </message>
@@ -12498,7 +20477,7 @@ Vrednost, manjša od 100 %, lahko povzroči prekrivanje in neporavnano grafiko.<
         <translation>&lt;vrstica&gt;:&lt;stolpec&gt;</translation>
     </message>
     <message>
-        <location line="+32"/>
+        <location line="+28"/>
         <source>Line %1, Column %2</source>
         <translation>Vrstica %1, stolpec %2</translation>
     </message>
@@ -12513,7 +20492,7 @@ Vrednost, manjša od 100 %, lahko povzroči prekrivanje in neporavnano grafiko.<
         <translation>Stolpec %1</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/texteditor/texteditorplugin.cpp" line="+98"/>
+        <location filename="../../../src/plugins/texteditor/texteditorplugin.cpp" line="-239"/>
         <source>Trigger Completion</source>
         <translation>Dokončanje sprožitve</translation>
     </message>
@@ -12528,38 +20507,38 @@ Vrednost, manjša od 100 %, lahko povzroči prekrivanje in neporavnano grafiko.<
         <translation>Meta+Space</translation>
     </message>
     <message>
-        <location line="+11"/>
+        <location line="+9"/>
         <source>Display Function Hint</source>
         <translation>Zaslon Funkcija Namig</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+1"/>
         <source>Meta+Shift+D</source>
         <translation>Meta+Shift+D</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+0"/>
         <source>Ctrl+Shift+D</source>
         <translation>Ctrl+Shift+D</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+4"/>
         <source>Trigger Refactoring Action</source>
         <translation>Sproži dejanje refaktoriranja</translation>
     </message>
     <message>
-        <location line="+8"/>
+        <location line="+4"/>
         <source>Show Context Menu</source>
         <translation>Prikaži kontekstni meni</translation>
     </message>
     <message>
-        <location line="+11"/>
+        <location line="-215"/>
         <source>Text</source>
         <comment>SnippetProvider</comment>
         <translation>Besedilo</translation>
     </message>
     <message>
-        <location line="+39"/>
+        <location line="+38"/>
         <source>Selected text within the current document.</source>
         <translation>Besedilo izbrano v trenutnem dokumentu.</translation>
     </message>
@@ -12594,22 +20573,20 @@ Vrednost, manjša od 100 %, lahko povzroči prekrivanje in neporavnano grafiko.<
         <translation>Word pod besedilnim kazalcem trenutnega dokumenta.</translation>
     </message>
     <message>
-        <location line="-102"/>
+        <location line="+128"/>
         <source>Alt+Return</source>
         <translation>Alt+Return</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/texteditor/texteditoractionhandler.cpp" line="+153"/>
         <source>&amp;Undo</source>
-        <translation>&amp;Razveljavi</translation>
+        <translation type="vanished">&amp;Razveljavi</translation>
     </message>
     <message>
-        <location line="+2"/>
         <source>&amp;Redo</source>
-        <translation>&amp;Uveljavi</translation>
+        <translation type="vanished">&amp;Uveljavi</translation>
     </message>
     <message>
-        <location line="+158"/>
+        <location line="+124"/>
         <source>&amp;Visualize Whitespace</source>
         <translation>&amp;Poudari presledke</translation>
     </message>
@@ -12624,7 +20601,7 @@ Vrednost, manjša od 100 %, lahko povzroči prekrivanje in neporavnano grafiko.<
         <translation>Počisti presledke</translation>
     </message>
     <message>
-        <location line="+11"/>
+        <location line="+3"/>
         <source>Enable Text &amp;Wrapping</source>
         <translation>Omogoči pre&amp;lamljanje vrstic</translation>
     </message>
@@ -12639,32 +20616,42 @@ Vrednost, manjša od 100 %, lahko povzroči prekrivanje in neporavnano grafiko.<
         <translation>Ctrl+/</translation>
     </message>
     <message>
-        <location line="-141"/>
+        <location line="-133"/>
         <source>Delete &amp;Line</source>
         <translation>Izbriši &amp;vrstico</translation>
     </message>
     <message>
-        <location line="+145"/>
+        <location line="+50"/>
+        <source>Follow Type Under Cursor</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Ctrl+Shift+F2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+86"/>
         <source>Shift+Del</source>
         <translation>Shift+Del</translation>
     </message>
     <message>
-        <location line="-37"/>
+        <location line="-22"/>
         <source>&amp;Rewrap Paragraph</source>
         <translation>&amp;Znova prelomi vrstice odstavka</translation>
     </message>
     <message>
-        <location line="-129"/>
+        <location filename="../../../src/plugins/texteditor/texteditor.cpp" line="+3765"/>
         <source>Go to line number...</source>
         <translation>Pojdi na številko vrstice ...</translation>
     </message>
     <message>
-        <location line="+23"/>
+        <location filename="../../../src/plugins/texteditor/texteditorplugin.cpp" line="-114"/>
         <source>Delete Line from Cursor On</source>
         <translation>Izbriši vrstico iz vklopljenega kazalca</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+1"/>
         <source>Delete Word from Cursor On</source>
         <translation>Delete Word from Cursor On</translation>
     </message>
@@ -12684,7 +20671,7 @@ Vrednost, manjša od 100 %, lahko povzroči prekrivanje in neporavnano grafiko.<
         <translation>Ctrl + vračalka</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+1"/>
         <source>Delete Word up to Cursor</source>
         <translation>Izbriši besedo do kazalca</translation>
     </message>
@@ -12734,17 +20721,17 @@ Vrednost, manjša od 100 %, lahko povzroči prekrivanje in neporavnano grafiko.<
         <translation>Ctrl+Return</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+1"/>
         <source>Toggle UTF-8 BOM</source>
         <translation>Preklop UTF-8 BOM</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+1"/>
         <source>Indent</source>
         <translation>Zamakni</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+1"/>
         <source>Unindent</source>
         <translation>Prekliči zamik</translation>
     </message>
@@ -12754,44 +20741,37 @@ Vrednost, manjša od 100 %, lahko povzroči prekrivanje in neporavnano grafiko.<
         <translation>Sledi simbolu pod kazalcem</translation>
     </message>
     <message>
-        <location line="+3"/>
         <source>Follow Symbol Under Cursor in Next Split</source>
-        <translation>Sledite simbolu pod kazalcem v naslednji delitvi</translation>
+        <translation type="vanished">Sledite simbolu pod kazalcem v naslednji delitvi</translation>
     </message>
     <message>
-        <location line="+1"/>
-        <location line="+12"/>
+        <location line="+26"/>
         <source>Meta+E, F2</source>
         <translation>Meta+E, F2</translation>
     </message>
     <message>
-        <location line="-12"/>
-        <location line="+12"/>
+        <location line="+0"/>
         <source>Ctrl+E, F2</source>
         <translation>Ctrl+E, F2</translation>
     </message>
     <message>
-        <location line="-10"/>
         <source>Find References to Symbol Under Cursor</source>
-        <translation>Poiščite sklice na simbol pod kazalcem</translation>
+        <translation type="vanished">Poiščite sklice na simbol pod kazalcem</translation>
     </message>
     <message>
-        <location line="+1"/>
         <source>Ctrl+Shift+U</source>
-        <translation>Ctrl+Shift+U</translation>
+        <translation type="vanished">Ctrl+Shift+U</translation>
     </message>
     <message>
-        <location line="+2"/>
         <source>Rename Symbol Under Cursor</source>
-        <translation>Preimenuj simbol pod kazalcem</translation>
+        <translation type="vanished">Preimenuj simbol pod kazalcem</translation>
     </message>
     <message>
-        <location line="+1"/>
         <source>Ctrl+Shift+R</source>
-        <translation>Ctrl+Shift+R</translation>
+        <translation type="vanished">Ctrl+Shift+R</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="-4"/>
         <source>Jump to File Under Cursor</source>
         <translation>Skoči v datoteko pod kazalcem</translation>
     </message>
@@ -12801,7 +20781,27 @@ Vrednost, manjša od 100 %, lahko povzroči prekrivanje in neporavnano grafiko.<
         <translation>Skoči na datoteko pod kazalcem v naslednji razdelitvi</translation>
     </message>
     <message>
-        <location line="+26"/>
+        <location line="+2"/>
+        <source>Open Call Hierarchy</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Open Type Hierarchy</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Meta+Shift+T</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Ctrl+Shift+T</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+23"/>
         <source>Paste from Clipboard History</source>
         <translation>Prilepi iz zgodovine odložišča</translation>
     </message>
@@ -12811,7 +20811,7 @@ Vrednost, manjša od 100 %, lahko povzroči prekrivanje in neporavnano grafiko.<
         <translation>Ctrl+Shift+V</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+3"/>
         <source>Paste Without Formatting</source>
         <translation>Prilepi brez oblikovanja</translation>
     </message>
@@ -12831,12 +20831,12 @@ Vrednost, manjša od 100 %, lahko povzroči prekrivanje in neporavnano grafiko.<
         <translation>Meta+E, R</translation>
     </message>
     <message>
-        <location line="+11"/>
+        <location line="+4"/>
         <source>Meta+E, Meta+V</source>
         <translation>Meta+E, Meta+V</translation>
     </message>
     <message>
-        <location line="+16"/>
+        <location line="+8"/>
         <source>Meta+E, Meta+W</source>
         <translation>Meta+E, Meta+W</translation>
     </message>
@@ -12866,7 +20866,7 @@ Vrednost, manjša od 100 %, lahko povzroči prekrivanje in neporavnano grafiko.<
         <translation>Kopiraj z označevanjem</translation>
     </message>
     <message>
-        <location line="+4"/>
+        <location line="+3"/>
         <source>Create Cursors at Selected Line Ends</source>
         <translation>Ustvarite kazalke na izbranih koncih vrstic</translation>
     </message>
@@ -12886,7 +20886,7 @@ Vrednost, manjša od 100 %, lahko povzroči prekrivanje in neporavnano grafiko.<
         <translation>Ctrl+D</translation>
     </message>
     <message>
-        <location line="+13"/>
+        <location line="+11"/>
         <source>Uppercase Selection</source>
         <translation>Izbor v velike črke</translation>
     </message>
@@ -12917,11 +20917,35 @@ Vrednost, manjša od 100 %, lahko povzroči prekrivanje in neporavnano grafiko.<
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Sort Selected Lines</source>
-        <translation>&amp;Razvrsti izbrane vrstice</translation>
+        <source>Sort Lines</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+59"/>
+        <source>Go to Previous Word (Camel Case)</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
+        <source>Go to Next Word (Camel Case)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+19"/>
+        <source>Go to Previous Word (Camel Case) with Selection</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Go to Next Word (Camel Case) with Selection</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&amp;Sort Selected Lines</source>
+        <translation type="vanished">&amp;Razvrsti izbrane vrstice</translation>
+    </message>
+    <message>
+        <location line="-80"/>
         <source>Meta+Shift+S</source>
         <translation>Meta+Shift+S</translation>
     </message>
@@ -12946,22 +20970,21 @@ Vrednost, manjša od 100 %, lahko povzroči prekrivanje in neporavnano grafiko.<
         <translation>Preklopi &amp;zloži vse</translation>
     </message>
     <message>
-        <location line="+12"/>
+        <location line="+11"/>
         <source>Reset Font Size</source>
         <translation>Ponastavi velikost pisave</translation>
     </message>
     <message>
-        <location line="+1"/>
         <source>Meta+0</source>
-        <translation>Meta+0</translation>
+        <translation type="vanished">Meta+0</translation>
     </message>
     <message>
-        <location line="+0"/>
+        <location line="+1"/>
         <source>Ctrl+0</source>
         <translation>Ctrl+0</translation>
     </message>
     <message>
-        <location line="+22"/>
+        <location line="+20"/>
         <source>Select Word Under Cursor</source>
         <translation>Izberite Beseda pod kazalcem</translation>
     </message>
@@ -12971,62 +20994,60 @@ Vrednost, manjša od 100 %, lahko povzroči prekrivanje in neporavnano grafiko.<
         <translation>Pojdite na Začetek dokumenta</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+1"/>
         <source>Go to Document End</source>
         <translation>Pojdite na konec dokumenta</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+1"/>
         <source>Go to Line Start</source>
         <translation>Pojdite na Začetek vrstice</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+1"/>
         <source>Go to Line End</source>
         <translation>Pojdite na konec vrstice</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+1"/>
         <source>Go to Next Line</source>
         <translation>Pojdite v naslednjo vrstico</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+1"/>
         <source>Go to Previous Line</source>
         <translation>Pojdite na prejšnjo vrstico</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+1"/>
         <source>Go to Previous Character</source>
         <translation>Pojdite na prejšnji znak</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+1"/>
         <source>Go to Next Character</source>
         <translation>Pojdite na naslednji znak</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+1"/>
         <source>Go to Previous Word</source>
         <translation>Pojdite na prejšnjo besedo</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+1"/>
         <source>Go to Next Word</source>
         <translation>Pojdite na Naslednja beseda</translation>
     </message>
     <message>
-        <location line="+2"/>
         <source>Go to Previous Word Camel Case</source>
-        <translation>Pojdi na prejšnjo besedo Camel Case</translation>
+        <translation type="vanished">Pojdi na prejšnjo besedo Camel Case</translation>
     </message>
     <message>
-        <location line="+2"/>
         <source>Go to Next Word Camel Case</source>
-        <translation>Pojdite na naslednjo besedo Camel Case</translation>
+        <translation type="vanished">Pojdite na naslednjo besedo Camel Case</translation>
     </message>
     <message>
-        <location line="+4"/>
+        <location line="+6"/>
         <source>Go to Line Start with Selection</source>
         <translation>Pojdite na vrstico Začni z izbiro</translation>
     </message>
@@ -13066,17 +21087,15 @@ Vrednost, manjša od 100 %, lahko povzroči prekrivanje in neporavnano grafiko.<
         <translation>Pojdite na naslednjo besedo z izbiro</translation>
     </message>
     <message>
-        <location line="+2"/>
         <source>Go to Previous Word Camel Case with Selection</source>
-        <translation>Pojdite na prejšnjo besedo Camel Case z izbiro</translation>
+        <translation type="vanished">Pojdite na prejšnjo besedo Camel Case z izbiro</translation>
     </message>
     <message>
-        <location line="+2"/>
         <source>Go to Next Word Camel Case with Selection</source>
-        <translation>Pojdite na naslednjo besedo Camel Case with Selection</translation>
+        <translation type="vanished">Pojdite na naslednjo besedo Camel Case with Selection</translation>
     </message>
     <message>
-        <location line="-90"/>
+        <location line="-72"/>
         <source>Ctrl+&lt;</source>
         <translation>Ctrl+&lt;</translation>
     </message>
@@ -13086,7 +21105,7 @@ Vrednost, manjša od 100 %, lahko povzroči prekrivanje in neporavnano grafiko.<
         <translation>Ctrl+&gt;</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+6"/>
         <source>Increase Font Size</source>
         <translation>Povečaj velikost pisave</translation>
     </message>
@@ -13106,7 +21125,7 @@ Vrednost, manjša od 100 %, lahko povzroči prekrivanje in neporavnano grafiko.<
         <translation>Ctrl+-</translation>
     </message>
     <message>
-        <location line="-187"/>
+        <location line="-178"/>
         <source>Ctrl+{</source>
         <translation>Ctrl+{</translation>
     </message>
@@ -13156,7 +21175,7 @@ Vrednost, manjša od 100 %, lahko povzroči prekrivanje in neporavnano grafiko.<
         <translation>Ctrl+Alt+Down</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/texteditor/texteditorsettings.cpp" line="-253"/>
+        <location filename="../../../src/plugins/texteditor/texteditorsettings.cpp" line="-255"/>
         <source>Text</source>
         <translation>Besedilo</translation>
     </message>
@@ -13374,6 +21393,16 @@ Uporablja se za označevanje vsebujoče funkcije uporabe simbola.</translation>
         <location line="+0"/>
         <source>Name of a type.</source>
         <translation>Ime vrste.</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Concept</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Name of a concept.</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
@@ -14017,24 +22046,25 @@ Ne bo uporabljen za presledke v komentarjih in nizih.</translation>
         <translation>Implicitna ročna validacija kritja</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/texteditor/behaviorsettingspage.cpp" line="+59"/>
+        <location filename="../../../src/plugins/texteditor/behaviorsettingspage.cpp" line="+55"/>
         <source>Global</source>
         <comment>Settings</comment>
         <translation>Globalno</translation>
     </message>
     <message>
-        <location line="+23"/>
-        <location filename="../../../src/plugins/texteditor/completionsettingspage.cpp" line="+290"/>
-        <location filename="../../../src/plugins/texteditor/displaysettingspage.cpp" line="+226"/>
-        <location filename="../../../src/plugins/texteditor/fontsettingspage.cpp" line="+657"/>
-        <location filename="../../../src/plugins/texteditor/highlightersettingspage.cpp" line="+163"/>
-        <location filename="../../../src/plugins/texteditor/snippets/snippetssettingspage.cpp" line="+219"/>
+        <location line="+68"/>
+        <location filename="../../../src/plugins/texteditor/commentssettings.cpp" line="+63"/>
+        <location filename="../../../src/plugins/texteditor/completionsettingspage.cpp" line="+247"/>
+        <location filename="../../../src/plugins/texteditor/displaysettingspage.cpp" line="+210"/>
+        <location filename="../../../src/plugins/texteditor/fontsettingspage.cpp" line="+664"/>
+        <location filename="../../../src/plugins/texteditor/highlightersettingspage.cpp" line="+161"/>
+        <location filename="../../../src/plugins/texteditor/snippets/snippetssettingspage.cpp" line="+224"/>
         <source>Text Editor</source>
         <translation>Urejevalnik besedil</translation>
     </message>
     <message>
         <location line="-3"/>
-        <location filename="../../../src/plugins/texteditor/completionsettingspage.cpp" line="-134"/>
+        <location filename="../../../src/plugins/texteditor/completionsettingspage.cpp" line="-109"/>
         <source>Behavior</source>
         <translation>Obnašanje</translation>
     </message>
@@ -14044,7 +22074,7 @@ Ne bo uporabljen za presledke v komentarjih in nizih.</translation>
         <translation>Ni datoteka z barvno shemo.</translation>
     </message>
     <message>
-        <location filename="../../../../build/share/qtcreator/translations/snippets_tr.h" line="+3"/>
+        <location filename="../../../../build/share/qtcreator/translations/snippets_tr.h" line="+5"/>
         <source>derived from QObject</source>
         <comment>group:&apos;C++&apos; trigger:&apos;class&apos;</comment>
         <translation>izpeljan iz QObject</translation>
@@ -14105,9 +22135,14 @@ Ne bo uporabljen za presledke v komentarjih in nizih.</translation>
     </message>
     <message>
         <location line="+1"/>
+        <source>(type name READ name WRITE setName NOTIFY nameChanged FINAL)</source>
+        <comment>group:&apos;C++&apos; trigger:&apos;Q_PROPERTY&apos;</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>(type name READ name WRITE setName NOTIFY nameChanged)</source>
         <comment>group:&apos;C++&apos; trigger:&apos;Q_PROPERTY&apos;</comment>
-        <translation>(ime vnesite READ name WRITE setName NOTIFY nameChanged)</translation>
+        <translation type="vanished">(ime vnesite READ name WRITE setName NOTIFY nameChanged)</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -14132,6 +22167,54 @@ Ne bo uporabljen za presledke v komentarjih in nizih.</translation>
         <source>with target</source>
         <comment>group:&apos;QML&apos; trigger:&apos;PropertyAction&apos;</comment>
         <translation>s tarčo</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>QuickTest Test Case</source>
+        <comment>group:&apos;QML&apos; trigger:&apos;TestCase&apos;</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>GTest Function</source>
+        <comment>group:&apos;C++&apos; trigger:&apos;TEST&apos;</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>GTest Fixture</source>
+        <comment>group:&apos;C++&apos; trigger:&apos;TEST_F&apos;</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>GTest Parameterized</source>
+        <comment>group:&apos;C++&apos; trigger:&apos;TEST_P&apos;</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Test Case</source>
+        <comment>group:&apos;C++&apos; trigger:&apos;BOOST_AUTO_TEST_CASE&apos;</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Test Suite</source>
+        <comment>group:&apos;C++&apos; trigger:&apos;BOOST_AUTO_TEST_SUITE&apos;</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Catch Test Case</source>
+        <comment>group:&apos;C++&apos; trigger:&apos;TEST_CASE&apos;</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Catch Scenario</source>
+        <comment>group:&apos;C++&apos; trigger:&apos;SCENARIO&apos;</comment>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
@@ -14140,12 +22223,12 @@ Ne bo uporabljen za presledke v komentarjih in nizih.</translation>
         <translation>primer</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/texteditor/basefilefind.cpp" line="+48"/>
+        <location filename="../../../src/plugins/texteditor/basefilefind.cpp" line="+139"/>
         <source>Internal</source>
         <translation>Notranji</translation>
     </message>
     <message>
-        <location line="+261"/>
+        <location line="+219"/>
         <source>Searching</source>
         <translation>Iskanje</translation>
     </message>
@@ -14160,7 +22243,7 @@ Ne bo uporabljen za presledke v komentarjih in nizih.</translation>
         </translation>
     </message>
     <message numerus="yes">
-        <location line="+30"/>
+        <location line="+29"/>
         <source>%n occurrences replaced.</source>
         <translation>
             <numerusform>Zamenjanih %n pojavitev.</numerusform>
@@ -14170,7 +22253,7 @@ Ne bo uporabljen za presledke v komentarjih in nizih.</translation>
         </translation>
     </message>
     <message>
-        <location line="+158"/>
+        <location line="+178"/>
         <source>Aborting replace.</source>
         <translation>Prekinitev zamenjave.</translation>
     </message>
@@ -14180,12 +22263,12 @@ Ne bo uporabljen za presledke v komentarjih in nizih.</translation>
         <translation>%1 od %2</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/texteditor/codestyleeditor.cpp" line="+51"/>
+        <location filename="../../../src/plugins/texteditor/codestyleeditor.cpp" line="+52"/>
         <source>Edit preview contents to see how the current settings are applied to custom code snippets. Changes in the preview do not affect the current settings.</source>
         <translation>Uredite vsebino predogleda, da vidite, kako se trenutne nastavitve uporabljajo za delčke kode po meri. Spremembe v predogledu ne vplivajo na trenutne nastavitve.</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/texteditor/extraencodingsettings.cpp" line="+59"/>
+        <location filename="../../../src/plugins/texteditor/extraencodingsettings.cpp" line="+42"/>
         <source>Unix (LF)</source>
         <translation>Unix (LF)</translation>
     </message>
@@ -14195,12 +22278,12 @@ Ne bo uporabljen za presledke v komentarjih in nizih.</translation>
         <translation>Windows (CRLF)</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/texteditor/findinfiles.cpp" line="+62"/>
+        <location filename="../../../src/plugins/texteditor/findinfiles.cpp" line="+52"/>
         <source>Files in File System</source>
         <translation>Datoteke v datotečnem sistemu</translation>
     </message>
     <message>
-        <location line="+31"/>
+        <location line="+25"/>
         <source>Folder &quot;%2&quot;:</source>
         <translation>Mapa »%2«:</translation>
     </message>
@@ -14217,7 +22300,7 @@ Razen: %3
 %4</translation>
     </message>
     <message>
-        <location line="+43"/>
+        <location line="+48"/>
         <source>Search engine:</source>
         <translation>Iskalnik:</translation>
     </message>
@@ -14232,12 +22315,12 @@ Razen: %3
         <translation>Imenik za iskanje</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/texteditor/findinopenfiles.cpp" line="-49"/>
+        <location filename="../../../src/plugins/texteditor/findinopenfiles.cpp" line="-39"/>
         <source>Open Documents</source>
         <translation>Odprti dokumenti</translation>
     </message>
     <message>
-        <location line="+36"/>
+        <location line="+26"/>
         <source>Open documents:</source>
         <translation>Odprti dokumenti:</translation>
     </message>
@@ -14249,36 +22332,44 @@ Razen: %3
 %1</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/texteditor/fontsettings.cpp" line="+164"/>
+        <location filename="../../../src/plugins/texteditor/fontsettings.cpp" line="+166"/>
         <source>Unused variable</source>
         <translation>Neuporabljena spremenljivka</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/texteditor/formattexteditor.cpp" line="+59"/>
+        <location filename="../../../src/plugins/texteditor/formattexteditor.cpp" line="+71"/>
         <source>Cannot create temporary file &quot;%1&quot;: %2.</source>
         <translation>Ni mogoče ustvariti začasne datoteke &quot;%1&quot;: %2.</translation>
     </message>
     <message>
-        <location line="+13"/>
         <source>TextEditor</source>
         <comment>Failed to format: %1.</comment>
-        <translation>Urejevalnik besedil</translation>
+        <translation type="vanished">Urejevalnik besedil</translation>
     </message>
     <message>
-        <location line="+11"/>
+        <location line="+21"/>
         <source>Cannot read file &quot;%1&quot;: %2.</source>
         <translation>Datoteke »%1« ni mogoče prebrati: %2.</translation>
     </message>
     <message>
-        <location line="+17"/>
+        <location line="+15"/>
         <source>Cannot call %1 or some other error occurred. Timeout reached while formatting file %2.</source>
         <translation>%1 ni mogoče poklicati ali pa je prišlo do kakšne druge napake. Med formatiranjem datoteke %2 je bila dosežena časovna omejitev.</translation>
     </message>
     <message>
-        <location line="+152"/>
         <source>TextEditor</source>
         <comment>Error in text formatting: %1</comment>
-        <translation>Urejevalnik besedil</translation>
+        <translation type="vanished">Urejevalnik besedil</translation>
+    </message>
+    <message>
+        <location line="-25"/>
+        <source>Failed to format: %1.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+175"/>
+        <source>Error in text formatting: %1</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+16"/>
@@ -14286,17 +22377,17 @@ Razen: %3
         <translation>Ni bilo mogoče formatirati datoteke %1.</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+5"/>
         <source>File %1 was closed.</source>
         <translation>Datoteka %1 je bila zaprta.</translation>
     </message>
     <message>
-        <location line="+47"/>
+        <location line="+46"/>
         <source>File was modified.</source>
         <translation>Datoteka je bila spremenjena.</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/texteditor/highlighter.cpp" line="+247"/>
+        <location filename="../../../src/plugins/texteditor/highlighterhelper.cpp" line="+196"/>
         <source>Highlighter updates: done</source>
         <translation>Posodobitve označevalcev: končano</translation>
     </message>
@@ -14306,18 +22397,18 @@ Razen: %3
         <translation>Posodobitve označevalcev:</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+3"/>
         <source>Highlighter updates: starting</source>
         <translation>Posodobitve označevalcev: začetek</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/texteditor/highlightersettingspage.cpp" line="-113"/>
+        <location filename="../../../src/plugins/texteditor/highlightersettingspage.cpp" line="-86"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Highlight definitions are provided by the &lt;a href=&quot;https://api.kde.org/frameworks/syntax-highlighting/html/index.html&quot;&gt;KSyntaxHighlighting&lt;/a&gt; engine.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Definicije osvetlitve zagotavlja &lt;a href=&quot;https://api.kde.org/frameworks/syntax-highlighting/html/index.html&quot;&gt;KSyntaxHighlighting&lt;/ a&gt; motor.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location line="+4"/>
-        <location filename="../../../src/plugins/texteditor/texteditor.cpp" line="+3203"/>
+        <location filename="../../../src/plugins/texteditor/texteditor.cpp" line="-180"/>
         <source>Download Definitions</source>
         <translation>Dobi določila ...</translation>
     </message>
@@ -14327,7 +22418,7 @@ Razen: %3
         <translation>Prenesite manjkajoče in posodobite obstoječe sintaksne definicijske datoteke.</translation>
     </message>
     <message>
-        <location line="+9"/>
+        <location line="+10"/>
         <source>Reload Definitions</source>
         <translation>Ponovno naloži definicije</translation>
     </message>
@@ -14367,12 +22458,12 @@ Razen: %3
         <translation>Prenos končan</translation>
     </message>
     <message>
-        <location line="+67"/>
+        <location line="+39"/>
         <source>Generic Highlighter</source>
         <translation>Splošno poudarjanje</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/texteditor/outlinefactory.cpp" line="+48"/>
+        <location filename="../../../src/plugins/texteditor/outlinefactory.cpp" line="+113"/>
         <source>No outline available</source>
         <translation>Na voljo ni nobenega obrisa</translation>
     </message>
@@ -14382,22 +22473,23 @@ Razen: %3
         <translation>Uskladi z urejevalnikom</translation>
     </message>
     <message>
-        <location line="+10"/>
+        <location line="+11"/>
         <source>Filter tree</source>
         <translation>Filtriraj drevo</translation>
     </message>
     <message>
-        <location line="+10"/>
+        <location filename="../../../src/plugins/languageclient/languageclientoutline.cpp" line="+130"/>
+        <location filename="../../../src/plugins/texteditor/outlinefactory.cpp" line="+11"/>
         <source>Sort Alphabetically</source>
         <translation>Razvrsti po abecedi</translation>
     </message>
     <message>
-        <location line="+125"/>
+        <location filename="../../../src/plugins/texteditor/outlinefactory.cpp" line="+126"/>
         <source>Outline</source>
         <translation>Obris</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/texteditor/refactoringchanges.cpp" line="+300"/>
+        <location filename="../../../src/plugins/texteditor/refactoringchanges.cpp" line="+223"/>
         <source>Refactoring cannot be applied.</source>
         <translation>Refactoringa ni mogoče uporabiti.</translation>
     </message>
@@ -14417,22 +22509,22 @@ Razen: %3
         <translation>Manjka ločilo zaključne spremenljivke za:</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/texteditor/snippets/snippetscollection.cpp" line="+287"/>
+        <location filename="../../../src/plugins/texteditor/snippets/snippetscollection.cpp" line="+285"/>
         <source>Cannot create user snippet directory %1</source>
         <translation>Uporabniške mape za izrezke (%1) ni moč ustvariti.</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/texteditor/textdocument.cpp" line="+376"/>
+        <location filename="../../../src/plugins/texteditor/textdocument.cpp" line="+401"/>
         <source>Diff Against Current File</source>
         <translation>Razlika glede na trenutno datoteko</translation>
     </message>
     <message>
-        <location line="+406"/>
+        <location line="+425"/>
         <source>Opening File</source>
         <translation>Odpiranje datoteke</translation>
     </message>
     <message>
-        <location filename="../../../src/plugins/texteditor/textmark.cpp" line="+286"/>
+        <location filename="../../../src/plugins/texteditor/textmark.cpp" line="+300"/>
         <source>Show inline annotations for %1</source>
         <translation>Prikaži opombe v vrstici za %1</translation>
     </message>
@@ -14446,11 +22538,162 @@ Razen: %3
         <source>Show Diagnostic Settings</source>
         <translation>Prikaži diagnostične nastavitve</translation>
     </message>
+    <message>
+        <location filename="../../../src/plugins/texteditor/bookmark.cpp" line="+21"/>
+        <location line="+5"/>
+        <source>Bookmark</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/texteditor/bookmarkfilter.cpp" line="+25"/>
+        <location filename="../../../src/plugins/texteditor/bookmarkmanager.cpp" line="+202"/>
+        <location line="+827"/>
+        <source>Bookmarks</source>
+        <translation type="unfinished">Zaznamki</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Locates bookmarks. Filter by file name, by the text on the line of the bookmark, or by the bookmark&apos;s note text.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/texteditor/bookmarkmanager.cpp" line="-788"/>
+        <source>Move Up</source>
+        <translation type="unfinished">Premakni gor</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Move Down</source>
+        <translation type="unfinished">Premakni dol</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>&amp;Edit</source>
+        <translation type="unfinished">&amp;Urejanje</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>&amp;Remove</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Remove All</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+47"/>
+        <source>Remove All Bookmarks</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Are you sure you want to remove all bookmarks from all files in the current session?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+29"/>
+        <location line="+44"/>
+        <location line="+516"/>
+        <source>Edit Bookmark</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-559"/>
+        <location line="+27"/>
+        <source>Toggle Bookmark</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-15"/>
+        <source>&amp;Bookmarks</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+53"/>
+        <source>Previous Bookmark</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+12"/>
+        <source>Next Bookmark</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+14"/>
+        <source>Previous Bookmark in Document</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Next Bookmark in Document</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+473"/>
+        <source>Note text:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Line number:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/texteditor/jsoneditor.cpp" line="+158"/>
+        <source>JSON Editor</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/texteditor/markdowneditor.cpp" line="+9"/>
+        <source>Emphasis</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+20"/>
+        <source>Inline Code</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Hyperlink</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Show Editor</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Show Preview</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Swap Views</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/texteditor/typehierarchy.cpp" line="+33"/>
+        <source>Type Hierarchy</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+32"/>
+        <source>No type hierarchy available</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+40"/>
+        <source>Reloads the type hierarchy for the symbol under the cursor.</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>QtC::Utils</name>
     <message>
-        <location filename="../../../src/libs/utils/classnamevalidatinglineedit.cpp" line="+82"/>
+        <location filename="../../../src/libs/utils/classnamevalidatinglineedit.cpp" line="+83"/>
         <source>The class name must not contain namespace delimiters.</source>
         <translation>Ime razreda ne sme vsebovati ločil imenskega prostora.</translation>
     </message>
@@ -14465,12 +22708,12 @@ Razen: %3
         <translation>Ime razreda vsebuje neveljavne znake.</translation>
     </message>
     <message>
-        <location filename="../../../src/libs/utils/terminalprocess.cpp" line="+62"/>
+        <location filename="../../../src/libs/utils/terminalinterface.cpp" line="+23"/>
         <source>Cannot set up communication channel: %1</source>
         <translation>Ni moč vzpostaviti komunikacijskega kanala: %1</translation>
     </message>
     <message>
-        <location line="+11"/>
+        <location line="+5"/>
         <source>Cannot create temporary file: %1</source>
         <translation>Ni moč ustvariti začasne datoteke: %1</translation>
     </message>
@@ -14480,17 +22723,17 @@ Razen: %3
         <translation>Začasne datoteke ni moč zapisati. Ali je disk poln?</translation>
     </message>
     <message>
-        <location line="+8"/>
+        <location line="+5"/>
         <source>Cannot create temporary directory &quot;%1&quot;: %2</source>
         <translation>Ni mogoče ustvariti začasnega imenika &quot;%1&quot;: %2</translation>
     </message>
     <message>
-        <location line="+8"/>
+        <location line="+5"/>
         <source>Unexpected output from helper program (%1).</source>
         <translation>Nepričakovan izhod od pomožnega programa.</translation>
     </message>
     <message>
-        <location line="+6"/>
+        <location line="+5"/>
         <source>Cannot change to working directory &quot;%1&quot;: %2</source>
         <translation>Ni mogoče spremeniti v delovni imenik &quot;%1&quot;: %2</translation>
     </message>
@@ -14500,57 +22743,59 @@ Razen: %3
         <translation>Ni mogoče izvesti &quot;%1&quot;: %2</translation>
     </message>
     <message>
-        <location line="+195"/>
+        <location line="+109"/>
+        <source>Failed to start terminal process. The stub exited before the inferior was started.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+60"/>
+        <source>Cannot set permissions on temporary directory &quot;%1&quot;: %2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>The process &quot;%1&quot; could not be started: %2</source>
-        <translation>Procesa »%1« ni bilo mogoče zagnati: %2</translation>
+        <translation type="vanished">Procesa »%1« ni bilo mogoče zagnati: %2</translation>
     </message>
     <message>
-        <location line="+25"/>
         <source>Quoting error in command.</source>
-        <translation>Napaka glede narekovajev v ukazu.</translation>
+        <translation type="vanished">Napaka glede narekovajev v ukazu.</translation>
     </message>
     <message>
-        <location line="+6"/>
         <source>Debugging complex shell commands in a terminal is currently not supported.</source>
-        <translation>Razhroščevanje kompleksnih lupinskih ukazov v terminalu trenutno ni podprto.</translation>
+        <translation type="vanished">Razhroščevanje kompleksnih lupinskih ukazov v terminalu trenutno ni podprto.</translation>
     </message>
     <message>
-        <location line="+20"/>
         <source>Quoting error in terminal command.</source>
-        <translation>Napaka glede narekovajev v terminalskem ukazu.</translation>
+        <translation type="vanished">Napaka glede narekovajev v terminalskem ukazu.</translation>
     </message>
     <message>
-        <location line="+1"/>
         <source>Terminal command may not be a shell command.</source>
-        <translation>Terminalski ukaz morda ni lupinski ukaz.</translation>
+        <translation type="vanished">Terminalski ukaz morda ni lupinski ukaz.</translation>
     </message>
     <message>
-        <location line="+55"/>
         <source>Cannot start the terminal emulator &quot;%1&quot;, change the setting in the Environment preferences. (%2)</source>
-        <translation>Terminalskega emulatorja »%1« ni mogoče zagnati, spremenite nastavitev v nastavitvah okolja. (%2)</translation>
+        <translation type="vanished">Terminalskega emulatorja »%1« ni mogoče zagnati, spremenite nastavitev v nastavitvah okolja. (%2)</translation>
     </message>
     <message>
-        <location line="+131"/>
+        <location line="+8"/>
         <source>Cannot create socket &quot;%1&quot;: %2</source>
         <translation>Ni mogoče ustvariti vtičnice &quot;%1&quot;: %2</translation>
     </message>
     <message>
-        <location line="-470"/>
+        <location line="-171"/>
         <source>Press &lt;RETURN&gt; to close this window...</source>
         <translation>Da zaprete to okno, pritisnite &lt;Vnašalko&gt; …</translation>
     </message>
     <message>
-        <location line="+549"/>
         <source>Cannot obtain a handle to the inferior: %1</source>
-        <translation>Ni moč dobiti reference za podproces: %1</translation>
+        <translation type="vanished">Ni moč dobiti reference za podproces: %1</translation>
     </message>
     <message>
-        <location line="+11"/>
         <source>Cannot obtain exit status from inferior: %1</source>
-        <translation>Ni moč dobiti izhodnega stanja od podprocesa: %1</translation>
+        <translation type="vanished">Ni moč dobiti izhodnega stanja od podprocesa: %1</translation>
     </message>
     <message numerus="yes">
-        <location filename="../../../src/libs/utils/filesearch.cpp" line="+26"/>
+        <location filename="../../../src/libs/utils/filesearch.cpp" line="+205"/>
         <source>%1: canceled. %n occurrences found in %2 files.</source>
         <translation>
             <numerusform>%1: preklicano. Najdena %n pojavitev v %2 datotekah.</numerusform>
@@ -14570,7 +22815,7 @@ Razen: %3
         </translation>
     </message>
     <message>
-        <location line="+501"/>
+        <location line="+280"/>
         <source>Fi&amp;le pattern:</source>
         <translation>V&amp;zorec datoteke:</translation>
     </message>
@@ -14581,11 +22826,25 @@ Razen: %3
     </message>
     <message>
         <location line="+5"/>
-        <source>List of comma separated wildcard filters. Files with file name or full file path matching any filter are included.</source>
-        <translation>Seznam filtrov z nadomestnimi znaki, ločenih z vejicami. Vključene so datoteke z imenom datoteke ali celotno potjo datoteke, ki se ujema s katerim koli filtrom.</translation>
+        <source>List of comma separated wildcard filters.</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../src/libs/utils/filewizardpage.cpp" line="+47"/>
+        <location line="+2"/>
+        <source>Files with file name or full file path matching any filter are included.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Files with file name or full file path matching any filter are excluded.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>List of comma separated wildcard filters. Files with file name or full file path matching any filter are included.</source>
+        <translation type="vanished">Seznam filtrov z nadomestnimi znaki, ločenih z vejicami. Vključene so datoteke z imenom datoteke ali celotno potjo datoteke, ki se ujema s katerim koli filtrom.</translation>
+    </message>
+    <message>
+        <location filename="../../../src/libs/utils/filewizardpage.cpp" line="+48"/>
         <source>Choose the Location</source>
         <translation>Izberite mesto</translation>
     </message>
@@ -14596,13 +22855,13 @@ Razen: %3
     </message>
     <message>
         <location line="+1"/>
-        <location filename="../../../src/libs/utils/pathchooser.cpp" line="+653"/>
+        <location filename="../../../src/libs/utils/pathchooser.cpp" line="+648"/>
         <source>Path:</source>
         <translation>Pot:</translation>
     </message>
     <message>
         <location line="+20"/>
-        <location filename="../../../src/libs/utils/projectintropage.cpp" line="+138"/>
+        <location filename="../../../src/libs/utils/projectintropage.cpp" line="+141"/>
         <source>Location</source>
         <translation>Mesto</translation>
     </message>
@@ -14612,7 +22871,7 @@ Razen: %3
         <translation>Privzeta pripona, če ne podate izrecno končnice datoteke, je &quot;.%1&quot;.</translation>
     </message>
     <message>
-        <location filename="../../../src/libs/utils/pathchooser.cpp" line="-384"/>
+        <location filename="../../../src/libs/utils/pathchooser.cpp" line="-376"/>
         <source>Local</source>
         <translation>Krajevno</translation>
     </message>
@@ -14632,7 +22891,7 @@ Razen: %3
         <translation>Brskanje …</translation>
     </message>
     <message>
-        <location line="+102"/>
+        <location line="+98"/>
         <source>Choose Directory</source>
         <translation>Izberite mapo</translation>
     </message>
@@ -14649,56 +22908,56 @@ Razen: %3
         <translation>Izberite datoteko</translation>
     </message>
     <message>
-        <location line="+109"/>
+        <location line="+176"/>
         <source>The path &quot;%1&quot; expanded to an empty string.</source>
         <translation>Pot »%1« je razširjena v prazen niz.</translation>
     </message>
     <message>
-        <location line="+9"/>
-        <location line="+12"/>
-        <location line="+24"/>
+        <location line="-72"/>
+        <location line="+10"/>
+        <location line="+20"/>
         <source>The path &quot;%1&quot; does not exist.</source>
         <translation>Pot »%1« ne obstaja.</translation>
     </message>
     <message>
-        <location line="-31"/>
-        <location line="+43"/>
+        <location line="-26"/>
+        <location line="+36"/>
         <source>The path &quot;%1&quot; is not a directory.</source>
         <translation>Pot »%1« ni imenik.</translation>
     </message>
     <message>
-        <location line="-31"/>
-        <location line="+12"/>
+        <location line="-26"/>
+        <location line="+10"/>
         <source>The path &quot;%1&quot; is not a file.</source>
         <translation>Pot »%1« ni datoteka.</translation>
     </message>
     <message>
-        <location line="-5"/>
+        <location line="-4"/>
         <source>The directory &quot;%1&quot; does not exist.</source>
         <translation>Imenik &quot;%1&quot; ne obstaja.</translation>
     </message>
     <message>
-        <location line="+17"/>
+        <location line="+14"/>
         <source>The path &quot;%1&quot; is not an executable file.</source>
         <translation>Pot »%1« ni izvršljiva datoteka.</translation>
     </message>
     <message>
-        <location line="+13"/>
+        <location line="+10"/>
         <source>Invalid path &quot;%1&quot;.</source>
         <translation>Neveljavna pot &quot;%1&quot;.</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+5"/>
         <source>Cannot execute &quot;%1&quot;.</source>
         <translation>Ni mogoče izvesti »%1«.</translation>
     </message>
     <message>
-        <location line="+10"/>
         <source>Full path: &quot;%1&quot;</source>
-        <translation>Celotna pot: &quot;%1&quot;</translation>
+        <translation type="vanished">Celotna pot: &quot;%1&quot;</translation>
     </message>
     <message>
-        <location line="-88"/>
+        <location line="-58"/>
+        <location line="+74"/>
         <source>The path must not be empty.</source>
         <translation>Pot ne sme biti prazna.</translation>
     </message>
@@ -14718,12 +22977,12 @@ Razen: %3
         <translation>Počisti</translation>
     </message>
     <message>
-        <location filename="../../../src/libs/utils/projectintropage.cpp" line="-68"/>
+        <location filename="../../../src/libs/utils/projectintropage.cpp" line="-71"/>
         <source>Introduction and Project Location</source>
         <translation>Uvod in mesto projekta</translation>
     </message>
     <message>
-        <location line="+15"/>
+        <location line="+17"/>
         <source>Use as default project location</source>
         <translation>Uporabi kot privzeto mesto projekta</translation>
     </message>
@@ -14733,7 +22992,7 @@ Razen: %3
         <translation>Vnesite ime projekta</translation>
     </message>
     <message>
-        <location line="+125"/>
+        <location line="+121"/>
         <source>Directory &quot;%1&quot; will be created.</source>
         <translation>Imenik &quot;%1&quot; bo ustvarjen.</translation>
     </message>
@@ -14748,7 +23007,7 @@ Razen: %3
         <translation>Datoteka s tem imenom že obstaja.</translation>
     </message>
     <message>
-        <location line="+73"/>
+        <location line="+92"/>
         <source>Project name is invalid.</source>
         <translation>Ime projekta ni veljavno.</translation>
     </message>
@@ -14763,12 +23022,12 @@ Razen: %3
         <translation>Najden je neveljaven znak »%1«.</translation>
     </message>
     <message>
-        <location line="-217"/>
+        <location line="-232"/>
         <source>Name:</source>
         <translation>Ime:</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+4"/>
         <source>Create in:</source>
         <translation>Ustvari v:</translation>
     </message>
@@ -14825,12 +23084,12 @@ Razen: %3
         <translation>Za&amp;pri vse</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="-3"/>
         <source>Save &amp;as...</source>
         <translation>Shrani kot...</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+5"/>
         <source>&amp;Save</source>
         <translation>&amp;Shrani</translation>
     </message>
@@ -14861,9 +23120,9 @@ Razen: %3
     %1</translation>
     </message>
     <message>
-        <location filename="../../../src/libs/utils/fileutils.cpp" line="+87"/>
+        <location filename="../../../src/libs/utils/fileutils.cpp" line="+89"/>
         <location line="+33"/>
-        <location filename="../../../src/libs/utils/persistentsettings.cpp" line="+418"/>
+        <location filename="../../../src/libs/utils/persistentsettings.cpp" line="+401"/>
         <source>File Error</source>
         <translation>Napaka glede datoteke</translation>
     </message>
@@ -14876,22 +23135,44 @@ Razen: %3
         <translation type="vanished">Ni bilo mogoče obnoviti delovnega prostora %1</translation>
     </message>
     <message>
-        <location filename="../../../src/libs/utils/archive.cpp" line="+124"/>
+        <location filename="../../../src/libs/utils/unarchiver.cpp" line="+112"/>
         <source>File format not supported.</source>
         <translation>Format datoteke ni podprt.</translation>
     </message>
     <message>
-        <location line="+8"/>
+        <location line="+11"/>
         <source>Could not find any unarchiving executable in PATH (%1).</source>
         <translation>V PATH (%1) ni bilo mogoče najti nobene izvršljive datoteke za razarhiviranje.</translation>
     </message>
     <message>
-        <location line="+39"/>
+        <location line="+18"/>
+        <source>No source file set.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>No destination directory set.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+14"/>
+        <source>Failed to open output file.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Failed to write output file.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+12"/>
+        <location line="+21"/>
         <source>Command failed.</source>
         <translation>Ukaz ni uspel.</translation>
     </message>
     <message>
-        <location line="+4"/>
+        <location line="-16"/>
+        <location line="+20"/>
         <source>Running %1
 in &quot;%2&quot;.
 
@@ -14903,12 +23184,12 @@ v &quot;%2&quot;.
 </translation>
     </message>
     <message>
-        <location filename="../../../src/libs/utils/aspects.cpp" line="+1142"/>
+        <location filename="../../../src/libs/utils/aspects.cpp" line="+1208"/>
         <source>Reset</source>
         <translation>Ponastavi</translation>
     </message>
     <message>
-        <location line="+876"/>
+        <location line="+1385"/>
         <source>Enable</source>
         <translation>Omogoči</translation>
     </message>
@@ -14919,41 +23200,47 @@ v &quot;%2&quot;.
     </message>
     <message>
         <location line="+1"/>
-        <source>Leave at Default</source>
-        <translation>Pusti privzeto</translation>
+        <source>Default</source>
+        <translation type="unfinished">Privzeto</translation>
     </message>
     <message>
-        <location filename="../../../src/libs/utils/basetreeview.cpp" line="+544"/>
+        <source>Leave at Default</source>
+        <translation type="vanished">Pusti privzeto</translation>
+    </message>
+    <message>
+        <location filename="../../../src/libs/utils/basetreeview.cpp" line="+542"/>
         <source>Show %1 Column</source>
         <translation>Pokaži %1 stolpec</translation>
     </message>
     <message>
-        <location filename="../../../src/libs/utils/checkablemessagebox.cpp" line="+60"/>
         <source>Do not ask again</source>
-        <translation>Ne vprašaj več</translation>
+        <translation type="vanished">Ne vprašaj več</translation>
     </message>
     <message>
-        <location line="+2"/>
         <source>Show Details...</source>
-        <translation>Pokaži podrobnosti...</translation>
+        <translation type="vanished">Pokaži podrobnosti...</translation>
     </message>
     <message>
-        <location line="+9"/>
         <source>Hide Details...</source>
-        <translation>Skrij podrobnosti ...</translation>
+        <translation type="vanished">Skrij podrobnosti ...</translation>
     </message>
     <message>
-        <location line="+403"/>
+        <location filename="../../../src/libs/utils/checkablemessagebox.cpp" line="+331"/>
         <source>Do not &amp;ask again</source>
         <translation>Ne vprašaj ponovno</translation>
     </message>
     <message>
-        <location line="+9"/>
+        <location line="+8"/>
         <source>Do not &amp;show again</source>
         <translation>Ne prikaži več</translation>
     </message>
     <message>
-        <location filename="../../../src/libs/utils/clangutils.cpp" line="+53"/>
+        <location filename="../../../src/libs/utils/clangutils.cpp" line="+49"/>
+        <source>No clangd executable specified.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
         <source>Failed to retrieve clangd version: Unexpected clangd output.</source>
         <translation>Ni bilo mogoče pridobiti različice clangd: Nepričakovan izhod clangd.</translation>
     </message>
@@ -14968,22 +23255,19 @@ v &quot;%2&quot;.
         <translation>Podrobnosti</translation>
     </message>
     <message>
-        <location filename="../../../src/libs/utils/devicefileaccess.cpp" line="+156"/>
         <source>copyFile is not implemented for &quot;%1&quot;</source>
-        <translation>copyFile ni implementiran za &quot;%1&quot;</translation>
+        <translation type="vanished">copyFile ni implementiran za &quot;%1&quot;</translation>
     </message>
     <message>
-        <location line="+36"/>
         <source>Cannot copy from %1, it is not a directory.</source>
-        <translation>Ni mogoče kopirati iz %1, to ni imenik.</translation>
+        <translation type="vanished">Ni mogoče kopirati iz %1, to ni imenik.</translation>
     </message>
     <message>
-        <location line="+6"/>
         <source>Cannot copy %1 to %2, it is not a writable directory.</source>
-        <translation>%1 ni mogoče kopirati v %2, to ni zapisljiv imenik.</translation>
+        <translation type="vanished">%1 ni mogoče kopirati v %2, to ni zapisljiv imenik.</translation>
     </message>
     <message>
-        <location line="+46"/>
+        <location filename="../../../src/libs/utils/devicefileaccess.cpp" line="+255"/>
         <source>Failed to copy recursively from &quot;%1&quot; to &quot;%2&quot; while trying to create tar archive from source: %3</source>
         <translation>Med poskusom ustvarjanja arhiva tar iz vira ni uspelo rekurzivno kopirati iz »%1« v »%2«: %3</translation>
     </message>
@@ -14993,32 +23277,75 @@ v &quot;%2&quot;.
         <translation>Rekurzivno kopiranje iz »%1« v »%2« med poskusom ekstrahiranja arhiva tar v cilj ni uspelo: %3</translation>
     </message>
     <message>
-        <location line="+57"/>
         <source>fileContents is not implemented for &quot;%1&quot;</source>
-        <translation>fileContents ni implementiran za &quot;%1&quot;</translation>
+        <translation type="vanished">fileContents ni implementiran za &quot;%1&quot;</translation>
+    </message>
+    <message>
+        <source>writeFileContents is not implemented for &quot;%1&quot;</source>
+        <translation type="vanished">writeFileContents ni implementiran za &quot;%1&quot;</translation>
+    </message>
+    <message>
+        <source>createTempFile is not implemented for &quot;%1&quot;</source>
+        <translation type="vanished">createTempFile ni implementiran za &quot;%1&quot;</translation>
+    </message>
+    <message>
+        <location line="-139"/>
+        <location line="+409"/>
+        <source>Path &quot;%1&quot; exists but is not a writable directory.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-356"/>
+        <source>copyFile is not implemented for &quot;%1&quot;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+30"/>
+        <source>Cannot copy from &quot;%1&quot;, it is not a directory.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Cannot copy &quot;%1&quot; to &quot;%2&quot;: %3</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+103"/>
+        <source>fileContents is not implemented for &quot;%1&quot;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>writeFileContents is not implemented for &quot;%1&quot;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+66"/>
+        <source>createTempFile is not implemented for &quot;%1&quot;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>watch is not implemented.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+180"/>
+        <source>Refusing to remove the standard directory &quot;%1&quot;.</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+12"/>
-        <source>writeFileContents is not implemented for &quot;%1&quot;</source>
-        <translation>writeFileContents ni implementiran za &quot;%1&quot;</translation>
-    </message>
-    <message>
-        <location line="+88"/>
-        <source>createTempFile is not implemented for &quot;%1&quot;</source>
-        <translation>createTempFile ni implementiran za &quot;%1&quot;</translation>
-    </message>
-    <message>
-        <location line="+148"/>
         <source>Refusing to remove root directory.</source>
         <translation>Zavrnitev odstranitve korenskega imenika.</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+6"/>
         <source>Refusing to remove your home directory.</source>
         <translation>Zavrnitev odstranitve domačega imenika.</translation>
     </message>
     <message>
-        <location line="+12"/>
+        <location line="+37"/>
         <source>Failed to remove directory &quot;%1&quot;.</source>
         <translation>Imenika »%1« ni bilo mogoče odstraniti.</translation>
     </message>
@@ -15028,67 +23355,101 @@ v &quot;%2&quot;.
         <translation>Datoteke »%1« ni bilo mogoče odstraniti.</translation>
     </message>
     <message>
-        <location line="+12"/>
+        <location line="+551"/>
+        <source>Failed creating temporary file &quot;%1&quot; (too many tries).</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>Failed to copy file &quot;%1&quot; to &quot;%2&quot;.</source>
-        <translation>Kopiranje datoteke »%1« v »%2« ni uspelo.</translation>
+        <translation type="vanished">Kopiranje datoteke »%1« v »%2« ni uspelo.</translation>
     </message>
     <message>
-        <location line="+73"/>
         <source>File &quot;%1&quot; does not exist</source>
-        <translation>Datoteka »%1« ne obstaja</translation>
+        <translation type="vanished">Datoteka »%1« ne obstaja</translation>
     </message>
     <message>
-        <location line="+3"/>
         <source>Could not open File &quot;%1&quot;</source>
-        <translation>Ni bilo mogoče odpreti datoteke »%1«</translation>
+        <translation type="vanished">Ni bilo mogoče odpreti datoteke »%1«</translation>
     </message>
     <message>
-        <location line="+11"/>
+        <location line="-449"/>
         <source>Cannot read &quot;%1&quot;: %2</source>
         <translation>Ni mogoče prebrati »%1«: %2</translation>
     </message>
     <message>
-        <location line="+14"/>
         <source>Could not open file &quot;%1&quot; for writing</source>
-        <translation>Ni bilo mogoče odpreti datoteke »%1« za pisanje</translation>
+        <translation type="vanished">Ni bilo mogoče odpreti datoteke »%1« za pisanje</translation>
     </message>
     <message>
-        <location line="+7"/>
         <source>Could not write to file &quot;%1&quot; (only %2 of %3 bytes written)</source>
-        <translation>Ni bilo mogoče zapisati v datoteko »%1« (zapisano samo %2 od %3 bajtov)</translation>
+        <translation type="vanished">Ni bilo mogoče zapisati v datoteko »%1« (zapisano samo %2 od %3 bajtov)</translation>
     </message>
     <message>
-        <location line="+12"/>
         <source>Could not create temporary file in &quot;%1&quot; (%2)</source>
-        <translation>Ni bilo mogoče ustvariti začasne datoteke v »%1« (%2)</translation>
+        <translation type="vanished">Ni bilo mogoče ustvariti začasne datoteke v »%1« (%2)</translation>
     </message>
     <message>
-        <location line="+222"/>
+        <location line="-87"/>
+        <location line="+406"/>
         <source>Failed to copy file &quot;%1&quot; to &quot;%2&quot;: %3</source>
         <translation>Kopiranje datoteke »%1« v »%2« ni uspelo: %3</translation>
     </message>
     <message>
-        <location line="+37"/>
+        <location line="-333"/>
+        <source>File &quot;%1&quot; does not exist.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Could not open File &quot;%1&quot;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+24"/>
+        <source>Could not open file &quot;%1&quot; for writing.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message numerus="yes">
+        <location line="+5"/>
+        <source>Could not write to file &quot;%1&quot; (only %2 of %n byte(s) written).</source>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+        </translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>Could not create temporary file in &quot;%1&quot; (%2).</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+138"/>
+        <source>Device is not connected</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+202"/>
         <source>Failed reading file &quot;%1&quot;: %2</source>
         <translation>Branje datoteke &quot;%1&quot; ni uspelo: %2</translation>
     </message>
     <message>
-        <location line="+21"/>
+        <location line="+23"/>
         <source>Failed writing file &quot;%1&quot;: %2</source>
         <translation>Zapisovanje datoteke »%1« ni uspelo: %2</translation>
     </message>
     <message>
-        <location line="+22"/>
+        <location line="+25"/>
         <source>Failed creating temporary file &quot;%1&quot;: %2</source>
         <translation>Ustvarjanje začasne datoteke &quot;%1&quot; ni uspelo: %2</translation>
     </message>
     <message>
-        <location line="+30"/>
         <source>Failed creating temporary file &quot;%1&quot; (too many tries)</source>
-        <translation>Ustvarjanje začasne datoteke »%1« ni uspelo (preveč poskusov)</translation>
+        <translation type="vanished">Ustvarjanje začasne datoteke »%1« ni uspelo (preveč poskusov)</translation>
     </message>
     <message>
-        <location filename="../../../src/libs/utils/differ.cpp" line="+924"/>
+        <location filename="../../../src/libs/utils/differ.cpp" line="+922"/>
         <source>Delete</source>
         <translation>Izbriši</translation>
     </message>
@@ -15158,12 +23519,11 @@ v &quot;%2&quot;.
         <translation>ime razdelka %1 od %2 za koncem datoteke</translation>
     </message>
     <message>
-        <location filename="../../../src/libs/utils/environmentdialog.cpp" line="+19"/>
+        <location filename="../../../src/libs/utils/environmentdialog.cpp" line="+18"/>
         <source>Edit Environment</source>
         <translation>Uredi okolje</translation>
     </message>
     <message>
-        <location line="+1"/>
         <source>Enter one environment variable per line.
 To set or change a variable, use VARIABLE=VALUE.
 To append to a variable, use VARIABLE+=VALUE.
@@ -15171,7 +23531,7 @@ To prepend to a variable, use VARIABLE=+VALUE.
 Existing variables can be referenced in a VALUE with ${OTHER}.
 To clear a variable, put its name on a line with nothing else on it.
 To disable a variable, prefix the line with &quot;#&quot;.</source>
-        <translation>V vsako vrstico vnesite eno spremenljivko okolja.
+        <translation type="vanished">V vsako vrstico vnesite eno spremenljivko okolja.
 Če želite nastaviti ali spremeniti spremenljivko, uporabite VARIABLE=VALUE.
 Če želite dodati spremenljivki, uporabite VARIABLE+=VALUE.
 Če želite spremenljivki dodati pred spremenljivko, uporabite VARIABLE=+VALUE.
@@ -15180,7 +23540,7 @@ Na obstoječe spremenljivke se lahko sklicujete v VALUE z ${OTHER}.
 Če želite onemogočiti spremenljivko, pred vrstico vnesite &quot;#&quot;.</translation>
     </message>
     <message>
-        <location filename="../../../src/libs/utils/fancylineedit.cpp" line="+422"/>
+        <location filename="../../../src/libs/utils/fancylineedit.cpp" line="+448"/>
         <source>Filter</source>
         <translation>Filter</translation>
     </message>
@@ -15190,24 +23550,23 @@ Na obstoječe spremenljivke se lahko sklicujete v VALUE z ${OTHER}.
         <translation>Počisti besedilo</translation>
     </message>
     <message>
-        <location filename="../../../src/libs/utils/fancymainwindow.cpp" line="+180"/>
+        <location filename="../../../src/libs/utils/fancymainwindow.cpp" line="+287"/>
         <source>Central Widget</source>
         <translation>Centralni pripomoček</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+2"/>
         <source>Reset to Default Layout</source>
         <translation>Ponastavi na privzeti razpored</translation>
     </message>
     <message>
-        <location line="+1"/>
         <source>Automatically Hide View Title Bars</source>
-        <translation>Samodejno skrij naslovne vrstice pogleda</translation>
+        <translation type="vanished">Samodejno skrij naslovne vrstice pogleda</translation>
     </message>
     <message>
-        <location filename="../../../src/libs/utils/filenamevalidatinglineedit.cpp" line="+92"/>
-        <location filename="../../../src/libs/utils/projectintropage.cpp" line="+97"/>
-        <location line="+86"/>
+        <location filename="../../../src/libs/utils/filenamevalidatinglineedit.cpp" line="+93"/>
+        <location filename="../../../src/libs/utils/projectintropage.cpp" line="+92"/>
+        <location line="+105"/>
         <source>Name is empty.</source>
         <translation>Ime je prazno.</translation>
     </message>
@@ -15242,7 +23601,7 @@ Na obstoječe spremenljivke se lahko sklicujete v VALUE z ${OTHER}.
         <translation>Datotečne pripone %1 so obvezne:</translation>
     </message>
     <message>
-        <location filename="../../../src/libs/utils/filepath.cpp" line="+865"/>
+        <location filename="../../../src/libs/utils/filepath.cpp" line="+1098"/>
         <source>%1 on %2</source>
         <comment>File on device</comment>
         <translation>%1 na %2</translation>
@@ -15254,7 +23613,7 @@ Na obstoječe spremenljivke se lahko sklicujete v VALUE z ${OTHER}.
         <translation>%1 %2 na %3</translation>
     </message>
     <message>
-        <location line="+580"/>
+        <location line="+869"/>
         <source>Error while trying to copy file: %1</source>
         <translation>Napaka pri poskusu kopiranja datoteke: %1</translation>
     </message>
@@ -15269,12 +23628,12 @@ Na obstoječe spremenljivke se lahko sklicujete v VALUE z ${OTHER}.
         <translation>Ni bilo mogoče nastaviti dovoljenj za »%1«</translation>
     </message>
     <message>
-        <location line="+272"/>
+        <location line="+250"/>
         <source>No &quot;localSource&quot; device hook set.</source>
         <translation>Ni nastavljenega kljuka naprave &quot;localSource&quot;.</translation>
     </message>
     <message>
-        <location filename="../../../src/libs/utils/filesystemmodel.cpp" line="+750"/>
+        <location filename="../../../src/libs/utils/filesystemmodel.cpp" line="+754"/>
         <source>My Computer</source>
         <translation>Moj računalnik</translation>
     </message>
@@ -15284,7 +23643,7 @@ Na obstoječe spremenljivke se lahko sklicujete v VALUE z ${OTHER}.
         <translation>Računalnik</translation>
     </message>
     <message>
-        <location line="+758"/>
+        <location line="+756"/>
         <source>Name</source>
         <translation>Ime</translation>
     </message>
@@ -15326,7 +23685,7 @@ Na obstoječe spremenljivke se lahko sklicujete v VALUE z ${OTHER}.
         <translation>%1: Je rezervirano ime datoteke v sistemu Windows. Ni mogoče shraniti.</translation>
     </message>
     <message>
-        <location line="+22"/>
+        <location line="+24"/>
         <source>Cannot overwrite file %1: %2</source>
         <translation>Datoteke %1 ni moč nadomestiti: %2</translation>
     </message>
@@ -15336,12 +23695,18 @@ Na obstoječe spremenljivke se lahko sklicujete v VALUE z ${OTHER}.
         <translation>Datoteke %1 ni moč ustvariti: %2</translation>
     </message>
     <message>
-        <location line="+40"/>
+        <location line="+45"/>
         <source>Cannot create temporary file in %1: %2</source>
         <translation>Začasne datoteke v %1 ni moč ustvariti: %2</translation>
     </message>
     <message>
-        <location line="+39"/>
+        <location line="+15"/>
+        <location line="+8"/>
+        <source>Cannot create temporary file %1: %2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+40"/>
         <source>Overwrite File?</source>
         <translation>Prepisati datoteko?</translation>
     </message>
@@ -15356,12 +23721,14 @@ Na obstoječe spremenljivke se lahko sklicujete v VALUE z ${OTHER}.
         <translation>Ni bilo mogoče kopirati datoteke »%1« v »%2«.</translation>
     </message>
     <message>
-        <location line="+379"/>
+        <location filename="../../../src/libs/utils/devicefileaccess.cpp" line="-1026"/>
+        <location line="+409"/>
+        <location filename="../../../src/libs/utils/fileutils.cpp" line="+366"/>
         <source>Failed to create directory &quot;%1&quot;.</source>
         <translation>Imenika »%1« ni bilo mogoče ustvariti.</translation>
     </message>
     <message>
-        <location filename="../../../src/libs/utils/hostosinfo.cpp" line="+91"/>
+        <location filename="../../../src/libs/utils/hostosinfo.cpp" line="+84"/>
         <source>Cannot create OpenGL context.</source>
         <translation>Konteksta OpenGL ni mogoče ustvariti.</translation>
     </message>
@@ -15427,7 +23794,7 @@ Na obstoječe spremenljivke se lahko sklicujete v VALUE z ${OTHER}.
         </translation>
     </message>
     <message>
-        <location filename="../../../src/libs/utils/launcherinterface.cpp" line="+126"/>
+        <location filename="../../../src/libs/utils/launcherinterface.cpp" line="+122"/>
         <source>Failed to start process launcher at &quot;%1&quot;: %2</source>
         <translation>Zagon zaganjalnika procesov pri »%1« ni uspel: %2</translation>
     </message>
@@ -15442,7 +23809,7 @@ Na obstoječe spremenljivke se lahko sklicujete v VALUE z ${OTHER}.
         <translation>Napaka vtičnice zaganjalnika procesov.</translation>
     </message>
     <message>
-        <location line="+236"/>
+        <location line="+239"/>
         <source>Internal socket error: %1</source>
         <translation>Notranja napaka vtičnice: %1</translation>
     </message>
@@ -15472,17 +23839,17 @@ Na obstoječe spremenljivke se lahko sklicujete v VALUE z ${OTHER}.
         <translation>Napaka neskončne rekurzije</translation>
     </message>
     <message>
-        <location line="+112"/>
+        <location line="+127"/>
         <source>%1: Full path including file name.</source>
         <translation>%1: Celotna pot, vključno z imenom datoteke.</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+6"/>
         <source>%1: Full path excluding file name.</source>
         <translation>%1: Celotna pot brez imena datoteke.</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+6"/>
         <source>%1: Full path including file name, with native path separator (backslash on Windows).</source>
         <translation>%1: Celotna pot, vključno z imenom datoteke, z izvornim ločilom poti (poševnica nazaj v sistemu Windows).</translation>
     </message>
@@ -15497,7 +23864,7 @@ Na obstoječe spremenljivke se lahko sklicujete v VALUE z ${OTHER}.
         <translation>%1: ime datoteke brez poti.</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+6"/>
         <source>%1: File base name without path and suffix.</source>
         <translation>%1: osnovno ime datoteke brez poti in pripone.</translation>
     </message>
@@ -15517,12 +23884,12 @@ Na obstoječe spremenljivke se lahko sklicujete v VALUE z ${OTHER}.
         <translation>Pomanjšaj</translation>
     </message>
     <message>
-        <location filename="../../../src/libs/utils/namevaluemodel.cpp" line="+34"/>
+        <location filename="../../../src/libs/utils/environmentmodel.cpp" line="+35"/>
         <source>&lt;UNSET&gt;</source>
         <translation>&lt;ni nastavljena&gt;</translation>
     </message>
     <message>
-        <location line="+155"/>
+        <location line="+156"/>
         <source>Variable</source>
         <translation>Spremenljivka</translation>
     </message>
@@ -15532,19 +23899,29 @@ Na obstoječe spremenljivke se lahko sklicujete v VALUE z ${OTHER}.
         <translation>Vrednost</translation>
     </message>
     <message>
-        <location line="+79"/>
+        <location filename="../../../src/plugins/projectexplorer/environmentwidget.cpp" line="-35"/>
         <source>&lt;VARIABLE&gt;</source>
-        <extracomment>Name when inserting a new variable</extracomment>
         <translation>&lt;spremenljivka&gt;</translation>
     </message>
     <message>
-        <location line="+2"/>
         <source>&lt;VALUE&gt;</source>
         <extracomment>Value when inserting a new variable</extracomment>
-        <translation>&lt;vrednost&gt;</translation>
+        <translation type="vanished">&lt;vrednost&gt;</translation>
     </message>
     <message>
-        <location filename="../../../src/libs/utils/namevaluesdialog.cpp" line="+78"/>
+        <location filename="../../../src/libs/utils/namevaluesdialog.cpp" line="+60"/>
+        <source>Enter one environment variable per line.
+To set or change a variable, use VARIABLE=VALUE.
+To disable a variable, prefix this line with &quot;#&quot;.
+To append to a variable, use VARIABLE+=VALUE.
+To prepend to a variable, use VARIABLE=+VALUE.
+Existing variables can be referenced in a VALUE with ${OTHER}.
+To clear a variable, put its name on a line with nothing else on it.
+Lines starting with &quot;##&quot; will be treated as comments.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+112"/>
         <source>&amp;OK</source>
         <translation>&amp;V REDU</translation>
     </message>
@@ -15554,7 +23931,7 @@ Na obstoječe spremenljivke se lahko sklicujete v VALUE z ${OTHER}.
         <translation>&amp;Prekliči</translation>
     </message>
     <message>
-        <location filename="../../../src/libs/utils/qtcprocess.cpp" line="+249"/>
+        <location filename="../../../src/libs/utils/qtcprocess.cpp" line="+267"/>
         <source>Error in command line.</source>
         <translation>Napaka v ukazni vrstici.</translation>
     </message>
@@ -15564,7 +23941,17 @@ Na obstoječe spremenljivke se lahko sklicujete v VALUE z ${OTHER}.
         <translation>Program &quot;%1&quot; ne obstaja ali pa ni izvršljiv.</translation>
     </message>
     <message>
-        <location line="+970"/>
+        <location line="+79"/>
+        <source>The program &quot;%1&quot; could not be found.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+908"/>
+        <source>Failed to create process interface for &quot;%1&quot;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+163"/>
         <source>Process Not Responding</source>
         <translation>Proces se ne odziva</translation>
     </message>
@@ -15584,7 +23971,7 @@ Na obstoječe spremenljivke se lahko sklicujete v VALUE z ${OTHER}.
         <translation>Prekiniti postopek?</translation>
     </message>
     <message>
-        <location line="+271"/>
+        <location line="+233"/>
         <source>The command &quot;%1&quot; finished successfully.</source>
         <translation>Ukaz »%1« se je uspešno zaključil.</translation>
     </message>
@@ -15594,7 +23981,7 @@ Na obstoječe spremenljivke se lahko sklicujete v VALUE z ${OTHER}.
         <translation>Ukaz »%1« se je končal z izhodno kodo %2.</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+2"/>
         <source>The command &quot;%1&quot; terminated abnormally.</source>
         <translation>Ukaz »%1« se je nenormalno zaključil.</translation>
     </message>
@@ -15604,9 +23991,13 @@ Na obstoječe spremenljivke se lahko sklicujete v VALUE z ${OTHER}.
         <translation>Ukaza »%1« ni bilo mogoče zagnati.</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+4"/>
+        <source>The command &quot;%1&quot; was canceled after %2 ms.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>The command &quot;%1&quot; did not respond within the timeout limit (%2 s).</source>
-        <translation>Ukaz »%1« se ni odzval v časovni omejitvi (%2 s).</translation>
+        <translation type="vanished">Ukaz »%1« se ni odzval v časovni omejitvi (%2 s).</translation>
     </message>
     <message>
         <location filename="../../../src/libs/utils/removefiledialog.cpp" line="+21"/>
@@ -15639,7 +24030,7 @@ Na obstoječe spremenljivke se lahko sklicujete v VALUE z ${OTHER}.
         <translation>Mapa za odstranitev:</translation>
     </message>
     <message>
-        <location filename="../../../src/libs/utils/settingsaccessor.cpp" line="+118"/>
+        <location filename="../../../src/libs/utils/settingsaccessor.cpp" line="+114"/>
         <source>Failed to Read File</source>
         <translation>Branje datoteke ni uspelo</translation>
     </message>
@@ -15660,18 +24051,18 @@ Na obstoječe spremenljivke se lahko sklicujete v VALUE z ${OTHER}.
         <translation>Ni bilo kaj napisati.</translation>
     </message>
     <message>
-        <location line="+112"/>
-        <location line="+269"/>
+        <location line="+101"/>
+        <location line="+265"/>
         <source>No Valid Settings Found</source>
         <translation>Ni veljavnih nastavitev</translation>
     </message>
     <message>
-        <location line="-268"/>
+        <location line="-264"/>
         <source>&lt;p&gt;No valid settings file could be found.&lt;/p&gt;&lt;p&gt;All settings files found in directory &quot;%1&quot; were unsuitable for the current version of %2, for instance because they were written by an incompatible version of %2, or because a different settings path was used.&lt;/p&gt;</source>
         <translation>&lt;p&gt;Ni bilo mogoče najti nobene veljavne nastavitvene datoteke.&lt;/p&gt;&lt;p&gt;Vse nastavitvene datoteke, najdene v imeniku »%1«, niso bile primerne za trenutno različico %2, ker jih je na primer napisala nekompatibilna različica % 2 ali ker je bila uporabljena drugačna pot nastavitev.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location line="+269"/>
+        <location line="+265"/>
         <source>&lt;p&gt;No valid settings file could be found.&lt;/p&gt;&lt;p&gt;All settings files found in directory &quot;%1&quot; were either too new or too old to be read.&lt;/p&gt;</source>
         <translation>&lt;p&gt;Ni bilo mogoče najti nobene veljavne nastavitvene datoteke.&lt;/p&gt;&lt;p&gt;Vse nastavitvene datoteke, najdene v imeniku »%1«, so bile bodisi prenove ali prestare, da bi jih lahko prebrali.&lt;/p&gt;</translation>
     </message>
@@ -15696,7 +24087,7 @@ Na obstoječe spremenljivke se lahko sklicujete v VALUE z ${OTHER}.
         <translation>&lt;p&gt;Najdena ni bila nobena datoteka z nastavitvami, ki jo je ustvaril ta primerek %1.&lt;/p&gt;&lt;p&gt;Ali ste s tem projektom delali na drugem računalniku ali že prej uporabljali drugo pot nastavitev?&lt;/p&gt;&lt;p&gt;Ali še vedno želite naložiti datoteko z nastavitvami »%2«?&lt;/p&gt;</translation>
     </message>
     <message>
-        <location line="+60"/>
+        <location line="+55"/>
         <source>Unsupported Merge Settings File</source>
         <translation>Nepodprta datoteka z nastavitvami spajanja</translation>
     </message>
@@ -15706,18 +24097,21 @@ Na obstoječe spremenljivke se lahko sklicujete v VALUE z ${OTHER}.
         <translation>»%1« ne podpira %2. Ga vseeno želite poskusiti naložiti?</translation>
     </message>
     <message>
+        <location filename="../../../src/libs/utils/aspects.cpp" line="+92"/>
+        <location line="+952"/>
         <location filename="../../../src/libs/utils/settingsselector.cpp" line="+32"/>
         <source>Add</source>
         <translation>Dodaj</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="-951"/>
+        <location filename="../../../src/libs/utils/settingsselector.cpp" line="+1"/>
         <location line="+83"/>
         <source>Remove</source>
         <translation>Odstrani</translation>
     </message>
     <message>
-        <location line="-82"/>
+        <location filename="../../../src/libs/utils/settingsselector.cpp" line="-82"/>
         <source>Rename</source>
         <translation>Preimenuj</translation>
     </message>
@@ -15737,23 +24131,23 @@ Na obstoječe spremenljivke se lahko sklicujete v VALUE z ${OTHER}.
         <translation>Preimenuj ...</translation>
     </message>
     <message>
-        <location filename="../../../src/libs/utils/stringutils.cpp" line="+341"/>
+        <location filename="../../../src/libs/utils/stringutils.cpp" line="+366"/>
         <source>Elapsed time: %1.</source>
         <translation>Pretečeni čas: %1.</translation>
     </message>
     <message>
-        <location filename="../../../src/libs/utils/textfileformat.cpp" line="+194"/>
-        <location line="+66"/>
+        <location filename="../../../src/libs/utils/textfileformat.cpp" line="+196"/>
+        <location line="+76"/>
         <source>Out of memory.</source>
         <translation>Zmanjkalo je spomina.</translation>
     </message>
     <message>
-        <location line="-55"/>
+        <location line="-65"/>
         <source>An encoding error was encountered.</source>
         <translation>Prišlo je do napake kodiranja.</translation>
     </message>
     <message>
-        <location filename="../../../src/libs/utils/unixutils.cpp" line="+36"/>
+        <location filename="../../../src/libs/utils/unixutils.cpp" line="+34"/>
         <source>&lt;table border=1 cellspacing=0 cellpadding=3&gt;&lt;tr&gt;&lt;th&gt;Variable&lt;/th&gt;&lt;th&gt;Expands to&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;%d&lt;/td&gt;&lt;td&gt;directory of current file&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;%f&lt;/td&gt;&lt;td&gt;file name (with full path)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;%n&lt;/td&gt;&lt;td&gt;file name (without path)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;%%&lt;/td&gt;&lt;td&gt;%&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</source>
         <translation>&lt;table border=1 cellspacing=0 cellpadding=3&gt;&lt;tr&gt;&lt;th&gt;Spremenljivka&lt;/th&gt;&lt;th&gt;Se razširi v&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;%d&lt;/td&gt;&lt;td&gt;mapa trenutne datoteke&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;%f&lt;/td&gt;&lt;td&gt;ime datoteke (s celotno potjo)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;%n&lt;/td&gt;&lt;td&gt;ime datoteke (brez poti)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;%%&lt;/td&gt;&lt;td&gt;%&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</translation>
     </message>
@@ -15794,9 +24188,101 @@ Na obstoječe spremenljivke se lahko sklicujete v VALUE z ${OTHER}.
         <translation>Spremenljivke</translation>
     </message>
     <message>
-        <location filename="../../../src/libs/utils/wizard.cpp" line="+119"/>
+        <location filename="../../../src/libs/utils/wizard.cpp" line="+123"/>
         <source>...</source>
         <translation> …</translation>
+    </message>
+    <message>
+        <location filename="../../../src/libs/utils/deviceshell.cpp" line="+189"/>
+        <source>The process failed to start.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+34"/>
+        <source>Failed to install shell script: %1
+%2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+17"/>
+        <source>Timeout while trying to check for %1.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Command &quot;%1&quot; was not found.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Script installation was forced to fail.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+26"/>
+        <source>Timeout while waiting for shell script installation.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>Failed to install shell script: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/libs/utils/externalterminalprocessimpl.cpp" line="+124"/>
+        <source>Failed to open temporary script file.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+28"/>
+        <location line="+45"/>
+        <source>Failed to start terminal process: &quot;%1&quot;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/libs/utils/filestreamermanager.cpp" line="+135"/>
+        <source>Failed copying file.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+24"/>
+        <source>Failed reading file.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+26"/>
+        <source>Failed writing file.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/libs/utils/lua.cpp" line="+25"/>
+        <source>No Lua interface set</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/libs/utils/passworddialog.cpp" line="+25"/>
+        <source>Show/Hide Password</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+94"/>
+        <source>User:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Password:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/libs/utils/terminalhooks.cpp" line="+30"/>
+        <source>Could not find any shell.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../src/plugins/projectexplorer/processparameters.cpp" line="+160"/>
+        <source>Invalid command</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
