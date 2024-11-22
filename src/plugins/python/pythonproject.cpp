@@ -3,7 +3,9 @@
 
 #include "pythonproject.h"
 
-#include "pythonbuildsystem.h"
+// OPENMV-DIFF //
+// #include "pythonbuildsystem.h"
+// OPENMV-DIFF //
 #include "pythonconstants.h"
 #include "pythonkitaspect.h"
 #include "pythontr.h"
@@ -26,7 +28,9 @@ PythonProject::PythonProject(const FilePath &fileName)
     setProjectLanguages(Context(ProjectExplorer::Constants::PYTHON_LANGUAGE_ID));
     setDisplayName(fileName.completeBaseName());
 
-    setBuildSystemCreator([](Target *t) { return new PythonBuildSystem(t); });
+    // OPENMV-DIFF //
+    // setBuildSystemCreator([](Target *t) { return new PythonBuildSystem(t); });
+    // OPENMV-DIFF //
 }
 
 Tasks PythonProject::projectIssues(const Kit *k) const

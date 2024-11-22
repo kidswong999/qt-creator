@@ -1,13 +1,21 @@
 add_qtc_plugin(Python
-  DEPENDS QmlJS
-  PLUGIN_DEPENDS Core LanguageClient ProjectExplorer TextEditor QtSupport
+  # OPENMV-DIFF #
+  # DEPENDS QmlJS
+  # PLUGIN_DEPENDS Core LanguageClient ProjectExplorer TextEditor QtSupport
+  # OPENMV-DIFF #
+  PLUGIN_DEPENDS Core LanguageClient ProjectExplorer TextEditor
+  # OPENMV-DIFF #
   SOURCES
     pipsupport.cpp pipsupport.h
-    pyside.cpp pyside.h
-    pythonbuildconfiguration.cpp pythonbuildconfiguration.h
-    pysideuicextracompiler.cpp pysideuicextracompiler.h
+    # OPENMV-DIFF #
+    # pyside.cpp pyside.h
+    # pythonbuildconfiguration.cpp pythonbuildconfiguration.h
+    # pysideuicextracompiler.cpp pysideuicextracompiler.h
+    # OPENMV-DIFF #
     python.qrc
-    pythonbuildsystem.cpp pythonbuildsystem.h
+    # OPENMV-DIFF #
+    # pythonbuildsystem.cpp pythonbuildsystem.h
+    # OPENMV-DIFF #
     pythonconstants.h
     pythoneditor.cpp pythoneditor.h
     pythonformattoken.h

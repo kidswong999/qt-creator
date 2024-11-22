@@ -1,4 +1,6 @@
-add_subdirectory(cplusplus)
+# OPENMV-DIFF #
+# add_subdirectory(cplusplus)
+# OPENMV-DIFF #
 add_subdirectory(syntax-highlighting)
 add_subdirectory(libvterm)
 add_subdirectory(libptyqt)

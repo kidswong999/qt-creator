@@ -3,7 +3,9 @@
 
 #include "pythonutils.h"
 
-#include "pythonbuildconfiguration.h"
+// OPENMV-DIFF //
+// #include "pythonbuildconfiguration.h"
+// OPENMV-DIFF //
 #include "pythonconstants.h"
 #include "pythonkitaspect.h"
 #include "pythonproject.h"
@@ -45,8 +47,10 @@ FilePath detectPython(const FilePath &documentPath)
 
     if (project && project->mimeType() == Constants::C_PY_PROJECT_MIME_TYPE) {
         if (const Target *target = project->activeTarget()) {
-            if (auto bc = qobject_cast<PythonBuildConfiguration *>(target->activeBuildConfiguration()))
-                return bc->python();
+            // OPENMV-DIFF //
+            // if (auto bc = qobject_cast<PythonBuildConfiguration *>(target->activeBuildConfiguration()))
+            //     return bc->python();
+            // OPENMV-DIFF //
             if (const std::optional<Interpreter> python = PythonKitAspect::python(target->kit()))
                 return python->command;
         }

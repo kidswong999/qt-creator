@@ -3,8 +3,10 @@
 
 #include "pythoneditor.h"
 
-#include "pyside.h"
-#include "pythonbuildconfiguration.h"
+// OPENMV-DIFF //
+// #include "pyside.h"
+// #include "pythonbuildconfiguration.h"
+// OPENMV-DIFF //
 #include "pythonconstants.h"
 #include "pythonhighlighter.h"
 #include "pythonindenter.h"
@@ -175,8 +177,10 @@ void PythonEditorWidget::updateInterpretersSelector()
                     && target->activeBuildConfiguration() == buildConfiguration) {
                     action->setChecked(true);
                     setButtonText(name);
-                    if (auto pbc = qobject_cast<PythonBuildConfiguration *>(buildConfiguration))
-                        m_interpreters->setToolTip(pbc->python().toUserOutput());
+                    // OPENMV-DIFF //
+                    // if (auto pbc = qobject_cast<PythonBuildConfiguration *>(buildConfiguration))
+                    //     m_interpreters->setToolTip(pbc->python().toUserOutput());
+                    // OPENMV-DIFF //
                 }
                 connect(action,
                         &QAction::triggered,
@@ -311,7 +315,9 @@ void PythonDocument::updateCurrentPython()
 void PythonDocument::updatePython(const FilePath &python)
 {
     openDocumentWithPython(python, this);
-    PySideInstaller::instance().checkPySideInstallation(python, this);
+    // OPENMV-DIFF //
+    // PySideInstaller::instance().checkPySideInstallation(python, this);
+    // OPENMV-DIFF //
     emit pythonUpdated(python);
 }
 

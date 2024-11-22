@@ -1,7 +1,7 @@
 # OPENMV-DIFF #
 # add_subdirectory(designerintegrationv2)
+# add_subdirectory(proparser)
 # OPENMV-DIFF #
-add_subdirectory(proparser)
 add_subdirectory(qtsingleapplication)
 # OPENMV-DIFF #
 # add_subdirectory(help)

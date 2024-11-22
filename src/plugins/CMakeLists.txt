@@ -41,9 +41,7 @@ add_subdirectory(projectexplorer)
 # add_subdirectory(cppeditor)
 # add_subdirectory(haskell)
 # add_subdirectory(help)
-# OPENMV-DIFF #
-add_subdirectory(resourceeditor)
-# OPENMV-DIFF #
+# add_subdirectory(resourceeditor)
 # add_subdirectory(nim)
 # add_subdirectory(conan)
 # add_subdirectory(saferenderer)
@@ -58,9 +56,7 @@ add_subdirectory(tabbededitor)
 # add_subdirectory(classview)
 # add_subdirectory(glsleditor)
 # add_subdirectory(modeleditor)
-# OPENMV-DIFF #
-add_subdirectory(qtsupport)
-# OPENMV-DIFF #
+# add_subdirectory(qtsupport)
 # add_subdirectory(todo)
 # add_subdirectory(vcsbase)
 # OPENMV-DIFF #

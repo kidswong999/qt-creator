@@ -63,8 +63,10 @@ class PythonPlugin final : public ExtensionSystem::IPlugin
 
         setupPipSupport(this);
 
-        KitManager::setIrrelevantAspects(KitManager::irrelevantAspects()
-                                         + QSet<Id>{PythonKitAspect::id()});
+        // OPENMV-DIFF //
+        // KitManager::setIrrelevantAspects(KitManager::irrelevantAspects()
+        //                                  + QSet<Id>{PythonKitAspect::id()});
+        // OPENMV-DIFF //
 
         ProjectManager::registerProjectType<PythonProject>(Constants::C_PY_PROJECT_MIME_TYPE);
         ProjectManager::registerProjectType<PythonProject>(Constants::C_PY_PROJECT_MIME_TYPE_LEGACY);

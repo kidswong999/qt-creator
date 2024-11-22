@@ -5,20 +5,20 @@ add_subdirectory(3rdparty)
 # add_subdirectory(advanceddockingsystem)
 # OPENMV-DIFF #
 add_subdirectory(aggregation)
-add_subdirectory(cplusplus)
+# OPENMV-DIFF #
+# add_subdirectory(cplusplus)
+# OPENMV-DIFF #
 add_subdirectory(extensionsystem)
 # OPENMV-DIFF #
 # add_subdirectory(glsl)
 # OPENMV-DIFF #
 add_subdirectory(languageserverprotocol)
-add_subdirectory(languageutils)
 # OPENMV-DIFF #
+# add_subdirectory(languageutils)
 # add_subdirectory(modelinglib)
 # add_subdirectory(qmldebug)
 # add_subdirectory(qmleditorwidgets)
-# OPENMV-DIFF #
-add_subdirectory(qmljs)
-# OPENMV-DIFF #
+# add_subdirectory(qmljs)
 # add_subdirectory(qtcreatorcdbext)
 # OPENMV-DIFF #
 add_subdirectory(utils)
