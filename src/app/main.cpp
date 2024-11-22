@@ -69,16 +69,14 @@ const char fixedOptionsC[]
       "    -version                      Display program version\n"
       // OPENMV-DIFF //
       // "    -client                       Attempt to connect to already running first instance\n"
-      // OPENMV-DIFF //
-      "    -settingspath <path>          Override the default path where user settings are stored\n"
-      "    -installsettingspath <path>   Override the default path from where user-independent "
-      "settings are read\n"
-      "    -temporarycleansettings, -tcs Use clean settings for debug or testing reasons\n"
-      // OPENMV-DIFF //
+      // "    -settingspath <path>          Override the default path where user settings are stored\n"
+      // "    -installsettingspath <path>   Override the default path from where user-independent "
+      // "settings are read\n"
+      // "    -temporarycleansettings, -tcs Use clean settings for debug or testing reasons\n"
       // "    -pid <pid>                    Attempt to connect to instance given by pid\n"
       // "    -block                        Block until editor is closed\n"
+      // "    -pluginpath <path>            Add a custom search path for plugins\n"
       // OPENMV-DIFF //
-      "    -pluginpath <path>            Add a custom search path for plugins\n"
       "    -language <locale>            Set the UI language\n";
 
 const char HELP_OPTION1[] = "-h";
@@ -352,34 +350,44 @@ Options parseCommandLine(int argc, char *argv[])
         const bool hasNext = it + 1 != end;
         const auto nextArg = hasNext ? QString::fromLocal8Bit(*(it + 1)) : QString();
 
-        if (arg == SETTINGS_OPTION && hasNext) {
-            ++it;
-            options.settingsPath = QDir::fromNativeSeparators(nextArg);
-            options.preAppArguments << arg << nextArg;
-        } else if (arg == INSTALL_SETTINGS_OPTION && hasNext) {
-            ++it;
-            options.installSettingsPath = QDir::fromNativeSeparators(nextArg);
-            options.preAppArguments << arg << nextArg;
-        } else if (arg == PLUGINPATH_OPTION && hasNext) {
-            ++it;
-            options.customPluginPaths += QDir::fromNativeSeparators(nextArg);
-            options.preAppArguments << arg << nextArg;
-        } else if (arg == LANGUAGE_OPTION && hasNext) {
+        // OPENMV-DIFF //
+        // if (arg == SETTINGS_OPTION && hasNext) {
+        //     ++it;
+        //     options.settingsPath = QDir::fromNativeSeparators(nextArg);
+        //     options.preAppArguments << arg << nextArg;
+        // } else if (arg == INSTALL_SETTINGS_OPTION && hasNext) {
+        //     ++it;
+        //     options.installSettingsPath = QDir::fromNativeSeparators(nextArg);
+        //     options.preAppArguments << arg << nextArg;
+        // } else if (arg == PLUGINPATH_OPTION && hasNext) {
+        //     ++it;
+        //     options.customPluginPaths += QDir::fromNativeSeparators(nextArg);
+        //     options.preAppArguments << arg << nextArg;
+        // } else if (arg == LANGUAGE_OPTION && hasNext) {
+        //     ++it;
+        //     options.uiLanguage = nextArg;
+        //     options.preAppArguments << arg << nextArg;
+        // } else if (arg == USER_LIBRARY_PATH_OPTION && hasNext) {
+        //     ++it;
+        //     options.userLibraryPath = nextArg;
+        //     options.preAppArguments << arg << nextArg;
+        // } else if (arg == TEMPORARY_CLEAN_SETTINGS1 || arg == TEMPORARY_CLEAN_SETTINGS2) {
+        //     options.wantsCleanSettings = true;
+        //     options.preAppArguments << arg;
+        // } else { // arguments that are still passed on to the application
+        //     if (arg == TEST_OPTION)
+        //         options.hasTestOption = true;
+        //     options.appArguments.push_back(*it);
+        // }
+        // OPENMV-DIFF //
+        if (arg == LANGUAGE_OPTION && hasNext) {
             ++it;
             options.uiLanguage = nextArg;
             options.preAppArguments << arg << nextArg;
-        } else if (arg == USER_LIBRARY_PATH_OPTION && hasNext) {
-            ++it;
-            options.userLibraryPath = nextArg;
-            options.preAppArguments << arg << nextArg;
-        } else if (arg == TEMPORARY_CLEAN_SETTINGS1 || arg == TEMPORARY_CLEAN_SETTINGS2) {
-            options.wantsCleanSettings = true;
-            options.preAppArguments << arg;
         } else { // arguments that are still passed on to the application
-            if (arg == TEST_OPTION)
-                options.hasTestOption = true;
             options.appArguments.push_back(*it);
         }
+        // OPENMV-DIFF //
         ++it;
     }
     return options;

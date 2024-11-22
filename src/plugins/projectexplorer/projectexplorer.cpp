@@ -850,7 +850,11 @@ bool ProjectExplorerPlugin::initialize(const QStringList &arguments, QString *er
     qRegisterMetaType<ProjectExplorer::RunControl *>();
     qRegisterMetaType<ProjectExplorer::DeployableFile>("ProjectExplorer::DeployableFile");
 
-    handleCommandLineArguments(arguments);
+    // OPENMV-DIFF //
+    // handleCommandLineArguments(arguments);
+    // OPENMV-DIFF //
+    Q_UNUSED(arguments)
+    // OPENMV-DIFF //
 
     dd->m_toolChainManager = new ToolchainManager;
 
