@@ -87,6 +87,9 @@ private:
     QStackedWidget *m_opToolBarWidgets = nullptr;
     QWidget *m_buttonsWidget = nullptr;
     int m_outputPaneHeightSetting = 0;
+    // OPENMV-DIFF //
+    bool m_outputPaneVisibleOnStartup = false;
+    // OPENMV-DIFF //
 };
 
 class BadgeLabel

@@ -567,7 +567,9 @@ void OutputPaneManager::initialize()
                                                  cmd->action());
         data.button = button;
         connect(button, &OutputPaneToggleButton::contextMenuRequested, m_instance, [] {
-            m_instance->popupMenu();
+            // OPENMV-DIFF //
+            // m_instance->popupMenu();
+            // OPENMV-DIFF //
         });
 
         connect(outPane, &IOutputPane::flashButton, button, [button] { button->flash(); });
@@ -612,6 +614,12 @@ void OutputPaneManager::initialize()
         const int index = m_instance->currentIndex();
         m_instance->updateActions(index >= 0 ? g_outputPanes.at(index).pane : nullptr);
     });
+    // OPENMV-DIFF //
+    QTimer::singleShot(0, m_instance, [] () {
+        if (m_instance->m_outputPaneVisibleOnStartup)
+            m_instance->showPage(m_instance->m_outputWidgetPane->currentIndex(), IOutputPane::ModeSwitch);
+    });
+    // OPENMV-DIFF //
 }
 
 OutputPaneManager::~OutputPaneManager() = default;
@@ -687,6 +695,10 @@ void OutputPaneManager::readSettings()
         = settings->value("OutputPanePlaceHolder/Height", 0).toInt();
     const int currentIdx
         = settings->value("OutputPanePlaceHolder/CurrentIndex", 0).toInt();
+    // OPENMV-DIFF //
+    m_outputPaneVisibleOnStartup
+        = settings->value("OutputPanePlaceHolder/Visible", false).toBool();
+    // OPENMV-DIFF //
     if (QTC_GUARD(currentIdx >= 0 && currentIdx < g_outputPanes.size()))
         setCurrentIndex(currentIdx);
 }
@@ -893,6 +905,9 @@ void OutputPaneManager::saveSettings() const
         heightSetting = curr->nonMaximizedSize();
     settings->setValue("OutputPanePlaceHolder/Height", heightSetting);
     settings->setValue("OutputPanePlaceHolder/CurrentIndex", currentIndex());
+    // OPENMV-DIFF //
+    settings->setValue("OutputPanePlaceHolder/Visible", OutputPanePlaceHolder::isCurrentVisible());
+    // OPENMV-DIFF //
 }
 
 void OutputPaneManager::clearPage()
