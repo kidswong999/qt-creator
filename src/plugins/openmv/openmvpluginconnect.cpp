@@ -2441,7 +2441,33 @@ void OpenMVPlugin::connectClicked(bool forceBootloader, QString forceFirmwarePat
 
             if(document && document->displayName() == QStringLiteral("helloworld_1.py") && (!document->isModified()))
             {
-                document->setPlainText(QString::fromUtf8(fixScriptForSensor(document->contents())));
+                QString filePath = Core::ICore::userResourcePath(QStringLiteral("examples/00-HelloWorld/helloworld.py")).toString();
+
+                QFile file(filePath);
+
+                if(file.open(QIODevice::ReadOnly))
+                {
+                    QByteArray data = file.readAll();
+
+                    if((file.error() == QFile::NoError) && (!data.isEmpty()))
+                    {
+                        data = fixScriptForSensor(data);
+
+                        QFile reload(document->filePath().toString());
+
+                        if(reload.open(QIODevice::WriteOnly))
+                        {
+                            bool ok = reload.write(data) == data.size();
+                            reload.close();
+
+                            if (ok)
+                            {
+                                QString error;
+                                document->reload(&error);
+                            }
+                        }
+                    }
+                }
             }
         }
 
