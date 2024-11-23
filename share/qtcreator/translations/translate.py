@@ -36,7 +36,7 @@ import argparse
 
 def translate_file(file_name):
     language_code = file_name.split('_')[1].split('.')[0]
-    command = f"python -u CuteLingoExpress/auto_trans.py {file_name} en {language_code}"
+    command = f"python3 -u CuteLingoExpress/auto_trans.py {file_name} en {language_code}"
     process = subprocess.Popen(command, shell=True)
     process.wait()
 
