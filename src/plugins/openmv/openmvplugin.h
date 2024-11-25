@@ -181,8 +181,6 @@
 #define LAST_APRILTAG_RANGE_MAX "LastAprilTagRangeMax"
 #define LAST_APRILTAG_INCLUDE "LastAprilTagInclude"
 #define LAST_APRILTAG_PATH "LastAprilTagPath"
-#define LAST_MODEL_NO_CAM_PATH "LastModelNoCamPath"
-#define LAST_MODEL_WITH_CAM_PATH "LastModelWithCamPath"
 #define LAST_DATASET_EDITOR_PATH "LastDatasetEditorPath"
 #define LAST_DATASET_EDITOR_LOADED "LastDatasetEditorLoaded"
 #define LAST_DATASET_EDITOR_EXPORT_PATH "LastDatasetEditorExportPath"
