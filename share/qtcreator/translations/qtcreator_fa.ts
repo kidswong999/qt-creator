@@ -535,7 +535,7 @@
         <location line="+26" />
         <source>A browser window will open. Enter the code %1 when asked.
 The code has been copied to your clipboard.</source>
-        <translation>یک پنجره مرورگر باز خواهد شد. کد ٪ 1 را در صورت درخواست وارد کنید.
+        <translation>یک پنجره مرورگر باز خواهد شد. کد %1 را در صورت درخواست وارد کنید.
  کد در کلیپ بورد شما کپی شده است.</translation>
     </message>
     <message>
@@ -546,7 +546,7 @@ The code has been copied to your clipboard.</source>
     <message>
         <location line="+1" />
         <source>The login request failed: %1</source>
-        <translation>درخواست ورود به سیستم انجام نشد: ٪ 1</translation>
+        <translation>درخواست ورود به سیستم انجام نشد: %1</translation>
     </message>
     <message>
         <location filename="../../../src/plugins/copilot/copilotclient.cpp" line="+336" />
@@ -577,17 +577,17 @@ The code has been copied to your clipboard.</source>
     <message>
         <location line="+3" />
         <source>Apply (%1)</source>
-        <translation>اعمال (٪ 1)</translation>
+        <translation>اعمال (%1)</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Apply Word (%1)</source>
-        <translation>کلمه را اعمال کنید (٪ 1)</translation>
+        <translation>کلمه را اعمال کنید (%1)</translation>
     </message>
     <message>
         <location line="+13" />
         <source>%1 of %2</source>
-        <translation>٪ 1 ٪ 2</translation>
+        <translation>%1 %2</translation>
     </message>
     <message>
         <location filename="../../../src/plugins/copilot/copilotplugin.cpp" line="+65" />
@@ -667,25 +667,25 @@ The code has been copied to your clipboard.</source>
         <location line="+2" />
         <source>Select path to node.js executable. See %1 for installation instructions.</source>
         <extracomment>%1 is the URL to nodejs</extracomment>
-        <translation>مسیر اجرا را به Node.js انتخاب کنید. برای دستورالعمل های نصب ٪ 1 را ببینید.</translation>
+        <translation>مسیر اجرا را به Node.js انتخاب کنید. برای دستورالعمل های نصب %1 را ببینید.</translation>
     </message>
     <message>
         <location line="+8" />
         <source>Path to %1:</source>
         <extracomment>%1 is the filename of the copilot language server</extracomment>
-        <translation>مسیر ٪ 1:</translation>
+        <translation>مسیر %1:</translation>
     </message>
     <message>
         <location line="+3" />
         <source>%1 path</source>
         <extracomment>%1 is the filename of the copilot language server</extracomment>
-        <translation>٪ 1 مسیر</translation>
+        <translation>%1 مسیر</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Select path to %2 in Copilot Neovim plugin. See %1 for installation instructions.</source>
         <extracomment>%1 is the URL to copilot.vim getting started, %2 is the filename of the copilot language server</extracomment>
-        <translation>مسیر ٪ 2 را در افزونه copilot neovim انتخاب کنید. برای دستورالعمل های نصب ٪ 1 را ببینید.</translation>
+        <translation>مسیر %2 را در افزونه copilot neovim انتخاب کنید. برای دستورالعمل های نصب %1 را ببینید.</translation>
     </message>
     <message>
         <location line="+5" />
@@ -810,7 +810,7 @@ The code has been copied to your clipboard.</source>
     <message>
         <location line="+31" />
         <source>Enabling %1 is subject to your agreement and abidance with your applicable %1 terms. It is your responsibility to know and accept the requirements and parameters of using tools like %1. This may include, but is not limited to, ensuring you have the rights to allow %1 access to your code, as well as understanding any implications of your use of %1 and suggestions produced (like copyright, accuracy, etc.).</source>
-        <translation>فعال کردن ٪ 1 منوط به توافق شما و مشروبات الکلی با شرایط ٪ 1 شما است. این وظیفه شماست که نیازها و پارامترهای استفاده از ابزارهایی مانند ٪ 1 را بدانید و بپذیرید. این ممکن است شامل ، اما محدود به آن نیست ، اطمینان حاصل کنید که شما می توانید ٪ 1 دسترسی به کد خود را داشته باشید ، و همچنین درک هرگونه پیامدهای استفاده شما از ٪ 1 و پیشنهادات تولید شده (مانند حق چاپ ، دقت و غیره) را درک کنید.</translation>
+        <translation>فعال کردن %1 منوط به توافق شما و مشروبات الکلی با شرایط %1 شما است. این وظیفه شماست که نیازها و پارامترهای استفاده از ابزارهایی مانند %1 را بدانید و بپذیرید. این ممکن است شامل ، اما محدود به آن نیست ، اطمینان حاصل کنید که شما می توانید %1 دسترسی به کد خود را داشته باشید ، و همچنین درک هرگونه پیامدهای استفاده شما از %1 و پیشنهادات تولید شده (مانند حق چاپ ، دقت و غیره) را درک کنید.</translation>
     </message>
     <message>
         <location line="+16" />
@@ -818,9 +818,9 @@ The code has been copied to your clipboard.</source>
 
 Otherwise you need to specify the path to the %2 file from the Copilot neovim plugin.</source>
         <comment>Markdown text for the copilot instruction label</comment>
-        <translation>افزونه Copilot به Node.js و افزونه Copilot Neovim نیاز دارد. اگر افزونه Neovim را همانطور که در ٪ 1 توضیح داده شده است نصب کنید ، افزونه به طور خودکار پرونده ٪ 3 را پیدا می کند.
+        <translation>افزونه Copilot به Node.js و افزونه Copilot Neovim نیاز دارد. اگر افزونه Neovim را همانطور که در %1 توضیح داده شده است نصب کنید ، افزونه به طور خودکار پرونده %3 را پیدا می کند.
 
- در غیر این صورت باید مسیر پرونده ٪ 2 را از افزونه Copilot Neovim مشخص کنید.</translation>
+ در غیر این صورت باید مسیر پرونده %2 را از افزونه Copilot Neovim مشخص کنید.</translation>
     </message>
     <message>
         <location line="+14" />
@@ -1336,7 +1336,7 @@ Continue?</source>
         <source>Provide cursors for resizing views.
 If the system cursors for resizing views are not displayed properly, you can use the cursors provided by %1.</source>
         <translation>مکان نما برای تغییر اندازه نماها ارائه دهید.
- اگر نشانگرهای سیستم برای تغییر اندازه نمایش به درستی نمایش داده نشوند ، می توانید از مکان نما ارائه شده توسط ٪ 1 استفاده کنید.</translation>
+ اگر نشانگرهای سیستم برای تغییر اندازه نمایش به درستی نمایش داده نشوند ، می توانید از مکان نما ارائه شده توسط %1 استفاده کنید.</translation>
     </message>
     <message>
         <location line="+93" />
@@ -1371,7 +1371,7 @@ If the system cursors for resizing views are not displayed properly, you can use
     <message>
         <location line="+6" />
         <source>The following environment variables are set and can influence the UI scaling behavior of %1:</source>
-        <translation>متغیرهای محیط زیر تنظیم شده و می توانند بر رفتار مقیاس گذاری UI ٪ 1 تأثیر بگذارند:</translation>
+        <translation>متغیرهای محیط زیر تنظیم شده و می توانند بر رفتار مقیاس گذاری UI %1 تأثیر بگذارند:</translation>
     </message>
     <message>
         <location line="+7" />
@@ -1905,7 +1905,7 @@ provided they were unmodified before the refactoring.</source>
     <message>
         <location line="+1" />
         <source>This will hide the menu bar completely. You can show it again by typing %1.&lt;br&gt;&lt;br&gt;Or, trigger the "%2" action from the "%3" locator filter (%4).</source>
-        <translation>این نوار منو را به طور کامل پنهان می کند. می توانید دوباره آن را با تایپ ٪ 1 نشان دهید.</translation>
+        <translation>این نوار منو را به طور کامل پنهان می کند. می توانید دوباره آن را با تایپ %1 نشان دهید.</translation>
     </message>
     <message>
         <location line="+21" />
@@ -2126,7 +2126,7 @@ provided they were unmodified before the refactoring.</source>
     <message>
         <location line="+9" />
         <source>Invalid level: %1</source>
-        <translation>سطح نامعتبر: ٪ 1</translation>
+        <translation>سطح نامعتبر: %1</translation>
     </message>
     <message>
         <location line="+312" />
@@ -2171,7 +2171,7 @@ provided they were unmodified before the refactoring.</source>
     <message>
         <location line="+10" />
         <source>Invalid regular expression: %1</source>
-        <translation>بیان منظم نامعتبر: ٪ 1</translation>
+        <translation>بیان منظم نامعتبر: %1</translation>
     </message>
     <message>
         <location line="+85" />
@@ -2191,17 +2191,17 @@ provided they were unmodified before the refactoring.</source>
     <message>
         <location line="+65" />
         <source>Uncheck All %1</source>
-        <translation>بررسی همه ٪ 1</translation>
+        <translation>بررسی همه %1</translation>
     </message>
     <message>
         <location line="+0" />
         <source>Check All %1</source>
-        <translation>همه ٪ 1 را بررسی کنید</translation>
+        <translation>همه %1 را بررسی کنید</translation>
     </message>
     <message>
         <location line="+4" />
         <source>Reset All %1</source>
-        <translation>تنظیم مجدد همه ٪ 1</translation>
+        <translation>تنظیم مجدد همه %1</translation>
     </message>
     <message>
         <location line="+31" />
@@ -2221,7 +2221,7 @@ provided they were unmodified before the refactoring.</source>
     <message>
         <location line="+51" />
         <source>Failed to open preset file "%1" for reading.</source>
-        <translation>برای خواندن پرونده از پیش تعیین شده "٪ 1" باز نشد.</translation>
+        <translation>برای خواندن پرونده از پیش تعیین شده "%1" باز نشد.</translation>
     </message>
     <message>
         <location line="-172" />
@@ -3393,7 +3393,7 @@ To do this, you type this shortcut and a space in the Locator entry field, and t
     <message>
         <location line="+1" />
         <source>Cannot create file "%1".</source>
-        <translation>نمی تواند پرونده "٪ 1" ایجاد کند.</translation>
+        <translation>نمی تواند پرونده "%1" ایجاد کند.</translation>
     </message>
     <message>
         <location line="+15" />
@@ -3403,12 +3403,12 @@ To do this, you type this shortcut and a space in the Locator entry field, and t
     <message>
         <location line="+164" />
         <source>Create and Open File "%1"</source>
-        <translation>ایجاد و باز کردن پرونده "٪ 1"</translation>
+        <translation>ایجاد و باز کردن پرونده "%1"</translation>
     </message>
     <message>
         <location line="+17" />
         <source>Create Directory "%1"</source>
-        <translation>دایرکتوری "٪ 1" ایجاد کنید</translation>
+        <translation>دایرکتوری "%1" ایجاد کنید</translation>
     </message>
     <message>
         <location line="+58" />
@@ -3872,7 +3872,7 @@ To do this, you type this shortcut and a space in the Locator entry field, and t
     <message>
         <location line="+3" />
         <source>The path to the running %1 itself.</source>
-        <translation>مسیر در حال اجرا ٪ 1 خود.</translation>
+        <translation>مسیر در حال اجرا %1 خود.</translation>
     </message>
     <message>
         <location line="+3" />
@@ -3882,7 +3882,7 @@ To do this, you type this shortcut and a space in the Locator entry field, and t
     <message>
         <location line="+4" />
         <source>The directory where %1 puts custom user data.</source>
-        <translation>دایرکتوری که ٪ 1 داده های کاربر سفارشی را قرار می دهد.</translation>
+        <translation>دایرکتوری که %1 داده های کاربر سفارشی را قرار می دهد.</translation>
     </message>
     <message>
         <location line="+3" />
@@ -4899,12 +4899,12 @@ Double-click to edit item.</source>
     <message>
         <location line="+23" />
         <source>Running in "%1": %2 %3.</source>
-        <translation>دویدن در "٪ 1": ٪ 2 ٪ 3.</translation>
+        <translation>دویدن در "%1": %2 %3.</translation>
     </message>
     <message>
         <location line="+17" />
         <source>A timeout occurred running "%1".</source>
-        <translation>زمان وقوع "٪ 1" رخ داد.</translation>
+        <translation>زمان وقوع "%1" رخ داد.</translation>
     </message>
     <message>
         <source>Running in %1: %2 %3</source>
@@ -5095,7 +5095,7 @@ Double-click to edit item.</source>
     <message>
         <location line="+1" />
         <source>Remove the following files from the version control system (%1)?</source>
-        <translation>پرونده های زیر را از سیستم کنترل نسخه (٪ 1) حذف کنید؟</translation>
+        <translation>پرونده های زیر را از سیستم کنترل نسخه (%1) حذف کنید؟</translation>
     </message>
     <message>
         <location line="+2" />
@@ -5546,7 +5546,7 @@ to version control (%2)
     <message>
         <location line="+21" />
         <source>Plugin Details of %1</source>
-        <translation>جزئیات افزونه ٪ 1</translation>
+        <translation>جزئیات افزونه %1</translation>
     </message>
     <message>
         <location filename="../../../src/libs/extensionsystem/pluginerrorview.cpp" line="+47" />
@@ -5602,7 +5602,7 @@ to version control (%2)
         <location filename="../../../src/libs/extensionsystem/pluginview.cpp" line="+103" />
         <source>%1 (deprecated)</source>
         <extracomment>%1 is a plugin name</extracomment>
-        <translation>٪ 1 (مستهلک)</translation>
+        <translation>%1 (مستهلک)</translation>
     </message>
     <message>
         <location line="+3" />
@@ -5804,7 +5804,7 @@ Reason: %3</source>
     <message>
         <location line="+2" />
         <source>If you temporarily disable %1, the following plugins that depend on it are also disabled: %2.</source>
-        <translation>اگر به طور موقت ٪ 1 را غیرفعال کنید ، افزونه های زیر که به آن بستگی دارد نیز غیرفعال هستند: ٪ 2.</translation>
+        <translation>اگر به طور موقت %1 را غیرفعال کنید ، افزونه های زیر که به آن بستگی دارد نیز غیرفعال هستند: %2.</translation>
     </message>
     <message>
         <source>If you temporarily disable %1, the following plugins that depend on it are also disabled: %2.
@@ -5932,7 +5932,7 @@ Reason: %3</source>
     <message>
         <location line="+3" />
         <source>Expected IID "%1", but found "%2"</source>
-        <translation>انتظار می رود IID "٪ 1" ، اما "٪ 2" را پیدا کرد</translation>
+        <translation>انتظار می رود IID "%1" ، اما "%2" را پیدا کرد</translation>
     </message>
     <message>
         <location line="+6" />
@@ -6346,7 +6346,7 @@ Would you like to overwrite them?</source>
     <message>
         <location filename="../../../src/libs/languageserverprotocol/jsonrpcmessages.h" line="+257" />
         <source>Error %1</source>
-        <translation>خطا ٪ 1</translation>
+        <translation>خطا %1</translation>
     </message>
     <message>
         <location filename="../../../src/plugins/languageclient/callandtypehierarchy.cpp" line="+60" />
@@ -6387,7 +6387,7 @@ Would you like to overwrite them?</source>
         <location filename="../../../src/plugins/languageclient/client.cpp" line="+394" />
         <source>%1 for %2</source>
         <extracomment>&lt;language client&gt; for &lt;project&gt;</extracomment>
-        <translation>٪ 1 برای ٪ 2</translation>
+        <translation>%1 برای %2</translation>
     </message>
     <message>
         <location line="+223" />
@@ -6435,18 +6435,18 @@ Would you like to overwrite them?</source>
         <location line="+1342" />
         <source>Invalid parameter in "%1":
 %2</source>
-        <translation>پارامتر نامعتبر در "٪ 1":
- ٪ 2</translation>
+        <translation>پارامتر نامعتبر در "%1":
+ %2</translation>
     </message>
     <message>
         <location line="+219" />
         <source>Language Server "%1" Initialization Error</source>
-        <translation>خطای اولیه سازی سرور زبان "٪ 1"</translation>
+        <translation>خطای اولیه سازی سرور زبان "%1"</translation>
     </message>
     <message>
         <location line="+13" />
         <source>Initialization error: %1.</source>
-        <translation>خطای اولیه سازی: ٪ 1.</translation>
+        <translation>خطای اولیه سازی: %1.</translation>
     </message>
     <message>
         <location line="+7" />
@@ -6516,17 +6516,17 @@ Would you like to overwrite them?</source>
     <message>
         <location filename="../../../src/plugins/languageclient/languageclientinterface.cpp" line="+77" />
         <source>Cannot handle MIME type "%1" of message.</source>
-        <translation>نمی توان پیام "٪ 1" پیام را کنترل کرد.</translation>
+        <translation>نمی توان پیام "%1" پیام را کنترل کرد.</translation>
     </message>
     <message>
         <location line="+70" />
         <source>Cannot send data to unstarted server %1</source>
-        <translation>نمی تواند داده ها را به سرور unstarted ٪ 1 ارسال کند</translation>
+        <translation>نمی تواند داده ها را به سرور unstarted %1 ارسال کند</translation>
     </message>
     <message>
         <location filename="../../../src/plugins/languageclient/languageclientmanager.cpp" line="+178" />
         <source>Unexpectedly finished. Restarting in %1 seconds.</source>
-        <translation>به طور غیر منتظره به پایان رسید شروع مجدد در ٪ 1 ثانیه.</translation>
+        <translation>به طور غیر منتظره به پایان رسید شروع مجدد در %1 ثانیه.</translation>
     </message>
     <message>
         <location line="+10" />
@@ -6609,12 +6609,12 @@ Would you like to overwrite them?</source>
         <source>List of file patterns.
 Example: *.cpp%1*.h</source>
         <translation>لیست الگوهای پرونده.
- مثال: *.cpp ٪ 1 *.h</translation>
+ مثال: *.cpp %1 *.h</translation>
     </message>
     <message>
         <location line="+18" />
         <source>Failed to parse JSON at %1: %2</source>
-        <translation>نتوانست JSON را در ٪ 1: ٪ 2 تجزیه کند</translation>
+        <translation>نتوانست JSON را در %1: %2 تجزیه کند</translation>
     </message>
     <message>
         <location line="+8" />
@@ -6704,23 +6704,23 @@ See the documentation of the specific language server for valid settings.</sourc
         <source>Files:
 %1</source>
         <translation>پرونده ها:
- ٪ 1</translation>
+ %1</translation>
     </message>
     <message>
         <location line="+331" />
         <location line="+227" />
         <source>Find References with %1 for:</source>
-        <translation>منابع را با ٪ 1 پیدا کنید:</translation>
+        <translation>منابع را با %1 پیدا کنید:</translation>
     </message>
     <message>
         <location line="-144" />
         <source>Renaming is not supported with %1</source>
-        <translation>تغییر نام با ٪ 1 پشتیبانی نمی شود</translation>
+        <translation>تغییر نام با %1 پشتیبانی نمی شود</translation>
     </message>
     <message>
         <location line="+168" />
         <source>%1 is not reachable anymore.</source>
-        <translation>٪ 1 دیگر قابل دسترسی نیست.</translation>
+        <translation>%1 دیگر قابل دسترسی نیست.</translation>
     </message>
     <message>
         <location line="+33" />
@@ -6735,7 +6735,7 @@ See the documentation of the specific language server for valid settings.</sourc
     <message>
         <location line="+121" />
         <source>Restart %1</source>
-        <translation>٪ 1 را مجدداً راه اندازی کنید</translation>
+        <translation>%1 را مجدداً راه اندازی کنید</translation>
     </message>
     <message>
         <location line="+5" />
@@ -6755,7 +6755,7 @@ See the documentation of the specific language server for valid settings.</sourc
     <message>
         <location line="+6" />
         <source>Running "%1" to install %2.</source>
-        <translation>اجرای "٪ 1" برای نصب ٪ 2.</translation>
+        <translation>اجرای "%1" برای نصب %2.</translation>
     </message>
     <message>
         <location line="+17" />
@@ -6770,17 +6770,17 @@ See the documentation of the specific language server for valid settings.</sourc
     <message>
         <location line="+8" />
         <source>Installing "%1" failed with exit code %2.</source>
-        <translation>نصب "٪ ​​1" با کد خروجی ٪ 2 انجام نشد.</translation>
+        <translation>نصب "٪ ​​1" با کد خروجی %2 انجام نشد.</translation>
     </message>
     <message>
         <location line="+56" />
         <source>Install %1 language server via npm.</source>
-        <translation>٪ 1 سرور زبان را از طریق NPM نصب کنید.</translation>
+        <translation>%1 سرور زبان را از طریق NPM نصب کنید.</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Setup %1 language server (%2).</source>
-        <translation>تنظیم ٪ 1 سرور زبان (٪ 2).</translation>
+        <translation>تنظیم %1 سرور زبان (%2).</translation>
     </message>
     <message>
         <location line="+4" />
@@ -6795,7 +6795,7 @@ See the documentation of the specific language server for valid settings.</sourc
     <message>
         <location line="+10" />
         <source>%1 Language Server</source>
-        <translation>٪ 1 سرور زبان</translation>
+        <translation>%1 سرور زبان</translation>
     </message>
     <message>
         <location filename="../../../src/plugins/languageclient/lspinspector.cpp" line="+48" />
@@ -6878,47 +6878,47 @@ See the documentation of the specific language server for valid settings.</sourc
     <message>
         <location filename="../../../src/libs/languageserverprotocol/basemessage.cpp" line="+84" />
         <source>Cannot decode content with "%1". Falling back to "%2".</source>
-        <translation>نمی توان محتوای "٪ 1" را رمزگشایی کرد. بازگشت به "٪ 2".</translation>
+        <translation>نمی توان محتوای "%1" را رمزگشایی کرد. بازگشت به "%2".</translation>
     </message>
     <message>
         <location line="+15" />
         <source>Expected an integer in "%1", but got "%2".</source>
-        <translation>انتظار می رود یک عدد صحیح در "٪ 1" باشد ، اما "٪ 2" را بدست آورد.</translation>
+        <translation>انتظار می رود یک عدد صحیح در "%1" باشد ، اما "%2" را بدست آورد.</translation>
     </message>
     <message>
         <location filename="../../../src/libs/languageserverprotocol/jsonrpcmessages.cpp" line="+80" />
         <source>Could not parse JSON message: "%1".</source>
-        <translation>نمی توان پیام JSON را تجزیه کرد: "٪ 1".</translation>
+        <translation>نمی توان پیام JSON را تجزیه کرد: "%1".</translation>
     </message>
     <message>
         <location line="+3" />
         <source>Expected a JSON object, but got a JSON "%1" value.</source>
-        <translation>انتظار می رود یک شیء JSON ، اما مقدار JSON "٪ 1" را بدست آورد.</translation>
+        <translation>انتظار می رود یک شیء JSON ، اما مقدار JSON "%1" را بدست آورد.</translation>
     </message>
     <message>
         <location filename="../../../src/libs/languageserverprotocol/jsonrpcmessages.h" line="-91" />
         <source>No parameters in "%1".</source>
-        <translation>هیچ پارامتر در "٪ 1" وجود ندارد.</translation>
+        <translation>هیچ پارامتر در "%1" وجود ندارد.</translation>
     </message>
     <message>
         <location line="+213" />
         <source>No ID set in "%1".</source>
-        <translation>هیچ شناسه ای در "٪ 1" تنظیم نشده است.</translation>
+        <translation>هیچ شناسه ای در "%1" تنظیم نشده است.</translation>
     </message>
     <message>
         <location filename="../../../src/libs/languageserverprotocol/lsptypes.cpp" line="+451" />
         <source>Create %1</source>
-        <translation>٪ 1 ایجاد کنید</translation>
+        <translation>%1 ایجاد کنید</translation>
     </message>
     <message>
         <location line="+15" />
         <source>Rename %1 to %2</source>
-        <translation>تغییر نام ٪ 1 به ٪ 2</translation>
+        <translation>تغییر نام %1 به %2</translation>
     </message>
     <message>
         <location line="+17" />
         <source>Delete %1</source>
-        <translation>٪ 1 را حذف کنید</translation>
+        <translation>%1 را حذف کنید</translation>
     </message>
 </context>
 <context>
@@ -7230,14 +7230,14 @@ Please close any programs that are viewing/editing OpenMV IDE's application data
         <source>Error in parsing &lt;user_resources&gt;/openmvide/firmware/settings.json - %L1!
 
 Check the json file for errors and fix them.</source>
-        <translation>خطا در تجزیه &lt;user_resource&gt;/openmvide/firmware/settings.json - ٪ l1!
+        <translation>خطا در تجزیه &lt;user_resource&gt;/openmvide/firmware/settings.json - %L1!
 
  پرونده JSON را برای خطاها بررسی کرده و آنها را برطرف کنید.</translation>
     </message>
     <message>
         <location line="+9" />
         <source>Error reading &lt;user_resources&gt;/openmvide/firmware/settings.json: %L1.\n\nOpenMV IDE versions before v4.3.0 do not have this file and would have deleted it on installing resources.</source>
-        <translation>خطا در خواندن &lt;user_resource&gt;/openmvide/firmware/settings.json: ٪ l1. \ n \ nopenmv نسخه های IDE قبل از v4.3.0 این پرونده را ندارید و آن را در نصب منابع حذف می کند.</translation>
+        <translation>خطا در خواندن &lt;user_resource&gt;/openmvide/firmware/settings.json: %L1. \ n \ nopenmv نسخه های IDE قبل از v4.3.0 این پرونده را ندارید و آن را در نصب منابع حذف می کند.</translation>
     </message>
     <message>
         <location line="+186" />
@@ -7856,7 +7856,7 @@ Check the json file for errors and fix them.</source>
     <message>
         <location line="-40" />
         <source>No settings for the selected board type %L1!</source>
-        <translation>بدون تنظیم برای نوع صفحه انتخاب شده ٪ L1!</translation>
+        <translation>بدون تنظیم برای نوع صفحه انتخاب شده %L1!</translation>
     </message>
     <message>
         <location line="+9" />
@@ -13052,14 +13052,14 @@ Preselects a desktop Qt for building the application if available.</source>
     <message>
         <location line="+3" />
         <source>Delete session %1?</source>
-        <translation>جلسه ٪ 1 را حذف کنید؟</translation>
+        <translation>جلسه %1 را حذف کنید؟</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Delete these sessions?
     %1</source>
         <translation>این جلسات را حذف کنید؟
- ٪ 1</translation>
+ %1</translation>
     </message>
     <message>
         <location line="+308" />
@@ -13069,7 +13069,7 @@ Preselects a desktop Qt for building the application if available.</source>
     <message>
         <location line="+1" />
         <source>Could not restore session %1</source>
-        <translation>نمی توان جلسه ٪ 1 را بازیابی کرد</translation>
+        <translation>نمی توان جلسه %1 را بازیابی کرد</translation>
     </message>
     <message>
         <location line="+44" />
@@ -13085,12 +13085,12 @@ Preselects a desktop Qt for building the application if available.</source>
     <message>
         <location line="-41" />
         <source>Could not save session %1</source>
-        <translation>نمی توان جلسه ٪ 1 را ذخیره کرد</translation>
+        <translation>نمی توان جلسه %1 را ذخیره کرد</translation>
     </message>
     <message>
         <location line="+42" />
         <source>Could not save session to file "%1"</source>
-        <translation>نمی توان جلسه را برای پرونده "٪ 1" ذخیره کرد</translation>
+        <translation>نمی توان جلسه را برای پرونده "%1" ذخیره کرد</translation>
     </message>
     <message>
         <location filename="../../../src/plugins/coreplugin/sessiondialog.cpp" line="+90" />
@@ -13201,37 +13201,37 @@ Preselects a desktop Qt for building the application if available.</source>
     <message>
         <location line="+72" />
         <source>Could not create directory "%1"</source>
-        <translation>نمی توان فهرست "٪ 1" را ایجاد کرد</translation>
+        <translation>نمی توان فهرست "%1" را ایجاد کرد</translation>
     </message>
     <message>
         <location line="+5" />
         <source>The program "%1" does not exist or is not executable.</source>
-        <translation>برنامه "٪ 1" وجود ندارد یا قابل اجرا نیست.</translation>
+        <translation>برنامه "%1" وجود ندارد یا قابل اجرا نیست.</translation>
     </message>
     <message>
         <location line="+34" />
         <source>Starting: "%1" %2</source>
-        <translation>شروع: "٪ 1" ٪ 2</translation>
+        <translation>شروع: "%1" %2</translation>
     </message>
     <message>
         <location line="+11" />
         <source>The process "%1" exited normally.</source>
-        <translation>فرآیند "٪ 1" به طور عادی خارج شد.</translation>
+        <translation>فرآیند "%1" به طور عادی خارج شد.</translation>
     </message>
     <message>
         <location line="+3" />
         <source>The process "%1" exited with code %2.</source>
-        <translation>فرآیند "٪ 1" با کد ٪ 2 خارج شد.</translation>
+        <translation>فرآیند "%1" با کد %2 خارج شد.</translation>
     </message>
     <message>
         <location line="+4" />
         <source>Could not start process "%1" %2.</source>
-        <translation>نمی توان فرآیند "٪ 1" ٪ 2 را شروع کرد.</translation>
+        <translation>نمی توان فرآیند "%1" %2 را شروع کرد.</translation>
     </message>
     <message>
         <location line="+7" />
         <source>The process "%1" crashed.</source>
-        <translation>روند "٪ 1" سقوط کرد.</translation>
+        <translation>روند "%1" سقوط کرد.</translation>
     </message>
     <message>
         <location filename="../../../src/plugins/projectexplorer/addrunconfigdialog.cpp" line="+54" />
@@ -13291,8 +13291,8 @@ Preselects a desktop Qt for building the application if available.</source>
         <source>Filter: %1
 Excluding: %2
 %3</source>
-        <translation>فیلتر: ٪ 1
- به استثنای: ٪ 2
+        <translation>فیلتر: %1
+ به استثنای: %2
  3 ٪</translation>
     </message>
     <message>
@@ -13303,7 +13303,7 @@ Excluding: %2
     <message>
         <location line="+1" />
         <source>Attach debugger to %1</source>
-        <translation>اشکال زدایی را به ٪ 1 وصل کنید</translation>
+        <translation>اشکال زدایی را به %1 وصل کنید</translation>
     </message>
     <message>
         <location line="+70" />
@@ -13360,7 +13360,7 @@ Excluding: %2
         <location line="+232" />
         <source>application-output-%1.txt</source>
         <extracomment>file name suggested for saving application output, %1 = run configuration display name</extracomment>
-        <translation>کاربرد-خروجی- ٪ 1.txt</translation>
+        <translation>کاربرد-خروجی- %1.txt</translation>
     </message>
     <message>
         <location line="+29" />
@@ -13370,7 +13370,7 @@ Excluding: %2
     <message>
         <location line="+280" />
         <source>PID %1</source>
-        <translation>PID ٪ 1</translation>
+        <translation>PID %1</translation>
     </message>
     <message>
         <location line="+1" />
@@ -13413,7 +13413,7 @@ Excluding: %2
         <location line="+14" />
         <location filename="../../../src/plugins/projectexplorer/compileoutputwindow.cpp" line="+13" />
         <source>Limit output to %1 characters</source>
-        <translation>خروجی را به ٪ 1 نویسه محدود کنید</translation>
+        <translation>خروجی را به %1 نویسه محدود کنید</translation>
     </message>
     <message>
         <location line="+7" />
@@ -13450,7 +13450,7 @@ Excluding: %2
     <message>
         <location line="+105" />
         <source>Build directory contains potentially problematic character "%1".</source>
-        <translation>ساخت دایرکتوری حاوی شخصیت بالقوه مشکل ساز "٪ 1" است.</translation>
+        <translation>ساخت دایرکتوری حاوی شخصیت بالقوه مشکل ساز "%1" است.</translation>
     </message>
     <message>
         <location line="+5" />
@@ -13574,7 +13574,7 @@ Excluding: %2
     <message>
         <location line="+50" />
         <source>No build device is set for the kit "%1".</source>
-        <translation>هیچ دستگاه ساختمانی برای کیت "٪ 1" تنظیم نشده است.</translation>
+        <translation>هیچ دستگاه ساختمانی برای کیت "%1" تنظیم نشده است.</translation>
     </message>
     <message>
         <location line="+8" />
@@ -13584,18 +13584,18 @@ Excluding: %2
     <message>
         <location line="+7" />
         <source>The build device "%1" cannot reach the project directory.</source>
-        <translation>دستگاه ساخت "٪ 1" نمی تواند به فهرست پروژه برسد.</translation>
+        <translation>دستگاه ساخت "%1" نمی تواند به فهرست پروژه برسد.</translation>
     </message>
     <message>
         <location line="+11" />
         <source>The build device "%1" cannot reach the build directory.</source>
-        <translation>دستگاه ساخت "٪ 1" نمی تواند به دایرکتوری ساخت برسد.</translation>
+        <translation>دستگاه ساخت "%1" نمی تواند به دایرکتوری ساخت برسد.</translation>
     </message>
     <message numerus="yes">
         <location filename="../../../src/plugins/projectexplorer/buildmanager.cpp" line="+182" />
         <source>Finished %1 of %n steps</source>
         <translation>
-            <numerusform>٪ 1 از ٪ n قدم به پایان رسید</numerusform><numerusform>٪ 1 از ٪ n قدم به پایان رسید</numerusform></translation>
+            <numerusform>%1 از ٪ n قدم به پایان رسید</numerusform><numerusform>%1 از ٪ n قدم به پایان رسید</numerusform></translation>
     </message>
     <message>
         <location line="+82" />
@@ -13610,12 +13610,12 @@ Excluding: %2
     <message>
         <location line="+26" />
         <source>The project %1 is not configured, skipping it.</source>
-        <translation>پروژه ٪ 1 پیکربندی نشده است و از آن پرش می کند.</translation>
+        <translation>پروژه %1 پیکربندی نشده است و از آن پرش می کند.</translation>
     </message>
     <message>
         <location line="+11" />
         <source>The build device failed to prepare for the build of %1 (%2).</source>
-        <translation>دستگاه ساخت نتوانست برای ساخت ٪ 1 (٪ 2) آماده شود.</translation>
+        <translation>دستگاه ساخت نتوانست برای ساخت %1 (%2) آماده شود.</translation>
     </message>
     <message>
         <location line="+138" />
@@ -13713,29 +13713,29 @@ Display name of the build build step list. Used as part of the labels in the pro
     <message>
         <location line="+83" />
         <source>Running steps for project %1...</source>
-        <translation>مراحل اجرای پروژه ٪ 1 ...</translation>
+        <translation>مراحل اجرای پروژه %1 ...</translation>
     </message>
     <message>
         <location line="+8" />
         <source>Skipping disabled step %1.</source>
-        <translation>پرش از مرحله غیرفعال ٪ 1.</translation>
+        <translation>پرش از مرحله غیرفعال %1.</translation>
     </message>
     <message>
         <location line="+24" />
         <location line="+104" />
         <source>Error while building/deploying project %1 (kit: %2)</source>
-        <translation>خطا هنگام ساخت/استقرار پروژه ٪ 1 (کیت: ٪ 2)</translation>
+        <translation>خطا هنگام ساخت/استقرار پروژه %1 (کیت: %2)</translation>
     </message>
     <message>
         <location line="-100" />
         <source>The kit %1 has configuration issues which might be the root cause for this problem.</source>
-        <translation>کیت ٪ 1 دارای مشکلات پیکربندی است که ممکن است دلیل اصلی این مشکل باشد.</translation>
+        <translation>کیت %1 دارای مشکلات پیکربندی است که ممکن است دلیل اصلی این مشکل باشد.</translation>
     </message>
     <message>
         <location line="+4" />
         <location line="+98" />
         <source>When executing step "%1"</source>
-        <translation>هنگام اجرای مرحله "٪ 1"</translation>
+        <translation>هنگام اجرای مرحله "%1"</translation>
     </message>
     <message>
         <location filename="../../../src/plugins/projectexplorer/buildpropertiessettings.cpp" line="-33" />
@@ -13766,7 +13766,7 @@ Display name of the build build step list. Used as part of the labels in the pro
     <message>
         <location line="+2" />
         <source>Template used to construct the default build directory.&lt;br&gt;&lt;br&gt;The default value can be set using the environment variable &lt;tt&gt;%1&lt;/tt&gt;.</source>
-        <translation>الگوی مورد استفاده برای ساخت دایرکتوری ساخت پیش فرض. &lt;br&gt; &lt;br&gt; مقدار پیش فرض را می توان با استفاده از متغیر محیط &lt;tt&gt; ٪ 1 &lt;/tt&gt; تنظیم کرد.</translation>
+        <translation>الگوی مورد استفاده برای ساخت دایرکتوری ساخت پیش فرض. &lt;br&gt; &lt;br&gt; مقدار پیش فرض را می توان با استفاده از متغیر محیط &lt;tt&gt; %1 &lt;/tt&gt; تنظیم کرد.</translation>
     </message>
     <message>
         <location line="+10" />
@@ -13846,7 +13846,7 @@ Display name of the build build step list. Used as part of the labels in the pro
     <message>
         <location line="-25" />
         <source>New name for build configuration &lt;b&gt;%1&lt;/b&gt;:</source>
-        <translation>نام جدید برای پیکربندی ساخت &lt;b&gt; ٪ 1 &lt;/b&gt;:</translation>
+        <translation>نام جدید برای پیکربندی ساخت &lt;b&gt; %1 &lt;/b&gt;:</translation>
     </message>
     <message>
         <location line="+24" />
@@ -13872,12 +13872,12 @@ Title of a the cloned RunConfiguration window, text of the window</extracomment>
     <message>
         <location line="+2" />
         <source>Remove Build Configuration %1?</source>
-        <translation>پیکربندی ساخت ٪ 1 را حذف کنید؟</translation>
+        <translation>پیکربندی ساخت %1 را حذف کنید؟</translation>
     </message>
     <message>
         <location line="+1" />
         <source>The build configuration &lt;b&gt;%1&lt;/b&gt; is currently being built.</source>
-        <translation>پیکربندی ساخت &lt;b&gt; ٪ 1 &lt;/b&gt; در حال حاضر ساخته شده است.</translation>
+        <translation>پیکربندی ساخت &lt;b&gt; %1 &lt;/b&gt; در حال حاضر ساخته شده است.</translation>
     </message>
     <message>
         <location line="+1" />
@@ -13892,7 +13892,7 @@ Title of a the cloned RunConfiguration window, text of the window</extracomment>
     <message>
         <location line="+1" />
         <source>Do you really want to delete build configuration &lt;b&gt;%1&lt;/b&gt;?</source>
-        <translation>آیا واقعاً می خواهید پیکربندی ساخت را حذف کنید &lt;b&gt; ٪ 1 &lt;/b&gt;؟</translation>
+        <translation>آیا واقعاً می خواهید پیکربندی ساخت را حذف کنید &lt;b&gt; %1 &lt;/b&gt;؟</translation>
     </message>
     <message>
         <location filename="../../../src/plugins/projectexplorer/buildstepspage.cpp" line="-58" />
@@ -13913,17 +13913,17 @@ Title of a the cloned RunConfiguration window, text of the window</extracomment>
         <location line="+97" />
         <source>%1 Steps</source>
         <extracomment>%1 is the name returned by BuildStepList::displayName</extracomment>
-        <translation>٪ 1 مرحله</translation>
+        <translation>%1 مرحله</translation>
     </message>
     <message>
         <location line="+19" />
         <source>No %1 Steps</source>
-        <translation>بدون ٪ 1 قدم</translation>
+        <translation>بدون %1 قدم</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Add %1 Step</source>
-        <translation>٪ 1 مرحله را اضافه کنید</translation>
+        <translation>%1 مرحله را اضافه کنید</translation>
     </message>
     <message>
         <location line="+94" />
@@ -13953,7 +13953,7 @@ Title of a the cloned RunConfiguration window, text of the window</extracomment>
     <message>
         <location line="+3" />
         <source>The project file "%1" does not exist.</source>
-        <translation>پرونده پروژه "٪ 1" وجود ندارد.</translation>
+        <translation>پرونده پروژه "%1" وجود ندارد.</translation>
     </message>
     <message>
         <location filename="../../../src/plugins/projectexplorer/codestylesettingspropertiespage.cpp" line="+60" />
@@ -14056,7 +14056,7 @@ Title of a the cloned RunConfiguration window, text of the window</extracomment>
     <message>
         <location filename="../../../src/plugins/projectexplorer/currentprojectfind.cpp" line="+65" />
         <source>Project "%1"</source>
-        <translation>پروژه "٪ 1"</translation>
+        <translation>پروژه "%1"</translation>
     </message>
     <message>
         <location line="+2" />
@@ -14066,7 +14066,7 @@ Title of a the cloned RunConfiguration window, text of the window</extracomment>
     <message>
         <location line="+30" />
         <source>Project "%1":</source>
-        <translation>پروژه "٪ 1":</translation>
+        <translation>پروژه "%1":</translation>
     </message>
     <message>
         <location filename="../../../src/plugins/projectexplorer/customexecutablerunconfiguration.cpp" line="+55" />
@@ -14078,7 +14078,7 @@ Title of a the cloned RunConfiguration window, text of the window</extracomment>
         <location line="-16" />
         <location filename="../../../src/plugins/projectexplorer/projectexplorer.cpp" line="+1718" />
         <source>Run %1</source>
-        <translation>Run ٪ 1</translation>
+        <translation>Run %1</translation>
     </message>
     <message>
         <location line="+7" />
@@ -14436,12 +14436,12 @@ Title of a the cloned RunConfiguration window, text of the window</extracomment>
     <message>
         <location filename="../../../src/plugins/projectexplorer/devicesupport/desktopprocesssignaloperation.cpp" line="+69" />
         <source>Cannot kill process with pid %1: %2</source>
-        <translation>نمی تواند روند را با PID ٪ 1: ٪ 2 بکشد</translation>
+        <translation>نمی تواند روند را با PID %1: %2 بکشد</translation>
     </message>
     <message>
         <location line="+8" />
         <source>Cannot interrupt process with pid %1: %2</source>
-        <translation>نمی تواند روند را با PID ٪ 1: ٪ 2 قطع کند</translation>
+        <translation>نمی تواند روند را با PID %1: %2 قطع کند</translation>
     </message>
     <message>
         <location line="+15" />
@@ -14457,7 +14457,7 @@ Title of a the cloned RunConfiguration window, text of the window</extracomment>
     <message>
         <location line="-46" />
         <source>Cannot open process: %1</source>
-        <translation>فرآیند باز نمی تواند: ٪ 1</translation>
+        <translation>فرآیند باز نمی تواند: %1</translation>
     </message>
     <message>
         <location line="+11" />
@@ -14467,12 +14467,12 @@ Title of a the cloned RunConfiguration window, text of the window</extracomment>
     <message>
         <location line="+10" />
         <source>%1 does not exist. If you built %2 yourself, check out https://code.qt.io/cgit/qt-creator/binary-artifacts.git/.</source>
-        <translation>٪ 1 وجود ندارد. اگر خودتان ٪ 2 را ساخته اید ، https://code.qt.io/cgit/qt-creator/binary-artifacts.git/ را بررسی کنید.</translation>
+        <translation>%1 وجود ندارد. اگر خودتان %2 را ساخته اید ، https://code.qt.io/cgit/qt-creator/binary-artifacts.git/ را بررسی کنید.</translation>
     </message>
     <message>
         <location line="+8" />
         <source>Cannot start %1. Check src\tools\win64interrupt\win64interrupt.c for more information.</source>
-        <translation>نمی توان ٪ 1 را شروع کرد. برای اطلاعات بیشتر SRC \ Tools \ Win64Interupruct \ Win64Interuprup.c را بررسی کنید.</translation>
+        <translation>نمی توان %1 را شروع کرد. برای اطلاعات بیشتر SRC \ Tools \ Win64Interupruct \ Win64Interuprup.c را بررسی کنید.</translation>
     </message>
     <message>
         <location line="+8" />
@@ -14514,23 +14514,23 @@ Title of a the cloned RunConfiguration window, text of the window</extracomment>
     <message>
         <location filename="../../../src/plugins/projectexplorer/devicesupport/devicemanager.cpp" line="+415" />
         <source>No device for path "%1"</source>
-        <translation>هیچ وسیله ای برای مسیر "٪ 1"</translation>
+        <translation>هیچ وسیله ای برای مسیر "%1"</translation>
     </message>
     <message>
         <location line="+10" />
         <location line="+14" />
         <source>No device found for path "%1"</source>
-        <translation>هیچ وسیله ای برای مسیر "٪ 1" یافت نمی شود</translation>
+        <translation>هیچ وسیله ای برای مسیر "%1" یافت نمی شود</translation>
     </message>
     <message>
         <location line="-9" />
         <source>No file access for device "%1"</source>
-        <translation>دسترسی به فایل برای دستگاه "٪ 1"</translation>
+        <translation>دسترسی به فایل برای دستگاه "%1"</translation>
     </message>
     <message>
         <location filename="../../../src/plugins/projectexplorer/devicesupport/devicemanagermodel.cpp" line="+154" />
         <source>%1 (default for %2)</source>
-        <translation>٪ 1 (پیش فرض برای ٪ 2)</translation>
+        <translation>%1 (پیش فرض برای %2)</translation>
     </message>
     <message>
         <location filename="../../../src/plugins/projectexplorer/devicesupport/deviceprocessesdialog.cpp" line="+103" />
@@ -14601,7 +14601,7 @@ Title of a the cloned RunConfiguration window, text of the window</extracomment>
         <location line="+12" />
         <source>Add %1</source>
         <extracomment>Add &lt;Device Type Name&gt;</extracomment>
-        <translation>٪ 1 را اضافه کنید</translation>
+        <translation>%1 را اضافه کنید</translation>
     </message>
     <message>
         <location line="+34" />
@@ -14621,7 +14621,7 @@ Title of a the cloned RunConfiguration window, text of the window</extracomment>
     <message>
         <location line="+87" />
         <source>Yes (id is "%1")</source>
-        <translation>بله (شناسه "٪ 1" است)</translation>
+        <translation>بله (شناسه "%1" است)</translation>
     </message>
     <message>
         <location line="+0" />
@@ -14657,7 +14657,7 @@ Title of a the cloned RunConfiguration window, text of the window</extracomment>
     <message>
         <location filename="../../../src/plugins/projectexplorer/devicesupport/deviceusedportsgatherer.cpp" line="+81" />
         <source>Remote error output was: %1</source>
-        <translation>خروجی خطای از راه دور این بود: ٪ 1</translation>
+        <translation>خروجی خطای از راه دور این بود: %1</translation>
     </message>
     <message numerus="yes">
         <location line="+41" />
@@ -14749,12 +14749,12 @@ Title of a the cloned RunConfiguration window, text of the window</extracomment>
     <message>
         <location line="+30" />
         <source>No device for given path: "%1".</source>
-        <translation>هیچ وسیله ای برای مسیر داده شده: "٪ 1".</translation>
+        <translation>هیچ وسیله ای برای مسیر داده شده: "%1".</translation>
     </message>
     <message>
         <location line="+7" />
         <source>Device for path "%1" does not support killing processes.</source>
-        <translation>دستگاه برای مسیر "٪ 1" از فرایندهای کشتار پشتیبانی نمی کند.</translation>
+        <translation>دستگاه برای مسیر "%1" از فرایندهای کشتار پشتیبانی نمی کند.</translation>
     </message>
     <message>
         <location filename="../../../src/plugins/projectexplorer/devicesupport/processlist.cpp" line="+68" />
@@ -14816,7 +14816,7 @@ Title of a the cloned RunConfiguration window, text of the window</extracomment>
         <location filename="../../../src/plugins/projectexplorer/editorconfiguration.cpp" line="+78" />
         <source>Project %1</source>
         <comment>Settings, %1 is a language (C++ or QML)</comment>
-        <translation>پروژه ٪ 1</translation>
+        <translation>پروژه %1</translation>
     </message>
     <message>
         <location line="+9" />
@@ -14926,33 +14926,33 @@ Title of a the cloned RunConfiguration window, text of the window</extracomment>
     <message>
         <location line="+123" />
         <source>Unset &lt;a href="%1"&gt;&lt;b&gt;%1&lt;/b&gt;&lt;/a&gt;</source>
-        <translation>unset &lt;a href = "٪ 1"&gt; &lt;b&gt; ٪ 1 &lt;/b&gt; &lt;/a&gt;</translation>
+        <translation>unset &lt;a href = "%1"&gt; &lt;b&gt; %1 &lt;/b&gt; &lt;/a&gt;</translation>
     </message>
     <message>
         <location line="+3" />
         <source>Set &lt;a href="%1"&gt;&lt;b&gt;%1&lt;/b&gt;&lt;/a&gt; to &lt;b&gt;%2&lt;/b&gt;</source>
-        <translation>تنظیم &lt;a href = "٪ 1"&gt; &lt;b&gt; ٪ 1 &lt;/a&gt; &lt;/a&gt; به &lt;b&gt; ٪ 2 &lt;/b&gt;</translation>
+        <translation>تنظیم &lt;a href = "%1"&gt; &lt;b&gt; %1 &lt;/a&gt; &lt;/a&gt; به &lt;b&gt; %2 &lt;/b&gt;</translation>
     </message>
     <message>
         <location line="+3" />
         <source>Append &lt;b&gt;%2&lt;/b&gt; to &lt;a href="%1"&gt;&lt;b&gt;%1&lt;/b&gt;&lt;/a&gt;</source>
-        <translation>ضمیمه &lt;b&gt; ٪ 2 &lt;/b&gt; به &lt;a href = "٪ 1"&gt; &lt;b&gt; ٪ 1 &lt;/b&gt; &lt;/a&gt;</translation>
+        <translation>ضمیمه &lt;b&gt; %2 &lt;/b&gt; به &lt;a href = "%1"&gt; &lt;b&gt; %1 &lt;/b&gt; &lt;/a&gt;</translation>
     </message>
     <message>
         <location line="+3" />
         <source>Prepend &lt;b&gt;%2&lt;/b&gt; to &lt;a href="%1"&gt;&lt;b&gt;%1&lt;/b&gt;&lt;/a&gt;</source>
-        <translation>پیش بینی &lt;b&gt; ٪ 2 &lt;/b&gt; به &lt;a href = "٪ 1"&gt; &lt;b&gt; ٪ 1 &lt;/b&gt; &lt;/a&gt;</translation>
+        <translation>پیش بینی &lt;b&gt; %2 &lt;/b&gt; به &lt;a href = "%1"&gt; &lt;b&gt; %1 &lt;/b&gt; &lt;/a&gt;</translation>
     </message>
     <message>
         <location line="+3" />
         <source>Set &lt;a href="%1"&gt;&lt;b&gt;%1&lt;/b&gt;&lt;/a&gt; to &lt;b&gt;%2&lt;/b&gt; [disabled]</source>
-        <translation>تنظیم &lt;a href = "٪ 1"&gt; &lt;b&gt; ٪ 1 &lt;/a&gt; &lt;/a&gt; به &lt;b&gt; ٪ 2 &lt;/b&gt; [غیرفعال]</translation>
+        <translation>تنظیم &lt;a href = "%1"&gt; &lt;b&gt; %1 &lt;/a&gt; &lt;/a&gt; به &lt;b&gt; %2 &lt;/b&gt; [غیرفعال]</translation>
     </message>
     <message>
         <location line="+11" />
         <source>Use &lt;b&gt;%1&lt;/b&gt;</source>
         <extracomment>%1 is "System Environment" or some such.</extracomment>
-        <translation>از &lt;b&gt; ٪ 1 &lt;/b&gt; استفاده کنید</translation>
+        <translation>از &lt;b&gt; %1 &lt;/b&gt; استفاده کنید</translation>
     </message>
     <message>
         <location line="+2" />
@@ -14963,7 +14963,7 @@ Title of a the cloned RunConfiguration window, text of the window</extracomment>
         <location line="+5" />
         <source>Use &lt;b&gt;%1&lt;/b&gt; and</source>
         <extracomment>Yup, word puzzle. The Set/Unset phrases above are appended to this. %1 is "System Environment" or some such.</extracomment>
-        <translation>از &lt;b&gt; ٪ 1 &lt;/b&gt; استفاده کنید</translation>
+        <translation>از &lt;b&gt; %1 &lt;/b&gt; استفاده کنید</translation>
     </message>
     <message>
         <location filename="../../../src/plugins/projectexplorer/filesinallprojectsfind.cpp" line="+28" />
@@ -14994,7 +14994,7 @@ Title of a the cloned RunConfiguration window, text of the window</extracomment>
     <message>
         <location line="-877" />
         <source>%1 (%2, %3 %4 at %5)</source>
-        <translation>٪ 1 (٪ 2 ، ٪ 3 ٪ 4 در ٪ 5)</translation>
+        <translation>%1 (%2 ، %3 %4 در %5)</translation>
     </message>
     <message>
         <location line="+1259" />
@@ -15061,57 +15061,57 @@ fails because Clang does not understand the target architecture.</source>
     <message>
         <location line="+5" />
         <source>Field "%1" has no type.</source>
-        <translation>میدان "٪ 1" نوع ندارد.</translation>
+        <translation>میدان "%1" نوع ندارد.</translation>
     </message>
     <message>
         <location line="+6" />
         <source>Field "%1" has unsupported type "%2".</source>
-        <translation>زمینه "٪ 1" از نوع پشتیبانی نشده "٪ 2" پشتیبانی نشده است.</translation>
+        <translation>زمینه "%1" از نوع پشتیبانی نشده "%2" پشتیبانی نشده است.</translation>
     </message>
     <message>
         <location line="+18" />
         <source>When parsing Field "%1": %2</source>
-        <translation>هنگام تجزیه قسمت "٪ 1": ٪ 2</translation>
+        <translation>هنگام تجزیه قسمت "%1": %2</translation>
     </message>
     <message>
         <location line="+208" />
         <source>Label ("%1") data is not an object.</source>
-        <translation>داده های برچسب ("٪ 1") یک شی نیست.</translation>
+        <translation>داده های برچسب ("%1") یک شی نیست.</translation>
     </message>
     <message>
         <location line="+10" />
         <source>Label ("%1") has no trText.</source>
-        <translation>برچسب ("٪ 1") هیچ trtext ندارد.</translation>
+        <translation>برچسب ("%1") هیچ trtext ندارد.</translation>
     </message>
     <message>
         <location line="+28" />
         <source>Spacer ("%1") data is not an object.</source>
-        <translation>داده های Spacer ("٪ 1") یک شی نیست.</translation>
+        <translation>داده های Spacer ("%1") یک شی نیست.</translation>
     </message>
     <message>
         <location line="+10" />
         <source>Spacer ("%1") property "factor" is no integer value.</source>
-        <translation>ویژگی "" ٪ 1 ") خاصیت" فاکتور "هیچ مقدار عدد صحیح نیست.</translation>
+        <translation>ویژگی "" %1 ") خاصیت" فاکتور "هیچ مقدار عدد صحیح نیست.</translation>
     </message>
     <message>
         <location line="+35" />
         <source>LineEdit ("%1") data is not an object.</source>
-        <translation>داده های Lineedit ("٪ 1") یک شی نیست.</translation>
+        <translation>داده های Lineedit ("%1") یک شی نیست.</translation>
     </message>
     <message>
         <location line="+16" />
         <source>LineEdit ("%1") has an invalid regular expression "%2" in "validator".</source>
-        <translation>LineEdit ("٪ 1") یک عبارت منظم نامعتبر "٪ 2" در "اعتبار سنج" دارد.</translation>
+        <translation>LineEdit ("%1") یک عبارت منظم نامعتبر "%2" در "اعتبار سنج" دارد.</translation>
     </message>
     <message>
         <location line="+15" />
         <source>LineEdit ("%1") has an invalid value "%2" in "completion".</source>
-        <translation>LineEdit ("٪ 1") در "تکمیل" مقدار نامعتبر "٪ 2" دارد.</translation>
+        <translation>LineEdit ("%1") در "تکمیل" مقدار نامعتبر "%2" دارد.</translation>
     </message>
     <message>
         <location line="+166" />
         <source>TextEdit ("%1") data is not an object.</source>
-        <translation>داده های TEXTEDIT ("٪ 1") یک شی نیست.</translation>
+        <translation>داده های TEXTEDIT ("%1") یک شی نیست.</translation>
     </message>
     <message>
         <location line="+83" />
@@ -15121,17 +15121,17 @@ fails because Clang does not understand the target architecture.</source>
     <message>
         <location line="+26" />
         <source>kind "%1" is not one of the supported "existingDirectory", "directory", "file", "saveFile", "existingCommand", "command", "any".</source>
-        <translation>نوع "٪ 1" یکی از پشتیبانی "Directory" موجود ، "دایرکتوری" ، "پرونده" ، "SaveFile" ، "موجود" ، "فرمان" ، "هر" نیست.</translation>
+        <translation>نوع "%1" یکی از پشتیبانی "Directory" موجود ، "دایرکتوری" ، "پرونده" ، "SaveFile" ، "موجود" ، "فرمان" ، "هر" نیست.</translation>
     </message>
     <message>
         <location line="+80" />
         <source>CheckBox ("%1") data is not an object.</source>
-        <translation>کادر انتخاب ("٪ 1") داده ها یک شی نیست.</translation>
+        <translation>کادر انتخاب ("%1") داده ها یک شی نیست.</translation>
     </message>
     <message>
         <location line="+9" />
         <source>CheckBox ("%1") values for checked and unchecked state are identical.</source>
-        <translation>مقادیر کادر انتخاب ("٪ 1") برای حالت بررسی و کنترل نشده یکسان است.</translation>
+        <translation>مقادیر کادر انتخاب ("%1") برای حالت بررسی و کنترل نشده یکسان است.</translation>
     </message>
     <message>
         <location line="+80" />
@@ -15146,27 +15146,27 @@ fails because Clang does not understand the target architecture.</source>
     <message>
         <location line="+25" />
         <source>%1 ("%2") data is not an object.</source>
-        <translation>٪ 1 ("٪ 2") داده ها یک شی نیست.</translation>
+        <translation>%1 ("%2") داده ها یک شی نیست.</translation>
     </message>
     <message>
         <location line="+9" />
         <source>%1 ("%2") "index" is not an integer value.</source>
-        <translation>٪ 1 ("٪ 2") "شاخص" یک مقدار عدد صحیح نیست.</translation>
+        <translation>%1 ("%2") "شاخص" یک مقدار عدد صحیح نیست.</translation>
     </message>
     <message>
         <location line="+6" />
         <source>%1 ("%2") "disabledIndex" is not an integer value.</source>
-        <translation>٪ 1 ("٪ 2") "disabledIndex" یک مقدار عدد صحیح نیست.</translation>
+        <translation>%1 ("%2") "disabledIndex" یک مقدار عدد صحیح نیست.</translation>
     </message>
     <message>
         <location line="+7" />
         <source>%1 ("%2") "items" missing.</source>
-        <translation>٪ 1 ("٪ 2") "موارد" گم شده است.</translation>
+        <translation>%1 ("%2") "موارد" گم شده است.</translation>
     </message>
     <message>
         <location line="+4" />
         <source>%1 ("%2") "items" is not a JSON list.</source>
-        <translation>٪ 1 ("٪ 2") "موارد" لیست JSON نیست.</translation>
+        <translation>%1 ("%2") "موارد" لیست JSON نیست.</translation>
     </message>
     <message>
         <location filename="../../../src/plugins/projectexplorer/jsonwizard/jsonkitspage.cpp" line="+46" />
@@ -15191,7 +15191,7 @@ fails because Clang does not understand the target architecture.</source>
     <message>
         <location line="+13" />
         <source>No "%1" key found in feature list object.</source>
-        <translation>کلید "٪ 1" در شیء لیست ویژگی ها یافت نمی شود.</translation>
+        <translation>کلید "%1" در شیء لیست ویژگی ها یافت نمی شود.</translation>
     </message>
     <message>
         <location line="+9" />
@@ -15206,7 +15206,7 @@ fails because Clang does not understand the target architecture.</source>
     <message>
         <location line="+1" />
         <source>Error message from Version Control System: "%1".</source>
-        <translation>پیام خطا از سیستم کنترل نسخه: "٪ 1".</translation>
+        <translation>پیام خطا از سیستم کنترل نسخه: "%1".</translation>
     </message>
     <message>
         <location line="+16" />
@@ -15219,8 +15219,8 @@ fails because Clang does not understand the target architecture.</source>
         <location filename="../../../src/plugins/projectexplorer/projectfilewizardextension.cpp" line="+192" />
         <source>Failed to add subproject "%1"
 to project "%2".</source>
-        <translation>اضافه کردن زیر مجموعه "٪ 1" انجام نشد
- برای پروژه "٪ 2".</translation>
+        <translation>اضافه کردن زیر مجموعه "%1" انجام نشد
+ برای پروژه "%2".</translation>
     </message>
     <message>
         <location line="+12" />
@@ -15228,7 +15228,7 @@ to project "%2".</source>
         <source>Failed to add one or more files to project
 "%1" (%2).</source>
         <translation>اضافه نشد یک یا چند پرونده به پروژه
- "٪ 1" (٪ 2).</translation>
+ "%1" (%2).</translation>
     </message>
     <message>
         <location filename="../../../src/plugins/projectexplorer/jsonwizard/jsonwizard.cpp" line="+76" />
@@ -15264,7 +15264,7 @@ to project "%2".</source>
     <message>
         <location line="+1" />
         <source>The wizard failed to generate files.&lt;br&gt;The error message was: "%1".</source>
-        <translation>جادوگر نتوانست پرونده ها را تولید کند. &lt;br&gt; پیام خطا این بود: "٪ 1".</translation>
+        <translation>جادوگر نتوانست پرونده ها را تولید کند. &lt;br&gt; پیام خطا این بود: "%1".</translation>
     </message>
     <message>
         <location line="+63" />
@@ -15304,23 +15304,23 @@ to project "%2".</source>
     <message>
         <location line="+58" />
         <source>"%1" does not exist in the file system.</source>
-        <translation>"٪ 1" در سیستم پرونده وجود ندارد.</translation>
+        <translation>"%1" در سیستم پرونده وجود ندارد.</translation>
     </message>
     <message>
         <location line="+9" />
         <source>Failed to open "%1" as a project.</source>
-        <translation>نتوانست "٪ 1" را به عنوان یک پروژه باز کند.</translation>
+        <translation>نتوانست "%1" را به عنوان یک پروژه باز کند.</translation>
     </message>
     <message>
         <location line="+12" />
         <location line="+46" />
         <source>Failed to open an editor for "%1".</source>
-        <translation>نتوانست ویرایشگر "٪ 1" را باز کند.</translation>
+        <translation>نتوانست ویرایشگر "%1" را باز کند.</translation>
     </message>
     <message>
         <location line="-27" />
         <source>No file to open found in "%1".</source>
-        <translation>هیچ پرونده ای برای باز کردن در "٪ 1" وجود ندارد.</translation>
+        <translation>هیچ پرونده ای برای باز کردن در "%1" وجود ندارد.</translation>
     </message>
     <message>
         <location line="+4" />
@@ -15330,7 +15330,7 @@ to project "%2".</source>
     <message>
         <location line="+1" />
         <source>Failed to open project in "%1".</source>
-        <translation>نتوانست پروژه را در "٪ 1" باز کند.</translation>
+        <translation>نتوانست پروژه را در "%1" باز کند.</translation>
     </message>
     <message>
         <location line="+1" />
@@ -15351,30 +15351,30 @@ to project "%2".</source>
     <message>
         <location line="+7" />
         <source>TypeId "%1" of generator is unknown. Supported typeIds are: "%2".</source>
-        <translation>نوع "٪ 1" ژنراتور ناشناخته است. نوع پشتیبانی شده عبارتند از: "٪ 2".</translation>
+        <translation>نوع "%1" ژنراتور ناشناخته است. نوع پشتیبانی شده عبارتند از: "%2".</translation>
     </message>
     <message>
         <location line="+56" />
         <location line="+241" />
         <source>Path "%1" does not exist when checking JSON wizard search paths.</source>
-        <translation>مسیر "٪ 1" هنگام بررسی مسیرهای جستجوی جادوگر JSON وجود ندارد.</translation>
+        <translation>مسیر "%1" هنگام بررسی مسیرهای جستجوی جادوگر JSON وجود ندارد.</translation>
     </message>
     <message>
         <location line="-228" />
         <source>Checking "%1" for %2.</source>
-        <translation>بررسی "٪ 1" برای ٪ 2.</translation>
+        <translation>بررسی "%1" برای %2.</translation>
     </message>
     <message>
         <location line="+24" />
         <location line="+233" />
         <source>* Failed to parse "%1":%2:%3: %4</source>
-        <translation>* نتوانست "٪ 1" را تجزیه کند: ٪ 2: ٪ 3: ٪ 4</translation>
+        <translation>* نتوانست "%1" را تجزیه کند: %2: %3: %4</translation>
     </message>
     <message>
         <location line="-223" />
         <source>* Did not find a JSON object in "%1".
 </source>
-        <translation>* یک شیء JSON را در "٪ 1" پیدا نکرد.</translation>
+        <translation>* یک شیء JSON را در "%1" پیدا نکرد.</translation>
     </message>
     <message>
         <location line="+6" />
@@ -15385,7 +15385,7 @@ to project "%2".</source>
     <message>
         <location line="-224" />
         <source>JsonWizard: "%1" not found.</source>
-        <translation>jsonwizard: "٪ 1" یافت نشد.</translation>
+        <translation>jsonwizard: "%1" یافت نشد.</translation>
     </message>
     <message>
         <location line="+96" />
@@ -15400,27 +15400,27 @@ to project "%2".</source>
     <message>
         <location line="+8" />
         <source>TypeId "%1" of page is unknown. Supported typeIds are: "%2".</source>
-        <translation>نوع "٪ 1" صفحه ناشناخته است. نوع پشتیبانی شده عبارتند از: "٪ 2".</translation>
+        <translation>نوع "%1" صفحه ناشناخته است. نوع پشتیبانی شده عبارتند از: "%2".</translation>
     </message>
     <message>
         <location line="+13" />
         <source>Page with typeId "%1" has invalid "index".</source>
-        <translation>صفحه با نوع "٪ 1" دارای "شاخص" نامعتبر است.</translation>
+        <translation>صفحه با نوع "%1" دارای "شاخص" نامعتبر است.</translation>
     </message>
     <message>
         <location line="+89" />
         <source>* Did not find a JSON object in "%1".</source>
-        <translation>* یک شیء JSON را در "٪ 1" پیدا نکرد.</translation>
+        <translation>* یک شیء JSON را در "%1" پیدا نکرد.</translation>
     </message>
     <message>
         <location line="+12" />
         <source>* Version %1 not supported.</source>
-        <translation>* نسخه ٪ 1 پشتیبانی نمی شود.</translation>
+        <translation>* نسخه %1 پشتیبانی نمی شود.</translation>
     </message>
     <message>
         <location line="+9" />
         <source>* Failed to create: %1</source>
-        <translation>* ایجاد نشد: ٪ 1</translation>
+        <translation>* ایجاد نشد: %1</translation>
     </message>
     <message>
         <location line="+227" />
@@ -15450,12 +15450,12 @@ to project "%2".</source>
     <message>
         <location line="+32" />
         <source>"kind" value "%1" is not "class" (deprecated), "file" or "project".</source>
-        <translation>"نوع" ارزش "٪ 1" "کلاس" (مستهلک) ، "پرونده" یا "پروژه" نیست.</translation>
+        <translation>"نوع" ارزش "%1" "کلاس" (مستهلک) ، "پرونده" یا "پروژه" نیست.</translation>
     </message>
     <message>
         <location line="+4" />
         <source>"kind" is "file" or "class" (deprecated) and "%1" is also set.</source>
-        <translation>"نوع" "پرونده" یا "کلاس" (مستهلک) و "٪ 1" نیز تنظیم شده است.</translation>
+        <translation>"نوع" "پرونده" یا "کلاس" (مستهلک) و "%1" نیز تنظیم شده است.</translation>
     </message>
     <message>
         <location line="+10" />
@@ -15470,12 +15470,12 @@ to project "%2".</source>
     <message>
         <location line="+10" />
         <source>Icon file "%1" not found.</source>
-        <translation>پرونده نماد "٪ 1" یافت نشد.</translation>
+        <translation>پرونده نماد "%1" یافت نشد.</translation>
     </message>
     <message>
         <location line="+20" />
         <source>Image file "%1" not found.</source>
-        <translation>پرونده تصویر "٪ 1" یافت نشد.</translation>
+        <translation>پرونده تصویر "%1" یافت نشد.</translation>
     </message>
     <message>
         <location line="+16" />
@@ -15495,12 +15495,12 @@ to project "%2".</source>
     <message>
         <location line="+8" />
         <source>When parsing "generators": %1</source>
-        <translation>هنگام تجزیه "ژنراتور": ٪ 1</translation>
+        <translation>هنگام تجزیه "ژنراتور": %1</translation>
     </message>
     <message>
         <location line="+15" />
         <source>When parsing "pages": %1</source>
-        <translation>هنگام تجزیه "صفحات": ٪ 1</translation>
+        <translation>هنگام تجزیه "صفحات": %1</translation>
     </message>
     <message>
         <location filename="../../../src/plugins/projectexplorer/jsonwizard/jsonwizardfilegenerator.cpp" line="+83" />
@@ -15515,34 +15515,34 @@ to project "%2".</source>
     <message>
         <location line="+57" />
         <source>When processing "%1":&lt;br&gt;%2</source>
-        <translation>هنگام پردازش "٪ 1": &lt;br&gt; ٪ 2</translation>
+        <translation>هنگام پردازش "%1": &lt;br&gt; %2</translation>
     </message>
     <message>
         <location filename="../../../src/plugins/projectexplorer/jsonwizard/jsonwizardgeneratorfactory.cpp" line="+164" />
         <source>%1 [folder]</source>
-        <translation>٪ 1 [پوشه]</translation>
+        <translation>%1 [پوشه]</translation>
     </message>
     <message>
         <location line="+3" />
         <source>%1 [symbolic link]</source>
-        <translation>٪ 1 [پیوند نمادین]</translation>
+        <translation>%1 [پیوند نمادین]</translation>
     </message>
     <message>
         <location line="+3" />
         <source>%1 [read only]</source>
-        <translation>٪ 1 [فقط بخوانید]</translation>
+        <translation>%1 [فقط بخوانید]</translation>
     </message>
     <message>
         <location line="+6" />
         <source>The directory %1 contains files which cannot be overwritten:
 %2.</source>
-        <translation>دایرکتوری ٪ 1 حاوی پرونده هایی است که نمی توانند رونویسی شوند:
- ٪ 2.</translation>
+        <translation>دایرکتوری %1 حاوی پرونده هایی است که نمی توانند رونویسی شوند:
+ %2.</translation>
     </message>
     <message>
         <location filename="../../../src/plugins/projectexplorer/jsonwizard/jsonwizardpagefactory_p.cpp" line="+72" />
         <source>When parsing fields of page "%1": %2</source>
-        <translation>هنگام تجزیه قسمت های صفحه "٪ 1": ٪ 2</translation>
+        <translation>هنگام تجزیه قسمت های صفحه "%1": %2</translation>
     </message>
     <message>
         <location line="+46" />
@@ -15552,7 +15552,7 @@ to project "%2".</source>
     <message>
         <location line="+48" />
         <source>Error parsing "%1" in "Kits" page: %2</source>
-        <translation>خطای تجزیه "٪ 1" در "کیت" صفحه: ٪ 2</translation>
+        <translation>خطای تجزیه "%1" در "کیت" صفحه: %2</translation>
     </message>
     <message>
         <location line="+12" />
@@ -15562,7 +15562,7 @@ to project "%2".</source>
     <message>
         <location line="+6" />
         <source>"Kits" page requires a "%1" set.</source>
-        <translation>صفحه "کیت" به مجموعه "٪ 1" نیاز دارد.</translation>
+        <translation>صفحه "کیت" به مجموعه "%1" نیاز دارد.</translation>
     </message>
     <message>
         <location line="+62" />
@@ -15572,7 +15572,7 @@ to project "%2".</source>
     <message>
         <location line="+9" />
         <source>Invalid regular expression "%1" in "%2". %3</source>
-        <translation>بیان منظم "٪ 1" در "٪ 2" نامعتبر است. 3 ٪</translation>
+        <translation>بیان منظم "%1" در "%2" نامعتبر است. 3 ٪</translation>
     </message>
     <message>
         <location line="+46" />
@@ -15587,12 +15587,12 @@ to project "%2".</source>
     <message>
         <location line="+11" />
         <source>Pattern "%1" is no valid regular expression.</source>
-        <translation>الگوی "٪ 1" بیان منظم معتبر نیست.</translation>
+        <translation>الگوی "%1" بیان منظم معتبر نیست.</translation>
     </message>
     <message>
         <location line="+23" />
         <source>ScannerGenerator: Binary pattern "%1" not valid.</source>
-        <translation>ScannerGenerator: الگوی باینری "٪ 1" معتبر نیست.</translation>
+        <translation>ScannerGenerator: الگوی باینری "%1" معتبر نیست.</translation>
     </message>
     <message>
         <location filename="../../../src/plugins/projectexplorer/kit.cpp" line="+65" />
@@ -15635,7 +15635,7 @@ to project "%2".</source>
         <location line="+669" />
         <location filename="../../../src/plugins/projectexplorer/toolchainoptionspage.cpp" line="+319" />
         <source>Clone of %1</source>
-        <translation>کلون ٪ 1</translation>
+        <translation>کلون %1</translation>
     </message>
     <message>
         <location filename="../../../src/plugins/projectexplorer/kitaspects.cpp" line="-1479" />
@@ -15650,17 +15650,17 @@ to project "%2".</source>
     <message>
         <location line="+17" />
         <source>Sys Root "%1" does not exist in the file system.</source>
-        <translation>ریشه "٪ 1" در سیستم پرونده وجود ندارد.</translation>
+        <translation>ریشه "%1" در سیستم پرونده وجود ندارد.</translation>
     </message>
     <message>
         <location line="+3" />
         <source>Sys Root "%1" is not a directory.</source>
-        <translation>ریشه SYS "٪ 1" دایرکتوری نیست.</translation>
+        <translation>ریشه SYS "%1" دایرکتوری نیست.</translation>
     </message>
     <message>
         <location line="+3" />
         <source>Sys Root "%1" is empty.</source>
-        <translation>ریشه SYS "٪ 1" خالی است.</translation>
+        <translation>ریشه SYS "%1" خالی است.</translation>
     </message>
     <message>
         <location line="+14" />
@@ -15688,7 +15688,7 @@ to project "%2".</source>
     <message>
         <location line="+45" />
         <source>Compilers produce code for different ABIs: %1</source>
-        <translation>کامپایلرها برای ABI های مختلف کد تولید می کنند: ٪ 1</translation>
+        <translation>کامپایلرها برای ABI های مختلف کد تولید می کنند: %1</translation>
     </message>
     <message>
         <location line="+108" />
@@ -15869,12 +15869,12 @@ to project "%2".</source>
     <message>
         <location filename="../../../src/plugins/projectexplorer/kitchooser.cpp" line="+93" />
         <source>Kit of Active Project: %1</source>
-        <translation>کیت پروژه فعال: ٪ 1</translation>
+        <translation>کیت پروژه فعال: %1</translation>
     </message>
     <message>
         <location filename="../../../src/plugins/projectexplorer/kitmanager.cpp" line="-52" />
         <source>Desktop (%1)</source>
-        <translation>دسک تاپ (٪ 1)</translation>
+        <translation>دسک تاپ (%1)</translation>
     </message>
     <message>
         <location line="+131" />
@@ -15906,7 +15906,7 @@ to project "%2".</source>
     <message>
         <location line="+3" />
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The name of the kit suitable for generating directory names. This value is used for the variable &lt;i&gt;%1&lt;/i&gt;, which for example determines the name of the shadow build directory.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;Html&gt; &lt;head/&gt; &lt;body&gt; &lt;p&gt; نام کیت مناسب برای تولید نام دایرکتوری. این مقدار برای متغیر &lt;i&gt; ٪ 1 &lt;/i&gt; استفاده می شود ، که به عنوان مثال نام دایرکتوری ساخت سایه را تعیین می کند.</translation>
+        <translation>&lt;Html&gt; &lt;head/&gt; &lt;body&gt; &lt;p&gt; نام کیت مناسب برای تولید نام دایرکتوری. این مقدار برای متغیر &lt;i&gt; %1 &lt;/i&gt; استفاده می شود ، که به عنوان مثال نام دایرکتوری ساخت سایه را تعیین می کند.</translation>
     </message>
     <message>
         <location line="+9" />
@@ -15936,7 +15936,7 @@ to project "%2".</source>
     <message>
         <location line="+60" />
         <source>Default for %1</source>
-        <translation>پیش فرض برای ٪ 1</translation>
+        <translation>پیش فرض برای %1</translation>
     </message>
     <message>
         <location line="+11" />
@@ -15952,7 +15952,7 @@ to project "%2".</source>
         <location filename="../../../src/plugins/projectexplorer/kitoptionspage.cpp" line="-427" />
         <source>%1 (default)</source>
         <extracomment>Mark up a kit as the default one.</extracomment>
-        <translation>٪ 1 (پیش فرض)</translation>
+        <translation>%1 (پیش فرض)</translation>
     </message>
     <message>
         <location line="+428" />
@@ -16017,7 +16017,7 @@ to project "%2".</source>
     <message>
         <location line="+1" />
         <source>Override %1:</source>
-        <translation>غلبه ٪ 1:</translation>
+        <translation>غلبه %1:</translation>
     </message>
     <message>
         <location line="+46" />
@@ -16032,7 +16032,7 @@ to project "%2".</source>
     <message>
         <location line="+163" />
         <source>&lt;b&gt;Make:&lt;/b&gt; %1</source>
-        <translation>&lt;b&gt; ساخت: &lt;/b&gt; ٪ 1</translation>
+        <translation>&lt;b&gt; ساخت: &lt;/b&gt; %1</translation>
     </message>
     <message>
         <location line="+3" />
@@ -16042,7 +16042,7 @@ to project "%2".</source>
     <message>
         <location line="+9" />
         <source>&lt;b&gt;Make:&lt;/b&gt; %1 not found in the environment.</source>
-        <translation>&lt;b&gt; ساخت: &lt;/b&gt; ٪ 1 در محیط یافت نمی شود.</translation>
+        <translation>&lt;b&gt; ساخت: &lt;/b&gt; %1 در محیط یافت نمی شود.</translation>
     </message>
     <message>
         <location line="+20" />
@@ -16084,67 +16084,67 @@ to project "%2".</source>
     <message>
         <location line="+783" />
         <source>&lt;b&gt;Project:&lt;/b&gt; %1</source>
-        <translation>&lt;b&gt; پروژه: &lt;/b&gt; ٪ 1</translation>
+        <translation>&lt;b&gt; پروژه: &lt;/b&gt; %1</translation>
     </message>
     <message>
         <location line="+2" />
         <source>&lt;b&gt;Path:&lt;/b&gt; %1</source>
-        <translation>&lt;b&gt; مسیر: &lt;/b&gt; ٪ 1</translation>
+        <translation>&lt;b&gt; مسیر: &lt;/b&gt; %1</translation>
     </message>
     <message>
         <location line="+2" />
         <source>&lt;b&gt;Kit:&lt;/b&gt; %1</source>
-        <translation>&lt;b&gt; کیت: &lt;/b&gt; ٪ 1</translation>
+        <translation>&lt;b&gt; کیت: &lt;/b&gt; %1</translation>
     </message>
     <message>
         <location line="+2" />
         <source>&lt;b&gt;Build:&lt;/b&gt; %1</source>
-        <translation>&lt;b&gt; ساخت: &lt;/b&gt; ٪ 1</translation>
+        <translation>&lt;b&gt; ساخت: &lt;/b&gt; %1</translation>
     </message>
     <message>
         <location line="+2" />
         <source>&lt;b&gt;Deploy:&lt;/b&gt; %1</source>
-        <translation>&lt;b&gt; استقرار: &lt;/b&gt; ٪ 1</translation>
+        <translation>&lt;b&gt; استقرار: &lt;/b&gt; %1</translation>
     </message>
     <message>
         <location line="+2" />
         <source>&lt;b&gt;Run:&lt;/b&gt; %1</source>
-        <translation>&lt;b&gt; اجرا: &lt;/b&gt; ٪ 1</translation>
+        <translation>&lt;b&gt; اجرا: &lt;/b&gt; %1</translation>
     </message>
     <message>
         <location line="+2" />
         <source>%1</source>
-        <translation>٪ 1</translation>
+        <translation>%1</translation>
     </message>
     <message>
         <location line="+12" />
         <source>Project: &lt;b&gt;%1&lt;/b&gt;&lt;br/&gt;</source>
-        <translation>پروژه: &lt;b&gt; ٪ 1 &lt;/b&gt; &lt;br/&gt;</translation>
+        <translation>پروژه: &lt;b&gt; %1 &lt;/b&gt; &lt;br/&gt;</translation>
     </message>
     <message>
         <location line="+3" />
         <source>Kit: &lt;b&gt;%1&lt;/b&gt;&lt;br/&gt;</source>
-        <translation>کیت: &lt;b&gt; ٪ 1 &lt;/b&gt; &lt;br/&gt;</translation>
+        <translation>کیت: &lt;b&gt; %1 &lt;/b&gt; &lt;br/&gt;</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Build: &lt;b&gt;%1&lt;/b&gt;&lt;br/&gt;</source>
-        <translation>ساخت: &lt;b&gt; ٪ 1 &lt;/b&gt; &lt;br/&gt;</translation>
+        <translation>ساخت: &lt;b&gt; %1 &lt;/b&gt; &lt;br/&gt;</translation>
     </message>
     <message>
         <location line="+3" />
         <source>Deploy: &lt;b&gt;%1&lt;/b&gt;&lt;br/&gt;</source>
-        <translation>استقرار: &lt;b&gt; ٪ 1 &lt;/b&gt; &lt;br/&gt;</translation>
+        <translation>استقرار: &lt;b&gt; %1 &lt;/b&gt; &lt;br/&gt;</translation>
     </message>
     <message>
         <location line="+3" />
         <source>Run: &lt;b&gt;%1&lt;/b&gt;&lt;br/&gt;</source>
-        <translation>اجرا: &lt;b&gt; ٪ 1 &lt;/b&gt; &lt;br/&gt;</translation>
+        <translation>اجرا: &lt;b&gt; %1 &lt;/b&gt; &lt;br/&gt;</translation>
     </message>
     <message>
         <location line="+3" />
         <source>&lt;style type=text/css&gt;a:link {color: rgb(128, 128, 255);}&lt;/style&gt;The project &lt;b&gt;%1&lt;/b&gt; is not yet configured&lt;br/&gt;&lt;br/&gt;You can configure it in the &lt;a href="projectmode"&gt;Projects mode&lt;/a&gt;&lt;br/&gt;</source>
-        <translation>&lt;سبک = متن/css&gt; a: پیوند {رنگ: RGB (128 ، 128 ، 255) ؛} &lt;/style&gt; پروژه &lt;b&gt; ٪ 1 &lt;/b&gt; هنوز پیکربندی نشده است &lt;br/&gt; &lt;br/ &gt; شما می توانید آن را در حالت پروژه &lt;a href = "projectmode" پیکربندی کنید &lt;/a&gt; &lt;br/&gt;</translation>
+        <translation>&lt;سبک = متن/css&gt; a: پیوند {رنگ: RGB (128 ، 128 ، 255) ؛} &lt;/style&gt; پروژه &lt;b&gt; %1 &lt;/b&gt; هنوز پیکربندی نشده است &lt;br/&gt; &lt;br/ &gt; شما می توانید آن را در حالت پروژه &lt;a href = "projectmode" پیکربندی کنید &lt;/a&gt; &lt;br/&gt;</translation>
     </message>
     <message>
         <location filename="../../../src/plugins/projectexplorer/msvctoolchain.cpp" line="-555" />
@@ -16173,8 +16173,8 @@ to project "%2".</source>
         <location line="+796" />
         <source>Failed to retrieve MSVC Environment from "%1":
 %2</source>
-        <translation>بازیابی محیط MSVC از "٪ 1" انجام نشد:
- ٪ 2</translation>
+        <translation>بازیابی محیط MSVC از "%1" انجام نشد:
+ %2</translation>
     </message>
     <message>
         <location line="+83" />
@@ -16221,7 +16221,7 @@ Please close all running instances of your application before starting a build.<
     <message>
         <location line="+1" />
         <source>Could not open file: "%1": %2</source>
-        <translation>نمی توان پرونده را باز کرد: "٪ 1": ٪ 2</translation>
+        <translation>نمی توان پرونده را باز کرد: "%1": %2</translation>
     </message>
     <message>
         <location line="+23" />
@@ -16292,7 +16292,7 @@ Please close all running instances of your application before starting a build.<
     <message>
         <location line="+1" />
         <source>Kit %1 is incompatible with kit %2.</source>
-        <translation>کیت ٪ 1 با کیت ٪ 2 ناسازگار است.</translation>
+        <translation>کیت %1 با کیت %2 ناسازگار است.</translation>
     </message>
     <message>
         <location line="+9" />
@@ -16332,7 +16332,7 @@ Please close all running instances of your application before starting a build.<
     <message>
         <location line="+92" />
         <source>Project "%1" was configured for kit "%2" with id %3, which does not exist anymore. You can create a new kit or copy the steps of the vanished kit to another kit in %4 mode.</source>
-        <translation>پروژه "٪ 1" برای کیت "٪ 2" با شناسه ٪ 3 پیکربندی شد که دیگر وجود ندارد. می توانید یک کیت جدید ایجاد کنید یا مراحل کیت ناپدید شده را در حالت 4 ٪ 4 کیت کپی کنید.</translation>
+        <translation>پروژه "%1" برای کیت "%2" با شناسه %3 پیکربندی شد که دیگر وجود ندارد. می توانید یک کیت جدید ایجاد کنید یا مراحل کیت ناپدید شده را در حالت 4 %4 کیت کپی کنید.</translation>
     </message>
     <message>
         <location line="+4" />
@@ -16347,79 +16347,79 @@ Please close all running instances of your application before starting a build.<
     <message>
         <location line="+265" />
         <source>Could not find any qml_*.qm file at "%1"</source>
-        <translation>هیچ پرونده QML _*. QM را در "٪ 1" پیدا نکرد</translation>
+        <translation>هیچ پرونده QML _*. QM را در "%1" پیدا نکرد</translation>
     </message>
     <message>
         <location line="+87" />
         <source>%1: Name.</source>
         <extracomment>%1 is something like "Active project"</extracomment>
-        <translation>٪ 1: نام.</translation>
+        <translation>%1: نام.</translation>
     </message>
     <message>
         <location line="+8" />
         <source>%1: Full path to main file.</source>
         <extracomment>%1 is something like "Active project"</extracomment>
-        <translation>٪ 1: مسیر کامل به پرونده اصلی.</translation>
+        <translation>%1: مسیر کامل به پرونده اصلی.</translation>
     </message>
     <message>
         <location line="+8" />
         <source>%1: Full path to Project Directory.</source>
         <extracomment>%1 is something like "Active project"</extracomment>
-        <translation>٪ 1: مسیر کامل به دایرکتوری پروژه.</translation>
+        <translation>%1: مسیر کامل به دایرکتوری پروژه.</translation>
     </message>
     <message>
         <location line="+8" />
         <source>%1: The name of the active kit.</source>
         <extracomment>%1 is something like "Active project"</extracomment>
-        <translation>٪ 1: نام کیت فعال.</translation>
+        <translation>%1: نام کیت فعال.</translation>
     </message>
     <message>
         <location line="+8" />
         <source>%1: Name of the active build configuration.</source>
         <extracomment>%1 is something like "Active project"</extracomment>
-        <translation>٪ 1: نام پیکربندی ساخت فعال.</translation>
+        <translation>%1: نام پیکربندی ساخت فعال.</translation>
     </message>
     <message>
         <location line="+9" />
         <source>%1: Type of the active build configuration.</source>
         <extracomment>%1 is something like "Active project"</extracomment>
-        <translation>٪ 1: نوع پیکربندی ساخت فعال.</translation>
+        <translation>%1: نوع پیکربندی ساخت فعال.</translation>
     </message>
     <message>
         <location line="+10" />
         <source>%1: Full build path of active build configuration.</source>
         <extracomment>%1 is something like "Active project"</extracomment>
-        <translation>٪ 1: مسیر ساخت کامل پیکربندی ساخت فعال.</translation>
+        <translation>%1: مسیر ساخت کامل پیکربندی ساخت فعال.</translation>
     </message>
     <message>
         <location line="+9" />
         <source>%1: Variables in the active build environment.</source>
         <extracomment>%1 is something like "Active project"</extracomment>
-        <translation>٪ 1: متغیرهای موجود در محیط ساخت فعال.</translation>
+        <translation>%1: متغیرهای موجود در محیط ساخت فعال.</translation>
     </message>
     <message>
         <location line="+10" />
         <source>%1: Name of the active run configuration.</source>
         <extracomment>%1 is something like "Active project"</extracomment>
-        <translation>٪ 1: نام پیکربندی Run Active.</translation>
+        <translation>%1: نام پیکربندی Run Active.</translation>
     </message>
     <message>
         <location line="+9" />
         <source>%1: Executable of the active run configuration.</source>
         <extracomment>%1 is something like "Active project"</extracomment>
-        <translation>٪ 1: اجرایی پیکربندی اجرا فعال.</translation>
+        <translation>%1: اجرایی پیکربندی اجرا فعال.</translation>
     </message>
     <message>
         <location line="+10" />
         <source>%1: Variables in the environment of the active run configuration.</source>
         <extracomment>%1 is something like "Active project"</extracomment>
-        <translation>٪ 1: متغیرهای موجود در محیط پیکربندی اجرا فعال.</translation>
+        <translation>%1: متغیرهای موجود در محیط پیکربندی اجرا فعال.</translation>
     </message>
     <message>
         <location line="+12" />
         <source>%1: Working directory of the active run configuration.</source>
         <extracomment>%1 is something like "Active project"</extracomment>
-        <translation>٪ 1: فهرست کار پیکربندی Run Active.</translation>
+        <translation>%1: فهرست کار پیکربندی Run Active.</translation>
     </message>
     <message>
         <location filename="../../../src/plugins/projectexplorer/projectcommentssettings.cpp" line="+137" />
@@ -16512,7 +16512,7 @@ Please close all running instances of your application before starting a build.<
     <message>
         <location line="-347" />
         <source>Close Pro&amp;ject "%1"</source>
-        <translation>پروژه بستن "٪ 1"</translation>
+        <translation>پروژه بستن "%1"</translation>
     </message>
     <message>
         <location line="+10" />
@@ -16523,7 +16523,7 @@ Please close all running instances of your application before starting a build.<
         <location line="+0" />
         <location line="+328" />
         <source>Close All Files in Project "%1"</source>
-        <translation>همه پرونده ها را در پروژه "٪ 1" ببندید</translation>
+        <translation>همه پرونده ها را در پروژه "%1" ببندید</translation>
     </message>
     <message>
         <location line="-316" />
@@ -16587,7 +16587,7 @@ Please close all running instances of your application before starting a build.<
     <message>
         <location line="+0" />
         <source>Build Project "%1"</source>
-        <translation>ساخت پروژه "٪ 1"</translation>
+        <translation>ساخت پروژه "%1"</translation>
     </message>
     <message>
         <location line="+12" />
@@ -16597,7 +16597,7 @@ Please close all running instances of your application before starting a build.<
     <message>
         <location line="+1" />
         <source>Build Project "%1" for All Configurations</source>
-        <translation>پروژه "٪ 1" را برای همه تنظیمات بسازید</translation>
+        <translation>پروژه "%1" را برای همه تنظیمات بسازید</translation>
     </message>
     <message>
         <location line="+20" />
@@ -16607,7 +16607,7 @@ Please close all running instances of your application before starting a build.<
     <message>
         <location line="+0" />
         <source>Build for &amp;Run Configuration "%1"</source>
-        <translation>پیکربندی و اجرای "٪ 1"</translation>
+        <translation>پیکربندی و اجرای "%1"</translation>
     </message>
     <message>
         <location line="+13" />
@@ -16701,7 +16701,7 @@ Please close all running instances of your application before starting a build.<
         <location line="+9" />
         <location line="+1621" />
         <source>Close Project "%1"</source>
-        <translation>پروژه بستن "٪ 1"</translation>
+        <translation>پروژه بستن "%1"</translation>
     </message>
     <message>
         <location line="-1614" />
@@ -16711,7 +16711,7 @@ Please close all running instances of your application before starting a build.<
     <message>
         <location line="+0" />
         <source>Close All Projects Except "%1"</source>
-        <translation>همه پروژه ها را به جز "٪ 1" ببندید</translation>
+        <translation>همه پروژه ها را به جز "%1" ببندید</translation>
     </message>
     <message>
         <location line="+8" />
@@ -16747,7 +16747,7 @@ Please close all running instances of your application before starting a build.<
     <message>
         <location line="+1" />
         <source>Set "%1" as Active Project</source>
-        <translation>"٪ 1" را به عنوان پروژه فعال تنظیم کنید</translation>
+        <translation>"%1" را به عنوان پروژه فعال تنظیم کنید</translation>
     </message>
     <message>
         <location line="+11" />
@@ -16817,12 +16817,12 @@ Please close all running instances of your application before starting a build.<
     <message>
         <location line="+2" />
         <source>Unload Project %1?</source>
-        <translation>بارگیری پروژه ٪ 1؟</translation>
+        <translation>بارگیری پروژه %1؟</translation>
     </message>
     <message>
         <location line="+1" />
         <source>The project %1 is currently being built.</source>
-        <translation>پروژه ٪ 1 در حال حاضر ساخته شده است.</translation>
+        <translation>پروژه %1 در حال حاضر ساخته شده است.</translation>
     </message>
     <message>
         <location line="+1" />
@@ -16874,7 +16874,7 @@ Please close all running instances of your application before starting a build.<
     <message>
         <location line="+48" />
         <source>Failed opening project "%1": No plugin can open project type "%2".</source>
-        <translation>پروژه افتتاحیه ناموفق "٪ 1": هیچ افزونه ای نمی تواند نوع پروژه "٪ 2" را باز کند.</translation>
+        <translation>پروژه افتتاحیه ناموفق "%1": هیچ افزونه ای نمی تواند نوع پروژه "%2" را باز کند.</translation>
     </message>
     <message>
         <location line="+195" />
@@ -16906,17 +16906,17 @@ Do you want to ignore them?</source>
     <message>
         <location line="+23" />
         <source>Open Project in "%1"</source>
-        <translation>پروژه باز در "٪ 1"</translation>
+        <translation>پروژه باز در "%1"</translation>
     </message>
     <message>
         <location line="+9" />
         <source>Open Project "%1"</source>
-        <translation>پروژه باز "٪ 1"</translation>
+        <translation>پروژه باز "%1"</translation>
     </message>
     <message>
         <location line="+19" />
         <source>The file "%1" was renamed to "%2", but the following projects could not be automatically changed: %3</source>
-        <translation>پرونده "٪ 1" به "٪ 2" تغییر نام داد ، اما پروژه های زیر به طور خودکار قابل تغییر نیست: ٪ 3</translation>
+        <translation>پرونده "%1" به "%2" تغییر نام داد ، اما پروژه های زیر به طور خودکار قابل تغییر نیست: %3</translation>
     </message>
     <message>
         <location line="+6" />
@@ -16929,12 +16929,12 @@ Do you want to ignore them?</source>
     <message>
         <location line="-1139" />
         <source>The following projects failed to automatically remove the file: %1</source>
-        <translation>پروژه های زیر نتوانستند به طور خودکار پرونده را حذف کنند: ٪ 1</translation>
+        <translation>پروژه های زیر نتوانستند به طور خودکار پرونده را حذف کنند: %1</translation>
     </message>
     <message>
         <location line="+62" />
         <source>Building "%1" is disabled: %2&lt;br&gt;</source>
-        <translation>ساختمان "٪ 1" غیرفعال است: ٪ 2 &lt;br&gt;</translation>
+        <translation>ساختمان "%1" غیرفعال است: %2 &lt;br&gt;</translation>
     </message>
     <message>
         <location line="+15" />
@@ -16950,7 +16950,7 @@ Do you want to ignore them?</source>
     <message>
         <location line="+3" />
         <source>The project %1 is not configured.</source>
-        <translation>پروژه ٪ 1 پیکربندی نشده است.</translation>
+        <translation>پروژه %1 پیکربندی نشده است.</translation>
     </message>
     <message>
         <location line="+3" />
@@ -16976,7 +16976,7 @@ Do you want to ignore them?</source>
     <message>
         <location line="+2" />
         <source>Close %1?</source>
-        <translation>نزدیک ٪ 1؟</translation>
+        <translation>نزدیک %1؟</translation>
     </message>
     <message>
         <location line="+1" />
@@ -16986,7 +16986,7 @@ Do you want to ignore them?</source>
     <message>
         <location line="+2" />
         <source>Do you want to cancel the build process and close %1 anyway?</source>
-        <translation>آیا می خواهید روند ساخت را لغو کنید و به هر حال ٪ 1 را ببندید؟</translation>
+        <translation>آیا می خواهید روند ساخت را لغو کنید و به هر حال %1 را ببندید؟</translation>
     </message>
     <message>
         <location line="+164" />
@@ -16996,17 +16996,17 @@ Do you want to ignore them?</source>
     <message>
         <location line="+3" />
         <source>The project "%1" is not configured.</source>
-        <translation>پروژه "٪ 1" پیکربندی نشده است.</translation>
+        <translation>پروژه "%1" پیکربندی نشده است.</translation>
     </message>
     <message>
         <location line="+6" />
         <source>The project "%1" has no active kit.</source>
-        <translation>پروژه "٪ 1" کیت فعال ندارد.</translation>
+        <translation>پروژه "%1" کیت فعال ندارد.</translation>
     </message>
     <message>
         <location line="+7" />
         <source>The kit "%1" for the project "%2" has no active run configuration.</source>
-        <translation>کیت "٪ 1" برای پروژه "٪ 2" هیچ پیکربندی اجرا فعال ندارد.</translation>
+        <translation>کیت "%1" برای پروژه "%2" هیچ پیکربندی اجرا فعال ندارد.</translation>
     </message>
     <message>
         <location line="+16" />
@@ -17016,7 +17016,7 @@ Do you want to ignore them?</source>
     <message>
         <location line="+6" />
         <source>Cannot run "%1".</source>
-        <translation>نمی توان "٪ 1" را اجرا کرد.</translation>
+        <translation>نمی توان "%1" را اجرا کرد.</translation>
     </message>
     <message>
         <location line="+4" />
@@ -17026,7 +17026,7 @@ Do you want to ignore them?</source>
     <message>
         <location line="+305" />
         <source>%1 in %2</source>
-        <translation>٪ 1 در ٪ 2</translation>
+        <translation>%1 در %2</translation>
     </message>
     <message>
         <location line="+31" />
@@ -17043,7 +17043,7 @@ Do you want to ignore them?</source>
     <message>
         <location line="+41" />
         <source>The following subprojects could not be added to project "%1":</source>
-        <translation>زیر مجموعه های زیر را نمی توان به پروژه "٪ 1" اضافه کرد:</translation>
+        <translation>زیر مجموعه های زیر را نمی توان به پروژه "%1" اضافه کرد:</translation>
     </message>
     <message>
         <location line="+2" />
@@ -17058,7 +17058,7 @@ Do you want to ignore them?</source>
     <message>
         <location line="+33" />
         <source>Could not add following files to project %1:</source>
-        <translation>نمی توان پرونده های زیر را به پروژه ٪ 1 اضافه کرد:</translation>
+        <translation>نمی توان پرونده های زیر را به پروژه %1 اضافه کرد:</translation>
     </message>
     <message>
         <location line="+2" />
@@ -17071,7 +17071,7 @@ Do you want to ignore them?</source>
         <source>Failed opening terminal.
 %1</source>
         <translation>ترمینال افتتاحیه ناموفق بود.
- ٪ 1</translation>
+ %1</translation>
     </message>
     <message>
         <location line="+34" />
@@ -17083,7 +17083,7 @@ Do you want to ignore them?</source>
         <source>Remove these files as well?
     %1</source>
         <translation>این پرونده ها را نیز حذف کنید؟
- ٪ 1</translation>
+ %1</translation>
     </message>
     <message>
         <location line="+11" />
@@ -17094,13 +17094,13 @@ Do you want to ignore them?</source>
         <location line="+1" />
         <source>File "%1" was not removed, because the project has changed in the meantime.
 Please try again.</source>
-        <translation>پرونده "٪ 1" حذف نشده است ، زیرا در این میان پروژه تغییر کرده است.
+        <translation>پرونده "%1" حذف نشده است ، زیرا در این میان پروژه تغییر کرده است.
  لطفا دوباره امتحان کنید</translation>
     </message>
     <message>
         <location line="+17" />
         <source>Could not remove file "%1" from project "%2".</source>
-        <translation>پرونده "٪ 1" را از پروژه "٪ 2" حذف نکرد.</translation>
+        <translation>پرونده "%1" را از پروژه "%2" حذف نکرد.</translation>
     </message>
     <message>
         <location line="+36" />
@@ -17126,12 +17126,12 @@ Please try again.</source>
     <message>
         <location line="-9" />
         <source>Failed to copy file "%1" to "%2": %3.</source>
-        <translation>نتوانست پرونده "٪ 1" را به "٪ 2" کپی کند: ٪ 3.</translation>
+        <translation>نتوانست پرونده "%1" را به "%2" کپی کند: %3.</translation>
     </message>
     <message>
         <location line="+10" />
         <source>Failed to add new file "%1" to the project.</source>
-        <translation>افزودن پرونده جدید "٪ 1" به پروژه اضافه نشد.</translation>
+        <translation>افزودن پرونده جدید "%1" به پروژه اضافه نشد.</translation>
     </message>
     <message>
         <location line="+17" />
@@ -17141,7 +17141,7 @@ Please try again.</source>
     <message>
         <location line="+1" />
         <source>Delete %1 from file system?</source>
-        <translation>٪ 1 را از سیستم فایل حذف کنید؟</translation>
+        <translation>%1 را از سیستم فایل حذف کنید؟</translation>
     </message>
     <message>
         <location line="+17" />
@@ -17151,26 +17151,26 @@ Please try again.</source>
     <message>
         <location line="+1" />
         <source>Could not delete file %1.</source>
-        <translation>نمی توان پرونده ٪ 1 را حذف کرد.</translation>
+        <translation>نمی توان پرونده %1 را حذف کرد.</translation>
     </message>
     <message>
         <location line="+37" />
         <source>The project file %1 cannot be automatically changed.
 
 Rename %2 to %3 anyway?</source>
-        <translation>پرونده پروژه ٪ 1 به طور خودکار قابل تغییر نیست.
+        <translation>پرونده پروژه %1 به طور خودکار قابل تغییر نیست.
 
- به هر حال ٪ 2 به ٪ 3 تغییر نام دهید؟</translation>
+ به هر حال %2 به %3 تغییر نام دهید؟</translation>
     </message>
     <message>
         <location line="+17" />
         <source>The file %1 was renamed to %2, but the project file %3 could not be automatically changed.</source>
-        <translation>پرونده ٪ 1 به ٪ 2 تغییر نام داد ، اما پرونده پروژه ٪ 3 به طور خودکار قابل تغییر نیست.</translation>
+        <translation>پرونده %1 به %2 تغییر نام داد ، اما پرونده پروژه %3 به طور خودکار قابل تغییر نیست.</translation>
     </message>
     <message>
         <location line="+15" />
         <source>The file %1 could not be renamed %2.</source>
-        <translation>پرونده ٪ 1 نمی تواند به ٪ 2 تغییر نام دهد.</translation>
+        <translation>پرونده %1 نمی تواند به %2 تغییر نام دهد.</translation>
     </message>
     <message>
         <location line="+5" />
@@ -17207,7 +17207,7 @@ Rename %2 to %3 anyway?</source>
         <source>Switched run configuration to
 %1</source>
         <translation>پیکربندی Run Run به
- ٪ 1</translation>
+ %1</translation>
     </message>
     <message>
         <location line="+9" />
@@ -17227,7 +17227,7 @@ Rename %2 to %3 anyway?</source>
     <message>
         <location line="+5" />
         <source>Automatically managed by %1 or the installer.</source>
-        <translation>به طور خودکار توسط ٪ 1 یا نصب کننده مدیریت می شود.</translation>
+        <translation>به طور خودکار توسط %1 یا نصب کننده مدیریت می شود.</translation>
     </message>
     <message>
         <location line="+6" />
@@ -17444,7 +17444,7 @@ Rename %2 to %3 anyway?</source>
     <message>
         <location line="+1" />
         <source>No build found in %1 matching project %2.</source>
-        <translation>هیچ ساختمانی در ٪ 1 پروژه مطابق ٪ 2 یافت نشد.</translation>
+        <translation>هیچ ساختمانی در %1 پروژه مطابق %2 یافت نشد.</translation>
     </message>
     <message>
         <location line="+17" />
@@ -17459,7 +17459,7 @@ Rename %2 to %3 anyway?</source>
     <message>
         <location line="+83" />
         <source>%1 - temporary</source>
-        <translation>٪ 1 - موقت</translation>
+        <translation>%1 - موقت</translation>
     </message>
     <message>
         <location line="+107" />
@@ -17479,7 +17479,7 @@ Rename %2 to %3 anyway?</source>
     <message>
         <location line="+1" />
         <source>Could not restore the following project files:&lt;br&gt;&lt;b&gt;%1&lt;/b&gt;</source>
-        <translation>نمی توان پرونده های پروژه زیر را بازیابی کرد: &lt;br&gt; &lt;b&gt; ٪ 1 &lt;/b&gt;</translation>
+        <translation>نمی توان پرونده های پروژه زیر را بازیابی کرد: &lt;br&gt; &lt;b&gt; %1 &lt;/b&gt;</translation>
     </message>
     <message>
         <location line="+2" />
@@ -17506,7 +17506,7 @@ Rename %2 to %3 anyway?</source>
         <source>Would you like to rename these files as well?
     %1</source>
         <translation>آیا دوست دارید این پرونده ها را نیز تغییر نام دهید؟
- ٪ 1</translation>
+ %1</translation>
     </message>
     <message>
         <location line="+273" />
@@ -17518,7 +17518,7 @@ Rename %2 to %3 anyway?</source>
         <source>You just dragged some files from one project node to another.
 What should %1 do now?</source>
         <translation>شما فقط برخی از پرونده ها را از یک گره پروژه به دیگری کشیده اید.
- اکنون ٪ 1 باید چه کاری انجام دهد؟</translation>
+ اکنون %1 باید چه کاری انجام دهد؟</translation>
     </message>
     <message>
         <location line="+9" />
@@ -17663,37 +17663,37 @@ What should %1 do now?</source>
     <message>
         <location filename="../../../src/plugins/projectexplorer/projectwelcomepage.cpp" line="-612" />
         <source>Open Session #%1</source>
-        <translation>جلسه باز #٪ 1</translation>
+        <translation>جلسه باز #%1</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Ctrl+Meta+%1</source>
-        <translation>Ctrl+متا+٪ 1</translation>
+        <translation>Ctrl+متا+%1</translation>
     </message>
     <message>
         <location line="+0" />
         <source>Ctrl+Alt+%1</source>
-        <translation>Ctrl+alt+٪ 1</translation>
+        <translation>Ctrl+alt+%1</translation>
     </message>
     <message>
         <location line="+6" />
         <source>Open Recent Project #%1</source>
-        <translation>پروژه اخیر #٪ 1 را باز کنید</translation>
+        <translation>پروژه اخیر #%1 را باز کنید</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Ctrl+Shift+%1</source>
-        <translation>Ctrl+Shift+٪ 1</translation>
+        <translation>Ctrl+Shift+%1</translation>
     </message>
     <message>
         <location line="+50" />
         <source>Open %1 "%2"</source>
-        <translation>٪ 1 "٪ 2" را باز کنید</translation>
+        <translation>%1 "%2" را باز کنید</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Open %1 "%2" (%3)</source>
-        <translation>٪ 1 "٪ 2" را باز کنید (٪ 3)</translation>
+        <translation>%1 "%2" را باز کنید (%3)</translation>
     </message>
     <message>
         <location line="+20" />
@@ -17704,12 +17704,12 @@ What should %1 do now?</source>
     <message>
         <location line="+130" />
         <source>%1 (last session)</source>
-        <translation>٪ 1 (آخرین جلسه)</translation>
+        <translation>%1 (آخرین جلسه)</translation>
     </message>
     <message>
         <location line="+2" />
         <source>%1 (current session)</source>
-        <translation>٪ 1 (جلسه فعلی)</translation>
+        <translation>%1 (جلسه فعلی)</translation>
     </message>
     <message>
         <location line="+70" />
@@ -17777,7 +17777,7 @@ What should %1 do now?</source>
         <location line="+10" />
         <source>%1 (%2)</source>
         <extracomment>vanished target display role: vanished target name (device type name)</extracomment>
-        <translation>٪ 1 (٪ 2)</translation>
+        <translation>%1 (%2)</translation>
     </message>
     <message>
         <location line="+15" />
@@ -17792,7 +17792,7 @@ What should %1 do now?</source>
     <message>
         <location line="+12" />
         <source>Remove Vanished Target "%1"</source>
-        <translation>هدف ناپدید شده "٪ 1" را حذف کنید</translation>
+        <translation>هدف ناپدید شده "%1" را حذف کنید</translation>
     </message>
     <message>
         <location line="+4" />
@@ -17875,12 +17875,12 @@ What should %1 do now?</source>
     <message>
         <location line="+74" />
         <source>A version control system repository could not be created in "%1".</source>
-        <translation>مخزن سیستم کنترل نسخه نمی تواند در "٪ 1" ایجاد شود.</translation>
+        <translation>مخزن سیستم کنترل نسخه نمی تواند در "%1" ایجاد شود.</translation>
     </message>
     <message>
         <location line="+9" />
         <source>Failed to add "%1" to the version control system.</source>
-        <translation>اضافه شدن "٪ 1" به سیستم کنترل نسخه انجام نشد.</translation>
+        <translation>اضافه شدن "%1" به سیستم کنترل نسخه انجام نشد.</translation>
     </message>
     <message>
         <location line="+94" />
@@ -17944,7 +17944,7 @@ What should %1 do now?</source>
         <location line="+3" />
         <source>%1 (on %{Device:Name})</source>
         <extracomment>Shown in Run configuration, Add menu: "name of runnable (on device name)"</extracomment>
-        <translation>٪ 1 (در ٪ {دستگاه: نام})</translation>
+        <translation>%1 (در ٪ {دستگاه: نام})</translation>
     </message>
     <message>
         <location filename="../../../src/plugins/projectexplorer/runconfigurationaspects.cpp" line="-156" />
@@ -18061,12 +18061,12 @@ What should %1 do now?</source>
     <message>
         <location filename="../../../src/plugins/projectexplorer/runcontrol.cpp" line="-14" />
         <source>Unexpected run control state %1 when worker %2 started.</source>
-        <translation>حالت کنترل غیر منتظره RUN ٪ 1 در هنگام شروع کارگر ٪ 2.</translation>
+        <translation>حالت کنترل غیر منتظره RUN %1 در هنگام شروع کارگر %2.</translation>
     </message>
     <message>
         <location line="+324" />
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;center&gt;&lt;i&gt;%1&lt;/i&gt; is still running.&lt;center/&gt;&lt;center&gt;Force it to quit?&lt;/center&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;Html&gt; &lt;head/&gt; &lt;body&gt; &lt;senter&gt; &lt;i&gt; ٪ 1 &lt;/i&gt; هنوز در حال اجرا است.</translation>
+        <translation>&lt;Html&gt; &lt;head/&gt; &lt;body&gt; &lt;senter&gt; &lt;i&gt; %1 &lt;/i&gt; هنوز در حال اجرا است.</translation>
     </message>
     <message>
         <location line="+2" />
@@ -18106,12 +18106,12 @@ What should %1 do now?</source>
     <message>
         <location line="+54" />
         <source>%1 exited with code %2</source>
-        <translation>٪ 1 با کد ٪ 2 خارج شد</translation>
+        <translation>%1 با کد %2 خارج شد</translation>
     </message>
     <message>
         <location line="+2" />
         <source>%1 crashed.</source>
-        <translation>٪ 1 سقوط کرد.</translation>
+        <translation>%1 سقوط کرد.</translation>
     </message>
     <message>
         <location line="+2" />
@@ -18121,7 +18121,7 @@ What should %1 do now?</source>
     <message>
         <location line="+47" />
         <source>Starting %1...</source>
-        <translation>شروع ٪ 1 ...</translation>
+        <translation>شروع %1 ...</translation>
     </message>
     <message>
         <location line="+3" />
@@ -18146,7 +18146,7 @@ What should %1 do now?</source>
     <message>
         <location line="+3" />
         <source>Either the invoked program "%1" is missing, or you may have insufficient permissions to invoke the program.</source>
-        <translation>یا برنامه فراخوانی شده "٪ 1" از دست رفته است ، یا ممکن است مجوزهای کافی برای استناد به این برنامه نداشته باشید.</translation>
+        <translation>یا برنامه فراخوانی شده "%1" از دست رفته است ، یا ممکن است مجوزهای کافی برای استناد به این برنامه نداشته باشید.</translation>
     </message>
     <message>
         <location line="+5" />
@@ -18192,7 +18192,7 @@ What should %1 do now?</source>
     <message>
         <location line="+1" />
         <source>Do you really want to delete the run configuration &lt;b&gt;%1&lt;/b&gt;?</source>
-        <translation>آیا واقعاً می خواهید پیکربندی اجرا &lt;b&gt; ٪ 1 &lt;/b&gt; را حذف کنید؟</translation>
+        <translation>آیا واقعاً می خواهید پیکربندی اجرا &lt;b&gt; %1 &lt;/b&gt; را حذف کنید؟</translation>
     </message>
     <message>
         <location line="+16" />
@@ -18207,7 +18207,7 @@ What should %1 do now?</source>
     <message>
         <location line="+35" />
         <source>New name for run configuration &lt;b&gt;%1&lt;/b&gt;:</source>
-        <translation>نام جدید برای پیکربندی اجرا &lt;B&gt; ٪ 1 &lt;/b&gt;:</translation>
+        <translation>نام جدید برای پیکربندی اجرا &lt;B&gt; %1 &lt;/b&gt;:</translation>
     </message>
     <message>
         <location line="+69" />
@@ -18217,12 +18217,12 @@ What should %1 do now?</source>
     <message>
         <location line="+3" />
         <source>Remove Deploy Configuration %1?</source>
-        <translation>پیکربندی استقرار ٪ 1 را حذف کنید؟</translation>
+        <translation>پیکربندی استقرار %1 را حذف کنید؟</translation>
     </message>
     <message>
         <location line="+1" />
         <source>The deploy configuration &lt;b&gt;%1&lt;/b&gt; is currently being built.</source>
-        <translation>پیکربندی استقرار &lt;b&gt; ٪ 1 &lt;/b&gt; در حال حاضر ساخته شده است.</translation>
+        <translation>پیکربندی استقرار &lt;b&gt; %1 &lt;/b&gt; در حال حاضر ساخته شده است.</translation>
     </message>
     <message>
         <location line="+1" />
@@ -18237,12 +18237,12 @@ What should %1 do now?</source>
     <message>
         <location line="+1" />
         <source>Do you really want to delete deploy configuration &lt;b&gt;%1&lt;/b&gt;?</source>
-        <translation>آیا واقعاً می خواهید پیکربندی مستقر را حذف کنید &lt;b&gt; ٪ 1 &lt;/b&gt;؟</translation>
+        <translation>آیا واقعاً می خواهید پیکربندی مستقر را حذف کنید &lt;b&gt; %1 &lt;/b&gt;؟</translation>
     </message>
     <message>
         <location line="+22" />
         <source>New name for deploy configuration &lt;b&gt;%1&lt;/b&gt;:</source>
-        <translation>نام جدید برای استقرار پیکربندی &lt;b&gt; ٪ 1 &lt;/b&gt;:</translation>
+        <translation>نام جدید برای استقرار پیکربندی &lt;b&gt; %1 &lt;/b&gt;:</translation>
     </message>
     <message>
         <location filename="../../../src/plugins/projectexplorer/selectablefilesmodel.cpp" line="+542" />
@@ -18276,7 +18276,7 @@ What should %1 do now?</source>
 %1</source>
         <translation>تولید لیست فایل ...
 
- ٪ 1</translation>
+ %1</translation>
     </message>
     <message numerus="yes">
         <location line="+11" />
@@ -18345,7 +18345,7 @@ These files are preserved.</source>
     <message>
         <location line="+172" />
         <source>Unknown build system "%1"</source>
-        <translation>سیستم ساخت ناشناخته "٪ 1"</translation>
+        <translation>سیستم ساخت ناشناخته "%1"</translation>
     </message>
     <message>
         <location filename="../../../src/plugins/projectexplorer/target.cpp" line="+135" />
@@ -18406,7 +18406,7 @@ These files are preserved.</source>
     <message>
         <location line="+71" />
         <source>Enable Kit for Project "%1"</source>
-        <translation>کیت را برای پروژه "٪ 1" فعال کنید</translation>
+        <translation>کیت را برای پروژه "%1" فعال کنید</translation>
     </message>
     <message>
         <location line="+7" />
@@ -18416,7 +18416,7 @@ These files are preserved.</source>
     <message>
         <location line="+9" />
         <source>Disable Kit for Project "%1"</source>
-        <translation>کیت را برای پروژه "٪ 1" غیرفعال کنید</translation>
+        <translation>کیت را برای پروژه "%1" غیرفعال کنید</translation>
     </message>
     <message>
         <location line="+8" />
@@ -18426,12 +18426,12 @@ These files are preserved.</source>
     <message>
         <location line="+3" />
         <source>Disable Kit "%1" in This Project?</source>
-        <translation>کیت "٪ 1" را در این پروژه غیرفعال کنید؟</translation>
+        <translation>کیت "%1" را در این پروژه غیرفعال کنید؟</translation>
     </message>
     <message>
         <location line="+1" />
         <source>The kit &lt;b&gt;%1&lt;/b&gt; is currently being built.</source>
-        <translation>کیت &lt;b&gt; ٪ 1 &lt;/b&gt; در حال حاضر ساخته شده است.</translation>
+        <translation>کیت &lt;b&gt; %1 &lt;/b&gt; در حال حاضر ساخته شده است.</translation>
     </message>
     <message>
         <location line="+1" />
@@ -18482,7 +18482,7 @@ These files are preserved.</source>
         <location line="+105" />
         <source>The following kits can be used for project &lt;b&gt;%1&lt;/b&gt;:</source>
         <comment>%1: Project name</comment>
-        <translation>کیت های زیر را می توان برای پروژه &lt;b&gt; ٪ 1 &lt;/b&gt; استفاده کرد:</translation>
+        <translation>کیت های زیر را می توان برای پروژه &lt;b&gt; %1 &lt;/b&gt; استفاده کرد:</translation>
     </message>
     <message>
         <location filename="../../../src/plugins/projectexplorer/targetsetupwidget.cpp" line="+359" />
@@ -18499,7 +18499,7 @@ These files are preserved.</source>
     <message>
         <location filename="../../../src/plugins/projectexplorer/task.cpp" line="+63" />
         <source>%1 needs a compiler set up to build. Configure a compiler in the kit options.</source>
-        <translation>٪ 1 به یک کامپایلر تنظیم شده برای ساخت نیاز دارد. یک کامپایلر را در گزینه های کیت پیکربندی کنید.</translation>
+        <translation>%1 به یک کامپایلر تنظیم شده برای ساخت نیاز دارد. یک کامپایلر را در گزینه های کیت پیکربندی کنید.</translation>
     </message>
     <message>
         <location line="+143" />
@@ -18514,7 +18514,7 @@ These files are preserved.</source>
     <message>
         <location filename="../../../src/plugins/projectexplorer/taskfile.cpp" line="+110" />
         <source>Cannot open task file %1: %2</source>
-        <translation>نمی توان پرونده کار ٪ 1: ٪ 2 را باز کرد</translation>
+        <translation>نمی توان پرونده کار %1: %2 را باز کرد</translation>
     </message>
     <message>
         <location line="+43" />
@@ -18569,7 +18569,7 @@ These files are preserved.</source>
     <message>
         <location filename="../../../src/plugins/projectexplorer/toolchainoptionspage.cpp" line="-152" />
         <source>&lt;nobr&gt;&lt;b&gt;ABI:&lt;/b&gt; %1</source>
-        <translation>&lt;BOBR&gt; &lt;b&gt; ABI: &lt;/b&gt; ٪ 1</translation>
+        <translation>&lt;BOBR&gt; &lt;b&gt; ABI: &lt;/b&gt; %1</translation>
     </message>
     <message>
         <location line="+1" />
@@ -18596,7 +18596,7 @@ These files are preserved.</source>
         <source>If checked, %1 will set up two instances of each x86_64 compiler:
 One for the native x86_64 target, and one for a plain x86 target.
 Enable this if you plan to create 32-bit x86 binaries without using a dedicated cross compiler.</source>
-        <translation>در صورت بررسی ، ٪ 1 دو نمونه از هر کامپایلر x86_64 را تنظیم می کند:
+        <translation>در صورت بررسی ، %1 دو نمونه از هر کامپایلر x86_64 را تنظیم می کند:
  یکی برای هدف بومی x86_64 و دیگری برای یک هدف ساده x86.
  اگر قصد دارید با استفاده از یک کامپایلر متقاطع اختصاصی ، قصد ایجاد باینری های 32 بیتی x86 را ایجاد کنید.</translation>
     </message>
@@ -18624,12 +18624,12 @@ Enable this if you plan to create 32-bit x86 binaries without using a dedicated 
     <message>
         <location line="-7" />
         <source>The following compiler was already configured:&lt;br&gt;&amp;nbsp;%1&lt;br&gt;It was not configured again.</source>
-        <translation>کامپایلر زیر قبلاً پیکربندی شده بود: &lt;br&gt; &amp; nbsp ؛ ٪ 1 &lt;br&gt; دوباره پیکربندی نشده است.</translation>
+        <translation>کامپایلر زیر قبلاً پیکربندی شده بود: &lt;br&gt; &amp; nbsp ؛ %1 &lt;br&gt; دوباره پیکربندی نشده است.</translation>
     </message>
     <message>
         <location line="+8" />
         <source>The following compilers were already configured:&lt;br&gt;&amp;nbsp;%1&lt;br&gt;They were not configured again.</source>
-        <translation>کامپایلرهای زیر قبلاً پیکربندی شده بودند: &lt;br&gt; &amp; nbsp ؛ ٪ 1 &lt;br&gt; آنها دوباره پیکربندی نشده اند.</translation>
+        <translation>کامپایلرهای زیر قبلاً پیکربندی شده بودند: &lt;br&gt; &amp; nbsp ؛ %1 &lt;br&gt; آنها دوباره پیکربندی نشده اند.</translation>
     </message>
     <message>
         <location line="+76" />
@@ -18706,12 +18706,12 @@ Enable this if you plan to create 32-bit x86 binaries without using a dedicated 
         <location line="+3" />
         <source>Update %1</source>
         <extracomment>%1 = package name</extracomment>
-        <translation>به روزرسانی ٪ 1</translation>
+        <translation>به روزرسانی %1</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Install %1</source>
-        <translation>٪ 1 را نصب کنید</translation>
+        <translation>%1 را نصب کنید</translation>
     </message>
     <message>
         <location line="+3" />
@@ -18736,7 +18736,7 @@ Enable this if you plan to create 32-bit x86 binaries without using a dedicated 
     <message>
         <location line="+9" />
         <source>Installing "%1" failed with exit code %2.</source>
-        <translation>نصب "٪ ​​1" با کد خروجی ٪ 2 انجام نشد.</translation>
+        <translation>نصب "٪ ​​1" با کد خروجی %2 انجام نشد.</translation>
     </message>
     <message>
         <location filename="../../../src/plugins/python/pythoneditor.cpp" line="+51" />
@@ -18814,22 +18814,22 @@ Enable this if you plan to create 32-bit x86 binaries without using a dedicated 
     <message>
         <location line="+3" />
         <source>Python "%1" not found.</source>
-        <translation>پایتون "٪ 1" یافت نشد.</translation>
+        <translation>پایتون "%1" یافت نشد.</translation>
     </message>
     <message>
         <location line="+3" />
         <source>Python "%1" is not executable.</source>
-        <translation>پایتون "٪ 1" قابل اجرا نیست.</translation>
+        <translation>پایتون "%1" قابل اجرا نیست.</translation>
     </message>
     <message>
         <location line="+6" />
         <source>Python "%1" does not contain a usable pip. pip is needed to install Python packages from the Python Package Index, like PySide and the Python language server. To use any of that functionality ensure that pip is installed for that Python.</source>
-        <translation>پایتون "٪ 1" حاوی پیپ قابل استفاده نیست. PIP برای نصب بسته های پایتون از شاخص بسته Python ، مانند Pyside و Server Python Language لازم است. برای استفاده از هر یک از این قابلیت ها اطمینان حاصل کنید که PIP برای آن پایتون نصب شده است.</translation>
+        <translation>پایتون "%1" حاوی پیپ قابل استفاده نیست. PIP برای نصب بسته های پایتون از شاخص بسته Python ، مانند Pyside و Server Python Language لازم است. برای استفاده از هر یک از این قابلیت ها اطمینان حاصل کنید که PIP برای آن پایتون نصب شده است.</translation>
     </message>
     <message>
         <location line="+10" />
         <source>Python "%1" does not contain a usable venv. venv is the recommended way to isolate a development environment for a project from the globally installed Python.</source>
-        <translation>پایتون "٪ 1" حاوی VENV قابل استفاده نیست. VENV روش توصیه شده برای جداسازی یک محیط توسعه برای یک پروژه از پایتون نصب شده در سطح جهانی است.</translation>
+        <translation>پایتون "%1" حاوی VENV قابل استفاده نیست. VENV روش توصیه شده برای جداسازی یک محیط توسعه برای یک پروژه از پایتون نصب شده در سطح جهانی است.</translation>
     </message>
     <message>
         <location line="+32" />
@@ -18844,12 +18844,12 @@ Enable this if you plan to create 32-bit x86 binaries without using a dedicated 
     <message>
         <location filename="../../../src/plugins/python/pythonlanguageclient.cpp" line="+228" />
         <source>Python Language Server (%1)</source>
-        <translation>سرور زبان پایتون (٪ 1)</translation>
+        <translation>سرور زبان پایتون (%1)</translation>
     </message>
     <message>
         <location line="+303" />
         <source>Install Python language server (PyLS) for %1 (%2). The language server provides Python specific completion and annotation.</source>
-        <translation>سرور زبان پایتون (PYLS) را برای ٪ 1 (٪ 2) نصب کنید. سرور زبان تکمیل و حاشیه نویسی خاص پایتون را ارائه می دهد.</translation>
+        <translation>سرور زبان پایتون (PYLS) را برای %1 (%2) نصب کنید. سرور زبان تکمیل و حاشیه نویسی خاص پایتون را ارائه می دهد.</translation>
     </message>
     <message>
         <location line="+4" />
@@ -18859,7 +18859,7 @@ Enable this if you plan to create 32-bit x86 binaries without using a dedicated 
     <message>
         <location line="+11" />
         <source>Update Python language server (PyLS) for %1 (%2).</source>
-        <translation>سرور زبان پایتون (PYLS) را برای ٪ 1 (٪ 2) به روز کنید.</translation>
+        <translation>سرور زبان پایتون (PYLS) را برای %1 (%2) به روز کنید.</translation>
     </message>
     <message>
         <location line="+3" />
@@ -18884,7 +18884,7 @@ Enable this if you plan to create 32-bit x86 binaries without using a dedicated 
     <message>
         <location filename="../../../src/plugins/python/pythonproject.cpp" line="+41" />
         <source>No Python interpreter set for kit "%1".</source>
-        <translation>هیچ مترجم پایتون برای کیت "٪ 1" تنظیم نشده است.</translation>
+        <translation>هیچ مترجم پایتون برای کیت "%1" تنظیم نشده است.</translation>
     </message>
     <message>
         <location filename="../../../src/plugins/python/pythonrunconfiguration.cpp" line="+111" />
@@ -18910,7 +18910,7 @@ Enable this if you plan to create 32-bit x86 binaries without using a dedicated 
     <message>
         <location line="+20" />
         <source>Run %1</source>
-        <translation>Run ٪ 1</translation>
+        <translation>Run %1</translation>
     </message>
     <message>
         <location filename="../../../src/plugins/python/pythonsettings.cpp" line="-1147" />
@@ -18932,12 +18932,12 @@ Enable this if you plan to create 32-bit x86 binaries without using a dedicated 
     <message>
         <location line="+2" />
         <source>"%1" does not exist.</source>
-        <translation>"٪ 1" وجود ندارد.</translation>
+        <translation>"%1" وجود ندارد.</translation>
     </message>
     <message>
         <location line="+2" />
         <source>"%1" is not an executable file.</source>
-        <translation>"٪ 1" یک پرونده اجرایی نیست.</translation>
+        <translation>"%1" یک پرونده اجرایی نیست.</translation>
     </message>
     <message>
         <location line="+16" />
@@ -18991,7 +18991,7 @@ Enable this if you plan to create 32-bit x86 binaries without using a dedicated 
     <message>
         <location line="+22" />
         <source>For a complete list of available options, consult the [Python LSP Server configuration documentation](%1).</source>
-        <translation>برای لیست کاملی از گزینه های موجود ، با [مستندات پیکربندی سرور Python LSP] مشورت کنید (٪ 1).</translation>
+        <translation>برای لیست کاملی از گزینه های موجود ، با [مستندات پیکربندی سرور Python LSP] مشورت کنید (%1).</translation>
     </message>
     <message>
         <location line="+12" />
@@ -19037,7 +19037,7 @@ Enable this if you plan to create 32-bit x86 binaries without using a dedicated 
     <message>
         <location line="+11" />
         <source>Found "%1" (%2)</source>
-        <translation>"٪ 1" (٪ 2) یافت</translation>
+        <translation>"%1" (%2) یافت</translation>
     </message>
     <message>
         <location line="+9" />
@@ -19384,7 +19384,7 @@ if the comment starts with "/*!" or "//!".</source>
     <message>
         <location filename="../../../src/plugins/texteditor/texteditor.cpp" line="+195" />
         <source>Cursors: %2</source>
-        <translation>مکان نما: ٪ 2</translation>
+        <translation>مکان نما: %2</translation>
     </message>
     <message>
         <location line="+8" />
@@ -19394,7 +19394,7 @@ if the comment starts with "/*!" or "//!".</source>
     <message>
         <location line="+7" />
         <source>(Sel: %1)</source>
-        <translation>(SEL: ٪ 1)</translation>
+        <translation>(SEL: %1)</translation>
     </message>
     <message>
         <location line="+18" />
@@ -19756,17 +19756,17 @@ Specifies how backspace interacts with indentation.
     <message>
         <location line="+3" />
         <source>%1: The highlight definition for the file determines the position. If no highlight definition is available, the comment is placed after leading whitespaces.</source>
-        <translation>٪ 1: تعریف برجسته برای پرونده موقعیت را تعیین می کند. اگر هیچ تعریف برجسته ای در دسترس نباشد ، این نظر پس از پیشرو در فضای سفید قرار می گیرد.</translation>
+        <translation>%1: تعریف برجسته برای پرونده موقعیت را تعیین می کند. اگر هیچ تعریف برجسته ای در دسترس نباشد ، این نظر پس از پیشرو در فضای سفید قرار می گیرد.</translation>
     </message>
     <message>
         <location line="+5" />
         <source>%1: The comment is placed at the start of the line.</source>
-        <translation>٪ 1: این نظر در شروع خط قرار می گیرد.</translation>
+        <translation>%1: این نظر در شروع خط قرار می گیرد.</translation>
     </message>
     <message>
         <location line="+2" />
         <source>%1: The comment is placed after leading whitespaces.</source>
-        <translation>٪ 1: این نظر پس از پیشبرد مناطق سفید قرار می گیرد.</translation>
+        <translation>%1: این نظر پس از پیشبرد مناطق سفید قرار می گیرد.</translation>
     </message>
     <message>
         <location line="+22" />
@@ -20303,7 +20303,7 @@ A value less than 100% can result in overlapping and misaligned graphics.</sourc
     <message>
         <location line="+2" />
         <source>%1 [customizable]</source>
-        <translation>٪ 1 [قابل تنظیم]</translation>
+        <translation>%1 [قابل تنظیم]</translation>
     </message>
     <message>
         <location filename="../../../src/plugins/texteditor/fontsettingspage.cpp" line="+89" />
@@ -22376,12 +22376,12 @@ Excluding: %3
     <message>
         <location line="-25" />
         <source>Failed to format: %1.</source>
-        <translation>با فرمت نتوانست: ٪ 1.</translation>
+        <translation>با فرمت نتوانست: %1.</translation>
     </message>
     <message>
         <location line="+175" />
         <source>Error in text formatting: %1</source>
-        <translation>خطا در قالب بندی متن: ٪ 1</translation>
+        <translation>خطا در قالب بندی متن: %1</translation>
     </message>
     <message>
         <location line="+16" />
@@ -22762,7 +22762,7 @@ Excluding: %3
     <message>
         <location line="+60" />
         <source>Cannot set permissions on temporary directory "%1": %2</source>
-        <translation>نمی توان مجوزهای مربوط به فهرست موقت "٪ 1" را تنظیم کرد: ٪ 2</translation>
+        <translation>نمی توان مجوزهای مربوط به فهرست موقت "%1" را تنظیم کرد: %2</translation>
     </message>
     <message>
         <source>The process "%1" could not be started: %2</source>
@@ -23298,37 +23298,37 @@ in "%2".
         <location line="-139" />
         <location line="+409" />
         <source>Path "%1" exists but is not a writable directory.</source>
-        <translation>مسیر "٪ 1" وجود دارد اما یک فهرست قابل نوشتن نیست.</translation>
+        <translation>مسیر "%1" وجود دارد اما یک فهرست قابل نوشتن نیست.</translation>
     </message>
     <message>
         <location line="-356" />
         <source>copyFile is not implemented for "%1".</source>
-        <translation>CopyFile برای "٪ 1" پیاده سازی نشده است.</translation>
+        <translation>CopyFile برای "%1" پیاده سازی نشده است.</translation>
     </message>
     <message>
         <location line="+30" />
         <source>Cannot copy from "%1", it is not a directory.</source>
-        <translation>نمی توان از "٪ 1" کپی کرد ، دایرکتوری نیست.</translation>
+        <translation>نمی توان از "%1" کپی کرد ، دایرکتوری نیست.</translation>
     </message>
     <message>
         <location line="+4" />
         <source>Cannot copy "%1" to "%2": %3</source>
-        <translation>نمی توان "٪ 1" را به "٪ 2" کپی کرد: ٪ 3</translation>
+        <translation>نمی توان "%1" را به "%2" کپی کرد: %3</translation>
     </message>
     <message>
         <location line="+103" />
         <source>fileContents is not implemented for "%1".</source>
-        <translation>FileContents برای "٪ 1" اجرا نمی شود.</translation>
+        <translation>FileContents برای "%1" اجرا نمی شود.</translation>
     </message>
     <message>
         <location line="+10" />
         <source>writeFileContents is not implemented for "%1".</source>
-        <translation>WritEfileContents برای "٪ 1" اجرا نمی شود.</translation>
+        <translation>WritEfileContents برای "%1" اجرا نمی شود.</translation>
     </message>
     <message>
         <location line="+66" />
         <source>createTempFile is not implemented for "%1".</source>
-        <translation>CreateTempFile برای "٪ 1" اجرا نمی شود.</translation>
+        <translation>CreateTempFile برای "%1" اجرا نمی شود.</translation>
     </message>
     <message>
         <location line="+7" />
@@ -23338,7 +23338,7 @@ in "%2".
     <message>
         <location line="+180" />
         <source>Refusing to remove the standard directory "%1".</source>
-        <translation>امتناع از حذف فهرست استاندارد "٪ 1".</translation>
+        <translation>امتناع از حذف فهرست استاندارد "%1".</translation>
     </message>
     <message>
         <location line="+12" />
@@ -23363,7 +23363,7 @@ in "%2".
     <message>
         <location line="+551" />
         <source>Failed creating temporary file "%1" (too many tries).</source>
-        <translation>ایجاد پرونده موقت "٪ 1" (تلاش های زیادی) انجام نشد.</translation>
+        <translation>ایجاد پرونده موقت "%1" (تلاش های زیادی) انجام نشد.</translation>
     </message>
     <message>
         <source>Failed to copy file "%1" to "%2".</source>
@@ -23403,28 +23403,28 @@ in "%2".
     <message>
         <location line="-333" />
         <source>File "%1" does not exist.</source>
-        <translation>پرونده "٪ 1" وجود ندارد.</translation>
+        <translation>پرونده "%1" وجود ندارد.</translation>
     </message>
     <message>
         <location line="+3" />
         <source>Could not open File "%1".</source>
-        <translation>نمی توان پرونده "٪ 1" را باز کرد.</translation>
+        <translation>نمی توان پرونده "%1" را باز کرد.</translation>
     </message>
     <message>
         <location line="+24" />
         <source>Could not open file "%1" for writing.</source>
-        <translation>نمی تواند پرونده "٪ 1" را برای نوشتن باز کند.</translation>
+        <translation>نمی تواند پرونده "%1" را برای نوشتن باز کند.</translation>
     </message>
     <message numerus="yes">
         <location line="+5" />
         <source>Could not write to file "%1" (only %2 of %n byte(s) written).</source>
         <translation>
-            <numerusform>نمی توان برای پرونده "٪ 1" نوشت (فقط ٪ 2 ٪ از n بایت (های) نوشته شده).</numerusform><numerusform>نمی توان برای پرونده "٪ 1" نوشت (فقط ٪ 2 ٪ از n بایت (های) نوشته شده).</numerusform></translation>
+            <numerusform>نمی توان برای پرونده "%1" نوشت (فقط %2 ٪ از n بایت (های) نوشته شده).</numerusform><numerusform>نمی توان برای پرونده "%1" نوشت (فقط %2 ٪ از n بایت (های) نوشته شده).</numerusform></translation>
     </message>
     <message>
         <location line="+13" />
         <source>Could not create temporary file in "%1" (%2).</source>
-        <translation>نمی توان پرونده موقت را در "٪ 1" (٪ 2) ایجاد کرد.</translation>
+        <translation>نمی توان پرونده موقت را در "%1" (%2) ایجاد کرد.</translation>
     </message>
     <message>
         <location line="+138" />
@@ -23702,7 +23702,7 @@ To disable a variable, prefix the line with "#".</source>
         <location line="+15" />
         <location line="+8" />
         <source>Cannot create temporary file %1: %2</source>
-        <translation>نمی توان پرونده موقت ٪ 1: ٪ 2 را ایجاد کرد</translation>
+        <translation>نمی توان پرونده موقت %1: %2 را ایجاد کرد</translation>
     </message>
     <message>
         <location line="+40" />
@@ -23946,12 +23946,12 @@ Lines starting with "##" will be treated as comments.</source>
     <message>
         <location line="+79" />
         <source>The program "%1" could not be found.</source>
-        <translation>برنامه "٪ 1" یافت نشد.</translation>
+        <translation>برنامه "%1" یافت نشد.</translation>
     </message>
     <message>
         <location line="+908" />
         <source>Failed to create process interface for "%1".</source>
-        <translation>ایجاد رابط فرآیند برای "٪ 1" انجام نشد.</translation>
+        <translation>ایجاد رابط فرآیند برای "%1" انجام نشد.</translation>
     </message>
     <message>
         <location line="+163" />
@@ -23996,7 +23996,7 @@ Lines starting with "##" will be treated as comments.</source>
     <message>
         <location line="+4" />
         <source>The command "%1" was canceled after %2 ms.</source>
-        <translation>دستور "٪ 1" پس از ٪ 2 ms لغو شد.</translation>
+        <translation>دستور "%1" پس از %2 ms لغو شد.</translation>
     </message>
     <message>
         <source>The command "%1" did not respond within the timeout limit (%2 s).</source>
@@ -24204,18 +24204,18 @@ Lines starting with "##" will be treated as comments.</source>
         <location line="+34" />
         <source>Failed to install shell script: %1
 %2</source>
-        <translation>نصب اسکریپت پوسته: ٪ 1
- ٪ 2</translation>
+        <translation>نصب اسکریپت پوسته: %1
+ %2</translation>
     </message>
     <message>
         <location line="+17" />
         <source>Timeout while trying to check for %1.</source>
-        <translation>ضمن تلاش برای بررسی ٪ 1.</translation>
+        <translation>ضمن تلاش برای بررسی %1.</translation>
     </message>
     <message>
         <location line="+7" />
         <source>Command "%1" was not found.</source>
-        <translation>فرمان "٪ 1" یافت نشد.</translation>
+        <translation>فرمان "%1" یافت نشد.</translation>
     </message>
     <message>
         <location line="+10" />
@@ -24230,7 +24230,7 @@ Lines starting with "##" will be treated as comments.</source>
     <message>
         <location line="+11" />
         <source>Failed to install shell script: %1</source>
-        <translation>نصب اسکریپت پوسته: ٪ 1</translation>
+        <translation>نصب اسکریپت پوسته: %1</translation>
     </message>
     <message>
         <location filename="../../../src/libs/utils/externalterminalprocessimpl.cpp" line="+124" />
@@ -24241,7 +24241,7 @@ Lines starting with "##" will be treated as comments.</source>
         <location line="+28" />
         <location line="+45" />
         <source>Failed to start terminal process: "%1".</source>
-        <translation>شروع به شروع فرآیند ترمینال: "٪ 1".</translation>
+        <translation>شروع به شروع فرآیند ترمینال: "%1".</translation>
     </message>
     <message>
         <location filename="../../../src/libs/utils/filestreamermanager.cpp" line="+135" />

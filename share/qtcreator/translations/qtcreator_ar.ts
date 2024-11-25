@@ -535,7 +535,7 @@
         <location line="+26" />
         <source>A browser window will open. Enter the code %1 when asked.
 The code has been copied to your clipboard.</source>
-        <translation>سيفتح نافذة المتصفح. أدخل الكود ٪ 1 عند الطلب.
+        <translation>سيفتح نافذة المتصفح. أدخل الكود %1 عند الطلب.
  تم نسخ الكود إلى الحافظة الخاصة بك.</translation>
     </message>
     <message>
@@ -546,7 +546,7 @@ The code has been copied to your clipboard.</source>
     <message>
         <location line="+1" />
         <source>The login request failed: %1</source>
-        <translation>فشل طلب تسجيل الدخول: ٪ 1</translation>
+        <translation>فشل طلب تسجيل الدخول: %1</translation>
     </message>
     <message>
         <location filename="../../../src/plugins/copilot/copilotclient.cpp" line="+336" />
@@ -577,17 +577,17 @@ The code has been copied to your clipboard.</source>
     <message>
         <location line="+3" />
         <source>Apply (%1)</source>
-        <translation>تطبيق (٪ 1)</translation>
+        <translation>تطبيق (%1)</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Apply Word (%1)</source>
-        <translation>تطبيق الكلمة (٪ 1)</translation>
+        <translation>تطبيق الكلمة (%1)</translation>
     </message>
     <message>
         <location line="+13" />
         <source>%1 of %2</source>
-        <translation>٪ 1 من ٪ 2</translation>
+        <translation>%1 من %2</translation>
     </message>
     <message>
         <location filename="../../../src/plugins/copilot/copilotplugin.cpp" line="+65" />
@@ -667,25 +667,25 @@ The code has been copied to your clipboard.</source>
         <location line="+2" />
         <source>Select path to node.js executable. See %1 for installation instructions.</source>
         <extracomment>%1 is the URL to nodejs</extracomment>
-        <translation>حدد المسار إلى node.js قابلة للتنفيذ. انظر ٪ 1 للحصول على تعليمات التثبيت.</translation>
+        <translation>حدد المسار إلى node.js قابلة للتنفيذ. انظر %1 للحصول على تعليمات التثبيت.</translation>
     </message>
     <message>
         <location line="+8" />
         <source>Path to %1:</source>
         <extracomment>%1 is the filename of the copilot language server</extracomment>
-        <translation>الطريق إلى ٪ 1:</translation>
+        <translation>الطريق إلى %1:</translation>
     </message>
     <message>
         <location line="+3" />
         <source>%1 path</source>
         <extracomment>%1 is the filename of the copilot language server</extracomment>
-        <translation>٪ 1 المسار</translation>
+        <translation>%1 المسار</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Select path to %2 in Copilot Neovim plugin. See %1 for installation instructions.</source>
         <extracomment>%1 is the URL to copilot.vim getting started, %2 is the filename of the copilot language server</extracomment>
-        <translation>حدد المسار إلى ٪ 2 في البرنامج المساعد Copilot Neovim. انظر ٪ 1 للحصول على تعليمات التثبيت.</translation>
+        <translation>حدد المسار إلى %2 في البرنامج المساعد Copilot Neovim. انظر %1 للحصول على تعليمات التثبيت.</translation>
     </message>
     <message>
         <location line="+5" />
@@ -810,7 +810,7 @@ The code has been copied to your clipboard.</source>
     <message>
         <location line="+31" />
         <source>Enabling %1 is subject to your agreement and abidance with your applicable %1 terms. It is your responsibility to know and accept the requirements and parameters of using tools like %1. This may include, but is not limited to, ensuring you have the rights to allow %1 access to your code, as well as understanding any implications of your use of %1 and suggestions produced (like copyright, accuracy, etc.).</source>
-        <translation>يخضع التمكين ٪ 1 لاتفاقك وإخفالك مع شروط ٪ 1 المطبقة. تقع على عاتقك مسؤولية معرفة وقبول متطلبات استخدام أدوات مثل ٪ 1. قد يشمل ذلك ، على سبيل المثال لا الحصر ، ضمان حصولك على الحقوق للسماح ٪ 1 بالوصول إلى الكود الخاص بك ، وكذلك فهم أي آثار على استخدامك للنسبة المئوية 1 والاقتراحات المنتجة (مثل حقوق الطبع والنشر ، الدقة ، إلخ).</translation>
+        <translation>يخضع التمكين %1 لاتفاقك وإخفالك مع شروط %1 المطبقة. تقع على عاتقك مسؤولية معرفة وقبول متطلبات استخدام أدوات مثل %1. قد يشمل ذلك ، على سبيل المثال لا الحصر ، ضمان حصولك على الحقوق للسماح %1 بالوصول إلى الكود الخاص بك ، وكذلك فهم أي آثار على استخدامك للنسبة المئوية 1 والاقتراحات المنتجة (مثل حقوق الطبع والنشر ، الدقة ، إلخ).</translation>
     </message>
     <message>
         <location line="+16" />
@@ -818,9 +818,9 @@ The code has been copied to your clipboard.</source>
 
 Otherwise you need to specify the path to the %2 file from the Copilot neovim plugin.</source>
         <comment>Markdown text for the copilot instruction label</comment>
-        <translation>يتطلب المكون الإضافي Copilot Node.js والمكون الإضافي Copilot Neovim. إذا قمت بتثبيت المكون الإضافي NEOVIM كما هو موضح في ٪ 1 ، فسيجد المكون الإضافي ملف ٪ 3 تلقائيًا.
+        <translation>يتطلب المكون الإضافي Copilot Node.js والمكون الإضافي Copilot Neovim. إذا قمت بتثبيت المكون الإضافي NEOVIM كما هو موضح في %1 ، فسيجد المكون الإضافي ملف %3 تلقائيًا.
 
- وإلا فإنك تحتاج إلى تحديد المسار إلى ملف ٪ 2 من البرنامج المساعد Copilot Neovim.</translation>
+ وإلا فإنك تحتاج إلى تحديد المسار إلى ملف %2 من البرنامج المساعد Copilot Neovim.</translation>
     </message>
     <message>
         <location line="+14" />
@@ -1336,7 +1336,7 @@ Continue?</source>
         <source>Provide cursors for resizing views.
 If the system cursors for resizing views are not displayed properly, you can use the cursors provided by %1.</source>
         <translation>توفير المؤشرات لتغيير حجم وجهات النظر.
- إذا لم يتم عرض مؤشرات النظام لتغيير حجم المشاهدات بشكل صحيح ، فيمكنك استخدام المؤشرات التي توفرها ٪ 1.</translation>
+ إذا لم يتم عرض مؤشرات النظام لتغيير حجم المشاهدات بشكل صحيح ، فيمكنك استخدام المؤشرات التي توفرها %1.</translation>
     </message>
     <message>
         <location line="+93" />
@@ -1371,7 +1371,7 @@ If the system cursors for resizing views are not displayed properly, you can use
     <message>
         <location line="+6" />
         <source>The following environment variables are set and can influence the UI scaling behavior of %1:</source>
-        <translation>يتم تعيين متغيرات البيئة التالية ويمكن أن تؤثر على سلوك تحجيم واجهة المستخدم من ٪ 1:</translation>
+        <translation>يتم تعيين متغيرات البيئة التالية ويمكن أن تؤثر على سلوك تحجيم واجهة المستخدم من %1:</translation>
     </message>
     <message>
         <location line="+7" />
@@ -1905,7 +1905,7 @@ provided they were unmodified before the refactoring.</source>
     <message>
         <location line="+1" />
         <source>This will hide the menu bar completely. You can show it again by typing %1.&lt;br&gt;&lt;br&gt;Or, trigger the "%2" action from the "%3" locator filter (%4).</source>
-        <translation>هذا سوف يخفي شريط القائمة تماما. يمكنك إظهاره مرة أخرى عن طريق كتابة ٪ 1.</translation>
+        <translation>هذا سوف يخفي شريط القائمة تماما. يمكنك إظهاره مرة أخرى عن طريق كتابة %1.</translation>
     </message>
     <message>
         <location line="+21" />
@@ -2126,7 +2126,7 @@ provided they were unmodified before the refactoring.</source>
     <message>
         <location line="+9" />
         <source>Invalid level: %1</source>
-        <translation>مستوى غير صالح: ٪ 1</translation>
+        <translation>مستوى غير صالح: %1</translation>
     </message>
     <message>
         <location line="+312" />
@@ -2171,7 +2171,7 @@ provided they were unmodified before the refactoring.</source>
     <message>
         <location line="+10" />
         <source>Invalid regular expression: %1</source>
-        <translation>تعبير منتظم غير صالح: ٪ 1</translation>
+        <translation>تعبير منتظم غير صالح: %1</translation>
     </message>
     <message>
         <location line="+85" />
@@ -2191,17 +2191,17 @@ provided they were unmodified before the refactoring.</source>
     <message>
         <location line="+65" />
         <source>Uncheck All %1</source>
-        <translation>قم بإلغاء تحديد كل ٪ 1</translation>
+        <translation>قم بإلغاء تحديد كل %1</translation>
     </message>
     <message>
         <location line="+0" />
         <source>Check All %1</source>
-        <translation>تحقق من كل ٪ 1</translation>
+        <translation>تحقق من كل %1</translation>
     </message>
     <message>
         <location line="+4" />
         <source>Reset All %1</source>
-        <translation>إعادة ضبط جميع ٪ 1</translation>
+        <translation>إعادة ضبط جميع %1</translation>
     </message>
     <message>
         <location line="+31" />
@@ -2221,7 +2221,7 @@ provided they were unmodified before the refactoring.</source>
     <message>
         <location line="+51" />
         <source>Failed to open preset file "%1" for reading.</source>
-        <translation>فشل في فتح ملف مسبق "٪ 1" للقراءة.</translation>
+        <translation>فشل في فتح ملف مسبق "%1" للقراءة.</translation>
     </message>
     <message>
         <location line="-172" />
@@ -3398,7 +3398,7 @@ To do this, you type this shortcut and a space in the Locator entry field, and t
     <message>
         <location line="+1" />
         <source>Cannot create file "%1".</source>
-        <translation>لا يمكن إنشاء ملف "٪ 1".</translation>
+        <translation>لا يمكن إنشاء ملف "%1".</translation>
     </message>
     <message>
         <location line="+15" />
@@ -3408,12 +3408,12 @@ To do this, you type this shortcut and a space in the Locator entry field, and t
     <message>
         <location line="+164" />
         <source>Create and Open File "%1"</source>
-        <translation>إنشاء وفتح ملف "٪ 1"</translation>
+        <translation>إنشاء وفتح ملف "%1"</translation>
     </message>
     <message>
         <location line="+17" />
         <source>Create Directory "%1"</source>
-        <translation>إنشاء دليل "٪ 1"</translation>
+        <translation>إنشاء دليل "%1"</translation>
     </message>
     <message>
         <location line="+58" />
@@ -3877,7 +3877,7 @@ To do this, you type this shortcut and a space in the Locator entry field, and t
     <message>
         <location line="+3" />
         <source>The path to the running %1 itself.</source>
-        <translation>المسار إلى الجري ٪ 1 نفسه.</translation>
+        <translation>المسار إلى الجري %1 نفسه.</translation>
     </message>
     <message>
         <location line="+3" />
@@ -3887,7 +3887,7 @@ To do this, you type this shortcut and a space in the Locator entry field, and t
     <message>
         <location line="+4" />
         <source>The directory where %1 puts custom user data.</source>
-        <translation>الدليل حيث ٪ 1 يضع بيانات المستخدم المخصصة.</translation>
+        <translation>الدليل حيث %1 يضع بيانات المستخدم المخصصة.</translation>
     </message>
     <message>
         <location line="+3" />
@@ -4924,12 +4924,12 @@ Double-click to edit item.</source>
     <message>
         <location line="+23" />
         <source>Running in "%1": %2 %3.</source>
-        <translation>تشغيل في "٪ 1": ٪ 2 ٪ 3.</translation>
+        <translation>تشغيل في "%1": %2 %3.</translation>
     </message>
     <message>
         <location line="+17" />
         <source>A timeout occurred running "%1".</source>
-        <translation>حدثت مهلة تشغيل "٪ 1".</translation>
+        <translation>حدثت مهلة تشغيل "%1".</translation>
     </message>
     <message>
         <source>Running in %1: %2 %3</source>
@@ -5120,7 +5120,7 @@ Double-click to edit item.</source>
     <message>
         <location line="+1" />
         <source>Remove the following files from the version control system (%1)?</source>
-        <translation>إزالة الملفات التالية من نظام التحكم في الإصدار (٪ 1)؟</translation>
+        <translation>إزالة الملفات التالية من نظام التحكم في الإصدار (%1)؟</translation>
     </message>
     <message>
         <location line="+2" />
@@ -5576,7 +5576,7 @@ to version control (%2)
     <message>
         <location line="+21" />
         <source>Plugin Details of %1</source>
-        <translation>تفاصيل البرنامج المساعد ٪ 1</translation>
+        <translation>تفاصيل البرنامج المساعد %1</translation>
     </message>
     <message>
         <location filename="../../../src/libs/extensionsystem/pluginerrorview.cpp" line="+47" />
@@ -5632,7 +5632,7 @@ to version control (%2)
         <location filename="../../../src/libs/extensionsystem/pluginview.cpp" line="+103" />
         <source>%1 (deprecated)</source>
         <extracomment>%1 is a plugin name</extracomment>
-        <translation>٪ 1 (تم إهمالها)</translation>
+        <translation>%1 (تم إهمالها)</translation>
     </message>
     <message>
         <location line="+3" />
@@ -5834,7 +5834,7 @@ Reason: %3</source>
     <message>
         <location line="+2" />
         <source>If you temporarily disable %1, the following plugins that depend on it are also disabled: %2.</source>
-        <translation>إذا قمت بتعطيل ٪ 1 مؤقتًا ، فسيتم تعطيل الإضافات التالية التي تعتمد عليها أيضًا: ٪ 2.</translation>
+        <translation>إذا قمت بتعطيل %1 مؤقتًا ، فسيتم تعطيل الإضافات التالية التي تعتمد عليها أيضًا: %2.</translation>
     </message>
     <message>
         <source>If you temporarily disable %1, the following plugins that depend on it are also disabled: %2.
@@ -5962,7 +5962,7 @@ Reason: %3</source>
     <message>
         <location line="+3" />
         <source>Expected IID "%1", but found "%2"</source>
-        <translation>متوقع IID "٪ 1" ، ولكن وجدت "٪ 2"</translation>
+        <translation>متوقع IID "%1" ، ولكن وجدت "%2"</translation>
     </message>
     <message>
         <location line="+6" />
@@ -6376,7 +6376,7 @@ Would you like to overwrite them?</source>
     <message>
         <location filename="../../../src/libs/languageserverprotocol/jsonrpcmessages.h" line="+257" />
         <source>Error %1</source>
-        <translation>خطأ ٪ 1</translation>
+        <translation>خطأ %1</translation>
     </message>
     <message>
         <location filename="../../../src/plugins/languageclient/callandtypehierarchy.cpp" line="+60" />
@@ -6417,7 +6417,7 @@ Would you like to overwrite them?</source>
         <location filename="../../../src/plugins/languageclient/client.cpp" line="+394" />
         <source>%1 for %2</source>
         <extracomment>&lt;language client&gt; for &lt;project&gt;</extracomment>
-        <translation>٪ 1 لنسبة ٪ 2</translation>
+        <translation>%1 لنسبة %2</translation>
     </message>
     <message>
         <location line="+223" />
@@ -6465,18 +6465,18 @@ Would you like to overwrite them?</source>
         <location line="+1342" />
         <source>Invalid parameter in "%1":
 %2</source>
-        <translation>معلمة غير صالحة في "٪ 1":
- ٪ 2</translation>
+        <translation>معلمة غير صالحة في "%1":
+ %2</translation>
     </message>
     <message>
         <location line="+219" />
         <source>Language Server "%1" Initialization Error</source>
-        <translation>خادم اللغة "٪ 1" خطأ التهيئة</translation>
+        <translation>خادم اللغة "%1" خطأ التهيئة</translation>
     </message>
     <message>
         <location line="+13" />
         <source>Initialization error: %1.</source>
-        <translation>خطأ التهيئة: ٪ 1.</translation>
+        <translation>خطأ التهيئة: %1.</translation>
     </message>
     <message>
         <location line="+7" />
@@ -6546,17 +6546,17 @@ Would you like to overwrite them?</source>
     <message>
         <location filename="../../../src/plugins/languageclient/languageclientinterface.cpp" line="+77" />
         <source>Cannot handle MIME type "%1" of message.</source>
-        <translation>لا يمكن التعامل مع نوع MIME "٪ 1" من الرسالة.</translation>
+        <translation>لا يمكن التعامل مع نوع MIME "%1" من الرسالة.</translation>
     </message>
     <message>
         <location line="+70" />
         <source>Cannot send data to unstarted server %1</source>
-        <translation>لا يمكن إرسال البيانات إلى الخادم غير الموقف ٪ 1</translation>
+        <translation>لا يمكن إرسال البيانات إلى الخادم غير الموقف %1</translation>
     </message>
     <message>
         <location filename="../../../src/plugins/languageclient/languageclientmanager.cpp" line="+178" />
         <source>Unexpectedly finished. Restarting in %1 seconds.</source>
-        <translation>انتهى بشكل غير متوقع. إعادة التشغيل في ٪ 1 ثوان.</translation>
+        <translation>انتهى بشكل غير متوقع. إعادة التشغيل في %1 ثوان.</translation>
     </message>
     <message>
         <location line="+10" />
@@ -6639,12 +6639,12 @@ Would you like to overwrite them?</source>
         <source>List of file patterns.
 Example: *.cpp%1*.h</source>
         <translation>قائمة أنماط الملف.
- مثال: *.cpp ٪ 1 *.h</translation>
+ مثال: *.cpp %1 *.h</translation>
     </message>
     <message>
         <location line="+18" />
         <source>Failed to parse JSON at %1: %2</source>
-        <translation>فشل في تحليل JSON في ٪ 1: ٪ 2</translation>
+        <translation>فشل في تحليل JSON في %1: %2</translation>
     </message>
     <message>
         <location line="+8" />
@@ -6734,23 +6734,23 @@ See the documentation of the specific language server for valid settings.</sourc
         <source>Files:
 %1</source>
         <translation>الملفات:
- ٪ 1</translation>
+ %1</translation>
     </message>
     <message>
         <location line="+331" />
         <location line="+227" />
         <source>Find References with %1 for:</source>
-        <translation>ابحث عن المراجع مع ٪ 1 لـ:</translation>
+        <translation>ابحث عن المراجع مع %1 لـ:</translation>
     </message>
     <message>
         <location line="-144" />
         <source>Renaming is not supported with %1</source>
-        <translation>لا يتم دعم إعادة تسمية ٪ 1</translation>
+        <translation>لا يتم دعم إعادة تسمية %1</translation>
     </message>
     <message>
         <location line="+168" />
         <source>%1 is not reachable anymore.</source>
-        <translation>٪ 1 لم يعد يمكن الوصول إليه.</translation>
+        <translation>%1 لم يعد يمكن الوصول إليه.</translation>
     </message>
     <message>
         <location line="+33" />
@@ -6765,7 +6765,7 @@ See the documentation of the specific language server for valid settings.</sourc
     <message>
         <location line="+121" />
         <source>Restart %1</source>
-        <translation>إعادة التشغيل ٪ 1</translation>
+        <translation>إعادة التشغيل %1</translation>
     </message>
     <message>
         <location line="+5" />
@@ -6785,32 +6785,32 @@ See the documentation of the specific language server for valid settings.</sourc
     <message>
         <location line="+6" />
         <source>Running "%1" to install %2.</source>
-        <translation>تشغيل "٪ 1" لتثبيت ٪ 2.</translation>
+        <translation>تشغيل "%1" لتثبيت %2.</translation>
     </message>
     <message>
         <location line="+17" />
         <source>The installation of "%1" was canceled by timeout.</source>
-        <translation>تم إلغاء تثبيت "٪ 1" عن طريق المهلة.</translation>
+        <translation>تم إلغاء تثبيت "%1" عن طريق المهلة.</translation>
     </message>
     <message>
         <location line="+1" />
         <source>The installation of "%1" was canceled by the user.</source>
-        <translation>تم إلغاء تثبيت "٪ 1" من قبل المستخدم.</translation>
+        <translation>تم إلغاء تثبيت "%1" من قبل المستخدم.</translation>
     </message>
     <message>
         <location line="+8" />
         <source>Installing "%1" failed with exit code %2.</source>
-        <translation>فشل تثبيت "٪ 1" مع رمز الخروج ٪ 2.</translation>
+        <translation>فشل تثبيت "%1" مع رمز الخروج %2.</translation>
     </message>
     <message>
         <location line="+56" />
         <source>Install %1 language server via npm.</source>
-        <translation>قم بتثبيت ٪ 1 Server Language عبر NPM.</translation>
+        <translation>قم بتثبيت %1 Server Language عبر NPM.</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Setup %1 language server (%2).</source>
-        <translation>الإعداد ٪ 1 خادم لغة (٪ 2).</translation>
+        <translation>الإعداد %1 خادم لغة (%2).</translation>
     </message>
     <message>
         <location line="+4" />
@@ -6825,7 +6825,7 @@ See the documentation of the specific language server for valid settings.</sourc
     <message>
         <location line="+10" />
         <source>%1 Language Server</source>
-        <translation>٪ 1 خادم لغة</translation>
+        <translation>%1 خادم لغة</translation>
     </message>
     <message>
         <location filename="../../../src/plugins/languageclient/lspinspector.cpp" line="+48" />
@@ -6908,47 +6908,47 @@ See the documentation of the specific language server for valid settings.</sourc
     <message>
         <location filename="../../../src/libs/languageserverprotocol/basemessage.cpp" line="+84" />
         <source>Cannot decode content with "%1". Falling back to "%2".</source>
-        <translation>لا يمكن فك تشفير المحتوى مع "٪ 1". العودة إلى "٪ 2".</translation>
+        <translation>لا يمكن فك تشفير المحتوى مع "%1". العودة إلى "%2".</translation>
     </message>
     <message>
         <location line="+15" />
         <source>Expected an integer in "%1", but got "%2".</source>
-        <translation>توقع عدد صحيح في "٪ 1" ، ولكن حصلت على "٪ 2".</translation>
+        <translation>توقع عدد صحيح في "%1" ، ولكن حصلت على "%2".</translation>
     </message>
     <message>
         <location filename="../../../src/libs/languageserverprotocol/jsonrpcmessages.cpp" line="+80" />
         <source>Could not parse JSON message: "%1".</source>
-        <translation>لا يمكن تحليل رسالة JSON: "٪ 1".</translation>
+        <translation>لا يمكن تحليل رسالة JSON: "%1".</translation>
     </message>
     <message>
         <location line="+3" />
         <source>Expected a JSON object, but got a JSON "%1" value.</source>
-        <translation>توقع كائن JSON ، ولكن حصلت على قيمة JSON "٪ 1".</translation>
+        <translation>توقع كائن JSON ، ولكن حصلت على قيمة JSON "%1".</translation>
     </message>
     <message>
         <location filename="../../../src/libs/languageserverprotocol/jsonrpcmessages.h" line="-91" />
         <source>No parameters in "%1".</source>
-        <translation>لا توجد معلمات في "٪ 1".</translation>
+        <translation>لا توجد معلمات في "%1".</translation>
     </message>
     <message>
         <location line="+213" />
         <source>No ID set in "%1".</source>
-        <translation>لم يتم تعيين معرف في "٪ 1".</translation>
+        <translation>لم يتم تعيين معرف في "%1".</translation>
     </message>
     <message>
         <location filename="../../../src/libs/languageserverprotocol/lsptypes.cpp" line="+451" />
         <source>Create %1</source>
-        <translation>إنشاء ٪ 1</translation>
+        <translation>إنشاء %1</translation>
     </message>
     <message>
         <location line="+15" />
         <source>Rename %1 to %2</source>
-        <translation>إعادة تسمية ٪ 1 إلى ٪ 2</translation>
+        <translation>إعادة تسمية %1 إلى %2</translation>
     </message>
     <message>
         <location line="+17" />
         <source>Delete %1</source>
-        <translation>حذف ٪ 1</translation>
+        <translation>حذف %1</translation>
     </message>
 </context>
 <context>
@@ -7260,14 +7260,14 @@ Please close any programs that are viewing/editing OpenMV IDE's application data
         <source>Error in parsing &lt;user_resources&gt;/openmvide/firmware/settings.json - %L1!
 
 Check the json file for errors and fix them.</source>
-        <translation>خطأ في تحليل &lt;Ser_resources&gt; /openmvide/firmware/settings.json - ٪ L1!
+        <translation>خطأ في تحليل &lt;Ser_resources&gt; /openmvide/firmware/settings.json - %L1!
 
  تحقق من ملف JSON للحصول على أخطاء وإصلاحها.</translation>
     </message>
     <message>
         <location line="+9" />
         <source>Error reading &lt;user_resources&gt;/openmvide/firmware/settings.json: %L1.\n\nOpenMV IDE versions before v4.3.0 do not have this file and would have deleted it on installing resources.</source>
-        <translation>خطأ في قراءة &lt;Ser_resources&gt; /openmvide/firmware/settings.json: ٪ L1.</translation>
+        <translation>خطأ في قراءة &lt;Ser_resources&gt; /openmvide/firmware/settings.json: %L1.</translation>
     </message>
     <message>
         <location line="+186" />
@@ -7886,7 +7886,7 @@ Check the json file for errors and fix them.</source>
     <message>
         <location line="-40" />
         <source>No settings for the selected board type %L1!</source>
-        <translation>لا توجد إعدادات لنوع اللوحة المحدد ٪ L1!</translation>
+        <translation>لا توجد إعدادات لنوع اللوحة المحدد %L1!</translation>
     </message>
     <message>
         <location line="+9" />
@@ -13081,14 +13081,14 @@ Preselects a desktop Qt for building the application if available.</source>
     <message>
         <location line="+3" />
         <source>Delete session %1?</source>
-        <translation>حذف الجلسة ٪ 1؟</translation>
+        <translation>حذف الجلسة %1؟</translation>
     </message>
     <message>
         <location line="+1" />
         <source>Delete these sessions?
     %1</source>
         <translation>حذف هذه الجلسات؟
- ٪ 1</translation>
+ %1</translation>
     </message>
     <message>
         <location line="+308" />
@@ -13098,7 +13098,7 @@ Preselects a desktop Qt for building the application if available.</source>
     <message>
         <location line="+1" />
         <source>Could not restore session %1</source>
-        <translation>لا يمكن استعادة الجلسة ٪ 1</translation>
+        <translation>لا يمكن استعادة الجلسة %1</translation>
     </message>
     <message>
         <location line="+44" />
@@ -13114,12 +13114,12 @@ Preselects a desktop Qt for building the application if available.</source>
     <message>
         <location line="-41" />
         <source>Could not save session %1</source>
-        <translation>لا يمكن حفظ الجلسة ٪ 1</translation>
+        <translation>لا يمكن حفظ الجلسة %1</translation>
     </message>
     <message>
         <location line="+42" />
         <source>Could not save session to file "%1"</source>
-        <translation>لا يمكن حفظ الجلسة لتقديم "٪ 1"</translation>
+        <translation>لا يمكن حفظ الجلسة لتقديم "%1"</translation>
     </message>
     <message>
         <location filename="../../../src/plugins/coreplugin/sessiondialog.cpp" line="+90" />
@@ -13230,37 +13230,37 @@ Preselects a desktop Qt for building the application if available.</source>
     <message>
         <location line="+72" />
         <source>Could not create directory "%1"</source>
-        <translation>لا يمكن إنشاء دليل "٪ 1"</translation>
+        <translation>لا يمكن إنشاء دليل "%1"</translation>
     </message>
     <message>
         <location line="+5" />
         <source>The program "%1" does not exist or is not executable.</source>
-        <translation>البرنامج "٪ 1" غير موجود أو غير قابل للتنفيذ.</translation>
+        <translation>البرنامج "%1" غير موجود أو غير قابل للتنفيذ.</translation>
     </message>
     <message>
         <location line="+34" />
         <source>Starting: "%1" %2</source>
-        <translation>بدء: "٪ 1" ٪ 2</translation>
+        <translation>بدء: "%1" %2</translation>
     </message>
     <message>
         <location line="+11" />
         <source>The process "%1" exited normally.</source>
-        <translation>العملية "٪ 1" خرجت بشكل طبيعي.</translation>
+        <translation>العملية "%1" خرجت بشكل طبيعي.</translation>
     </message>
     <message>
         <location line="+3" />
         <source>The process "%1" exited with code %2.</source>
-        <translation>العملية "٪ 1" خرجت مع الكود ٪ 2.</translation>
+        <translation>العملية "%1" خرجت مع الكود %2.</translation>
     </message>
     <message>
         <location line="+4" />
         <source>Could not start process "%1" %2.</source>
-        <translation>لا يمكن بدء العملية "٪ 1" ٪ 2.</translation>
+        <translation>لا يمكن بدء العملية "%1" %2.</translation>
     </message>
     <message>
         <location line="+7" />
         <source>The process "%1" crashed.</source>
-        <translation>العملية "٪ 1" تحطمت.</translation>
+        <translation>العملية "%1" تحطمت.</translation>
     </message>
     <message>
         <location filename="../../../src/plugins/projectexplorer/addrunconfigdialog.cpp" line="+54" />
@@ -13320,9 +13320,9 @@ Preselects a desktop Qt for building the application if available.</source>
         <source>Filter: %1
 Excluding: %2
 %3</source>
-        <translation>مرشح: ٪ 1
- باستثناء: ٪ 2
- ٪ 3</translation>
+        <translation>مرشح: %1
+ باستثناء: %2
+ %3</translation>
     </message>
     <message>
         <location filename="../../../src/plugins/projectexplorer/appoutputpane.cpp" line="+73" />
@@ -13332,7 +13332,7 @@ Excluding: %2
     <message>
         <location line="+1" />
         <source>Attach debugger to %1</source>
-        <translation>نعلق مصحح الأخطاء إلى ٪ 1</translation>
+        <translation>نعلق مصحح الأخطاء إلى %1</translation>
     </message>
     <message>
         <location line="+70" />
@@ -13389,7 +13389,7 @@ Excluding: %2
         <location line="+232" />
         <source>application-output-%1.txt</source>
         <extracomment>file name suggested for saving application output, %1 = run configuration display name</extracomment>
-        <translation>التطبيق-مخرجات-٪ 1.txt</translation>
+        <translation>التطبيق-مخرجات-%1.txt</translation>
     </message>
     <message>
         <location line="+29" />
@@ -13399,7 +13399,7 @@ Excluding: %2
     <message>
         <location line="+280" />
         <source>PID %1</source>
-        <translation>PID ٪ 1</translation>
+        <translation>PID %1</translation>
     </message>
     <message>
         <location line="+1" />
@@ -13442,7 +13442,7 @@ Excluding: %2
         <location line="+14" />
         <location filename="../../../src/plugins/projectexplorer/compileoutputwindow.cpp" line="+13" />
         <source>Limit output to %1 characters</source>
-        <translation>الحد من الإخراج إلى ٪ 1 أحرف</translation>
+        <translation>الحد من الإخراج إلى %1 أحرف</translation>
     </message>
     <message>
         <location line="+7" />
@@ -13479,7 +13479,7 @@ Excluding: %2
     <message>
         <location line="+105" />
         <source>Build directory contains potentially problematic character "%1".</source>
-        <translation>يحتوي الدليل البناء على حرف يحتمل أن يكون مشكلة "٪ 1".</translation>
+        <translation>يحتوي الدليل البناء على حرف يحتمل أن يكون مشكلة "%1".</translation>
     </message>
     <message>
         <location line="+5" />
@@ -13603,7 +13603,7 @@ Excluding: %2
     <message>
         <location line="+50" />
         <source>No build device is set for the kit "%1".</source>
-        <translation>لم يتم تعيين أي جهاز بناء للمجموعة "٪ 1".</translation>
+        <translation>لم يتم تعيين أي جهاز بناء للمجموعة "%1".</translation>
     </message>
     <message>
         <location line="+8" />
@@ -13613,18 +13613,18 @@ Excluding: %2
     <message>
         <location line="+7" />
         <source>The build device "%1" cannot reach the project directory.</source>
-        <translation>لا يمكن لجهاز الإنشاء "٪ 1" الوصول إلى دليل المشروع.</translation>
+        <translation>لا يمكن لجهاز الإنشاء "%1" الوصول إلى دليل المشروع.</translation>
     </message>
     <message>
         <location line="+11" />
         <source>The build device "%1" cannot reach the build directory.</source>
-        <translation>لا يمكن لجهاز الإنشاء "٪ 1" الوصول إلى دليل الإنشاء.</translation>
+        <translation>لا يمكن لجهاز الإنشاء "%1" الوصول إلى دليل الإنشاء.</translation>
     </message>
     <message numerus="yes">
         <location filename="../../../src/plugins/projectexplorer/buildmanager.cpp" line="+182" />
         <source>Finished %1 of %n steps</source>
         <translation>
-            <numerusform>الانتهاء ٪ 1 من ٪ n الخطوات</numerusform><numerusform>الانتهاء ٪ 1 من ٪ n الخطوات</numerusform></translation>
+            <numerusform>الانتهاء %1 من ٪ n الخطوات</numerusform><numerusform>الانتهاء %1 من ٪ n الخطوات</numerusform></translation>
     </message>
     <message>
         <location line="+82" />
@@ -13639,12 +13639,12 @@ Excluding: %2
     <message>
         <location line="+26" />
         <source>The project %1 is not configured, skipping it.</source>
-        <translation>لم يتم تكوين Project ٪ 1 ، وتخطيه.</translation>
+        <translation>لم يتم تكوين Project %1 ، وتخطيه.</translation>
     </message>
     <message>
         <location line="+11" />
         <source>The build device failed to prepare for the build of %1 (%2).</source>
-        <translation>فشل جهاز البناء في التحضير لبناء ٪ 1 (٪ 2).</translation>
+        <translation>فشل جهاز البناء في التحضير لبناء %1 (%2).</translation>
     </message>
     <message>
         <location line="+138" />
@@ -13742,29 +13742,29 @@ Display name of the build build step list. Used as part of the labels in the pro
     <message>
         <location line="+83" />
         <source>Running steps for project %1...</source>
-        <translation>تشغيل خطوات للمشروع ٪ 1 ...</translation>
+        <translation>تشغيل خطوات للمشروع %1 ...</translation>
     </message>
     <message>
         <location line="+8" />
         <source>Skipping disabled step %1.</source>
-        <translation>تخطي الخطوة المعوقة ٪ 1.</translation>
+        <translation>تخطي الخطوة المعوقة %1.</translation>
     </message>
     <message>
         <location line="+24" />
         <location line="+104" />
         <source>Error while building/deploying project %1 (kit: %2)</source>
-        <translation>خطأ أثناء بناء/نشر المشروع ٪ 1 (مجموعة: ٪ 2)</translation>
+        <translation>خطأ أثناء بناء/نشر المشروع %1 (مجموعة: %2)</translation>
     </message>
     <message>
         <location line="-100" />
         <source>The kit %1 has configuration issues which might be the root cause for this problem.</source>
-        <translation>لدى Kit ٪ 1 مشكلات التكوين التي قد تكون السبب الجذري لهذه المشكلة.</translation>
+        <translation>لدى Kit %1 مشكلات التكوين التي قد تكون السبب الجذري لهذه المشكلة.</translation>
     </message>
     <message>
         <location line="+4" />
         <location line="+98" />
         <source>When executing step "%1"</source>
-        <translation>عند تنفيذ الخطوة "٪ 1"</translation>
+        <translation>عند تنفيذ الخطوة "%1"</translation>
     </message>
     <message>
         <location filename="../../../src/plugins/projectexplorer/buildpropertiessettings.cpp" line="-33" />
@@ -13795,7 +13795,7 @@ Display name of the build build step list. Used as part of the labels in the pro
     <message>
         <location line="+2" />
         <source>Template used to construct the default build directory.&lt;br&gt;&lt;br&gt;The default value can be set using the environment variable &lt;tt&gt;%1&lt;/tt&gt;.</source>
-        <translation>القالب المستخدم لإنشاء دليل الإنشاء الافتراضي. &lt;br&gt; &lt;br&gt; يمكن تعيين القيمة الافتراضية باستخدام متغير البيئة &lt;TT&gt; ٪ 1 &lt;/tt&gt;.</translation>
+        <translation>القالب المستخدم لإنشاء دليل الإنشاء الافتراضي. &lt;br&gt; &lt;br&gt; يمكن تعيين القيمة الافتراضية باستخدام متغير البيئة &lt;TT&gt; %1 &lt;/tt&gt;.</translation>
     </message>
     <message>
         <location line="+10" />
@@ -13875,7 +13875,7 @@ Display name of the build build step list. Used as part of the labels in the pro
     <message>
         <location line="-25" />
         <source>New name for build configuration &lt;b&gt;%1&lt;/b&gt;:</source>
-        <translation>اسم جديد لتكوين بناء &lt;b&gt; ٪ 1 &lt;/b&gt;:</translation>
+        <translation>اسم جديد لتكوين بناء &lt;b&gt; %1 &lt;/b&gt;:</translation>
     </message>
     <message>
         <location line="+24" />
@@ -13901,12 +13901,12 @@ Title of a the cloned RunConfiguration window, text of the window</extracomment>
     <message>
         <location line="+2" />
         <source>Remove Build Configuration %1?</source>
-        <translation>إزالة تكوين بناء ٪ 1؟</translation>
+        <translation>إزالة تكوين بناء %1؟</translation>
     </message>
     <message>
         <location line="+1" />
         <source>The build configuration &lt;b&gt;%1&lt;/b&gt; is currently being built.</source>
-        <translation>تكوين البناء &lt;b&gt; ٪ 1 &lt;/b&gt; يتم بناؤه حاليًا.</translation>
+        <translation>تكوين البناء &lt;b&gt; %1 &lt;/b&gt; يتم بناؤه حاليًا.</translation>
     </message>
     <message>
         <location line="+1" />
@@ -13921,7 +13921,7 @@ Title of a the cloned RunConfiguration window, text of the window</extracomment>
     <message>
         <location line="+1" />
         <source>Do you really want to delete build configuration &lt;b&gt;%1&lt;/b&gt;?</source>
-        <translation>هل تريد حقًا حذف تكوين البناء &lt;b&gt; ٪ 1 &lt;/b&gt;؟</translation>
+        <translation>هل تريد حقًا حذف تكوين البناء &lt;b&gt; %1 &lt;/b&gt;؟</translation>
     </message>
     <message>
         <location filename="../../../src/plugins/projectexplorer/buildstepspage.cpp" line="-58" />
@@ -13942,7 +13942,7 @@ Title of a the cloned RunConfiguration window, text of the window</extracomment>
         <location line="+97" />
         <source>%1 Steps</source>
         <extracomment>%1 is the name returned by BuildStepList::displayName</extracomment>
-        <translation>٪ 1 خطوات</translation>
+        <translation>%1 خطوات</translation>
     </message>
     <message>
         <location line="+19" />
@@ -13952,7 +13952,7 @@ Title of a the cloned RunConfiguration window, text of the window</extracomment>
     <message>
         <location line="+2" />
         <source>Add %1 Step</source>
-        <translation>إضافة ٪ 1 خطوة</translation>
+        <translation>إضافة %1 خطوة</translation>
     </message>
     <message>
         <location line="+94" />
@@ -13982,7 +13982,7 @@ Title of a the cloned RunConfiguration window, text of the window</extracomment>
     <message>
         <location line="+3" />
         <source>The project file "%1" does not exist.</source>
-        <translation>ملف المشروع "٪ 1" غير موجود.</translation>
+        <translation>ملف المشروع "%1" غير موجود.</translation>
     </message>
     <message>
         <location filename="../../../src/plugins/projectexplorer/codestylesettingspropertiespage.cpp" line="+60" />
@@ -14085,7 +14085,7 @@ Title of a the cloned RunConfiguration window, text of the window</extracomment>
     <message>
         <location filename="../../../src/plugins/projectexplorer/currentprojectfind.cpp" line="+65" />
         <source>Project "%1"</source>
-        <translation>مشروع "٪ 1"</translation>
+        <translation>مشروع "%1"</translation>
     </message>
     <message>
         <location line="+2" />
@@ -14095,7 +14095,7 @@ Title of a the cloned RunConfiguration window, text of the window</extracomment>
     <message>
         <location line="+30" />
         <source>Project "%1":</source>
-        <translation>مشروع "٪ 1":</translation>
+        <translation>مشروع "%1":</translation>
     </message>
     <message>
         <location filename="../../../src/plugins/projectexplorer/customexecutablerunconfiguration.cpp" line="+55" />
@@ -14107,7 +14107,7 @@ Title of a the cloned RunConfiguration window, text of the window</extracomment>
         <location line="-16" />
         <location filename="../../../src/plugins/projectexplorer/projectexplorer.cpp" line="+1718" />
         <source>Run %1</source>
-        <translation>تشغيل ٪ 1</translation>
+        <translation>تشغيل %1</translation>
     </message>
     <message>
         <location line="+7" />
@@ -14465,12 +14465,12 @@ Title of a the cloned RunConfiguration window, text of the window</extracomment>
     <message>
         <location filename="../../../src/plugins/projectexplorer/devicesupport/desktopprocesssignaloperation.cpp" line="+69" />
         <source>Cannot kill process with pid %1: %2</source>
-        <translation>لا يمكن أن تقتل العملية مع PID ٪ 1: ٪ 2</translation>
+        <translation>لا يمكن أن تقتل العملية مع PID %1: %2</translation>
     </message>
     <message>
         <location line="+8" />
         <source>Cannot interrupt process with pid %1: %2</source>
-        <translation>لا يمكن مقاطعة العملية مع PID ٪ 1: ٪ 2</translation>
+        <translation>لا يمكن مقاطعة العملية مع PID %1: %2</translation>
     </message>
     <message>
         <location line="+15" />
@@ -14486,7 +14486,7 @@ Title of a the cloned RunConfiguration window, text of the window</extracomment>
     <message>
         <location line="-46" />
         <source>Cannot open process: %1</source>
-        <translation>لا يمكن فتح العملية: ٪ 1</translation>
+        <translation>لا يمكن فتح العملية: %1</translation>
     </message>
     <message>
         <location line="+11" />
@@ -14496,12 +14496,12 @@ Title of a the cloned RunConfiguration window, text of the window</extracomment>
     <message>
         <location line="+10" />
         <source>%1 does not exist. If you built %2 yourself, check out https://code.qt.io/cgit/qt-creator/binary-artifacts.git/.</source>
-        <translation>٪ 1 غير موجود. إذا قمت ببناء ٪ 2 بنفسك ، تحقق من https://code.qt.io/cgit/qt-creator/binary-artifacts.git/.</translation>
+        <translation>%1 غير موجود. إذا قمت ببناء %2 بنفسك ، تحقق من https://code.qt.io/cgit/qt-creator/binary-artifacts.git/.</translation>
     </message>
     <message>
         <location line="+8" />
         <source>Cannot start %1. Check src\tools\win64interrupt\win64interrupt.c for more information.</source>
-        <translation>لا يمكن أن تبدأ ٪ 1. تحقق من SRC \ Tools \ Win64Interrupt \ Win64Interrupt.c لمزيد من المعلومات.</translation>
+        <translation>لا يمكن أن تبدأ %1. تحقق من SRC \ Tools \ Win64Interrupt \ Win64Interrupt.c لمزيد من المعلومات.</translation>
     </message>
     <message>
         <location line="+8" />
@@ -14543,23 +14543,23 @@ Title of a the cloned RunConfiguration window, text of the window</extracomment>
     <message>
         <location filename="../../../src/plugins/projectexplorer/devicesupport/devicemanager.cpp" line="+415" />
         <source>No device for path "%1"</source>
-        <translation>لا يوجد جهاز للمسار "٪ 1"</translation>
+        <translation>لا يوجد جهاز للمسار "%1"</translation>
     </message>
     <message>
         <location line="+10" />
         <location line="+14" />
         <source>No device found for path "%1"</source>
-        <translation>لم يتم العثور على جهاز للمسار "٪ 1"</translation>
+        <translation>لم يتم العثور على جهاز للمسار "%1"</translation>
     </message>
     <message>
         <location line="-9" />
         <source>No file access for device "%1"</source>
-        <translation>لا وصول ملف للجهاز "٪ 1"</translation>
+        <translation>لا وصول ملف للجهاز "%1"</translation>
     </message>
     <message>
         <location filename="../../../src/plugins/projectexplorer/devicesupport/devicemanagermodel.cpp" line="+154" />
         <source>%1 (default for %2)</source>
-        <translation>٪ 1 (الافتراضي لنسبة ٪ 2)</translation>
+        <translation>%1 (الافتراضي لنسبة %2)</translation>
     </message>
     <message>
         <location filename="../../../src/plugins/projectexplorer/devicesupport/deviceprocessesdialog.cpp" line="+103" />
@@ -14630,7 +14630,7 @@ Title of a the cloned RunConfiguration window, text of the window</extracomment>
         <location line="+12" />
         <source>Add %1</source>
         <extracomment>Add &lt;Device Type Name&gt;</extracomment>
-        <translation>إضافة ٪ 1</translation>
+        <translation>إضافة %1</translation>
     </message>
     <message>
         <location line="+34" />
@@ -14650,7 +14650,7 @@ Title of a the cloned RunConfiguration window, text of the window</extracomment>
     <message>
         <location line="+87" />
         <source>Yes (id is "%1")</source>
-        <translation>نعم (المعرف "٪ 1")</translation>
+        <translation>نعم (المعرف "%1")</translation>
     </message>
     <message>
         <location line="+0" />
@@ -14686,7 +14686,7 @@ Title of a the cloned RunConfiguration window, text of the window</extracomment>
     <message>
         <location filename="../../../src/plugins/projectexplorer/devicesupport/deviceusedportsgatherer.cpp" line="+81" />
         <source>Remote error output was: %1</source>
-        <translation>كان إخراج الخطأ عن بُعد: ٪ 1</translation>
+        <translation>كان إخراج الخطأ عن بُعد: %1</translation>
     </message>
     <message numerus="yes">
         <location line="+41" />
@@ -14778,12 +14778,12 @@ Title of a the cloned RunConfiguration window, text of the window</extracomment>
     <message>
         <location line="+30" />
         <source>No device for given path: "%1".</source>
-        <translation>لا يوجد جهاز للمسار المعطى: "٪ 1".</translation>
+        <translation>لا يوجد جهاز للمسار المعطى: "%1".</translation>
     </message>
     <message>
         <location line="+7" />
         <source>Device for path "%1" does not support killing processes.</source>
-        <translation>جهاز المسار "٪ 1" لا يدعم عمليات القتل.</translation>
+        <translation>جهاز المسار "%1" لا يدعم عمليات القتل.</translation>
     </message>
     <message>
         <location filename="../../../src/plugins/projectexplorer/devicesupport/processlist.cpp" line="+68" />
@@ -14845,7 +14845,7 @@ Title of a the cloned RunConfiguration window, text of the window</extracomment>
         <location filename="../../../src/plugins/projectexplorer/editorconfiguration.cpp" line="+78" />
         <source>Project %1</source>
         <comment>Settings, %1 is a language (C++ or QML)</comment>
-        <translation>مشروع ٪ 1</translation>
+        <translation>مشروع %1</translation>
     </message>
     <message>
         <location line="+9" />
@@ -14955,33 +14955,33 @@ Title of a the cloned RunConfiguration window, text of the window</extracomment>
     <message>
         <location line="+123" />
         <source>Unset &lt;a href="%1"&gt;&lt;b&gt;%1&lt;/b&gt;&lt;/a&gt;</source>
-        <translation>unset &lt;a href = "٪ 1"&gt; &lt;b&gt; ٪ 1 &lt;/b&gt; &lt;/a&gt;</translation>
+        <translation>unset &lt;a href = "%1"&gt; &lt;b&gt; %1 &lt;/b&gt; &lt;/a&gt;</translation>
     </message>
     <message>
         <location line="+3" />
         <source>Set &lt;a href="%1"&gt;&lt;b&gt;%1&lt;/b&gt;&lt;/a&gt; to &lt;b&gt;%2&lt;/b&gt;</source>
-        <translation>تعيين &lt;a href = "٪ 1"&gt; &lt;b&gt; ٪ 1 &lt;/b&gt; &lt;/a&gt; إلى &lt;b&gt; ٪ 2 &lt;/b&gt;</translation>
+        <translation>تعيين &lt;a href = "%1"&gt; &lt;b&gt; %1 &lt;/b&gt; &lt;/a&gt; إلى &lt;b&gt; %2 &lt;/b&gt;</translation>
     </message>
     <message>
         <location line="+3" />
         <source>Append &lt;b&gt;%2&lt;/b&gt; to &lt;a href="%1"&gt;&lt;b&gt;%1&lt;/b&gt;&lt;/a&gt;</source>
-        <translation>إلحاق &lt;b&gt; ٪ 2 &lt;/b&gt; إلى &lt;a href = "٪ 1"&gt; &lt;b&gt; ٪ 1 &lt;/b&gt; &lt;/a&gt;</translation>
+        <translation>إلحاق &lt;b&gt; %2 &lt;/b&gt; إلى &lt;a href = "%1"&gt; &lt;b&gt; %1 &lt;/b&gt; &lt;/a&gt;</translation>
     </message>
     <message>
         <location line="+3" />
         <source>Prepend &lt;b&gt;%2&lt;/b&gt; to &lt;a href="%1"&gt;&lt;b&gt;%1&lt;/b&gt;&lt;/a&gt;</source>
-        <translation>prepend &lt;b&gt; ٪ 2 &lt;/b&gt; إلى &lt;a href = "٪ 1"&gt; &lt;b&gt; ٪ 1 &lt;/b&gt; &lt;/a&gt;</translation>
+        <translation>prepend &lt;b&gt; %2 &lt;/b&gt; إلى &lt;a href = "%1"&gt; &lt;b&gt; %1 &lt;/b&gt; &lt;/a&gt;</translation>
     </message>
     <message>
         <location line="+3" />
         <source>Set &lt;a href="%1"&gt;&lt;b&gt;%1&lt;/b&gt;&lt;/a&gt; to &lt;b&gt;%2&lt;/b&gt; [disabled]</source>
-        <translation>تعيين &lt;a href = "٪ 1"&gt; &lt;b&gt; ٪ 1 &lt;/b&gt; &lt;/a&gt; إلى &lt;b&gt; ٪ 2 &lt;/b&gt; [معطل]</translation>
+        <translation>تعيين &lt;a href = "%1"&gt; &lt;b&gt; %1 &lt;/b&gt; &lt;/a&gt; إلى &lt;b&gt; %2 &lt;/b&gt; [معطل]</translation>
     </message>
     <message>
         <location line="+11" />
         <source>Use &lt;b&gt;%1&lt;/b&gt;</source>
         <extracomment>%1 is "System Environment" or some such.</extracomment>
-        <translation>استخدم &lt;b&gt; ٪ 1 &lt;/b&gt;</translation>
+        <translation>استخدم &lt;b&gt; %1 &lt;/b&gt;</translation>
     </message>
     <message>
         <location line="+2" />
@@ -14992,7 +14992,7 @@ Title of a the cloned RunConfiguration window, text of the window</extracomment>
         <location line="+5" />
         <source>Use &lt;b&gt;%1&lt;/b&gt; and</source>
         <extracomment>Yup, word puzzle. The Set/Unset phrases above are appended to this. %1 is "System Environment" or some such.</extracomment>
-        <translation>استخدم &lt;b&gt; ٪ 1 &lt;/b&gt; و</translation>
+        <translation>استخدم &lt;b&gt; %1 &lt;/b&gt; و</translation>
     </message>
     <message>
         <location filename="../../../src/plugins/projectexplorer/filesinallprojectsfind.cpp" line="+28" />
@@ -15023,7 +15023,7 @@ Title of a the cloned RunConfiguration window, text of the window</extracomment>
     <message>
         <location line="-877" />
         <source>%1 (%2, %3 %4 at %5)</source>
-        <translation>٪ 1 (٪ 2 ، ٪ 3 ٪ 4 عند ٪ 5)</translation>
+        <translation>%1 (%2 ، %3 %4 عند %5)</translation>
     </message>
     <message>
         <location line="+1259" />
@@ -15090,57 +15090,57 @@ fails because Clang does not understand the target architecture.</source>
     <message>
         <location line="+5" />
         <source>Field "%1" has no type.</source>
-        <translation>الحقل "٪ 1" ليس له نوع.</translation>
+        <translation>الحقل "%1" ليس له نوع.</translation>
     </message>
     <message>
         <location line="+6" />
         <source>Field "%1" has unsupported type "%2".</source>
-        <translation>الحقل "٪ 1" لديه نوع غير مدعوم "٪ 2".</translation>
+        <translation>الحقل "%1" لديه نوع غير مدعوم "%2".</translation>
     </message>
     <message>
         <location line="+18" />
         <source>When parsing Field "%1": %2</source>
-        <translation>عند تحليل الحقل "٪ 1": ٪ 2</translation>
+        <translation>عند تحليل الحقل "%1": %2</translation>
     </message>
     <message>
         <location line="+208" />
         <source>Label ("%1") data is not an object.</source>
-        <translation>بيانات التسمية ("٪ 1") ليست كائن.</translation>
+        <translation>بيانات التسمية ("%1") ليست كائن.</translation>
     </message>
     <message>
         <location line="+10" />
         <source>Label ("%1") has no trText.</source>
-        <translation>التسمية ("٪ 1") ليس لها trtext.</translation>
+        <translation>التسمية ("%1") ليس لها trtext.</translation>
     </message>
     <message>
         <location line="+28" />
         <source>Spacer ("%1") data is not an object.</source>
-        <translation>بيانات الفاصل ("٪ 1") ليست كائن.</translation>
+        <translation>بيانات الفاصل ("%1") ليست كائن.</translation>
     </message>
     <message>
         <location line="+10" />
         <source>Spacer ("%1") property "factor" is no integer value.</source>
-        <translation>خاصية فاصل ("٪ 1") "عامل" ليس قيمة عدد صحيح.</translation>
+        <translation>خاصية فاصل ("%1") "عامل" ليس قيمة عدد صحيح.</translation>
     </message>
     <message>
         <location line="+35" />
         <source>LineEdit ("%1") data is not an object.</source>
-        <translation>بيانات lineedit ("٪ 1") ليست كائن.</translation>
+        <translation>بيانات lineedit ("%1") ليست كائن.</translation>
     </message>
     <message>
         <location line="+16" />
         <source>LineEdit ("%1") has an invalid regular expression "%2" in "validator".</source>
-        <translation>يحتوي LineDit ("٪ 1") على تعبير منتظم غير صالح "٪ 2" في "المدقق".</translation>
+        <translation>يحتوي LineDit ("%1") على تعبير منتظم غير صالح "%2" في "المدقق".</translation>
     </message>
     <message>
         <location line="+15" />
         <source>LineEdit ("%1") has an invalid value "%2" in "completion".</source>
-        <translation>يحتوي LineDit ("٪ 1") على قيمة غير صالحة "٪ 2" في "الانتهاء".</translation>
+        <translation>يحتوي LineDit ("%1") على قيمة غير صالحة "%2" في "الانتهاء".</translation>
     </message>
     <message>
         <location line="+166" />
         <source>TextEdit ("%1") data is not an object.</source>
-        <translation>بيانات textedit ("٪ 1") ليست كائن.</translation>
+        <translation>بيانات textedit ("%1") ليست كائن.</translation>
     </message>
     <message>
         <location line="+83" />
@@ -15150,17 +15150,17 @@ fails because Clang does not understand the target architecture.</source>
     <message>
         <location line="+26" />
         <source>kind "%1" is not one of the supported "existingDirectory", "directory", "file", "saveFile", "existingCommand", "command", "any".</source>
-        <translation>النوع "٪ 1" ليس واحداً من "NervanceDirectory" ، "الدليل" ، "ملف" ، "SaveFile" ، "NerveCromand" ، "Command" ، "any".</translation>
+        <translation>النوع "%1" ليس واحداً من "NervanceDirectory" ، "الدليل" ، "ملف" ، "SaveFile" ، "NerveCromand" ، "Command" ، "any".</translation>
     </message>
     <message>
         <location line="+80" />
         <source>CheckBox ("%1") data is not an object.</source>
-        <translation>مربع الاختيار ("٪ 1") بيانات ليست كائن.</translation>
+        <translation>مربع الاختيار ("%1") بيانات ليست كائن.</translation>
     </message>
     <message>
         <location line="+9" />
         <source>CheckBox ("%1") values for checked and unchecked state are identical.</source>
-        <translation>قيم مربع الاختيار ("٪ 1") للحالة التي تم فحصها وعدم تحديدها متطابقة.</translation>
+        <translation>قيم مربع الاختيار ("%1") للحالة التي تم فحصها وعدم تحديدها متطابقة.</translation>
     </message>
     <message>
         <location line="+80" />
@@ -15175,27 +15175,27 @@ fails because Clang does not understand the target architecture.</source>
     <message>
         <location line="+25" />
         <source>%1 ("%2") data is not an object.</source>
-        <translation>٪ 1 ("٪ 2") بيانات ليست كائن.</translation>
+        <translation>%1 ("%2") بيانات ليست كائن.</translation>
     </message>
     <message>
         <location line="+9" />
         <source>%1 ("%2") "index" is not an integer value.</source>
-        <translation>٪ 1 ("٪ 2") "مؤشر" ليس قيمة عدد صحيح.</translation>
+        <translation>%1 ("%2") "مؤشر" ليس قيمة عدد صحيح.</translation>
     </message>
     <message>
         <location line="+6" />
         <source>%1 ("%2") "disabledIndex" is not an integer value.</source>
-        <translation>٪ 1 ("٪ 2") "DisabledIndex" ليست قيمة عدد صحيح.</translation>
+        <translation>%1 ("%2") "DisabledIndex" ليست قيمة عدد صحيح.</translation>
     </message>
     <message>
         <location line="+7" />
         <source>%1 ("%2") "items" missing.</source>
-        <translation>٪ 1 ("٪ 2") "عناصر" مفقودة.</translation>
+        <translation>%1 ("%2") "عناصر" مفقودة.</translation>
     </message>
     <message>
         <location line="+4" />
         <source>%1 ("%2") "items" is not a JSON list.</source>
-        <translation>٪ 1 ("٪ 2") "العناصر" ليست قائمة JSON.</translation>
+        <translation>%1 ("%2") "العناصر" ليست قائمة JSON.</translation>
     </message>
     <message>
         <location filename="../../../src/plugins/projectexplorer/jsonwizard/jsonkitspage.cpp" line="+46" />
@@ -15220,7 +15220,7 @@ fails because Clang does not understand the target architecture.</source>
     <message>
         <location line="+13" />
         <source>No "%1" key found in feature list object.</source>
-        <translation>لا يوجد مفتاح "٪ 1" الموجود في كائن قائمة الميزات.</translation>
+        <translation>لا يوجد مفتاح "%1" الموجود في كائن قائمة الميزات.</translation>
     </message>
     <message>
         <location line="+9" />
@@ -15235,7 +15235,7 @@ fails because Clang does not understand the target architecture.</source>
     <message>
         <location line="+1" />
         <source>Error message from Version Control System: "%1".</source>
-        <translation>رسالة خطأ من نظام التحكم في الإصدار: "٪ 1".</translation>
+        <translation>رسالة خطأ من نظام التحكم في الإصدار: "%1".</translation>
     </message>
     <message>
         <location line="+16" />
@@ -15248,8 +15248,8 @@ fails because Clang does not understand the target architecture.</source>
         <location filename="../../../src/plugins/projectexplorer/projectfilewizardextension.cpp" line="+192" />
         <source>Failed to add subproject "%1"
 to project "%2".</source>
-        <translation>فشل في إضافة مشروع فرعي "٪ 1"
- إلى مشروع "٪ 2".</translation>
+        <translation>فشل في إضافة مشروع فرعي "%1"
+ إلى مشروع "%2".</translation>
     </message>
     <message>
         <location line="+12" />
@@ -15257,7 +15257,7 @@ to project "%2".</source>
         <source>Failed to add one or more files to project
 "%1" (%2).</source>
         <translation>فشل في إضافة ملف واحد أو أكثر إلى المشروع
- "٪ 1" (٪ 2).</translation>
+ "%1" (%2).</translation>
     </message>
     <message>
         <location filename="../../../src/plugins/projectexplorer/jsonwizard/jsonwizard.cpp" line="+76" />
@@ -15293,7 +15293,7 @@ to project "%2".</source>
     <message>
         <location line="+1" />
         <source>The wizard failed to generate files.&lt;br&gt;The error message was: "%1".</source>
-        <translation>فشل المعالج في إنشاء ملفات. &lt;br&gt; كانت رسالة الخطأ هي: "٪ 1".</translation>
+        <translation>فشل المعالج في إنشاء ملفات. &lt;br&gt; كانت رسالة الخطأ هي: "%1".</translation>
     </message>
     <message>
         <location line="+63" />
@@ -15333,23 +15333,23 @@ to project "%2".</source>
     <message>
         <location line="+58" />
         <source>"%1" does not exist in the file system.</source>
-        <translation>"٪ 1" غير موجود في نظام الملفات.</translation>
+        <translation>"%1" غير موجود في نظام الملفات.</translation>
     </message>
     <message>
         <location line="+9" />
         <source>Failed to open "%1" as a project.</source>
-        <translation>فشل في فتح "٪ 1" كمشروع.</translation>
+        <translation>فشل في فتح "%1" كمشروع.</translation>
     </message>
     <message>
         <location line="+12" />
         <location line="+46" />
         <source>Failed to open an editor for "%1".</source>
-        <translation>فشل في فتح محرر لـ "٪ 1".</translation>
+        <translation>فشل في فتح محرر لـ "%1".</translation>
     </message>
     <message>
         <location line="-27" />
         <source>No file to open found in "%1".</source>
-        <translation>لا يوجد ملف لفتح في "٪ 1".</translation>
+        <translation>لا يوجد ملف لفتح في "%1".</translation>
     </message>
     <message>
         <location line="+4" />
@@ -15359,7 +15359,7 @@ to project "%2".</source>
     <message>
         <location line="+1" />
         <source>Failed to open project in "%1".</source>
-        <translation>فشل في فتح المشروع في "٪ 1".</translation>
+        <translation>فشل في فتح المشروع في "%1".</translation>
     </message>
     <message>
         <location line="+1" />
@@ -15380,30 +15380,30 @@ to project "%2".</source>
     <message>
         <location line="+7" />
         <source>TypeId "%1" of generator is unknown. Supported typeIds are: "%2".</source>
-        <translation>نوع "٪ 1" من المولد غير معروف. Typeids المدعومة هي: "٪ 2".</translation>
+        <translation>نوع "%1" من المولد غير معروف. Typeids المدعومة هي: "%2".</translation>
     </message>
     <message>
         <location line="+56" />
         <location line="+241" />
         <source>Path "%1" does not exist when checking JSON wizard search paths.</source>
-        <translation>المسار "٪ 1" غير موجود عند التحقق من مسارات البحث معالج JSON.</translation>
+        <translation>المسار "%1" غير موجود عند التحقق من مسارات البحث معالج JSON.</translation>
     </message>
     <message>
         <location line="-228" />
         <source>Checking "%1" for %2.</source>
-        <translation>التحقق من "٪ 1" لنسبة ٪ 2.</translation>
+        <translation>التحقق من "%1" لنسبة %2.</translation>
     </message>
     <message>
         <location line="+24" />
         <location line="+233" />
         <source>* Failed to parse "%1":%2:%3: %4</source>
-        <translation>* فشل في تحليل "٪ 1": ٪ 2: ٪ 3: ٪ 4</translation>
+        <translation>* فشل في تحليل "%1": %2: %3: %4</translation>
     </message>
     <message>
         <location line="-223" />
         <source>* Did not find a JSON object in "%1".
 </source>
-        <translation>* لم يجد كائن JSON في "٪ 1".</translation>
+        <translation>* لم يجد كائن JSON في "%1".</translation>
     </message>
     <message>
         <location line="+6" />
@@ -15414,7 +15414,7 @@ to project "%2".</source>
     <message>
         <location line="-224" />
         <source>JsonWizard: "%1" not found.</source>
-        <translation>Jsonwizard: "٪ 1" لم يتم العثور عليها.</translation>
+        <translation>Jsonwizard: "%1" لم يتم العثور عليها.</translation>
     </message>
     <message>
         <location line="+96" />
@@ -15429,27 +15429,27 @@ to project "%2".</source>
     <message>
         <location line="+8" />
         <source>TypeId "%1" of page is unknown. Supported typeIds are: "%2".</source>
-        <translation>TypeID "٪ 1" من الصفحة غير معروف. Typeids المدعومة هي: "٪ 2".</translation>
+        <translation>TypeID "%1" من الصفحة غير معروف. Typeids المدعومة هي: "%2".</translation>
     </message>
     <message>
         <location line="+13" />
         <source>Page with typeId "%1" has invalid "index".</source>
-        <translation>صفحة مع typeid "٪ 1" لها "فهرس" غير صالح.</translation>
+        <translation>صفحة مع typeid "%1" لها "فهرس" غير صالح.</translation>
     </message>
     <message>
         <location line="+89" />
         <source>* Did not find a JSON object in "%1".</source>
-        <translation>* لم يجد كائن JSON في "٪ 1".</translation>
+        <translation>* لم يجد كائن JSON في "%1".</translation>
     </message>
     <message>
         <location line="+12" />
         <source>* Version %1 not supported.</source>
-        <translation>* الإصدار ٪ 1 غير مدعوم.</translation>
+        <translation>* الإصدار %1 غير مدعوم.</translation>
     </message>
     <message>
         <location line="+9" />
         <source>* Failed to create: %1</source>
-        <translation>* فشل في إنشاء: ٪ 1</translation>
+        <translation>* فشل في إنشاء: %1</translation>
     </message>
     <message>
         <location line="+227" />
@@ -15479,12 +15479,12 @@ to project "%2".</source>
     <message>
         <location line="+32" />
         <source>"kind" value "%1" is not "class" (deprecated), "file" or "project".</source>
-        <translation>"نوع" القيمة "٪ 1" ليست "فئة" (تم إهمالها) أو "ملف" أو "مشروع".</translation>
+        <translation>"نوع" القيمة "%1" ليست "فئة" (تم إهمالها) أو "ملف" أو "مشروع".</translation>
     </message>
     <message>
         <location line="+4" />
         <source>"kind" is "file" or "class" (deprecated) and "%1" is also set.</source>
-        <translation>"النوع" هو "ملف" أو "فئة" (إهمال) و "٪ 1" تم تعيينه أيضًا.</translation>
+        <translation>"النوع" هو "ملف" أو "فئة" (إهمال) و "%1" تم تعيينه أيضًا.</translation>
     </message>
     <message>
         <location line="+10" />
@@ -15499,12 +15499,12 @@ to project "%2".</source>
     <message>
         <location line="+10" />
         <source>Icon file "%1" not found.</source>
-        <translation>لم يتم العثور على ملف رمز "٪ 1".</translation>
+        <translation>لم يتم العثور على ملف رمز "%1".</translation>
     </message>
     <message>
         <location line="+20" />
         <source>Image file "%1" not found.</source>
-        <translation>لم يتم العثور على ملف الصورة "٪ 1".</translation>
+        <translation>لم يتم العثور على ملف الصورة "%1".</translation>
     </message>
     <message>
         <location line="+16" />
@@ -15524,12 +15524,12 @@ to project "%2".</source>
     <message>
         <location line="+8" />
         <source>When parsing "generators": %1</source>
-        <translation>عند تحليل "المولدات": ٪ 1</translation>
+        <translation>عند تحليل "المولدات": %1</translation>
     </message>
     <message>
         <location line="+15" />
         <source>When parsing "pages": %1</source>
-        <translation>عند تحليل "الصفحات": ٪ 1</translation>
+        <translation>عند تحليل "الصفحات": %1</translation>
     </message>
     <message>
         <location filename="../../../src/plugins/projectexplorer/jsonwizard/jsonwizardfilegenerator.cpp" line="+83" />
@@ -15544,34 +15544,34 @@ to project "%2".</source>
     <message>
         <location line="+57" />
         <source>When processing "%1":&lt;br&gt;%2</source>
-        <translation>عند معالجة "٪ 1": &lt;br&gt; ٪ 2</translation>
+        <translation>عند معالجة "%1": &lt;br&gt; %2</translation>
     </message>
     <message>
         <location filename="../../../src/plugins/projectexplorer/jsonwizard/jsonwizardgeneratorfactory.cpp" line="+164" />
         <source>%1 [folder]</source>
-        <translation>٪ 1 [مجلد]</translation>
+        <translation>%1 [مجلد]</translation>
     </message>
     <message>
         <location line="+3" />
         <source>%1 [symbolic link]</source>
-        <translation>٪ 1 [رابط رمزي]</translation>
+        <translation>%1 [رابط رمزي]</translation>
     </message>
     <message>
         <location line="+3" />
         <source>%1 [read only]</source>
-        <translation>٪ 1 [اقرأ فقط]</translation>
+        <translation>%1 [اقرأ فقط]</translation>
     </message>
     <message>
         <location line="+6" />
         <source>The directory %1 contains files which cannot be overwritten:
 %2.</source>
-        <translation>يحتوي الدليل ٪ 1 على ملفات لا يمكن الكتابة عليها:
- ٪ 2.</translation>
+        <translation>يحتوي الدليل %1 على ملفات لا يمكن الكتابة عليها:
+ %2.</translation>
     </message>
     <message>
         <location filename="../../../src/plugins/projectexplorer/jsonwizard/jsonwizardpagefactory_p.cpp" line="+72" />
         <source>When parsing fields of page "%1": %2</source>
-        <translation>عند تحليل حقول الصفحة "٪ 1": ٪ 2</translation>
+        <translation>عند تحليل حقول الصفحة "%1": %2</translation>
     </message>
     <message>
         <location line="+46" />
@@ -15581,7 +15581,7 @@ to project "%2".</source>
     <message>
         <location line="+48" />
         <source>Error parsing "%1" in "Kits" page: %2</source>
-        <translation>خطأ في تحليل "٪ 1" في صفحة "مجموعات": ٪ 2</translation>
+        <translation>خطأ في تحليل "%1" في صفحة "مجموعات": %2</translation>
     </message>
     <message>
         <location line="+12" />
@@ -15591,7 +15591,7 @@ to project "%2".</source>
     <message>
         <location line="+6" />
         <source>"Kits" page requires a "%1" set.</source>
-        <translation>تتطلب صفحة "مجموعات" مجموعة "٪ 1".</translation>
+        <translation>تتطلب صفحة "مجموعات" مجموعة "%1".</translation>
     </message>
     <message>
         <location line="+62" />
@@ -15601,7 +15601,7 @@ to project "%2".</source>
     <message>
         <location line="+9" />
         <source>Invalid regular expression "%1" in "%2". %3</source>
-        <translation>تعبير منتظم غير صالح "٪ 1" في "٪ 2". ٪ 3</translation>
+        <translation>تعبير منتظم غير صالح "%1" في "%2". %3</translation>
     </message>
     <message>
         <location line="+46" />
@@ -15616,12 +15616,12 @@ to project "%2".</source>
     <message>
         <location line="+11" />
         <source>Pattern "%1" is no valid regular expression.</source>
-        <translation>نمط "٪ 1" ليس تعبير منتظم صالح.</translation>
+        <translation>نمط "%1" ليس تعبير منتظم صالح.</translation>
     </message>
     <message>
         <location line="+23" />
         <source>ScannerGenerator: Binary pattern "%1" not valid.</source>
-        <translation>الماسح الضوئي: نمط ثنائي "٪ 1" غير صالح.</translation>
+        <translation>الماسح الضوئي: نمط ثنائي "%1" غير صالح.</translation>
     </message>
     <message>
         <location filename="../../../src/plugins/projectexplorer/kit.cpp" line="+65" />
@@ -15664,7 +15664,7 @@ to project "%2".</source>
         <location line="+669" />
         <location filename="../../../src/plugins/projectexplorer/toolchainoptionspage.cpp" line="+319" />
         <source>Clone of %1</source>
-        <translation>استنساخ ٪ 1</translation>
+        <translation>استنساخ %1</translation>
     </message>
     <message>
         <location filename="../../../src/plugins/projectexplorer/kitaspects.cpp" line="-1479" />
@@ -15679,17 +15679,17 @@ to project "%2".</source>
     <message>
         <location line="+17" />
         <source>Sys Root "%1" does not exist in the file system.</source>
-        <translation>SYS ROOT "٪ 1" غير موجود في نظام الملفات.</translation>
+        <translation>SYS ROOT "%1" غير موجود في نظام الملفات.</translation>
     </message>
     <message>
         <location line="+3" />
         <source>Sys Root "%1" is not a directory.</source>
-        <translation>SYS ROOT "٪ 1" ليس دليلًا.</translation>
+        <translation>SYS ROOT "%1" ليس دليلًا.</translation>
     </message>
     <message>
         <location line="+3" />
         <source>Sys Root "%1" is empty.</source>
-        <translation>SYS ROOT "٪ 1" فارغ.</translation>
+        <translation>SYS ROOT "%1" فارغ.</translation>
     </message>
     <message>
         <location line="+14" />
@@ -15717,7 +15717,7 @@ to project "%2".</source>
     <message>
         <location line="+45" />
         <source>Compilers produce code for different ABIs: %1</source>
-        <translation>ينتج المجمعون رمزًا لمختلف ABIs: ٪ 1</translation>
+        <translation>ينتج المجمعون رمزًا لمختلف ABIs: %1</translation>
     </message>
     <message>
         <location line="+108" />
@@ -15898,12 +15898,12 @@ to project "%2".</source>
     <message>
         <location filename="../../../src/plugins/projectexplorer/kitchooser.cpp" line="+93" />
         <source>Kit of Active Project: %1</source>
-        <translation>مجموعة المشروع النشط: ٪ 1</translation>
+        <translation>مجموعة المشروع النشط: %1</translation>
     </message>
     <message>
         <location filename="../../../src/plugins/projectexplorer/kitmanager.cpp" line="-52" />
         <source>Desktop (%1)</source>
-        <translation>سطح المكتب (٪ 1)</translation>
+        <translation>سطح المكتب (%1)</translation>
     </message>
     <message>
         <location line="+131" />
@@ -15935,7 +15935,7 @@ to project "%2".</source>
     <message>
         <location line="+3" />
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The name of the kit suitable for generating directory names. This value is used for the variable &lt;i&gt;%1&lt;/i&gt;, which for example determines the name of the shadow build directory.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt; &lt;head/&gt; &lt;body&gt; &lt;p&gt; اسم المجموعة المناسبة لإنشاء أسماء الدليل. يتم استخدام هذه القيمة للمتغير &lt;i&gt; ٪ 1 &lt;/i&gt; ، والذي يحدد على سبيل المثال اسم دليل بناء الظل. &lt;/p&gt; &lt;/body&gt; &lt;/html&gt;</translation>
+        <translation>&lt;html&gt; &lt;head/&gt; &lt;body&gt; &lt;p&gt; اسم المجموعة المناسبة لإنشاء أسماء الدليل. يتم استخدام هذه القيمة للمتغير &lt;i&gt; %1 &lt;/i&gt; ، والذي يحدد على سبيل المثال اسم دليل بناء الظل. &lt;/p&gt; &lt;/body&gt; &lt;/html&gt;</translation>
     </message>
     <message>
         <location line="+9" />
@@ -15965,7 +15965,7 @@ to project "%2".</source>
     <message>
         <location line="+60" />
         <source>Default for %1</source>
-        <translation>الافتراضي لنسبة ٪ 1</translation>
+        <translation>الافتراضي لنسبة %1</translation>
     </message>
     <message>
         <location line="+11" />
@@ -15981,7 +15981,7 @@ to project "%2".</source>
         <location filename="../../../src/plugins/projectexplorer/kitoptionspage.cpp" line="-427" />
         <source>%1 (default)</source>
         <extracomment>Mark up a kit as the default one.</extracomment>
-        <translation>٪ 1 (افتراضي)</translation>
+        <translation>%1 (افتراضي)</translation>
     </message>
     <message>
         <location line="+428" />
@@ -16046,7 +16046,7 @@ to project "%2".</source>
     <message>
         <location line="+1" />
         <source>Override %1:</source>
-        <translation>تجاوز ٪ 1:</translation>
+        <translation>تجاوز %1:</translation>
     </message>
     <message>
         <location line="+46" />
@@ -16061,7 +16061,7 @@ to project "%2".</source>
     <message>
         <location line="+163" />
         <source>&lt;b&gt;Make:&lt;/b&gt; %1</source>
-        <translation>&lt;b&gt; اجعل: &lt;/b&gt; ٪ 1</translation>
+        <translation>&lt;b&gt; اجعل: &lt;/b&gt; %1</translation>
     </message>
     <message>
         <location line="+3" />
@@ -16071,7 +16071,7 @@ to project "%2".</source>
     <message>
         <location line="+9" />
         <source>&lt;b&gt;Make:&lt;/b&gt; %1 not found in the environment.</source>
-        <translation>&lt;b&gt; اجعل: &lt;/b&gt; ٪ 1 غير موجود في البيئة.</translation>
+        <translation>&lt;b&gt; اجعل: &lt;/b&gt; %1 غير موجود في البيئة.</translation>
     </message>
     <message>
         <location line="+20" />
@@ -16113,72 +16113,72 @@ to project "%2".</source>
     <message>
         <location line="+783" />
         <source>&lt;b&gt;Project:&lt;/b&gt; %1</source>
-        <translation>&lt;b&gt; المشروع: &lt;/b&gt; ٪ 1</translation>
+        <translation>&lt;b&gt; المشروع: &lt;/b&gt; %1</translation>
     </message>
     <message>
         <location line="+2" />
         <source>&lt;b&gt;Path:&lt;/b&gt; %1</source>
-        <translation>&lt;b&gt; المسار: &lt;/b&gt; ٪ 1</translation>
+        <translation>&lt;b&gt; المسار: &lt;/b&gt; %1</translation>
     </message>
     <message>
         <location line="+2" />
         <source>&lt;b&gt;Kit:&lt;/b&gt; %1</source>
-        <translation>&lt;b&gt; مجموعة: &lt;/b&gt; ٪ 1</translation>
+        <translation>&lt;b&gt; مجموعة: &lt;/b&gt; %1</translation>
     </message>
     <message>
         <location line="+2" />
         <source>&lt;b&gt;Build:&lt;/b&gt; %1</source>
-        <translation>&lt;b&gt; بناء: &lt;/b&gt; ٪ 1</translation>
+        <translation>&lt;b&gt; بناء: &lt;/b&gt; %1</translation>
     </message>
     <message>
         <location line="+2" />
         <source>&lt;b&gt;Deploy:&lt;/b&gt; %1</source>
-        <translation>&lt;b&gt; نشر: &lt;/b&gt; ٪ 1</translation>
+        <translation>&lt;b&gt; نشر: &lt;/b&gt; %1</translation>
     </message>
     <message>
         <location line="+2" />
         <source>&lt;b&gt;Run:&lt;/b&gt; %1</source>
-        <translation>&lt;b&gt; Run: &lt;/b&gt; ٪ 1</translation>
+        <translation>&lt;b&gt; Run: &lt;/b&gt; %1</translation>
     </message>
     <message>
         <location line="+2" />
         <source>%1</source>
-        <translation>٪ 1</translation>
+        <translation>%1</translation>
     </message>
     <message>
         <location line="+12" />
         <source>Project: &lt;b&gt;%1&lt;/b&gt;&lt;br/&gt;</source>
-        <translation>المشروع: &lt;b&gt; ٪ 1 &lt;/b&gt; &lt;br/&gt;</translation>
+        <translation>المشروع: &lt;b&gt; %1 &lt;/b&gt; &lt;br/&gt;</translation>
     </message>
     <message>
         <location line="+3" />
         <source>Kit: &lt;b&gt;%1&lt;/b&gt;&lt;br/&gt;</source>
-        <translation>مجموعة: &lt;b&gt; ٪ 1 &lt;/b&gt; &lt;br/&gt;</translation>
+        <translation>مجموعة: &lt;b&gt; %1 &lt;/b&gt; &lt;br/&gt;</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Build: &lt;b&gt;%1&lt;/b&gt;&lt;br/&gt;</source>
-        <translation>بناء: &lt;b&gt; ٪ 1 &lt;/b&gt; &lt;br/&gt;</translation>
+        <translation>بناء: &lt;b&gt; %1 &lt;/b&gt; &lt;br/&gt;</translation>
     </message>
     <message>
         <location line="+3" />
         <source>Deploy: &lt;b&gt;%1&lt;/b&gt;&lt;br/&gt;</source>
-        <translation>نشر: &lt;b&gt; ٪ 1 &lt;/b&gt; &lt;br/&gt;</translation>
+        <translation>نشر: &lt;b&gt; %1 &lt;/b&gt; &lt;br/&gt;</translation>
     </message>
     <message>
         <location line="+3" />
         <source>Run: &lt;b&gt;%1&lt;/b&gt;&lt;br/&gt;</source>
-        <translation>تشغيل: &lt;b&gt; ٪ 1 &lt;/b&gt; &lt;br/&gt;</translation>
+        <translation>تشغيل: &lt;b&gt; %1 &lt;/b&gt; &lt;br/&gt;</translation>
     </message>
     <message>
         <location line="+3" />
         <source>&lt;style type=text/css&gt;a:link {color: rgb(128, 128, 255);}&lt;/style&gt;The project &lt;b&gt;%1&lt;/b&gt; is not yet configured&lt;br/&gt;&lt;br/&gt;You can configure it in the &lt;a href="projectmode"&gt;Projects mode&lt;/a&gt;&lt;br/&gt;</source>
-        <translation>&lt;type type = text/css&gt; a: link {color: rgb (128 ، 128 ، 255) ؛} &lt;/style&gt; لم يتم تكوين المشروع &lt;b&gt; ٪ 1 &lt;/b&gt; &lt;br/&gt; &lt;br/ &gt; يمكنك تكوينه في وضع المشاريع &lt;a href = "projectMode"&gt; &lt;/a&gt; &lt;br/&gt;</translation>
+        <translation>&lt;type type = text/css&gt; a: link {color: rgb (128 ، 128 ، 255) ؛} &lt;/style&gt; لم يتم تكوين المشروع &lt;b&gt; %1 &lt;/b&gt; &lt;br/&gt; &lt;br/ &gt; يمكنك تكوينه في وضع المشاريع &lt;a href = "projectMode"&gt; &lt;/a&gt; &lt;br/&gt;</translation>
     </message>
     <message>
         <location filename="../../../src/plugins/projectexplorer/msvctoolchain.cpp" line="-555" />
         <source>Falling back to use the cached environment for "%1" after:</source>
-        <translation>التراجع لاستخدام البيئة المخزنة مؤقتًا لـ "٪ 1" بعد:</translation>
+        <translation>التراجع لاستخدام البيئة المخزنة مؤقتًا لـ "%1" بعد:</translation>
     </message>
     <message>
         <location line="+483" />
@@ -16202,8 +16202,8 @@ to project "%2".</source>
         <location line="+796" />
         <source>Failed to retrieve MSVC Environment from "%1":
 %2</source>
-        <translation>فشل في استرداد بيئة MSVC من "٪ 1":
- ٪ 2</translation>
+        <translation>فشل في استرداد بيئة MSVC من "%1":
+ %2</translation>
     </message>
     <message>
         <location line="+83" />
@@ -16250,7 +16250,7 @@ Please close all running instances of your application before starting a build.<
     <message>
         <location line="+1" />
         <source>Could not open file: "%1": %2</source>
-        <translation>لا يمكن فتح الملف: "٪ 1": ٪ 2</translation>
+        <translation>لا يمكن فتح الملف: "%1": %2</translation>
     </message>
     <message>
         <location line="+23" />
@@ -16321,7 +16321,7 @@ Please close all running instances of your application before starting a build.<
     <message>
         <location line="+1" />
         <source>Kit %1 is incompatible with kit %2.</source>
-        <translation>Kit ٪ 1 غير متوافق مع Kit ٪ 2.</translation>
+        <translation>Kit %1 غير متوافق مع Kit %2.</translation>
     </message>
     <message>
         <location line="+9" />
@@ -16361,7 +16361,7 @@ Please close all running instances of your application before starting a build.<
     <message>
         <location line="+92" />
         <source>Project "%1" was configured for kit "%2" with id %3, which does not exist anymore. You can create a new kit or copy the steps of the vanished kit to another kit in %4 mode.</source>
-        <translation>تم تكوين المشروع "٪ 1" للمجموعة "٪ 2" مع المعرف ٪ 3 ، والذي لم يعد موجودًا. يمكنك إنشاء مجموعة جديدة أو نسخ خطوات المجموعة التي تختفي إلى مجموعة أخرى في وضع ٪ 4.</translation>
+        <translation>تم تكوين المشروع "%1" للمجموعة "%2" مع المعرف %3 ، والذي لم يعد موجودًا. يمكنك إنشاء مجموعة جديدة أو نسخ خطوات المجموعة التي تختفي إلى مجموعة أخرى في وضع %4.</translation>
     </message>
     <message>
         <location line="+4" />
@@ -16376,79 +16376,79 @@ Please close all running instances of your application before starting a build.<
     <message>
         <location line="+265" />
         <source>Could not find any qml_*.qm file at "%1"</source>
-        <translation>لا يمكن العثور على أي ملف QML _*. QM في "٪ 1"</translation>
+        <translation>لا يمكن العثور على أي ملف QML _*. QM في "%1"</translation>
     </message>
     <message>
         <location line="+87" />
         <source>%1: Name.</source>
         <extracomment>%1 is something like "Active project"</extracomment>
-        <translation>٪ 1: الاسم.</translation>
+        <translation>%1: الاسم.</translation>
     </message>
     <message>
         <location line="+8" />
         <source>%1: Full path to main file.</source>
         <extracomment>%1 is something like "Active project"</extracomment>
-        <translation>٪ 1: المسار الكامل للملف الرئيسي.</translation>
+        <translation>%1: المسار الكامل للملف الرئيسي.</translation>
     </message>
     <message>
         <location line="+8" />
         <source>%1: Full path to Project Directory.</source>
         <extracomment>%1 is something like "Active project"</extracomment>
-        <translation>٪ 1: مسار كامل إلى دليل المشروع.</translation>
+        <translation>%1: مسار كامل إلى دليل المشروع.</translation>
     </message>
     <message>
         <location line="+8" />
         <source>%1: The name of the active kit.</source>
         <extracomment>%1 is something like "Active project"</extracomment>
-        <translation>٪ 1: اسم المجموعة النشطة.</translation>
+        <translation>%1: اسم المجموعة النشطة.</translation>
     </message>
     <message>
         <location line="+8" />
         <source>%1: Name of the active build configuration.</source>
         <extracomment>%1 is something like "Active project"</extracomment>
-        <translation>٪ 1: اسم تكوين البناء النشط.</translation>
+        <translation>%1: اسم تكوين البناء النشط.</translation>
     </message>
     <message>
         <location line="+9" />
         <source>%1: Type of the active build configuration.</source>
         <extracomment>%1 is something like "Active project"</extracomment>
-        <translation>٪ 1: نوع التكوين النشط للبناء.</translation>
+        <translation>%1: نوع التكوين النشط للبناء.</translation>
     </message>
     <message>
         <location line="+10" />
         <source>%1: Full build path of active build configuration.</source>
         <extracomment>%1 is something like "Active project"</extracomment>
-        <translation>٪ 1: مسار البناء الكامل لتكوين البناء النشط.</translation>
+        <translation>%1: مسار البناء الكامل لتكوين البناء النشط.</translation>
     </message>
     <message>
         <location line="+9" />
         <source>%1: Variables in the active build environment.</source>
         <extracomment>%1 is something like "Active project"</extracomment>
-        <translation>٪ 1: المتغيرات في بيئة البناء النشطة.</translation>
+        <translation>%1: المتغيرات في بيئة البناء النشطة.</translation>
     </message>
     <message>
         <location line="+10" />
         <source>%1: Name of the active run configuration.</source>
         <extracomment>%1 is something like "Active project"</extracomment>
-        <translation>٪ 1: اسم تكوين التشغيل النشط.</translation>
+        <translation>%1: اسم تكوين التشغيل النشط.</translation>
     </message>
     <message>
         <location line="+9" />
         <source>%1: Executable of the active run configuration.</source>
         <extracomment>%1 is something like "Active project"</extracomment>
-        <translation>٪ 1: قابلة للتنفيذ من تكوين التشغيل النشط.</translation>
+        <translation>%1: قابلة للتنفيذ من تكوين التشغيل النشط.</translation>
     </message>
     <message>
         <location line="+10" />
         <source>%1: Variables in the environment of the active run configuration.</source>
         <extracomment>%1 is something like "Active project"</extracomment>
-        <translation>٪ 1: المتغيرات في بيئة تكوين التشغيل النشط.</translation>
+        <translation>%1: المتغيرات في بيئة تكوين التشغيل النشط.</translation>
     </message>
     <message>
         <location line="+12" />
         <source>%1: Working directory of the active run configuration.</source>
         <extracomment>%1 is something like "Active project"</extracomment>
-        <translation>٪ 1: دليل العمل لتكوين التشغيل النشط.</translation>
+        <translation>%1: دليل العمل لتكوين التشغيل النشط.</translation>
     </message>
     <message>
         <location filename="../../../src/plugins/projectexplorer/projectcommentssettings.cpp" line="+137" />
@@ -16541,7 +16541,7 @@ Please close all running instances of your application before starting a build.<
     <message>
         <location line="-347" />
         <source>Close Pro&amp;ject "%1"</source>
-        <translation>إغلاق المشروع "٪ 1"</translation>
+        <translation>إغلاق المشروع "%1"</translation>
     </message>
     <message>
         <location line="+10" />
@@ -16552,7 +16552,7 @@ Please close all running instances of your application before starting a build.<
         <location line="+0" />
         <location line="+328" />
         <source>Close All Files in Project "%1"</source>
-        <translation>أغلق جميع الملفات في المشروع "٪ 1"</translation>
+        <translation>أغلق جميع الملفات في المشروع "%1"</translation>
     </message>
     <message>
         <location line="-316" />
@@ -16616,7 +16616,7 @@ Please close all running instances of your application before starting a build.<
     <message>
         <location line="+0" />
         <source>Build Project "%1"</source>
-        <translation>بناء مشروع "٪ 1"</translation>
+        <translation>بناء مشروع "%1"</translation>
     </message>
     <message>
         <location line="+12" />
@@ -16626,7 +16626,7 @@ Please close all running instances of your application before starting a build.<
     <message>
         <location line="+1" />
         <source>Build Project "%1" for All Configurations</source>
-        <translation>بناء المشروع "٪ 1" لجميع التكوينات</translation>
+        <translation>بناء المشروع "%1" لجميع التكوينات</translation>
     </message>
     <message>
         <location line="+20" />
@@ -16636,7 +16636,7 @@ Please close all running instances of your application before starting a build.<
     <message>
         <location line="+0" />
         <source>Build for &amp;Run Configuration "%1"</source>
-        <translation>بناء وتشغيل التكوين "٪ 1"</translation>
+        <translation>بناء وتشغيل التكوين "%1"</translation>
     </message>
     <message>
         <location line="+13" />
@@ -16730,7 +16730,7 @@ Please close all running instances of your application before starting a build.<
         <location line="+9" />
         <location line="+1621" />
         <source>Close Project "%1"</source>
-        <translation>إغلاق المشروع "٪ 1"</translation>
+        <translation>إغلاق المشروع "%1"</translation>
     </message>
     <message>
         <location line="-1614" />
@@ -16740,7 +16740,7 @@ Please close all running instances of your application before starting a build.<
     <message>
         <location line="+0" />
         <source>Close All Projects Except "%1"</source>
-        <translation>أغلق جميع المشاريع باستثناء "٪ 1"</translation>
+        <translation>أغلق جميع المشاريع باستثناء "%1"</translation>
     </message>
     <message>
         <location line="+8" />
@@ -16776,7 +16776,7 @@ Please close all running instances of your application before starting a build.<
     <message>
         <location line="+1" />
         <source>Set "%1" as Active Project</source>
-        <translation>تعيين "٪ 1" كمشروع نشط</translation>
+        <translation>تعيين "%1" كمشروع نشط</translation>
     </message>
     <message>
         <location line="+11" />
@@ -16846,12 +16846,12 @@ Please close all running instances of your application before starting a build.<
     <message>
         <location line="+2" />
         <source>Unload Project %1?</source>
-        <translation>تفريغ المشروع ٪ 1؟</translation>
+        <translation>تفريغ المشروع %1؟</translation>
     </message>
     <message>
         <location line="+1" />
         <source>The project %1 is currently being built.</source>
-        <translation>يتم بناء Project ٪ 1 حاليًا.</translation>
+        <translation>يتم بناء Project %1 حاليًا.</translation>
     </message>
     <message>
         <location line="+1" />
@@ -16903,7 +16903,7 @@ Please close all running instances of your application before starting a build.<
     <message>
         <location line="+48" />
         <source>Failed opening project "%1": No plugin can open project type "%2".</source>
-        <translation>فشل فتح مشروع "٪ 1": لا يمكن لأي مكون إضافي فتح نوع المشروع "٪ 2".</translation>
+        <translation>فشل فتح مشروع "%1": لا يمكن لأي مكون إضافي فتح نوع المشروع "%2".</translation>
     </message>
     <message>
         <location line="+195" />
@@ -16935,17 +16935,17 @@ Do you want to ignore them?</source>
     <message>
         <location line="+23" />
         <source>Open Project in "%1"</source>
-        <translation>مشروع مفتوح في "٪ 1"</translation>
+        <translation>مشروع مفتوح في "%1"</translation>
     </message>
     <message>
         <location line="+9" />
         <source>Open Project "%1"</source>
-        <translation>مشروع مفتوح "٪ 1"</translation>
+        <translation>مشروع مفتوح "%1"</translation>
     </message>
     <message>
         <location line="+19" />
         <source>The file "%1" was renamed to "%2", but the following projects could not be automatically changed: %3</source>
-        <translation>تمت إعادة تسمية الملف "٪ 1" إلى "٪ 2" ، ولكن لا يمكن تغيير المشاريع التالية تلقائيًا: ٪ 3</translation>
+        <translation>تمت إعادة تسمية الملف "%1" إلى "%2" ، ولكن لا يمكن تغيير المشاريع التالية تلقائيًا: %3</translation>
     </message>
     <message>
         <location line="+6" />
@@ -16958,12 +16958,12 @@ Do you want to ignore them?</source>
     <message>
         <location line="-1139" />
         <source>The following projects failed to automatically remove the file: %1</source>
-        <translation>فشل المشروعات التالية في إزالة الملف تلقائيًا: ٪ 1</translation>
+        <translation>فشل المشروعات التالية في إزالة الملف تلقائيًا: %1</translation>
     </message>
     <message>
         <location line="+62" />
         <source>Building "%1" is disabled: %2&lt;br&gt;</source>
-        <translation>تم تعطيل المبنى "٪ 1": ٪ 2 &lt;br&gt;</translation>
+        <translation>تم تعطيل المبنى "%1": %2 &lt;br&gt;</translation>
     </message>
     <message>
         <location line="+15" />
@@ -16979,7 +16979,7 @@ Do you want to ignore them?</source>
     <message>
         <location line="+3" />
         <source>The project %1 is not configured.</source>
-        <translation>لم يتم تكوين Project ٪ 1.</translation>
+        <translation>لم يتم تكوين Project %1.</translation>
     </message>
     <message>
         <location line="+3" />
@@ -17005,7 +17005,7 @@ Do you want to ignore them?</source>
     <message>
         <location line="+2" />
         <source>Close %1?</source>
-        <translation>أغلق ٪ 1؟</translation>
+        <translation>أغلق %1؟</translation>
     </message>
     <message>
         <location line="+1" />
@@ -17015,7 +17015,7 @@ Do you want to ignore them?</source>
     <message>
         <location line="+2" />
         <source>Do you want to cancel the build process and close %1 anyway?</source>
-        <translation>هل تريد إلغاء عملية الإنشاء وإغلاق ٪ 1 على أي حال؟</translation>
+        <translation>هل تريد إلغاء عملية الإنشاء وإغلاق %1 على أي حال؟</translation>
     </message>
     <message>
         <location line="+164" />
@@ -17025,17 +17025,17 @@ Do you want to ignore them?</source>
     <message>
         <location line="+3" />
         <source>The project "%1" is not configured.</source>
-        <translation>لم يتم تكوين المشروع "٪ 1".</translation>
+        <translation>لم يتم تكوين المشروع "%1".</translation>
     </message>
     <message>
         <location line="+6" />
         <source>The project "%1" has no active kit.</source>
-        <translation>المشروع "٪ 1" ليس لديه مجموعة نشطة.</translation>
+        <translation>المشروع "%1" ليس لديه مجموعة نشطة.</translation>
     </message>
     <message>
         <location line="+7" />
         <source>The kit "%1" for the project "%2" has no active run configuration.</source>
-        <translation>المجموعة "٪ 1" للمشروع "٪ 2" لا تحتوي على تكوين تشغيل نشط.</translation>
+        <translation>المجموعة "%1" للمشروع "%2" لا تحتوي على تكوين تشغيل نشط.</translation>
     </message>
     <message>
         <location line="+16" />
@@ -17045,7 +17045,7 @@ Do you want to ignore them?</source>
     <message>
         <location line="+6" />
         <source>Cannot run "%1".</source>
-        <translation>لا يمكن تشغيل "٪ 1".</translation>
+        <translation>لا يمكن تشغيل "%1".</translation>
     </message>
     <message>
         <location line="+4" />
@@ -17055,7 +17055,7 @@ Do you want to ignore them?</source>
     <message>
         <location line="+305" />
         <source>%1 in %2</source>
-        <translation>٪ 1 في ٪ 2</translation>
+        <translation>%1 في %2</translation>
     </message>
     <message>
         <location line="+31" />
@@ -17072,7 +17072,7 @@ Do you want to ignore them?</source>
     <message>
         <location line="+41" />
         <source>The following subprojects could not be added to project "%1":</source>
-        <translation>لا يمكن إضافة المشاريع الفرعية التالية إلى المشروع "٪ 1":</translation>
+        <translation>لا يمكن إضافة المشاريع الفرعية التالية إلى المشروع "%1":</translation>
     </message>
     <message>
         <location line="+2" />
@@ -17087,7 +17087,7 @@ Do you want to ignore them?</source>
     <message>
         <location line="+33" />
         <source>Could not add following files to project %1:</source>
-        <translation>لا يمكن إضافة الملفات التالية إلى Project ٪ 1:</translation>
+        <translation>لا يمكن إضافة الملفات التالية إلى Project %1:</translation>
     </message>
     <message>
         <location line="+2" />
@@ -17100,7 +17100,7 @@ Do you want to ignore them?</source>
         <source>Failed opening terminal.
 %1</source>
         <translation>فشلت محطة الافتتاح.
- ٪ 1</translation>
+ %1</translation>
     </message>
     <message>
         <location line="+34" />
@@ -17112,7 +17112,7 @@ Do you want to ignore them?</source>
         <source>Remove these files as well?
     %1</source>
         <translation>إزالة هذه الملفات كذلك؟
- ٪ 1</translation>
+ %1</translation>
     </message>
     <message>
         <location line="+11" />
@@ -17123,13 +17123,13 @@ Do you want to ignore them?</source>
         <location line="+1" />
         <source>File "%1" was not removed, because the project has changed in the meantime.
 Please try again.</source>
-        <translation>لم تتم إزالة الملف "٪ 1" ، لأن المشروع قد تغير في هذه الأثناء.
+        <translation>لم تتم إزالة الملف "%1" ، لأن المشروع قد تغير في هذه الأثناء.
  من فضلك حاول مرة أخرى.</translation>
     </message>
     <message>
         <location line="+17" />
         <source>Could not remove file "%1" from project "%2".</source>
-        <translation>لا يمكن إزالة الملف "٪ 1" من المشروع "٪ 2".</translation>
+        <translation>لا يمكن إزالة الملف "%1" من المشروع "%2".</translation>
     </message>
     <message>
         <location line="+36" />
@@ -17155,12 +17155,12 @@ Please try again.</source>
     <message>
         <location line="-9" />
         <source>Failed to copy file "%1" to "%2": %3.</source>
-        <translation>فشل في نسخ الملف "٪ 1" إلى "٪ 2": ٪ 3.</translation>
+        <translation>فشل في نسخ الملف "%1" إلى "%2": %3.</translation>
     </message>
     <message>
         <location line="+10" />
         <source>Failed to add new file "%1" to the project.</source>
-        <translation>فشل في إضافة ملف جديد "٪ 1" إلى المشروع.</translation>
+        <translation>فشل في إضافة ملف جديد "%1" إلى المشروع.</translation>
     </message>
     <message>
         <location line="+17" />
@@ -17170,7 +17170,7 @@ Please try again.</source>
     <message>
         <location line="+1" />
         <source>Delete %1 from file system?</source>
-        <translation>حذف ٪ 1 من نظام الملفات؟</translation>
+        <translation>حذف %1 من نظام الملفات؟</translation>
     </message>
     <message>
         <location line="+17" />
@@ -17180,26 +17180,26 @@ Please try again.</source>
     <message>
         <location line="+1" />
         <source>Could not delete file %1.</source>
-        <translation>لا يمكن حذف الملف ٪ 1.</translation>
+        <translation>لا يمكن حذف الملف %1.</translation>
     </message>
     <message>
         <location line="+37" />
         <source>The project file %1 cannot be automatically changed.
 
 Rename %2 to %3 anyway?</source>
-        <translation>لا يمكن تغيير ملف المشروع ٪ 1 تلقائيًا.
+        <translation>لا يمكن تغيير ملف المشروع %1 تلقائيًا.
 
- إعادة تسمية ٪ 2 إلى ٪ 3 على أي حال؟</translation>
+ إعادة تسمية %2 إلى %3 على أي حال؟</translation>
     </message>
     <message>
         <location line="+17" />
         <source>The file %1 was renamed to %2, but the project file %3 could not be automatically changed.</source>
-        <translation>تمت إعادة تسمية الملف ٪ 1 إلى ٪ 2 ، ولكن لا يمكن تغيير ملف المشروع ٪ 3 تلقائيًا.</translation>
+        <translation>تمت إعادة تسمية الملف %1 إلى %2 ، ولكن لا يمكن تغيير ملف المشروع %3 تلقائيًا.</translation>
     </message>
     <message>
         <location line="+15" />
         <source>The file %1 could not be renamed %2.</source>
-        <translation>لا يمكن إعادة تسمية الملف ٪ 1 ٪ 2.</translation>
+        <translation>لا يمكن إعادة تسمية الملف %1 %2.</translation>
     </message>
     <message>
         <location line="+5" />
@@ -17236,7 +17236,7 @@ Rename %2 to %3 anyway?</source>
         <source>Switched run configuration to
 %1</source>
         <translation>تبديل التكوين إلى
- ٪ 1</translation>
+ %1</translation>
     </message>
     <message>
         <location line="+9" />
@@ -17256,7 +17256,7 @@ Rename %2 to %3 anyway?</source>
     <message>
         <location line="+5" />
         <source>Automatically managed by %1 or the installer.</source>
-        <translation>تتم إدارتها تلقائيًا بنسبة ٪ 1 أو المثبت.</translation>
+        <translation>تتم إدارتها تلقائيًا بنسبة %1 أو المثبت.</translation>
     </message>
     <message>
         <location line="+6" />
@@ -17473,7 +17473,7 @@ Rename %2 to %3 anyway?</source>
     <message>
         <location line="+1" />
         <source>No build found in %1 matching project %2.</source>
-        <translation>لا يوجد بناء في ٪ 1 مطابقة المشروع ٪ 2.</translation>
+        <translation>لا يوجد بناء في %1 مطابقة المشروع %2.</translation>
     </message>
     <message>
         <location line="+17" />
@@ -17488,7 +17488,7 @@ Rename %2 to %3 anyway?</source>
     <message>
         <location line="+83" />
         <source>%1 - temporary</source>
-        <translation>٪ 1 - مؤقت</translation>
+        <translation>%1 - مؤقت</translation>
     </message>
     <message>
         <location line="+107" />
@@ -17508,7 +17508,7 @@ Rename %2 to %3 anyway?</source>
     <message>
         <location line="+1" />
         <source>Could not restore the following project files:&lt;br&gt;&lt;b&gt;%1&lt;/b&gt;</source>
-        <translation>لا يمكن استعادة ملفات المشروع التالية: &lt;br&gt; &lt;b&gt; ٪ 1 &lt;/b&gt;</translation>
+        <translation>لا يمكن استعادة ملفات المشروع التالية: &lt;br&gt; &lt;b&gt; %1 &lt;/b&gt;</translation>
     </message>
     <message>
         <location line="+2" />
@@ -17535,7 +17535,7 @@ Rename %2 to %3 anyway?</source>
         <source>Would you like to rename these files as well?
     %1</source>
         <translation>هل ترغب في إعادة تسمية هذه الملفات أيضًا؟
- ٪ 1</translation>
+ %1</translation>
     </message>
     <message>
         <location line="+273" />
@@ -17547,7 +17547,7 @@ Rename %2 to %3 anyway?</source>
         <source>You just dragged some files from one project node to another.
 What should %1 do now?</source>
         <translation>لقد قمت فقط بسحب بعض الملفات من عقدة مشروع إلى أخرى.
- ماذا يجب أن تفعل ٪ 1 الآن؟</translation>
+ ماذا يجب أن تفعل %1 الآن؟</translation>
     </message>
     <message>
         <location line="+9" />
@@ -17692,37 +17692,37 @@ What should %1 do now?</source>
     <message>
         <location filename="../../../src/plugins/projectexplorer/projectwelcomepage.cpp" line="-612" />
         <source>Open Session #%1</source>
-        <translation>فتح الجلسة #٪ 1</translation>
+        <translation>فتح الجلسة #%1</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Ctrl+Meta+%1</source>
-        <translation>Ctrl+meta+٪ 1</translation>
+        <translation>Ctrl+meta+%1</translation>
     </message>
     <message>
         <location line="+0" />
         <source>Ctrl+Alt+%1</source>
-        <translation>Ctrl+Alt+٪ 1</translation>
+        <translation>Ctrl+Alt+%1</translation>
     </message>
     <message>
         <location line="+6" />
         <source>Open Recent Project #%1</source>
-        <translation>افتح المشروع الأخير #٪ 1</translation>
+        <translation>افتح المشروع الأخير #%1</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Ctrl+Shift+%1</source>
-        <translation>CTRL+Shift+٪ 1</translation>
+        <translation>CTRL+Shift+%1</translation>
     </message>
     <message>
         <location line="+50" />
         <source>Open %1 "%2"</source>
-        <translation>مفتوح ٪ 1 "٪ 2"</translation>
+        <translation>مفتوح %1 "%2"</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Open %1 "%2" (%3)</source>
-        <translation>مفتوح ٪ 1 "٪ 2" (٪ 3)</translation>
+        <translation>مفتوح %1 "%2" (%3)</translation>
     </message>
     <message>
         <location line="+20" />
@@ -17733,12 +17733,12 @@ What should %1 do now?</source>
     <message>
         <location line="+130" />
         <source>%1 (last session)</source>
-        <translation>٪ 1 (الجلسة الأخيرة)</translation>
+        <translation>%1 (الجلسة الأخيرة)</translation>
     </message>
     <message>
         <location line="+2" />
         <source>%1 (current session)</source>
-        <translation>٪ 1 (الجلسة الحالية)</translation>
+        <translation>%1 (الجلسة الحالية)</translation>
     </message>
     <message>
         <location line="+70" />
@@ -17806,7 +17806,7 @@ What should %1 do now?</source>
         <location line="+10" />
         <source>%1 (%2)</source>
         <extracomment>vanished target display role: vanished target name (device type name)</extracomment>
-        <translation>٪ 1 (٪ 2)</translation>
+        <translation>%1 (%2)</translation>
     </message>
     <message>
         <location line="+15" />
@@ -17821,7 +17821,7 @@ What should %1 do now?</source>
     <message>
         <location line="+12" />
         <source>Remove Vanished Target "%1"</source>
-        <translation>إزالة الهدف اختفى "٪ 1"</translation>
+        <translation>إزالة الهدف اختفى "%1"</translation>
     </message>
     <message>
         <location line="+4" />
@@ -17904,12 +17904,12 @@ What should %1 do now?</source>
     <message>
         <location line="+74" />
         <source>A version control system repository could not be created in "%1".</source>
-        <translation>لا يمكن إنشاء مستودع نظام التحكم في الإصدار في "٪ 1".</translation>
+        <translation>لا يمكن إنشاء مستودع نظام التحكم في الإصدار في "%1".</translation>
     </message>
     <message>
         <location line="+9" />
         <source>Failed to add "%1" to the version control system.</source>
-        <translation>فشل في إضافة "٪ 1" إلى نظام التحكم في الإصدار.</translation>
+        <translation>فشل في إضافة "%1" إلى نظام التحكم في الإصدار.</translation>
     </message>
     <message>
         <location line="+94" />
@@ -17973,7 +17973,7 @@ What should %1 do now?</source>
         <location line="+3" />
         <source>%1 (on %{Device:Name})</source>
         <extracomment>Shown in Run configuration, Add menu: "name of runnable (on device name)"</extracomment>
-        <translation>٪ 1 (على ٪ {الجهاز: الاسم})</translation>
+        <translation>%1 (على ٪ {الجهاز: الاسم})</translation>
     </message>
     <message>
         <location filename="../../../src/plugins/projectexplorer/runconfigurationaspects.cpp" line="-156" />
@@ -18090,12 +18090,12 @@ What should %1 do now?</source>
     <message>
         <location filename="../../../src/plugins/projectexplorer/runcontrol.cpp" line="-14" />
         <source>Unexpected run control state %1 when worker %2 started.</source>
-        <translation>حالة التحكم غير المتوقعة في التشغيل ٪ 1 عندما بدأ العامل ٪ 2.</translation>
+        <translation>حالة التحكم غير المتوقعة في التشغيل %1 عندما بدأ العامل %2.</translation>
     </message>
     <message>
         <location line="+324" />
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;center&gt;&lt;i&gt;%1&lt;/i&gt; is still running.&lt;center/&gt;&lt;center&gt;Force it to quit?&lt;/center&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt; &lt;head/&gt; &lt;body&gt; &lt;center&gt; &lt;i&gt; ٪ 1 &lt;/i&gt; لا يزال قيد التشغيل. &lt;center/&gt; &lt;centre&gt; فرضه على الإقلاع عن التدخين؟</translation>
+        <translation>&lt;html&gt; &lt;head/&gt; &lt;body&gt; &lt;center&gt; &lt;i&gt; %1 &lt;/i&gt; لا يزال قيد التشغيل. &lt;center/&gt; &lt;centre&gt; فرضه على الإقلاع عن التدخين؟</translation>
     </message>
     <message>
         <location line="+2" />
@@ -18135,12 +18135,12 @@ What should %1 do now?</source>
     <message>
         <location line="+54" />
         <source>%1 exited with code %2</source>
-        <translation>خرج ٪ 1 برمز ٪ 2</translation>
+        <translation>خرج %1 برمز %2</translation>
     </message>
     <message>
         <location line="+2" />
         <source>%1 crashed.</source>
-        <translation>٪ 1 تحطمت.</translation>
+        <translation>%1 تحطمت.</translation>
     </message>
     <message>
         <location line="+2" />
@@ -18150,7 +18150,7 @@ What should %1 do now?</source>
     <message>
         <location line="+47" />
         <source>Starting %1...</source>
-        <translation>بدء ٪ 1 ...</translation>
+        <translation>بدء %1 ...</translation>
     </message>
     <message>
         <location line="+3" />
@@ -18175,7 +18175,7 @@ What should %1 do now?</source>
     <message>
         <location line="+3" />
         <source>Either the invoked program "%1" is missing, or you may have insufficient permissions to invoke the program.</source>
-        <translation>إما أن يكون البرنامج الذي تم استدعاؤه "٪ 1" مفقودًا ، أو قد يكون لديك أذونات غير كافية لاستدعاء البرنامج.</translation>
+        <translation>إما أن يكون البرنامج الذي تم استدعاؤه "%1" مفقودًا ، أو قد يكون لديك أذونات غير كافية لاستدعاء البرنامج.</translation>
     </message>
     <message>
         <location line="+5" />
@@ -18221,7 +18221,7 @@ What should %1 do now?</source>
     <message>
         <location line="+1" />
         <source>Do you really want to delete the run configuration &lt;b&gt;%1&lt;/b&gt;?</source>
-        <translation>هل تريد حقًا حذف تكوين التشغيل &lt;b&gt; ٪ 1 &lt;/b&gt;؟</translation>
+        <translation>هل تريد حقًا حذف تكوين التشغيل &lt;b&gt; %1 &lt;/b&gt;؟</translation>
     </message>
     <message>
         <location line="+16" />
@@ -18236,7 +18236,7 @@ What should %1 do now?</source>
     <message>
         <location line="+35" />
         <source>New name for run configuration &lt;b&gt;%1&lt;/b&gt;:</source>
-        <translation>اسم جديد لتكوين التشغيل &lt;b&gt; ٪ 1 &lt;/b&gt;:</translation>
+        <translation>اسم جديد لتكوين التشغيل &lt;b&gt; %1 &lt;/b&gt;:</translation>
     </message>
     <message>
         <location line="+69" />
@@ -18246,12 +18246,12 @@ What should %1 do now?</source>
     <message>
         <location line="+3" />
         <source>Remove Deploy Configuration %1?</source>
-        <translation>إزالة تكوين النشر ٪ 1؟</translation>
+        <translation>إزالة تكوين النشر %1؟</translation>
     </message>
     <message>
         <location line="+1" />
         <source>The deploy configuration &lt;b&gt;%1&lt;/b&gt; is currently being built.</source>
-        <translation>يتم بناء تكوين النشر &lt;B&gt; ٪ 1 &lt;/b&gt; حاليًا.</translation>
+        <translation>يتم بناء تكوين النشر &lt;B&gt; %1 &lt;/b&gt; حاليًا.</translation>
     </message>
     <message>
         <location line="+1" />
@@ -18266,12 +18266,12 @@ What should %1 do now?</source>
     <message>
         <location line="+1" />
         <source>Do you really want to delete deploy configuration &lt;b&gt;%1&lt;/b&gt;?</source>
-        <translation>هل تريد حقًا حذف تكوين النشر &lt;B&gt; ٪ 1 &lt;/b&gt;؟</translation>
+        <translation>هل تريد حقًا حذف تكوين النشر &lt;B&gt; %1 &lt;/b&gt;؟</translation>
     </message>
     <message>
         <location line="+22" />
         <source>New name for deploy configuration &lt;b&gt;%1&lt;/b&gt;:</source>
-        <translation>اسم جديد لنشر التكوين &lt;B&gt; ٪ 1 &lt;/b&gt;:</translation>
+        <translation>اسم جديد لنشر التكوين &lt;B&gt; %1 &lt;/b&gt;:</translation>
     </message>
     <message>
         <location filename="../../../src/plugins/projectexplorer/selectablefilesmodel.cpp" line="+542" />
@@ -18305,7 +18305,7 @@ What should %1 do now?</source>
 %1</source>
         <translation>توليد قائمة ملفات ...
 
- ٪ 1</translation>
+ %1</translation>
     </message>
     <message numerus="yes">
         <location line="+11" />
@@ -18369,12 +18369,12 @@ These files are preserved.</source>
     <message>
         <location line="+3" />
         <source>Imports existing projects that do not use qmake, CMake, Qbs, Meson, or Autotools.&lt;p&gt;This creates a project file that allows you to use %1 as a code editor and as a launcher for debugging and analyzing tools. If you want to build the project, you might need to edit the generated project file.</source>
-        <translation>يستورد المشاريع الحالية التي لا تستخدم Qmake أو Cmake أو QBs أو Meson أو Autotools. &lt;p&gt; هذا ينشئ ملف مشروع يتيح لك استخدام ٪ 1 كمحرر رمز وكمرة قاذفة لأدوات تصحيح الأخطاء وتحليلها. إذا كنت ترغب في إنشاء المشروع ، فقد تحتاج إلى تحرير ملف المشروع الذي تم إنشاؤه.</translation>
+        <translation>يستورد المشاريع الحالية التي لا تستخدم Qmake أو Cmake أو QBs أو Meson أو Autotools. &lt;p&gt; هذا ينشئ ملف مشروع يتيح لك استخدام %1 كمحرر رمز وكمرة قاذفة لأدوات تصحيح الأخطاء وتحليلها. إذا كنت ترغب في إنشاء المشروع ، فقد تحتاج إلى تحرير ملف المشروع الذي تم إنشاؤه.</translation>
     </message>
     <message>
         <location line="+172" />
         <source>Unknown build system "%1"</source>
-        <translation>نظام بناء غير معروف "٪ 1"</translation>
+        <translation>نظام بناء غير معروف "%1"</translation>
     </message>
     <message>
         <location filename="../../../src/plugins/projectexplorer/target.cpp" line="+135" />
@@ -18435,7 +18435,7 @@ These files are preserved.</source>
     <message>
         <location line="+71" />
         <source>Enable Kit for Project "%1"</source>
-        <translation>تمكين مجموعة المشروع "٪ 1"</translation>
+        <translation>تمكين مجموعة المشروع "%1"</translation>
     </message>
     <message>
         <location line="+7" />
@@ -18445,7 +18445,7 @@ These files are preserved.</source>
     <message>
         <location line="+9" />
         <source>Disable Kit for Project "%1"</source>
-        <translation>تعطيل مجموعة المشروع "٪ 1"</translation>
+        <translation>تعطيل مجموعة المشروع "%1"</translation>
     </message>
     <message>
         <location line="+8" />
@@ -18455,12 +18455,12 @@ These files are preserved.</source>
     <message>
         <location line="+3" />
         <source>Disable Kit "%1" in This Project?</source>
-        <translation>تعطيل مجموعة "٪ 1" في هذا المشروع؟</translation>
+        <translation>تعطيل مجموعة "%1" في هذا المشروع؟</translation>
     </message>
     <message>
         <location line="+1" />
         <source>The kit &lt;b&gt;%1&lt;/b&gt; is currently being built.</source>
-        <translation>يتم بناء المجموعة &lt;b&gt; ٪ 1 &lt;/b&gt; حاليًا.</translation>
+        <translation>يتم بناء المجموعة &lt;b&gt; %1 &lt;/b&gt; حاليًا.</translation>
     </message>
     <message>
         <location line="+1" />
@@ -18511,7 +18511,7 @@ These files are preserved.</source>
         <location line="+105" />
         <source>The following kits can be used for project &lt;b&gt;%1&lt;/b&gt;:</source>
         <comment>%1: Project name</comment>
-        <translation>يمكن استخدام المجموعات التالية للمشروع &lt;b&gt; ٪ 1 &lt;/b&gt;:</translation>
+        <translation>يمكن استخدام المجموعات التالية للمشروع &lt;b&gt; %1 &lt;/b&gt;:</translation>
     </message>
     <message>
         <location filename="../../../src/plugins/projectexplorer/targetsetupwidget.cpp" line="+359" />
@@ -18528,7 +18528,7 @@ These files are preserved.</source>
     <message>
         <location filename="../../../src/plugins/projectexplorer/task.cpp" line="+63" />
         <source>%1 needs a compiler set up to build. Configure a compiler in the kit options.</source>
-        <translation>٪ 1 يحتاج إلى برنامج التحويل البرمجي الذي تم إعداده للبناء. تكوين برنامج التحويل البرمجي في خيارات المجموعة.</translation>
+        <translation>%1 يحتاج إلى برنامج التحويل البرمجي الذي تم إعداده للبناء. تكوين برنامج التحويل البرمجي في خيارات المجموعة.</translation>
     </message>
     <message>
         <location line="+143" />
@@ -18543,7 +18543,7 @@ These files are preserved.</source>
     <message>
         <location filename="../../../src/plugins/projectexplorer/taskfile.cpp" line="+110" />
         <source>Cannot open task file %1: %2</source>
-        <translation>لا يمكن فتح ملف المهمة ٪ 1: ٪ 2</translation>
+        <translation>لا يمكن فتح ملف المهمة %1: %2</translation>
     </message>
     <message>
         <location line="+43" />
@@ -18598,7 +18598,7 @@ These files are preserved.</source>
     <message>
         <location filename="../../../src/plugins/projectexplorer/toolchainoptionspage.cpp" line="-152" />
         <source>&lt;nobr&gt;&lt;b&gt;ABI:&lt;/b&gt; %1</source>
-        <translation>&lt;BONR&gt; &lt;B&gt; ABI: &lt;/b&gt; ٪ 1</translation>
+        <translation>&lt;BONR&gt; &lt;B&gt; ABI: &lt;/b&gt; %1</translation>
     </message>
     <message>
         <location line="+1" />
@@ -18625,7 +18625,7 @@ These files are preserved.</source>
         <source>If checked, %1 will set up two instances of each x86_64 compiler:
 One for the native x86_64 target, and one for a plain x86 target.
 Enable this if you plan to create 32-bit x86 binaries without using a dedicated cross compiler.</source>
-        <translation>إذا تم التحقق منه ، فسيقوم ٪ 1 بإعداد حالتين من كل مترجم x86_64:
+        <translation>إذا تم التحقق منه ، فسيقوم %1 بإعداد حالتين من كل مترجم x86_64:
  واحد لهدف X86_64 الأصلي ، وواحد لهدف X86 عادي.
  قم بتمكين هذا إذا كنت تخطط لإنشاء ثنائيات x86 بتات 32 بت دون استخدام برنامج التحويل البرمجي المخصص.</translation>
     </message>
@@ -18653,12 +18653,12 @@ Enable this if you plan to create 32-bit x86 binaries without using a dedicated 
     <message>
         <location line="-7" />
         <source>The following compiler was already configured:&lt;br&gt;&amp;nbsp;%1&lt;br&gt;It was not configured again.</source>
-        <translation>تم تكوين المترجم التالي بالفعل: &lt;br&gt; &amp; nbsp ؛ ٪ 1 &lt;br&gt; لم يتم تكوينه مرة أخرى.</translation>
+        <translation>تم تكوين المترجم التالي بالفعل: &lt;br&gt; &amp; nbsp ؛ %1 &lt;br&gt; لم يتم تكوينه مرة أخرى.</translation>
     </message>
     <message>
         <location line="+8" />
         <source>The following compilers were already configured:&lt;br&gt;&amp;nbsp;%1&lt;br&gt;They were not configured again.</source>
-        <translation>تم تكوين المجمعين التاليين بالفعل: &lt;br&gt; &amp; nbsp ؛ ٪ 1 &lt;br&gt; لم يتم تكوينه مرة أخرى.</translation>
+        <translation>تم تكوين المجمعين التاليين بالفعل: &lt;br&gt; &amp; nbsp ؛ %1 &lt;br&gt; لم يتم تكوينه مرة أخرى.</translation>
     </message>
     <message>
         <location line="+76" />
@@ -18735,12 +18735,12 @@ Enable this if you plan to create 32-bit x86 binaries without using a dedicated 
         <location line="+3" />
         <source>Update %1</source>
         <extracomment>%1 = package name</extracomment>
-        <translation>تحديث ٪ 1</translation>
+        <translation>تحديث %1</translation>
     </message>
     <message>
         <location line="+2" />
         <source>Install %1</source>
-        <translation>تثبيت ٪ 1</translation>
+        <translation>تثبيت %1</translation>
     </message>
     <message>
         <location line="+3" />
@@ -18755,17 +18755,17 @@ Enable this if you plan to create 32-bit x86 binaries without using a dedicated 
     <message>
         <location line="+24" />
         <source>The installation of "%1" was canceled by timeout.</source>
-        <translation>تم إلغاء تثبيت "٪ 1" عن طريق المهلة.</translation>
+        <translation>تم إلغاء تثبيت "%1" عن طريق المهلة.</translation>
     </message>
     <message>
         <location line="+1" />
         <source>The installation of "%1" was canceled by the user.</source>
-        <translation>تم إلغاء تثبيت "٪ 1" من قبل المستخدم.</translation>
+        <translation>تم إلغاء تثبيت "%1" من قبل المستخدم.</translation>
     </message>
     <message>
         <location line="+9" />
         <source>Installing "%1" failed with exit code %2.</source>
-        <translation>فشل تثبيت "٪ 1" مع رمز الخروج ٪ 2.</translation>
+        <translation>فشل تثبيت "%1" مع رمز الخروج %2.</translation>
     </message>
     <message>
         <location filename="../../../src/plugins/python/pythoneditor.cpp" line="+51" />
@@ -18843,22 +18843,22 @@ Enable this if you plan to create 32-bit x86 binaries without using a dedicated 
     <message>
         <location line="+3" />
         <source>Python "%1" not found.</source>
-        <translation>Python "٪ 1" لم يتم العثور عليها.</translation>
+        <translation>Python "%1" لم يتم العثور عليها.</translation>
     </message>
     <message>
         <location line="+3" />
         <source>Python "%1" is not executable.</source>
-        <translation>بيثون "٪ 1" غير قابل للتنفيذ.</translation>
+        <translation>بيثون "%1" غير قابل للتنفيذ.</translation>
     </message>
     <message>
         <location line="+6" />
         <source>Python "%1" does not contain a usable pip. pip is needed to install Python packages from the Python Package Index, like PySide and the Python language server. To use any of that functionality ensure that pip is installed for that Python.</source>
-        <translation>Python "٪ 1" لا يحتوي على PIP قابل للاستخدام. هناك حاجة إلى PIP لتثبيت حزم Python من فهرس Python Package ، مثل Pyside و Python Language Server. لاستخدام أي من هذه الوظائف ، تأكد من تثبيت PIP لهذا الثعبان.</translation>
+        <translation>Python "%1" لا يحتوي على PIP قابل للاستخدام. هناك حاجة إلى PIP لتثبيت حزم Python من فهرس Python Package ، مثل Pyside و Python Language Server. لاستخدام أي من هذه الوظائف ، تأكد من تثبيت PIP لهذا الثعبان.</translation>
     </message>
     <message>
         <location line="+10" />
         <source>Python "%1" does not contain a usable venv. venv is the recommended way to isolate a development environment for a project from the globally installed Python.</source>
-        <translation>Python "٪ 1" لا يحتوي على venv قابل للاستخدام. VENV هي الطريقة الموصى بها لعزل بيئة تطوير لمشروع من Python المثبت عالميًا.</translation>
+        <translation>Python "%1" لا يحتوي على venv قابل للاستخدام. VENV هي الطريقة الموصى بها لعزل بيئة تطوير لمشروع من Python المثبت عالميًا.</translation>
     </message>
     <message>
         <location line="+32" />
@@ -18873,12 +18873,12 @@ Enable this if you plan to create 32-bit x86 binaries without using a dedicated 
     <message>
         <location filename="../../../src/plugins/python/pythonlanguageclient.cpp" line="+228" />
         <source>Python Language Server (%1)</source>
-        <translation>خادم لغة بيثون (٪ 1)</translation>
+        <translation>خادم لغة بيثون (%1)</translation>
     </message>
     <message>
         <location line="+303" />
         <source>Install Python language server (PyLS) for %1 (%2). The language server provides Python specific completion and annotation.</source>
-        <translation>تثبيت خادم لغة Python (PYLS) بنسبة 1 1 (٪ 2). يوفر خادم اللغة Python إكمال وشرح محدد.</translation>
+        <translation>تثبيت خادم لغة Python (PYLS) بنسبة 1 1 (%2). يوفر خادم اللغة Python إكمال وشرح محدد.</translation>
     </message>
     <message>
         <location line="+4" />
@@ -18888,7 +18888,7 @@ Enable this if you plan to create 32-bit x86 binaries without using a dedicated 
     <message>
         <location line="+11" />
         <source>Update Python language server (PyLS) for %1 (%2).</source>
-        <translation>تحديث خادم لغة Python (PYLS) لـ ٪ 1 (٪ 2).</translation>
+        <translation>تحديث خادم لغة Python (PYLS) لـ %1 (%2).</translation>
     </message>
     <message>
         <location line="+3" />
@@ -18913,7 +18913,7 @@ Enable this if you plan to create 32-bit x86 binaries without using a dedicated 
     <message>
         <location filename="../../../src/plugins/python/pythonproject.cpp" line="+41" />
         <source>No Python interpreter set for kit "%1".</source>
-        <translation>لا يوجد مترجم بيثون مجموعة للمجموعة "٪ 1".</translation>
+        <translation>لا يوجد مترجم بيثون مجموعة للمجموعة "%1".</translation>
     </message>
     <message>
         <location filename="../../../src/plugins/python/pythonrunconfiguration.cpp" line="+111" />
@@ -18939,7 +18939,7 @@ Enable this if you plan to create 32-bit x86 binaries without using a dedicated 
     <message>
         <location line="+20" />
         <source>Run %1</source>
-        <translation>تشغيل ٪ 1</translation>
+        <translation>تشغيل %1</translation>
     </message>
     <message>
         <location filename="../../../src/plugins/python/pythonsettings.cpp" line="-1147" />
@@ -18961,12 +18961,12 @@ Enable this if you plan to create 32-bit x86 binaries without using a dedicated 
     <message>
         <location line="+2" />
         <source>"%1" does not exist.</source>
-        <translation>"٪ 1" غير موجود.</translation>
+        <translation>"%1" غير موجود.</translation>
     </message>
     <message>
         <location line="+2" />
         <source>"%1" is not an executable file.</source>
-        <translation>"٪ 1" ليس ملفًا قابلًا للتنفيذ.</translation>
+        <translation>"%1" ليس ملفًا قابلًا للتنفيذ.</translation>
     </message>
     <message>
         <location line="+16" />
@@ -19020,7 +19020,7 @@ Enable this if you plan to create 32-bit x86 binaries without using a dedicated 
     <message>
         <location line="+22" />
         <source>For a complete list of available options, consult the [Python LSP Server configuration documentation](%1).</source>
-        <translation>للحصول على قائمة كاملة بالخيارات المتاحة ، راجع وثائق تكوين خادم Python LSP] (٪ 1).</translation>
+        <translation>للحصول على قائمة كاملة بالخيارات المتاحة ، راجع وثائق تكوين خادم Python LSP] (%1).</translation>
     </message>
     <message>
         <location line="+12" />
@@ -19066,7 +19066,7 @@ Enable this if you plan to create 32-bit x86 binaries without using a dedicated 
     <message>
         <location line="+11" />
         <source>Found "%1" (%2)</source>
-        <translation>وجدت "٪ 1" (٪ 2)</translation>
+        <translation>وجدت "%1" (%2)</translation>
     </message>
     <message>
         <location line="+9" />
@@ -19413,7 +19413,7 @@ if the comment starts with "/*!" or "//!".</source>
     <message>
         <location filename="../../../src/plugins/texteditor/texteditor.cpp" line="+195" />
         <source>Cursors: %2</source>
-        <translation>المؤشرات: ٪ 2</translation>
+        <translation>المؤشرات: %2</translation>
     </message>
     <message>
         <location line="+8" />
@@ -19423,7 +19423,7 @@ if the comment starts with "/*!" or "//!".</source>
     <message>
         <location line="+7" />
         <source>(Sel: %1)</source>
-        <translation>(SEL: ٪ 1)</translation>
+        <translation>(SEL: %1)</translation>
     </message>
     <message>
         <location line="+18" />
@@ -19785,17 +19785,17 @@ Specifies how backspace interacts with indentation.
     <message>
         <location line="+3" />
         <source>%1: The highlight definition for the file determines the position. If no highlight definition is available, the comment is placed after leading whitespaces.</source>
-        <translation>٪ 1: تعريف تسليط الضوء على الملف يحدد الموضع. إذا لم يتوفر تعريف تسليط الضوء ، يتم وضع التعليق بعد قيادة المساحات البيضاء.</translation>
+        <translation>%1: تعريف تسليط الضوء على الملف يحدد الموضع. إذا لم يتوفر تعريف تسليط الضوء ، يتم وضع التعليق بعد قيادة المساحات البيضاء.</translation>
     </message>
     <message>
         <location line="+5" />
         <source>%1: The comment is placed at the start of the line.</source>
-        <translation>٪ 1: يتم وضع التعليق في بداية الخط.</translation>
+        <translation>%1: يتم وضع التعليق في بداية الخط.</translation>
     </message>
     <message>
         <location line="+2" />
         <source>%1: The comment is placed after leading whitespaces.</source>
-        <translation>٪ 1: يتم وضع التعليق بعد قيادة المساحات البيضاء.</translation>
+        <translation>%1: يتم وضع التعليق بعد قيادة المساحات البيضاء.</translation>
     </message>
     <message>
         <location line="+22" />
@@ -20322,7 +20322,7 @@ A value less than 100% can result in overlapping and misaligned graphics.</sourc
     <message>
         <location line="+2" />
         <source>%1 [customizable]</source>
-        <translation>٪ 1 [قابل للتخصيص]</translation>
+        <translation>%1 [قابل للتخصيص]</translation>
     </message>
     <message>
         <location filename="../../../src/plugins/texteditor/fontsettingspage.cpp" line="+89" />
@@ -22301,7 +22301,7 @@ Will not be applied to whitespace in comments and strings.</source>
     <message>
         <location filename="../../../src/plugins/texteditor/codeassist/functionhintproposalwidget.cpp" line="+371" />
         <source>%1 of %2</source>
-        <translation>٪1 من 2</translation>
+        <translation>%1 من 2</translation>
     </message>
     <message>
         <location filename="../../../src/plugins/texteditor/codestyleeditor.cpp" line="+52" />
@@ -22405,12 +22405,12 @@ Excluding: %3
     <message>
         <location line="-25" />
         <source>Failed to format: %1.</source>
-        <translation>فشل في التنسيق: ٪ 1.</translation>
+        <translation>فشل في التنسيق: %1.</translation>
     </message>
     <message>
         <location line="+175" />
         <source>Error in text formatting: %1</source>
-        <translation>خطأ في تنسيق النص: ٪ 1</translation>
+        <translation>خطأ في تنسيق النص: %1</translation>
     </message>
     <message>
         <location line="+16" />
@@ -22791,7 +22791,7 @@ Excluding: %3
     <message>
         <location line="+60" />
         <source>Cannot set permissions on temporary directory "%1": %2</source>
-        <translation>لا يمكن وضع أذونات على الدليل المؤقت "٪ 1": ٪ 2</translation>
+        <translation>لا يمكن وضع أذونات على الدليل المؤقت "%1": %2</translation>
     </message>
     <message>
         <source>The process "%1" could not be started: %2</source>
@@ -23337,37 +23337,37 @@ in "%2".
         <location line="-139" />
         <location line="+409" />
         <source>Path "%1" exists but is not a writable directory.</source>
-        <translation>المسار "٪ 1" موجود ولكن ليس دليلًا قابلًا للكتابة.</translation>
+        <translation>المسار "%1" موجود ولكن ليس دليلًا قابلًا للكتابة.</translation>
     </message>
     <message>
         <location line="-356" />
         <source>copyFile is not implemented for "%1".</source>
-        <translation>لم يتم تنفيذ CopyFile لـ "٪ 1".</translation>
+        <translation>لم يتم تنفيذ CopyFile لـ "%1".</translation>
     </message>
     <message>
         <location line="+30" />
         <source>Cannot copy from "%1", it is not a directory.</source>
-        <translation>لا يمكن نسخها من "٪ 1" ، فهو ليس دليلًا.</translation>
+        <translation>لا يمكن نسخها من "%1" ، فهو ليس دليلًا.</translation>
     </message>
     <message>
         <location line="+4" />
         <source>Cannot copy "%1" to "%2": %3</source>
-        <translation>لا يمكن نسخ "٪ 1" إلى "٪ 2": ٪ 3</translation>
+        <translation>لا يمكن نسخ "%1" إلى "%2": %3</translation>
     </message>
     <message>
         <location line="+103" />
         <source>fileContents is not implemented for "%1".</source>
-        <translation>لا يتم تنفيذ fileContents لـ "٪ 1".</translation>
+        <translation>لا يتم تنفيذ fileContents لـ "%1".</translation>
     </message>
     <message>
         <location line="+10" />
         <source>writeFileContents is not implemented for "%1".</source>
-        <translation>لا يتم تنفيذ WriteFileContents لـ "٪ 1".</translation>
+        <translation>لا يتم تنفيذ WriteFileContents لـ "%1".</translation>
     </message>
     <message>
         <location line="+66" />
         <source>createTempFile is not implemented for "%1".</source>
-        <translation>لا يتم تنفيذ CreateTempFile لـ "٪ 1".</translation>
+        <translation>لا يتم تنفيذ CreateTempFile لـ "%1".</translation>
     </message>
     <message>
         <location line="+7" />
@@ -23377,7 +23377,7 @@ in "%2".
     <message>
         <location line="+180" />
         <source>Refusing to remove the standard directory "%1".</source>
-        <translation>رفض إزالة الدليل القياسي "٪ 1".</translation>
+        <translation>رفض إزالة الدليل القياسي "%1".</translation>
     </message>
     <message>
         <location line="+12" />
@@ -23402,7 +23402,7 @@ in "%2".
     <message>
         <location line="+551" />
         <source>Failed creating temporary file "%1" (too many tries).</source>
-        <translation>فشل إنشاء ملف مؤقت "٪ 1" (الكثير من المحاولات).</translation>
+        <translation>فشل إنشاء ملف مؤقت "%1" (الكثير من المحاولات).</translation>
     </message>
     <message>
         <source>Failed to copy file "%1" to "%2".</source>
@@ -23442,28 +23442,28 @@ in "%2".
     <message>
         <location line="-333" />
         <source>File "%1" does not exist.</source>
-        <translation>ملف "٪ 1" غير موجود.</translation>
+        <translation>ملف "%1" غير موجود.</translation>
     </message>
     <message>
         <location line="+3" />
         <source>Could not open File "%1".</source>
-        <translation>لا يمكن فتح ملف "٪ 1".</translation>
+        <translation>لا يمكن فتح ملف "%1".</translation>
     </message>
     <message>
         <location line="+24" />
         <source>Could not open file "%1" for writing.</source>
-        <translation>لا يمكن فتح ملف "٪ 1" للكتابة.</translation>
+        <translation>لا يمكن فتح ملف "%1" للكتابة.</translation>
     </message>
     <message numerus="yes">
         <location line="+5" />
         <source>Could not write to file "%1" (only %2 of %n byte(s) written).</source>
         <translation>
-            <numerusform>لا يمكن الكتابة إلى ملف "٪ 1" (فقط ٪ 2 من ٪ n بايت (بايت) مكتوبة).</numerusform><numerusform>لا يمكن الكتابة إلى ملف "٪ 1" (فقط ٪ 2 من ٪ n بايت (بايت) مكتوبة).</numerusform></translation>
+            <numerusform>لا يمكن الكتابة إلى ملف "%1" (فقط %2 من ٪ n بايت (بايت) مكتوبة).</numerusform><numerusform>لا يمكن الكتابة إلى ملف "%1" (فقط %2 من ٪ n بايت (بايت) مكتوبة).</numerusform></translation>
     </message>
     <message>
         <location line="+13" />
         <source>Could not create temporary file in "%1" (%2).</source>
-        <translation>لا يمكن إنشاء ملف مؤقت في "٪ 1" (٪ 2).</translation>
+        <translation>لا يمكن إنشاء ملف مؤقت في "%1" (%2).</translation>
     </message>
     <message>
         <location line="+138" />
@@ -23746,7 +23746,7 @@ To disable a variable, prefix the line with "#".</source>
         <location line="+15" />
         <location line="+8" />
         <source>Cannot create temporary file %1: %2</source>
-        <translation>لا يمكن إنشاء ملف مؤقت ٪ 1: ٪ 2</translation>
+        <translation>لا يمكن إنشاء ملف مؤقت %1: %2</translation>
     </message>
     <message>
         <location line="+40" />
@@ -23995,12 +23995,12 @@ Lines starting with "##" will be treated as comments.</source>
     <message>
         <location line="+79" />
         <source>The program "%1" could not be found.</source>
-        <translation>لا يمكن العثور على البرنامج "٪ 1".</translation>
+        <translation>لا يمكن العثور على البرنامج "%1".</translation>
     </message>
     <message>
         <location line="+908" />
         <source>Failed to create process interface for "%1".</source>
-        <translation>فشل في إنشاء واجهة العملية لـ "٪ 1".</translation>
+        <translation>فشل في إنشاء واجهة العملية لـ "%1".</translation>
     </message>
     <message>
         <location line="+163" />
@@ -24045,7 +24045,7 @@ Lines starting with "##" will be treated as comments.</source>
     <message>
         <location line="+4" />
         <source>The command "%1" was canceled after %2 ms.</source>
-        <translation>تم إلغاء الأمر "٪ 1" بعد ٪ 2 مللي ثانية.</translation>
+        <translation>تم إلغاء الأمر "%1" بعد %2 مللي ثانية.</translation>
     </message>
     <message>
         <source>The command "%1" did not respond within the timeout limit (%2 s).</source>
@@ -24253,18 +24253,18 @@ Lines starting with "##" will be treated as comments.</source>
         <location line="+34" />
         <source>Failed to install shell script: %1
 %2</source>
-        <translation>فشل في تثبيت SHELL SCRIPT: ٪ 1
- ٪ 2</translation>
+        <translation>فشل في تثبيت SHELL SCRIPT: %1
+ %2</translation>
     </message>
     <message>
         <location line="+17" />
         <source>Timeout while trying to check for %1.</source>
-        <translation>مهلة أثناء محاولة التحقق من ٪ 1.</translation>
+        <translation>مهلة أثناء محاولة التحقق من %1.</translation>
     </message>
     <message>
         <location line="+7" />
         <source>Command "%1" was not found.</source>
-        <translation>لم يتم العثور على القيادة "٪ 1".</translation>
+        <translation>لم يتم العثور على القيادة "%1".</translation>
     </message>
     <message>
         <location line="+10" />
@@ -24279,7 +24279,7 @@ Lines starting with "##" will be treated as comments.</source>
     <message>
         <location line="+11" />
         <source>Failed to install shell script: %1</source>
-        <translation>فشل في تثبيت SHELL SCRIPT: ٪ 1</translation>
+        <translation>فشل في تثبيت SHELL SCRIPT: %1</translation>
     </message>
     <message>
         <location filename="../../../src/libs/utils/externalterminalprocessimpl.cpp" line="+124" />
@@ -24290,7 +24290,7 @@ Lines starting with "##" will be treated as comments.</source>
         <location line="+28" />
         <location line="+45" />
         <source>Failed to start terminal process: "%1".</source>
-        <translation>فشل في بدء عملية المحطة الطرفية: "٪ 1".</translation>
+        <translation>فشل في بدء عملية المحطة الطرفية: "%1".</translation>
     </message>
     <message>
         <location filename="../../../src/libs/utils/filestreamermanager.cpp" line="+135" />
