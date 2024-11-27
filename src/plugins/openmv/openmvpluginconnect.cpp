@@ -2483,17 +2483,20 @@ void OpenMVPlugin::connectClicked(bool forceBootloader, QString forceFirmwarePat
                     {
                         data = fixScriptForSensor(data);
 
-                        QFile reload(document->filePath().toString());
-
-                        if(reload.open(QIODevice::WriteOnly))
+                        if (document->contents().simplified().trimmed() != data.simplified().trimmed())
                         {
-                            bool ok = reload.write(data) == data.size();
-                            reload.close();
+                            QFile reload(document->filePath().toString());
 
-                            if (ok)
+                            if(reload.open(QIODevice::WriteOnly))
                             {
-                                QString error;
-                                document->reload(&error);
+                                bool ok = reload.write(data) == data.size();
+                                reload.close();
+
+                                if (ok)
+                                {
+                                    QString error;
+                                    document->reload(&error);
+                                }
                             }
                         }
                     }
