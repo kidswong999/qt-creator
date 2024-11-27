@@ -64,6 +64,10 @@ int PythonIndenter::indentFor(const QTextBlock &block,
     if (!previousBlock.isValid())
         return 0;
 
+    // OPENMV-DIFF //
+    int previousIndentation = tabSettings.indentationColumn(previousBlock.text());
+    // OPENMV-DIFF //
+
     // When pasting in actual code, try to skip back past empty lines to an
     // actual code line to find a suitable indentation. This prevents code from
     // not being indented when pasting below an empty line.
@@ -80,6 +84,11 @@ int PythonIndenter::indentFor(const QTextBlock &block,
         indentation += tabSettings.m_indentSize;
     else
         indentation = qMax<int>(0, indentation + getIndentDiff(previousLine, tabSettings));
+
+    // OPENMV-DIFF //
+    if (previousIndentation < indentation)
+        indentation = previousIndentation;
+    // OPENMV-DIFF //
 
     return indentation;
 }
